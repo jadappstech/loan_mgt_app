@@ -987,6 +987,9 @@
 																<a href="account-settings.html">Account Settings</a>
 															</li>
 															<li>
+																<a href="user-onboarding.html">User Onboarding</a>
+															</li>
+															<li>
 																<a href="user-profile.html">User Profile</a>
 															</li>
 														</ul>
@@ -1397,85 +1400,22 @@
                                                             <input type="password" class="form-control" placeholder="Enter Password">
                                                             <div class="field-placeholder">Password</div>
                                                         </div>
+																												<div class="dz-message needsclick">
+                                                                    <button style="width:264px; height:120px; border-color: #d6d6d6; border-style: solid;
+																																		 border-width:0.5px; border-radius: 6px; margin-right: 20px; margin-bottom: 20px;
+																																		 background:white;  "
+																																		 type="button" class="dz-button">Upload NIN Slip</button>
+                                                                </div>
                                                         <!-- Field wrapper end -->
+																												<div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
+												<button class="btn btn-primary mb-3">Save Settings</button>
+											</div>
                                                     </div>
                                                 </div>
                                             </div>
                                             <div class="col-xl-4 col-lg-4 col-md-12 col-sm-12 col-12">
-                                                <div class="account-settings-block">
-                                                    <div class="settings-block">
-                                                        <div class="settings-block-title">Change Plan</div>
-                                                        <div class="settings-block-body">
-                                                            <div class="pricing-chnage-plan">
-                                                                <a href="#" class="active-plan">
-                                                                    <h5>$29</h5>
-                                                                    <h6>Basic</h6>
-                                                                </a>
-                                                                <a href="#">
-                                                                    <h5>$59</h5>
-                                                                    <h6>Business</h6>
-                                                                </a>
-                                                                <a href="#">
-                                                                    <h5>$99</h5>
-                                                                    <h6>Enterprise</h6>
-                                                                </a>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                    <div class="settings-block">
-                                                        <div class="settings-block-title">Other Settings</div>
-                                                        <div class="settings-block-body">
-                                                            <div class="list-group">
-                                                                <div class="list-group-item d-flex justify-content-between align-items-center">
-                                                                    <div>Show desktop notifications</div>
-                                                                    <div class="form-switch">
-                                                                        <input class="form-check-input" type="checkbox" id="showNotifications">
-                                                                        <label class="form-check-label" for="showNotifications"></label>
-                                                                    </div>
-                                                                </div>
-                                                                <div class="list-group-item d-flex justify-content-between align-items-center">
-                                                                    <div>Show email notifications</div>
-                                                                    <div class="form-switch">
-                                                                        <input class="form-check-input" type="checkbox" id="showEmailNotifications" checked>
-                                                                        <label class="form-check-label" for="showEmailNotifications"></label>
-                                                                    </div>
-                                                                </div>
-                                                                <div class="list-group-item d-flex justify-content-between align-items-center">
-                                                                    <div>Show chat notifications</div>
-                                                                    <div class="form-switch">
-                                                                        <input class="form-check-input" type="checkbox" id="showChatNotifications">
-                                                                        <label class="form-check-label" for="showChatNotifications"></label>
-                                                                    </div>
-                                                                </div>
-                                                                <div class="list-group-item d-flex justify-content-between align-items-center">
-                                                                    <div>Show purchase history</div>
-                                                                    <div class="form-switch">
-                                                                        <input class="form-check-input" type="checkbox" id="showPurchaseNotifications">
-                                                                        <label class="form-check-label" for="showPurchaseNotifications"></label>
-                                                                    </div>
-                                                                </div>                                                                
-                                                                <div class="list-group-item d-flex justify-content-between align-items-center">
-                                                                    <div>Show orders</div>
-                                                                    <div class="form-switch">
-                                                                        <input class="form-check-input" type="checkbox" id="showOrders">
-                                                                        <label class="form-check-label" for="showOrders"></label>
-                                                                    </div>
-                                                                </div>
-                                                                <div class="list-group-item d-flex justify-content-between align-items-center">
-                                                                    <div>Show alerts</div>
-                                                                    <div class="form-switch">
-                                                                        <input class="form-check-input" type="checkbox" id="showAlerts">
-                                                                        <label class="form-check-label" for="showAlerts"></label>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-											<div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
-												<button class="btn btn-primary mb-3">Save Settings</button>
-											</div>
+                                                
+											
                                         </div>
 										
 									</div>
