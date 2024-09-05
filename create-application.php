@@ -66,7 +66,7 @@
 															</li>
 															<li>
 																<a href="analytics.html">Analytics</a>
-															</li>															
+															</li>
 															<li>
 																<a href="crm.html">CRM</a>
 															</li>
@@ -97,7 +97,7 @@
 																<a href="layout-scroll-cards.html">Scroll Cards</a>
 															</li>
 														</ul>
-													</li>												
+													</li>
 												</ul>
 											</li>
 
@@ -125,7 +125,7 @@
 															</li>
 															<li>
 																<a href="products-reviews.html">Reviews</a>
-															</li>														
+															</li>
 														</ul>
 													</li>
 
@@ -146,9 +146,9 @@
 															</li>
 															<li>
 																<a href="calendar-selectable.html">Selectable</a>
-															</li>													
+															</li>
 														</ul>
-													</li>												
+													</li>
 												</ul>
 											</li>
 
@@ -177,7 +177,7 @@
 															</li>
 															<li>
 																<a href="forms-layout-six.html">Layout Six with Tabs</a>
-															</li>													
+															</li>
 														</ul>
 													</li>
 
@@ -213,9 +213,9 @@
 															</li>
 															<li>
 																<a href="forms-editor.html">WYSIWYG Editor</a>
-															</li>													
+															</li>
 														</ul>
-													</li>												
+													</li>
 												</ul>
 											</li>
 
@@ -322,9 +322,9 @@
 															</li>
 															<li>
 																<a href="tooltips.html">Tooltips</a>
-															</li>												
+															</li>
 														</ul>
-													</li>												
+													</li>
 												</ul>
 											</li>
 
@@ -344,7 +344,7 @@
 															</li>
 															<li>
 																<a href="vector-maps.html">Vector Maps</a>
-															</li>													
+															</li>
 														</ul>
 													</li>
 
@@ -359,9 +359,9 @@
 															</li>
 															<li>
 																<a href="data-tables.html">Data Tables</a>
-															</li>												
+															</li>
 														</ul>
-													</li>												
+													</li>
 												</ul>
 											</li>
 											
@@ -567,342 +567,232 @@
 
 						<!-- Row start -->
 						<div class="row gutters">
-							<div class="col-xl-4 col-lg-4 col-md-4 col-sm-6 col-12">
-								<div class="stats-tile">
-									<div class="sale-icon">
-										<i class="icon-shopping-bag1"></i>
-									</div>
-									<div class="sale-details">
-										<h2>25</h2>
-										<p>Products</p>
-									</div>
-									<div class="sale-graph">
-										<div id="sparklineLine1"></div>
-									</div>
-								</div>
-							</div>
-							<div class="col-xl-4 col-lg-4 col-md-4 col-sm-6 col-12">
-								<div class="stats-tile">
-									<div class="sale-icon">
-										<i class="icon-shopping-bag1"></i>
-									</div>
-									<div class="sale-details">
-										<h2>32</h2>
-										<p>Orders</p>
-									</div>
-									<div class="sale-graph">
-										<div id="sparklineLine2"></div>
-									</div>
-								</div>
-							</div>
-							<div class="col-xl-4 col-lg-4 col-md-4 col-sm-12 col-12">
-								<div class="stats-tile">
-									<div class="sale-icon">
-										<i class="icon-check-circle"></i>
-									</div>
-									<div class="sale-details">
-										<h2>19</h2>
-										<p>Customers</p>
-									</div>
-									<div class="sale-graph">
-										<div id="sparklineLine3"></div>
-									</div>
-								</div>
-							</div>
-						</div>
-						<!-- Row end -->
-
-						<!-- Row start -->
-						<div class="row gutters">
-							<div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 cool-12">
-
-								<div class="card">
-									<div class="card-body">
-										<!-- Row start -->
-										<div class="row gutters">											
-											<div class="col-xl-3 col-lg-3 col-md-4 col-sm-4 col-12">
-												<div class="reports-summary">
-													<div class="reports-summary-block">
-														<h5>Great Sales</h5>
-														<h6>Overall sales of the month</h6>
-													</div>
-													<div class="reports-summary-block">
-														<h5>35 Millions</h5>
-														<h6>Overall earnings</h6>
-													</div>
-													<div class="reports-summary-block">
-														<h5>27 Millions</h5>
-														<h6>Overall revenue</h6>
-													</div>
-													<div class="reports-summary-block">
-														<h5>67k</h5>
-														<h6>New customers</h6>
-													</div>
-													<button class="btn btn-info stripes-btn">Generate Report</button>
-												</div>
-											</div>
-											<div class="col-xl-9 col-lg-9 col-md-8 col-sm-8 col-12">
-												<div class="row gutters">
-													<div class="col-12">
-														<div class="graph-day-selection mt-2" role="group">
-															<button type="button" class="btn active">Today</button>
-															<button type="button" class="btn">Yesterday</button>
-															<button type="button" class="btn">7 days</button>
-															<button type="button" class="btn">15 days</button>
-															<button type="button" class="btn">30 days</button>
-														</div>
-													</div>
-													<div class="col-12">
-														<div id="salesGraph" class="chart-height-xl"></div>
-													</div>
-												</div>
-											</div>
-										</div>
-										<!-- Row end -->
-									</div>
-								</div>
-
-							</div>
-						</div>
-						<!-- Row end -->
-
-						<!-- Row start -->
-						<div class="row gutters">
-							<div class="col-xl-4 col-lg-4 col-md-6 col-sm-6 col-12">
-
-								<div class="card">
-									<div class="card-header">
-										<div class="card-title">Visitors</div>
-										<div class="graph-day-selection" role="group">
-											<button type="button" class="btn active">Export</button>
-										</div>
-									</div>
-									<div class="card-body">
-										<div id="visitorsGraph" class="chart-height-md"></div>
-
-										<ul class="stats-list-container">
-											<li class="stats-list-item primary">
-												<div class="stats-icon">
-													<i class="icon-calendar1"></i>
-												</div>
-												<div class="stats-info">
-													<h6 class="stats-title">Week 1</h6>
-													<p class="stats-amount">25</p>
-												</div>
-											</li>
-											<li class="stats-list-item primary">
-												<div class="stats-icon">
-													<i class="icon-calendar1"></i>
-												</div>
-												<div class="stats-info">
-													<h6 class="stats-title">Week 2</h6>
-													<p class="stats-amount">32</p>
-												</div>
-											</li>
-										</ul>
-									</div>
-								</div>
-
-							</div>
-							<div class="col-xl-4 col-lg-4 col-md-6 col-sm-6 col-12">
-
-								<div class="card">
-									<div class="card-header">
-										<div class="card-title">Orders</div>
-										<div class="graph-day-selection" role="group">
-											<button type="button" class="btn active">View All</button>
-										</div>
-									</div>
-									<div class="card-body">
-										<div id="ordersGraph" class="chart-height-md"></div>
-
-										<ul class="stats-list-container">
-											<li class="stats-list-item primary">
-												<div class="stats-icon">
-													<i class="icon-archive1"></i>
-												</div>
-												<div class="stats-info">
-													<h6 class="stats-title">New</h6>
-													<p class="stats-amount">15</p>
-												</div>
-											</li>
-											<li class="stats-list-item primary">
-												<div class="stats-icon">
-													<i class="icon-truck"></i>
-												</div>
-												<div class="stats-info">
-													<h6 class="stats-title">Delivered</h6>
-													<p class="stats-amount">10</p>
-												</div>
-											</li>
-										</ul>
-									</div>
-								</div>
-
-							</div>
-							<div class="col-xl-4 col-lg-4 col-md-12 col-sm-12 col-12">
-
-								<div class="card">
-									<div class="card-header">
-										<div class="card-title">Earnings</div>
-										<div class="graph-day-selection" role="group">
-											<button type="button" class="btn active">Download</button>
-										</div>
-									</div>
-									<div class="card-body">
-										<div id="earningsGraph" class="chart-height-md"></div>
-
-										<ul class="stats-list-container">
-											<li class="stats-list-item primary">
-												<div class="stats-icon">
-													<i class="icon-briefcase"></i>
-												</div>
-												<div class="stats-info">
-													<h6 class="stats-title">Today</h6>
-													<p class="stats-amount">$25</p>
-												</div>
-											</li>
-											<li class="stats-list-item primary">
-												<div class="stats-icon">
-													<i class="icon-briefcase"></i>
-												</div>
-												<div class="stats-info">
-													<h6 class="stats-title">Yesterday</h6>
-													<p class="stats-amount">$18</p>
-												</div>
-											</li>
-										</ul>
-									</div>
-								</div>
-
-							</div>
-						</div>
-						<!-- Row end -->
-
-						<!-- Row start -->
-						<div class="row gutters">
 							<div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
+
+								<!-- Card start -->
 								<div class="card">
 									<div class="card-header">
-										<div class="card-title">Recent Orders</div>
-										<div class="graph-day-selection" role="group">
-											<button type="button" class="btn active">Export to Excel</button>
-										</div>
+										<div class="card-title">Loan Application Form</div>
 									</div>
 									<div class="card-body">
-										<div class="table-responsive">
-											<table class="table products-table">
-												<thead>
-													<tr>
-														<th>Order No.</th>
-														<th>Ordered Date</th>
-														<th>Product</th>
-														<th>Delivery Status</th>												
-														<th>Amount</th>
-														<th>Discount</th>
-														<th>Location</th>
-														<th>Est Delivery Date</th>
-													</tr>
-												</thead>
-												<tbody>
-													<tr>
-														<td>#55589</td>
-														<td>20/11/2020</td>
-														<td>
-															<img class="user" src="img/products/bag.jpg" alt="Product Image">
-														</td>
-														<td>
-															<span class="badge">Moving</span>
-														</td>
-														<td>$385.00</td>
-														<td>30%</td>
-														<td>Los Angeles, California</td>
-														<td>22/11/2020</td>
-													</tr>
-													<tr>
-														<td>#23198</td>
-														<td>23/11/2020</td>												
-														<td>
-															<img class="user" src="img/products/toy.jpg" alt="Product Image">
-														</td>
-														<td>
-															<span class="badge">Shipped</span>
-														</td>
-														<td>$539.00</td>
-														<td>25%</td>
-														<td>Arverne, New York</td>
-														<td>27/11/2020</td>
-													</tr>
-													<tr>
-														<td>#87324</td>
-														<td>26/11/2020</td>												
-														<td>
-															<img class="user" src="img/products/pencils.jpg" alt="Product Image">
-														</td>
-														<td>
-															<span class="badge">Pending</span>
-														</td>
-														<td>$671.00</td>
-														<td>35%</td>
-														<td>Mesquite, Texas</td>
-														<td>29/11/2020</td>
-													</tr>
-													<tr>
-														<td>#65673</td>
-														<td>25/11/2020</td>
-														<td>
-															<img class="user" src="img/products/camera.jpg" alt="Product Image">
-														</td>
-														<td>
-															<span class="badge">Cancelled</span>
-														</td>
-														<td>$490.00</td>
-														<td>21%</td>
-														<td>Hallandale, Florida</td>
-														<td>26/11/2020</td>
-													</tr>
-												</tbody>
-											</table>
+										<div class="row gutters">
+											<div class="col-xl-4 col-lg-4 col-md-4 col-sm-4 col-12">
+												<div class="field-wrapper">
+													<input class="form-control" type="text" name="full_name">
+													<div class="field-placeholder">Full Name <span class="text-danger">*</span></div>
+												</div>
+											</div>
+											<div class="col-xl-4 col-lg-4 col-md-4 col-sm-4 col-12">
+												<div class="field-wrapper">
+													<input class="form-control" type="email" name="email_address">
+													<div class="field-placeholder">Email Address <span class="text-danger">*</span></div>
+												</div>
+											</div>
+											<div class="col-xl-4 col-lg-4 col-md-4 col-sm-4 col-12">
+												<div class="field-wrapper">
+													<input class="form-control" type="text" name="phone_number">
+													<div class="field-placeholder">Phone Number <span class="text-danger">*</span></div>
+												</div>
+											</div>
+											<div class="col-xl-8 col-lg-8 col-md-8 col-sm-8 col-12">
+												<div class="field-wrapper">
+													<input class="form-control" type="text" name="residential_address">
+													<div class="field-placeholder">Residential Address <span class="text-danger">*</span></div>
+												</div>
+											</div>
+											<div class="col-xl-4 col-lg-4 col-md-4 col-sm-4 col-12">
+												<div class="field-wrapper">
+													<input class="form-control" type="text" name="date_of_birth">
+													<div class="field-placeholder">Date of Birth <span class="text-danger">*</span></div>
+												</div>
+											</div>
+										</div>
+
+										<div class="row gutters">
+											<div class="col-xl-4 col-lg-4 col-md-4 col-sm-4 col-12">
+												<div class="field-wrapper">
+													<select class="form-control" name="loan_type">
+														<option value="" disabled selected>Loan Type</option>
+														<option value="personal">Personal Loan</option>
+														<option value="business">Business Loan</option>
+														<option value="mortgage">Mortgage</option>
+														</select>
+													<div class="field-placeholder">Loan Type <span class="text-danger">*</span></div>
+												</div>
+											</div>
+											<div class="col-xl-4 col-lg-4 col-md-4 col-sm-4 col-12">
+												<div class="field-wrapper">
+													<input class="form-control" type="number" name="loan_amount">
+													<div class="field-placeholder">Loan Amount Requested <span class="text-danger">*</span></div>
+												</div>
+											</div>
+											<div class="col-xl-4 col-lg-4 col-md-4 col-sm-4 col-12">
+												<div class="field-wrapper">
+													<select class="form-control" name="repayment_term">
+														<option value="" disabled selected>Repayment Term</option>
+														<option value="12">12 Months</option>
+														<option value="24">24 Months</option>
+														<option value="36">36 Months</option>
+														</select>
+													<div class="field-placeholder">Repayment Term <span class="text-danger">*</span></div>
+												</div>
+											</div>
+											<div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
+												<div class="field-wrapper">
+													<textarea class="form-control" rows="2" name="loan_purpose"></textarea>
+													<div class="field-placeholder">Purpose of Loan <span class="text-danger">*</span></div>
+												</div>
+											</div>
+										</div>
+
+										<div class="row gutters">
+											<div class="col-xl-4 col-lg-4 col-md-4 col-sm-4 col-12">
+												<div class="field-wrapper">
+													<input class="form-control" type="text" name="employer_business_name">
+													<div class="field-placeholder">Employer/Business Name</div>
+												</div>
+											</div>
+											<div class="col-xl-4 col-lg-4 col-md-4 col-sm-4 col-12">
+												<div class="field-wrapper">
+													<input class="form-control" type="number" name="monthly_income">
+													<div class="field-placeholder">Monthly Income</div>
+												</div>
+											</div>
+											<div class="col-xl-4 col-lg-4 col-md-4 col-sm-4 col-12">
+												<div class="field-wrapper">
+													<input class="form-control" type="number" name="monthly_expenses">
+													<div class="field-placeholder">Monthly Expenses</div>
+												</div>
+											</div>
+										</div>
+
+										<div class="row gutters">
+											<div class="col-xl-4 col-lg-4 col-md-4 col-sm-4 col-12">
+												<div class="field-wrapper">
+												<label for="proof_of_identity">Proof of Identity:</label>
+												<input type="file" class="form-control-file" id="proof_of_identity" name="proof_of_identity">
+												<small class="form-text text-muted">e.g., National ID, Passport</small>
+												</div>
+											</div>
+											<div class="col-xl-4 col-lg-4 col-md-4 col-sm-4 col-12">
+												<div class="field-wrapper">
+												<label for="proof_of_address">Proof of Address:</label>
+												<input type="file" class="form-control-file" id="proof_of_address" name="proof_of_address">
+												<small class="form-text text-muted">e.g., Utility Bill</small>
+												</div>
+											</div>
+											<div class="col-xl-4 col-lg-4 col-md-4 col-sm-4 col-12">
+												<div class="field-wrapper">
+												<label for="proof_of_income">Proof of Income:</label>
+												<input type="file" class="form-control-file" id="proof_of_income" name="proof_of_income">
+												<small class="form-text text-muted">e.g., Payslips, Bank Statements</small>
+												</div>
+											</div>
+										</div>
+
+										<div class="row gutters">
+											<div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
+												<button class="btn btn-primary">Submit Application</button>
+											</div>
+										</div>
+
+									</div> 
+								</div>
+								<!-- Card end -->
+
+								<div class="card">
+									<div class="card-header">
+										<div class="card-title">Collateral Details (if applicable)</div>
+									</div>
+									<div class="card-body">
+										<div class="row gutters">
+											<div class="col-xl-4 col-lg-4 col-md-4 col-sm-4 col-12">
+												<div class="field-wrapper">
+													<select class="form-control" name="collateral_type">
+														<option value="" disabled selected>Collateral Type</option>
+														<option value="real_estate">Real Estate</option>
+														<option value="vehicle">Vehicle</option>
+														<option value="savings">Savings Account</option>
+														<option value="other">Other</option>
+													</select>
+													<div class="field-placeholder">Collateral Type</div>
+												</div>
+											</div>
+											<div class="col-xl-8 col-lg-8 col-md-8 col-sm-8 col-12">
+												<div class="field-wrapper">
+													<input class="form-control" type="text" name="collateral_description">
+													<div class="field-placeholder">Description of Collateral</div>
+												</div>
+											</div>
+											<div class="col-xl-4 col-lg-4 col-md-4 col-sm-4 col-12">
+												<div class="field-wrapper">
+													<input class="form-control" type="number" name="collateral_value">
+													<div class="field-placeholder">Estimated Value</div>
+												</div>
+											</div>
+											<div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12" name="collateral_documents_instruction">
+												<div class="field-wrapper">
+													<div class="form-text">
+														Please attach any relevant documents related to the collateral (e.g., property title, vehicle registration, etc.).
+													</div>
+												</div>
+											</div>
 										</div>
 									</div>
 								</div>
-							</div>
-						</div>
-						<!-- Row end -->
 
-						<!-- Row start -->
-						<div class="row gutters">
-							<div class="col-xl-4 col-lg-4 col-md-6 col-sm-6 col-12">
-								<div class="goal-container">
-									<div class="goal-info">
-										<h5>Today's Goal</h5>
-										<h6>70/100</h6>
+								<div class="card">
+									<div class="card-header">
+										<div class="card-title">Guarantor Details</div>
 									</div>
-									<div class="goal-graph">
-										<div id="todaysTarget"></div>
-										<div class="circle-one"></div>
-										<div class="circle-two"></div>
+									<div class="card-body">
+										<div class="row gutters">
+											<div class="col-xl-4 col-lg-4 col-md-4 col-sm-4 col-12">
+												<div class="field-wrapper">
+													<input class="form-control" type="text">
+													<div class="field-placeholder">Guarantor's Full Name</div>
+												</div>
+											</div>
+											<div class="col-xl-4 col-lg-4 col-md-4 col-sm-4 col-12">
+												<div class="field-wrapper">
+													<input class="form-control" type="email">
+													<div class="field-placeholder">Guarantor's Email Address</div>
+												</div>
+											</div>
+											<div class="col-xl-4 col-lg-4 col-md-4 col-sm-4 col-12">
+												<div class="field-wrapper">
+													<input class="form-control" type="text">
+													<div class="field-placeholder">Guarantor's Phone Number</div>
+												</div>
+											</div>
+											<div class="col-xl-8 col-lg-8 col-md-8 col-sm-8 col-12">
+												<div class="field-wrapper">
+													<input class="form-control" type="text">
+													<div class="field-placeholder">Guarantor's Residential Address</div>
+												</div>
+											</div>
+											<div class="col-xl-4 col-lg-4 col-md-4 col-sm-4 col-12">
+												<div class="field-wrapper">
+													<input class="form-control" type="text">
+													<div class="field-placeholder">Relationship to Guarantor</div>
+												</div>
+											</div>
+											<div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
+												<div class="field-wrapper">
+													<div class="form-text">
+														Please attach the following documents for the guarantor:
+														<ul>
+															<li>Proof of Identity (e.g., National ID, Passport)</li>
+															<li>Proof of Address (e.g., Utility Bill)</li>
+															<li>Proof of Income (e.g., Payslips, Bank Statements)</li>
+														</ul>
+													</div>
+												</div>
+											</div>
+										</div>
 									</div>
 								</div>
-							</div>							
-							<div class="col-xl-4 col-lg-4 col-md-6 col-sm-6 col-12">
-								<div class="graph-card">
-									<h6>New Customers</h6>
-									<h4>2500</h4>
-									<div class="graph-placeholder">
-										<div id="customersGraph"></div>
-									</div>
-								</div>
-							</div>
-							<div class="col-xl-4 col-lg-4 col-md-12 col-sm-12 col-12">
-								<div class="payments-card">
-									<h6>Balance</h6>
-									<h4>$5699.89</h4>
-									<div class="custom-btn-group mt-2">
-										<button class="btn btn-outline-primary"><i class="icon-credit-card"></i>Deposit</button>
-										<button class="btn btn-primary"><i class="icon-credit-card"></i>Withdraw</button>
-									</div>
-								</div>
+
 							</div>
 						</div>
 						<!-- Row end -->
@@ -910,7 +800,7 @@
 					</div>
 					<!-- Content wrapper end -->
 
-					<!-- App footer start -->
+					<!-- App Footer start -->
 					<div class="app-footer">© Jad Apps and Tech Solutions Limited</div>
 					<!-- App footer end -->
 
