@@ -330,13 +330,7 @@
 							</div>
 							<!-- Sidebar menu ends -->
 
-							<!-- Sidebar actions starts -->
-							<div class="sidebar-actions">
-								<div class="support-tile green">
-									<i class="icon-pie-chart1"></i> 5GB Free Space
-								</div>
-							</div>
-							<!-- Sidebar actions ends -->
+							
 
 						</div>
 
@@ -1264,7 +1258,7 @@
 									<div class="dropdown-menu dropdown-menu-end md" aria-labelledby="userSettings">
 										<div class="header-profile-actions">
 											<a href="user-profile.html"><i class="icon-user1"></i>Profile</a>
-											<a href="account-settings.html"><i class="icon-settings1"></i>Settings</a>
+											<a href="account-settings.html"><i class="icon-settings1"></i>Onboarding</a>
 											<a href="forgot-password.html"><i class="icon-log-out1"></i>Logout</a>
 										</div>
 									</div>
@@ -1356,7 +1350,7 @@
                                                     <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
                                                         <!-- Field wrapper start -->
                                                         <div class="field-wrapper">
-                                                            <input type="text" class="form-control" placeholder="Mcallen">
+                                                            <input type="text" class="form-control" placeholder="Lekki">
                                                             <div class="field-placeholder">City</div>
                                                         </div>
                                                         <!-- Field wrapper end -->
@@ -1364,7 +1358,7 @@
                                                     <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
                                                         <!-- Field wrapper start -->
                                                         <div class="field-wrapper">
-                                                            <input type="text" class="form-control" placeholder="New York">
+                                                            <input type="text" class="form-control" placeholder="Lagos">
                                                             <div class="field-placeholder">State</div>
                                                         </div>
                                                         <!-- Field wrapper end -->

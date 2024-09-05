@@ -330,13 +330,7 @@
 							</div>
 							<!-- Sidebar menu ends -->
 
-							<!-- Sidebar actions starts -->
-							<div class="sidebar-actions">
-								<div class="support-tile green">
-									<i class="icon-pie-chart1"></i> 5GB Free Space
-								</div>
-							</div>
-							<!-- Sidebar actions ends -->
+							
 
 						</div>
 
@@ -1261,7 +1255,7 @@
 									<div class="dropdown-menu dropdown-menu-end md" aria-labelledby="userSettings">
 										<div class="header-profile-actions">
 											<a href="user-profile.html"><i class="icon-user1"></i>Profile</a>
-											<a href="account-settings.html"><i class="icon-settings1"></i>Settings</a>
+											<a href="account-settings.html"><i class="icon-settings1"></i>Onboarding</a>
 											<a href="forgot-password.html"><i class="icon-log-out1"></i>Logout</a>
 										</div>
 									</div>
