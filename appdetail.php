@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="en">
 	
-<!-- Mirrored from www.bootstrapget.com/demos/themeforest/unipro-admin-template/demos/01-design-blue/forms-input-range.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 04 Sep 2024 13:07:04 GMT -->
+<!-- Mirrored from www.bootstrapget.com/demos/themeforest/unipro-admin-template/demos/01-design-blue/orders.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 04 Sep 2024 13:06:11 GMT -->
 <head>
 		<!-- Required meta tags -->
 		<meta charset="utf-8">
@@ -39,12 +39,21 @@
 		<!-- Search Filter JS -->
 		<link rel="stylesheet" href="vendor/search-filter/search-filter.css">
 		<link rel="stylesheet" href="vendor/search-filter/custom-search-filter.css">
-
-		<!-- Rangeslider CSS -->
-		<link rel="stylesheet" href="vendor/range-slider/ion.rangeSlider.css" />
 		
+		<!-- Data Tables -->
+		<link rel="stylesheet" href="vendor/datatables/dataTables.bs4.css" />
+		<link rel="stylesheet" href="vendor/datatables/dataTables.bs4-custom.css" />
+		<link href="vendor/datatables/buttons.bs.css" rel="stylesheet" />
+
 	</head>
 	<body>
+
+		<!-- Loading wrapper start -->
+		<div id="loading-wrapper">
+			<div class="spinner-border"></div>
+			Loading...
+		</div>
+		<!-- Loading wrapper end -->
 
 		<!-- Page wrapper start -->
 		<div class="page-wrapper">
@@ -64,7 +73,7 @@
 							<i class="icon-home2"></i>
 							<span class="nav-link-text">Dashboards</span>
 						</a>
-						<a class="nav-link" id="product-tab" data-bs-toggle="tab" href="#tab-product" role="tab" aria-controls="tab-product" aria-selected="false">
+						<a class="nav-link active" id="product-tab" data-bs-toggle="tab" href="#tab-product" role="tab" aria-controls="tab-product" aria-selected="true">
 							<i class="icon-layers2"></i>
 							<span class="nav-link-text">Product</span>
 						</a>
@@ -72,7 +81,7 @@
 							<i class="icon-book-open"></i>
 							<span class="nav-link-text">Pages</span>
 						</a>
-						<a class="nav-link active" id="forms-tab" data-bs-toggle="tab" href="#tab-forms" role="tab" aria-controls="tab-forms" aria-selected="true">
+						<a class="nav-link" id="forms-tab" data-bs-toggle="tab" href="#tab-forms" role="tab" aria-controls="tab-forms" aria-selected="false">
 							<i class="icon-edit1"></i>
 							<span class="nav-link-text">Forms</span>
 						</a>
@@ -201,7 +210,7 @@
 						</div>
 
 						<!-- Pages tab -->
-						<div class="tab-pane fade" id="tab-product" role="tabpanel" aria-labelledby="product-tab">
+						<div class="tab-pane fade show active" id="tab-product" role="tabpanel" aria-labelledby="product-tab">
 							
 							<!-- Tab content header start -->
 							<div class="tab-pane-header">
@@ -223,7 +232,7 @@
 											<a href="add-product.html">Add Product</a>
 										</li>
 										<li>
-											<a href="orders.html">Orders</a>
+											<a href="orders.html" class="current-page">Orders</a>
 										</li>
 										<li>
 											<a href="customers-list.html">Customers</a>
@@ -338,7 +347,7 @@
 						</div>
 
 						<!-- Forms tab -->
-						<div class="tab-pane fade show active" id="tab-forms" role="tabpanel" aria-labelledby="forms-tab">
+						<div class="tab-pane fade" id="tab-forms" role="tabpanel" aria-labelledby="forms-tab">
 
 							<!-- Tab content header start -->
 							<div class="tab-pane-header">
@@ -400,7 +409,7 @@
 											<a href="forms-input-mask.html">Input Mask</a>
 										</li>
 										<li>
-											<a href="forms-input-range.html" class="current-page">Input Range</a>
+											<a href="forms-input-range.html">Input Range</a>
 										</li>
 										<li>
 											<a href="forms-editor.html">WYSIWYG Editor</a>
@@ -1280,336 +1289,115 @@
 					<div class="content-wrapper">
 
 						<!-- Row start -->
-						<div class="row gutters">
-							<div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
-								
-								<!-- Card start -->
-								<div class="card p-4">
-									<div class="card-body">
-
-										<!--*************************
-										*************************
-										*************************
-										 Range Slider start
-										*************************
-										*************************
-										*************************-->
-
-										<input type="text" id="range_02" name="example_name" value="" />
-
-										<!--*************************
-										*************************
-										*************************
-										 Range Slider end
-										*************************
-										*************************
-										*************************-->
-
-									</div>
-								</div>
-								<!-- Card end -->
-
-							</div>
-							<div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
-								
-								<!-- Card start -->
-								<div class="card p-4">
-									<div class="card-body">
-
-										<!--*************************
-										*************************
-										*************************
-										 Range Slider start
-										*************************
-										*************************
-										*************************-->
-
-										<input type="text" id="range_03" name="example_name" value="" />
-
-										<!--*************************
-										*************************
-										*************************
-										 Range Slider end
-										*************************
-										*************************
-										*************************-->
-
-									</div>
-								</div>
-								<!-- Card end -->
-
-							</div>
-							<div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
-								
-								<!-- Card start -->
-								<div class="card p-4">
-									<div class="card-body">
-
-										<!--*************************
-										*************************
-										*************************
-										 Range Slider start
-										*************************
-										*************************
-										*************************-->
-
-										<input type="text" id="range_04" name="example_name" value="" />
-
-										<!--*************************
-										*************************
-										*************************
-										 Range Slider end
-										*************************
-										*************************
-										*************************-->
-
-									</div>
-								</div>
-								<!-- Card end -->
-
-							</div>
-							<div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
-								
-								<!-- Card start -->
-								<div class="card p-4">
-									<div class="card-body">
-
-										<!--*************************
-										*************************
-										*************************
-										 Range Slider start
-										*************************
-										*************************
-										*************************-->
-
-										<input type="text" id="range_05" name="example_name" value="" />
-
-										<!--*************************
-										*************************
-										*************************
-										 Range Slider end
-										*************************
-										*************************
-										*************************-->
-
-									</div>
-								</div>
-								<!-- Card end -->
-
-							</div>
-							<div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
-								
-								<!-- Card start -->
-								<div class="card p-4">
-									<div class="card-body">
-
-										<!--*************************
-										*************************
-										*************************
-										 Range Slider start
-										*************************
-										*************************
-										*************************-->
-
-										<input type="text" id="range_06" name="example_name" value="" />
-
-										<!--*************************
-										*************************
-										*************************
-										 Range Slider end
-										*************************
-										*************************
-										*************************-->
-
-									</div>
-								</div>
-								<!-- Card end -->
-
-							</div>
-							<div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
-								
-								<!-- Card start -->
-								<div class="card p-4">
-									<div class="card-body">
-
-										<!--*************************
-										*************************
-										*************************
-										 Range Slider start
-										*************************
-										*************************
-										*************************-->
-
-										<input type="text" id="range_08" name="example_name" value="" />
-
-										<!--*************************
-										*************************
-										*************************
-										 Range Slider end
-										*************************
-										*************************
-										*************************-->
-
-									</div>
-								</div>
-								<!-- Card end -->
-
-							</div>
-							<div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
-								
-								<!-- Card start -->
-								<div class="card p-4">
-									<div class="card-body">
-
-										<!--*************************
-										*************************
-										*************************
-										 Range Slider start
-										*************************
-										*************************
-										*************************-->
-
-										<input type="text" id="range_09" name="example_name" value="" />
-
-										<!--*************************
-										*************************
-										*************************
-										 Range Slider end
-										*************************
-										*************************
-										*************************-->
-
-									</div>
-								</div>
-								<!-- Card end -->
-
-							</div>
-							
-							<div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
-								
-								<!-- Card start -->
-								<div class="card p-4">
-									<div class="card-body">
-
-										<!--*************************
-										*************************
-										*************************
-										 Range Slider start
-										*************************
-										*************************
-										*************************-->
-
-										<input type="text" id="range_15" name="example_name" value="" />
-
-										<!--*************************
-										*************************
-										*************************
-										 Range Slider end
-										*************************
-										*************************
-										*************************-->
-
-									</div>
-								</div>
-								<!-- Card end -->
-
-							</div>
-							<div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
-								
-								<!-- Card start -->
-								<div class="card p-4">
-									<div class="card-body">
-
-										<!--*************************
-										*************************
-										*************************
-										 Range Slider start
-										*************************
-										*************************
-										*************************-->
-
-										<input type="text" id="range_16" name="example_name" value="" />
-
-										<!--*************************
-										*************************
-										*************************
-										 Range Slider end
-										*************************
-										*************************
-										*************************-->
-
-									</div>
-								</div>
-								<!-- Card end -->
-
-							</div>
-
-							<div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
-								
-								<!-- Card start -->
-								<div class="card p-4">
-									<div class="card-body">
-
-										<!--*************************
-										*************************
-										*************************
-										 Range Slider start
-										*************************
-										*************************
-										*************************-->
-
-										<input type="text" id="range_19" name="example_name" value="" />
-
-										<!--*************************
-										*************************
-										*************************
-										 Range Slider end
-										*************************
-										*************************
-										*************************-->
-
-									</div>
-								</div>
-								<!-- Card end -->
-
-							</div>
-							<div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
-								
-								<!-- Card start -->
-								<div class="card p-4">
-									<div class="card-body">
-
-										<!--*************************
-										*************************
-										*************************
-										 Range Slider start
-										*************************
-										*************************
-										*************************-->
-
-										<input type="text" id="range_20" name="example_name" value="" />
-
-										<!--*************************
-										*************************
-										*************************
-										 Range Slider end
-										*************************
-										*************************
-										*************************-->
-
-									</div>
-								</div>
-								<!-- Card end -->
-
-							</div>
-						</div>
-						<!-- Row end -->
+<div class="row gutters">
+    <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
+        <div class="card">
+            <div class="card-body">
+                <div class="table-responsive">
+                    <table id="copy-print-csv" class="table v-middle">
+                        <thead>
+                            <tr>
+                                <th>User ID</th>
+                                <th>Application Date</th>
+                                <th>Loan Amount</th>
+                                <th>Application Status</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>FLM00435</td>
+                                <td>2020/09/21</td>
+                                <td>$46.00</td>
+                                <td>
+                                    <span class="badge bg-danger">Declined</span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>FLM00878</td>
+                                <td>2020/10/25</td>
+                                <td>$87.00</td>
+                                <td>
+                                    <span class="badge bg-info">Approved</span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>FLM00370</td>
+                                <td>2020/10/30</td>
+                                <td>$65.00</td>
+                                <td>
+                                    <span class="badge bg-success">Approved</span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>FLM00983</td>
+                                <td>2020/10/10</td>
+                                <td>$55.00</td>
+                                <td>
+                                    <span class="badge bg-info">Approved</span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>FLM00760</td>
+                                <td>2020/10/15</td>
+                                <td>$74.00</td>
+                                <td>
+                                    <span class="badge bg-info">Approved</span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>FLM00435</td>
+                                <td>2020/10/12</td>
+                                <td>$88.00</td>
+                                <td>
+                                    <span class="badge bg-danger">Declined</span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>FLM00878</td>
+                                <td>2020/10/11</td>
+                                <td>$87.00</td>
+                                <td>
+                                    <span class="badge bg-info">Approved</span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>FLM00435</td>
+                                <td>2020/09/21</td>
+                                <td>$46.00</td>
+                                <td>
+                                    <span class="badge bg-danger">Declined</span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>FLM00878</td>
+                                <td>2020/10/25</td>
+                                <td>$87.00</td>
+                                <td>
+                                    <span class="badge bg-info">Approved</span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>FLM00370</td>
+                                <td>2020/10/30</td>
+                                <td>$65.00</td>
+                                <td>
+                                    <span class="badge bg-success">Approved</span>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Row end -->
 
 					</div>
 					<!-- Content wrapper end -->
 
-					<!-- App Footer start -->
-					<div class="app-footer">© Jad Apps and Tech Solutions Limited</div>
+					<!-- App footer start -->
+					<div class="app-footer">© Uni Pro Admin 2021</div>
 					<!-- App footer end -->
 
 				</div>
@@ -1648,14 +1436,25 @@
 		<script src="vendor/search-filter/search-filter.js"></script>
 		<script src="vendor/search-filter/custom-search-filter.js"></script>
 
-		<!-- Range Slider JS -->
-		<script src="vendor/range-slider/ion.rangeSlider.min.js"></script>
-		<script src="vendor/range-slider/rangeSlider-custom.js"></script>
+		<!-- Data Tables -->
+		<script src="vendor/datatables/dataTables.min.js"></script>
+		<script src="vendor/datatables/dataTables.bootstrap.min.js"></script>
+		
+		<!-- Custom Data tables -->
+		<script src="vendor/datatables/custom/custom-datatables.js"></script>
+
+		<!-- Download / CSV / Copy / Print -->
+		<script src="vendor/datatables/buttons.min.js"></script>
+		<script src="vendor/datatables/jszip.min.js"></script>
+		<script src="vendor/datatables/pdfmake.min.js"></script>
+		<script src="vendor/datatables/vfs_fonts.js"></script>
+		<script src="vendor/datatables/html5.min.js"></script>
+		<script src="vendor/datatables/buttons.print.min.js"></script>		
 
 		<!-- Main Js Required -->
 		<script src="js/main.js"></script>
 
 	</body>
 
-<!-- Mirrored from www.bootstrapget.com/demos/themeforest/unipro-admin-template/demos/01-design-blue/forms-input-range.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 04 Sep 2024 13:07:07 GMT -->
+<!-- Mirrored from www.bootstrapget.com/demos/themeforest/unipro-admin-template/demos/01-design-blue/orders.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 04 Sep 2024 13:06:18 GMT -->
 </html>
