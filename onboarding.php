@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="en">
 	
-<!-- Mirrored from www.bootstrapget.com/demos/themeforest/unipro-admin-template/demos/01-design-blue/tasks.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 04 Sep 2024 13:06:42 GMT -->
+<!-- Mirrored from www.bootstrapget.com/demos/themeforest/unipro-admin-template/demos/01-design-blue/account-settings.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 04 Sep 2024 13:06:59 GMT -->
 <head>
 		<!-- Required meta tags -->
 		<meta charset="utf-8">
@@ -40,12 +40,12 @@
 		<link rel="stylesheet" href="vendor/search-filter/search-filter.css">
 		<link rel="stylesheet" href="vendor/search-filter/custom-search-filter.css">
 
-		<!-- Bootstrap Select CSS -->
-		<link rel="stylesheet" href="vendor/bs-select/bs-select.css" />
-		
-		<!-- Date Range CSS -->
-		<link rel="stylesheet" href="vendor/daterange/daterange.css">
+		<!-- Uploader CSS -->
+		<link rel="stylesheet" href="vendor/dropzone/dropzone.min.css" />
 
+        <!-- Bootstrap Select CSS -->
+        <link rel="stylesheet" href="vendor/bs-select/bs-select.css" />
+		
 	</head>
 	<body>
 
@@ -284,7 +284,7 @@
 											<a href="chat.html">Chat</a>
 										</li>
 										<li>
-											<a href="tasks.html" class="current-page">Applications</a>
+											<a href="tasks.html">Tasks</a>
 										</li>
 										<li>
 											<a href="create-invoice.html">Create Invoice</a>
@@ -320,7 +320,7 @@
 											<a href="search-results.html">Search Results</a>
 										</li>
 										<li>
-											<a href="account-settings.html">Account Settings</a>
+											<a href="account-settings.html" class="current-page">Account Settings</a>
                                         </li>
                                         <li>
 											<a href="user-profile.html">User Profile</a>
@@ -330,13 +330,7 @@
 							</div>
 							<!-- Sidebar menu ends -->
 
-							<!-- Sidebar actions starts -->
-							<div class="sidebar-actions">
-								<div class="support-tile green">
-									<i class="icon-pie-chart1"></i> 5GB Free Space
-								</div>
-							</div>
-							<!-- Sidebar actions ends -->
+							
 
 						</div>
 
@@ -987,6 +981,9 @@
 																<a href="account-settings.html">Account Settings</a>
 															</li>
 															<li>
+																<a href="user-onboarding.html">User Onboarding</a>
+															</li>
+															<li>
 																<a href="user-profile.html">User Profile</a>
 															</li>
 														</ul>
@@ -1261,7 +1258,7 @@
 									<div class="dropdown-menu dropdown-menu-end md" aria-labelledby="userSettings">
 										<div class="header-profile-actions">
 											<a href="user-profile.html"><i class="icon-user1"></i>Profile</a>
-											<a href="account-settings.html"><i class="icon-settings1"></i>Settings</a>
+											<a href="account-settings.html"><i class="icon-settings1"></i>Onboarding</a>
 											<a href="forgot-password.html"><i class="icon-log-out1"></i>Logout</a>
 										</div>
 									</div>
@@ -1286,367 +1283,138 @@
 						<div class="row gutters">
 							<div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
 
-								<!-- Task section start -->
-								<div class="tasks-section">
-
-									<!-- Labels container start -->
-									<div class="labels-container">
-										<div class="lablesContainerScroll">
-											<div class="filters-block">
-												<h5>Filters</h5>
-												<div class="filters">
-													<a href="#" class="active">
-														<i class="icon-receipt"></i> All
-													</a>
-													<a href="#">
-														<i class="icon-error"></i> Approved
-													</a>
-													<a href="#">
-														<i class="icon-erro"></i> &nbsp;  &nbsp;  Declined
-													</a>
-												</div>
-											</div>
-																							
-										</div>
+								<!-- Card start -->
+								<div class="card">
+									<div class="card-header-lg">
+										<h4>Account Settings</h4>
 									</div>
-									<!-- Labels container end -->
+									<div class="card-body">
 
-									<!-- Tasks container start -->
-									<div class="tasks-container">
-										<div class="modal fade" id="addNewTask" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="addNewDocumentLabel" aria-hidden="true">
-											<div class="modal-dialog" role="document">
-												<div class="modal-content">
-													<div class="modal-header">
-														<h5 class="modal-title" id="addNewDocumentLabel">Add Document</h5>
-														<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
-															<span aria-hidden="true"></span>
-														</button>
-													</div>
-													<div class="modal-body">
-														<form class="row gutters">
-															<div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
-																<!-- Field wrapper start -->
-																<div class="field-wrapper">
-																	<input type="text" class="form-control">
-																	<div class="field-placeholder">Task Title</div>
-																</div>
-																<!-- Field wrapper end -->
-															</div>
-															<div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
-																<!-- Field wrapper start -->
-																<div class="field-wrapper">
-																	<select class="select-single js-states" title="Select Product Category" data-live-search="true">
-																		<option>Design</option>
-																		<option>Backend</option>
-																		<option>Testing</option>
-																		<option>UI Development</option>
-																		<option>CSS</option>
-																	</select>
-																	<div class="field-placeholder">Task Type</div>
-																</div>
-																<!-- Field wrapper end -->
-															</div>
-															<div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
-																<!-- Field wrapper start -->
-																<div class="field-wrapper">
-																	<div class="input-group">
-																		<input type="text" class="form-control datepicker-opens-left">
-																		<span class="input-group-text">
-																			<i class="icon-calendar1"></i>
-																		</span>
-																	</div>
-																	<div class="field-placeholder">Start Date</div>
-																</div>
-																<!-- Field wrapper end -->
-															</div>
-															<div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
-																<!-- Field wrapper start -->
-																<div class="field-wrapper">
-																	<div class="input-group">
-																		<input type="text" class="form-control datepicker-opens-left">
-																		<span class="input-group-text">
-																			<i class="icon-calendar1"></i>
-																		</span>
-																	</div>
-																	<div class="field-placeholder">End Date</div>
-																</div>
-																<!-- Field wrapper end -->
-															</div>
-															<div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
-																<!-- Field wrapper start -->
-																<div class="field-wrapper m-0">
-																	<textarea class="form-control" rows="3"></textarea>
-																	<div class="field-placeholder">Task Details</div>
-																</div>
-																<!-- Field wrapper end -->
-															</div>
-														</form>
-													</div>
-													<div class="modal-footer">
-														<button type="button" class="btn btn-light" data-bs-dismiss="modal">Close</button>
-														<button type="button" class="btn btn-primary" data-bs-dismiss="modal">Create Task</button>
-													</div>
-												</div>
+                                        <div class="row gutters">
+                                            <div class="col-xl-8 col-lg-8 col-md-12 col-sm-12 col-12">
+                                                <div class="row gutters">
+                                                    <div class="col-xl-4 col-lg-4 col-md-4 col-sm-4 col-12">
+                                                        <img src="img/user1.png" class="img-fluid change-img-avatar" alt="Image">
+                                                    </div>
+                                                    <div class="col-xl-8 col-lg-8 col-md-8 col-sm-8 col-12">
+                                                        <div id="dropzone-sm" class="mb-4">
+                                                            <form action="https://www.bootstrapget.com/upload" class="dropzone needsclick dz-clickable" id="demo-upload">
+
+                                                                <div class="dz-message needsclick">
+                                                                    <button type="button" class="dz-button">Change Image.</button>
+                                                                </div>
+
+                                                            </form>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
+                                                        <!-- Field wrapper start -->
+                                                        <div class="field-wrapper">
+                                                            <input type="text" class="form-control" placeholder="Abigail">
+                                                            <div class="field-placeholder">First  Name</div>
+                                                        </div>
+                                                        <!-- Field wrapper end -->
+                                                    </div>
+                                                    <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
+                                                        <!-- Field wrapper start -->
+                                                        <div class="field-wrapper">
+                                                            <input type="text" class="form-control" placeholder="Winter">
+                                                            <div class="field-placeholder">Last  Name</div>
+                                                        </div>
+                                                        <!-- Field wrapper end -->
+                                                    </div>
+                                                    <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
+                                                        <!-- Field wrapper start -->
+                                                        <div class="field-wrapper">
+                                                            <input type="text" class="form-control" placeholder="abigail.winter786@wmail.com">
+                                                            <div class="field-placeholder">Email</div>
+                                                        </div>
+                                                        <!-- Field wrapper end -->
+                                                    </div>
+                                                    <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
+                                                        <!-- Field wrapper start -->
+                                                        <div class="field-wrapper">
+                                                            <input type="text" class="form-control" placeholder="123-456-7890">
+                                                            <div class="field-placeholder">Phone</div>
+                                                        </div>
+                                                        <!-- Field wrapper end -->
+                                                    </div>
+                                                    <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
+                                                        <!-- Field wrapper start -->
+                                                        <div class="field-wrapper">
+                                                            <input type="text" class="form-control" placeholder="1980 Walnut Street">
+                                                            <div class="field-placeholder">Address</div>
+                                                        </div>
+                                                        <!-- Field wrapper end -->
+                                                    </div>
+                                                    <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
+                                                        <!-- Field wrapper start -->
+                                                        <div class="field-wrapper">
+                                                            <input type="text" class="form-control" placeholder="Lekki">
+                                                            <div class="field-placeholder">City</div>
+                                                        </div>
+                                                        <!-- Field wrapper end -->
+                                                    </div>
+                                                    <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
+                                                        <!-- Field wrapper start -->
+                                                        <div class="field-wrapper">
+                                                            <input type="text" class="form-control" placeholder="Lagos">
+                                                            <div class="field-placeholder">State</div>
+                                                        </div>
+                                                        <!-- Field wrapper end -->
+                                                    </div>
+                                                    <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
+                                                        <!-- Field wrapper start -->
+                                                        <div class="field-wrapper">
+                                                            <input type="text" class="form-control" placeholder="11789">
+                                                            <div class="field-placeholder">Zip Code</div>
+                                                        </div>
+                                                        <!-- Field wrapper end -->
+                                                    </div>
+                                                    <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
+                                                        <!-- Field wrapper start -->
+                                                        <div class="field-wrapper">
+															<select class="select-single js-states" title="Select Product Category" data-live-search="true">
+																<option>United States</option>
+																<option>Australia</option>
+																<option>Canada</option>
+																<option>Gremany</option>
+																<option>India</option>
+																<option>Japan</option>
+																<option>England</option>
+																<option>Brazil</option>
+															</select>
+															<div class="field-placeholder">Country</div>
+														</div>
+                                                        <!-- Field wrapper end -->
+                                                    </div>
+                                                    <div class="col-xl-12 col-lg-12 col-md-6 col-sm-6 col-12">
+                                                        <!-- Field wrapper start -->
+                                                        <div class="field-wrapper">
+                                                            <input type="password" class="form-control" placeholder="Enter Password">
+                                                            <div class="field-placeholder">Password</div>
+                                                        </div>
+																												<div class="dz-message needsclick">
+                                                                    <button style="width:264px; height:120px; border-color: #d6d6d6; border-style: solid;
+																																		 border-width:0.5px; border-radius: 6px; margin-right: 20px; margin-bottom: 20px;
+																																		 background:white;  "
+																																		 type="button" class="dz-button">Upload NIN Slip</button>
+                                                                </div>
+                                                        <!-- Field wrapper end -->
+																												<div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
+												<button class="btn btn-primary mb-3">Save Settings</button>
 											</div>
-										</div>
-										<div class="tasks-header">
-											<h3>Today <span class="date" id="todays-date"></span></h3>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-xl-4 col-lg-4 col-md-12 col-sm-12 col-12">
+                                                
 											
-<select id="filterDropdown">
-  <option value="all">Date</option>
-  <option value="fruits">Loan amount</option>
-  <option value="vegetables">Alphabetically</option>
-</select>
-
-</ul>
-										</div>
-										<div class="tasksContainerScroll">
-											<!-- Row start -->
-											<div class="row no-gutters justify-content-center">
-												<div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
-													<section class="task-list">
-														<h6 class="m-0 h-0">&nbsp;</h6>
-														<!-- Task #1 -->
-														<div class="task-block">
-															<div class="task-checkbox">
-																<input type="checkbox" name="task_00">
-																<div class="ripple-container">
-																	<div class="check-off"></div>
-																	<div class="check-on">
-																		<i class="icon-check1"></i>
-																	</div>
-																</div>
-															</div>
-															<div class="task-details">
-																<div class="task-name">Musa Okonkwo</div>
-																<div class="task-desc">Application for a loan of 5 million naira (N5,000,000)</div>
-																<div class="task-desc"><strong>Duration:</strong> 8 Weeks</div>
-																<div class="task-types">
-																	<span class="badge bg-warning">Veiw Profile</span>
-																	<span class="badge bg-success">Check Documents</span>
-																</div>
-															</div>
-															
-														</div>
-
-														<!-- Task #1 -->
-														<div class="task-block">
-															<div class="task-checkbox">
-																<input type="checkbox" name="task_00">
-																<div class="ripple-container">
-																	<div class="check-off"></div>
-																	<div class="check-on">
-																		<i class="icon-check1"></i>
-																	</div>
-																</div>
-															</div>
-															<div class="task-details">
-																<div class="task-name">Musa Okonkwo</div>
-																<div class="task-desc">Application for a loan of 5 million naira (N5,000,000)</div>
-																<div class="task-desc"><strong>Duration:</strong> 8 Weeks</div>
-																<div class="task-types">
-																	<span class="badge bg-warning">Veiw Profile</span>
-																	<span class="badge bg-success">Check Documents</span>
-																</div>
-															</div>
-															
-														</div>
-
-														<!-- Task #1 -->
-														<div class="task-block">
-															<div class="task-checkbox">
-																<input type="checkbox" name="task_00">
-																<div class="ripple-container">
-																	<div class="check-off"></div>
-																	<div class="check-on">
-																		<i class="icon-check1"></i>
-																	</div>
-																</div>
-															</div>
-															<div class="task-details">
-																<div class="task-name">Musa Okonkwo</div>
-																<div class="task-desc">Application for a loan of 5 million naira (N5,000,000)</div>
-																<div class="task-desc"><strong>Duration:</strong> 8 Weeks</div>
-																<div class="task-types">
-																	<span class="badge bg-warning">Veiw Profile</span>
-																	<span class="badge bg-success">Check Documents</span>
-																</div>
-															</div>
-															
-														</div>
-
-														<!-- Task #1 -->
-														<div class="task-block">
-															<div class="task-checkbox">
-																<input type="checkbox" name="task_00">
-																<div class="ripple-container">
-																	<div class="check-off"></div>
-																	<div class="check-on">
-																		<i class="icon-check1"></i>
-																	</div>
-																</div>
-															</div>
-															<div class="task-details">
-																<div class="task-name">Musa Okonkwo</div>
-																<div class="task-desc">Application for a loan of 5 million naira (N5,000,000)</div>
-																<div class="task-desc"><strong>Duration:</strong> 8 Weeks</div>
-																<div class="task-types">
-																	<span class="badge bg-warning">Veiw Profile</span>
-																	<span class="badge bg-success">Check Documents</span>
-																</div>
-															</div>
-															
-														</div>
-
-														<!-- Task #1 -->
-														<div class="task-block">
-															<div class="task-checkbox">
-																<input type="checkbox" name="task_00">
-																<div class="ripple-container">
-																	<div class="check-off"></div>
-																	<div class="check-on">
-																		<i class="icon-check1"></i>
-																	</div>
-																</div>
-															</div>
-															<div class="task-details">
-																<div class="task-name">Musa Okonkwo</div>
-																<div class="task-desc">Application for a loan of 5 million naira (N5,000,000)</div>
-																<div class="task-desc"><strong>Duration:</strong> 8 Weeks</div>
-																<div class="task-types">
-																	<span class="badge bg-warning">Veiw Profile</span>
-																	<span class="badge bg-success">Check Documents</span>
-																</div>
-															</div>
-															
-														</div>
-
-														<!-- Task #1 -->
-														<div class="task-block">
-															<div class="task-checkbox">
-																<input type="checkbox" name="task_00">
-																<div class="ripple-container">
-																	<div class="check-off"></div>
-																	<div class="check-on">
-																		<i class="icon-check1"></i>
-																	</div>
-																</div>
-															</div>
-															<div class="task-details">
-																<div class="task-name">Musa Okonkwo</div>
-																<div class="task-desc">Application for a loan of 5 million naira (N5,000,000)</div>
-																<div class="task-desc"><strong>Duration:</strong> 8 Weeks</div>
-																<div class="task-types">
-																	<span class="badge bg-warning">Veiw Profile</span>
-																	<span class="badge bg-success">Check Documents</span>
-																</div>
-															</div>
-															
-														</div>
-
-														<!-- Task #1 -->
-														<div class="task-block">
-															<div class="task-checkbox">
-																<input type="checkbox" name="task_00">
-																<div class="ripple-container">
-																	<div class="check-off"></div>
-																	<div class="check-on">
-																		<i class="icon-check1"></i>
-																	</div>
-																</div>
-															</div>
-															<div class="task-details">
-																<div class="task-name">Musa Okonkwo</div>
-																<div class="task-desc">Application for a loan of 5 million naira (N5,000,000)</div>
-																<div class="task-desc"><strong>Duration:</strong> 8 Weeks</div>
-																<div class="task-types">
-																	<span class="badge bg-warning">Veiw Profile</span>
-																	<span class="badge bg-success">Check Documents</span>
-																</div>
-															</div>
-															
-														</div>
-
-														<!-- Task #1 -->
-														<div class="task-block">
-															<div class="task-checkbox">
-																<input type="checkbox" name="task_00">
-																<div class="ripple-container">
-																	<div class="check-off"></div>
-																	<div class="check-on">
-																		<i class="icon-check1"></i>
-																	</div>
-																</div>
-															</div>
-															<div class="task-details">
-																<div class="task-name">Musa Okonkwo</div>
-																<div class="task-desc">Application for a loan of 5 million naira (N5,000,000)</div>
-																<div class="task-desc"><strong>Duration:</strong> 8 Weeks</div>
-																<div class="task-types">
-																	<span class="badge bg-warning">Veiw Profile</span>
-																	<span class="badge bg-success">Check Documents</span>
-																</div>
-															</div>
-															
-														</div>
-
-														<!-- Task #1 -->
-														<div class="task-block">
-															<div class="task-checkbox">
-																<input type="checkbox" name="task_00">
-																<div class="ripple-container">
-																	<div class="check-off"></div>
-																	<div class="check-on">
-																		<i class="icon-check1"></i>
-																	</div>
-																</div>
-															</div>
-															<div class="task-details">
-																<div class="task-name">Musa Okonkwo</div>
-																<div class="task-desc">Application for a loan of 5 million naira (N5,000,000)</div>
-																<div class="task-desc"><strong>Duration:</strong> 8 Weeks</div>
-																<div class="task-types">
-																	<span class="badge bg-warning">Veiw Profile</span>
-																	<span class="badge bg-success">Check Documents</span>
-																</div>
-															</div>
-															
-														</div>
-
-														<!-- Task #1 -->
-														<div class="task-block">
-															<div class="task-checkbox">
-																<input type="checkbox" name="task_00">
-																<div class="ripple-container">
-																	<div class="check-off"></div>
-																	<div class="check-on">
-																		<i class="icon-check1"></i>
-																	</div>
-																</div>
-															</div>
-															<div class="task-details">
-																<div class="task-name">Musa Okonkwo</div>
-																<div class="task-desc">Application for a loan of 5 million naira (N5,000,000)</div>
-																<div class="task-desc"><strong>Duration:</strong> 8 Weeks</div>
-																<div class="task-types">
-																	<span class="badge bg-warning">Veiw Profile</span>
-																	<span class="badge bg-success">Check Documents</span>
-																</div>
-															</div>
-															
-														</div>
-
-														
-													</section>
-												</div>
-											</div>
-											<!-- Row end -->
-										</div>
+                                        </div>
+										
 									</div>
-									<!-- Tasks container end -->
-
 								</div>
-								<!-- Task section end -->
+								<!-- Card end -->
 
 							</div>
 						</div>
@@ -1695,18 +1463,17 @@
 		<script src="vendor/search-filter/search-filter.js"></script>
 		<script src="vendor/search-filter/custom-search-filter.js"></script>
 
-		<!-- Bootstrap Select JS -->
+		<!-- Dropzone JS -->
+		<script src="vendor/dropzone/dropzone.min.js"></script>
+
+        <!-- Bootstrap Select JS -->
 		<script src="vendor/bs-select/bs-select.min.js"></script>
-		<script src="vendor/bs-select/bs-select-custom.js"></script>
-
-		<!-- Date Range JS -->
-		<script src="vendor/daterange/daterange.js"></script>
-		<script src="vendor/daterange/custom-daterange.js"></script>
-
+        <script src="vendor/bs-select/bs-select-custom.js"></script>
+        
 		<!-- Main Js Required -->
 		<script src="js/main.js"></script>
 
 	</body>
 
-<!-- Mirrored from www.bootstrapget.com/demos/themeforest/unipro-admin-template/demos/01-design-blue/tasks.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 04 Sep 2024 13:06:42 GMT -->
+<!-- Mirrored from www.bootstrapget.com/demos/themeforest/unipro-admin-template/demos/01-design-blue/account-settings.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 04 Sep 2024 13:06:59 GMT -->
 </html>
