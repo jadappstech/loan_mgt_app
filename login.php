@@ -1,123 +1,175 @@
 <!doctype html>
 <html lang="en">
-	
-<!-- Mirrored from www.bootstrapget.com/demos/themeforest/unipro-admin-template/demos/01-design-blue/login.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 04 Sep 2024 13:07:47 GMT -->
 <head>
-		<!-- Required meta tags -->
-		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-		<!-- Meta -->
-		<meta name="description" content="UniPro App">
-		<meta name="author" content="ParkerThemes">
-		<link rel="shortcut icon" href="img/fav.png" />
+    <!-- Meta -->
+    <meta name="description" content="UniPro App">
+    <meta name="author" content="ParkerThemes">
+    <link rel="shortcut icon" href="karolan.jpg" />
 
-		<!-- Title -->
-		<title>UniPro Login</title>
+    <!-- Title -->
+    <title>UniPro Login</title>
 
+    <!-- Bootstrap css -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
 
-		<!-- *************
-			************ Common Css Files *************
-		************ -->
-		<!-- Bootstrap css -->
-		<link rel="stylesheet" href="css/bootstrap.min.css">
-		
-		<!-- Main css -->
-		<link rel="stylesheet" href="css/main.css">
+    <!-- Main css -->
+    <link rel="stylesheet" href="css/main.css">
 
+    <!-- Custom Styles -->
+    <style>
+        body.authentication {
+            background: url('new-background.jpg') no-repeat center center fixed;
+            background-size: cover;
+            font-family: 'Arial', sans-serif;
+            color: #fff;
+            margin: 0;
+            padding: 0;
+        }
 
-		<!-- *************
-			************ Vendor Css Files *************
-		************ -->
+        .login-container {
+            display: flex;
+            height: 100vh;
+            width: 100vw;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+            box-sizing: border-box;
+        }
 
-	</head>
-	<body class="authentication">
+        .login-left {
+            background: rgba(255, 255, 255, 0.9);
+            padding: 50px;
+            width: 55%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 90vh;
+            box-sizing: border-box;
+        }
 
-		<!-- Loading wrapper start -->
-		<div id="loading-wrapper">
-			<div class="spinner-border"></div>
-			Loading...
-		</div>
-		<!-- Loading wrapper end -->
+        .login-wrapper {
+            width: 100%;
+            max-width: 450px;
+            border: none;
+        }
 
-		<!-- *************
-			************ Login container start *************
-		************* -->
-		<div class="login-container">
+        .login-left h6 {
+            color: #333;
+            font-weight: bold;
+            margin-bottom: 30px;
+        }
 
-			<div class="container-fluid h-100">
+        .field-wrapper input {
+            border: none;
+            border-radius: 4px;
+            padding: 12px;
+            width: 100%;
+            font-size: 16px;
+            margin-bottom: 20px;
+            background-color: #f1f1f1;
+        }
 
-			<!-- Row start -->
-			<div class="row g-0 h-100">
-				<div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12">
-					<div class="login-about">
-						<div class="slogan">
-							<span>Design</span>
-							<span>Made</span>
-							<span>Simple.</span>
-						</div>
-						<div class="about-desc">
-							UniPro a data dashboard is an information management tool that visually tracks, analyzes and displays key performance indicators (KPI), metrics and key data points to monitor the health of a business, department or specific process.
-						</div>
-						<a href="crm.html" class="know-more">Know More <img src="img/right-arrow.svg" alt="Uni Pro Admin"></a>
+        .field-placeholder {
+            position: absolute;
+            top: -10px;
+            left: 15px;
+            background: #fff;
+            padding: 0 5px;
+            font-size: 12px;
+            color: #aaa;
+        }
 
-					</div>
-				</div>
-				<div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12">
-					<div class="login-wrapper">
-						<form action="https://www.bootstrapget.com/demos/themeforest/unipro-admin-template/demos/01-design-blue/crm.html">
-							<div class="login-screen">
-								<div class="login-body">
-									<a href="crm.html" class="login-logo">
-										<img src="img/logo.svg" alt="iChat">
-									</a>
-									<h6>Welcome back,<br>Please login to your account.</h6>
-									<div class="field-wrapper">
-										<input type="email" autofocus>
-										<div class="field-placeholder">Email ID</div>
-									</div>
-									<div class="field-wrapper mb-3">
-										<input type="password">
-										<div class="field-placeholder">Password</div>
-									</div>
-									<div class="actions">
-										<a href="forgot-password.html">Forgot password?</a>
-										<button type="submit" class="btn btn-primary">Login</button>
-									</div>
-								</div>
-								<div class="login-footer">
-									<span class="additional-link">No Account? <a href="signup.html" class="btn btn-light">Sign Up</a></span>
-								</div>
-							</div>
-						</form>
-					</div>
-				</div>
-			</div>
-			<!-- Row end -->
-		
-			</div>
-		</div>
-		<!-- *************
-			************ Login container end *************
-		************* -->
+        .actions .btn-primary {
+            background-color: #007bff;
+            border-color: #007bff;
+            width: 100%;
+            padding: 12px;
+            font-size: 16px;
+        }
 
-		<!-- *************
-			************ Required JavaScript Files *************
-		************* -->
-		<!-- Required jQuery first, then Bootstrap Bundle JS -->
-		<script src="js/jquery.min.js"></script>
-		<script src="js/bootstrap.bundle.min.js"></script>
-		<script src="js/modernizr.js"></script>
-		<script src="js/moment.js"></script>
-		
-		<!-- *************
-			************ Vendor Js Files *************
-		************* -->
+        .actions a {
+            color: #007bff;
+            font-size: 14px;
+            margin-top: 10px;
+        }
 
-		<!-- Main Js Required -->
-		<script src="js/main.js"></script>
+        .login-footer {
+            text-align: center;
+            margin-top: 20px;
+        }
 
-	</body>
+        .additional-link {
+            color: #333;
+        }
 
-<!-- Mirrored from www.bootstrapget.com/demos/themeforest/unipro-admin-template/demos/01-design-blue/login.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 04 Sep 2024 13:07:48 GMT -->
+        .additional-link a {
+            color: #007bff;
+            font-weight: bold;
+        }
+
+        .login-right {
+            background: url('karolan.jpg') no-repeat center center;
+            background-size: cover;
+            width: 45%;
+            height: 90vh;
+            box-sizing: border-box;
+        }
+    </style>
+</head>
+
+<body class="authentication">
+
+    <!-- Loading wrapper start -->
+    <div id="loading-wrapper">
+        <div class="spinner-border"></div>
+        Loading...
+    </div>
+    <!-- Loading wrapper end -->
+
+    <!-- Login container start -->
+    <div class="login-container">
+        <div class="login-left">
+            <div class="login-wrapper">
+                <form action="https://www.bootstrapget.com/demos/themeforest/unipro-admin-template/demos/01-design-blue/crm.html">
+                    <div class="login-screen">
+                        <div class="login-body">
+                            <h6>Welcome back,<br>Please login to your account.</h6>
+                            <div class="field-wrapper">
+                                <input type="email" autofocus>
+                                <div class="field-placeholder">Email ID</div>
+                            </div>
+                            <div class="field-wrapper mb-3">
+                                <input type="password">
+                                <div class="field-placeholder">Password</div>
+                            </div>
+                            <div class="actions">
+                                <a href="forgot-password.html">Forgot password?</a>
+                                <button type="submit" class="btn btn-primary">Login</button>
+                            </div>
+                        </div>
+                        <div class="login-footer">
+                            <span class="additional-link">No Account? <a href="signup.html" class="btn btn-light">Sign Up</a></span>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div class="login-right"></div>
+    </div>
+    <!-- Login container end -->
+
+    <!-- Required JavaScript Files -->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/modernizr.js"></script>
+    <script src="js/moment.js"></script>
+
+    <!-- Main Js Required -->
+    <script src="js/main.js"></script>
+
+</body>
 </html>

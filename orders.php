@@ -1289,225 +1289,109 @@
 					<div class="content-wrapper">
 
 						<!-- Row start -->
-						<div class="row gutters">
-							<div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
-								
-								<div class="card">
-									<div class="card-body">
-										
-										<div class="table-responsive">
-											<table id="copy-print-csv" class="table v-middle">
-												<thead>
-													<tr>
-													  <th>Order</th>
-													  <th>User ID</th>
-													  <th>Purchase Date</th>
-													  <th>Amount</th>
-													  <th>Payment Status</th>
-													  <th>Order Status</th>
-													</tr>
-												</thead>
-												<tbody>
-													<tr>
-													  <td>
-													  	<div class="media-box">
-													  		<img src="img/products/ring.jpg" class="media-avatar" alt="Products">
-													  		<div class="media-box-body">
-													  			<a href="#" class="text-truncate">Ring</a>
-													  		</div>
-													  	</div>
-													  </td>
-													  <td>FLM00435</td>
-													  <td>2020/09/21</td>
-													  <td>$46.00</td>
-													  <td>
-													  	<span class="text-danger"><i class="icon-x-circle"></i> Failed</span>
-													  </td>
-													  <td>
-													  	<span class="badge bg-danger">Cancelled</span>
-													  </td>
-													</tr>
-													<tr>
-													  <td>
-													  	<div class="media-box">
-													  		<img src="img/products/pencils.jpg" class="media-avatar" alt="Products">
-													  		<div class="media-box-body">
-													  			<a href="#" class="text-truncate">Pencils</a>
-													  		</div>
-													  	</div>
-													  </td>
-													  <td>FLM00878</td>
-													  <td>2020/10/25</td>
-													  <td>$87.00</td>
-													  <td>
-													  	<span class="text-info"><i class="icon-slash"></i> Awaiting</span>
-													  </td>
-													  <td>
-													  	<span class="badge bg-info">Processing</span>
-													  </td>
-													</tr>
-													<tr>
-													  <td>
-													  	<div class="media-box">
-													  		<img src="img/products/camera.jpg" class="media-avatar" alt="Products">
-													  		<div class="media-box-body">
-													  			<a href="#" class="text-truncate">Camera</a>
-													  		</div>
-													  	</div>
-													  </td>
-													  <td>FLM00370</td>
-													  <td>2020/10/30</td>
-													  <td>$65.00</td>
-													  <td>
-													  	<span class="text-success"><i class="icon-check-circle"></i> Paid</span>
-													  </td>
-													  <td>
-													  	<span class="badge bg-success">Delivered</span>
-													  </td>
-													</tr>
-													<tr>
-													  <td>
-													  	<div class="media-box">
-													  		<img src="img/products/shirt.jpg" class="media-avatar" alt="Products">
-													  		<div class="media-box-body">
-													  			<a href="#" class="text-truncate">Shirt</a>
-													  		</div>
-													  	</div>
-													  </td>
-													  <td>FLM00983</td>
-													  <td>2020/10/10</td>
-													  <td>$55.00</td>
-													  <td>
-													  	<span class="text-info"><i class="icon-slash"></i> Awaiting</span>
-													  </td>
-													  <td>
-													  	<span class="badge bg-info">Processing</span>
-													  </td>
-													</tr>
-													<tr>
-													  <td>
-													  	<div class="media-box">
-													  		<img src="img/products/clock.jpg" class="media-avatar" alt="Products">
-													  		<div class="media-box-body">
-													  			<a href="#" class="text-truncate">Wall Clock</a>
-													  		</div>
-													  	</div>
-													  </td>
-													  <td>FLM00760</td>
-													  <td>2020/10/15</td>
-													  <td>$74.00</td>
-													  <td>
-													  	<span class="text-info"><i class="icon-slash"></i> Awaiting</span>
-													  </td>
-													  <td>
-													  	<span class="badge bg-info">Processing</span>
-													  </td>
-													</tr>
-													<tr>
-													  <td>
-													  	<div class="media-box">
-													  		<img src="img/products/toy.jpg" class="media-avatar" alt="Products">
-													  		<div class="media-box-body">
-													  			<a href="#" class="text-truncate">Toy</a>
-													  		</div>
-													  	</div>
-													  </td>
-													  <td>FLM00435</td>
-													  <td>2020/10/12</td>
-													  <td>$88.00</td>
-													  <td>
-													  	<span class="text-danger"><i class="icon-x-circle"></i> Failed</span>
-													  </td>
-													  <td>
-													  	<span class="badge bg-danger">Cancelled</span>
-													  </td>
-													</tr>
-													<tr>
-													  <td>
-													  	<div class="media-box">
-													  		<img src="img/products/shoes.jpg" class="media-avatar" alt="Products">
-													  		<div class="media-box-body">
-													  			<a href="#" class="text-truncate">Shoes</a>
-													  		</div>
-													  	</div>
-													  </td>
-													  <td>FLM00878</td>
-													  <td>2020/10/11</td>
-													  <td>$87.00</td>
-													  <td>
-													  	<span class="text-info"><i class="icon-slash"></i> Awaiting</span>
-													  </td>
-													  <td>
-													  	<span class="badge bg-info">Processing</span>
-													  </td>
-													</tr>
-													<tr>
-													  <td>
-													  	<div class="media-box">
-													  		<img src="img/products/ring.jpg" class="media-avatar" alt="Products">
-													  		<div class="media-box-body">
-													  			<a href="#" class="text-truncate">Gold Ring</a>
-													  		</div>
-													  	</div>
-													  </td>
-													  <td>FLM00435</td>
-													  <td>2020/09/21</td>
-													  <td>$46.00</td>
-													  <td>
-													  	<span class="text-danger"><i class="icon-x-circle"></i> Failed</span>
-													  </td>
-													  <td>
-													  	<span class="badge bg-danger">Cancelled</span>
-													  </td>
-													</tr>
-													<tr>
-													  <td>
-													  	<div class="media-box">
-													  		<img src="img/products/shirt.jpg" class="media-avatar" alt="Products">
-													  		<div class="media-box-body">
-													  			<a href="#" class="text-truncate">Pens</a>
-													  		</div>
-													  	</div>
-													  </td>
-													  <td>FLM00878</td>
-													  <td>2020/10/25</td>
-													  <td>$87.00</td>
-													  <td>
-													  	<span class="text-info"><i class="icon-slash"></i> Awaiting</span>
-													  </td>
-													  <td>
-													  	<span class="badge bg-info">Processing</span>
-													  </td>
-													</tr>
-													<tr>
-													  <td>
-													  	<div class="media-box">
-													  		<img src="img/products/shoes.jpg" class="media-avatar" alt="Products">
-													  		<div class="media-box-body">
-													  			<a href="#" class="text-truncate">Dslr Camera</a>
-													  		</div>
-													  	</div>
-													  </td>
-													  <td>FLM00370</td>
-													  <td>2020/10/30</td>
-													  <td>$65.00</td>
-													  <td>
-													  	<span class="text-success"><i class="icon-check-circle"></i> Paid</span>
-													  </td>
-													  <td>
-													  	<span class="badge bg-success">Delivered</span>
-													  </td>
-													</tr>
-												</tbody>
-								    	</table>
-										</div>
-
-									</div>
-								</div>
-
-							</div>
-						</div>
-						<!-- Row end -->
+<div class="row gutters">
+    <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
+        <div class="card">
+            <div class="card-body">
+                <div class="table-responsive">
+                    <table id="copy-print-csv" class="table v-middle">
+                        <thead>
+                            <tr>
+                                <th>User ID</th>
+                                <th>Application Date</th>
+                                <th>Loan Amount</th>
+                                <th>Application Status</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>FLM00435</td>
+                                <td>2020/09/21</td>
+                                <td>$46.00</td>
+                                <td>
+                                    <span class="badge bg-danger">Declined</span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>FLM00878</td>
+                                <td>2020/10/25</td>
+                                <td>$87.00</td>
+                                <td>
+                                    <span class="badge bg-info">Approved</span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>FLM00370</td>
+                                <td>2020/10/30</td>
+                                <td>$65.00</td>
+                                <td>
+                                    <span class="badge bg-success">Approved</span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>FLM00983</td>
+                                <td>2020/10/10</td>
+                                <td>$55.00</td>
+                                <td>
+                                    <span class="badge bg-info">Approved</span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>FLM00760</td>
+                                <td>2020/10/15</td>
+                                <td>$74.00</td>
+                                <td>
+                                    <span class="badge bg-info">Approved</span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>FLM00435</td>
+                                <td>2020/10/12</td>
+                                <td>$88.00</td>
+                                <td>
+                                    <span class="badge bg-danger">Declined</span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>FLM00878</td>
+                                <td>2020/10/11</td>
+                                <td>$87.00</td>
+                                <td>
+                                    <span class="badge bg-info">Approved</span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>FLM00435</td>
+                                <td>2020/09/21</td>
+                                <td>$46.00</td>
+                                <td>
+                                    <span class="badge bg-danger">Declined</span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>FLM00878</td>
+                                <td>2020/10/25</td>
+                                <td>$87.00</td>
+                                <td>
+                                    <span class="badge bg-info">Approved</span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>FLM00370</td>
+                                <td>2020/10/30</td>
+                                <td>$65.00</td>
+                                <td>
+                                    <span class="badge bg-success">Approved</span>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Row end -->
 
 					</div>
 					<!-- Content wrapper end -->
