@@ -61,7 +61,7 @@ jQuery(document).ready(function($){
 	}
 
 	//IE9 placeholder fallback
-	//credits http://www.hagenburger.net/BLOG/HTML5-Input-Placeholder-Fix-With-jQuery.html
+	//credits http://www.hagenburger.net/BLOG/HTML5-Input-Placeholder-Fix-With-jQuery.php
 	if(!Modernizr.input.placeholder){
 		$('[placeholder]').focus(function() {
 			var input = $(this);

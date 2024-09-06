@@ -47,10 +47,10 @@
 		if ( opts.icon )
 			note.append( $('<span>')
 				.addClass('image')
-				.html( $( opts.icon ) ) );
+				.php( $( opts.icon ) ) );
 
 		// Remove button for the notification is added
-		note.append( $('<button>').attr('type', 'button').addClass('remove').html( $( opts.removeIcon ) ) );
+		note.append( $('<button>').attr('type', 'button').addClass('remove').php( $( opts.removeIcon ) ) );
 
 		// New content container is created for the notification
 		content = $('<div>').addClass('content');
@@ -59,7 +59,7 @@
 		if ( opts.title )
 			content.append( $('<strong>')
 				.addClass('title')
-				.html( opts.title ) );
+				.php( opts.title ) );
 
 		// Notification message is added to the content container
 		content.append( opts.message  );

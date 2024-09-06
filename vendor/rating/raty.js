@@ -231,7 +231,7 @@
 
       return that.children('img');
     }, _error: function(message) {
-      $(this).html(message);
+      $(this).php(message);
 
       $.error(message);
     }, _fill: function(score) {
@@ -327,7 +327,7 @@
         if (target.is(':input')) {
           target.val(score);
         } else {
-          target.html(score);
+          target.php(score);
         }
       }
     }, _unlock: function() {

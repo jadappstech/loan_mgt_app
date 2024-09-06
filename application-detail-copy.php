@@ -1,5 +1,5 @@
-<!doctype html>
-<html lang="en">
+<!doctype php>
+<php lang="en">
 	
 <!-- Mirrored from www.bootstrapget.com/demos/themeforest/unipro-admin-template/demos/01-design-blue/view-invoice.php by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 04 Sep 2024 13:06:42 GMT -->
 <head>
@@ -1288,136 +1288,188 @@
 
 								<!-- Card start -->
 								<div class="card">
-									<div class="card-header-lg">
-										<h4>Create Invoice</h4>
-										<div class="text-end">
-											<a href="create-invoice.php" class="btn btn-primary">Create Invoice</a>
-										</div>
-									</div>
 									<div class="card-body">
-
-                                        <div class="invoice-container">
-
-                                            <div class="invoice-header">
-                                                <!-- Row start -->
-                                                <div class="row justify-content-between">
-                                                    <div class="col-xl-5 col-lg-5 col-md-5 col-sm-5 col-12">
-                                                        <a href="index-2.php" class="invoice-logo">
-                                                            <img src="img/logo.svg" alt="Meow Admin Dashboard">
-                                                        </a>
-                                                    </div>
-                                                    <div class="col-xl-5 col-lg-5 col-md-5 col-sm-5 col-12">
-                                                        <address class="text-right">
-                                                            Meow LLC, 2880 St. <br>
-                                                            Rose Pkwy, Suite 700<br>
-                                                            San Francisco, California(CA), 94102
-                                                        </address>
-                                                    </div>
-                                                </div>
-                                                <!-- Row end -->
-                                            </div>
-
-                                            <!-- Row start -->
-                                            <div class="row gutters">
-                                                <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
-                                                    <div class="invoice-details">
-                                                        <address class="m-0">
-                                                            Alex Maxwell,<br>
-                                                            1691 Oakdale Ave,<br>
-                                                            San Francisco, California(CA), 94124
-                                                        </address>
-
-                                                        <div class="invoice-num">
-                                                            <div>Invoice - #009</div>
-                                                            <div>January 10th 2020</div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <!-- Row end -->
-
-                                            <!-- Row start -->
-                                            <div class="row gutters">
-                                                <div class="col-12">
-                                                    
-													<div class="table-responsive">
-														<table class="table table-bordered">
-															<thead>
-																<tr>
-																	<th>Items</th>
-																	<th>Product ID</th>
-																	<th>Hours</th>
-																	<th>Amount (Net)</th>
-																</tr>
-															</thead>
-															<tbody>
-																<tr>
-																	<td>
-																		<h6>Creative Wordpress Template</h6>
-																		<p>Create quality mockups and prototypes and Design mobile-based features.</p>
-																	</td>
-																	<td>
-																		<h6>#651</h6>
-																	</td>
-																	<td>
-																		<h6>40</h6>
-																	</td>
-																	<td>
-																		<h6>$450.00</h6>
-																	</td>
-																</tr>
-																<tr>
-																	<td>
-																		<h6>Front-End Development</h6>
-																		<p>Using markup languages like HTML to create user-friendly web pages.</p>
-																	</td>
-																	<td>
-																		<h6>#429</h6>
-																	</td>
-																	<td>
-																		<h6>60</h6>
-																	</td>
-																	<td>
-																		<h6>$550.00</h6>
-																	</td>
-																</tr>
-																<tr>
-																	<td colspan="2">&nbsp;</td>
-																	<td>
-																		<p class="m-0">Subtotal</p>
-																		<p class="m-0">Discount</p>
-																		<p class="m-0">VAT</p>
-																		<h5 class="mt-2 text-danger">Total USD</h5>
-																	</td>
-																	<td>
-																		<p class="m-0">$1000.00</p>
-																		<p class="m-0">$10.00</p>
-																		<p class="m-0">$5.00</p>
-																		<h5 class="mt-2 text-danger">$1015.00</h5>
-																	</td>
-																</tr>
-															</tbody>
-														</table>
+										
+										<!-- Row start -->
+										<div class="row gutters">
+											<div class="col-xl-12 col-lg-12 col-md-12 col-sm-4 col-12">
+												<h3 class="text-success">LOAN 4T2342-01 - APPLICANT NAME</h3>
+											</div>
+											<div class="col-xl-12 col-lg-12 col-md-12 col-sm-4 col-12">
+												<div class="form-section-header">Applicant Details</div>
+											</div>
+											<div class="col-xl-4 col-lg-4 col-md-4 col-sm-4 col-12">
+												
+												<!-- Field wrapper start -->
+												<div class="field-wrapper">
+													<div class="input-group">
+														<span class="form-control"><h5>Hello Again</h5></span>
+														<span class="input-group-text">
+															<i class="icon-user1"></i>
+														</span>
 													</div>
-													
-                                                </div>
-                                            </div>
-                                            <!-- Row end -->
+													<div class="field-placeholder">Full Name <span class="text-danger">*</span></div>
+												</div>
+												<!-- Field wrapper end -->
 
-                                            <!-- Row start -->
-                                            <div class="row gutters">
+											</div>
+											<div class="col-xl-4 col-lg-4 col-md-4 col-sm-4 col-12">
+												
+												<!-- Field wrapper start -->
+												<div class="field-wrapper">
+													<div class="input-group">
+														<input class="form-control" type="email">
+														<span class="input-group-text">
+															<i class="icon-email"></i>
+														</span>
+													</div>
+													<div class="field-placeholder">Email Address <span class="text-danger">*</span></div>
+												</div>
+												<!-- Field wrapper end -->
 
-                                                <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
-                                                    <div class="text-start">
-                                                        <button class="btn btn-primary">Download</button>
-                                                        <button class="btn btn-light ms-1">Print</button>
-                                                    </div>
-                                                </div>
+											</div>
+											<div class="col-xl-4 col-lg-4 col-md-4 col-sm-4 col-12">
+												
+												<!-- Field wrapper start -->
+												<div class="field-wrapper">
+													<div class="input-group">
+														<input class="form-control" type="text">
+														<span class="input-group-text">
+															<i class="icon-phone1"></i>
+														</span>
+													</div>
+													<div class="field-placeholder">Phone Number</div>
+												</div>
+												<!-- Field wrapper end -->
 
-                                            </div>
-                                            <!-- Row end -->
-                                        
-                                        </div>
+											</div>
+											<div class="col-xl-12 col-lg-12 col-md-12 col-sm-4 col-12">
+												<div class="form-section-header">Billing <span class="title-info">We'll never share your with anyone.</span></div>
+											</div>
+											<div class="col-xl-4 col-lg-4 col-md-4 col-sm-4 col-12">
+												
+												<!-- Field wrapper start -->
+												<div class="field-wrapper">
+													<div class="input-group">
+														<input class="form-control" type="text">
+														<span class="input-group-text">
+															<i class="icon-info2"></i>
+														</span>
+													</div>
+													<div class="field-placeholder">Plan</div>
+												</div>
+												<!-- Field wrapper end -->
+
+											</div>
+											<div class="col-xl-4 col-lg-4 col-md-4 col-sm-4 col-12">
+												
+												<!-- Field wrapper start -->
+												<div class="field-wrapper">
+													<div class="checkbox-container">
+														<div class="form-check form-check-inline">
+															<input class="form-check-input" type="radio" name="billingInterval" id="monthly" value="monthly">
+															<label class="form-check-label" for="monthly">Monthly</label>
+														</div>
+														<div class="form-check form-check-inline">
+															<input class="form-check-input" type="radio" name="billingInterval" id="quarterly" value="quarterly">
+															<label class="form-check-label" for="quarterly">Quatrerly</label>
+														</div>
+														<div class="form-check form-check-inline">
+															<input class="form-check-input" type="radio" name="billingInterval" id="yearly" value="yearly" disabled>
+															<label class="form-check-label" for="yearly">Yearly</label>
+														</div>
+														<div class="field-placeholder">Billing Interval</div>
+													</div>
+												</div>
+												<!-- Field wrapper end -->
+
+											</div>
+											<div class="col-xl-12 col-lg-12 col-md-12 col-sm-4 col-12">
+												<div class="form-section-header">Business Address</div>
+											</div>
+											<div class="col-xl-4 col-lg-4 col-md-4 col-sm-4 col-12">
+												
+												<!-- Field wrapper start -->
+												<div class="field-wrapper">
+													<div class="input-group">
+														<input class="form-control" type="text">
+														<span class="input-group-text">
+															<i class="icon-map-pin"></i>
+														</span>
+													</div>
+													<div class="field-placeholder">Street Address</div>
+												</div>
+												<!-- Field wrapper end -->
+
+											</div>
+											<div class="col-xl-4 col-lg-4 col-md-4 col-sm-4 col-12">
+												
+												<!-- Field wrapper start -->
+												<div class="field-wrapper">
+													<div class="input-group">
+														<input class="form-control" type="text">
+														<span class="input-group-text">
+															<i class="icon-map"></i>
+														</span>
+													</div>
+													<div class="field-placeholder">City</div>
+												</div>
+												<!-- Field wrapper end -->
+
+											</div>
+											<div class="col-xl-4 col-lg-4 col-md-4 col-sm-4 col-12">
+												
+												<!-- Field wrapper start -->
+												<div class="field-wrapper">
+													<div class="input-group">
+														<input class="form-control" type="text">
+														<span class="input-group-text">
+															<i class="icon-edit-2"></i>
+														</span>
+													</div>
+													<div class="field-placeholder">Postal Code</div>
+												</div>
+												<!-- Field wrapper end -->
+
+											</div>
+											<div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
+												
+												<!-- Field wrapper start -->
+												<div class="field-wrapper">
+													<textarea class="form-control" rows="2"></textarea>
+													<div class="field-placeholder">Message <span class="text-danger">*</span></div>
+												</div>
+												<!-- Field wrapper end -->
+
+											</div>
+											<div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
+
+												<!-- Field wrapper start -->
+												<div class="field-wrapper">
+													<div class="checkbox-container">
+														<div class="form-check form-check-inline">
+															<input class="form-check-input" type="checkbox" id="chcekEmail" value="option1">
+															<label class="form-check-label" for="chcekEmail">Email</label>
+														</div>
+														<div class="form-check form-check-inline">
+															<input class="form-check-input" type="checkbox" id="checkSms" value="option2">
+															<label class="form-check-label" for="checkSms">SMS</label>
+														</div>
+														<div class="form-check form-check-inline">
+															<input class="form-check-input" type="checkbox" id="checkPhone" value="option3">
+															<label class="form-check-label" for="checkPhone">Phone</label>
+														</div>
+														<div class="field-placeholder">Communication</div>
+													</div>
+												</div>
+												<!-- Field wrapper end -->
+
+											</div>
+											<div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
+												<button class="btn btn-primary" disabled="">Submit</button>
+											</div>
+										</div>
+										<!-- Row end -->
 
 									</div>
 								</div>
@@ -1484,4 +1536,4 @@
 	</body>
 
 <!-- Mirrored from www.bootstrapget.com/demos/themeforest/unipro-admin-template/demos/01-design-blue/view-invoice.php by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 04 Sep 2024 13:06:42 GMT -->
-</html>
+</php>

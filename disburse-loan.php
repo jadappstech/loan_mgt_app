@@ -1,47 +1,9 @@
-<!doctype html>
-<html lang="en">
+<!doctype php>
+<php lang="en">
 	
-<!-- Mirrored from www.bootstrapget.com/demos/themeforest/unipro-admin-template/demos/01-design-blue/layout-collapse-menu.php by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 04 Sep 2024 13:06:08 GMT -->
-<head>
-		<!-- Required meta tags -->
-		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
-		<!-- Meta -->
-		<meta name="description" content="Responsive Bootstrap4 Dashboard Template">
-		<meta name="author" content="ParkerThemes">
-		<link rel="shortcut icon" href="img/fav.png">
-
-		<!-- Title -->
-		<title>Uni Pro Admin Template - Admin Dashboard</title>
-
-
-		<!-- *************
-			************ Common Css Files *************
-		************ -->
-		<!-- Bootstrap css -->
-		<link rel="stylesheet" href="css/bootstrap.min.css">
-		
-		<!-- Icomoon Font Icons css -->
-		<link rel="stylesheet" href="fonts/style.css">
-
-		<!-- Main css -->
-		<link rel="stylesheet" href="css/main.css">
-
-
-		<!-- *************
-			************ Vendor Css Files *************
-		************ -->
-
-		<!-- Mega Menu -->
-		<link rel="stylesheet" href="vendor/megamenu/css/megamenu.css">
-
-		<!-- Search Filter JS -->
-		<link rel="stylesheet" href="vendor/search-filter/search-filter.css">
-		<link rel="stylesheet" href="vendor/search-filter/custom-search-filter.css">
-		
-	</head>
-	<body class="default-sidebar">
+<!-- Mirrored from www.bootstrapget.com/demos/themeforest/unipro-admin-template/demos/01-design-blue/ by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 04 Sep 2024 13:03:09 GMT -->
+    <?php include 'includes/layouts/head.php'; ?>
+	<body>
 
 		<!-- Loading wrapper start -->
 		<div id="loading-wrapper">
@@ -53,406 +15,7 @@
 		<!-- Page wrapper start -->
 		<div class="page-wrapper">
 			
-			<!-- Sidebar wrapper start -->
-			<nav class="sidebar-wrapper">
-				
-				<!-- Default sidebar wrapper start -->
-				<div class="default-sidebar-wrapper">
-
-					<!-- Sidebar brand starts -->
-					<div class="default-sidebar-brand">
-						<a href="index-2.php" class="logo">
-							<img src="img/logo-large.svg" alt="Uni Pro Admin Dashboard" />
-						</a>
-					</div>
-					<!-- Sidebar brand starts -->
-
-					<!-- Sidebar menu starts -->
-					<div class="defaultSidebarMenuScroll">
-						<div class="default-sidebar-menu">
-							<ul>
-								<li class="default-sidebar-dropdown">
-									<a href="#">
-										<i class="icon-home2"></i>
-										<span class="menu-text">Dashboards</span>
-									</a>
-									<div class="default-sidebar-submenu">
-										<ul>
-											<li>
-												<a href="index-2.php">Dashboard</a>
-											</li>
-											<li>
-												<a href="analytics.php">Analytics</a>
-											</li>
-											<li>
-												<a href="sales.php">Sales</a>
-											</li>
-											<li>
-												<a href="crm.php">CRM</a>
-											</li>
-											<li>
-												<a href="reports.php">Reports</a>
-											</li>
-											<li>
-												<a href="saas.php">Saas</a>
-											</li>
-											<li>
-												<a href="consulting.php">Consulting</a>
-											</li>
-										</ul>
-									</div>
-								</li>
-								<li class="default-sidebar-dropdown active">
-									<a href="#">
-										<i class="icon-layout"></i>
-										<span class="menu-text">Layouts</span>
-									</a>
-									<div class="default-sidebar-submenu">
-										<ul>
-											<li>
-												<a href="starter-page.php">Starter Page</a>
-											</li>
-											<li>
-												<a href="layout-tile-menu.php">Tile Menu</a>
-											</li>
-											<li>
-												<a href="layout-collapse-menu.php" class="current-page">Collapse Sidebar</a>
-											</li>
-											<li>
-												<a href="layout-compact-menu.php">Compact Sidebar</a>
-											</li>
-											<li>
-												<a href="layout-slim-menu.php">Slim Sidebar</a>
-											</li>
-											<li>
-												<a href="layout-hover-tabs.php">Hover Tabs</a>
-											</li>
-											<li>
-												<a href="layout-full-screen.php">Full Screen</a>
-											</li>
-											<li>
-												<a href="layout-full-view.php">Full View</a>
-											</li>
-											<li>
-												<a href="layout-search.php">Global Search</a>
-											</li>
-											<li>
-												<a href="layout-megamenu.php">Megamenu</a>
-											</li>
-											<li>
-												<a href="layout-bradcrumb.php">Breadcrumbs</a>
-											</li>
-											<li>
-												<a href="layout-scroll-cards.php">Scroll Cards</a>
-											</li>
-										</ul>
-									</div>
-								</li>
-								<li class="default-sidebar-dropdown">
-									<a href="#">
-										<i class="icon-layers2"></i>
-										<span class="menu-text">Product</span>
-									</a>
-									<div class="default-sidebar-submenu">
-										<ul>
-											<li>
-												<a href="products.php">Products Grid</a>
-											</li>
-											<li>
-												<a href="products-list.php">Products List</a>
-											</li>
-											<li>
-												<a href="add-product.php">Add Product</a>
-											</li>
-											<li>
-												<a href="orders.php">Orders</a>
-											</li>
-											<li>
-												<a href="customers-list.php">Customers</a>
-											</li>
-											<li>
-												<a href="products-reviews.php">Reviews</a>
-											</li>
-										</ul>
-									</div>
-								</li>
-								<li class="default-sidebar-dropdown">
-									<a href="#">
-										<i class="icon-calendar1"></i>
-										<span class="menu-text">Calendars</span>
-									</a>
-									<div class="default-sidebar-submenu">
-										<ul>
-											<li>
-												<a href="calendar-daygrid-view.php">Daygrid View</a>
-											</li>
-											<li>
-												<a href="calendar-list-view.php">List View</a>
-											</li>
-											<li>
-												<a href="calendar-external-dragging.php">Draggable</a>
-											</li>
-											<li>
-												<a href="calendar-google-view.php">Google View</a>
-											</li>
-											<li>
-												<a href="calendar-selectable.php">Selectable</a>
-											</li>
-										</ul>
-									</div>
-								</li>
-								<li class="default-sidebar-dropdown">
-									<a href="#">
-										<i class="icon-book-open"></i>
-										<span class="menu-text">Pages</span>
-									</a>
-									<div class="default-sidebar-submenu">
-										<ul>
-											<li>
-												<a href="chat.php">Chat</a>
-											</li>
-											<li>
-												<a href="tasks.php">Tasks</a>
-											</li>
-											<li>
-												<a href="create-invoice.php">Create Invoice</a>
-											</li>
-											<li>
-												<a href="view-invoice.php">View Invoice</a>
-											</li>
-											<li>
-												<a href="documents.php">Documents</a>
-											</li>
-											<li>
-												<a href="faq.php">Faq's</a>
-											</li>
-											<li>
-												<a href="contacts.php">Contacts</a>
-											</li>
-											<li>
-												<a href="pricing.php">Pricing</a>
-											</li>
-											<li>
-												<a href="gallery-tiles.php">Gallery Tiles</a>
-											</li>
-											<li>
-												<a href="gallery.php">Gallery</a>
-											</li>
-											<li>
-												<a href="icons.php">Icons</a>
-											</li>
-											<li>
-												<a href="timeline.php">Timeline</a>
-											</li>
-											<li>
-												<a href="search-results.php">Search Results</a>
-											</li>
-											<li>
-												<a href="account-settings.php">Account Settings</a>
-											</li>
-											<li>
-												<a href="user-profile.php">User Profile</a>
-											</li>
-										</ul>
-									</div>
-								</li>
-								<li class="default-sidebar-dropdown">
-									<a href="#">
-										<i class="icon-edit1"></i>
-										<span class="menu-text">Forms</span>
-									</a>
-									<div class="default-sidebar-submenu">
-										<ul>
-											<li>
-												<a href="forms-layout-one.php">Default Layout</a>
-											</li>
-											<li>
-												<a href="forms-layout-two.php">Layout Sections</a>
-											</li>
-											<li>
-												<a href="forms-layout-three.php">Simple Form Layout</a>
-											</li>
-											<li>
-												<a href="forms-layout-four.php">Select 2 Tags and Mask</a>
-											</li>
-											<li>
-												<a href="forms-layout-five.php">Horizontal Form Layout</a>
-											</li>
-											<li>
-												<a href="forms-layout-six.php">Layout Six with Tabs</a>
-											</li>
-											<li>
-												<a href="forms-inputs.php">Form Inputs</a>
-											</li>
-											<li>
-												<a href="forms-input-groups.php">Input Groups</a>
-											</li>
-											<li>
-												<a href="forms-checkbox-radio.php">Checkbox &amp; Radios</a>
-											</li>
-											<li>
-												<a href="forms-validation.php">Form Validation</a>
-											</li>
-											<li>
-												<a href="forms-dropzone.php">Dropzone</a>
-											</li>
-											<li>
-												<a href="forms-bs-select.php">Select 2 Dropdowns</a>
-											</li>
-											<li>
-												<a href="forms-date-time-picker.php">Date Time Picker</a>
-											</li>
-											<li>
-												<a href="forms-input-mask.php">Input Mask</a>
-											</li>
-											<li>
-												<a href="forms-input-range.php">Input Range</a>
-											</li>
-											<li>
-												<a href="forms-editor.php">WYSIWYG Editor</a>
-											</li>
-										</ul>
-									</div>
-								</li>
-								<li class="default-sidebar-dropdown">
-									<a href="#">
-										<i class="icon-box"></i>
-										<span class="menu-text">Components</span>
-									</a>
-									<div class="default-sidebar-submenu">
-										<ul>
-											<li>
-												<a href="accordions.php">Accordions</a>
-											</li>
-											<li>
-												<a href="alerts.php">Alerts</a>
-											</li>
-											<li>
-												<a href="buttons.php">Buttons</a>
-											</li>
-											<li>
-												<a href="badges.php">Badges</a>
-											</li>
-											<li>
-												<a href="cards.php">Cards</a>
-											</li>
-											<li>
-												<a href="carousel.php">Carousel</a>
-											</li>
-											<li>
-												<a href="list-group.php">List group</a>
-											</li>
-											<li>
-												<a href="modals.php">Modal</a>
-											</li>
-											<li>
-												<a href="paginations.php">Paginations</a>
-											</li>
-											<li>
-												<a href="popovers.php">Popovers</a>
-											</li>
-											<li>
-												<a href="progress.php">Progress</a>
-											</li>
-											<li>
-												<a href="spinners.php">Spinners</a>
-											</li>
-											<li>
-												<a href="tabs.php">Tabs</a>
-											</li>
-											<li>
-												<a href="toasts.php">Toasts</a>
-											</li>
-											<li>
-												<a href="tooltips.php">Tooltips</a>
-											</li>
-										</ul>
-									</div>
-								</li>
-								<li class="default-sidebar-dropdown">
-									<a href="#">
-										<i class="icon-pie-chart1"></i>
-										<span class="menu-text">Graphs</span>
-									</a>
-									<div class="default-sidebar-submenu">
-										<ul>
-											<li>
-												<a href="apex-graphs.php">Apex Graphs</a>
-											</li>
-											<li>
-												<a href="morris-graphs.php">Morris Graphs</a>
-											</li>
-											<li>
-												<a href="vector-maps.php">Vector Maps</a>
-											</li>
-										</ul>
-									</div>
-								</li>
-								<li class="default-sidebar-dropdown">
-									<a href="#">
-										<i class="icon-grid"></i>
-										<span class="menu-text">Tables</span>
-									</a>
-									<div class="default-sidebar-submenu">
-										<ul>
-											<li>
-												<a href="bootstrap-tables.php">Bootstrap Tables</a>
-											</li>
-											<li>
-												<a href="custom-tables.php">Custom Tables</a>
-											</li>
-											<li>
-												<a href="data-tables.php">Data Tables</a>
-											</li>
-										</ul>
-									</div>
-								</li>
-								<li class="default-sidebar-dropdown">
-									<a href="#">
-										<i class="icon-unlock"></i>
-										<span class="menu-text">Authentication</span>
-									</a>
-									<div class="default-sidebar-submenu">
-										<ul>
-											<li>
-												<a href="login.php">Login</a>
-											</li>
-											<li>
-												<a href="signup.php">Signup</a>
-											</li>
-											<li>
-												<a href="forgot-password.php">Forgot Password</a>
-											</li>
-											<li>
-												<a href="reset-password.php">Reset Password</a>
-											</li>
-											<li>
-												<a href="lock-screen.php">Lock Screen</a>
-											</li>
-											<li>
-												<a href="subscribe.php">Subscribe</a>
-											</li>										
-											<li>
-												<a href="maintenance.php">Maintenance</a>
-											</li>
-											<li>
-												<a href="error.php">404</a>
-											</li>
-											<li>
-												<a href="error-option2.php">Error</a>
-											</li>
-										</ul>
-									</div>
-								</li>
-							</ul>
-						</div>
-					</div>
-					<!-- Sidebar menu ends -->
-
-				</div>
-				<!-- Default sidebar wrapper end -->
-				
-			</nav>
+            <?php include 'includes/layouts/menu.php'; ?>
 			<!-- Sidebar wrapper end -->
 
 			<!-- *************
@@ -503,7 +66,7 @@
 															</li>
 															<li>
 																<a href="analytics.php">Analytics</a>
-															</li>
+															</li>															
 															<li>
 																<a href="crm.php">CRM</a>
 															</li>
@@ -534,7 +97,7 @@
 																<a href="layout-scroll-cards.php">Scroll Cards</a>
 															</li>
 														</ul>
-													</li>
+													</li>												
 												</ul>
 											</li>
 
@@ -562,7 +125,7 @@
 															</li>
 															<li>
 																<a href="products-reviews.php">Reviews</a>
-															</li>
+															</li>														
 														</ul>
 													</li>
 
@@ -583,9 +146,9 @@
 															</li>
 															<li>
 																<a href="calendar-selectable.php">Selectable</a>
-															</li>
+															</li>													
 														</ul>
-													</li>
+													</li>												
 												</ul>
 											</li>
 
@@ -614,7 +177,7 @@
 															</li>
 															<li>
 																<a href="forms-layout-six.php">Layout Six with Tabs</a>
-															</li>
+															</li>													
 														</ul>
 													</li>
 
@@ -650,9 +213,9 @@
 															</li>
 															<li>
 																<a href="forms-editor.php">WYSIWYG Editor</a>
-															</li>
+															</li>													
 														</ul>
-													</li>
+													</li>												
 												</ul>
 											</li>
 
@@ -759,9 +322,9 @@
 															</li>
 															<li>
 																<a href="tooltips.php">Tooltips</a>
-															</li>
+															</li>												
 														</ul>
-													</li>
+													</li>												
 												</ul>
 											</li>
 
@@ -781,7 +344,7 @@
 															</li>
 															<li>
 																<a href="vector-maps.php">Vector Maps</a>
-															</li>
+															</li>													
 														</ul>
 													</li>
 
@@ -796,9 +359,9 @@
 															</li>
 															<li>
 																<a href="data-tables.php">Data Tables</a>
-															</li>
+															</li>												
 														</ul>
-													</li>
+													</li>												
 												</ul>
 											</li>
 											
@@ -999,30 +562,99 @@
 				<!-- Content wrapper scroll start -->
 				<div class="content-wrapper-scroll">
 
-					<!-- Content wrapper start -->
-					<div class="content-wrapper">
+                <div class="content-wrapper">
 
-						<!-- Row start -->
-						<div class="row gutters">
-							<div class="col-xl-12">
-								<!-- Card start -->
-								<div class="card">
-									<div class="card-header">
-                                        <div class="card-title">Card Header</div>
+                    <!-- Row start -->
+                    <div class="row gutters">
+                        <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
+
+                            <!-- Card start -->
+                            <div class="card">
+                                <div class="card-body">
+                                    
+                                    <!-- Row start -->
+                                    <div class="row gutters">
+                                        <div class="col-xl-3 col-lg-3 col-md-3 col-sm-3 col-12">
+                                            
+                                            <!-- Field wrapper start -->
+                                            <div class="field-wrapper">
+                                                <input class="form-control" type="text" placeholder="Enter Full Name" value="Adams Smith" readonly>
+                                                <div class="field-placeholder">Receiver Name <span class="text-danger">*</span></div>
+                                            </div>
+                                            <!-- Field wrapper end -->
+
+                                        </div>
+                                        <div class="col-xl-3 col-lg-3 col-md-3 col-sm-3 col-12">
+                                            
+                                            <!-- Field wrapper start -->
+                                            <div class="field-wrapper">
+                                                <input class="form-control" type="text" placeholder="Enter Email" value="Mid Term Loan" readonly>
+                                                <div class="field-placeholder">Type of Loan <span class="text-danger">*</span></div>
+                                            </div>
+                                            <!-- Field wrapper end -->
+
+                                        </div>
+                                        <div class="col-xl-3 col-lg-3 col-md-3 col-sm-3 col-12">
+                                            
+                                            <!-- Field wrapper start -->
+                                            <div class="field-wrapper">
+                                                <input type="text" class="form-control datepicker" value="50000000" readonly>
+                                                <div class="field-placeholder">Loan Amount</div>
+                                            </div>
+                                            <!-- Field wrapper end -->
+
+                                        </div>
+                                        <div class="col-xl-3 col-lg-3 col-md-3 col-sm-3 col-12">
+                                            
+                                            <!-- Field wrapper start -->
+                                            <div class="field-wrapper">
+                                                <div class="input-group">
+                                                    <select class="select-single js-states" title="Select Product Category" data-live-search="true">
+                                                        <option disabled selected>Select one</option>
+                                                        <option>Cheque</option>
+                                                        <option>Cash</option>
+                                                        <option>Wire</option>
+                                                    </select>
+                                                </div>
+                                                <div class="field-placeholder">Channel</div>
+                                            </div>
+                                            <!-- Field wrapper end -->
+
+                                        </div>
+                                        <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
+                                            
+                                            <!-- Field wrapper start -->
+                                            <div class="field-wrapper">
+                                                <div class="input-group">
+                                                    <textarea class="form-control"></textarea>
+                                                    <div class="field-placeholder">Notes</div>
+                                                </div>
+                                            </div>
+                                            <!-- Field wrapper end -->
+
+                                        </div>
+                                        
+                                        <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
+                                            <div class="form-actions-footer">
+                                                <div class="text-end">
+                                                    <button class="btn btn-primary ms-1">Disburse Loan</button>
+                                                </div>
+                                            </div>
+                                        </div>
                                     </div>
-									<div class="card-body">
-										<!-- Place your content here -->
-									</div>
-								</div>
-								<!-- Card end -->
+                                    <!-- Row end -->
+
+                                </div>
                             </div>
-						</div>
-						<!-- Row end -->
+                            <!-- Card end -->
 
-					</div>
-					<!-- Content wrapper end -->
+                        </div>
+                    </div>
+                    <!-- Row end -->
 
-					<!-- App Footer start -->
+                </div>
+
+					<!-- App footer start -->
 					<div class="app-footer">© Uni Pro Admin 2021</div>
 					<!-- App footer end -->
 
@@ -1037,35 +669,9 @@
 		</div>
 		<!-- Page wrapper end -->
 
-		<!-- *************
-			************ Required JavaScript Files *************
-		************* -->
-		<!-- Required jQuery first, then Bootstrap Bundle JS -->
-		<script src="js/jquery.min.js"></script>
-		<script src="js/bootstrap.bundle.min.js"></script>
-		<script src="js/modernizr.js"></script>
-		<script src="js/moment.js"></script>
-
-		<!-- *************
-			************ Vendor Js Files *************
-		************* -->
-		
-		<!-- Megamenu JS -->
-		<script src="vendor/megamenu/js/megamenu.js"></script>
-		<script src="vendor/megamenu/js/custom.js"></script>
-
-		<!-- Slimscroll JS -->
-		<script src="vendor/slimscroll/slimscroll.min.js"></script>
-		<script src="vendor/slimscroll/custom-scrollbar.js"></script>
-
-		<!-- Search Filter JS -->
-		<script src="vendor/search-filter/search-filter.js"></script>
-		<script src="vendor/search-filter/custom-search-filter.js"></script>
-
-		<!-- Main Js Required -->
-		<script src="js/main.js"></script>
+		<?php include('includes/scripts.php'); ?>
 
 	</body>
 
-<!-- Mirrored from www.bootstrapget.com/demos/themeforest/unipro-admin-template/demos/01-design-blue/layout-collapse-menu.php by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 04 Sep 2024 13:06:08 GMT -->
-</html>
+<!-- Mirrored from www.bootstrapget.com/demos/themeforest/unipro-admin-template/demos/01-design-blue/ by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 04 Sep 2024 13:04:58 GMT -->
+</php>

@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="en">
 	
-<!-- Mirrored from www.bootstrapget.com/demos/themeforest/unipro-admin-template/demos/01-design-blue/error.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 04 Sep 2024 13:07:49 GMT -->
+<!-- Mirrored from www.bootstrapget.com/demos/themeforest/unipro-admin-template/demos/01-design-blue/error.php by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 04 Sep 2024 13:07:49 GMT -->
 <head>
 		<!-- Required meta tags -->
 		<meta charset="utf-8">
@@ -44,7 +44,7 @@
 		<div class="error-screen">
 			<h1>404</h1>
 			<h5>We're sorry but it looks<br/>like that page doesn't exist anymore.</h5>
-			<a href="reports.html" class="btn stripes-btn">Go back to Dashboard</a>
+			<a href="reports.php" class="btn stripes-btn">Go back to Dashboard</a>
 		</div>
 
 		<!--**************************
@@ -68,5 +68,5 @@
 
 	</body>
 
-<!-- Mirrored from www.bootstrapget.com/demos/themeforest/unipro-admin-template/demos/01-design-blue/error.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 04 Sep 2024 13:07:52 GMT -->
+<!-- Mirrored from www.bootstrapget.com/demos/themeforest/unipro-admin-template/demos/01-design-blue/error.php by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 04 Sep 2024 13:07:52 GMT -->
 </html>

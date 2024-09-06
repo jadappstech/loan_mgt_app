@@ -197,7 +197,7 @@ $(function () {
 	var start = moment().subtract(29, "days");
 	var end = moment();
 	function cb(start, end) {
-		$(".custom-daterange span").html(
+		$(".custom-daterange span").php(
 			start.format("MMM D, YYYY") + " - " + end.format("MMM D, YYYY")
 		);
 	}
@@ -227,7 +227,7 @@ $(function () {
 	var start = moment().subtract(29, "days");
 	var end = moment();
 	function cb(start, end) {
-		$(".custom-daterange2 span").html(
+		$(".custom-daterange2 span").php(
 			start.format("MMM D, YYYY") + " - " + end.format("MMM D, YYYY")
 		);
 	}

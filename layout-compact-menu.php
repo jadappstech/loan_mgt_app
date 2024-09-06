@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="en">
 	
-<!-- Mirrored from www.bootstrapget.com/demos/themeforest/unipro-admin-template/demos/01-design-blue/layout-compact-menu.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 04 Sep 2024 13:06:08 GMT -->
+<!-- Mirrored from www.bootstrapget.com/demos/themeforest/unipro-admin-template/demos/01-design-blue/layout-compact-menu.php by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 04 Sep 2024 13:06:08 GMT -->
 <head>
 		<!-- Required meta tags -->
 		<meta charset="utf-8">
@@ -61,7 +61,7 @@
 
 					<!-- Sidebar brand starts -->
 					<div class="compact-sidebar-brand">
-						<a href="index-2.html" class="logo">
+						<a href="index-2.php" class="logo">
 							<img src="img/logo-compact.svg" alt="Uni Pro Admin Dashboard" />
 						</a>
 					</div>
@@ -79,25 +79,25 @@
 									<div class="compact-sidebar-submenu">
 										<ul>
 											<li>
-												<a href="index-2.html">Dashboard</a>
+												<a href="index-2.php">Dashboard</a>
 											</li>
 											<li>
-												<a href="analytics.html">Analytics</a>
+												<a href="analytics.php">Analytics</a>
 											</li>
 											<li>
-												<a href="sales.html">Sales</a>
+												<a href="sales.php">Sales</a>
 											</li>
 											<li>
-												<a href="crm.html">CRM</a>
+												<a href="crm.php">CRM</a>
 											</li>
 											<li>
-												<a href="reports.html">Reports</a>
+												<a href="reports.php">Reports</a>
 											</li>
 											<li>
-												<a href="saas.html">Saas</a>
+												<a href="saas.php">Saas</a>
 											</li>
 											<li>
-												<a href="consulting.html">Consulting</a>
+												<a href="consulting.php">Consulting</a>
 											</li>
 										</ul>
 									</div>
@@ -110,40 +110,40 @@
 									<div class="compact-sidebar-submenu">
 										<ul>
 											<li>
-												<a href="starter-page.html">Starter Page</a>
+												<a href="starter-page.php">Starter Page</a>
 											</li>
 											<li>
-												<a href="layout-tile-menu.html">Tile Menu</a>
+												<a href="layout-tile-menu.php">Tile Menu</a>
 											</li>
 											<li>
-												<a href="layout-collapse-menu.html">Collapse Sidebar</a>
+												<a href="layout-collapse-menu.php">Collapse Sidebar</a>
 											</li>
 											<li>
-												<a href="layout-compact-menu.html" class="current-page">Compact Menu</a>
+												<a href="layout-compact-menu.php" class="current-page">Compact Menu</a>
 											</li>
 											<li>
-												<a href="layout-slim-menu.html">Slim Sidebar</a>
+												<a href="layout-slim-menu.php">Slim Sidebar</a>
 											</li>
 											<li>
-												<a href="layout-hover-tabs.html">Hover Tabs</a>
+												<a href="layout-hover-tabs.php">Hover Tabs</a>
 											</li>
 											<li>
-												<a href="layout-full-screen.html">Full Screen</a>
+												<a href="layout-full-screen.php">Full Screen</a>
 											</li>
 											<li>
-												<a href="layout-full-view.html">Full View</a>
+												<a href="layout-full-view.php">Full View</a>
 											</li>
 											<li>
-												<a href="layout-search.html">Global Search</a>
+												<a href="layout-search.php">Global Search</a>
 											</li>
 											<li>
-												<a href="layout-megamenu.html">Megamenu</a>
+												<a href="layout-megamenu.php">Megamenu</a>
 											</li>
 											<li>
-												<a href="layout-bradcrumb.html">Breadcrumbs</a>
+												<a href="layout-bradcrumb.php">Breadcrumbs</a>
 											</li>
 											<li>
-												<a href="layout-scroll-cards.html">Scroll Cards</a>
+												<a href="layout-scroll-cards.php">Scroll Cards</a>
 											</li>
 										</ul>
 									</div>
@@ -156,22 +156,22 @@
 									<div class="compact-sidebar-submenu">
 										<ul>
 											<li>
-												<a href="products.html">Products Grid</a>
+												<a href="products.php">Products Grid</a>
 											</li>
 											<li>
-												<a href="products-list.html">Products List</a>
+												<a href="products-list.php">Products List</a>
 											</li>
 											<li>
-												<a href="add-product.html">Add Product</a>
+												<a href="add-product.php">Add Product</a>
 											</li>
 											<li>
-												<a href="orders.html">Orders</a>
+												<a href="orders.php">Orders</a>
 											</li>
 											<li>
-												<a href="customers-list.html">Customers</a>
+												<a href="customers-list.php">Customers</a>
 											</li>
 											<li>
-												<a href="products-reviews.html">Reviews</a>
+												<a href="products-reviews.php">Reviews</a>
 											</li>
 										</ul>
 									</div>
@@ -184,19 +184,19 @@
 									<div class="compact-sidebar-submenu">
 										<ul>
 											<li>
-												<a href="calendar-daygrid-view.html">Daygrid View</a>
+												<a href="calendar-daygrid-view.php">Daygrid View</a>
 											</li>
 											<li>
-												<a href="calendar-list-view.html">List View</a>
+												<a href="calendar-list-view.php">List View</a>
 											</li>
 											<li>
-												<a href="calendar-external-dragging.html">Draggable</a>
+												<a href="calendar-external-dragging.php">Draggable</a>
 											</li>
 											<li>
-												<a href="calendar-google-view.html">Google View</a>
+												<a href="calendar-google-view.php">Google View</a>
 											</li>
 											<li>
-												<a href="calendar-selectable.html">Selectable</a>
+												<a href="calendar-selectable.php">Selectable</a>
 											</li>
 										</ul>
 									</div>
@@ -209,49 +209,49 @@
 									<div class="compact-sidebar-submenu">
 										<ul>
 											<li>
-												<a href="chat.html">Chat</a>
+												<a href="chat.php">Chat</a>
 											</li>
 											<li>
-												<a href="tasks.html">Tasks</a>
+												<a href="tasks.php">Tasks</a>
 											</li>
 											<li>
-												<a href="create-invoice.html">Create Invoice</a>
+												<a href="create-invoice.php">Create Invoice</a>
 											</li>
 											<li>
-												<a href="view-invoice.html">View Invoice</a>
+												<a href="view-invoice.php">View Invoice</a>
 											</li>
 											<li>
-												<a href="documents.html">Documents</a>
+												<a href="documents.php">Documents</a>
 											</li>
 											<li>
-												<a href="faq.html">Faq's</a>
+												<a href="faq.php">Faq's</a>
 											</li>
 											<li>
-												<a href="contacts.html">Contacts</a>
+												<a href="contacts.php">Contacts</a>
 											</li>
 											<li>
-												<a href="pricing.html">Pricing</a>
+												<a href="pricing.php">Pricing</a>
 											</li>
 											<li>
-												<a href="gallery-tiles.html">Gallery Tiles</a>
+												<a href="gallery-tiles.php">Gallery Tiles</a>
 											</li>
 											<li>
-												<a href="gallery.html">Gallery</a>
+												<a href="gallery.php">Gallery</a>
 											</li>
 											<li>
-												<a href="icons.html">Icons</a>
+												<a href="icons.php">Icons</a>
 											</li>
 											<li>
-												<a href="timeline.html">Timeline</a>
+												<a href="timeline.php">Timeline</a>
 											</li>
 											<li>
-												<a href="search-results.html">Search Results</a>
+												<a href="search-results.php">Search Results</a>
 											</li>
 											<li>
-												<a href="account-settings.html">Account Settings</a>
+												<a href="account-settings.php">Account Settings</a>
 											</li>
 											<li>
-												<a href="user-profile.html">User Profile</a>
+												<a href="user-profile.php">User Profile</a>
 											</li>
 										</ul>
 									</div>
@@ -264,52 +264,52 @@
 									<div class="compact-sidebar-submenu">
 										<ul>
 											<li>
-												<a href="forms-layout-one.html">Default Layout</a>
+												<a href="forms-layout-one.php">Default Layout</a>
 											</li>
 											<li>
-												<a href="forms-layout-two.html">Layout Sections</a>
+												<a href="forms-layout-two.php">Layout Sections</a>
 											</li>
 											<li>
-												<a href="forms-layout-three.html">Simple Form Layout</a>
+												<a href="forms-layout-three.php">Simple Form Layout</a>
 											</li>
 											<li>
-												<a href="forms-layout-four.html">Select 2 Tags and Mask</a>
+												<a href="forms-layout-four.php">Select 2 Tags and Mask</a>
 											</li>
 											<li>
-												<a href="forms-layout-five.html">Horizontal Form Layout</a>
+												<a href="forms-layout-five.php">Horizontal Form Layout</a>
 											</li>
 											<li>
-												<a href="forms-layout-six.html">Layout Six with Tabs</a>
+												<a href="forms-layout-six.php">Layout Six with Tabs</a>
 											</li>
 											<li>
-												<a href="forms-inputs.html">Form Inputs</a>
+												<a href="forms-inputs.php">Form Inputs</a>
 											</li>
 											<li>
-												<a href="forms-input-groups.html">Input Groups</a>
+												<a href="forms-input-groups.php">Input Groups</a>
 											</li>
 											<li>
-												<a href="forms-checkbox-radio.html">Checkbox &amp; Radios</a>
+												<a href="forms-checkbox-radio.php">Checkbox &amp; Radios</a>
 											</li>
 											<li>
-												<a href="forms-validation.html">Form Validation</a>
+												<a href="forms-validation.php">Form Validation</a>
 											</li>
 											<li>
-												<a href="forms-dropzone.html">Dropzone</a>
+												<a href="forms-dropzone.php">Dropzone</a>
 											</li>
 											<li>
-												<a href="forms-bs-select.html">Select 2 Dropdowns</a>
+												<a href="forms-bs-select.php">Select 2 Dropdowns</a>
 											</li>
 											<li>
-												<a href="forms-date-time-picker.html">Date Time Picker</a>
+												<a href="forms-date-time-picker.php">Date Time Picker</a>
 											</li>
 											<li>
-												<a href="forms-input-mask.html">Input Mask</a>
+												<a href="forms-input-mask.php">Input Mask</a>
 											</li>
 											<li>
-												<a href="forms-input-range.html">Input Range</a>
+												<a href="forms-input-range.php">Input Range</a>
 											</li>
 											<li>
-												<a href="forms-editor.html">WYSIWYG Editor</a>
+												<a href="forms-editor.php">WYSIWYG Editor</a>
 											</li>
 										</ul>
 									</div>
@@ -322,49 +322,49 @@
 									<div class="compact-sidebar-submenu">
 										<ul>
 											<li>
-												<a href="accordions.html">Accordions</a>
+												<a href="accordions.php">Accordions</a>
 											</li>
 											<li>
-												<a href="alerts.html">Alerts</a>
+												<a href="alerts.php">Alerts</a>
 											</li>
 											<li>
-												<a href="buttons.html">Buttons</a>
+												<a href="buttons.php">Buttons</a>
 											</li>
 											<li>
-												<a href="badges.html">Badges</a>
+												<a href="badges.php">Badges</a>
 											</li>
 											<li>
-												<a href="cards.html">Cards</a>
+												<a href="cards.php">Cards</a>
 											</li>
 											<li>
-												<a href="carousel.html">Carousel</a>
+												<a href="carousel.php">Carousel</a>
 											</li>
 											<li>
-												<a href="list-group.html">List group</a>
+												<a href="list-group.php">List group</a>
 											</li>
 											<li>
-												<a href="modals.html">Modal</a>
+												<a href="modals.php">Modal</a>
 											</li>
 											<li>
-												<a href="paginations.html">Paginations</a>
+												<a href="paginations.php">Paginations</a>
 											</li>
 											<li>
-												<a href="popovers.html">Popovers</a>
+												<a href="popovers.php">Popovers</a>
 											</li>
 											<li>
-												<a href="progress.html">Progress</a>
+												<a href="progress.php">Progress</a>
 											</li>
 											<li>
-												<a href="spinners.html">Spinners</a>
+												<a href="spinners.php">Spinners</a>
 											</li>
 											<li>
-												<a href="tabs.html">Tabs</a>
+												<a href="tabs.php">Tabs</a>
 											</li>
 											<li>
-												<a href="toasts.html">Toasts</a>
+												<a href="toasts.php">Toasts</a>
 											</li>
 											<li>
-												<a href="tooltips.html">Tooltips</a>
+												<a href="tooltips.php">Tooltips</a>
 											</li>
 										</ul>
 									</div>
@@ -377,13 +377,13 @@
 									<div class="compact-sidebar-submenu">
 										<ul>
 											<li>
-												<a href="apex-graphs.html">Apex Graphs</a>
+												<a href="apex-graphs.php">Apex Graphs</a>
 											</li>
 											<li>
-												<a href="morris-graphs.html">Morris Graphs</a>
+												<a href="morris-graphs.php">Morris Graphs</a>
 											</li>
 											<li>
-												<a href="vector-maps.html">Vector Maps</a>
+												<a href="vector-maps.php">Vector Maps</a>
 											</li>
 										</ul>
 									</div>
@@ -396,13 +396,13 @@
 									<div class="compact-sidebar-submenu">
 										<ul>
 											<li>
-												<a href="bootstrap-tables.html">Bootstrap Tables</a>
+												<a href="bootstrap-tables.php">Bootstrap Tables</a>
 											</li>
 											<li>
-												<a href="custom-tables.html">Custom Tables</a>
+												<a href="custom-tables.php">Custom Tables</a>
 											</li>
 											<li>
-												<a href="data-tables.html">Data Tables</a>
+												<a href="data-tables.php">Data Tables</a>
 											</li>
 										</ul>
 									</div>
@@ -415,31 +415,31 @@
 									<div class="compact-sidebar-submenu">
 										<ul>
 											<li>
-												<a href="login.html">Login</a>
+												<a href="login.php">Login</a>
 											</li>
 											<li>
-												<a href="signup.html">Signup</a>
+												<a href="signup.php">Signup</a>
 											</li>
 											<li>
-												<a href="forgot-password.html">Forgot Password</a>
+												<a href="forgot-password.php">Forgot Password</a>
 											</li>
 											<li>
-												<a href="reset-password.html">Reset Password</a>
+												<a href="reset-password.php">Reset Password</a>
 											</li>
 											<li>
-												<a href="lock-screen.html">Lock Screen</a>
+												<a href="lock-screen.php">Lock Screen</a>
 											</li>
 											<li>
-												<a href="subscribe.html">Subscribe</a>
+												<a href="subscribe.php">Subscribe</a>
 											</li>										
 											<li>
-												<a href="maintenance.html">Maintenance</a>
+												<a href="maintenance.php">Maintenance</a>
 											</li>
 											<li>
-												<a href="error.html">404</a>
+												<a href="error.php">404</a>
 											</li>
 											<li>
-												<a href="error-option2.html">Error</a>
+												<a href="error-option2.php">Error</a>
 											</li>
 										</ul>
 									</div>
@@ -490,25 +490,25 @@
 														<a href="#">Dashboards</a>
 														<ul class="is-hidden">
 															<li>
-																<a href="reports.html">Reports</a>
+																<a href="reports.php">Reports</a>
 															</li>
 															<li>
-																<a href="saas.html">Saas</a>
+																<a href="saas.php">Saas</a>
 															</li>
 															<li>
-																<a href="sales.html">Sales</a>
+																<a href="sales.php">Sales</a>
 															</li>
 															<li>
-																<a href="index-2.html">Admin</a>
+																<a href="index-2.php">Admin</a>
 															</li>
 															<li>
-																<a href="analytics.html">Analytics</a>
+																<a href="analytics.php">Analytics</a>
 															</li>
 															<li>
-																<a href="crm.html">CRM</a>
+																<a href="crm.php">CRM</a>
 															</li>
 															<li>
-																<a href="consulting.html">Consulting</a>
+																<a href="consulting.php">Consulting</a>
 															</li>
 														</ul>
 													</li>
@@ -516,22 +516,22 @@
 														<a href="#">Layouts</a>
 														<ul class="is-hidden">
 															<li>
-																<a href="starter-page.html">Starter Page</a>
+																<a href="starter-page.php">Starter Page</a>
 															</li>
 															<li>
-																<a href="layout-full-screen.html">Full Screen</a>
+																<a href="layout-full-screen.php">Full Screen</a>
 															</li>
 															<li>
-																<a href="layout-search.html">Global Search</a>
+																<a href="layout-search.php">Global Search</a>
 															</li>
 															<li>
-																<a href="layout-megamenu.html">Megamenu</a>
+																<a href="layout-megamenu.php">Megamenu</a>
 															</li>
 															<li>
-																<a href="layout-bradcrumb.html">Breadcrumbs</a>
+																<a href="layout-bradcrumb.php">Breadcrumbs</a>
 															</li>
 															<li>
-																<a href="layout-scroll-cards.html">Scroll Cards</a>
+																<a href="layout-scroll-cards.php">Scroll Cards</a>
 															</li>
 														</ul>
 													</li>
@@ -546,22 +546,22 @@
 														<a href="#">Product</a>
 														<ul class="is-hidden">
 															<li>
-																<a href="products.html">Products Grid</a>
+																<a href="products.php">Products Grid</a>
 															</li>
 															<li>
-																<a href="products-list.html">Products List</a>
+																<a href="products-list.php">Products List</a>
 															</li>
 															<li>
-																<a href="add-product.html">Add Product</a>
+																<a href="add-product.php">Add Product</a>
 															</li>
 															<li>
-																<a href="orders.html">Orders</a>
+																<a href="orders.php">Orders</a>
 															</li>
 															<li>
-																<a href="customers-list.html">Customers</a>
+																<a href="customers-list.php">Customers</a>
 															</li>
 															<li>
-																<a href="products-reviews.html">Reviews</a>
+																<a href="products-reviews.php">Reviews</a>
 															</li>
 														</ul>
 													</li>
@@ -570,19 +570,19 @@
 														<a href="#">Calendars</a>
 														<ul class="is-hidden">
 															<li>
-																<a href="calendar-daygrid-view.html">Daygrid View</a>
+																<a href="calendar-daygrid-view.php">Daygrid View</a>
 															</li>
 															<li>
-																<a href="calendar-list-view.html">List View</a>
+																<a href="calendar-list-view.php">List View</a>
 															</li>
 															<li>
-																<a href="calendar-external-dragging.html">Draggable</a>
+																<a href="calendar-external-dragging.php">Draggable</a>
 															</li>
 															<li>
-																<a href="calendar-google-view.html">Google View</a>
+																<a href="calendar-google-view.php">Google View</a>
 															</li>
 															<li>
-																<a href="calendar-selectable.html">Selectable</a>
+																<a href="calendar-selectable.php">Selectable</a>
 															</li>
 														</ul>
 													</li>
@@ -598,22 +598,22 @@
 														<a href="#">Form Layouts</a>
 														<ul class="is-hidden">
 															<li>
-																<a href="forms-layout-one.html">Default Layout</a>
+																<a href="forms-layout-one.php">Default Layout</a>
 															</li>
 															<li>
-																<a href="forms-layout-two.html">Layout Sections</a>
+																<a href="forms-layout-two.php">Layout Sections</a>
 															</li>
 															<li>
-																<a href="forms-layout-three.html">Simple Form Layout</a>
+																<a href="forms-layout-three.php">Simple Form Layout</a>
 															</li>
 															<li>
-																<a href="forms-layout-four.html">Select 2 Tags and Mask</a>
+																<a href="forms-layout-four.php">Select 2 Tags and Mask</a>
 															</li>
 															<li>
-																<a href="forms-layout-five.html">Horizontal Form Layout</a>
+																<a href="forms-layout-five.php">Horizontal Form Layout</a>
 															</li>
 															<li>
-																<a href="forms-layout-six.html">Layout Six with Tabs</a>
+																<a href="forms-layout-six.php">Layout Six with Tabs</a>
 															</li>
 														</ul>
 													</li>
@@ -622,34 +622,34 @@
 														<a href="#">Forms</a>
 														<ul class="is-hidden">
 															<li>
-																<a href="forms-inputs.html">Form Inputs</a>
+																<a href="forms-inputs.php">Form Inputs</a>
 															</li>
 															<li>
-																<a href="forms-input-groups.html">Input Groups</a>
+																<a href="forms-input-groups.php">Input Groups</a>
 															</li>
 															<li>
-																<a href="forms-checkbox-radio.html">Checkbox &amp; Radios</a>
+																<a href="forms-checkbox-radio.php">Checkbox &amp; Radios</a>
 															</li>
 															<li>
-																<a href="forms-validation.html">Form Validation</a>
+																<a href="forms-validation.php">Form Validation</a>
 															</li>
 															<li>
-																<a href="forms-dropzone.html">Dropzone</a>
+																<a href="forms-dropzone.php">Dropzone</a>
 															</li>
 															<li>
-																<a href="forms-bs-select.html">Select 2 Dropdowns</a>
+																<a href="forms-bs-select.php">Select 2 Dropdowns</a>
 															</li>
 															<li>
-																<a href="forms-date-time-picker.html">Date Time Picker</a>
+																<a href="forms-date-time-picker.php">Date Time Picker</a>
 															</li>
 															<li>
-																<a href="forms-input-mask.html">Input Mask</a>
+																<a href="forms-input-mask.php">Input Mask</a>
 															</li>
 															<li>
-																<a href="forms-input-range.html">Input Range</a>
+																<a href="forms-input-range.php">Input Range</a>
 															</li>
 															<li>
-																<a href="forms-editor.html">WYSIWYG Editor</a>
+																<a href="forms-editor.php">WYSIWYG Editor</a>
 															</li>
 														</ul>
 													</li>
@@ -665,49 +665,49 @@
 														<a href="#">Pages</a>
 														<ul class="is-hidden">
 															<li>
-																<a href="chat.html">Chat</a>
+																<a href="chat.php">Chat</a>
 															</li>
 															<li>
-																<a href="tasks.html">Tasks</a>
+																<a href="tasks.php">Tasks</a>
 															</li>
 															<li>
-																<a href="create-invoice.html">Create Invoice</a>
+																<a href="create-invoice.php">Create Invoice</a>
 															</li>
 															<li>
-																<a href="view-invoice.html">View Invoice</a>
+																<a href="view-invoice.php">View Invoice</a>
 															</li>
 															<li>
-																<a href="documents.html">Documents</a>
+																<a href="documents.php">Documents</a>
 															</li>
 															<li>
-																<a href="faq.html">Faq's</a>
+																<a href="faq.php">Faq's</a>
 															</li>
 															<li>
-																<a href="contacts.html">Contacts</a>
+																<a href="contacts.php">Contacts</a>
 															</li>
 															<li>
-																<a href="pricing.html">Pricing</a>
+																<a href="pricing.php">Pricing</a>
 															</li>
 															<li>
-																<a href="gallery-tiles.html">Gallery Tiles</a>
+																<a href="gallery-tiles.php">Gallery Tiles</a>
 															</li>
 															<li>
-																<a href="gallery.html">Gallery</a>
+																<a href="gallery.php">Gallery</a>
 															</li>
 															<li>
-																<a href="icons.html">Icons</a>
+																<a href="icons.php">Icons</a>
 															</li>
 															<li>
-																<a href="timeline.html">Timeline</a>
+																<a href="timeline.php">Timeline</a>
 															</li>
 															<li>
-																<a href="search-results.html">Search Results</a>
+																<a href="search-results.php">Search Results</a>
 															</li>
 															<li>
-																<a href="account-settings.html">Account Settings</a>
+																<a href="account-settings.php">Account Settings</a>
 															</li>
 															<li>
-																<a href="user-profile.html">User Profile</a>
+																<a href="user-profile.php">User Profile</a>
 															</li>
 														</ul>
 													</li>
@@ -716,49 +716,49 @@
 														<a href="#">Components</a>
 														<ul class="is-hidden">
 															<li>
-																<a href="accordions.html">Accordions</a>
+																<a href="accordions.php">Accordions</a>
 															</li>
 															<li>
-																<a href="alerts.html">Alerts</a>
+																<a href="alerts.php">Alerts</a>
 															</li>
 															<li>
-																<a href="buttons.html">Buttons</a>
+																<a href="buttons.php">Buttons</a>
 															</li>
 															<li>
-																<a href="badges.html">Badges</a>
+																<a href="badges.php">Badges</a>
 															</li>
 															<li>
-																<a href="cards.html">Cards</a>
+																<a href="cards.php">Cards</a>
 															</li>
 															<li>
-																<a href="carousel.html">Carousel</a>
+																<a href="carousel.php">Carousel</a>
 															</li>
 															<li>
-																<a href="list-group.html">List group</a>
+																<a href="list-group.php">List group</a>
 															</li>
 															<li>
-																<a href="modals.html">Modal</a>
+																<a href="modals.php">Modal</a>
 															</li>
 															<li>
-																<a href="paginations.html">Paginations</a>
+																<a href="paginations.php">Paginations</a>
 															</li>
 															<li>
-																<a href="popovers.html">Popovers</a>
+																<a href="popovers.php">Popovers</a>
 															</li>
 															<li>
-																<a href="progress.html">Progress</a>
+																<a href="progress.php">Progress</a>
 															</li>
 															<li>
-																<a href="spinners.html">Spinners</a>
+																<a href="spinners.php">Spinners</a>
 															</li>
 															<li>
-																<a href="tabs.html">Tabs</a>
+																<a href="tabs.php">Tabs</a>
 															</li>
 															<li>
-																<a href="toasts.html">Toasts</a>
+																<a href="toasts.php">Toasts</a>
 															</li>
 															<li>
-																<a href="tooltips.html">Tooltips</a>
+																<a href="tooltips.php">Tooltips</a>
 															</li>
 														</ul>
 													</li>
@@ -774,13 +774,13 @@
 														<a href="#">Graphs</a>
 														<ul class="is-hidden">
 															<li>
-																<a href="apex-graphs.html">Apex Graphs</a>
+																<a href="apex-graphs.php">Apex Graphs</a>
 															</li>
 															<li>
-																<a href="morris-graphs.html">Morris Graphs</a>
+																<a href="morris-graphs.php">Morris Graphs</a>
 															</li>
 															<li>
-																<a href="vector-maps.html">Vector Maps</a>
+																<a href="vector-maps.php">Vector Maps</a>
 															</li>
 														</ul>
 													</li>
@@ -789,13 +789,13 @@
 														<a href="#">Tables</a>
 														<ul class="is-hidden">
 															<li>
-																<a href="bootstrap-tables.html">Bootstrap Tables</a>
+																<a href="bootstrap-tables.php">Bootstrap Tables</a>
 															</li>
 															<li>
-																<a href="custom-tables.html">Custom Tables</a>
+																<a href="custom-tables.php">Custom Tables</a>
 															</li>
 															<li>
-																<a href="data-tables.html">Data Tables</a>
+																<a href="data-tables.php">Data Tables</a>
 															</li>
 														</ul>
 													</li>
@@ -803,13 +803,13 @@
 											</li>
 											
 											<li>
-												<a href="account-settings.html">Account Settings</a>
+												<a href="account-settings.php">Account Settings</a>
 											</li>
 											<li>
-												<a href="login.html">Logout</a>
+												<a href="login.php">Logout</a>
 											</li>
 											<li>
-												<a href="error-option2.html">Error</a>
+												<a href="error-option2.php">Error</a>
 											</li>
 										</ul>
 										
@@ -980,9 +980,9 @@
 									</a>
 									<div class="dropdown-menu dropdown-menu-end md" aria-labelledby="userSettings">
 										<div class="header-profile-actions">
-											<a href="user-profile.html"><i class="icon-user1"></i>Profile</a>
-											<a href="account-settings.html"><i class="icon-settings1"></i>Settings</a>
-											<a href="forgot-password.html"><i class="icon-log-out1"></i>Logout</a>
+											<a href="user-profile.php"><i class="icon-user1"></i>Profile</a>
+											<a href="account-settings.php"><i class="icon-settings1"></i>Settings</a>
+											<a href="forgot-password.php"><i class="icon-log-out1"></i>Logout</a>
 										</div>
 									</div>
 								</li>
@@ -1067,5 +1067,5 @@
 
 	</body>
 
-<!-- Mirrored from www.bootstrapget.com/demos/themeforest/unipro-admin-template/demos/01-design-blue/layout-compact-menu.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 04 Sep 2024 13:06:09 GMT -->
+<!-- Mirrored from www.bootstrapget.com/demos/themeforest/unipro-admin-template/demos/01-design-blue/layout-compact-menu.php by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 04 Sep 2024 13:06:09 GMT -->
 </html>

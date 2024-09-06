@@ -25,7 +25,7 @@
       Renderer.prototype.render = function ($parent) {
           var $node = $$1(this.markup);
           if (this.options && this.options.contents) {
-              $node.html(this.options.contents);
+              $node.php(this.options.contents);
           }
           if (this.options && this.options.className) {
               $node.addClass(this.options.className);
@@ -101,7 +101,7 @@
           var dataOption = (option !== undefined) ? ' data-option="' + option + '"' : '';
           return '<a class="dropdown-item" href="#" ' + (dataValue + dataOption) + ' role="listitem" aria-label="' + value + '">' + content + '</a>';
       }).join('') : options.items;
-      $node.html(markup).attr({ 'aria-label': options.title });
+      $node.php(markup).attr({ 'aria-label': options.title });
   });
   var dropdownButtonContents = function (contents) {
       return contents;
@@ -112,7 +112,7 @@
           var content = options.template ? options.template(item) : item;
           return '<a class="dropdown-item" href="#" data-value="' + value + '" role="listitem" aria-label="' + item + '">' + icon(options.checkClassName) + ' ' + content + '</a>';
       }).join('') : options.items;
-      $node.html(markup).attr({ 'aria-label': options.title });
+      $node.php(markup).attr({ 'aria-label': options.title });
   });
   var palette = renderer.create('<div class="note-color-palette"/>', function ($node, options) {
       var contents = [];
@@ -136,7 +136,7 @@
           }
           contents.push('<div class="note-color-row">' + buttons.join('') + '</div>');
       }
-      $node.html(contents.join(''));
+      $node.php(contents.join(''));
       if (options.tooltip) {
           $node.find('.note-color-btn').tooltip({
               container: options.container,
@@ -152,7 +152,7 @@
       $node.attr({
           'aria-label': options.title
       });
-      $node.html([
+      $node.php([
           '<div class="modal-dialog">',
           '  <div class="modal-content">',
           (options.title
@@ -180,7 +180,7 @@
       }
   });
   var checkbox = renderer.create('<div class="form-check"></div>', function ($node, options) {
-      $node.html([
+      $node.php([
           '<label class="form-check-label"' + (options.id ? ' for="' + options.id + '"' : '') + '>',
           ' <input type="checkbox" class="form-check-input"' + (options.id ? ' id="' + options.id + '"' : ''),
           (options.checked ? ' checked' : ''),
@@ -272,7 +272,7 @@
           };
       },
       removeLayout: function ($note, layoutInfo) {
-          $note.html(layoutInfo.editable.html());
+          $note.php(layoutInfo.editable.php());
           layoutInfo.editor.remove();
           $note.show();
       }
@@ -918,7 +918,7 @@
   }
   /**
    * ex) br, col, embed, hr, img, input, ...
-   * @see http://www.w3.org/html/wg/drafts/html/master/syntax.html#void-elements
+   * @see http://www.w3.org/html/wg/drafts/html/master/syntax.php#void-elements
    */
   function isVoid(node) {
       return node && /^BR|^IMG|^HR|^IFRAME|^BUTTON|^INPUT|^AUDIO|^VIDEO|^EMBED/.test(node.nodeName.toUpperCase());
@@ -1702,7 +1702,7 @@
    * @param {Boolean} [stripLinebreaks] - default: false
    */
   function value($node, stripLinebreaks) {
-      var val = isTextarea($node[0]) ? $node.val() : $node.html();
+      var val = isTextarea($node[0]) ? $node.val() : $node.php();
       if (stripLinebreaks) {
           return val.replace(/[\n\r]/g, '');
       }
@@ -1927,14 +1927,14 @@
           var isActivated = this.invoke('codeview.isActivated');
           if (html === undefined) {
               this.invoke('codeview.sync');
-              return isActivated ? this.layoutInfo.codable.val() : this.layoutInfo.editable.html();
+              return isActivated ? this.layoutInfo.codable.val() : this.layoutInfo.editable.php();
           }
           else {
               if (isActivated) {
                   this.layoutInfo.codable.val(html);
               }
               else {
-                  this.layoutInfo.editable.html(html);
+                  this.layoutInfo.editable.php(html);
               }
               this.$note.val(html);
               this.triggerEvent('change', html, this.layoutInfo.editable);
@@ -2542,7 +2542,7 @@
        * insert html at current cursor
        */
       WrappedRange.prototype.pasteHTML = function (markup) {
-          var contentsContainer = $$1('<div></div>').html(markup)[0];
+          var contentsContainer = $$1('<div></div>').php(markup)[0];
           var childNodes = lists.from(contentsContainer.childNodes);
           var rng = this.wrapBodyInlineWithPara().deleteContents();
           if (rng.so > 0) {
@@ -2635,7 +2635,7 @@
    *  * BoundaryPoint: a point of dom tree
    *  * BoundaryPoints: two boundaryPoints corresponding to the start and the end of the Range
    *
-   * See to http://www.w3.org/TR/DOM-Level-2-Traversal-Range/ranges.html#Level-2-Range-Position
+   * See to http://www.w3.org/TR/DOM-Level-2-Traversal-Range/ranges.php#Level-2-Range-Position
    */
   var range = {
       /**
@@ -2924,13 +2924,13 @@
           var rng = range.create(this.editable);
           var emptyBookmark = { s: { path: [], offset: 0 }, e: { path: [], offset: 0 } };
           return {
-              contents: this.$editable.html(),
+              contents: this.$editable.php(),
               bookmark: ((rng && rng.isOnEditable()) ? rng.bookmark(this.editable) : emptyBookmark)
           };
       };
       History.prototype.applySnapshot = function (snapshot) {
           if (snapshot.contents !== null) {
-              this.$editable.html(snapshot.contents);
+              this.$editable.php(snapshot.contents);
           }
           if (snapshot.bookmark !== null) {
               range.createFromBookmark(this.editable, snapshot.bookmark).select();
@@ -2943,7 +2943,7 @@
       */
       History.prototype.rewind = function () {
           // Create snap shot if not yet recorded
-          if (this.$editable.html() !== this.stack[this.stackOffset].contents) {
+          if (this.$editable.php() !== this.stack[this.stackOffset].contents) {
               this.recordUndo();
           }
           // Return to the first available snapshot.
@@ -2973,7 +2973,7 @@
           // Restore stackOffset to its original value.
           this.stackOffset = -1;
           // Clear the editable area.
-          this.$editable.html('');
+          this.$editable.php('');
           // Record our first snapshot (of nothing).
           this.recordUndo();
       };
@@ -2982,7 +2982,7 @@
        */
       History.prototype.undo = function () {
           // Create snap shot if not yet recorded
-          if (this.$editable.html() !== this.stack[this.stackOffset].contents) {
+          if (this.$editable.php() !== this.stack[this.stackOffset].contents) {
               this.recordUndo();
           }
           if (this.stackOffset > 0) {
@@ -3825,7 +3825,7 @@
                           var baseCellTr = currentCell.baseCell.parent;
                           var isTopFromRowSpan = (!baseCellTr ? 0 : currentCell.baseCell.closest('tr').rowIndex) <= currentTr[0].rowIndex;
                           if (isTopFromRowSpan) {
-                              var newTd = $$1('<div></div>').append($$1('<td' + tdAttributes + '>' + dom.blank + '</td>').removeAttr('rowspan')).html();
+                              var newTd = $$1('<div></div>').append($$1('<td' + tdAttributes + '>' + dom.blank + '</td>').removeAttr('rowspan')).php();
                               html.append(newTd);
                               break;
                           }
@@ -4386,9 +4386,9 @@
           });
           this.$editable.attr('spellcheck', this.options.spellCheck);
           // init content before set event
-          this.$editable.html(dom.html(this.$note) || dom.emptyPara);
+          this.$editable.php(dom.php(this.$note) || dom.emptyPara);
           this.$editable.on(env.inputEventName, func.debounce(function () {
-              _this.context.triggerEvent('change', _this.$editable.html(), _this.$editable);
+              _this.context.triggerEvent('change', _this.$editable.php(), _this.$editable);
           }, 10));
           this.$editor.on('focusin', function (event) {
               _this.context.triggerEvent('focusin', event);
@@ -4540,31 +4540,31 @@
        * undo
        */
       Editor.prototype.undo = function () {
-          this.context.triggerEvent('before.command', this.$editable.html());
+          this.context.triggerEvent('before.command', this.$editable.php());
           this.history.undo();
-          this.context.triggerEvent('change', this.$editable.html(), this.$editable);
+          this.context.triggerEvent('change', this.$editable.php(), this.$editable);
       };
       /*
       * commit
       */
       Editor.prototype.commit = function () {
-          this.context.triggerEvent('before.command', this.$editable.html());
+          this.context.triggerEvent('before.command', this.$editable.php());
           this.history.commit();
-          this.context.triggerEvent('change', this.$editable.html(), this.$editable);
+          this.context.triggerEvent('change', this.$editable.php(), this.$editable);
       };
       /**
        * redo
        */
       Editor.prototype.redo = function () {
-          this.context.triggerEvent('before.command', this.$editable.html());
+          this.context.triggerEvent('before.command', this.$editable.php());
           this.history.redo();
-          this.context.triggerEvent('change', this.$editable.html(), this.$editable);
+          this.context.triggerEvent('change', this.$editable.php(), this.$editable);
       };
       /**
        * before command
        */
       Editor.prototype.beforeCommand = function () {
-          this.context.triggerEvent('before.command', this.$editable.html());
+          this.context.triggerEvent('before.command', this.$editable.php());
           // keep focus on editable before command execution
           this.focus();
       };
@@ -4576,7 +4576,7 @@
           this.normalizeContent();
           this.history.recordUndo();
           if (!isPreventTrigger) {
-              this.context.triggerEvent('change', this.$editable.html(), this.$editable);
+              this.context.triggerEvent('change', this.$editable.php(), this.$editable);
           }
       };
       /**
@@ -4864,7 +4864,7 @@
        * @return {Boolean}
        */
       Editor.prototype.isEmpty = function () {
-          return dom.isEmpty(this.$editable[0]) || dom.emptyPara === this.$editable.html();
+          return dom.isEmpty(this.$editable[0]) || dom.emptyPara === this.$editable.php();
       };
       /**
        * Removes all contents and restores the editable instance to an _emptyPara_.
@@ -5089,7 +5089,7 @@
        */
       CodeView.prototype.activate = function () {
           var _this = this;
-          this.$codable.val(dom.html(this.$editable, this.options.prettifyHtml));
+          this.$codable.val(dom.php(this.$editable, this.options.prettifyHtml));
           this.$codable.height(this.$editable.height());
           this.context.invoke('toolbar.updateCodeview', true);
           this.$editor.addClass('codeview');
@@ -5135,12 +5135,12 @@
               cmEditor.toTextArea();
           }
           var value = this.purify(dom.value(this.$codable, this.options.prettifyHtml) || dom.emptyPara);
-          var isChange = this.$editable.html() !== value;
-          this.$editable.html(value);
+          var isChange = this.$editable.php() !== value;
+          this.$editable.php(value);
           this.$editable.height(this.options.height ? this.$codable.height() : 'auto');
           this.$editor.removeClass('codeview');
           if (isChange) {
-              this.context.triggerEvent('change', this.$editable.html(), this.$editable);
+              this.context.triggerEvent('change', this.$editable.php(), this.$editable);
           }
           this.$editable.focus();
           this.context.invoke('toolbar.updateCodeview', false);
@@ -5394,7 +5394,7 @@
           var match = keyword.match(linkPattern);
           if (match && (match[1] || match[2])) {
               var link = match[1] ? keyword : defaultScheme + keyword;
-              var node = $$1('<a />').html(keyword).attr('href', link)[0];
+              var node = $$1('<a />').php(keyword).attr('href', link)[0];
               if (this.context.options.linkTargetBlank) {
                   $$1(node).attr('target', '_blank');
               }
@@ -5533,7 +5533,7 @@
           this.$placeholder = $$1('<div class="note-placeholder">');
           this.$placeholder.on('click', function () {
               _this.context.invoke('focus');
-          }).html(this.options.placeholder).prependTo(this.$editingArea);
+          }).php(this.options.placeholder).prependTo(this.$editingArea);
           this.update();
       };
       Placeholder.prototype.destroy = function () {
@@ -6374,7 +6374,7 @@
           if (dim.r > 3 && dim.r < this.options.insertTableMaxSize.row) {
               $unhighlighted.css({ height: dim.r + 1 + 'em' });
           }
-          $dimensionDisplay.html(dim.c + ' x ' + dim.r);
+          $dimensionDisplay.php(dim.c + ' x ' + dim.r);
       };
       return Buttons;
   }());
@@ -6534,7 +6534,7 @@
                       className: 'sn-checkbox-open-in-new-window',
                       text: this.lang.link.openInNewWindow,
                       checked: true
-                  }).render()).html()
+                  }).render()).php()
                   : '',
           ].join('');
           var buttonClass = 'btn btn-primary note-btn note-btn-primary note-link-btn';
@@ -6690,7 +6690,7 @@
           if (rng.isCollapsed() && rng.isOnAnchor()) {
               var anchor = dom.ancestor(rng.sc, dom.isAnchor);
               var href = $$1(anchor).attr('href');
-              this.$popover.find('a').attr('href', href).html(href);
+              this.$popover.find('a').attr('href', href).php(href);
               var pos = dom.posFromPlaceholder(anchor);
               this.$popover.css({
                   display: 'block',
@@ -6988,11 +6988,11 @@
           var vimMatch = url.match(vimRegExp);
           var dmRegExp = /.+dailymotion.com\/(video|hub)\/([^_]+)[^#]*(#video=([^_&]+))?/;
           var dmMatch = url.match(dmRegExp);
-          var youkuRegExp = /\/\/v\.youku\.com\/v_show\/id_(\w+)=*\.html/;
+          var youkuRegExp = /\/\/v\.youku\.com\/v_show\/id_(\w+)=*\.php/;
           var youkuMatch = url.match(youkuRegExp);
           var qqRegExp = /\/\/v\.qq\.com.*?vid=(.+)/;
           var qqMatch = url.match(qqRegExp);
-          var qqRegExp2 = /\/\/v\.qq\.com\/x?\/?(page|cover).*?\/([^\/]+)\.html\??.*/;
+          var qqRegExp2 = /\/\/v\.qq\.com\/x?\/?(page|cover).*?\/([^\/]+)\.php\??.*/;
           var qqMatch2 = url.match(qqRegExp2);
           var mp4RegExp = /^.+.(mp4|m4v)$/;
           var mp4Match = url.match(mp4RegExp);
@@ -7059,7 +7059,7 @@
                   .attr('frameborder', 0)
                   .attr('height', '310')
                   .attr('width', '500')
-                  .attr('src', 'http://v.qq.com/iframe/player.html?vid=' + vid + '&amp;auto=0');
+                  .attr('src', 'http://v.qq.com/iframe/player.php?vid=' + vid + '&amp;auto=0');
           }
           else if (mp4Match || oggMatch || webmMatch) {
               $video = $$1('<video controls>')
@@ -7181,8 +7181,8 @@
               $row.append($$1('<label><kbd>' + key + '</kdb></label>').css({
                   'width': 180,
                   'margin-right': 10
-              })).append($$1('<span/>').html(_this.context.memo('help.' + command) || command));
-              return $row.html();
+              })).append($$1('<span/>').php(_this.context.memo('help.' + command) || command));
+              return $row.php();
           }).join('');
       };
       /**
@@ -7362,7 +7362,7 @@
               range.createFromNode(node).collapse().select();
               this.lastWordRange = null;
               this.hide();
-              this.context.triggerEvent('change', this.$editable.html(), this.$editable[0]);
+              this.context.triggerEvent('change', this.$editable.php(), this.$editable[0]);
               this.context.invoke('editor.focus');
           }
       };
@@ -7420,7 +7420,7 @@
           this.searchKeyword(idx, keyword, function (items) {
               items = items || [];
               if (items.length) {
-                  $group.html(_this.createItemTemplates(idx, items));
+                  $group.php(_this.createItemTemplates(idx, items));
                   _this.show();
               }
           });

@@ -1,5 +1,5 @@
-<!doctype html>
-<html lang="en">
+<!doctype php>
+<php lang="en">
 	
 <!-- Mirrored from www.bootstrapget.com/demos/themeforest/unipro-admin-template/demos/01-design-blue/view-invoice.php by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 04 Sep 2024 13:06:42 GMT -->
 <head>
@@ -1289,9 +1289,9 @@
 								<!-- Card start -->
 								<div class="card">
 									<div class="card-header-lg">
-										<h4>Create Invoice</h4>
+										<h4>Application Details</h4>
 										<div class="text-end">
-											<a href="create-invoice.php" class="btn btn-primary">Create Invoice</a>
+											<a href="create-invoice.php" class="btn btn-primary">Export</a>
 										</div>
 									</div>
 									<div class="card-body">
@@ -1322,14 +1322,12 @@
                                                 <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
                                                     <div class="invoice-details">
                                                         <address class="m-0">
-                                                            Alex Maxwell,<br>
-                                                            1691 Oakdale Ave,<br>
-                                                            San Francisco, California(CA), 94124
+                                                            <h3>Loan 4T2342-01 - APPLICANT NAME</h3>
                                                         </address>
 
                                                         <div class="invoice-num">
-                                                            <div>Invoice - #009</div>
-                                                            <div>January 10th 2020</div>
+                                                            <!-- <div>Invoice - #009</div>
+                                                            <div>January 10th 2020</div> -->
                                                         </div>
                                                     </div>
                                                 </div>
@@ -1344,56 +1342,142 @@
 														<table class="table table-bordered">
 															<thead>
 																<tr>
-																	<th>Items</th>
+																	<!-- <th>Items</th>
 																	<th>Product ID</th>
 																	<th>Hours</th>
-																	<th>Amount (Net)</th>
+																	<th>Amount (Net)</th> -->
 																</tr>
 															</thead>
 															<tbody>
 																<tr>
-																	<td>
-																		<h6>Creative Wordpress Template</h6>
-																		<p>Create quality mockups and prototypes and Design mobile-based features.</p>
-																	</td>
-																	<td>
-																		<h6>#651</h6>
-																	</td>
-																	<td>
-																		<h6>40</h6>
-																	</td>
-																	<td>
-																		<h6>$450.00</h6>
+																	<td class='bg-light' colspan='2'>
+																		<h6 class='text-danger'>Applicant Details</h6>
 																	</td>
 																</tr>
 																<tr>
 																	<td>
-																		<h6>Front-End Development</h6>
-																		<p>Using markup languages like HTML to create user-friendly web pages.</p>
+																		<h6 class='text-primary'>Name of Applicant</h6>
+																		<!-- <p>Create quality mockups and prototypes and Design mobile-based features.</p> -->
 																	</td>
+																	
 																	<td>
-																		<h6>#429</h6>
-																	</td>
-																	<td>
-																		<h6>60</h6>
-																	</td>
-																	<td>
-																		<h6>$550.00</h6>
+																		<h6>₦<span>50,000,000</span></h6>
 																	</td>
 																</tr>
 																<tr>
-																	<td colspan="2">&nbsp;</td>
 																	<td>
-																		<p class="m-0">Subtotal</p>
-																		<p class="m-0">Discount</p>
-																		<p class="m-0">VAT</p>
-																		<h5 class="mt-2 text-danger">Total USD</h5>
+																		<h6 class='text-primary'>DOB of Applicant</h6>
+																		<!-- <p>Create quality mockups and prototypes and Design mobile-based features.</p> -->
+																	</td>
+																	
+																	<td>
+																		<h6><span>06-04-1985</span></h6>
+																	</td>
+																</tr>
+																
+																<tr>
+																	<td>
+																		<h6 class='text-primary'>Profession</h6>
+																		<!-- <p>Create quality mockups and prototypes and Design mobile-based features.</p> -->
+																	</td>
+																	
+																	<td>
+																		<h6><span>Accountant</span></h6>
+																	</td>
+																</tr>
+																<tr>
+																	<td>
+																		<h6 class='text-primary'>Place of Employment</h6>
+																		<!-- <p>Create quality mockups and prototypes and Design mobile-based features.</p> -->
+																	</td>
+																	
+																	<td>
+																		<h6><span>21 Area 1, Garki II, Abuja</span></h6>
+																	</td>
+																</tr>
+																<tr>
+																	<td>
+																		<h6 class='text-primary'>Annual Income</h6>
+																		<!-- <p>Create quality mockups and prototypes and Design mobile-based features.</p> -->
+																	</td>
+																	
+																	<td>
+																		<h6>₦<span>50,000,000</span></h6>
+																	</td>
+																</tr>
+																<tr>
+																	<td class='bg-light' colspan='2'>
+																		<h6 class='text-danger'>Loan Details</h6>
+																	</td>
+																</tr>
+																<tr>
+																	<td>
+																		<h6 class='text-primary'>Principal Amount</h6>
+																		<!-- <p>Create quality mockups and prototypes and Design mobile-based features.</p> -->
+																	</td>
+																	
+																	<td>
+																		<h6>₦<span>80,000,000</span></h6>
+																	</td>
+																</tr>
+																<tr>
+																	<td>
+																		<h6 class='text-primary'>Loan starts on</h6>
+																		<!-- <p>Create quality mockups and prototypes and Design mobile-based features.</p> -->
+																	</td>
+																	
+																	<td>
+																		<h6><span>03-09-2024</span></h6>
+																	</td>
+																</tr>
+																<tr>
+																	<td>
+																		<h6 class='text-primary'>Terms of Payment</h6>
+																		<!-- <p>Create quality mockups and prototypes and Design mobile-based features.</p> -->
 																	</td>
 																	<td>
-																		<p class="m-0">$1000.00</p>
-																		<p class="m-0">$10.00</p>
-																		<p class="m-0">$5.00</p>
-																		<h5 class="mt-2 text-danger">$1015.00</h5>
+																		<h6>Twenty consecutive bi-weekly payroll deductions of ₦800,000 in November 2024</h6>
+																	</td>
+																</tr>
+																<tr>
+																	<td>
+																		<h6 class='text-primary'>Loan ends on</h6>
+																		<!-- <p>Create quality mockups and prototypes and Design mobile-based features.</p> -->
+																	</td>
+																	
+																	<td>
+																		<h6>03-09-2024</h6>
+																	</td>
+																</tr>
+																<tr>
+																	<td>
+																		<h6 class='text-primary'>Profession</h6>
+																		<!-- <p>Create quality mockups and prototypes and Design mobile-based features.</p> -->
+																	</td>
+																	
+																	<td>
+																		<h6><span>Accountant</span></h6>
+																	</td>
+																</tr>
+																
+																<tr>
+																	<td>
+																		<h6 class='text-primary'>What this loan will be used for</h6>
+																		<!-- <p>Using markup languages like php to create user-friendly web pages.</p> -->
+																	</td>
+																	
+																	<td>
+																		<h6><span>Business Launching</span></h6>
+																	</td>
+																</tr>
+																<tr>
+																	<td colspan="">&nbsp;</td>
+																	
+																	<td>
+																		<p class="m-0">₦1000.00</p>
+																		<p class="m-0">₦10.00</p>
+																		<p class="m-0">₦5.00</p>
+																		<h5 class="mt-2 text-danger">₦1015.00</h5>
 																	</td>
 																</tr>
 															</tbody>
@@ -1409,8 +1493,8 @@
 
                                                 <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
                                                     <div class="text-start">
-                                                        <button class="btn btn-primary">Download</button>
-                                                        <button class="btn btn-light ms-1">Print</button>
+                                                        <button class="btn btn-success">Proceed</button>
+                                                        <button class="btn btn-danger ms-1">Decline</button>
                                                     </div>
                                                 </div>
 
@@ -1484,4 +1568,4 @@
 	</body>
 
 <!-- Mirrored from www.bootstrapget.com/demos/themeforest/unipro-admin-template/demos/01-design-blue/view-invoice.php by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 04 Sep 2024 13:06:42 GMT -->
-</html>
+</php>

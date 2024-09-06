@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="en">
 	
-<!-- Mirrored from www.bootstrapget.com/demos/themeforest/unipro-admin-template/demos/01-design-blue/forgot-password.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 04 Sep 2024 13:07:48 GMT -->
+<!-- Mirrored from www.bootstrapget.com/demos/themeforest/unipro-admin-template/demos/01-design-blue/forgot-password.php by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 04 Sep 2024 13:07:48 GMT -->
 <head>
 		<!-- Required meta tags -->
 		<meta charset="utf-8">
@@ -59,16 +59,16 @@
 						<div class="about-desc">
 							UniPro a data dashboard is an information management tool that visually tracks, analyzes and displays key performance indicators (KPI), metrics and key data points to monitor the health of a business, department or specific process.
 						</div>
-						<a href="reports.html" class="know-more">Know More <img src="img/right-arrow.svg" alt="Uni Pro Admin"></a>
+						<a href="reports.php" class="know-more">Know More <img src="img/right-arrow.svg" alt="Uni Pro Admin"></a>
 
 					</div>
 				</div>
 				<div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12">
 					<div class="login-wrapper">
-						<form action="https://www.bootstrapget.com/demos/themeforest/unipro-admin-template/demos/01-design-blue/reports.html">
+						<form action="https://www.bootstrapget.com/demos/themeforest/unipro-admin-template/demos/01-design-blue/reports.php">
 							<div class="login-screen">
 								<div class="login-body pb-4">
-									<a href="reports.html" class="login-logo">
+									<a href="reports.php" class="login-logo">
 										<img src="img/logo.svg" alt="Uni Pro Admin">
 									</a>
 									<h6>In order to access your Uni Pro account, please enter the email id you provided during the registration process.</h6>
@@ -112,5 +112,5 @@
 
 	</body>
 
-<!-- Mirrored from www.bootstrapget.com/demos/themeforest/unipro-admin-template/demos/01-design-blue/forgot-password.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 04 Sep 2024 13:07:48 GMT -->
+<!-- Mirrored from www.bootstrapget.com/demos/themeforest/unipro-admin-template/demos/01-design-blue/forgot-password.php by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 04 Sep 2024 13:07:48 GMT -->
 </html>

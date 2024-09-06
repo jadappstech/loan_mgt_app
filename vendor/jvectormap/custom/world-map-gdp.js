@@ -12,7 +12,7 @@ $(function(){
 		},
 		backgroundColor: 'transparent',
 		onRegionTipShow: function(e, el, code){
-			el.html(el.html()+' (GDP - '+gdpData[code]+')');
+			el.php(el.php()+' (GDP - '+gdpData[code]+')');
 		}
 	});
 });

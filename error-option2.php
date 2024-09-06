@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="en">
 	
-<!-- Mirrored from www.bootstrapget.com/demos/themeforest/unipro-admin-template/demos/01-design-blue/error-option2.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 04 Sep 2024 13:07:52 GMT -->
+<!-- Mirrored from www.bootstrapget.com/demos/themeforest/unipro-admin-template/demos/01-design-blue/error-option2.php by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 04 Sep 2024 13:07:52 GMT -->
 <head>
 		<!-- Required meta tags -->
 		<meta charset="utf-8">
@@ -36,7 +36,7 @@
 			<div class="contents">
 				<h1>404</h1>
 				<h5>We're sorry but it looks <br>like that page doesn't exist anymore.</h5>
-				<a href="crm.html" class="btn stripes-btn">Back to Home</a>
+				<a href="crm.php" class="btn stripes-btn">Back to Home</a>
 			</div>
 			<div class="astronaut-container">
                 <img class="astronaut" src="img/error-screen/astronaut.png" alt="Uni Pro Admin">
@@ -45,5 +45,5 @@
 
 	</body>
 
-<!-- Mirrored from www.bootstrapget.com/demos/themeforest/unipro-admin-template/demos/01-design-blue/error-option2.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 04 Sep 2024 13:07:53 GMT -->
+<!-- Mirrored from www.bootstrapget.com/demos/themeforest/unipro-admin-template/demos/01-design-blue/error-option2.php by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 04 Sep 2024 13:07:53 GMT -->
 </html>

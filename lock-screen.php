@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="en">
 	
-<!-- Mirrored from www.bootstrapget.com/demos/themeforest/unipro-admin-template/demos/01-design-blue/lock-screen.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 04 Sep 2024 13:07:48 GMT -->
+<!-- Mirrored from www.bootstrapget.com/demos/themeforest/unipro-admin-template/demos/01-design-blue/lock-screen.php by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 04 Sep 2024 13:07:48 GMT -->
 <head>
 		<!-- Required meta tags -->
 		<meta charset="utf-8">
@@ -88,10 +88,10 @@
 				</div>
 				<div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12">
 					<div class="login-wrapper">
-						<form action="https://www.bootstrapget.com/demos/themeforest/unipro-admin-template/demos/01-design-blue/reports.html">
+						<form action="https://www.bootstrapget.com/demos/themeforest/unipro-admin-template/demos/01-design-blue/reports.php">
 							<div class="login-screen">
 								<div class="login-body">
-									<a href="reports.html" class="login-logo">
+									<a href="reports.php" class="login-logo">
 										<img src="img/logo.svg" alt="Uni Pro Admin">
 									</a>
 									<h6>Welcome back,<br>Please enter your password to unlock the screen!</h6>
@@ -100,7 +100,7 @@
 										<div class="field-placeholder">Enter Password</div>
 									</div>
 									<div class="actions">
-										<a href="forgot-password.html">Forgot password?</a>
+										<a href="forgot-password.php">Forgot password?</a>
 										<button type="submit" class="btn btn-danger">Unlock</button>
 									</div>
 								</div>
@@ -135,5 +135,5 @@
 
 	</body>
 
-<!-- Mirrored from www.bootstrapget.com/demos/themeforest/unipro-admin-template/demos/01-design-blue/lock-screen.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 04 Sep 2024 13:07:48 GMT -->
+<!-- Mirrored from www.bootstrapget.com/demos/themeforest/unipro-admin-template/demos/01-design-blue/lock-screen.php by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 04 Sep 2024 13:07:48 GMT -->
 </html>
