@@ -3,6 +3,7 @@
 	
 <!-- Mirrored from www.bootstrapget.com/demos/themeforest/unipro-admin-template/demos/01-design-blue/signup.php by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 04 Sep 2024 13:07:48 GMT -->
 <head>
+	
 		<!-- Required meta tags -->
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -29,8 +30,22 @@
 		<!-- *************
 			************ Vendor Css Files *************
 		************ -->
+
+		<style>
+			 body.authentication {
+            background: url('phonmoni.webp') no-repeat center center fixed;
+            background-size: cover;
+            font-family: 'Arial', sans-serif;
+            color: #fff;
+            margin: 0;
+            padding: 0;
+		
+        }
+
+		</style>
 		
 	</head>
+	
 	<body class="authentication">
 
 		<!-- Loading wrapper start -->
@@ -64,39 +79,43 @@
 					</div>
 				</div>
 				<div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12">
-					<div class="login-wrapper">
-						<form action="https://www.bootstrapget.com/demos/themeforest/unipro-admin-template/demos/01-design-blue/reports.php">
-							<div class="login-screen">
-								<div class="login-body">
-									<a href="reports.php" class="login-logo">
-										<img src="img/logo.svg" alt="Uni Pro Admin">
-									</a>
-									<h6>Welcome to UniPro dashboard,<br>Create your account.</h6>
-									<div class="field-wrapper">
-										<input type="email" autofocus>
-										<div class="field-placeholder">Email ID</div>
-									</div>
-									<div class="field-wrapper">
-										<input type="password">
-										<div class="field-placeholder">Password</div>
-									</div>
-									<div class="field-wrapper mb-3">
-										<input type="password">
-										<div class="field-placeholder">Confirm Password</div>
-									</div>
-									<div class="actions">
-										<button type="submit" class="btn btn-primary ms-auto">Sign Up</button>
-									</div>
-								</div>
-								<div class="login-footer">
-									<span class="additional-link">Have an account? <a href="login.php" class="btn btn-light">Login</a></span>
-								</div>
-							</div>
-						</form>
-					</div>
-				</div>
-			</div>
-			<!-- Row end -->
+    <div class="login-wrapper">
+        <form action="https://www.bootstrapget.com/demos/themeforest/unipro-admin-template/demos/01-design-blue/dashboard.php">
+            <div class="login-screen">
+                <div class="login-body">
+                    <!-- Center the logo -->
+                    <a href="dashboard.php" class="login-logo d-flex justify-content-center">
+                        <img src="img/logo.svg" alt="Uni Pro Admin">
+                    </a>
+                    <h6 class="text-center">Welcome back to UniPro dashboard,<br>Please sign in to your account.</h6>
+                    <div class="field-wrapper">
+                        <input type="email" required autofocus>
+                        <div class="field-placeholder">Email ID</div>
+                    </div>
+                    <div class="field-wrapper">
+                        <input type="password" required>
+                        <div class="field-placeholder">Password</div>
+                    </div>
+                    <div class="field-wrapper mb-3">
+                        <!-- Make Remember Me checkbox smaller -->
+                        <label class="form-check-label">
+                            <input type="checkbox" class="form-check-input" style="width: 1em; height: 1em;">
+                            Remember Me
+                        </label>
+                    </div>
+                    <div class="actions">
+                        <button type="submit" class="btn btn-primary ms-auto">Sign In</button>
+                    </div>
+                </div>
+                <div class="login-footer">
+                    <span class="additional-link">Don't have an account? <a href="signup.php" class="btn btn-light">Sign Up</a></span>
+                    <span class="additional-link ms-auto"><a href="forgot-password.php">Forgot Password?</a></span>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>
+
 
 		
 			</div>

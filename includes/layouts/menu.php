@@ -8,15 +8,15 @@
         <!-- Tabs nav start -->
         <div class="nav" role="tablist" aria-orientation="vertical">
             <a href="#" class="logo">
-                <img src="img/logo.svg" alt="Uni Pro Admin">
+                <img src="img/centrum-logo.png" alt="Uni Pro Admin">
             </a>
-            <a class="nav-link active" id="home-tab" data-bs-toggle="tab" href="#tab-home" role="tab" aria-controls="tab-home" aria-selected="true">
+            <a class="nav-link " id="home-tab" data-bs-toggle="tab" href="#tab-home" role="tab" aria-controls="tab-home" aria-selected="true">
                 <i class="icon-home2"></i>
                 <span class="nav-link-text">Dashboards</span>
             </a>
-            <a class="nav-link" id="product-tab" data-bs-toggle="tab" href="#tab-product" role="tab" aria-controls="tab-product" aria-selected="false">
+            <a class="nav-link active" id="product-tab" data-bs-toggle="tab" href="#tab-product" role="tab" aria-controls="tab-product" aria-selected="false">
                 <i class="icon-layers2"></i>
-                <span class="nav-link-text">Product</span>
+                <span class="nav-link-text">Loan Appliations</span>
             </a>
             <a class="nav-link" id="pages-tab" data-bs-toggle="tab" href="#tab-pages" role="tab" aria-controls="tab-pages" aria-selected="false">
                 <i class="icon-book-open"></i>
@@ -53,7 +53,7 @@
 
                 <!-- Tab content header start -->
                 <div class="tab-pane-header">
-                    Dashboards
+                    Loan Application
                 </div>
                 <!-- Tab content header end -->
 
@@ -62,10 +62,10 @@
                     <div class="sidebar-menu">
                         <ul>
                             <li>
-                                <a href="index-2.php" class="current-page">Dashboard</a>
+                                <a href="index-2.php" class="current-page">New Loan Application</a>
                             </li>
                             <li>
-                                <a href="analytics.php">Analytics</a>
+                                <a href="analytics.php">Loan History</a>
                             </li>
                             <li>
                                 <a href="sales.php">Sales</a>
