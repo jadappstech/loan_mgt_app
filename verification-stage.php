@@ -1277,50 +1277,6 @@
 
 					<div class="content-wrapper">
 
-						<!-- Row start -->
-						<div class="row gutters">
-							<div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
-
-								<div class="profile-header">
-									<h1>Welcome, Charles</h1>
-									<div style=" background: #add8e6;" class="profile-header-content">
-											<div class="profile-header-tiles">
-													<div class="row gutters">
-															<div class="col-xl-4 col-lg-4 col-md-4 col-sm-4 col-12">
-																<div class="profile-tile">
-																	<span class="icon">
-																		<i class="icon-server"></i>
-																	</span>
-																	<h6>Name - <span>Charles Olawale</span></h6>
-																</div>
-															</div>
-															<div class="col-xl-4 col-lg-4 col-md-4 col-sm-4 col-12">
-																	<div class="profile-tile">
-																		<span class="icon">
-																			<i class="icon-map-pin"></i>
-																		</span>
-																		<h6>Location - <span>Nigeria</span></h6>
-																	</div>
-															</div>
-															<div class="col-xl-4 col-lg-4 col-md-4 col-sm-4 col-12">
-																	<div class="profile-tile">
-																			<span class="icon">
-																					<i class="icon-phone1"></i>
-																			</span>
-																			<h6>Phone - <span>1234567890</span></h6>
-																	</div>
-															</div>
-													</div>
-											</div>
-											<div class="profile-avatar-tile">
-													<img style="border: solid; border-width: 0.5px; border-color: #d6d6d6;" src="img/ngMan.jpg" class="img-fluid" alt="User Profile">
-											</div>
-									</div>
-							</div>
-
-							</div>
-						</div>
-												<!-- Row end -->
 												
 												<!-- Row start -->
 												<div style="display: inline;" class="row gutters">
@@ -1333,14 +1289,17 @@
 																				<!-- Card start -->
 																				<div class="card">
 																						<div class="card-header">
-																								<div class="card-title">Loan History</div>
+																								<div style="font-size:24px;" class="card-title">Verification stages</div>
 																						</div>
 																						<div class="card-body">
 																								<div class="slimScrollDiv" style="position: relative; overflow: hidden; width: auto; height: 250px;"><div class="customScroll250" style="overflow: hidden; width: auto; height: 250px;">
 																										<div class="timeline-activity">
-																												<div class="activity-log">
-																														<p class="log-name">Business Loan<small class="log-time">- 5 Weeks ago</small></p>
-																														<div class="log-details">Five hundre thousand naira (N500,000) lore<span class="text-success ml-1"> #Paid</span></div>
+																												<div style="display:flex; flex-direction: row; justify-content: space-between;" class="activity-log">
+																														<div> <p class="log-name">Business Loan<small class="log-time">- 5 Weeks ago</small></p>
+																																	<div class="log-details">Five hundre thousand naira (N500,000) lore<span class="text-success ml-1"> #Paid</span></div>
+																														</div>
+
+																													<div style="display: grid; place-items: center;" class="log-details"><span class="text-success ml-1"> #Paid</span></div>
 																												</div>
 																												<div class="activity-log">
 																														<p class="log-name">Business Loan<small class="log-time">- 5 Weeks ago</small></p>

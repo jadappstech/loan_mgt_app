@@ -13,7 +13,7 @@
 		<link rel="shortcut icon" href="img/fav.png">
 
 		<!-- Title -->
-		<title>Uni Pro Admin Template - Admin Dashboard</title>
+		<title>active-applications</title>
 
 
 		<!-- *************
@@ -45,6 +45,8 @@
 		
 		<!-- Date Range CSS -->
 		<link rel="stylesheet" href="vendor/daterange/daterange.css">
+
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
 	</head>
 	<body>
@@ -1295,46 +1297,18 @@
 											<div class="filters-block">
 												<h5>Filters</h5>
 												<div class="filters">
-													<a href="#" class="active">
+													<a class="active">
 														<i class="icon-receipt"></i> All
 													</a>
-													<a href="#">
-														<i class="icon-error"></i> Priority
+													<a href="approved.php">
+													<i class="fa fa-check" style="font-size:16px; color: #1fd655;"></i>Approved
 													</a>
-													<a href="#">
-														<i class="icon-stars"></i> Starred
-													</a>
-													<a href="#">
-														<i class="icon-check_circle"></i> Done
-													</a>
-													<a href="#">
-														<i class="icon-circle-with-cross"></i> Deleted
+													<a href="declined.php">
+													<i class="fa fa-close" style="font-size:16px; color:red;"> </i>Declined
 													</a>
 												</div>
 											</div>
-											<div class="tags-block">
-												<h5>Tags</h5>
-												<div class="tags">
-													<a href="#">
-														<i class="icon-label text-primary"></i> Design
-													</a>
-													<a href="#">
-														<i class="icon-label text-secondary"></i> Frontend
-													</a>
-													<a href="#">
-														<i class="icon-label text-warning"></i> Backend
-													</a>
-													<a href="#">
-														<i class="icon-label text-success"></i> CSS
-													</a>
-													<a href="#">
-														<i class="icon-label text-danger"></i> Testing
-													</a>
-													<a href="#">
-														<i class="icon-label text-dark"></i> Mobile
-													</a>
-												</div>
-											</div>												
+																						
 										</div>
 									</div>
 									<!-- Labels container end -->
@@ -1419,7 +1393,11 @@
 										</div>
 										<div class="tasks-header">
 											<h3>Today <span class="date" id="todays-date"></span></h3>
-											<button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#addNewTask">New Task</button>
+																					<select id="filterDropdown">
+											<option value="All">All</option>
+											<option value="Loan amount">Fruits</option>
+											<option value="Date">Vegetables</option>
+										</select>
 										</div>
 										<div class="tasksContainerScroll">
 											<!-- Row start -->
@@ -1427,6 +1405,7 @@
 												<div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
 													<section class="task-list">
 														<h6 class="m-0 h-0">&nbsp;</h6>
+														
 														<!-- Task #1 -->
 														<div class="task-block">
 															<div class="task-checkbox">
@@ -1439,39 +1418,19 @@
 																</div>
 															</div>
 															<div class="task-details">
-																<div class="task-name">Create Notification</div>
-																<div class="task-desc">Incentivize, incentivize convergence weblogs, schemas sticky plug-and-play. Customized markets, sticky one-to-one exploit.</div>
+																<div class="task-name">Musa Okonkwo</div>
+																<div class="task-desc">Application for a loan of 5 million naira (N5,000,000)</div>
+																<div class="task-desc"><strong>Duration:</strong> 8 Weeks</div>
 																<div class="task-types">
-																	<span class="badge bg-warning">Design</span>
-																	<span class="badge bg-success">Issue</span>
+																	<button style=" border: solid; border-radius: 6px; padding: 10px; margin-right:4px; margin-left:-2px; " class="badge bg-warning">Veiw Profile</button>
+																	<button style=" border: none; border-radius: 4px; padding: 10px; margin-right:4px;" class="badge bg-success">Check Documents</button>
 																</div>
 															</div>
-															<ul class="task-actions">
-																<li>
-																	<a href="#" class="important active" data-bs-toggle="tooltip" data-bs-placement="top" title="Priority">
-																		<i class="icon-error"></i>
-																	</a>
-																</li>
-																<li>
-																	<a href="#" class="star" data-bs-toggle="tooltip" data-pbs-lacement="top" title="Star">
-																		<i class="icon-stars"></i>
-																	</a>
-																</li>
-																<li class="dropdown">
-																	<a href="#" id="task-actions" data-bs-toggle="dropdown" aria-haspopup="true">
-																		<i class="icon-more_vert"></i>
-																	</a>
-																	<div class="dropdown-menu dropdown-menu-end task-action-items" aria-labelledby="task-actions">
-																		<a href="#" class="mark-done-item">
-																			<i class="icon-done_all"></i> Mark as done
-																		</a>
-																		<a href="#" class="delete-task-item">
-																			<i class="icon-close"></i> Delete Task
-																		</a>
-																	</div>
-																</li>
-															</ul>
+															<div style="margin-bottom:20px;"> <span style="background: #FDDA0D; font-weight: 700; font-size:10px; 
+															border: solid 0.8px; border-radius:4px; padding-top:10px; padding-bottom:10px; padding-left:30px; color:#ffffff;
+															 padding-right:30px;" >Under Review</span> </div>
 														</div>
+														<!-- end of Task #1 -->
 
 														<!-- Task #2 -->
 														<div class="task-block">
@@ -1485,41 +1444,22 @@
 																</div>
 															</div>
 															<div class="task-details">
-																<div class="task-name">Major Updates</div>
-																<div class="task-desc">Global beta-test technologies beta-test clicks-and-mortar global cross-platform dynamic standards-compliant.</div>
+																<div class="task-name">Musa Okonkwo</div>
+																<div class="task-desc">Application for a loan of 5 million naira (N5,000,000)</div>
+																<div class="task-desc"><strong>Duration:</strong> 8 Weeks</div>
 																<div class="task-types">
-																	<span class="badge bg-info">Backend</span>
+																	<button style=" border: solid; border-radius: 6px; padding: 10px; margin-right:4px; margin-left:-2px; " class="badge bg-warning">Veiw Profile</button>
+																	<button style=" border: none; border-radius: 4px; padding: 10px; margin-right:4px;" class="badge bg-success">Check Documents</button>
 																</div>
 															</div>
-															<ul class="task-actions">
-																<li>
-																	<a href="#" class="important" data-bs-toggle="tooltip" data-bs-placement="top" title="Priority">
-																		<i class="icon-error"></i>
-																	</a>
-																</li>
-																<li>
-																	<a href="#" class="star active" data-bs-toggle="tooltip" data-bs-placement="top" title="Star">
-																		<i class="icon-stars"></i>
-																	</a>
-																</li>
-																<li class="dropdown">
-																	<a href="#" id="task-actions2" data-bs-toggle="dropdown" aria-haspopup="true">
-																		<i class="icon-more_vert"></i>
-																	</a>
-																	<div class="dropdown-menu dropdown-menu-end task-action-items" aria-labelledby="task-actions2">
-																		<a href="#" class="mark-done-item">
-																			<i class="icon-done_all"></i> Mark as done
-																		</a>
-																		<a href="#" class="delete-task-item">
-																			<i class="icon-close"></i> Delete Task
-																		</a>
-																	</div>
-																</li>
-															</ul>
+															<div style="margin-bottom:20px;"> <span style="background: #b3b3b3; padding:10px; padding-left:20px;
+															 padding-right:20px; font-weight: 700; font-size:10px; border: solid 0.8px;
+															 border-radius:4px;" >Pending Reviewal</span> </div>
 														</div>
-
+														<!-- end of Task #2 -->
+														
 														<!-- Task #3 -->
-														<div class="task-block task-checked">
+														<div class="task-block">
 															<div class="task-checkbox">
 																<input type="checkbox" name="task_00">
 																<div class="ripple-container">
@@ -1530,38 +1470,19 @@
 																</div>
 															</div>
 															<div class="task-details">
-																<div class="task-name">Landing Page Design</div>
-																<div class="task-desc">Incentivize, incentivize convergence weblogs, schemas sticky plug-and-play. Customized markets, sticky one-to-one exploit.</div>
+																<div class="task-name">Musa Okonkwo</div>
+																<div class="task-desc">Application for a loan of 5 million naira (N5,000,000)</div>
+																<div class="task-desc"><strong>Duration:</strong> 8 Weeks</div>
 																<div class="task-types">
-																	<span class="badge bg-secondary">Frontend</span>
+																	<button style=" border: solid; border-radius: 6px; padding: 10px; margin-right:4px; margin-left:-2px; " class="badge bg-warning">Veiw Profile</button>
+																	<button style=" border: none; border-radius: 4px; padding: 10px; margin-right:4px;" class="badge bg-success">Check Documents</button>
 																</div>
 															</div>
-															<ul class="task-actions">
-																<li>
-																	<a href="#" class="important active" data-bs-toggle="tooltip" data-bs-placement="top" title="Priority">
-																		<i class="icon-error"></i>
-																	</a>
-																</li>
-																<li>
-																	<a href="#" class="star" data-bs-toggle="tooltip" data-bs-placement="top" title="Star">
-																		<i class="icon-stars"></i>
-																	</a>
-																</li>
-																<li class="dropdown">
-																	<a href="#" id="task-actions3" data-bs-toggle="dropdown" aria-haspopup="true">
-																		<i class="icon-more_vert"></i>
-																	</a>
-																	<div class="dropdown-menu dropdown-menu-end task-action-items" aria-labelledby="task-actions3">
-																		<a href="#" class="mark-done-item">
-																			<i class="icon-done_all"></i> Mark as done
-																		</a>
-																		<a href="#" class="delete-task-item">
-																			<i class="icon-close"></i> Delete Task
-																		</a>
-																	</div>
-																</li>
-															</ul>
+															<div style="margin-bottom:20px;"> <span style="background: #FDDA0D; font-weight: 700; font-size:10px; 
+															border: solid 0.8px; border-radius:4px; padding-top:10px; padding-bottom:10px; padding-left:30px; color:#ffffff;
+															 padding-right:30px;" >Under Review</span> </div>
 														</div>
+														<!-- end of Task #3 -->
 
 														<!-- Task #4 -->
 														<div class="task-block">
@@ -1575,39 +1496,19 @@
 																</div>
 															</div>
 															<div class="task-details">
-																<div class="task-name">Team Meeting</div>
-																<div class="task-desc">Incentivize, incentivize convergence weblogs, schemas sticky plug-and-play. Customized markets, sticky one-to-one exploit.</div>
+																<div class="task-name">Musa Okonkwo</div>
+																<div class="task-desc">Application for a loan of 5 million naira (N5,000,000)</div>
+																<div class="task-desc"><strong>Duration:</strong> 8 Weeks</div>
 																<div class="task-types">
-																	<span class="badge bg-info">Backend</span>
-																	<span class="badge bg-warning">Issue</span>
+																	<button style=" border: solid; border-radius: 6px; padding: 10px; margin-right:4px; margin-left:-2px; " class="badge bg-warning">Veiw Profile</button>
+																	<button style=" border: none; border-radius: 4px; padding: 10px; margin-right:4px;" class="badge bg-success">Check Documents</button>
 																</div>
 															</div>
-															<ul class="task-actions">
-																<li>
-																	<a href="#" class="important active" data-bs-toggle="tooltip" data-bs-placement="top" title="Priority">
-																		<i class="icon-error"></i>
-																	</a>
-																</li>
-																<li>
-																	<a href="#" class="star" data-bs-toggle="tooltip" data-bs-placement="top" title="Star">
-																		<i class="icon-stars"></i>
-																	</a>
-																</li>
-																<li class="dropdown">
-																	<a href="#" id="task-actions4" data-bs-toggle="dropdown" aria-haspopup="true">
-																		<i class="icon-more_vert"></i>
-																	</a>
-																	<div class="dropdown-menu dropdown-menu-end task-action-items" aria-labelledby="task-actions4">
-																		<a href="#" class="mark-done-item">
-																			<i class="icon-done_all"></i> Mark as done
-																		</a>
-																		<a href="#" class="delete-task-item">
-																			<i class="icon-close"></i> Delete Task
-																		</a>
-																	</div>
-																</li>
-															</ul>
+															<div style="margin-bottom:20px;"> <span style="background: #33ff57; padding:10px; padding-left:40.9px;
+															 padding-right:40.9px; font-weight: 700; font-size:10px; border: solid 0.8px; color: #ffffff;
+															 border-radius:4px;" >Approved</span> </div>
 														</div>
+														<!-- end of Task #4 -->
 
 														<!-- Task #5 -->
 														<div class="task-block">
@@ -1621,38 +1522,19 @@
 																</div>
 															</div>
 															<div class="task-details">
-																<div class="task-name">Project Release</div>
-																<div class="task-desc">Incentivize, incentivize convergence weblogs, schemas sticky plug-and-play. Customized markets, sticky one-to-one exploit.</div>
+																<div class="task-name">Musa Okonkwo</div>
+																<div class="task-desc">Application for a loan of 5 million naira (N5,000,000)</div>
+																<div class="task-desc"><strong>Duration:</strong> 8 Weeks</div>
 																<div class="task-types">
-																	<span class="badge bg-danger">Testing</span>
+																	<button style=" border: solid; border-radius: 6px; padding: 10px; margin-right:4px; margin-left:-2px; " class="badge bg-warning">Veiw Profile</button>
+																	<button style=" border: none; border-radius: 4px; padding: 10px; margin-right:4px;" class="badge bg-success">Check Documents</button>
 																</div>
 															</div>
-															<ul class="task-actions">
-																<li>
-																	<a href="#" class="important active" data-bs-toggle="tooltip" data-bs-placement="top" title="Priority">
-																		<i class="icon-error"></i>
-																	</a>
-																</li>
-																<li>
-																	<a href="#" class="star" data-bs-toggle="tooltip" data-bs-placement="top" title="Star">
-																		<i class="icon-stars"></i>
-																	</a>
-																</li>
-																<li class="dropdown">
-																	<a href="#" id="task-actions5" data-bs-toggle="dropdown" aria-haspopup="true">
-																		<i class="icon-more_vert"></i>
-																	</a>
-																	<div class="dropdown-menu dropdown-menu-end task-action-items" aria-labelledby="task-actions5">
-																		<a href="#" class="mark-done-item">
-																			<i class="icon-done_all"></i> Mark as done
-																		</a>
-																		<a href="#" class="delete-task-item">
-																			<i class="icon-close"></i> Delete Task
-																		</a>
-																	</div>
-																</li>
-															</ul>
+															<div style="margin-bottom:20px;"> <span style="background: #ff0000; padding:10px; padding-left:43.5px;
+															 padding-right:43.5px; font-weight: 700; font-size:10px; border: solid 0.8px; color:#ffffff;
+															 border-radius:4px;" >Declined</span> </div>
 														</div>
+														<!-- end of Task #5 -->
 
 														<!-- Task #6 -->
 														<div class="task-block">
@@ -1666,39 +1548,19 @@
 																</div>
 															</div>
 															<div class="task-details">
-																<div class="task-name">Mobile App Design</div>
-																<div class="task-desc">Incentivize, incentivize convergence weblogs, schemas sticky plug-and-play. Customized markets, sticky one-to-one exploit.</div>
+																<div class="task-name">Musa Okonkwo</div>
+																<div class="task-desc">Application for a loan of 5 million naira (N5,000,000)</div>
+																<div class="task-desc"><strong>Duration:</strong> 8 Weeks</div>
 																<div class="task-types">
-																	<span class="badge bg-primary">Design</span>
-																	<span class="badge bg-dark">Mobile</span>
+																	<button style=" border: solid; border-radius: 6px; padding: 10px; margin-right:4px; margin-left:-2px; " class="badge bg-warning">Veiw Profile</button>
+																	<button style=" border: none; border-radius: 4px; padding: 10px; margin-right:4px;" class="badge bg-success">Check Documents</button>
 																</div>
 															</div>
-															<ul class="task-actions">
-																<li>
-																	<a href="#" class="important" data-bs-toggle="tooltip" data-bs-placement="top" title="Priority">
-																		<i class="icon-error"></i>
-																	</a>
-																</li>
-																<li>
-																	<a href="#" class="star" data-bs-toggle="tooltip" data-bs-placement="top" title="Star">
-																		<i class="icon-stars"></i>
-																	</a>
-																</li>
-																<li class="dropdown">
-																	<a href="#" id="task-actions6" data-bs-toggle="dropdown" aria-haspopup="true">
-																		<i class="icon-more_vert"></i>
-																	</a>
-																	<div class="dropdown-menu dropdown-menu-end task-action-items" aria-labelledby="task-actions6">
-																		<a href="#" class="mark-done-item">
-																			<i class="icon-done_all"></i> Mark as done
-																		</a>
-																		<a href="#" class="delete-task-item">
-																			<i class="icon-close"></i> Delete Task
-																		</a>
-																	</div>
-																</li>
-															</ul>
+															<div style="margin-bottom:20px;"> <span style="background: #b3b3b3; padding:10px; padding-left:20px;
+															 padding-right:20px; font-weight: 700; font-size:10px; border: solid 0.8px;
+															 border-radius:4px;" >Pending Reviewal</span> </div>
 														</div>
+														<!-- end of Task #6 -->
 
 														<!-- Task #7 -->
 														<div class="task-block">
@@ -1712,39 +1574,19 @@
 																</div>
 															</div>
 															<div class="task-details">
-																<div class="task-name">Web Application</div>
-																<div class="task-desc">Incentivize, incentivize convergence weblogs, schemas sticky plug-and-play. Customized markets, sticky one-to-one exploit.</div>
+																<div class="task-name">Musa Okonkwo</div>
+																<div class="task-desc">Application for a loan of 5 million naira (N5,000,000)</div>
+																<div class="task-desc"><strong>Duration:</strong> 8 Weeks</div>
 																<div class="task-types">
-																	<span class="badge bg-primary">Design</span>
-																	<span class="badge bg-info">Backend</span>
+																	<button style=" border: solid; border-radius: 6px; padding: 10px; margin-right:4px; margin-left:-2px; " class="badge bg-warning">Veiw Profile</button>
+																	<button style=" border: none; border-radius: 4px; padding: 10px; margin-right:4px;" class="badge bg-success">Check Documents</button>
 																</div>
 															</div>
-															<ul class="task-actions">
-																<li>
-																	<a href="#" class="important" data-bs-toggle="tooltip" data-bs-placement="top" title="Priority">
-																		<i class="icon-error"></i>
-																	</a>
-																</li>
-																<li>
-																	<a href="#" class="star active" data-bs-toggle="tooltip" data-bs-placement="top" title="Star">
-																		<i class="icon-stars"></i>
-																	</a>
-																</li>
-																<li class="dropdown">
-																	<a href="#" id="task-actions7" data-bs-toggle="dropdown" aria-haspopup="true">
-																		<i class="icon-more_vert"></i>
-																	</a>
-																	<div class="dropdown-menu dropdown-menu-end task-action-items" aria-labelledby="task-actions7">
-																		<a href="#" class="mark-done-item">
-																			<i class="icon-done_all"></i> Mark as done
-																		</a>
-																		<a href="#" class="delete-task-item">
-																			<i class="icon-close"></i> Delete Task
-																		</a>
-																	</div>
-																</li>
-															</ul>
+															<div style="margin-bottom:20px;"> <span style="background: #b3b3b3; padding:10px; padding-left:20px;
+															 padding-right:20px; font-weight: 700; font-size:10px; border: solid 0.8px;
+															 border-radius:4px;" >Pending Reviewal</span> </div>
 														</div>
+														<!-- end of Task #7 -->
 
 														<!-- Task #8 -->
 														<div class="task-block">
@@ -1758,42 +1600,22 @@
 																</div>
 															</div>
 															<div class="task-details">
-																<div class="task-name">Mobile App Loading</div>
-																<div class="task-desc">Incentivize, incentivize convergence weblogs, schemas sticky plug-and-play. Customized markets, sticky one-to-one exploit.</div>
+																<div class="task-name">Musa Okonkwo</div>
+																<div class="task-desc">Application for a loan of 5 million naira (N5,000,000)</div>
+																<div class="task-desc"><strong>Duration:</strong> 8 Weeks</div>
 																<div class="task-types">
-																	<span class="badge bg-warning">Issue</span>
-																	<span class="badge bg-success">CSS</span>
+																	<button style=" border: solid; border-radius: 6px; padding: 10px; margin-right:4px; margin-left:-2px; " class="badge bg-warning">Veiw Profile</button>
+																	<button style=" border: none; border-radius: 4px; padding: 10px; margin-right:4px;" class="badge bg-success">Check Documents</button>
 																</div>
 															</div>
-															<ul class="task-actions">
-																<li>
-																	<a href="#" class="important" data-bs-toggle="tooltip" data-bs-placement="top" title="Priority">
-																		<i class="icon-error"></i>
-																	</a>
-																</li>
-																<li>
-																	<a href="#" class="star active" data-bs-toggle="tooltip" data-bs-placement="top" title="Star">
-																		<i class="icon-stars"></i>
-																	</a>
-																</li>
-																<li class="dropdown">
-																	<a href="#" id="task-actions8" data-bs-toggle="dropdown" aria-haspopup="true">
-																		<i class="icon-more_vert"></i>
-																	</a>
-																	<div class="dropdown-menu dropdown-menu-end task-action-items" aria-labelledby="task-actions8">
-																		<a href="#" class="mark-done-item">
-																			<i class="icon-done_all"></i> Mark as done
-																		</a>
-																		<a href="#" class="delete-task-item">
-																			<i class="icon-close"></i> Delete Task
-																		</a>
-																	</div>
-																</li>
-															</ul>
+															<div style="margin-bottom:20px;"> <span style="background: #b3b3b3; padding:10px; padding-left:20px;
+															 padding-right:20px; font-weight: 700; font-size:10px; border: solid 0.8px;
+															 border-radius:4px;" >Pending Reviewal</span> </div>
 														</div>
+														<!-- end of Task #8 -->
 
 														<!-- Task #9 -->
-														<div class="task-block task-checked">
+														<div class="task-block">
 															<div class="task-checkbox">
 																<input type="checkbox" name="task_00">
 																<div class="ripple-container">
@@ -1804,38 +1626,19 @@
 																</div>
 															</div>
 															<div class="task-details">
-																<div class="task-name">Not able to click on button</div>
-																<div class="task-desc">Incentivize, incentivize convergence weblogs, schemas sticky plug-and-play. Customized markets, sticky one-to-one exploit.</div>
+																<div class="task-name">Musa Okonkwo</div>
+																<div class="task-desc">Application for a loan of 5 million naira (N5,000,000)</div>
+																<div class="task-desc"><strong>Duration:</strong> 8 Weeks</div>
 																<div class="task-types">
-																	<span class="badge bg-warning">Issue</span>
+																	<button style=" border: solid; border-radius: 6px; padding: 10px; margin-right:4px; margin-left:-2px; " class="badge bg-warning">Veiw Profile</button>
+																	<button style=" border: none; border-radius: 4px; padding: 10px; margin-right:4px;" class="badge bg-success">Check Documents</button>
 																</div>
 															</div>
-															<ul class="task-actions">
-																<li>
-																	<a href="#" class="important" data-bs-toggle="tooltip" data-bs-placement="top" title="Priority">
-																		<i class="icon-error"></i>
-																	</a>
-																</li>
-																<li>
-																	<a href="#" class="star" data-bs-toggle="tooltip" data-bs-placement="top" title="Star">
-																		<i class="icon-stars"></i>
-																	</a>
-																</li>
-																<li class="dropdown">
-																	<a href="#" id="task-actions9" data-bs-toggle="dropdown" aria-haspopup="true">
-																		<i class="icon-more_vert"></i>
-																	</a>
-																	<div class="dropdown-menu dropdown-menu-end task-action-items" aria-labelledby="task-actions9">
-																		<a href="#" class="mark-done-item">
-																			<i class="icon-done_all"></i> Mark as done
-																		</a>
-																		<a href="#" class="delete-task-item">
-																			<i class="icon-close"></i> Delete Task
-																		</a>
-																	</div>
-																</li>
-															</ul>
+															<div style="margin-bottom:20px;"> <span style="background: #b3b3b3; padding:10px; padding-left:20px;
+															 padding-right:20px; font-weight: 700; font-size:10px; border: solid 0.8px;
+															 border-radius:4px;" >Pending Reviewal</span> </div>
 														</div>
+														<!-- end of Task #9 -->
 
 														<!-- Task #10 -->
 														<div class="task-block">
@@ -1849,130 +1652,20 @@
 																</div>
 															</div>
 															<div class="task-details">
-																<div class="task-name">Darerange Picker</div>
-																<div class="task-desc">Incentivize, incentivize convergence weblogs, schemas sticky plug-and-play. Customized markets, sticky one-to-one exploit.</div>
+																<div class="task-name">Musa Okonkwo</div>
+																<div class="task-desc">Application for a loan of 5 million naira (N5,000,000)</div>
+																<div class="task-desc"><strong>Duration:</strong> 8 Weeks</div>
 																<div class="task-types">
-																	<span class="badge bg-secondary">Frontend</span>
+																	<button style=" border: solid; border-radius: 6px; padding: 10px; margin-right:4px; margin-left:-2px; " class="badge bg-warning">Veiw Profile</button>
+																	<button style=" border: none; border-radius: 4px; padding: 10px; margin-right:4px;" class="badge bg-success">Check Documents</button>
 																</div>
 															</div>
-															<ul class="task-actions">
-																<li>
-																	<a href="#" class="important" data-bs-toggle="tooltip" data-bs-placement="top" title="Priority">
-																		<i class="icon-error"></i>
-																	</a>
-																</li>
-																<li>
-																	<a href="#" class="star" data-bs-toggle="tooltip" data-bs-placement="top" title="Star">
-																		<i class="icon-stars"></i>
-																	</a>
-																</li>
-																<li class="dropdown">
-																	<a href="#" id="task-actions10" data-bs-toggle="dropdown" aria-haspopup="true">
-																		<i class="icon-more_vert"></i>
-																	</a>
-																	<div class="dropdown-menu dropdown-menu-end task-action-items" aria-labelledby="task-actions10">
-																		<a href="#" class="mark-done-item">
-																			<i class="icon-done_all"></i> Mark as done
-																		</a>
-																		<a href="#" class="delete-task-item">
-																			<i class="icon-close"></i> Delete Task
-																		</a>
-																	</div>
-																</li>
-															</ul>
+															<div style="margin-bottom:20px;"> <span style="background: #b3b3b3; padding:10px; padding-left:20px;
+															 padding-right:20px; font-weight: 700; font-size:10px; border: solid 0.8px;
+															 border-radius:4px;" >Pending Reviewal</span> </div>
 														</div>
+														<!-- end of Task #10 -->
 
-														<!-- Task #11 -->
-														<div class="task-block task-checked">
-															<div class="task-checkbox">
-																<input type="checkbox" name="task_00">
-																<div class="ripple-container">
-																	<div class="check-off"></div>
-																	<div class="check-on">
-																		<i class="icon-check1"></i>
-																	</div>
-																</div>
-															</div>
-															<div class="task-details">
-																<div class="task-name">Refreshing the list after adding an item</div>
-																<div class="task-desc">When adding an item to the list by calling CreateObjective, the list is not updated. As we're not running the OnGUI loop anymore, I'm assuming that the binding magic is not enough here and that I must trigger a rendering of the tree manually?</div>
-																<div class="task-types">
-																	<span class="badge bg-primary">Design</span>
-																	<span class="badge bg-warning">Issue</span>
-																</div>
-															</div>
-															<ul class="task-actions">
-																<li>
-																	<a href="#" class="important" data-bs-toggle="tooltip" data-bs-placement="top" title="Priority">
-																		<i class="icon-error"></i>
-																	</a>
-																</li>
-																<li>
-																	<a href="#" class="star active" data-bs-toggle="tooltip" data-bs-placement="top" title="Star">
-																		<i class="icon-stars"></i>
-																	</a>
-																</li>
-																<li class="dropdown">
-																	<a href="#" id="task-actions11" data-bs-toggle="dropdown" aria-haspopup="true">
-																		<i class="icon-more_vert"></i>
-																	</a>
-																	<div class="dropdown-menu dropdown-menu-end task-action-items" aria-labelledby="task-actions11">
-																		<a href="#" class="mark-done-item">
-																			<i class="icon-done_all"></i> Mark as done
-																		</a>
-																		<a href="#" class="delete-task-item">
-																			<i class="icon-close"></i> Delete Task
-																		</a>
-																	</div>
-																</li>
-															</ul>
-														</div>
-
-														<!-- Task #12 -->
-														<div class="task-block">
-															<div class="task-checkbox">
-																<input type="checkbox" name="task_00">
-																<div class="ripple-container">
-																	<div class="check-off"></div>
-																	<div class="check-on">
-																		<i class="icon-check1"></i>
-																	</div>
-																</div>
-															</div>
-															<div class="task-details">
-																<div class="task-name">Reloading the Landing Page</div>
-																<div class="task-desc">The best landing pages are clutter-free and well-organized. We’ll get to this more in the next section. But for now, keep in mind that the same holds true for what’s under the hood too.</div>
-																<div class="task-types">
-																	<span class="badge bg-secondary">Frontend</span>
-																	<span class="badge bg-dark">Mobile</span>
-																</div>
-															</div>
-															<ul class="task-actions">
-																<li>
-																	<a href="#" class="important active" data-bs-toggle="tooltip" data-bs-placement="top" title="Priority">
-																		<i class="icon-error"></i>
-																	</a>
-																</li>
-																<li>
-																	<a href="#" class="star active" data-bs-toggle="tooltip" data-bs-placement="top" title="Star">
-																		<i class="icon-stars"></i>
-																	</a>
-																</li>
-																<li class="dropdown">
-																	<a href="#" id="task-actions12" data-bs-toggle="dropdown" aria-haspopup="true">
-																		<i class="icon-more_vert"></i>
-																	</a>
-																	<div class="dropdown-menu dropdown-menu-end task-action-items" aria-labelledby="task-actions12">
-																		<a href="#" class="mark-done-item">
-																			<i class="icon-done_all"></i> Mark as done
-																		</a>
-																		<a href="#" class="delete-task-item">
-																			<i class="icon-close"></i> Delete Task
-																		</a>
-																	</div>
-																</li>
-															</ul>
-														</div>
 													</section>
 												</div>
 											</div>
@@ -1992,7 +1685,7 @@
 					<!-- Content wrapper end -->
 
 					<!-- App Footer start -->
-					<div class="app-footer">© Uni Pro Admin 2021</div>
+					<div class="app-footer">© Jad Apps and Tech Solutions Limited</div>
 					<!-- App footer end -->
 
 				</div>

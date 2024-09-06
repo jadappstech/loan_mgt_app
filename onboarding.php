@@ -1297,7 +1297,8 @@
                                             <div class="col-xl-8 col-lg-8 col-md-12 col-sm-12 col-12">
                                                 <div class="row gutters">
                                                     <div class="col-xl-4 col-lg-4 col-md-4 col-sm-4 col-12">
-                                                        <img src="img/user1.png" class="img-fluid change-img-avatar" alt="Image">
+                                                        <img style=" border: solid; border-width:0.5px; border-color: #d6d6d6;"
+																												 src="img/ngMan.jpg" class="img-fluid change-img-avatar" alt="Image">
                                                     </div>
                                                     <div class="col-xl-8 col-lg-8 col-md-8 col-sm-8 col-12">
                                                         <div id="dropzone-sm" class="mb-4">

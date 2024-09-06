@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="en">
 	
-<!-- Mirrored from www.bootstrapget.com/demos/themeforest/unipro-admin-template/demos/01-design-blue/profile.php by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 04 Sep 2024 13:06:06 GMT -->
+<!-- Mirrored from www.bootstrapget.com/demos/themeforest/unipro-admin-template/demos/01-design-blue/tasks.php by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 04 Sep 2024 13:06:42 GMT -->
 <head>
 		<!-- Required meta tags -->
 		<meta charset="utf-8">
@@ -13,7 +13,7 @@
 		<link rel="shortcut icon" href="img/fav.png">
 
 		<!-- Title -->
-		<title>Uni Pro Admin Template - Admin Dashboard</title>
+		<title>declined</title>
 
 
 		<!-- *************
@@ -40,16 +40,19 @@
 		<link rel="stylesheet" href="vendor/search-filter/search-filter.css">
 		<link rel="stylesheet" href="vendor/search-filter/custom-search-filter.css">
 
+		<!-- Bootstrap Select CSS -->
+		<link rel="stylesheet" href="vendor/bs-select/bs-select.css" />
+		
+		<!-- Date Range CSS -->
+		<link rel="stylesheet" href="vendor/daterange/daterange.css">
+
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    </style>
+
 	</head>
 	<body>
 
-		<!-- Loading wrapper start -->
-		<div id="loading-wrapper">
-			<div class="spinner-border"></div>
-			Loading...
-		</div>
-		<!-- Loading wrapper end -->
-				
 		<!-- Page wrapper start -->
 		<div class="page-wrapper">
 			
@@ -64,7 +67,7 @@
 						<a href="#" class="logo">
 							<img src="img/logo.svg" alt="Uni Pro Admin">
 						</a>
-						<a class="nav-link active" id="home-tab" data-bs-toggle="tab" href="#tab-home" role="tab" aria-controls="tab-home" aria-selected="true">
+						<a class="nav-link" id="home-tab" data-bs-toggle="tab" href="#tab-home" role="tab" aria-controls="tab-home" aria-selected="false">
 							<i class="icon-home2"></i>
 							<span class="nav-link-text">Dashboards</span>
 						</a>
@@ -72,7 +75,7 @@
 							<i class="icon-layers2"></i>
 							<span class="nav-link-text">Product</span>
 						</a>
-						<a class="nav-link" id="pages-tab" data-bs-toggle="tab" href="#tab-pages" role="tab" aria-controls="tab-pages" aria-selected="false">
+						<a class="nav-link active" id="pages-tab" data-bs-toggle="tab" href="#tab-pages" role="tab" aria-controls="tab-pages" aria-selected="true">
 							<i class="icon-book-open"></i>
 							<span class="nav-link-text">Pages</span>
 						</a>
@@ -103,7 +106,7 @@
 					<div class="tab-content">
 								
 						<!-- Chat tab -->
-						<div class="tab-pane fade show active" id="tab-home" role="tabpanel" aria-labelledby="home-tab">
+						<div class="tab-pane fade " id="tab-home" role="tabpanel" aria-labelledby="home-tab">
 
 							<!-- Tab content header start -->
 							<div class="tab-pane-header">
@@ -137,7 +140,7 @@
 											<a href="consulting.php">Consulting</a>
 										</li>
 										<li>
-											<a href="profile.php" class="current-page">Profile</a>
+											<a href="profile.php">Profile</a>
 										</li>
 									</ul>
 									<ul>
@@ -269,7 +272,7 @@
 						</div>
 
 						<!-- Pages tab -->
-						<div class="tab-pane fade" id="tab-pages" role="tabpanel" aria-labelledby="pages-tab">
+						<div class="tab-pane fade show active" id="tab-pages" role="tabpanel" aria-labelledby="pages-tab">
 							
 							<!-- Tab content header start -->
 							<div class="tab-pane-header">
@@ -285,7 +288,7 @@
 											<a href="chat.php">Chat</a>
 										</li>
 										<li>
-											<a href="tasks.php">Tasks</a>
+											<a href="tasks.php" class="current-page">Tasks</a>
 										</li>
 										<li>
 											<a href="create-invoice.php">Create Invoice</a>
@@ -333,7 +336,7 @@
 
 							<!-- Sidebar actions starts -->
 							<div class="sidebar-actions">
-								<div class="support-tile blue">
+								<div class="support-tile green">
 									<i class="icon-pie-chart1"></i> 5GB Free Space
 								</div>
 							</div>
@@ -1247,7 +1250,7 @@
 															<div class="noti-date">April 21, 05:00 pm</div>
 														</div>
 													</a>
-												</li>
+												</li>												
 											</ul>
 										</div>
 									</div>
@@ -1272,7 +1275,7 @@
 
 						</div>
 					</div>
-					<!-- Row end -->
+					<!-- Row end -->					
 
 				</div>
 				<!-- Page header ends -->
@@ -1287,467 +1290,216 @@
 						<div class="row gutters">
 							<div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
 
-								<div class="profile-header">
-                                    <h1>Welcome, Abigail</h1>
-                                    <div class="profile-header-content">
-                                        <div class="profile-header-tiles">
-                                            <div class="row gutters">
-                                                <div class="col-xl-4 col-lg-4 col-md-4 col-sm-4 col-12">
-                                                    <div class="profile-tile">
-                                                        <span class="icon">
-                                                            <i class="icon-server"></i>
-                                                        </span>
-                                                        <h6>Name - <span>Abigail Winter</span></h6>
-                                                    </div>
-                                                </div>
-                                                <div class="col-xl-4 col-lg-4 col-md-4 col-sm-4 col-12">
-                                                    <div class="profile-tile">
-                                                        <span class="icon">
-                                                            <i class="icon-map-pin"></i>
-                                                        </span>
-                                                        <h6>Location - <span>Canada</span></h6>
-                                                    </div>
-                                                </div>
-                                                <div class="col-xl-4 col-lg-4 col-md-4 col-sm-4 col-12">
-                                                    <div class="profile-tile">
-                                                        <span class="icon">
-                                                            <i class="icon-phone1"></i>
-                                                        </span>
-                                                        <h6>Phone - <span>1234567890</span></h6>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="profile-avatar-tile">
-                                            <img src="img/user1.png" class="img-fluid" alt="User Profile" />
-                                        </div>
-                                    </div>
-                                </div>
+								<!-- Task section start -->
+								<div class="tasks-section">
+
+									<!-- Labels container start -->
+									<div class="labels-container">
+										<div class="lablesContainerScroll">
+											<div class="filters-block">
+												<h5>Filters</h5>
+												<div class="filters">
+													<a style=" background:white;" href="active-applications" class="active">
+														<i class="icon-receipt"></i> All
+													</a>
+													<a  href="approved.php">
+													<i class="fa fa-check" style="font-size:16px; color: #1fd655;"></i>Approved
+													</a>
+													<a style="background-color: #f5f8fd;">
+													<i class="fa fa-close" style="font-size:16px; color:red;"> </i>Declined
+													</a>
+												</div>
+											</div>
+																						
+										</div>
+									</div>
+									<!-- Labels container end -->
+
+									<!-- Tasks container start -->
+									<div class="tasks-container">
+										<div class="modal fade" id="addNewTask" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="addNewDocumentLabel" aria-hidden="true">
+											<div class="modal-dialog" role="document">
+												<div class="modal-content">
+													<div class="modal-header">
+														<h5 class="modal-title" id="addNewDocumentLabel">Add Document</h5>
+														<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
+															<span aria-hidden="true"></span>
+														</button>
+													</div>
+													<div class="modal-body">
+														<form class="row gutters">
+															<div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
+																<!-- Field wrapper start -->
+																<div class="field-wrapper">
+																	<input type="text" class="form-control">
+																	<div class="field-placeholder">Task Title</div>
+																</div>
+																<!-- Field wrapper end -->
+															</div>
+															<div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
+																<!-- Field wrapper start -->
+																<div class="field-wrapper">
+																	<select class="select-single js-states" title="Select Product Category" data-live-search="true">
+																		<option>Design</option>
+																		<option>Backend</option>
+																		<option>Testing</option>
+																		<option>UI Development</option>
+																		<option>CSS</option>
+																	</select>
+																	<div class="field-placeholder">Task Type</div>
+																</div>
+																<!-- Field wrapper end -->
+															</div>
+															<div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
+																<!-- Field wrapper start -->
+																<div class="field-wrapper">
+																	<div class="input-group">
+																		<input type="text" class="form-control datepicker-opens-left">
+																		<span class="input-group-text">
+																			<i class="icon-calendar1"></i>
+																		</span>
+																	</div>
+																	<div class="field-placeholder">Start Date</div>
+																</div>
+																<!-- Field wrapper end -->
+															</div>
+															<div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
+																<!-- Field wrapper start -->
+																<div class="field-wrapper">
+																	<div class="input-group">
+																		<input type="text" class="form-control datepicker-opens-left">
+																		<span class="input-group-text">
+																			<i class="icon-calendar1"></i>
+																		</span>
+																	</div>
+																	<div class="field-placeholder">End Date</div>
+																</div>
+																<!-- Field wrapper end -->
+															</div>
+															<div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
+																<!-- Field wrapper start -->
+																<div class="field-wrapper m-0">
+																	<textarea class="form-control" rows="3"></textarea>
+																	<div class="field-placeholder">Task Details</div>
+																</div>
+																<!-- Field wrapper end -->
+															</div>
+														</form>
+													</div>
+													<div class="modal-footer">
+														<button type="button" class="btn btn-light" data-bs-dismiss="modal">Close</button>
+														<button type="button" class="btn btn-primary" data-bs-dismiss="modal">Create Task</button>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="tasks-header">
+											<h3>Today <span class="date" id="todays-date"></span></h3>
+																					<select id="filterDropdown">
+											<option value="All">All</option>
+											<option value="Loan amount">Fruits</option>
+											<option value="Date">Vegetables</option>
+										</select>
+										</div>
+										<div class="tasksContainerScroll">
+											<!-- Row start -->
+											<div class="row no-gutters justify-content-center">
+												<div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
+													<section class="task-list">
+														<h6 class="m-0 h-0">&nbsp;</h6>
+														
+															<!-- Task #5 -->
+															<div class="task-block">
+															<div class="task-checkbox">
+																<input type="checkbox" name="task_00">
+																<div class="ripple-container">
+																	<div class="check-off"></div>
+																	<div class="check-on">
+																		<i class="icon-check1"></i>
+																	</div>
+																</div>
+															</div>
+															<div class="task-details">
+																<div class="task-name">Musa Okonkwo</div>
+																<div class="task-desc">Application for a loan of 5 million naira (N5,000,000)</div>
+																<div class="task-desc"><strong>Duration:</strong> 8 Weeks</div>
+																<div class="task-types">
+																	<button style=" border: solid; border-radius: 6px; padding: 10px; margin-right:4px; margin-left:-2px; " class="badge bg-warning">Veiw Profile</button>
+																	<button style=" border: none; border-radius: 4px; padding: 10px; margin-right:4px;" class="badge bg-success">Check Documents</button>
+																</div>
+															</div>
+															<div style="margin-bottom:20px;"> <span style="background: #ff0000; padding:10px; padding-left:43.5px;
+															 padding-right:43.5px; font-weight: 700; font-size:10px; border: solid 0.8px; color:#ffffff;
+															 border-radius:4px;" >Declined</span> </div>
+														</div>
+														<!-- end of Task #5 -->
+
+															<!-- Task #5 -->
+															<div class="task-block">
+															<div class="task-checkbox">
+																<input type="checkbox" name="task_00">
+																<div class="ripple-container">
+																	<div class="check-off"></div>
+																	<div class="check-on">
+																		<i class="icon-check1"></i>
+																	</div>
+																</div>
+															</div>
+															<div class="task-details">
+																<div class="task-name">Musa Okonkwo</div>
+																<div class="task-desc">Application for a loan of 5 million naira (N5,000,000)</div>
+																<div class="task-desc"><strong>Duration:</strong> 8 Weeks</div>
+																<div class="task-types">
+																	<button style=" border: solid; border-radius: 6px; padding: 10px; margin-right:4px; margin-left:-2px; " class="badge bg-warning">Veiw Profile</button>
+																	<button style=" border: none; border-radius: 4px; padding: 10px; margin-right:4px;" class="badge bg-success">Check Documents</button>
+																</div>
+															</div>
+															<div style="margin-bottom:20px;"> <span style="background: #ff0000; padding:10px; padding-left:43.5px;
+															 padding-right:43.5px; font-weight: 700; font-size:10px; border: solid 0.8px; color:#ffffff;
+															 border-radius:4px;" >Declined</span> </div>
+														</div>
+														<!-- end of Task #5 -->
+
+															<!-- Task #5 -->
+															<div class="task-block">
+															<div class="task-checkbox">
+																<input type="checkbox" name="task_00">
+																<div class="ripple-container">
+																	<div class="check-off"></div>
+																	<div class="check-on">
+																		<i class="icon-check1"></i>
+																	</div>
+																</div>
+															</div>
+															<div class="task-details">
+																<div class="task-name">Musa Okonkwo</div>
+																<div class="task-desc">Application for a loan of 5 million naira (N5,000,000)</div>
+																<div class="task-desc"><strong>Duration:</strong> 8 Weeks</div>
+																<div class="task-types">
+																	<button style=" border: solid; border-radius: 6px; padding: 10px; margin-right:4px; margin-left:-2px; " class="badge bg-warning">Veiw Profile</button>
+																	<button style=" border: none; border-radius: 4px; padding: 10px; margin-right:4px;" class="badge bg-success">Check Documents</button>
+																</div>
+															</div>
+															<div style="margin-bottom:20px;"> <span style="background: #ff0000; padding:10px; padding-left:43.5px;
+															 padding-right:43.5px; font-weight: 700; font-size:10px; border: solid 0.8px; color:#ffffff;
+															 border-radius:4px;" >Declined</span> </div>
+														</div>
+														<!-- end of Task #5 -->
+
+													</section>
+												</div>
+											</div>
+											<!-- Row end -->
+										</div>
+									</div>
+									<!-- Tasks container end -->
+
+								</div>
+								<!-- Task section end -->
 
 							</div>
 						</div>
-                        <!-- Row end -->
-                        
-                        <!-- Row start -->
-                        <div class="row gutters">
-							<div class="col-xl-8 col-lg-8 col-md-12 col-sm-12 col-12">
-                                <!-- Row start -->
-                                <div class="row gutters">
-                                    <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
-                                        <!-- Card start -->
-                                        <div class="card">
-                                            <div class="card-header">
-                                                <div class="card-title">Share your thoughts</div>
-                                            </div>
-                                            <div class="card-body">
-                                                <div class="create-offer-container">
-                                                    <textarea class="form-control" rows="3">Hello,</textarea>
-                                                    <div class="share-thoughts-footer">
-                                                        <div class="share-icons">
-                                                            <a href="#">
-                                                                <i class="icon-map2"></i>
-                                                            </a>
-                                                            <a href="#">
-                                                                <i class="icon-link"></i>
-                                                            </a>
-                                                            <a href="#">
-                                                                <i class="icon-camera2"></i>
-                                                            </a>
-                                                            <a href="#">
-                                                                <i class="icon-users"></i>
-                                                            </a>
-                                                        </div>
-                                                        <button class="btn btn-info btn-sm">Post</button>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <!-- Card end -->
-                                    </div>
-                                    <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
-                                        <!-- Card start -->
-                                        <div class="card h-320">
-                                            <div class="card-header">
-                                                <div class="card-title">Earnings</div>
-                                            </div>
-                                            <div class="card-body">
-                                                <div id="revenue"></div>
-                                            </div>
-                                        </div>
-                                        <!-- Card end -->
-                                    </div>
-                                    <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
-                                        <!-- Card start -->
-                                        <div class="card h-320">
-                                            <div class="card-header">
-                                                <div class="card-title">Reviews</div>
-                                            </div>
-                                            <div class="card-body">
-                                                <div class="top-items-container">
-                                                    <div id="topRatedItems" class="carousel carousel-fade slide" data-bs-ride="carousel">
-                                                      <div class="carousel-inner">
-                                                            <div class="carousel-item active">
-                                                                <img src="img/stock/img9.jpg" class="img-fluid top-item-img" alt="...">
-                                                                <div class="top-item-details">
-                                                                    <h6>Coffee Crunch</h6>
-                                                                    <div class="rating-block">																
-                                                                        <div class="rate2"></div>
-                                                                        <div class="rating-count">(97)</div>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                            <div class="carousel-item">
-                                                                <img src="img/stock/img10.jpg" class="img-fluid top-item-img" alt="...">
-                                                                <div class="top-item-details">
-                                                                    <h6>Fruit Salad</h6>
-                                                                    <div class="rating-block">
-                                                                        <div class="rate4"></div>
-                                                                        <div class="rating-count">(25)</div>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                            <div class="carousel-item">
-                                                                <img src="img/stock/img9.jpg" class="img-fluid top-item-img" alt="...">
-                                                                <div class="top-item-details">
-                                                                    <h6>Vegetable Salad</h6>
-                                                                    <div class="rating-block">																
-                                                                        <div class="rate3"></div>
-                                                                        <div class="rating-count">(43)</div>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                      </div>
-                                                        <a class="carousel-control-prev" href="#topRatedItems" role="button" data-bs-slide="prev">
-                                                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                                                        </a>
-                                                        <a class="carousel-control-next" href="#topRatedItems" role="button" data-bs-slide="next">
-                                                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                                                        </a>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <!-- Card end -->
-                                    </div>
-                                    <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
-                                        <!-- Card start -->
-                                        <div class="card">
-                                            <div class="card-header">
-                                                <div class="card-title">Activity</div>
-                                            </div>
-                                            <div class="card-body">
-                                                <div class="customScroll250">
-                                                    <div class="timeline-activity">
-                                                        <div class="activity-log">
-                                                            <p class="log-name">Corey Haggard<small class="log-time">- 9 mins ago</small></p>
-                                                            <div class="log-details">University dashboard has been created<span class="text-success ml-1"> #New</span></div>
-                                                        </div>
-                                                        <div class="activity-log">
-                                                            <p class="log-name">Gleb Kuznetsov<small class="log-time">- 4 hrs ago</small></p>
-                                                            <div class="log-details">
-                                                                Farewell day photos uploaded.
-                                                                <div class="stacked-images mt-1">
-                                                                    <img class="sm" src="img/user8.png" alt="Profile Image">
-                                                                    <img class="sm" src="img/user2.png" alt="Profile Image">
-                                                                    <img class="sm" src="img/user3.png" alt="Profile Image">
-                                                                    <img class="sm" src="img/user7.png" alt="Profile Image">
-                                                                    <span class="plus sm">+5</span>
-                                                                </div>
-                                                            </div>											
-                                                        </div>
-                                                        <div class="activity-log">
-                                                            <p class="log-name">Emily Russell<small class="log-time">- 7 hrs ago</small></p>
-                                                            <div class="log-details">Developed 30 multipurpose Bootstrap 4 Admin Templates</div>
-                                                        </div>
-                                                        <div class="activity-log">
-                                                            <p class="log-name">Nathan James<small class="log-time">- 9 hrs ago</small></p>
-                                                            <div class="log-details">Best Design Award</div>
-                                                        </div>
-                                                        <div class="activity-log">
-                                                            <p class="log-name">Gleb Kuznetsov<small class="log-time">- 4 hrs ago</small></p>
-                                                            <div class="log-details">
-                                                                Farewell day photos uploaded.
-                                                                <div class="stacked-images mt-1">
-                                                                    <img class="sm" src="img/user5.png" alt="Profile Image">
-                                                                    <img class="sm" src="img/user22.png" alt="Profile Image">
-                                                                    <span class="plus sm">+7</span>
-                                                                </div>
-                                                            </div>											
-                                                        </div>
-                                                        <div class="activity-log">
-                                                            <p class="log-name">Emily Russell<small class="log-time">- 3 hrs ago</small></p>
-                                                            <div class="log-details">Developed 30 multipurpose Bootstrap 4 Admin Templates</div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <!-- Card end -->
-                                    </div>
-                                    <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
-                                        <div class="card">
-                                            <div class="card-header">
-                                                <div class="card-title">Reviews</div>
-                                            </div>
-                                            <div class="card-body">
-												<ul class="customer-rating">
-													<li class="clearfix">
-														<div class="customer">
-															<img src="img/user2.png" alt="Uni Pro Admin">
-														</div>
-														<div class="customer-review">
-															<div class="stars" id="rate2"></div>
-															<h5>Best Quality Template</h5>
-															<h6 class="by">By, <a href="#">Hayasa Galleher</a></h6>
-															<p>Wow! Amazing work. Lot of features, components and creative layouts. SAAS dashoard looks awesome.</p>
-														</div>
-													</li>
-													<li class="clearfix">
-														<div class="customer">
-															<img src="img/user3.png" alt="Uni Pro Admin">
-														</div>
-														<div class="customer-review">
-															<div class="stars" id="rate3"></div>
-															<h5>Great Admin Template</h5>
-															<h6 class="by">By, <a href="#">Sayera Lee</a></h6>
-															<p>Great admin theme, was impressed by the level of details in the design and on the number of components it offers compared to any other admin theme.</p>
-														</div>
-													</li>
-												</ul>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <!-- Row end -->
-                            </div>
-                            <div class="col-xl-4 col-lg-4 col-md-12 col-sm-12 col-12">
-                                <!-- Row start -->
-                                <div class="row gutters">
-                                    <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
-                                        <!-- Card start -->
-                                        <div class="stats-tile4 min-height">                                            
-                                            <div class="stats-icon4">
-                                                <i class="icon-receipt"></i>
-                                            </div>
-                                            <h3>2</h3>
-                                            <h4>Certifications</h4>
-                                        </div>
-                                        <!-- Card end -->
-                                    </div>
-                                    <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
-                                        <!-- Card start -->
-                                        <div class="stats-tile4 min-height">                                            
-                                            <div class="stats-icon4">
-                                                <i class="icon-stars"></i>
-                                            </div>
-                                            <h3>7</h3>
-                                            <h4>Awards</h4>
-                                        </div>
-                                        <!-- Card end -->
-                                    </div>
-                                    <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
-                                        <!-- Card start -->
-                                        <div class="card">
-                                            <div class="card-header">
-                                                <div class="card-title">Polls</div>
-                                            </div>
-                                            <div class="card-body">
-                                                <div class="polls-container">
-                                                    <p>Whats your favorite programming language?</p>
-                                                    <div class="poll-block">
-                                                        <div class="poll-block-header">
-                                                            <div class="form-check">
-                                                                <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
-                                                                <label class="form-check-label" for="inlineRadio1">Angular</label>
-                                                            </div>
-                                                            <div class="score">180 votes</div>
-                                                        </div>
-                                                        <div class="progress">
-                                                            <div class="progress-bar" role="progressbar" style="width: 65%;" aria-valuenow="65" aria-valuemin="0" aria-valuemax="100">65%</div>
-                                                        </div>
-                                                    </div>
-                                                    <div class="poll-block m-0">
-                                                        <div class="poll-block-header">
-                                                            <div class="form-check">
-                                                                <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
-                                                                <label class="form-check-label" for="inlineRadio2">React</label>
-                                                            </div>
-                                                            <div class="score">125 votes</div>
-                                                        </div>
-                                                        <div class="progress">
-                                                            <div class="progress-bar" role="progressbar" style="width: 45%;" aria-valuenow="45" aria-valuemin="0" aria-valuemax="100">45%</div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <!-- Card end -->
-                                    </div>
-                                    <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
-                                        <!-- Card start -->
-                                        <div class="card">
-                                            <div class="card-header">
-                                                <div class="card-title">Orders History</div>
-                                            </div>
-                                            <div class="card-body">
-                                                <div class="customScroll250">
-                                                    <ul class="recent-orders">
-                                                        <li>
-                                                            <div class="order-img">
-                                                                <img src="img/stock/img5.jpg" alt="Food">
-                                                                <span class="badge bg-primary">Delivered</span>
-                                                            </div>
-                                                            <div class="order-details">
-                                                                <h5 class="order-title">Cake</h5>
-                                                                <p class="order-desc">Wedding cake with macarons.</p>
-                                                                <span class="order-date">21 mins ago</span>
-                                                            </div>
-                                                        </li>
-                                                        <li>
-                                                            <div class="order-img">
-                                                                <img src="img/stock/img2.jpg" alt="Food">
-                                                                <span class="badge bg-warning">Processing</span>
-                                                            </div>
-                                                            <div class="order-details">
-                                                                <h5 class="order-title">Pasta</h5>
-                                                                <p class="order-desc">Cheese pasta with berries</p>
-                                                                <span class="order-date">10 mins ago</span>
-                                                            </div>
-                                                        </li>
-                                                        <li>
-                                                            <div class="order-img">
-                                                                <img src="img/stock/img6.jpg" alt="Food">
-                                                                <span class="badge bg-danger">On Hold</span>
-                                                            </div>
-                                                            <div class="order-details">
-                                                                <h5 class="order-title">Stacker</h5>
-                                                                <p class="order-desc">Creamy stacker with pie</p>
-                                                                <span class="order-date">32 mins ago</span>
-                                                            </div>
-                                                        </li>												
-                                                        <li>
-                                                            <div class="order-img">
-                                                                <img src="img/stock/img4.jpg" alt="Food">
-                                                                <span class="badge bg-primary">Delivered</span>
-                                                            </div>
-                                                            <div class="order-details">
-                                                                <h5 class="order-title">Spaghetti</h5>
-                                                                <p class="order-desc">Cheese spaghetti with almonds</p>
-                                                                <span class="order-date">17 mins ago</span>
-                                                            </div>
-                                                        </li>
-                                                        <li>
-                                                            <div class="order-img">
-                                                                <img src="img/stock/img7.jpg" alt="Food">
-                                                                <span class="badge bg-danger">On Hold</span>
-                                                            </div>
-                                                            <div class="order-details">
-                                                                <h5 class="order-title">Barbeque</h5>
-                                                                <p class="order-desc">Guilt Free BBQ chicken</p>
-                                                                <span class="order-date">12 mins ago</span>
-                                                            </div>
-                                                        </li>
-                                                        <li>
-                                                            <div class="order-img">
-                                                                <img src="img/stock/img3.jpg" alt="Food">
-                                                                <span class="badge bg-warning">Processing</span>
-                                                            </div>
-                                                            <div class="order-details">
-                                                                <h5 class="order-title">Pecan</h5>
-                                                                <p class="order-desc">Homemade pecan with olives</p>
-                                                                <span class="order-date">15 mins ago</span>
-                                                            </div>
-                                                        </li>
-                                                    </ul>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <!-- Card end -->
-                                    </div>
-                                    <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
-                                        <!-- Card start -->
-                                        <div class="card">
-                                            <div class="card-header">
-                                                <div class="card-title">Chat</div>
-                                            </div>
-                                            <div class="card-body">
-                                                <div class="customScroll250">
-                                                    <ul class="chats">
-                                                        <li class="chats-left">
-                                                            <div class="chats-avatar">
-                                                                <img src="img/user5.png" alt="Uni Pro Admin">
-                                                                <div class="chats-name">Alisa</div>
-                                                            </div>
-                                                            <div class="chats-text">Explore the history of the classic Lorem Ipsum passage and generate.</div>
-                                                            <div class="chats-hour">08:55 <span class="icon-done_all"></span></div>
-                                                        </li>
-                                                        <li class="chats-right">
-                                                            <div class="chats-avatar">
-                                                                <img src="img/user12.png" alt="Uni Pro Admin">
-                                                                <div class="chats-name">You</div>
-                                                            </div>
-                                                            <div class="chats-text">Your own text using any number of characters, words, sentences or paragraphs.</div>
-                                                            <div class="chats-hour">08:56 <span class="icon-done_all"></span></div>
-                                                        </li>
-                                                        <li class="chats-left">
-                                                            <div class="chats-avatar">
-                                                                <img src="img/user5.png" alt="Uni Pro Admin">
-                                                                <div class="chats-name">Alisa</div>
-                                                            </div>
-                                                            <div class="chats-text">Commonly used as placeholder text in the graphic and print industries.</div>
-                                                            <div class="chats-hour">08:57 <span class="icon-done_all"></span></div>
-                                                        </li>
-                                                        <li class="chats-right">
-                                                            <div class="chats-avatar">
-                                                                <img src="img/user12.png" alt="Uni Pro Admin">
-                                                                <div class="chats-name">You</div>
-                                                            </div>
-                                                            <div class="chats-text">Lorem Ipsum's origins extend far back to a scrambled Latin passage from Cicero in the middle ages.</div>
-                                                            <div class="chats-hour">08:59 <span class="icon-done_all"></span></div>
-                                                        </li>
-                                                        <li class="chats-left">
-                                                            <div class="chats-avatar">
-                                                                <img src="img/user5.png" alt="Uni Pro Admin">
-                                                                <div class="chats-name">Alisa</div>
-                                                            </div>
-                                                            <div class="chats-text">In publishing and graphic design, lorem ipsum is a filler text or greeking commonly used to demonstrate the textual elements.</div>
-                                                            <div class="chats-hour">09:00 <span class="icon-done_all"></span></div>
-                                                        </li>
-                                                        <li class="chats-right">
-                                                            <div class="chats-avatar">
-                                                                <img src="img/user12.png" alt="Uni Pro Admin">
-                                                                <div class="chats-name">You</div>
-                                                            </div>
-                                                            <div class="chats-text">A graphic document or visual presentation. Replacing meaningful content with placeholder text allows designers to design the form of the content before the content itself has been produced.</div>
-                                                            <div class="chats-hour">09:00 <span class="icon-done_all"></span></div>
-                                                        </li>
-                                                        <li class="chats-left">
-                                                            <div class="chats-avatar">
-                                                                <img src="img/user5.png" alt="Uni Pro Admin">
-                                                                <div class="chats-name">Alisa</div>
-                                                            </div>
-                                                            <div class="chats-text">Lorem Ipsum is also known as: Greeked text, blind text, placeholder text, dummy content, filler text, lipsum, and mock-content.</div>
-                                                            <div class="chats-hour">09:01 <span class="icon-done_all"></span></div>
-                                                        </li>
-                                                        <li class="chats-right">
-                                                            <div class="chats-avatar">
-                                                                <img src="img/user12.png" alt="Uni Pro Admin">
-                                                                <div class="chats-name">You</div>
-                                                            </div>
-                                                            <div class="chats-text">Lorem ipsum has become the industry standard for design mockups and prototypes. By adding a little bit of Latin to a mockup.</div>
-                                                            <div class="chats-hour">09:01 <span class="icon-done_all"></span></div>
-                                                        </li>
-                                                    </ul>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <!-- Card end -->
-                                    </div>
-                                </div>
-                                <!-- Row end -->                                
-                            </div>
-						</div>
-                        <!-- Row end -->
+						<!-- Row end -->
 
 					</div>
 					<!-- Content wrapper end -->
@@ -1790,20 +1542,20 @@
 
 		<!-- Search Filter JS -->
 		<script src="vendor/search-filter/search-filter.js"></script>
-        <script src="vendor/search-filter/custom-search-filter.js"></script>
-        
-        <!-- Apex Charts -->
-        <script src="vendor/apex/apexcharts.min.js"></script>
-        <script src="vendor/apex/custom/profile/revenue.js"></script>    
+		<script src="vendor/search-filter/custom-search-filter.js"></script>
 
-        <!-- Rating JS -->
-		<script src="vendor/rating/raty.js"></script>
-        <script src="vendor/rating/raty-custom.js"></script>
-        
+		<!-- Bootstrap Select JS -->
+		<script src="vendor/bs-select/bs-select.min.js"></script>
+		<script src="vendor/bs-select/bs-select-custom.js"></script>
+
+		<!-- Date Range JS -->
+		<script src="vendor/daterange/daterange.js"></script>
+		<script src="vendor/daterange/custom-daterange.js"></script>
+
 		<!-- Main Js Required -->
 		<script src="js/main.js"></script>
 
 	</body>
 
-<!-- Mirrored from www.bootstrapget.com/demos/themeforest/unipro-admin-template/demos/01-design-blue/profile.php by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 04 Sep 2024 13:06:08 GMT -->
+<!-- Mirrored from www.bootstrapget.com/demos/themeforest/unipro-admin-template/demos/01-design-blue/tasks.php by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 04 Sep 2024 13:06:42 GMT -->
 </html>

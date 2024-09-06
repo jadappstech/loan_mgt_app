@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="en">
 	
-<!-- Mirrored from www.bootstrapget.com/demos/themeforest/unipro-admin-template/demos/01-design-blue/user-profile.php by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 04 Sep 2024 13:06:59 GMT -->
+<!-- Mirrored from www.bootstrapget.com/demos/themeforest/unipro-admin-template/demos/01-design-blue/tasks.php by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 04 Sep 2024 13:06:42 GMT -->
 <head>
 		<!-- Required meta tags -->
 		<meta charset="utf-8">
@@ -13,7 +13,7 @@
 		<link rel="shortcut icon" href="img/fav.png">
 
 		<!-- Title -->
-		<title>user-profile</title>
+		<title>approved</title>
 
 
 		<!-- *************
@@ -40,16 +40,17 @@
 		<link rel="stylesheet" href="vendor/search-filter/search-filter.css">
 		<link rel="stylesheet" href="vendor/search-filter/custom-search-filter.css">
 
+		<!-- Bootstrap Select CSS -->
+		<link rel="stylesheet" href="vendor/bs-select/bs-select.css" />
+		
+		<!-- Date Range CSS -->
+		<link rel="stylesheet" href="vendor/daterange/daterange.css">
+
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
 	</head>
 	<body>
 
-		<!-- Loading wrapper start -->
-		<div id="loading-wrapper">
-			<div class="spinner-border"></div>
-			Loading...
-		</div>
-		<!-- Loading wrapper end -->
-		
 		<!-- Page wrapper start -->
 		<div class="page-wrapper">
 			
@@ -285,7 +286,7 @@
 											<a href="chat.php">Chat</a>
 										</li>
 										<li>
-											<a href="tasks.php">Tasks</a>
+											<a href="tasks.php" class="current-page">Tasks</a>
 										</li>
 										<li>
 											<a href="create-invoice.php">Create Invoice</a>
@@ -324,13 +325,20 @@
 											<a href="account-settings.php">Account Settings</a>
                                         </li>
                                         <li>
-											<a href="user-profile.php" class="current-page">User Profile</a>
+											<a href="user-profile.php">User Profile</a>
 										</li>
 									</ul>
 								</div>
 							</div>
 							<!-- Sidebar menu ends -->
 
+							<!-- Sidebar actions starts -->
+							<div class="sidebar-actions">
+								<div class="support-tile green">
+									<i class="icon-pie-chart1"></i> 5GB Free Space
+								</div>
+							</div>
+							<!-- Sidebar actions ends -->
 
 						</div>
 
@@ -1240,7 +1248,7 @@
 															<div class="noti-date">April 21, 05:00 pm</div>
 														</div>
 													</a>
-												</li>
+												</li>												
 											</ul>
 										</div>
 									</div>
@@ -1265,7 +1273,7 @@
 
 						</div>
 					</div>
-					<!-- Row end -->
+					<!-- Row end -->					
 
 				</div>
 				<!-- Page header ends -->
@@ -1274,120 +1282,388 @@
 				<div class="content-wrapper-scroll">
 
 					<!-- Content wrapper start -->
-
 					<div class="content-wrapper">
 
 						<!-- Row start -->
 						<div class="row gutters">
 							<div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
 
-								<div class="profile-header">
-									<h1>Welcome, Charles</h1>
-									<div style=" background: #add8e6;" class="profile-header-content">
-											<div class="profile-header-tiles">
-													<div class="row gutters">
-															<div class="col-xl-4 col-lg-4 col-md-4 col-sm-4 col-12">
-																<div class="profile-tile">
-																	<span class="icon">
-																		<i class="icon-server"></i>
-																	</span>
-																	<h6>Name - <span>Charles Olawale</span></h6>
-																</div>
-															</div>
-															<div class="col-xl-4 col-lg-4 col-md-4 col-sm-4 col-12">
-																	<div class="profile-tile">
-																		<span class="icon">
-																			<i class="icon-map-pin"></i>
-																		</span>
-																		<h6>Location - <span>Nigeria</span></h6>
-																	</div>
-															</div>
-															<div class="col-xl-4 col-lg-4 col-md-4 col-sm-4 col-12">
-																	<div class="profile-tile">
-																			<span class="icon">
-																					<i class="icon-phone1"></i>
-																			</span>
-																			<h6>Phone - <span>1234567890</span></h6>
-																	</div>
-															</div>
-													</div>
+								<!-- Task section start -->
+								<div class="tasks-section">
+
+									<!-- Labels container start -->
+									<div class="labels-container">
+										<div class="lablesContainerScroll">
+											<div class="filters-block">
+												<h5>Filters</h5>
+												<div class="filters">
+													<a style="background-color:white;" href="active-applications.php" class="active">
+														<i class="icon-receipt"></i> All
+													</a>
+													<a style="background-color: #f5f8fd;">
+													<i class="fa fa-check" style="font-size:16px; color: #1fd655;"></i>Approved
+													</a>
+													<a href="declined.php">
+													<i class="fa fa-close" style="font-size:16px; color:red;"> </i>Declined
+													</a>
+												</div>
 											</div>
-											<div class="profile-avatar-tile">
-													<img style="border: solid; border-width: 0.5px; border-color: #d6d6d6;" src="img/ngMan.jpg" class="img-fluid" alt="User Profile">
-											</div>
+																						
+										</div>
 									</div>
-							</div>
+									<!-- Labels container end -->
 
-							</div>
-						</div>
-												<!-- Row end -->
-												
-												<!-- Row start -->
-												<div style="display: inline;" class="row gutters">
-							<div style=" " class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
-																<!-- Row start -->
-																<div class="row gutters">
-																		
-																		
-																		<div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
-																				<!-- Card start -->
-																				<div class="card">
-																						<div class="card-header">
-																								<div class="card-title">Loan History</div>
-																						</div>
-																						<div class="card-body">
-																								<div class="slimScrollDiv" style="position: relative; overflow: hidden; width: auto; height: 250px;"><div class="customScroll250" style="overflow: hidden; width: auto; height: 250px;">
-																										<div class="timeline-activity">
-																												<div class="activity-log">
-																														<p class="log-name">Business Loan<small class="log-time">- 5 Weeks ago</small></p>
-																														<div class="log-details">Five hundre thousand naira (N500,000) lore<span class="text-success ml-1"> #Paid</span></div>
-																												</div>
-																												<div class="activity-log">
-																														<p class="log-name">Business Loan<small class="log-time">- 5 Weeks ago</small></p>
-																														<div class="log-details">Five hundre thousand naira (N500,000)<span class="text-success ml-1"> #Paid</span></div>
-																												</div>
-																												<div class="activity-log">
-																														<p class="log-name">Business Loan<small class="log-time">- 5 Weeks ago</small></p>
-																														<div class="log-details">Five hundre thousand naira (N500,000)<span class="text-success ml-1"> #Paid</span></div>
-																												</div>
-																												<div class="activity-log">
-																														<p class="log-name">Business Loan<small class="log-time">- 5 Weeks ago</small></p>
-																														<div class="log-details">Five hundre thousand naira (N500,000)<span class="text-success ml-1"> #Paid</span></div>
-																												</div>
-																												
-																										</div>
-																								</div><div class="slimScrollBar" style="background: rgb(214, 219, 230); width: 5px; position: absolute; top: 0px; opacity: 0.8; display: none; border-radius: 0px; z-index: 99; right: 1px; height: 241.313px;"></div><div class="slimScrollRail" style="width: 5px; height: 100%; position: absolute; top: 0px; display: none; border-radius: 0px; background: rgb(214, 219, 230); opacity: 0.2; z-index: 90; right: 1px;"></div></div>
-																						</div>
-																				</div>
-																				<!-- Card end -->
-																		
-														</div>
-														<div class="col-xl-4 col-lg-4 col-md-12 col-sm-12 col-12">
-																<!-- Row start -->
-																<div class="row gutters">
-																		<div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
-																				
-																		</div>
-																		<div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
-																				
-																		</div>
+									<!-- Tasks container start -->
+									<div class="tasks-container">
+										<div class="modal fade" id="addNewTask" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="addNewDocumentLabel" aria-hidden="true">
+											<div class="modal-dialog" role="document">
+												<div class="modal-content">
+													<div class="modal-header">
+														<h5 class="modal-title" id="addNewDocumentLabel">Add Document</h5>
+														<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
+															<span aria-hidden="true"></span>
+														</button>
+													</div>
+													<div class="modal-body">
+														<form class="row gutters">
+															<div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
+																<!-- Field wrapper start -->
+																<div class="field-wrapper">
+																	<input type="text" class="form-control">
+																	<div class="field-placeholder">Task Title</div>
 																</div>
-																<!-- Row end -->                                
+																<!-- Field wrapper end -->
+															</div>
+															<div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
+																<!-- Field wrapper start -->
+																<div class="field-wrapper">
+																	<select class="select-single js-states" title="Select Product Category" data-live-search="true">
+																		<option>Design</option>
+																		<option>Backend</option>
+																		<option>Testing</option>
+																		<option>UI Development</option>
+																		<option>CSS</option>
+																	</select>
+																	<div class="field-placeholder">Task Type</div>
+																</div>
+																<!-- Field wrapper end -->
+															</div>
+															<div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
+																<!-- Field wrapper start -->
+																<div class="field-wrapper">
+																	<div class="input-group">
+																		<input type="text" class="form-control datepicker-opens-left">
+																		<span class="input-group-text">
+																			<i class="icon-calendar1"></i>
+																		</span>
+																	</div>
+																	<div class="field-placeholder">Start Date</div>
+																</div>
+																<!-- Field wrapper end -->
+															</div>
+															<div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
+																<!-- Field wrapper start -->
+																<div class="field-wrapper">
+																	<div class="input-group">
+																		<input type="text" class="form-control datepicker-opens-left">
+																		<span class="input-group-text">
+																			<i class="icon-calendar1"></i>
+																		</span>
+																	</div>
+																	<div class="field-placeholder">End Date</div>
+																</div>
+																<!-- Field wrapper end -->
+															</div>
+															<div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
+																<!-- Field wrapper start -->
+																<div class="field-wrapper m-0">
+																	<textarea class="form-control" rows="3"></textarea>
+																	<div class="field-placeholder">Task Details</div>
+																</div>
+																<!-- Field wrapper end -->
+															</div>
+														</form>
+													</div>
+													<div class="modal-footer">
+														<button type="button" class="btn btn-light" data-bs-dismiss="modal">Close</button>
+														<button type="button" class="btn btn-primary" data-bs-dismiss="modal">Create Task</button>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="tasks-header">
+											<h3>Today <span class="date" id="todays-date"></span></h3>
+																					<select id="filterDropdown">
+											<option value="All">All</option>
+											<option value="Loan amount">Fruits</option>
+											<option value="Date">Vegetables</option>
+										</select>
+										</div>
+										<div class="tasksContainerScroll">
+											<!-- Row start -->
+											<div class="row no-gutters justify-content-center">
+												<div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
+													<section class="task-list">
+														<h6 class="m-0 h-0">&nbsp;</h6>
+														
+														<!-- Task #4 -->
+														<div class="task-block">
+															<div class="task-checkbox">
+																<input type="checkbox" name="task_00">
+																<div class="ripple-container">
+																	<div class="check-off"></div>
+																	<div class="check-on">
+																		<i class="icon-check1"></i>
+																	</div>
+																</div>
+															</div>
+															<div class="task-details">
+																<div class="task-name">Musa Okonkwo</div>
+																<div class="task-desc">Application for a loan of 5 million naira (N5,000,000)</div>
+																<div class="task-desc"><strong>Duration:</strong> 8 Weeks</div>
+																<div class="task-types">
+																	<button style=" border: solid; border-radius: 6px; padding: 10px; margin-right:4px; margin-left:-2px; " class="badge bg-warning">Veiw Profile</button>
+																	<button style=" border: none; border-radius: 4px; padding: 10px; margin-right:4px;" class="badge bg-success">Check Documents</button>
+																</div>
+															</div>
+															<div style="margin-bottom:20px;"> <span style="background: #33ff57; padding:10px; padding-left:40.9px;
+															 padding-right:40.9px; font-weight: 700; font-size:10px; border: solid 0.8px; color: #ffffff;
+															 border-radius:4px;" >Approved</span> </div>
 														</div>
+														<!-- end of Task #4 -->
+
+														<!-- Task #4 -->
+														<div class="task-block">
+															<div class="task-checkbox">
+																<input type="checkbox" name="task_00">
+																<div class="ripple-container">
+																	<div class="check-off"></div>
+																	<div class="check-on">
+																		<i class="icon-check1"></i>
+																	</div>
+																</div>
+															</div>
+															<div class="task-details">
+																<div class="task-name">Musa Okonkwo</div>
+																<div class="task-desc">Application for a loan of 5 million naira (N5,000,000)</div>
+																<div class="task-desc"><strong>Duration:</strong> 8 Weeks</div>
+																<div class="task-types">
+																	<button style=" border: solid; border-radius: 6px; padding: 10px; margin-right:4px; margin-left:-2px; " class="badge bg-warning">Veiw Profile</button>
+																	<button style=" border: none; border-radius: 4px; padding: 10px; margin-right:4px;" class="badge bg-success">Check Documents</button>
+																</div>
+															</div>
+															<div style="margin-bottom:20px;"> <span style="background: #33ff57; padding:10px; padding-left:40.9px;
+															 padding-right:40.9px; font-weight: 700; font-size:10px; border: solid 0.8px; color: #ffffff;
+															 border-radius:4px;" >Approved</span> </div>
+														</div>
+														<!-- end of Task #4 -->
+
+														<!-- Task #4 -->
+														<div class="task-block">
+															<div class="task-checkbox">
+																<input type="checkbox" name="task_00">
+																<div class="ripple-container">
+																	<div class="check-off"></div>
+																	<div class="check-on">
+																		<i class="icon-check1"></i>
+																	</div>
+																</div>
+															</div>
+															<div class="task-details">
+																<div class="task-name">Musa Okonkwo</div>
+																<div class="task-desc">Application for a loan of 5 million naira (N5,000,000)</div>
+																<div class="task-desc"><strong>Duration:</strong> 8 Weeks</div>
+																<div class="task-types">
+																	<button style=" border: solid; border-radius: 6px; padding: 10px; margin-right:4px; margin-left:-2px; " class="badge bg-warning">Veiw Profile</button>
+																	<button style=" border: none; border-radius: 4px; padding: 10px; margin-right:4px;" class="badge bg-success">Check Documents</button>
+																</div>
+															</div>
+															<div style="margin-bottom:20px;"> <span style="background: #33ff57; padding:10px; padding-left:40.9px;
+															 padding-right:40.9px; font-weight: 700; font-size:10px; border: solid 0.8px; color: #ffffff;
+															 border-radius:4px;" >Approved</span> </div>
+														</div>
+														<!-- end of Task #4 -->
+
+														<!-- Task #4 -->
+														<div class="task-block">
+															<div class="task-checkbox">
+																<input type="checkbox" name="task_00">
+																<div class="ripple-container">
+																	<div class="check-off"></div>
+																	<div class="check-on">
+																		<i class="icon-check1"></i>
+																	</div>
+																</div>
+															</div>
+															<div class="task-details">
+																<div class="task-name">Musa Okonkwo</div>
+																<div class="task-desc">Application for a loan of 5 million naira (N5,000,000)</div>
+																<div class="task-desc"><strong>Duration:</strong> 8 Weeks</div>
+																<div class="task-types">
+																	<button style=" border: solid; border-radius: 6px; padding: 10px; margin-right:4px; margin-left:-2px; " class="badge bg-warning">Veiw Profile</button>
+																	<button style=" border: none; border-radius: 4px; padding: 10px; margin-right:4px;" class="badge bg-success">Check Documents</button>
+																</div>
+															</div>
+															<div style="margin-bottom:20px;"> <span style="background: #33ff57; padding:10px; padding-left:40.9px;
+															 padding-right:40.9px; font-weight: 700; font-size:10px; border: solid 0.8px; color: #ffffff;
+															 border-radius:4px;" >Approved</span> </div>
+														</div>
+														<!-- end of Task #4 -->
+
+														<!-- Task #4 -->
+														<div class="task-block">
+															<div class="task-checkbox">
+																<input type="checkbox" name="task_00">
+																<div class="ripple-container">
+																	<div class="check-off"></div>
+																	<div class="check-on">
+																		<i class="icon-check1"></i>
+																	</div>
+																</div>
+															</div>
+															<div class="task-details">
+																<div class="task-name">Musa Okonkwo</div>
+																<div class="task-desc">Application for a loan of 5 million naira (N5,000,000)</div>
+																<div class="task-desc"><strong>Duration:</strong> 8 Weeks</div>
+																<div class="task-types">
+																	<button style=" border: solid; border-radius: 6px; padding: 10px; margin-right:4px; margin-left:-2px; " class="badge bg-warning">Veiw Profile</button>
+																	<button style=" border: none; border-radius: 4px; padding: 10px; margin-right:4px;" class="badge bg-success">Check Documents</button>
+																</div>
+															</div>
+															<div style="margin-bottom:20px;"> <span style="background: #33ff57; padding:10px; padding-left:40.9px;
+															 padding-right:40.9px; font-weight: 700; font-size:10px; border: solid 0.8px; color: #ffffff;
+															 border-radius:4px;" >Approved</span> </div>
+														</div>
+														<!-- end of Task #4 -->
+
+														<!-- Task #4 -->
+														<div class="task-block">
+															<div class="task-checkbox">
+																<input type="checkbox" name="task_00">
+																<div class="ripple-container">
+																	<div class="check-off"></div>
+																	<div class="check-on">
+																		<i class="icon-check1"></i>
+																	</div>
+																</div>
+															</div>
+															<div class="task-details">
+																<div class="task-name">Musa Okonkwo</div>
+																<div class="task-desc">Application for a loan of 5 million naira (N5,000,000)</div>
+																<div class="task-desc"><strong>Duration:</strong> 8 Weeks</div>
+																<div class="task-types">
+																	<button style=" border: solid; border-radius: 6px; padding: 10px; margin-right:4px; margin-left:-2px; " class="badge bg-warning">Veiw Profile</button>
+																	<button style=" border: none; border-radius: 4px; padding: 10px; margin-right:4px;" class="badge bg-success">Check Documents</button>
+																</div>
+															</div>
+															<div style="margin-bottom:20px;"> <span style="background: #33ff57; padding:10px; padding-left:40.9px;
+															 padding-right:40.9px; font-weight: 700; font-size:10px; border: solid 0.8px; color: #ffffff;
+															 border-radius:4px;" >Approved</span> </div>
+														</div>
+														<!-- end of Task #4 -->
+
+														<!-- Task #4 -->
+														<div class="task-block">
+															<div class="task-checkbox">
+																<input type="checkbox" name="task_00">
+																<div class="ripple-container">
+																	<div class="check-off"></div>
+																	<div class="check-on">
+																		<i class="icon-check1"></i>
+																	</div>
+																</div>
+															</div>
+															<div class="task-details">
+																<div class="task-name">Musa Okonkwo</div>
+																<div class="task-desc">Application for a loan of 5 million naira (N5,000,000)</div>
+																<div class="task-desc"><strong>Duration:</strong> 8 Weeks</div>
+																<div class="task-types">
+																	<button style=" border: solid; border-radius: 6px; padding: 10px; margin-right:4px; margin-left:-2px; " class="badge bg-warning">Veiw Profile</button>
+																	<button style=" border: none; border-radius: 4px; padding: 10px; margin-right:4px;" class="badge bg-success">Check Documents</button>
+																</div>
+															</div>
+															<div style="margin-bottom:20px;"> <span style="background: #33ff57; padding:10px; padding-left:40.9px;
+															 padding-right:40.9px; font-weight: 700; font-size:10px; border: solid 0.8px; color: #ffffff;
+															 border-radius:4px;" >Approved</span> </div>
+														</div>
+														<!-- end of Task #4 -->
+
+														<!-- Task #4 -->
+														<div class="task-block">
+															<div class="task-checkbox">
+																<input type="checkbox" name="task_00">
+																<div class="ripple-container">
+																	<div class="check-off"></div>
+																	<div class="check-on">
+																		<i class="icon-check1"></i>
+																	</div>
+																</div>
+															</div>
+															<div class="task-details">
+																<div class="task-name">Musa Okonkwo</div>
+																<div class="task-desc">Application for a loan of 5 million naira (N5,000,000)</div>
+																<div class="task-desc"><strong>Duration:</strong> 8 Weeks</div>
+																<div class="task-types">
+																	<button style=" border: solid; border-radius: 6px; padding: 10px; margin-right:4px; margin-left:-2px; " class="badge bg-warning">Veiw Profile</button>
+																	<button style=" border: none; border-radius: 4px; padding: 10px; margin-right:4px;" class="badge bg-success">Check Documents</button>
+																</div>
+															</div>
+															<div style="margin-bottom:20px;"> <span style="background: #33ff57; padding:10px; padding-left:40.9px;
+															 padding-right:40.9px; font-weight: 700; font-size:10px; border: solid 0.8px; color: #ffffff;
+															 border-radius:4px;" >Approved</span> </div>
+														</div>
+														<!-- end of Task #4 -->
+
+														<!-- Task #4 -->
+														<div class="task-block">
+															<div class="task-checkbox">
+																<input type="checkbox" name="task_00">
+																<div class="ripple-container">
+																	<div class="check-off"></div>
+																	<div class="check-on">
+																		<i class="icon-check1"></i>
+																	</div>
+																</div>
+															</div>
+															<div class="task-details">
+																<div class="task-name">Musa Okonkwo</div>
+																<div class="task-desc">Application for a loan of 5 million naira (N5,000,000)</div>
+																<div class="task-desc"><strong>Duration:</strong> 8 Weeks</div>
+																<div class="task-types">
+																	<button style=" border: solid; border-radius: 6px; padding: 10px; margin-right:4px; margin-left:-2px; " class="badge bg-warning">Veiw Profile</button>
+																	<button style=" border: none; border-radius: 4px; padding: 10px; margin-right:4px;" class="badge bg-success">Check Documents</button>
+																</div>
+															</div>
+															<div style="margin-bottom:20px;"> <span style="background: #33ff57; padding:10px; padding-left:40.9px;
+															 padding-right:40.9px; font-weight: 700; font-size:10px; border: solid 0.8px; color: #ffffff;
+															 border-radius:4px;" >Approved</span> </div>
+														</div>
+														<!-- end of Task #4 -->
+
+														
+
+													</section>
+												</div>
+											</div>
+											<!-- Row end -->
+										</div>
+									</div>
+									<!-- Tasks container end -->
+
+								</div>
+								<!-- Task section end -->
+
+							</div>
 						</div>
-												<!-- Row end -->
+						<!-- Row end -->
 
-						</div>
-						<!-- Content wrapper end -->
+					</div>
+					<!-- Content wrapper end -->
 
-</div>
-<!-- Content wrapper scroll end -->
+					<!-- App Footer start -->
+					<div class="app-footer">© Jad Apps and Tech Solutions Limited</div>
+					<!-- App footer end -->
 
-</div>
-
-	<!-- App Footer start -->
-				<div class="app-footer">© Jad Apps and Tech Solutions Limited</div>
-	<!-- App footer end -->
 				</div>
 				<!-- Content wrapper scroll end -->
 
@@ -1422,20 +1698,20 @@
 
 		<!-- Search Filter JS -->
 		<script src="vendor/search-filter/search-filter.js"></script>
-        <script src="vendor/search-filter/custom-search-filter.js"></script>
-        
-        <!-- Apex Charts -->
-        <script src="vendor/apex/apexcharts.min.js"></script>
-        <script src="vendor/apex/custom/profile/revenue.js"></script>    
+		<script src="vendor/search-filter/custom-search-filter.js"></script>
 
-        <!-- Rating JS -->
-		<script src="vendor/rating/raty.js"></script>
-        <script src="vendor/rating/raty-custom.js"></script>
-        
+		<!-- Bootstrap Select JS -->
+		<script src="vendor/bs-select/bs-select.min.js"></script>
+		<script src="vendor/bs-select/bs-select-custom.js"></script>
+
+		<!-- Date Range JS -->
+		<script src="vendor/daterange/daterange.js"></script>
+		<script src="vendor/daterange/custom-daterange.js"></script>
+
 		<!-- Main Js Required -->
 		<script src="js/main.js"></script>
 
 	</body>
 
-<!-- Mirrored from www.bootstrapget.com/demos/themeforest/unipro-admin-template/demos/01-design-blue/user-profile.php by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 04 Sep 2024 13:06:59 GMT -->
+<!-- Mirrored from www.bootstrapget.com/demos/themeforest/unipro-admin-template/demos/01-design-blue/tasks.php by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 04 Sep 2024 13:06:42 GMT -->
 </html>
