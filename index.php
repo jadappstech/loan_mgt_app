@@ -1,1690 +1,430 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-	
-<!-- Mirrored from www.bootstrapget.com/demos/themeforest/unipro-admin-template/demos/01-design-blue/ by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 04 Sep 2024 13:03:09 GMT -->
 <head>
-		<!-- Required meta tags -->
-		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
-		<!-- Meta -->
-		<meta name="description" content="Responsive Bootstrap4 Dashboard Template">
-		<meta name="author" content="ParkerThemes">
-		<link rel="shortcut icon" href="img/fav.png">
-
-		<!-- Title -->
-		<title>Uni Pro Admin Template - Admin Dashboard</title>
-
-
-		<!-- *************
-			************ Common Css Files *************
-		************ -->
-		<!-- Bootstrap css -->
-		<link rel="stylesheet" href="css/bootstrap.min.css">
-		
-		<!-- Icomoon Font Icons css -->
-		<link rel="stylesheet" href="fonts/style.css">
-
-		<!-- Main css -->
-		<link rel="stylesheet" href="css/main.css">
-
-
-		<!-- *************
-			************ Vendor Css Files *************
-		************ -->
-
-		<!-- Mega Menu -->
-		<link rel="stylesheet" href="vendor/megamenu/css/megamenu.css">
-
-		<!-- Search Filter JS -->
-		<link rel="stylesheet" href="vendor/search-filter/search-filter.css">
-		<link rel="stylesheet" href="vendor/search-filter/custom-search-filter.css">
-		
-	</head>
-	<body>
-
-		<!-- Loading wrapper start -->
-		<div id="loading-wrapper">
-			<div class="spinner-border"></div>
-			Loading...
-		</div>
-		<!-- Loading wrapper end -->
-
-		<!-- Page wrapper start -->
-		<div class="page-wrapper">
-			
-			<!-- Sidebar wrapper start -->
-			<nav class="sidebar-wrapper">
-
-				<!-- Sidebar content start -->
-				<div class="sidebar-tabs">
-
-					<!-- Tabs nav start -->
-					<div class="nav" role="tablist" aria-orientation="vertical">
-						<a href="#" class="logo">
-							<img src="img/logo.svg" alt="Uni Pro Admin">
-						</a>
-						<a class="nav-link active" id="home-tab" data-bs-toggle="tab" href="#tab-home" role="tab" aria-controls="tab-home" aria-selected="true">
-							<i class="icon-home2"></i>
-							<span class="nav-link-text">Dashboards</span>
-						</a>
-						<a class="nav-link" id="product-tab" data-bs-toggle="tab" href="#tab-product" role="tab" aria-controls="tab-product" aria-selected="false">
-							<i class="icon-layers2"></i>
-							<span class="nav-link-text">Product</span>
-						</a>
-						<a class="nav-link" id="pages-tab" data-bs-toggle="tab" href="#tab-pages" role="tab" aria-controls="tab-pages" aria-selected="false">
-							<i class="icon-book-open"></i>
-							<span class="nav-link-text">Pages</span>
-						</a>
-						<a class="nav-link" id="forms-tab" data-bs-toggle="tab" href="#tab-forms" role="tab" aria-controls="tab-forms" aria-selected="false">
-							<i class="icon-edit1"></i>
-							<span class="nav-link-text">Forms</span>
-						</a>
-						<a class="nav-link" id="components-tab" data-bs-toggle="tab" href="#tab-components" role="tab" aria-controls="tab-components" aria-selected="false">
-							<i class="icon-box"></i>
-							<span class="nav-link-text">Components</span>
-						</a>
-						<a class="nav-link" id="graphs-tab" data-bs-toggle="tab" href="#tab-graphs" role="tab" aria-controls="tab-graphs" aria-selected="false">
-							<i class="icon-pie-chart1"></i>
-							<span class="nav-link-text">Graphs</span>
-						</a>
-						<a class="nav-link" id="authentication-tab" data-bs-toggle="tab" href="#tab-authentication" role="tab" aria-controls="tab-authentication" aria-selected="false">
-							<i class="icon-unlock"></i>
-							<span class="nav-link-text">Authentication</span>
-						</a>
-						<a class="nav-link settings" id="settings-tab" data-bs-toggle="tab" href="#tab-settings" role="tab" aria-controls="tab-authentication" aria-selected="false">
-							<i class="icon-settings1"></i>
-							<span class="nav-link-text">Settings</span>
-						</a>
-					</div>
-					<!-- Tabs nav end -->
-
-					<!-- Tabs content start -->
-					<div class="tab-content">
-								
-						<!-- Chat tab -->
-						<div class="tab-pane fade show active" id="tab-home" role="tabpanel" aria-labelledby="home-tab">
-
-							<!-- Tab content header start -->
-							<div class="tab-pane-header">
-								Dashboards
-							</div>
-							<!-- Tab content header end -->
-
-							<!-- Sidebar menu starts -->
-							<div class="sidebarMenuScroll">
-								<div class="sidebar-menu">
-									<ul>
-										<li>
-											<a href="index-2.php" class="current-page">Dashboard</a>
-										</li>
-										<li>
-											<a href="analytics.php">Analytics</a>
-										</li>
-										<li>
-											<a href="sales.php">Sales</a>
-										</li>
-										<li>
-											<a href="crm.php">CRM</a>
-										</li>
-										<li>
-											<a href="reports.php">Reports</a>
-										</li>
-										<li>
-											<a href="saas.php">Saas</a>
-										</li>
-										<li>
-											<a href="consulting.php">Consulting</a>
-										</li>
-										<li>
-											<a href="profile.php">Profile</a>
-										</li>
-									</ul>
-									<ul>
-										<li class="list-heading">Layouts</li>
-										<li>
-											<a href="starter-page.php">Starter Page</a>
-										</li>
-										<li>
-											<a href="layout-tabs-tooltip.php">Tabs Hover Tooltip</a>
-										</li>
-										<li>
-											<a href="layout-tile-menu.php">Tile Menu</a>
-										</li>
-										<li>
-											<a href="layout-collapse-menu.php">Collapse Sidebar</a>
-										</li>
-										<li>
-											<a href="layout-compact-menu.php">Compact Sidebar</a>
-										</li>
-										<li>
-											<a href="layout-slim-menu.php">Slim Sidebar</a>
-										</li>
-										<li>
-											<a href="layout-hover-tabs.php">Hover Tabs</a>
-										</li>
-										<li>
-											<a href="layout-daterange.php">Date Range</a>
-										</li>
-										<li>
-											<a href="layout-full-screen.php">Full Screen</a>
-										</li>
-										<li>
-											<a href="layout-full-view.php">Full View</a>
-										</li>
-										<li>
-											<a href="layout-search.php">Global Search</a>
-										</li>
-										<li>
-											<a href="layout-megamenu.php">Megamenu</a>
-										</li>
-										<li>
-											<a href="layout-bradcrumb.php">Breadcrumbs</a>
-										</li>
-										<li>
-											<a href="layout-scroll-cards.php">Scroll Cards</a>
-										</li>
-									</ul>
-								</div>
-							</div>
-							<!-- Sidebar menu ends -->
-
-							<!-- Sidebar actions starts -->
-							<div class="sidebar-actions">
-								<a href="orders.php" class="red">
-									<div class="bg-avatar">12</div>
-									<h5>New Orders</h5>
-								</a>
-								<a href="invoices-list.php" class="blue">
-									<div class="bg-avatar">24</div>
-									<h5>Bills Pending</h5>
-								</a>
-							</div>
-							<!-- Sidebar actions ends -->
-
-						</div>
-
-						<!-- Pages tab -->
-						<div class="tab-pane fade" id="tab-product" role="tabpanel" aria-labelledby="product-tab">
-							
-							<!-- Tab content header start -->
-							<div class="tab-pane-header">
-								Product
-							</div>
-							<!-- Tab content header end -->
-
-							<!-- Sidebar menu starts -->
-							<div class="sidebarMenuScroll">
-								<div class="sidebar-menu">
-									<ul>
-										<li>
-											<a href="products.php">Products Grid</a>
-										</li>
-										<li>
-											<a href="products-list.php">Products List</a>
-										</li>
-										<li>
-											<a href="add-product.php">Add Product</a>
-										</li>
-										<li>
-											<a href="orders.php">Orders</a>
-										</li>
-										<li>
-											<a href="customers-list.php">Customers</a>
-										</li>
-										<li>
-											<a href="products-reviews.php">Reviews</a>
-										</li>
-									</ul>
-									<ul>
-										<li class="list-heading">Calendars</li>
-										<li>
-											<a href="calendar-daygrid-view.php">Daygrid View</a>
-										</li>
-										<li>
-											<a href="calendar-list-view.php">List View</a>
-										</li>
-										<li>
-											<a href="calendar-external-dragging.php">Draggable</a>
-										</li>
-										<li>
-											<a href="calendar-google-view.php">Google View</a>
-										</li>
-										<li>
-											<a href="calendar-selectable.php">Selectable</a>
-										</li>
-									</ul>
-								</div>
-							</div>
-							<!-- Sidebar menu ends -->
-
-							<!-- Sidebar actions starts -->
-							<div class="sidebar-actions">
-								<div class="support-tile">
-									<i class="icon-headphones"></i> 24/7 Support
-								</div>
-							</div>
-							<!-- Sidebar actions ends -->
-							
-						</div>
-
-						<!-- Pages tab -->
-						<div class="tab-pane fade" id="tab-pages" role="tabpanel" aria-labelledby="pages-tab">
-							
-							<!-- Tab content header start -->
-							<div class="tab-pane-header">
-								Pages
-							</div>
-							<!-- Tab content header end -->
-
-							<!-- Sidebar menu starts -->
-							<div class="sidebarMenuScroll">
-								<div class="sidebar-menu">
-									<ul>
-										<li>
-											<a href="chat.php">Chat</a>
-										</li>
-										<li>
-											<a href="tasks.php">Tasks</a>
-										</li>
-										<li>
-											<a href="create-invoice.php">Create Invoice</a>
-										</li>
-										<li>
-											<a href="view-invoice.php">View Invoice</a>
-										</li>
-										<li>
-											<a href="documents.php">Documents</a>
-										</li>
-										<li>
-											<a href="faq.php">Faq's</a>
-										</li>
-										<li>
-											<a href="contacts.php">Contacts</a>
-										</li>
-										<li>
-											<a href="pricing.php">Pricing</a>
-                                        </li>
-                                        <li>
-											<a href="gallery-tiles.php">Gallery Tiles</a>
-                                        </li>
-                                        <li>
-											<a href="gallery.php">Gallery</a>
-										</li>
-										<li>
-											<a href="icons.php">Icons</a>
-										</li>
-										<li>
-											<a href="timeline.php">Timeline</a>
-										</li>
-										<li>
-											<a href="search-results.php">Search Results</a>
-										</li>
-										<li>
-											<a href="account-settings.php">Account Settings</a>
-                                        </li>
-                                        <li>
-											<a href="user-profile.php">User Profile</a>
-										</li>
-									</ul>
-								</div>
-							</div>
-							<!-- Sidebar menu ends -->
-
-							<!-- Sidebar actions starts -->
-							<div class="sidebar-actions">
-								<div class="support-tile green">
-									<i class="icon-pie-chart1"></i> 5GB Free Space
-								</div>
-							</div>
-							<!-- Sidebar actions ends -->
-
-						</div>
-
-						<!-- Forms tab -->
-						<div class="tab-pane fade" id="tab-forms" role="tabpanel" aria-labelledby="forms-tab">
-
-							<!-- Tab content header start -->
-							<div class="tab-pane-header">
-								Forms
-							</div>
-							<!-- Tab content header end -->
-
-							<!-- Sidebar menu starts -->
-							<div class="sidebarMenuScroll">
-								<div class="sidebar-menu">
-									<ul>
-										<li class="list-heading">Form Layouts</li>
-										<li>
-											<a href="forms-layout-one.php">Default Layout</a>
-										</li>
-										<li>
-											<a href="forms-layout-two.php">Layout Sections</a>
-										</li>
-										<li>
-											<a href="forms-layout-three.php">Simple Form Layout</a>
-										</li>
-										<li>
-											<a href="forms-layout-four.php">Select 2 Tags and Mask</a>
-										</li>
-										<li>
-											<a href="forms-layout-five.php">Horizontal Form Layout</a>
-										</li>
-										<li>
-											<a href="forms-layout-six.php">Layout Six with Tabs</a>
-										</li>
-									</ul>									
-									<ul>
-										<li class="list-heading">Form Fields</li>
-										<li>
-											<a href="forms-inputs.php">Form Inputs</a>
-										</li>
-										<li>
-											<a href="forms-input-groups.php">Input Groups</a>
-										</li>
-										<li>
-											<a href="forms-checkbox-radio.php">Checkbox &amp; Radios</a>
-										</li>
-										<li>
-											<a href="forms-validation.php">Form Validation</a>
-										</li>
-									</ul>									
-									<ul>
-										<li class="list-heading">Plugins</li>
-										<li>
-											<a href="forms-dropzone.php">Dropzone</a>
-										</li>
-										<li>
-											<a href="forms-bs-select.php">Select 2 Dropdowns</a>
-										</li>
-										<li>
-											<a href="forms-date-time-picker.php">Date Time Picker</a>
-										</li>
-										<li>
-											<a href="forms-input-mask.php">Input Mask</a>
-										</li>
-										<li>
-											<a href="forms-input-range.php">Input Range</a>
-										</li>
-										<li>
-											<a href="forms-editor.php">WYSIWYG Editor</a>
-										</li>
-									</ul>
-								</div>
-							</div>
-							<!-- Sidebar menu ends -->
-
-							<!-- Sidebar actions starts -->
-							<div class="sidebar-actions">
-								<div class="support-tile red">
-									<i class="icon-mail"></i> Inbox Full
-								</div>
-							</div>
-							<!-- Sidebar actions ends -->
-
-						</div>
-						
-						<!-- Components tab -->
-						<div class="tab-pane fade" id="tab-components" role="tabpanel" aria-labelledby="components-tab">
-							
-							<!-- Tab content header start -->
-							<div class="tab-pane-header">
-								Components
-							</div>
-							<!-- Tab content header end -->
-
-							<!-- Sidebar menu starts -->
-							<div class="sidebarMenuScroll">
-								<div class="sidebar-menu">
-									<ul>
-                                        <li>
-                                            <a href="accordions.php">Accordions</a>
-                                        </li>
-                                        <li>
-                                            <a href="alerts.php">Alerts</a>
-                                        </li>
-                                        <li>
-                                            <a href="buttons.php">Buttons</a>
-                                        </li>
-                                        <li>
-                                            <a href="badges.php">Badges</a>
-                                        </li>
-                                        <li>
-                                            <a href="cards.php">Cards</a>
-                                        </li>
-                                        <li>
-                                            <a href="carousel.php">Carousel</a>
-                                        </li>
-                                        <li>
-                                            <a href="list-group.php">List group</a>
-                                        </li>
-                                        <li>
-                                            <a href="modals.php">Modal</a>
-                                        </li>
-                                        <li>
-                                            <a href="paginations.php">Paginations</a>
-                                        </li>
-                                        <li>
-                                            <a href="popovers.php">Popovers</a>
-                                        </li>
-                                        <li>
-                                            <a href="progress.php">Progress</a>
-                                        </li>
-                                        <li>
-                                            <a href="spinners.php">Spinners</a>
-                                        </li>
-                                        <li>
-                                            <a href="tabs.php">Tabs</a>
-                                        </li>
-                                        <li>
-                                            <a href="toasts.php">Toasts</a>
-                                        </li>
-                                        <li>
-                                            <a href="tooltips.php">Tooltips</a>
-                                        </li>
-									</ul>
-								</div>
-							</div>
-							<!-- Sidebar menu ends -->
-
-                            <!-- Sidebar actions starts -->
-							<div class="sidebar-actions">
-								<div class="support-tile yellow">
-									<i class="icon-arrow-down-circle"></i><a href="#">Download Reports</a>						</div>
-							</div>
-							<!-- Sidebar actions ends -->
-
-						</div>
-
-						<!-- Graphs tab -->
-						<div class="tab-pane fade" id="tab-graphs" role="tabpanel" aria-labelledby="graphs-tab">
-							
-							<!-- Tab content header start -->
-							<div class="tab-pane-header">
-								Graphs &amp; Tables
-							</div>
-							<!-- Tab content header end -->
-							
-							<!-- Sidebar menu starts -->
-							<div class="sidebarMenuScroll">
-								<div class="sidebar-menu">
-                                    <ul>
-										<li class="list-heading">Graphs</li>
-                                        <li>
-                                            <a href="apex-graphs.php">Apex Graphs</a>
-                                        </li>
-                                        <li>
-                                            <a href="morris-graphs.php">Morris Graphs</a>
-                                        </li>
-                                        <li>
-                                            <a href="vector-maps.php">Vector Maps</a>
-                                        </li>
-                                    </ul>
-                                    
-                                    <ul>
-										<li class="list-heading">Tables</li>
-                                        <li>
-                                            <a href="bootstrap-tables.php">Bootstrap Tables</a>
-                                        </li>
-                                        <li>
-                                            <a href="custom-tables.php">Custom Tables</a>
-                                        </li>
-                                        <li>
-                                            <a href="data-tables.php">Data Tables</a>
-                                        </li>
-									</ul>
-								</div>
-							</div>
-							<!-- Sidebar menu ends -->
-
-							<!-- Sidebar actions starts -->
-							<div class="sidebar-actions">
-								<div class="support-tile pink">
-									<i class="icon-align-right1"></i> RTL Support
-								</div>
-							</div>
-							<!-- Sidebar actions ends -->
-
-						</div>
-
-						<!-- Authentication tab -->
-						<div class="tab-pane fade" id="tab-authentication" role="tabpanel" aria-labelledby="authentication-tab">
-							
-							<!-- Tab content header start -->
-							<div class="tab-pane-header">
-								Authentication
-							</div>
-							<!-- Tab content header end -->
-
-							<!-- Sidebar menu starts -->
-							<div class="sidebarMenuScroll">
-								<div class="sidebar-menu">
-									<ul>
-										<li>
-											<a href="login.php">Login</a>
-										</li>
-										<li>
-											<a href="signup.php">Signup</a>
-										</li>
-										<li>
-											<a href="forgot-password.php">Forgot Password</a>
-										</li>
-										<li>
-											<a href="reset-password.php">Reset Password</a>
-										</li>
-										<li>
-											<a href="lock-screen.php">Lock Screen</a>
-										</li>
-										<li>
-											<a href="subscribe.php">Subscribe</a>
-										</li>										
-										<li>
-											<a href="maintenance.php">Maintenance</a>
-										</li>
-										<li>
-											<a href="error.php">404</a>
-										</li>
-										<li>
-											<a href="error-option2.php">Error</a>
-										</li>
-									</ul>
-								</div>
-							</div>
-							<!-- Sidebar menu ends -->
-
-							<!-- Sidebar actions starts -->
-							<div class="sidebar-actions">
-								<div class="support-tile blue">
-									<a href="pricing.php" class="btn btn-light m-auto">Upgrade Account</a>
-								</div>
-							</div>
-							<!-- Sidebar actions ends -->
-
-						</div>
-						
-						<!-- Settings tab -->
-						<div class="tab-pane fade" id="tab-settings" role="tabpanel" aria-labelledby="settings-tab">
-							
-							<!-- Tab content header start -->
-							<div class="tab-pane-header">
-								Settings
-							</div>
-							<!-- Tab content header end -->
-
-							<!-- Settings start -->
-							<div class="sidebarMenuScroll">
-								<div class="sidebar-settings">
-									<div class="accordion" id="settingsAccordion">
-										<div class="accordion-item">
-											<h2 class="accordion-header" id="genInfo">
-												<button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#genCollapse" aria-expanded="true" aria-controls="genCollapse">
-													General Info
-												</button>
-											</h2>
-											<div id="genCollapse" class="accordion-collapse collapse show" aria-labelledby="genInfo" data-bs-parent="#settingsAccordion">
-												<div class="accordion-body">
-													<div class="field-wrapper">
-														<input type="text" value="Jeivxezer Lopexz" />
-														<div class="field-placeholder">Full Name</div>
-													</div>
-
-													<div class="field-wrapper">
-														<input type="email" value="jeivxezer-lopexz@email.com" />
-														<div class="field-placeholder">Email</div>
-													</div>
-
-													<div class="field-wrapper">
-														<input type="text" value="0 0000 00000" />
-														<div class="field-placeholder">Contact</div>
-													</div>
-													<div class="field-wrapper m-0">
-														<button class="btn btn-primary stripes-btn">Save</button>
-													</div>
-												</div>
-											</div>
-										</div>
-										<div class="accordion-item">
-											<h2 class="accordion-header" id="chngPwd">
-												<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#chngPwdCollapse" aria-expanded="false" aria-controls="chngPwdCollapse">
-													Change Password
-												</button>
-											</h2>
-											<div id="chngPwdCollapse" class="accordion-collapse collapse" aria-labelledby="chngPwd" data-bs-parent="#settingsAccordion">
-												<div class="accordion-body">
-													<div class="field-wrapper">
-														<input type="text" value="">
-														<div class="field-placeholder">Current Password</div>
-													</div>
-													<div class="field-wrapper">
-														<input type="password" value="">
-														<div class="field-placeholder">New Password</div>
-													</div>
-													<div class="field-wrapper">
-														<input type="password" value="">
-														<div class="field-placeholder">Confirm Password</div>
-													</div>
-													<div class="field-wrapper m-0">
-														<button class="btn btn-primary stripes-btn">Save</button>
-													</div>
-
-												</div>
-											</div>
-										</div>
-										<div class="accordion-item">
-											<h2 class="accordion-header" id="sidebarNotifications">
-												<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#notiCollapse" aria-expanded="false" aria-controls="notiCollapse">
-													Notifications
-												</button>
-											</h2>
-											<div id="notiCollapse" class="accordion-collapse collapse" aria-labelledby="sidebarNotifications" data-bs-parent="#settingsAccordion">
-												<div class="accordion-body">
-													<div class="list-group m-0">
-														<div class="noti-container">
-															<div class="noti-block">
-																<div>Alerts</div>
-																<div class="form-switch">
-																	<input class="form-check-input" type="checkbox" id="showAlertss" checked>
-																	<label class="form-check-label" for="showAlertss"></label>
-																</div>
-															</div>
-															<div class="noti-block">
-																<div>Enable Sound</div>
-																<div class="form-switch">
-																	<input class="form-check-input" type="checkbox" id="soundEnable">
-																	<label class="form-check-label" for="soundEnable"></label>
-																</div>
-															</div>
-															<div class="noti-block">
-																<div>Allow Chat</div>
-																<div class="form-switch">
-																	<input class="form-check-input" type="checkbox" id="allowChat">
-																	<label class="form-check-label" for="allowChat"></label>
-																</div>
-															</div>
-															<div class="noti-block">
-																<div>Desktop Messages</div>
-																<div class="form-switch">
-																	<input class="form-check-input" type="checkbox" id="desktopMessages">
-																	<label class="form-check-label" for="desktopMessages"></label>
-																</div>
-															</div>
-														</div>
-													</div>
-												</div>
-											</div>
-										</div>
-									</div>
-								</div>
-							</div>
-							<!-- Settings end -->
-
-							<!-- Sidebar actions starts -->
-							<div class="sidebar-actions">
-								<div class="support-tile blue">
-									<a href="account-settings.php" class="btn btn-light m-auto">Advance Settings</a>
-								</div>
-							</div>
-							<!-- Sidebar actions ends -->
-						</div>
-
-					</div>
-					<!-- Tabs content end -->
-
-				</div>
-				<!-- Sidebar content end -->
-				
-			</nav>
-			<!-- Sidebar wrapper end -->
-
-			<!-- *************
-				************ Main container start *************
-			************* -->
-			<div class="main-container">
-
-				<!-- Page header starts -->
-				<div class="page-header">
-					
-					<!-- Row start -->
-					<div class="row gutters">
-						<div class="col-xl-8 col-lg-8 col-md-8 col-sm-6 col-9">
-
-							<!-- Search container start -->
-							<div class="search-container">
-
-								<!-- Toggle sidebar start -->
-								<div class="toggle-sidebar" id="toggle-sidebar">
-									<i class="icon-menu"></i>
-								</div>
-								<!-- Toggle sidebar end -->
-
-								<!-- Mega Menu Start -->
-								<div class="cd-dropdown-wrapper">
-									<a class="cd-dropdown-trigger" href="#0"><i class="icon-menu menu-icon"></i><span class="menu-text">Megamenu</span></a>
-									<nav class="cd-dropdown">
-
-										<ul class="cd-dropdown-content">
-
-											<li class="has-children">
-												<a href="#">Main Pages</a>
-												<ul class="cd-secondary-dropdown is-hidden">
-													<li class="has-children">
-														<a href="#">Dashboards</a>
-														<ul class="is-hidden">
-															<li>
-																<a href="reports.php">Reports</a>
-															</li>
-															<li>
-																<a href="saas.php">Saas</a>
-															</li>
-															<li>
-																<a href="sales.php">Sales</a>
-															</li>
-															<li>
-																<a href="index-2.php">Admin</a>
-															</li>
-															<li>
-																<a href="analytics.php">Analytics</a>
-															</li>															
-															<li>
-																<a href="crm.php">CRM</a>
-															</li>
-															<li>
-																<a href="consulting.php">Consulting</a>
-															</li>
-														</ul>
-													</li>
-													<li class="has-children">
-														<a href="#">Layouts</a>
-														<ul class="is-hidden">
-															<li>
-																<a href="starter-page.php">Starter Page</a>
-															</li>
-															<li>
-																<a href="layout-full-screen.php">Full Screen</a>
-															</li>
-															<li>
-																<a href="layout-search.php">Global Search</a>
-															</li>
-															<li>
-																<a href="layout-megamenu.php">Megamenu</a>
-															</li>
-															<li>
-																<a href="layout-bradcrumb.php">Breadcrumbs</a>
-															</li>
-															<li>
-																<a href="layout-scroll-cards.php">Scroll Cards</a>
-															</li>
-														</ul>
-													</li>												
-												</ul>
-											</li>
-
-											<li class="has-children">
-												<a href="#">Product &amp; Calendars</a>
-
-												<ul class="cd-secondary-dropdown is-hidden">
-													<li class="has-children">
-														<a href="#">Product</a>
-														<ul class="is-hidden">
-															<li>
-																<a href="products.php">Products Grid</a>
-															</li>
-															<li>
-																<a href="products-list.php">Products List</a>
-															</li>
-															<li>
-																<a href="add-product.php">Add Product</a>
-															</li>
-															<li>
-																<a href="orders.php">Orders</a>
-															</li>
-															<li>
-																<a href="customers-list.php">Customers</a>
-															</li>
-															<li>
-																<a href="products-reviews.php">Reviews</a>
-															</li>														
-														</ul>
-													</li>
-
-													<li class="has-children">
-														<a href="#">Calendars</a>
-														<ul class="is-hidden">
-															<li>
-																<a href="calendar-daygrid-view.php">Daygrid View</a>
-															</li>
-															<li>
-																<a href="calendar-list-view.php">List View</a>
-															</li>
-															<li>
-																<a href="calendar-external-dragging.php">Draggable</a>
-															</li>
-															<li>
-																<a href="calendar-google-view.php">Google View</a>
-															</li>
-															<li>
-																<a href="calendar-selectable.php">Selectable</a>
-															</li>													
-														</ul>
-													</li>												
-												</ul>
-											</li>
-
-											<li class="has-children">
-												<a href="#">Forms</a>
-
-												<ul class="cd-secondary-dropdown is-hidden">
-
-													<li class="has-children">
-														<a href="#">Form Layouts</a>
-														<ul class="is-hidden">
-															<li>
-																<a href="forms-layout-one.php">Default Layout</a>
-															</li>
-															<li>
-																<a href="forms-layout-two.php">Layout Sections</a>
-															</li>
-															<li>
-																<a href="forms-layout-three.php">Simple Form Layout</a>
-															</li>
-															<li>
-																<a href="forms-layout-four.php">Select 2 Tags and Mask</a>
-															</li>
-															<li>
-																<a href="forms-layout-five.php">Horizontal Form Layout</a>
-															</li>
-															<li>
-																<a href="forms-layout-six.php">Layout Six with Tabs</a>
-															</li>													
-														</ul>
-													</li>
-
-													<li class="has-children">
-														<a href="#">Forms</a>
-														<ul class="is-hidden">
-															<li>
-																<a href="forms-inputs.php">Form Inputs</a>
-															</li>
-															<li>
-																<a href="forms-input-groups.php">Input Groups</a>
-															</li>
-															<li>
-																<a href="forms-checkbox-radio.php">Checkbox &amp; Radios</a>
-															</li>
-															<li>
-																<a href="forms-validation.php">Form Validation</a>
-															</li>
-															<li>
-																<a href="forms-dropzone.php">Dropzone</a>
-															</li>
-															<li>
-																<a href="forms-bs-select.php">Select 2 Dropdowns</a>
-															</li>
-															<li>
-																<a href="forms-date-time-picker.php">Date Time Picker</a>
-															</li>
-															<li>
-																<a href="forms-input-mask.php">Input Mask</a>
-															</li>
-															<li>
-																<a href="forms-input-range.php">Input Range</a>
-															</li>
-															<li>
-																<a href="forms-editor.php">WYSIWYG Editor</a>
-															</li>													
-														</ul>
-													</li>												
-												</ul>
-											</li>
-
-											<li class="has-children">
-												<a href="#">Pages &amp; Components</a>
-
-												<ul class="cd-secondary-dropdown is-hidden">
-
-													<li class="has-children">
-														<a href="#">Pages</a>
-														<ul class="is-hidden">
-															<li>
-																<a href="chat.php">Chat</a>
-															</li>
-															<li>
-																<a href="tasks.php">Tasks</a>
-															</li>
-															<li>
-																<a href="create-invoice.php">Create Invoice</a>
-															</li>
-															<li>
-																<a href="view-invoice.php">View Invoice</a>
-															</li>
-															<li>
-																<a href="documents.php">Documents</a>
-															</li>
-															<li>
-																<a href="faq.php">Faq's</a>
-															</li>
-															<li>
-																<a href="contacts.php">Contacts</a>
-															</li>
-															<li>
-																<a href="pricing.php">Pricing</a>
-															</li>
-															<li>
-																<a href="gallery-tiles.php">Gallery Tiles</a>
-															</li>
-															<li>
-																<a href="gallery.php">Gallery</a>
-															</li>
-															<li>
-																<a href="icons.php">Icons</a>
-															</li>
-															<li>
-																<a href="timeline.php">Timeline</a>
-															</li>
-															<li>
-																<a href="search-results.php">Search Results</a>
-															</li>
-															<li>
-																<a href="account-settings.php">Account Settings</a>
-															</li>
-															<li>
-																<a href="user-profile.php">User Profile</a>
-															</li>
-														</ul>
-													</li>
-
-													<li class="has-children">
-														<a href="#">Components</a>
-														<ul class="is-hidden">
-															<li>
-																<a href="accordions.php">Accordions</a>
-															</li>
-															<li>
-																<a href="alerts.php">Alerts</a>
-															</li>
-															<li>
-																<a href="buttons.php">Buttons</a>
-															</li>
-															<li>
-																<a href="badges.php">Badges</a>
-															</li>
-															<li>
-																<a href="cards.php">Cards</a>
-															</li>
-															<li>
-																<a href="carousel.php">Carousel</a>
-															</li>
-															<li>
-																<a href="list-group.php">List group</a>
-															</li>
-															<li>
-																<a href="modals.php">Modal</a>
-															</li>
-															<li>
-																<a href="paginations.php">Paginations</a>
-															</li>
-															<li>
-																<a href="popovers.php">Popovers</a>
-															</li>
-															<li>
-																<a href="progress.php">Progress</a>
-															</li>
-															<li>
-																<a href="spinners.php">Spinners</a>
-															</li>
-															<li>
-																<a href="tabs.php">Tabs</a>
-															</li>
-															<li>
-																<a href="toasts.php">Toasts</a>
-															</li>
-															<li>
-																<a href="tooltips.php">Tooltips</a>
-															</li>												
-														</ul>
-													</li>												
-												</ul>
-											</li>
-
-											<li class="has-children">
-												<a href="#">Graphs &amp; Tables</a>
-
-												<ul class="cd-secondary-dropdown is-hidden">
-
-													<li class="has-children">
-														<a href="#">Graphs</a>
-														<ul class="is-hidden">
-															<li>
-																<a href="apex-graphs.php">Apex Graphs</a>
-															</li>
-															<li>
-																<a href="morris-graphs.php">Morris Graphs</a>
-															</li>
-															<li>
-																<a href="vector-maps.php">Vector Maps</a>
-															</li>													
-														</ul>
-													</li>
-
-													<li class="has-children">
-														<a href="#">Tables</a>
-														<ul class="is-hidden">
-															<li>
-																<a href="bootstrap-tables.php">Bootstrap Tables</a>
-															</li>
-															<li>
-																<a href="custom-tables.php">Custom Tables</a>
-															</li>
-															<li>
-																<a href="data-tables.php">Data Tables</a>
-															</li>												
-														</ul>
-													</li>												
-												</ul>
-											</li>
-											
-											<li>
-												<a href="account-settings.php">Account Settings</a>
-											</li>
-											<li>
-												<a href="login.php">Logout</a>
-											</li>
-											<li>
-												<a href="error-option2.php">Error</a>
-											</li>
-										</ul>
-										
-									</nav>
-								</div>
-								<!-- Mega Menu End -->
-
-								<!-- Search input group start -->
-								<div class="ui fluid category search">
-									<div class="ui icon input">
-										<input class="prompt" type="text" placeholder="Search">
-										<i class="search icon icon-search1"></i>
-									</div>
-									<div class="results"></div>
-								</div>
-								<!-- Search input group end -->
-
-							</div>
-							<!-- Search container end -->
-
-						</div>
-						<div class="col-xl-4 col-lg-4 col-md-4 col-sm-6 col-3">
-
-							<!-- Header actions start -->
-							<ul class="header-actions">
-								<li class="dropdown">
-									<a href="#" id="taskss" data-toggle="dropdown" aria-haspopup="true">
-										<i class="icon-check-square"></i>
-									</a>
-									<div class="dropdown-menu dropdown-menu-end lrg" aria-labelledby="taskss">
-										<div class="dropdown-menu-header">
-											Tasks (7/10)
-										</div>
-										<div class="customScroll">
-											<ul class="activity">
-												<li class="activity-list">
-													<div class="detail-info">
-														<p class="date">Today</p>
-														<p class="info">Messages accepted with attachments</p>
-													</div>
-												</li>
-												<li class="activity-list danger">
-													<div class="detail-info">
-														<p class="date">Today</p>
-														<p class="info">Send email notifications of subscriptions and deletions to list owner</p>
-													</div>
-												</li>
-												<li class="activity-list success">
-													<div class="detail-info">
-														<p class="date">Yesterday</p>
-														<p class="info">Required change logs activity reports</p>
-													</div>
-												</li>
-												<li class="activity-list warning">
-													<div class="detail-info">
-													<p class="date">2 Days Ago</p>
-														<p class="info">Strategic partnership plan</p>
-													</div>
-												</li>
-												<li class="activity-list">
-													<div class="detail-info">
-														<p class="date">2 days ago</p>
-														<p class="info">Send email notifications of subscriptions and deletions to list owner</p>
-													</div>
-												</li>
-												<li class="activity-list danger">
-													<div class="detail-info">
-														<p class="date">3 days ago</p>
-														<p class="info">Required change logs activity reports</p>
-													</div>
-												</li>
-												<li class="activity-list success">
-													<div class="detail-info">
-													<p class="date">7 days ago</p>
-														<p class="info">Strategic partnership plan</p>
-													</div>
-												</li>
-												<li class="activity-list">
-													<div class="detail-info">
-														<p class="date">2 weeks ago</p>
-														<p class="info">Required change logs activity reports</p>
-													</div>
-												</li>
-											</ul>
-										</div>
-									</div>
-								</li>
-								<li class="dropdown">
-									<a href="#" id="notifications" data-toggle="dropdown" aria-haspopup="true">
-										<i class="icon-alert-triangle"></i>
-									</a>
-									<div class="dropdown-menu dropdown-menu-end lrg" aria-labelledby="notifications">
-										<div class="dropdown-menu-header">
-											Notifications (7)
-										</div>
-										<div class="customScroll">
-											<ul class="header-notifications">
-												<li>
-													<a href="#">
-														<div class="user-img online">
-															<img src="img/user6.png" alt="User">
-														</div>
-														<div class="details">
-															<div class="user-title">Larkyn</div>
-															<div class="noti-details">Check out every table in detail.</div>
-															<div class="noti-date">April 25, 04:00 pm</div>
-														</div>
-													</a>
-												</li>
-												<li>
-													<a href="#">
-														<div class="user-img busy">
-															<img src="img/user10.png" alt="User">
-														</div>
-														<div class="details">
-															<div class="user-title">Braxten</div>
-															<div class="noti-details">Approved new design.</div>
-															<div class="noti-date">April 10, 12:00 am</div>
-														</div>
-													</a>
-												</li>
-												<li>
-													<a href="#">
-														<div class="user-img away">
-															<img src="img/user21.png" alt="User">
-														</div>
-														<div class="details">
-															<div class="user-title">Maria</div>
-															<div class="noti-details">Membership has been ended.</div>
-															<div class="noti-date">March 20, 07:30 pm</div>
-														</div>
-													</a>
-												</li>
-												<li>
-													<a href="#">
-														<div class="user-img busy">
-															<img src="img/user15.png" alt="User">
-														</div>
-														<div class="details">
-															<div class="user-title">Alex</div>
-															<div class="noti-details">Design Review.</div>
-															<div class="noti-date">April 18, 09:30 am</div>
-														</div>
-													</a>
-												</li>
-												<li>
-													<a href="#">
-														<div class="user-img online">
-															<img src="img/user5.png" alt="User">
-														</div>
-														<div class="details">
-															<div class="user-title">Sunny</div>
-															<div class="noti-details">UI Discussion</div>
-															<div class="noti-date">April 21, 05:00 pm</div>
-														</div>
-													</a>
-												</li>												
-											</ul>
-										</div>
-									</div>
-								</li>
-								<li class="dropdown">
-									<a href="#" id="userSettings" class="user-settings" data-toggle="dropdown" aria-haspopup="true">
-										<span class="avatar">
-											<img src="img/user.svg" alt="User Avatar">
-											<span class="status busy"></span>
-										</span>
-									</a>
-									<div class="dropdown-menu dropdown-menu-end md" aria-labelledby="userSettings">
-										<div class="header-profile-actions">
-											<a href="user-profile.php"><i class="icon-user1"></i>Profile</a>
-											<a href="account-settings.php"><i class="icon-settings1"></i>Settings</a>
-											<a href="forgot-password.php"><i class="icon-log-out1"></i>Logout</a>
-										</div>
-									</div>
-								</li>
-							</ul>
-							<!-- Header actions end -->
-
-						</div>
-					</div>
-					<!-- Row end -->					
-
-				</div>
-				<!-- Page header ends -->
-
-				<!-- Content wrapper scroll start -->
-				<div class="content-wrapper-scroll">
-
-					<!-- Content wrapper start -->
-					<div class="content-wrapper">
-
-						<!-- Row start -->
-						<div class="row gutters">
-							<div class="col-xl-4 col-lg-4 col-md-4 col-sm-6 col-12">
-								<div class="stats-tile">
-									<div class="sale-icon">
-										<i class="icon-shopping-bag1"></i>
-									</div>
-									<div class="sale-details">
-										<h2>25</h2>
-										<p>Products</p>
-									</div>
-									<div class="sale-graph">
-										<div id="sparklineLine1"></div>
-									</div>
-								</div>
-							</div>
-							<div class="col-xl-4 col-lg-4 col-md-4 col-sm-6 col-12">
-								<div class="stats-tile">
-									<div class="sale-icon">
-										<i class="icon-shopping-bag1"></i>
-									</div>
-									<div class="sale-details">
-										<h2>32</h2>
-										<p>Orders</p>
-									</div>
-									<div class="sale-graph">
-										<div id="sparklineLine2"></div>
-									</div>
-								</div>
-							</div>
-							<div class="col-xl-4 col-lg-4 col-md-4 col-sm-12 col-12">
-								<div class="stats-tile">
-									<div class="sale-icon">
-										<i class="icon-check-circle"></i>
-									</div>
-									<div class="sale-details">
-										<h2>19</h2>
-										<p>Customers</p>
-									</div>
-									<div class="sale-graph">
-										<div id="sparklineLine3"></div>
-									</div>
-								</div>
-							</div>
-						</div>
-						<!-- Row end -->
-
-						<!-- Row start -->
-						<div class="row gutters">
-							<div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 cool-12">
-
-								<div class="card">
-									<div class="card-body">
-										<!-- Row start -->
-										<div class="row gutters">											
-											<div class="col-xl-3 col-lg-3 col-md-4 col-sm-4 col-12">
-												<div class="reports-summary">
-													<div class="reports-summary-block">
-														<h5>Great Sales</h5>
-														<h6>Overall sales of the month</h6>
-													</div>
-													<div class="reports-summary-block">
-														<h5>35 Millions</h5>
-														<h6>Overall earnings</h6>
-													</div>
-													<div class="reports-summary-block">
-														<h5>27 Millions</h5>
-														<h6>Overall revenue</h6>
-													</div>
-													<div class="reports-summary-block">
-														<h5>67k</h5>
-														<h6>New customers</h6>
-													</div>
-													<button class="btn btn-info stripes-btn">Generate Report</button>
-												</div>
-											</div>
-											<div class="col-xl-9 col-lg-9 col-md-8 col-sm-8 col-12">
-												<div class="row gutters">
-													<div class="col-12">
-														<div class="graph-day-selection mt-2" role="group">
-															<button type="button" class="btn active">Today</button>
-															<button type="button" class="btn">Yesterday</button>
-															<button type="button" class="btn">7 days</button>
-															<button type="button" class="btn">15 days</button>
-															<button type="button" class="btn">30 days</button>
-														</div>
-													</div>
-													<div class="col-12">
-														<div id="salesGraph" class="chart-height-xl"></div>
-													</div>
-												</div>
-											</div>
-										</div>
-										<!-- Row end -->
-									</div>
-								</div>
-
-							</div>
-						</div>
-						<!-- Row end -->
-
-						<!-- Row start -->
-						<div class="row gutters">
-							<div class="col-xl-4 col-lg-4 col-md-6 col-sm-6 col-12">
-
-								<div class="card">
-									<div class="card-header">
-										<div class="card-title">Visitors</div>
-										<div class="graph-day-selection" role="group">
-											<button type="button" class="btn active">Export</button>
-										</div>
-									</div>
-									<div class="card-body">
-										<div id="visitorsGraph" class="chart-height-md"></div>
-
-										<ul class="stats-list-container">
-											<li class="stats-list-item primary">
-												<div class="stats-icon">
-													<i class="icon-calendar1"></i>
-												</div>
-												<div class="stats-info">
-													<h6 class="stats-title">Week 1</h6>
-													<p class="stats-amount">25</p>
-												</div>
-											</li>
-											<li class="stats-list-item primary">
-												<div class="stats-icon">
-													<i class="icon-calendar1"></i>
-												</div>
-												<div class="stats-info">
-													<h6 class="stats-title">Week 2</h6>
-													<p class="stats-amount">32</p>
-												</div>
-											</li>
-										</ul>
-									</div>
-								</div>
-
-							</div>
-							<div class="col-xl-4 col-lg-4 col-md-6 col-sm-6 col-12">
-
-								<div class="card">
-									<div class="card-header">
-										<div class="card-title">Orders</div>
-										<div class="graph-day-selection" role="group">
-											<button type="button" class="btn active">View All</button>
-										</div>
-									</div>
-									<div class="card-body">
-										<div id="ordersGraph" class="chart-height-md"></div>
-
-										<ul class="stats-list-container">
-											<li class="stats-list-item primary">
-												<div class="stats-icon">
-													<i class="icon-archive1"></i>
-												</div>
-												<div class="stats-info">
-													<h6 class="stats-title">New</h6>
-													<p class="stats-amount">15</p>
-												</div>
-											</li>
-											<li class="stats-list-item primary">
-												<div class="stats-icon">
-													<i class="icon-truck"></i>
-												</div>
-												<div class="stats-info">
-													<h6 class="stats-title">Delivered</h6>
-													<p class="stats-amount">10</p>
-												</div>
-											</li>
-										</ul>
-									</div>
-								</div>
-
-							</div>
-							<div class="col-xl-4 col-lg-4 col-md-12 col-sm-12 col-12">
-
-								<div class="card">
-									<div class="card-header">
-										<div class="card-title">Earnings</div>
-										<div class="graph-day-selection" role="group">
-											<button type="button" class="btn active">Download</button>
-										</div>
-									</div>
-									<div class="card-body">
-										<div id="earningsGraph" class="chart-height-md"></div>
-
-										<ul class="stats-list-container">
-											<li class="stats-list-item primary">
-												<div class="stats-icon">
-													<i class="icon-briefcase"></i>
-												</div>
-												<div class="stats-info">
-													<h6 class="stats-title">Today</h6>
-													<p class="stats-amount">$25</p>
-												</div>
-											</li>
-											<li class="stats-list-item primary">
-												<div class="stats-icon">
-													<i class="icon-briefcase"></i>
-												</div>
-												<div class="stats-info">
-													<h6 class="stats-title">Yesterday</h6>
-													<p class="stats-amount">$18</p>
-												</div>
-											</li>
-										</ul>
-									</div>
-								</div>
-
-							</div>
-						</div>
-						<!-- Row end -->
-
-						<!-- Row start -->
-						<div class="row gutters">
-							<div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
-								<div class="card">
-									<div class="card-header">
-										<div class="card-title">Recent Orders</div>
-										<div class="graph-day-selection" role="group">
-											<button type="button" class="btn active">Export to Excel</button>
-										</div>
-									</div>
-									<div class="card-body">
-										<div class="table-responsive">
-											<table class="table products-table">
-												<thead>
-													<tr>
-														<th>Order No.</th>
-														<th>Ordered Date</th>
-														<th>Product</th>
-														<th>Delivery Status</th>												
-														<th>Amount</th>
-														<th>Discount</th>
-														<th>Location</th>
-														<th>Est Delivery Date</th>
-													</tr>
-												</thead>
-												<tbody>
-													<tr>
-														<td>#55589</td>
-														<td>20/11/2020</td>
-														<td>
-															<img class="user" src="img/products/bag.jpg" alt="Product Image">
-														</td>
-														<td>
-															<span class="badge">Moving</span>
-														</td>
-														<td>$385.00</td>
-														<td>30%</td>
-														<td>Los Angeles, California</td>
-														<td>22/11/2020</td>
-													</tr>
-													<tr>
-														<td>#23198</td>
-														<td>23/11/2020</td>												
-														<td>
-															<img class="user" src="img/products/toy.jpg" alt="Product Image">
-														</td>
-														<td>
-															<span class="badge">Shipped</span>
-														</td>
-														<td>$539.00</td>
-														<td>25%</td>
-														<td>Arverne, New York</td>
-														<td>27/11/2020</td>
-													</tr>
-													<tr>
-														<td>#87324</td>
-														<td>26/11/2020</td>												
-														<td>
-															<img class="user" src="img/products/pencils.jpg" alt="Product Image">
-														</td>
-														<td>
-															<span class="badge">Pending</span>
-														</td>
-														<td>$671.00</td>
-														<td>35%</td>
-														<td>Mesquite, Texas</td>
-														<td>29/11/2020</td>
-													</tr>
-													<tr>
-														<td>#65673</td>
-														<td>25/11/2020</td>
-														<td>
-															<img class="user" src="img/products/camera.jpg" alt="Product Image">
-														</td>
-														<td>
-															<span class="badge">Cancelled</span>
-														</td>
-														<td>$490.00</td>
-														<td>21%</td>
-														<td>Hallandale, Florida</td>
-														<td>26/11/2020</td>
-													</tr>
-												</tbody>
-											</table>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-						<!-- Row end -->
-
-						<!-- Row start -->
-						<div class="row gutters">
-							<div class="col-xl-4 col-lg-4 col-md-6 col-sm-6 col-12">
-								<div class="goal-container">
-									<div class="goal-info">
-										<h5>Today's Goal</h5>
-										<h6>70/100</h6>
-									</div>
-									<div class="goal-graph">
-										<div id="todaysTarget"></div>
-										<div class="circle-one"></div>
-										<div class="circle-two"></div>
-									</div>
-								</div>
-							</div>							
-							<div class="col-xl-4 col-lg-4 col-md-6 col-sm-6 col-12">
-								<div class="graph-card">
-									<h6>New Customers</h6>
-									<h4>2500</h4>
-									<div class="graph-placeholder">
-										<div id="customersGraph"></div>
-									</div>
-								</div>
-							</div>
-							<div class="col-xl-4 col-lg-4 col-md-12 col-sm-12 col-12">
-								<div class="payments-card">
-									<h6>Balance</h6>
-									<h4>$5699.89</h4>
-									<div class="custom-btn-group mt-2">
-										<button class="btn btn-outline-primary"><i class="icon-credit-card"></i>Deposit</button>
-										<button class="btn btn-primary"><i class="icon-credit-card"></i>Withdraw</button>
-									</div>
-								</div>
-							</div>
-						</div>
-						<!-- Row end -->
-
-					</div>
-					<!-- Content wrapper end -->
-
-					<!-- App footer start -->
-					<div class="app-footer">© Jad Apps and Tech Solutions Limited</div>
-					<!-- App footer end -->
-
-				</div>
-				<!-- Content wrapper scroll end -->
-
-			</div>
-			<!-- *************
-				************ Main container end *************
-			************* -->
-
-		</div>
-		<!-- Page wrapper end -->
-
-		<!-- *************
-			************ Required JavaScript Files *************
-		************* -->
-		<!-- Required jQuery first, then Bootstrap Bundle JS -->
-		<script src="js/jquery.min.js"></script>
-		<script src="js/bootstrap.bundle.min.js"></script>
-		<script src="js/modernizr.js"></script>
-		<script src="js/moment.js"></script>
-
-		<!-- *************
-			************ Vendor Js Files *************
-		************* -->
-		
-		<!-- Megamenu JS -->
-		<script src="vendor/megamenu/js/megamenu.js"></script>
-		<script src="vendor/megamenu/js/custom.js"></script>
-
-		<!-- Slimscroll JS -->
-		<script src="vendor/slimscroll/slimscroll.min.js"></script>
-		<script src="vendor/slimscroll/custom-scrollbar.js"></script>
-
-		<!-- Search Filter JS -->
-		<script src="vendor/search-filter/search-filter.js"></script>
-		<script src="vendor/search-filter/custom-search-filter.js"></script>
-
-		<!-- Apex Charts -->
-		<script src="vendor/apex/apexcharts.min.js"></script>
-		<script src="vendor/apex/custom/home/salesGraph.js"></script>
-		<script src="vendor/apex/custom/home/ordersGraph.js"></script>
-		<script src="vendor/apex/custom/home/earningsGraph.js"></script>
-		<script src="vendor/apex/custom/home/visitorsGraph.js"></script>
-		<script src="vendor/apex/custom/home/customersGraph.js"></script>
-		<script src="vendor/apex/custom/home/sparkline.js"></script>
-
-		<!-- Circleful Charts -->
-		<script src="vendor/circliful/circliful.min.js"></script>
-		<script src="vendor/circliful/circliful.custom.js"></script>
-
-		<!-- Main Js Required -->
-		<script src="js/main.js"></script>
-
-	</body>
-
-<!-- Mirrored from www.bootstrapget.com/demos/themeforest/unipro-admin-template/demos/01-design-blue/ by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 04 Sep 2024 13:04:58 GMT -->
+    <!-- Required meta tags -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QuickLoan - Get a Loan in Minutes</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+    <!-- Custom Styles -->
+    <style>
+        /* General Styles */
+        body {
+            font-family: 'Arial', sans-serif;
+            scroll-behavior: smooth;
+        }
+        /* Header */
+        .navbar {
+            background-color: #007bff;
+        }
+        .navbar-brand img {
+            max-height: 50px;
+        }
+        .navbar-nav .nav-link {
+            color: #fff !important;
+            margin-right: 15px;
+            font-weight: bold;
+        }
+        .navbar-nav .nav-link:hover {
+            color: #d4d4d4 !important;
+        }
+        .apply-btn {
+            background-color: #28a745;
+            color: #fff !important;
+            border-radius: 5px;
+            padding: 8px 15px;
+        }
+        /* Hero Section */
+        .hero {
+            background: url('smiling.avif') no-repeat center center/cover;
+            color: #fff;
+            height: 80vh;
+            position: relative;
+            
+        }
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.5);
+        }
+        .hero-content {
+            position: relative;
+            z-index: 2;
+            text-align: center;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+        .hero h1 {
+            font-size: 3.5rem;
+            font-weight: bold;
+        }
+        .hero p {
+            font-size: 1.5rem;
+            margin-bottom: 30px;
+        }
+        .hero .btn {
+            font-size: 1.2rem;
+            padding: 12px 30px;
+        }
+        /* Sections */
+        section {
+            padding: 60px 0;
+        }
+        section h2 {
+            font-size: 2.5rem;
+            font-weight: bold;
+            margin-bottom: 40px;
+            text-align: center;
+        }
+        .section-content {
+            margin-top: 30px;
+        }
+        .learn-more-btn {
+            margin-top: 15px;
+        }
+        /* Testimonials */
+        .testimonial {
+            background-color: #f8f9fa;
+            padding: 30px;
+            border-radius: 5px;
+            margin-bottom: 30px;
+        }
+        .testimonial p {
+            font-style: italic;
+        }
+        .testimonial .customer {
+            margin-top: 15px;
+            font-weight: bold;
+        }
+        /* FAQ */
+        .faq .card-header {
+            background-color: #007bff;
+            color: #fff;
+        }
+        /* CTA Section */
+        .cta {
+            background-color: #28a745;
+            color: #fff;
+            text-align: center;
+            padding: 50px 20px;
+        }
+        .cta .btn {
+            background-color: #fff;
+            color: #28a745;
+            font-size: 1.2rem;
+            padding: 12px 30px;
+            margin-top: 20px;
+        }
+        /* Footer */
+        .footer {
+            background-color: #343a40;
+            color: #ddd;
+            padding: 30px 0;
+        }
+        .footer a {
+            color: #ddd;
+        }
+        .social-icons a {
+            color: #ddd;
+            margin-right: 15px;
+            font-size: 1.5rem;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header Section -->
+    <nav class="navbar navbar-expand-lg navbar-dark sticky-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <img src="logo.png" alt="QuickLoan">
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav align-items-center">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#hero">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#loans">Loan Options</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#eligibility">Eligibility</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#process">How to Apply</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#benefits">Benefits</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#testimonials">Testimonials</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#faq">FAQs</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link apply-btn" href="./sign-up.php">Apply Now</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero">
+        <div class="hero-content">
+            <h1>Get a Loan in Minutes</h1>
+            <p>Fast, Easy, and Secure</p>
+            <a href="./sign-up.php" class="btn btn-success btn-lg">Apply Now</a>
+        </div>
+    </section>
+
+    <!-- About Us Section -->
+    <section id="about">
+        <div class="container">
+            <h2>About Us</h2>
+            <div class="row align-items-center section-content">
+                <div class="col-md-6">
+                    <p>QuickLoan is committed to providing fast and reliable loan services to help you achieve your financial goals. Our mission is to make borrowing simple, transparent, and accessible to everyone.</p>
+                    <a href="#" class="btn btn-primary learn-more-btn">Learn More</a>
+                </div>
+                <div class="col-md-6">
+                    <img src="team.png" class="img-fluid" alt="About Us">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Loan Options Section -->
+    <section id="loans" style="background-color: #f8f9fa;">
+        <div class="container">
+            <h2>Our Loan Options</h2>
+            <div class="row section-content">
+                <!-- Loan Option 1 -->
+                <div class="col-md-4">
+                    <img src="phone.jpg" class="img-fluid" alt="Personal Loan">
+                    <h4>Personal Loan</h4>
+                    <p>Flexible repayment plans with low-interest rates to meet your personal needs.</p>
+                    <a href="#" class="btn btn-primary learn-more-btn">Learn More</a>
+                </div>
+                <!-- Loan Option 2 -->
+                <div class="col-md-4">
+                    <img src="phone2.jpg" class="img-fluid" alt="Business Loan">
+                    <h4>Business Loan</h4>
+                    <p>Boost your business growth with our tailored business loans.</p>
+                    <a href="#" class="btn btn-primary learn-more-btn">Learn More</a>
+                </div>
+                <!-- Loan Option 3 -->
+                <div class="col-md-4">
+                    <img src="phone3.jpeg" class="img-fluid" alt="Student Loan">
+                    <h4>Student Loan</h4>
+                    <p>Affordable options to finance your education and achieve your dreams.</p>
+                    <a href="#" class="btn btn-primary learn-more-btn">Learn More</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Eligibility Section -->
+    <section id="eligibility">
+        <div class="container">
+            <h2>Eligibility Criteria</h2>
+            <div class="row align-items-center section-content">
+                <div class="col-md-6">
+                    <ul>
+                        <li>Must be at least 18 years old.</li>
+                        <li>Provide proof of a steady income.</li>
+                        <li>Minimum credit score of 600.</li>
+                    </ul>
+                    <p>Ensure you meet these requirements before applying.</p>
+                    <a href="#" class="btn btn-primary learn-more-btn">Learn More</a>
+                </div>
+                <div class="col-md-6">
+                    <img src="checklist.avif" class="img-fluid" alt="Eligibility">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Application Process Section -->
+    <section id="process" style="background-color: #f8f9fa;">
+        <div class="container">
+            <h2>How to Apply</h2>
+            <div class="row align-items-center section-content">
+                <div class="col-md-6">
+                    <img src="t.jpg" class="img-fluid" alt="Application Process">
+                </div>
+                <div class="col-md-6">
+                    <ol>
+                        <li>Complete the online application form.</li>
+                        <li>Upload the necessary documents.</li>
+                        <li>Receive approval within 24 hours.</li>
+                        <li>Get funds deposited into your account.</li>
+                    </ol>
+                    <a href="#" class="btn btn-primary learn-more-btn">Learn More</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Benefits Section -->
+    <section id="benefits">
+        <div class="container">
+            <h2>Why Choose Us</h2>
+            <div class="row align-items-center section-content">
+                <div class="col-md-6">
+                    <ul>
+                        <li>Fast approval process.</li>
+                        <li>Flexible repayment options.</li>
+                        <li>No hidden fees.</li>
+                    </ul>
+                    <a href="#" class="btn btn-primary learn-more-btn">Learn More</a>
+                </div>
+                <div class="col-md-6">
+                    <img src="happy2.jpeg" class="img-fluid" alt="Benefits">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" style="background-color: #f8f9fa;">
+        <div class="container">
+            <h2>What Our Customers Say</h2>
+            <div class="row section-content">
+                <!-- Testimonial 1 -->
+                <div class="col-md-4">
+                    <div class="testimonial">
+                        <img src="Customer.png" class="img-fluid rounded-circle" alt="Customer 1">
+                        <p>"QuickLoan helped me fund my small business in no time. Excellent service!"</p>
+                        <div class="customer">- Sarah O.</div>
+                        <div class="rating">★★★★★</div>
+                    </div>
+                </div>
+                <!-- Testimonial 2 -->
+                <div class="col-md-4">
+                    <div class="testimonial">
+                        <img src="hapi.jpg" class="img-fluid rounded-circle" alt="Customer 2">
+                        <p>"The application process was so simple, and I received my loan within 24 hours."</p>
+                        <div class="customer">- David K.</div>
+                        <div class="rating">★★★★★</div>
+                    </div>
+                </div>
+                <!-- Testimonial 3 -->
+                <div class="col-md-4">
+                    <div class="testimonial">
+                        <img src="hapicust.jpg" class="img-fluid rounded-circle" alt="Customer 3">
+                        <p>"Highly recommend QuickLoan for anyone looking for a quick and easy loan solution."</p>
+                        <div class="customer">- Mary L.</div>
+                        <div class="rating">★★★★★</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section id="faq">
+        <div class="container">
+            <h2>Frequently Asked Questions</h2>
+            <div class="accordion" id="faqAccordion">
+                <!-- FAQ 1 -->
+                <div class="card">
+                    <div class="card-header" id="faqHeading1">
+                        <h5 class="mb-0">
+                            <button class="btn btn-link text-left" type="button" data-toggle="collapse" data-target="#faq1" aria-expanded="true" aria-controls="faq1">
+                                What documents are required to apply?
+                            </button>
+                        </h5>
+                    </div>
+                    <div id="faq1" class="collapse show" aria-labelledby="faqHeading1" data-parent="#faqAccordion">
+                        <div class="card-body">
+                            You'll need a valid ID, proof of income, and recent bank statements.
+                            <a href="#" class="btn btn-primary learn-more-btn">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- FAQ 2 -->
+                <div class="card">
+                    <div class="card-header" id="faqHeading2">
+                        <h5 class="mb-0">
+                            <button class="btn btn-link text-left collapsed" type="button" data-toggle="collapse" data-target="#faq2" aria-expanded="false" aria-controls="faq2">
+                                How long does it take to get approved?
+                            </button>
+                        </h5>
+                    </div>
+                    <div id="faq2" class="collapse" aria-labelledby="faqHeading2" data-parent="#faqAccordion">
+                        <div class="card-body">
+                            Loan approvals are typically completed within 24 hours.
+                            <a href="#" class="btn btn-primary learn-more-btn">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- FAQ 3 -->
+                <div class="card">
+                    <div class="card-header" id="faqHeading3">
+                        <h5 class="mb-0">
+                            <button class="btn btn-link text-left collapsed" type="button" data-toggle="collapse" data-target="#faq3" aria-expanded="false" aria-controls="faq3">
+                                Can I repay my loan early without penalties?
+                            </button>
+                        </h5>
+                    </div>
+                    <div id="faq3" class="collapse" aria-labelledby="faqHeading3" data-parent="#faqAccordion">
+                        <div class="card-body">
+                            Yes, you can repay your loan early without any additional fees.
+                            <a href="#" class="btn btn-primary learn-more-btn">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call-to-Action Section -->
+    <section id="cta" class="cta">
+        <div class="container">
+            <h2>Ready to Apply?</h2>
+            <a href="./sign-up.php" class="btn btn-light btn-lg">Apply Now</a>
+            <p class="mt-4">Call us: <a href="tel:08001234567" style="color: #fff;">0800-123-4567</a> | Email: <a href="mailto:support@quickloan.com" style="color: #fff;">support@quickloan.com</a></p>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer class="footer">
+        <div class="container text-center">
+            <p>Company Address: No 5 Market Road, Gwagwalada, Abuja</p>
+            <p>License Number: XYZ12345</p>
+            <div class="social-icons">
+                <a href="#"><i class="icon icon-facebook"></i></a>
+                <a href="#"><i class="icon icon-twitter"></i></a>
+                <a href="#"><i class="icon icon-instagram"></i></a>
+            </div>
+            <p>
+                <a href="#">Terms and Conditions</a> | 
+                <a href="#">Privacy Policy</a>
+            </p>
+            <p>&copy; 2023 QuickLoan. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Required JavaScript Files -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <!-- Popper.js, then Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <!-- Optional JavaScript for Icons (e.g., Font Awesome) -->
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+</body>
 </html>

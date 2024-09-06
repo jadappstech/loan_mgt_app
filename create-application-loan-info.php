@@ -229,7 +229,7 @@
 							<div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
 								<div class="card">
 									<div class="card-header">
-										<h3 >Loan & Account Details</h3>
+										<h3 >Loan Application Form</h3>
 									</div>
 									<div class="card-body">
 										<div class="row gutters">
@@ -299,7 +299,9 @@
 												<a href="./create-application-biodata.php">
 													<button class="btn btn-secondary">Previous</button>
 												</a>
-												<button class="btn btn-primary">Next</button> 
+												<a href="./verification-stage.php">
+													<button class="btn btn-primary">Next</button> 
+												</a>
 											</div>
 										</div>
 									</div>
