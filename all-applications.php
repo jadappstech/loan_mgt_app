@@ -13,7 +13,7 @@
 		<link rel="shortcut icon" href="img/fav.png">
 
 		<!-- Title -->
-		<title>active-applications</title>
+		<title>current-loan-applications</title>
 
 
 		<!-- *************

@@ -1296,7 +1296,7 @@
 																										<div class="timeline-activity">
 																												<div style="display:flex; flex-direction: row; justify-content: space-between;" class="activity-log">
 																														<div> <p class="log-name">Business Loan<small class="log-time">- 5 Weeks ago</small></p>
-																																	<div class="log-details">Five hundre thousand naira (N500,000) lore<span class="text-success ml-1"> #Paid</span></div>
+																																	<div class="log-details">Five hundred thousand naira (N500,000) <span class="text-success ml-1"> V</span></div>
 																														</div>
 
 																													<div style="display: grid; place-items: center;" class="log-details"><span class="text-success ml-1"> #Paid</span></div>
