@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="en">
 	
-<!-- Mirrored from www.bootstrapget.com/demos/themeforest/unipro-admin-template/demos/01-design-blue/forms-layout-four.php by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 04 Sep 2024 13:06:59 GMT -->
+<!-- Mirrored from www.bootstrapget.com/demos/themeforest/unipro-admin-template/demos/01-design-blue/orders.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 04 Sep 2024 13:06:11 GMT -->
 <head>
 		<!-- Required meta tags -->
 		<meta charset="utf-8">
@@ -39,15 +39,21 @@
 		<!-- Search Filter JS -->
 		<link rel="stylesheet" href="vendor/search-filter/search-filter.css">
 		<link rel="stylesheet" href="vendor/search-filter/custom-search-filter.css">
-
-		<!-- Bootstrap Select CSS -->
-		<link rel="stylesheet" href="vendor/bs-select/bs-select.css" />
-
-		<!-- Date Range CSS -->
-		<link rel="stylesheet" href="vendor/daterange/daterange.css">
+		
+		<!-- Data Tables -->
+		<link rel="stylesheet" href="vendor/datatables/dataTables.bs4.css" />
+		<link rel="stylesheet" href="vendor/datatables/dataTables.bs4-custom.css" />
+		<link href="vendor/datatables/buttons.bs.css" rel="stylesheet" />
 
 	</head>
 	<body>
+
+		<!-- Loading wrapper start -->
+		<div id="loading-wrapper">
+			<div class="spinner-border"></div>
+			Loading...
+		</div>
+		<!-- Loading wrapper end -->
 
 		<!-- Page wrapper start -->
 		<div class="page-wrapper">
@@ -67,7 +73,7 @@
 							<i class="icon-home2"></i>
 							<span class="nav-link-text">Dashboards</span>
 						</a>
-						<a class="nav-link" id="product-tab" data-bs-toggle="tab" href="#tab-product" role="tab" aria-controls="tab-product" aria-selected="false">
+						<a class="nav-link active" id="product-tab" data-bs-toggle="tab" href="#tab-product" role="tab" aria-controls="tab-product" aria-selected="true">
 							<i class="icon-layers2"></i>
 							<span class="nav-link-text">Product</span>
 						</a>
@@ -75,7 +81,7 @@
 							<i class="icon-book-open"></i>
 							<span class="nav-link-text">Pages</span>
 						</a>
-						<a class="nav-link active" id="forms-tab" data-bs-toggle="tab" href="#tab-forms" role="tab" aria-controls="tab-forms" aria-selected="true">
+						<a class="nav-link" id="forms-tab" data-bs-toggle="tab" href="#tab-forms" role="tab" aria-controls="tab-forms" aria-selected="false">
 							<i class="icon-edit1"></i>
 							<span class="nav-link-text">Forms</span>
 						</a>
@@ -115,73 +121,73 @@
 								<div class="sidebar-menu">
 									<ul>
 										<li>
-											<a href="index-2.php">Dashboard</a>
+											<a href="index-2.html">Dashboard</a>
 										</li>
 										<li>
-											<a href="analytics.php">Analytics</a>
+											<a href="analytics.html">Analytics</a>
 										</li>
 										<li>
-											<a href="sales.php">Sales</a>
+											<a href="sales.html">Sales</a>
 										</li>
 										<li>
-											<a href="crm.php">CRM</a>
+											<a href="crm.html">CRM</a>
 										</li>
 										<li>
-											<a href="reports.php">Reports</a>
+											<a href="reports.html">Reports</a>
 										</li>
 										<li>
-											<a href="saas.php">Saas</a>
+											<a href="saas.html">Saas</a>
 										</li>
 										<li>
-											<a href="consulting.php">Consulting</a>
+											<a href="consulting.html">Consulting</a>
 										</li>
 										<li>
-											<a href="profile.php">Profile</a>
+											<a href="profile.html">Profile</a>
 										</li>
 									</ul>
 									<ul>
 										<li class="list-heading">Layouts</li>
 										<li>
-											<a href="starter-page.php">Starter Page</a>
+											<a href="starter-page.html">Starter Page</a>
 										</li>
 										<li>
-											<a href="layout-tabs-tooltip.php">Tabs Hover Tooltip</a>
+											<a href="layout-tabs-tooltip.html">Tabs Hover Tooltip</a>
 										</li>
 										<li>
-											<a href="layout-tile-menu.php">Tile Menu</a>
+											<a href="layout-tile-menu.html">Tile Menu</a>
 										</li>
 										<li>
-											<a href="layout-collapse-menu.php">Collapse Sidebar</a>
+											<a href="layout-collapse-menu.html">Collapse Sidebar</a>
 										</li>
 										<li>
-											<a href="layout-compact-menu.php">Compact Sidebar</a>
+											<a href="layout-compact-menu.html">Compact Sidebar</a>
 										</li>
 										<li>
-											<a href="layout-slim-menu.php">Slim Sidebar</a>
+											<a href="layout-slim-menu.html">Slim Sidebar</a>
 										</li>
 										<li>
-											<a href="layout-hover-tabs.php">Hover Tabs</a>
+											<a href="layout-hover-tabs.html">Hover Tabs</a>
 										</li>
 										<li>
-											<a href="layout-daterange.php">Date Range</a>
+											<a href="layout-daterange.html">Date Range</a>
 										</li>
 										<li>
-											<a href="layout-full-screen.php">Full Screen</a>
+											<a href="layout-full-screen.html">Full Screen</a>
 										</li>
 										<li>
-											<a href="layout-full-view.php">Full View</a>
+											<a href="layout-full-view.html">Full View</a>
 										</li>
 										<li>
-											<a href="layout-search.php">Global Search</a>
+											<a href="layout-search.html">Global Search</a>
 										</li>
 										<li>
-											<a href="layout-megamenu.php">Megamenu</a>
+											<a href="layout-megamenu.html">Megamenu</a>
 										</li>
 										<li>
-											<a href="layout-bradcrumb.php">Breadcrumbs</a>
+											<a href="layout-bradcrumb.html">Breadcrumbs</a>
 										</li>
 										<li>
-											<a href="layout-scroll-cards.php">Scroll Cards</a>
+											<a href="layout-scroll-cards.html">Scroll Cards</a>
 										</li>
 									</ul>
 								</div>
@@ -190,11 +196,11 @@
 
 							<!-- Sidebar actions starts -->
 							<div class="sidebar-actions">
-								<a href="orders.php" class="red">
+								<a href="orders.html" class="red">
 									<div class="bg-avatar">12</div>
 									<h5>New Orders</h5>
 								</a>
-								<a href="invoices-list.php" class="blue">
+								<a href="invoices-list.html" class="blue">
 									<div class="bg-avatar">24</div>
 									<h5>Bills Pending</h5>
 								</a>
@@ -204,7 +210,7 @@
 						</div>
 
 						<!-- Pages tab -->
-						<div class="tab-pane fade" id="tab-product" role="tabpanel" aria-labelledby="product-tab">
+						<div class="tab-pane fade show active" id="tab-product" role="tabpanel" aria-labelledby="product-tab">
 							
 							<!-- Tab content header start -->
 							<div class="tab-pane-header">
@@ -217,40 +223,40 @@
 								<div class="sidebar-menu">
 									<ul>
 										<li>
-											<a href="products.php">Products Grid</a>
+											<a href="products.html">Products Grid</a>
 										</li>
 										<li>
-											<a href="products-list.php">Products List</a>
+											<a href="products-list.html">Products List</a>
 										</li>
 										<li>
-											<a href="add-product.php">Add Product</a>
+											<a href="add-product.html">Add Product</a>
 										</li>
 										<li>
-											<a href="orders.php">Orders</a>
+											<a href="orders.html" class="current-page">Orders</a>
 										</li>
 										<li>
-											<a href="customers-list.php">Customers</a>
+											<a href="customers-list.html">Customers</a>
 										</li>
 										<li>
-											<a href="products-reviews.php">Reviews</a>
+											<a href="products-reviews.html">Reviews</a>
 										</li>
 									</ul>
 									<ul>
 										<li class="list-heading">Calendars</li>
 										<li>
-											<a href="calendar-daygrid-view.php">Daygrid View</a>
+											<a href="calendar-daygrid-view.html">Daygrid View</a>
 										</li>
 										<li>
-											<a href="calendar-list-view.php">List View</a>
+											<a href="calendar-list-view.html">List View</a>
 										</li>
 										<li>
-											<a href="calendar-external-dragging.php">Draggable</a>
+											<a href="calendar-external-dragging.html">Draggable</a>
 										</li>
 										<li>
-											<a href="calendar-google-view.php">Google View</a>
+											<a href="calendar-google-view.html">Google View</a>
 										</li>
 										<li>
-											<a href="calendar-selectable.php">Selectable</a>
+											<a href="calendar-selectable.html">Selectable</a>
 										</li>
 									</ul>
 								</div>
@@ -281,49 +287,49 @@
 								<div class="sidebar-menu">
 									<ul>
 										<li>
-											<a href="chat.php">Chat</a>
+											<a href="chat.html">Chat</a>
 										</li>
 										<li>
-											<a href="tasks.php">Tasks</a>
+											<a href="tasks.html">Tasks</a>
 										</li>
 										<li>
-											<a href="create-invoice.php">Create Invoice</a>
+											<a href="create-invoice.html">Create Invoice</a>
 										</li>
 										<li>
-											<a href="view-invoice.php">View Invoice</a>
+											<a href="view-invoice.html">View Invoice</a>
 										</li>
 										<li>
-											<a href="documents.php">Documents</a>
+											<a href="documents.html">Documents</a>
 										</li>
 										<li>
-											<a href="faq.php">Faq's</a>
+											<a href="faq.html">Faq's</a>
 										</li>
 										<li>
-											<a href="contacts.php">Contacts</a>
+											<a href="contacts.html">Contacts</a>
 										</li>
 										<li>
-											<a href="pricing.php">Pricing</a>
+											<a href="pricing.html">Pricing</a>
                                         </li>
                                         <li>
-											<a href="gallery-tiles.php">Gallery Tiles</a>
+											<a href="gallery-tiles.html">Gallery Tiles</a>
                                         </li>
                                         <li>
-											<a href="gallery.php">Gallery</a>
+											<a href="gallery.html">Gallery</a>
 										</li>
 										<li>
-											<a href="icons.php">Icons</a>
+											<a href="icons.html">Icons</a>
 										</li>
 										<li>
-											<a href="timeline.php">Timeline</a>
+											<a href="timeline.html">Timeline</a>
 										</li>
 										<li>
-											<a href="search-results.php">Search Results</a>
+											<a href="search-results.html">Search Results</a>
 										</li>
 										<li>
-											<a href="account-settings.php">Account Settings</a>
+											<a href="account-settings.html">Account Settings</a>
                                         </li>
                                         <li>
-											<a href="user-profile.php">User Profile</a>
+											<a href="user-profile.html">User Profile</a>
 										</li>
 									</ul>
 								</div>
@@ -341,7 +347,7 @@
 						</div>
 
 						<!-- Forms tab -->
-						<div class="tab-pane fade show active" id="tab-forms" role="tabpanel" aria-labelledby="forms-tab">
+						<div class="tab-pane fade" id="tab-forms" role="tabpanel" aria-labelledby="forms-tab">
 
 							<!-- Tab content header start -->
 							<div class="tab-pane-header">
@@ -355,58 +361,58 @@
 									<ul>
 										<li class="list-heading">Form Layouts</li>
 										<li>
-											<a href="forms-layout-one.php">Default Layout</a>
+											<a href="forms-layout-one.html">Default Layout</a>
 										</li>
 										<li>
-											<a href="forms-layout-two.php">Layout Sections</a>
+											<a href="forms-layout-two.html">Layout Sections</a>
 										</li>
 										<li>
-											<a href="forms-layout-three.php">Simple Form Layout</a>
+											<a href="forms-layout-three.html">Simple Form Layout</a>
 										</li>
 										<li>
-											<a href="forms-layout-four.php" class="current-page">Select 2 Tags and Mask</a>
+											<a href="forms-layout-four.html">Select 2 Tags and Mask</a>
 										</li>
 										<li>
-											<a href="forms-layout-five.php">Horizontal Form Layout</a>
+											<a href="forms-layout-five.html">Horizontal Form Layout</a>
 										</li>
 										<li>
-											<a href="forms-layout-six.php">Layout Six with Tabs</a>
+											<a href="forms-layout-six.html">Layout Six with Tabs</a>
 										</li>
 									</ul>									
 									<ul>
 										<li class="list-heading">Form Fields</li>
 										<li>
-											<a href="forms-inputs.php">Form Inputs</a>
+											<a href="forms-inputs.html">Form Inputs</a>
 										</li>
 										<li>
-											<a href="forms-input-groups.php">Input Groups</a>
+											<a href="forms-input-groups.html">Input Groups</a>
 										</li>
 										<li>
-											<a href="forms-checkbox-radio.php">Checkbox &amp; Radios</a>
+											<a href="forms-checkbox-radio.html">Checkbox &amp; Radios</a>
 										</li>
 										<li>
-											<a href="forms-validation.php">Form Validation</a>
+											<a href="forms-validation.html">Form Validation</a>
 										</li>
 									</ul>									
 									<ul>
 										<li class="list-heading">Plugins</li>
 										<li>
-											<a href="forms-dropzone.php">Dropzone</a>
+											<a href="forms-dropzone.html">Dropzone</a>
 										</li>
 										<li>
-											<a href="forms-bs-select.php">Select 2 Dropdowns</a>
+											<a href="forms-bs-select.html">Select 2 Dropdowns</a>
 										</li>
 										<li>
-											<a href="forms-date-time-picker.php">Date Time Picker</a>
+											<a href="forms-date-time-picker.html">Date Time Picker</a>
 										</li>
 										<li>
-											<a href="forms-input-mask.php">Input Mask</a>
+											<a href="forms-input-mask.html">Input Mask</a>
 										</li>
 										<li>
-											<a href="forms-input-range.php">Input Range</a>
+											<a href="forms-input-range.html">Input Range</a>
 										</li>
 										<li>
-											<a href="forms-editor.php">WYSIWYG Editor</a>
+											<a href="forms-editor.html">WYSIWYG Editor</a>
 										</li>
 									</ul>
 								</div>
@@ -437,49 +443,49 @@
 								<div class="sidebar-menu">
 									<ul>
                                         <li>
-                                            <a href="accordions.php">Accordions</a>
+                                            <a href="accordions.html">Accordions</a>
                                         </li>
                                         <li>
-                                            <a href="alerts.php">Alerts</a>
+                                            <a href="alerts.html">Alerts</a>
                                         </li>
                                         <li>
-                                            <a href="buttons.php">Buttons</a>
+                                            <a href="buttons.html">Buttons</a>
                                         </li>
                                         <li>
-                                            <a href="badges.php">Badges</a>
+                                            <a href="badges.html">Badges</a>
                                         </li>
                                         <li>
-                                            <a href="cards.php">Cards</a>
+                                            <a href="cards.html">Cards</a>
                                         </li>
                                         <li>
-                                            <a href="carousel.php">Carousel</a>
+                                            <a href="carousel.html">Carousel</a>
                                         </li>
                                         <li>
-                                            <a href="list-group.php">List group</a>
+                                            <a href="list-group.html">List group</a>
                                         </li>
                                         <li>
-                                            <a href="modals.php">Modal</a>
+                                            <a href="modals.html">Modal</a>
                                         </li>
                                         <li>
-                                            <a href="paginations.php">Paginations</a>
+                                            <a href="paginations.html">Paginations</a>
                                         </li>
                                         <li>
-                                            <a href="popovers.php">Popovers</a>
+                                            <a href="popovers.html">Popovers</a>
                                         </li>
                                         <li>
-                                            <a href="progress.php">Progress</a>
+                                            <a href="progress.html">Progress</a>
                                         </li>
                                         <li>
-                                            <a href="spinners.php">Spinners</a>
+                                            <a href="spinners.html">Spinners</a>
                                         </li>
                                         <li>
-                                            <a href="tabs.php">Tabs</a>
+                                            <a href="tabs.html">Tabs</a>
                                         </li>
                                         <li>
-                                            <a href="toasts.php">Toasts</a>
+                                            <a href="toasts.html">Toasts</a>
                                         </li>
                                         <li>
-                                            <a href="tooltips.php">Tooltips</a>
+                                            <a href="tooltips.html">Tooltips</a>
                                         </li>
 									</ul>
 								</div>
@@ -510,26 +516,26 @@
                                     <ul>
 										<li class="list-heading">Graphs</li>
                                         <li>
-                                            <a href="apex-graphs.php">Apex Graphs</a>
+                                            <a href="apex-graphs.html">Apex Graphs</a>
                                         </li>
                                         <li>
-                                            <a href="morris-graphs.php">Morris Graphs</a>
+                                            <a href="morris-graphs.html">Morris Graphs</a>
                                         </li>
                                         <li>
-                                            <a href="vector-maps.php">Vector Maps</a>
+                                            <a href="vector-maps.html">Vector Maps</a>
                                         </li>
                                     </ul>
                                     
                                     <ul>
 										<li class="list-heading">Tables</li>
                                         <li>
-                                            <a href="bootstrap-tables.php">Bootstrap Tables</a>
+                                            <a href="bootstrap-tables.html">Bootstrap Tables</a>
                                         </li>
                                         <li>
-                                            <a href="custom-tables.php">Custom Tables</a>
+                                            <a href="custom-tables.html">Custom Tables</a>
                                         </li>
                                         <li>
-                                            <a href="data-tables.php">Data Tables</a>
+                                            <a href="data-tables.html">Data Tables</a>
                                         </li>
 									</ul>
 								</div>
@@ -560,31 +566,31 @@
 								<div class="sidebar-menu">
 									<ul>
 										<li>
-											<a href="login.php">Login</a>
+											<a href="login.html">Login</a>
 										</li>
 										<li>
-											<a href="signup.php">Signup</a>
+											<a href="signup.html">Signup</a>
 										</li>
 										<li>
-											<a href="forgot-password.php">Forgot Password</a>
+											<a href="forgot-password.html">Forgot Password</a>
 										</li>
 										<li>
-											<a href="reset-password.php">Reset Password</a>
+											<a href="reset-password.html">Reset Password</a>
 										</li>
 										<li>
-											<a href="lock-screen.php">Lock Screen</a>
+											<a href="lock-screen.html">Lock Screen</a>
 										</li>
 										<li>
-											<a href="subscribe.php">Subscribe</a>
+											<a href="subscribe.html">Subscribe</a>
 										</li>										
 										<li>
-											<a href="maintenance.php">Maintenance</a>
+											<a href="maintenance.html">Maintenance</a>
 										</li>
 										<li>
-											<a href="error.php">404</a>
+											<a href="error.html">404</a>
 										</li>
 										<li>
-											<a href="error-option2.php">Error</a>
+											<a href="error-option2.html">Error</a>
 										</li>
 									</ul>
 								</div>
@@ -594,7 +600,7 @@
 							<!-- Sidebar actions starts -->
 							<div class="sidebar-actions">
 								<div class="support-tile blue">
-									<a href="pricing.php" class="btn btn-light m-auto">Upgrade Account</a>
+									<a href="pricing.html" class="btn btn-light m-auto">Upgrade Account</a>
 								</div>
 							</div>
 							<!-- Sidebar actions ends -->
@@ -720,7 +726,7 @@
 							<!-- Sidebar actions starts -->
 							<div class="sidebar-actions">
 								<div class="support-tile blue">
-									<a href="account-settings.php" class="btn btn-light m-auto">Advance Settings</a>
+									<a href="account-settings.html" class="btn btn-light m-auto">Advance Settings</a>
 								</div>
 							</div>
 							<!-- Sidebar actions ends -->
@@ -770,25 +776,25 @@
 														<a href="#">Dashboards</a>
 														<ul class="is-hidden">
 															<li>
-																<a href="reports.php">Reports</a>
+																<a href="reports.html">Reports</a>
 															</li>
 															<li>
-																<a href="saas.php">Saas</a>
+																<a href="saas.html">Saas</a>
 															</li>
 															<li>
-																<a href="sales.php">Sales</a>
+																<a href="sales.html">Sales</a>
 															</li>
 															<li>
-																<a href="index-2.php">Admin</a>
+																<a href="index-2.html">Admin</a>
 															</li>
 															<li>
-																<a href="analytics.php">Analytics</a>
+																<a href="analytics.html">Analytics</a>
 															</li>
 															<li>
-																<a href="crm.php">CRM</a>
+																<a href="crm.html">CRM</a>
 															</li>
 															<li>
-																<a href="consulting.php">Consulting</a>
+																<a href="consulting.html">Consulting</a>
 															</li>
 														</ul>
 													</li>
@@ -796,22 +802,22 @@
 														<a href="#">Layouts</a>
 														<ul class="is-hidden">
 															<li>
-																<a href="starter-page.php">Starter Page</a>
+																<a href="starter-page.html">Starter Page</a>
 															</li>
 															<li>
-																<a href="layout-full-screen.php">Full Screen</a>
+																<a href="layout-full-screen.html">Full Screen</a>
 															</li>
 															<li>
-																<a href="layout-search.php">Global Search</a>
+																<a href="layout-search.html">Global Search</a>
 															</li>
 															<li>
-																<a href="layout-megamenu.php">Megamenu</a>
+																<a href="layout-megamenu.html">Megamenu</a>
 															</li>
 															<li>
-																<a href="layout-bradcrumb.php">Breadcrumbs</a>
+																<a href="layout-bradcrumb.html">Breadcrumbs</a>
 															</li>
 															<li>
-																<a href="layout-scroll-cards.php">Scroll Cards</a>
+																<a href="layout-scroll-cards.html">Scroll Cards</a>
 															</li>
 														</ul>
 													</li>
@@ -826,22 +832,22 @@
 														<a href="#">Product</a>
 														<ul class="is-hidden">
 															<li>
-																<a href="products.php">Products Grid</a>
+																<a href="products.html">Products Grid</a>
 															</li>
 															<li>
-																<a href="products-list.php">Products List</a>
+																<a href="products-list.html">Products List</a>
 															</li>
 															<li>
-																<a href="add-product.php">Add Product</a>
+																<a href="add-product.html">Add Product</a>
 															</li>
 															<li>
-																<a href="orders.php">Orders</a>
+																<a href="orders.html">Orders</a>
 															</li>
 															<li>
-																<a href="customers-list.php">Customers</a>
+																<a href="customers-list.html">Customers</a>
 															</li>
 															<li>
-																<a href="products-reviews.php">Reviews</a>
+																<a href="products-reviews.html">Reviews</a>
 															</li>
 														</ul>
 													</li>
@@ -850,19 +856,19 @@
 														<a href="#">Calendars</a>
 														<ul class="is-hidden">
 															<li>
-																<a href="calendar-daygrid-view.php">Daygrid View</a>
+																<a href="calendar-daygrid-view.html">Daygrid View</a>
 															</li>
 															<li>
-																<a href="calendar-list-view.php">List View</a>
+																<a href="calendar-list-view.html">List View</a>
 															</li>
 															<li>
-																<a href="calendar-external-dragging.php">Draggable</a>
+																<a href="calendar-external-dragging.html">Draggable</a>
 															</li>
 															<li>
-																<a href="calendar-google-view.php">Google View</a>
+																<a href="calendar-google-view.html">Google View</a>
 															</li>
 															<li>
-																<a href="calendar-selectable.php">Selectable</a>
+																<a href="calendar-selectable.html">Selectable</a>
 															</li>
 														</ul>
 													</li>
@@ -878,22 +884,22 @@
 														<a href="#">Form Layouts</a>
 														<ul class="is-hidden">
 															<li>
-																<a href="forms-layout-one.php">Default Layout</a>
+																<a href="forms-layout-one.html">Default Layout</a>
 															</li>
 															<li>
-																<a href="forms-layout-two.php">Layout Sections</a>
+																<a href="forms-layout-two.html">Layout Sections</a>
 															</li>
 															<li>
-																<a href="forms-layout-three.php">Simple Form Layout</a>
+																<a href="forms-layout-three.html">Simple Form Layout</a>
 															</li>
 															<li>
-																<a href="forms-layout-four.php">Select 2 Tags and Mask</a>
+																<a href="forms-layout-four.html">Select 2 Tags and Mask</a>
 															</li>
 															<li>
-																<a href="forms-layout-five.php">Horizontal Form Layout</a>
+																<a href="forms-layout-five.html">Horizontal Form Layout</a>
 															</li>
 															<li>
-																<a href="forms-layout-six.php">Layout Six with Tabs</a>
+																<a href="forms-layout-six.html">Layout Six with Tabs</a>
 															</li>
 														</ul>
 													</li>
@@ -902,34 +908,34 @@
 														<a href="#">Forms</a>
 														<ul class="is-hidden">
 															<li>
-																<a href="forms-inputs.php">Form Inputs</a>
+																<a href="forms-inputs.html">Form Inputs</a>
 															</li>
 															<li>
-																<a href="forms-input-groups.php">Input Groups</a>
+																<a href="forms-input-groups.html">Input Groups</a>
 															</li>
 															<li>
-																<a href="forms-checkbox-radio.php">Checkbox &amp; Radios</a>
+																<a href="forms-checkbox-radio.html">Checkbox &amp; Radios</a>
 															</li>
 															<li>
-																<a href="forms-validation.php">Form Validation</a>
+																<a href="forms-validation.html">Form Validation</a>
 															</li>
 															<li>
-																<a href="forms-dropzone.php">Dropzone</a>
+																<a href="forms-dropzone.html">Dropzone</a>
 															</li>
 															<li>
-																<a href="forms-bs-select.php">Select 2 Dropdowns</a>
+																<a href="forms-bs-select.html">Select 2 Dropdowns</a>
 															</li>
 															<li>
-																<a href="forms-date-time-picker.php">Date Time Picker</a>
+																<a href="forms-date-time-picker.html">Date Time Picker</a>
 															</li>
 															<li>
-																<a href="forms-input-mask.php">Input Mask</a>
+																<a href="forms-input-mask.html">Input Mask</a>
 															</li>
 															<li>
-																<a href="forms-input-range.php">Input Range</a>
+																<a href="forms-input-range.html">Input Range</a>
 															</li>
 															<li>
-																<a href="forms-editor.php">WYSIWYG Editor</a>
+																<a href="forms-editor.html">WYSIWYG Editor</a>
 															</li>
 														</ul>
 													</li>
@@ -945,49 +951,49 @@
 														<a href="#">Pages</a>
 														<ul class="is-hidden">
 															<li>
-																<a href="chat.php">Chat</a>
+																<a href="chat.html">Chat</a>
 															</li>
 															<li>
-																<a href="tasks.php">Tasks</a>
+																<a href="tasks.html">Tasks</a>
 															</li>
 															<li>
-																<a href="create-invoice.php">Create Invoice</a>
+																<a href="create-invoice.html">Create Invoice</a>
 															</li>
 															<li>
-																<a href="view-invoice.php">View Invoice</a>
+																<a href="view-invoice.html">View Invoice</a>
 															</li>
 															<li>
-																<a href="documents.php">Documents</a>
+																<a href="documents.html">Documents</a>
 															</li>
 															<li>
-																<a href="faq.php">Faq's</a>
+																<a href="faq.html">Faq's</a>
 															</li>
 															<li>
-																<a href="contacts.php">Contacts</a>
+																<a href="contacts.html">Contacts</a>
 															</li>
 															<li>
-																<a href="pricing.php">Pricing</a>
+																<a href="pricing.html">Pricing</a>
 															</li>
 															<li>
-																<a href="gallery-tiles.php">Gallery Tiles</a>
+																<a href="gallery-tiles.html">Gallery Tiles</a>
 															</li>
 															<li>
-																<a href="gallery.php">Gallery</a>
+																<a href="gallery.html">Gallery</a>
 															</li>
 															<li>
-																<a href="icons.php">Icons</a>
+																<a href="icons.html">Icons</a>
 															</li>
 															<li>
-																<a href="timeline.php">Timeline</a>
+																<a href="timeline.html">Timeline</a>
 															</li>
 															<li>
-																<a href="search-results.php">Search Results</a>
+																<a href="search-results.html">Search Results</a>
 															</li>
 															<li>
-																<a href="account-settings.php">Account Settings</a>
+																<a href="account-settings.html">Account Settings</a>
 															</li>
 															<li>
-																<a href="user-profile.php">User Profile</a>
+																<a href="user-profile.html">User Profile</a>
 															</li>
 														</ul>
 													</li>
@@ -996,49 +1002,49 @@
 														<a href="#">Components</a>
 														<ul class="is-hidden">
 															<li>
-																<a href="accordions.php">Accordions</a>
+																<a href="accordions.html">Accordions</a>
 															</li>
 															<li>
-																<a href="alerts.php">Alerts</a>
+																<a href="alerts.html">Alerts</a>
 															</li>
 															<li>
-																<a href="buttons.php">Buttons</a>
+																<a href="buttons.html">Buttons</a>
 															</li>
 															<li>
-																<a href="badges.php">Badges</a>
+																<a href="badges.html">Badges</a>
 															</li>
 															<li>
-																<a href="cards.php">Cards</a>
+																<a href="cards.html">Cards</a>
 															</li>
 															<li>
-																<a href="carousel.php">Carousel</a>
+																<a href="carousel.html">Carousel</a>
 															</li>
 															<li>
-																<a href="list-group.php">List group</a>
+																<a href="list-group.html">List group</a>
 															</li>
 															<li>
-																<a href="modals.php">Modal</a>
+																<a href="modals.html">Modal</a>
 															</li>
 															<li>
-																<a href="paginations.php">Paginations</a>
+																<a href="paginations.html">Paginations</a>
 															</li>
 															<li>
-																<a href="popovers.php">Popovers</a>
+																<a href="popovers.html">Popovers</a>
 															</li>
 															<li>
-																<a href="progress.php">Progress</a>
+																<a href="progress.html">Progress</a>
 															</li>
 															<li>
-																<a href="spinners.php">Spinners</a>
+																<a href="spinners.html">Spinners</a>
 															</li>
 															<li>
-																<a href="tabs.php">Tabs</a>
+																<a href="tabs.html">Tabs</a>
 															</li>
 															<li>
-																<a href="toasts.php">Toasts</a>
+																<a href="toasts.html">Toasts</a>
 															</li>
 															<li>
-																<a href="tooltips.php">Tooltips</a>
+																<a href="tooltips.html">Tooltips</a>
 															</li>
 														</ul>
 													</li>
@@ -1054,13 +1060,13 @@
 														<a href="#">Graphs</a>
 														<ul class="is-hidden">
 															<li>
-																<a href="apex-graphs.php">Apex Graphs</a>
+																<a href="apex-graphs.html">Apex Graphs</a>
 															</li>
 															<li>
-																<a href="morris-graphs.php">Morris Graphs</a>
+																<a href="morris-graphs.html">Morris Graphs</a>
 															</li>
 															<li>
-																<a href="vector-maps.php">Vector Maps</a>
+																<a href="vector-maps.html">Vector Maps</a>
 															</li>
 														</ul>
 													</li>
@@ -1069,13 +1075,13 @@
 														<a href="#">Tables</a>
 														<ul class="is-hidden">
 															<li>
-																<a href="bootstrap-tables.php">Bootstrap Tables</a>
+																<a href="bootstrap-tables.html">Bootstrap Tables</a>
 															</li>
 															<li>
-																<a href="custom-tables.php">Custom Tables</a>
+																<a href="custom-tables.html">Custom Tables</a>
 															</li>
 															<li>
-																<a href="data-tables.php">Data Tables</a>
+																<a href="data-tables.html">Data Tables</a>
 															</li>
 														</ul>
 													</li>
@@ -1083,13 +1089,13 @@
 											</li>
 											
 											<li>
-												<a href="account-settings.php">Account Settings</a>
+												<a href="account-settings.html">Account Settings</a>
 											</li>
 											<li>
-												<a href="login.php">Logout</a>
+												<a href="login.html">Logout</a>
 											</li>
 											<li>
-												<a href="error-option2.php">Error</a>
+												<a href="error-option2.html">Error</a>
 											</li>
 										</ul>
 										
@@ -1260,9 +1266,9 @@
 									</a>
 									<div class="dropdown-menu dropdown-menu-end md" aria-labelledby="userSettings">
 										<div class="header-profile-actions">
-											<a href="user-profile.php"><i class="icon-user1"></i>Profile</a>
-											<a href="account-settings.php"><i class="icon-settings1"></i>Settings</a>
-											<a href="forgot-password.php"><i class="icon-log-out1"></i>Logout</a>
+											<a href="user-profile.html"><i class="icon-user1"></i>Profile</a>
+											<a href="account-settings.html"><i class="icon-settings1"></i>Settings</a>
+											<a href="forgot-password.html"><i class="icon-log-out1"></i>Logout</a>
 										</div>
 									</div>
 								</li>
@@ -1283,238 +1289,115 @@
 					<div class="content-wrapper">
 
 						<!-- Row start -->
-						<div class="row gutters">
-							<div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
-
-								<!-- Card start -->
-								<div class="card">
-									<div class="card-body">
-										
-										<!-- Row start -->
-										<div class="row gutters">
-											<div class="col-xl-4 col-lg-4 col-md-4 col-sm-4 col-12">
-												
-												<!-- Field wrapper start -->
-												<div class="field-wrapper">
-													<input class="form-control" type="text" placeholder="Enter Full Name">
-													<div class="field-placeholder">Name <span class="text-danger">*</span></div>
-												</div>
-												<!-- Field wrapper end -->
-
-											</div>
-											<div class="col-xl-4 col-lg-4 col-md-4 col-sm-4 col-12">
-												
-												<!-- Field wrapper start -->
-												<div class="field-wrapper">
-													<input class="form-control" type="email" placeholder="Enter Email">
-													<div class="field-placeholder">Email <span class="text-danger">*</span></div>
-												</div>
-												<!-- Field wrapper end -->
-
-											</div>
-											<div class="col-xl-4 col-lg-4 col-md-4 col-sm-4 col-12">
-												
-												<!-- Field wrapper start -->
-												<div class="field-wrapper">
-													<input type="text" class="form-control datepicker">
-													<div class="field-placeholder">Datepicker</div>
-												</div>
-												<!-- Field wrapper end -->
-
-											</div>
-											<div class="col-xl-4 col-lg-4 col-md-4 col-sm-4 col-12">
-												
-												<!-- Field wrapper start -->
-												<div class="field-wrapper">
-													<div class="input-group">
-														<span class="input-group-text">US (+1)</span>
-														<input type="text" class="form-control" placeholder="Enter Phone Number" id="phone-format-us">
-													</div>
-													<div class="field-placeholder">Phone</div>
-												</div>
-												<!-- Field wrapper end -->
-
-											</div>
-											<div class="col-xl-4 col-lg-4 col-md-4 col-sm-4 col-12">
-												
-												<!-- Field wrapper start -->
-												<div class="field-wrapper">
-													<select class="select-single js-states" title="Select Product Category" data-live-search="true">
-														<option>Mobiles</option>
-														<option>Books</option>
-														<option>Clothing</option>
-														<option>Electronics</option>
-														<option>Food</option>
-														<option>Games</option>
-														<option>Gifts</option>
-														<option>Laptops</option>
-														<option>Mobiles</option>
-														<option>Music</option>
-														<option>Office</option>
-														<option>Pharmacy</option>
-														<option>Sports</option>
-														<option>Toys</option>
-													</select>
-													<div class="field-placeholder">Select 2 Dropdown</div>
-												</div>
-												<!-- Field wrapper end -->
-
-											</div>
-											<div class="col-xl-4 col-lg-4 col-md-4 col-sm-4 col-12">
-												
-												<!-- Field wrapper start -->
-												<div class="field-wrapper">
-													<select class="select-multiple js-states" title="Select Product Category" multiple="multiple">
-														<option>Mobiles</option>
-														<option>Books</option>
-														<option>Clothing</option>
-														<option>Electronics</option>
-														<option>Food</option>
-														<option>Games</option>
-														<option>Gifts</option>
-														<option>Laptops</option>
-														<option>Mobiles</option>
-														<option>Music</option>
-														<option>Office</option>
-														<option>Pharmacy</option>
-														<option>Sports</option>
-														<option>Toys</option>
-													</select>
-													<div class="field-placeholder">Tags</div>
-												</div>
-												<!-- Field wrapper end -->
-
-											</div>
-											<div class="col-xl-4 col-lg-4 col-md-4 col-sm-4 col-12">
-												
-												<!-- Field wrapper start -->
-												<div class="field-wrapper">
-													<input type="text" class="form-control" placeholder="Website url">
-													<div class="field-placeholder">URL</div>
-												</div>
-												<!-- Field wrapper end -->
-
-											</div>
-											<div class="col-xl-4 col-lg-4 col-md-4 col-sm-4 col-12">
-												
-												<!-- Field wrapper start -->
-												<div class="field-wrapper">
-													<div class="input-group">
-														<input type="text" class="form-control" placeholder="Min">
-														<span class="input-group-text">and</span>
-														<input type="text" class="form-control" placeholder="Max">
-													</div>
-													<div class="field-placeholder">Price</div>
-												</div>
-												<!-- Field wrapper end -->
-
-											</div>
-											<div class="col-xl-4 col-lg-4 col-md-4 col-sm-4 col-12">
-												
-												<!-- Field wrapper start -->
-												<div class="field-wrapper">
-													<div class="input-group">
-														<input class="form-control" type="text">
-														<span class="input-group-text">
-															<i class="icon-map-pin"></i>
-														</span>
-													</div>
-													<div class="field-placeholder">Location</div>
-												</div>
-												<!-- Field wrapper end -->
-
-											</div>
-											<div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
-
-												<!-- Field wrapper start -->
-												<div class="field-wrapper">
-													<textarea class="form-control" rows="3"></textarea>
-													<div class="field-placeholder">Description</div>
-												</div>
-												<!-- Field wrapper end -->
-
-											</div>
-											<div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
-
-												<!-- Field wrapper start -->
-												<div class="field-wrapper">
-													<textarea class="form-control" rows="3"></textarea>
-													<div class="field-placeholder">Description 2</div>
-												</div>
-												<!-- Field wrapper end -->
-
-											</div>
-											<div class="col-xl-4 col-lg-4 col-md-4 col-sm-4 col-12">
-
-												<!-- Field wrapper start -->
-												<div class="field-wrapper">
-													<div class="checkbox-container">
-														<div class="form-check form-check-inline">
-															<input class="form-check-input" type="checkbox" id="chcekEmail" value="option1">
-															<label class="form-check-label" for="chcekEmail">Email</label>
-														</div>
-														<div class="form-check form-check-inline">
-															<input class="form-check-input" type="checkbox" id="checkSms" value="option2">
-															<label class="form-check-label" for="checkSms">SMS</label>
-														</div>
-														<div class="form-check form-check-inline">
-															<input class="form-check-input" type="checkbox" id="checkPhone" value="option3">
-															<label class="form-check-label" for="checkPhone">Phone</label>
-														</div>
-														<div class="field-placeholder">Ckeckbox</div>
-													</div>
-												</div>
-												<!-- Field wrapper end -->
-
-											</div>
-											<div class="col-xl-4 col-lg-4 col-md-4 col-sm-4 col-12">
-
-												<!-- Field wrapper start -->
-												<div class="field-wrapper">
-													<div class="checkbox-container">
-														<div class="form-check form-check-inline">
-															<input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
-															<label class="form-check-label" for="inlineRadio1">Yes</label>
-														</div>
-														<div class="form-check form-check-inline">
-															<input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
-															<label class="form-check-label" for="inlineRadio2">No</label>
-														</div>
-														<div class="form-check form-check-inline">
-															<input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio3" value="option3" disabled>
-															<label class="form-check-label" for="inlineRadio3">N/A</label>
-														</div>
-														<div class="field-placeholder">Radio</div>
-													</div>
-												</div>
-												<!-- Field wrapper end -->
-
-											</div>
-
-											<div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
-												<div class="form-actions-footer">
-													<div class="text-end">
-														<button class="btn btn-light">Cancel</button>
-														<button class="btn btn-primary ms-1">Submit</button>
-													</div>
-												</div>
-											</div>
-										</div>
-										<!-- Row end -->
-
-									</div>
-								</div>
-								<!-- Card end -->
-
-							</div>
-						</div>
-						<!-- Row end -->
+<div class="row gutters">
+    <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
+        <div class="card">
+            <div class="card-body">
+                <div class="table-responsive">
+                    <table id="copy-print-csv" class="table v-middle">
+                        <thead>
+                            <tr>
+                                <th>User ID</th>
+                                <th>Application Date</th>
+                                <th>Loan Amount</th>
+                                <th>Application Status</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>FLM00435</td>
+                                <td>2020/09/21</td>
+                                <td>$46.00</td>
+                                <td>
+                                    <span class="badge bg-danger">Declined</span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>FLM00878</td>
+                                <td>2020/10/25</td>
+                                <td>$87.00</td>
+                                <td>
+                                    <span class="badge bg-info">Approved</span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>FLM00370</td>
+                                <td>2020/10/30</td>
+                                <td>$65.00</td>
+                                <td>
+                                    <span class="badge bg-success">Approved</span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>FLM00983</td>
+                                <td>2020/10/10</td>
+                                <td>$55.00</td>
+                                <td>
+                                    <span class="badge bg-info">Approved</span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>FLM00760</td>
+                                <td>2020/10/15</td>
+                                <td>$74.00</td>
+                                <td>
+                                    <span class="badge bg-info">Approved</span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>FLM00435</td>
+                                <td>2020/10/12</td>
+                                <td>$88.00</td>
+                                <td>
+                                    <span class="badge bg-danger">Declined</span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>FLM00878</td>
+                                <td>2020/10/11</td>
+                                <td>$87.00</td>
+                                <td>
+                                    <span class="badge bg-info">Approved</span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>FLM00435</td>
+                                <td>2020/09/21</td>
+                                <td>$46.00</td>
+                                <td>
+                                    <span class="badge bg-danger">Declined</span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>FLM00878</td>
+                                <td>2020/10/25</td>
+                                <td>$87.00</td>
+                                <td>
+                                    <span class="badge bg-info">Approved</span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>FLM00370</td>
+                                <td>2020/10/30</td>
+                                <td>$65.00</td>
+                                <td>
+                                    <span class="badge bg-success">Approved</span>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Row end -->
 
 					</div>
 					<!-- Content wrapper end -->
 
-					<!-- App Footer start -->
-					<div class="app-footer">© Jad Apps and Tech Solutions Limited</div>
+					<!-- App footer start -->
+					<div class="app-footer">© Uni Pro Admin 2021</div>
 					<!-- App footer end -->
 
 				</div>
@@ -1536,7 +1419,6 @@
 		<script src="js/bootstrap.bundle.min.js"></script>
 		<script src="js/modernizr.js"></script>
 		<script src="js/moment.js"></script>
-		<script src="js/moment.js"></script>
 
 		<!-- *************
 			************ Vendor Js Files *************
@@ -1554,23 +1436,25 @@
 		<script src="vendor/search-filter/search-filter.js"></script>
 		<script src="vendor/search-filter/custom-search-filter.js"></script>
 
-		<!-- Bootstrap Select JS -->
-		<script src="vendor/bs-select/bs-select.min.js"></script>
-		<script src="vendor/bs-select/bs-select-custom.js"></script>
+		<!-- Data Tables -->
+		<script src="vendor/datatables/dataTables.min.js"></script>
+		<script src="vendor/datatables/dataTables.bootstrap.min.js"></script>
+		
+		<!-- Custom Data tables -->
+		<script src="vendor/datatables/custom/custom-datatables.js"></script>
 
-		<!-- Input Mask JS -->
-		<script src="vendor/input-masks/cleave.min.js"></script>
-		<script src="vendor/input-masks/cleave-phone.js"></script>
-		<script src="vendor/input-masks/cleave-custom.js"></script>
-
-		<!-- Date Range JS -->
-		<script src="vendor/daterange/daterange.js"></script>
-		<script src="vendor/daterange/custom-daterange.js"></script>
+		<!-- Download / CSV / Copy / Print -->
+		<script src="vendor/datatables/buttons.min.js"></script>
+		<script src="vendor/datatables/jszip.min.js"></script>
+		<script src="vendor/datatables/pdfmake.min.js"></script>
+		<script src="vendor/datatables/vfs_fonts.js"></script>
+		<script src="vendor/datatables/html5.min.js"></script>
+		<script src="vendor/datatables/buttons.print.min.js"></script>		
 
 		<!-- Main Js Required -->
 		<script src="js/main.js"></script>
 
 	</body>
 
-<!-- Mirrored from www.bootstrapget.com/demos/themeforest/unipro-admin-template/demos/01-design-blue/forms-layout-four.php by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 04 Sep 2024 13:07:01 GMT -->
+<!-- Mirrored from www.bootstrapget.com/demos/themeforest/unipro-admin-template/demos/01-design-blue/orders.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 04 Sep 2024 13:06:18 GMT -->
 </html>

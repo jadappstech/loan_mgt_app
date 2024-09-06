@@ -1333,7 +1333,7 @@
 					<!-- Content wrapper end -->
 
 					<!-- App footer start -->
-					<div class="app-footer">© Uni Pro Admin 2021</div>
+					<div class="app-footer">© Jad Apps and Tech Solutions Limited</div>
 					<!-- App footer end -->
 
 				</div>
