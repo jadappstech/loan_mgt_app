@@ -11,7 +11,7 @@
     <link rel="shortcut icon" href="karolan.jpg" />
 
     <!-- Title -->
-    <title>UniPro Login</title>
+    <title>UniPro Sign In</title>
 
     <!-- Bootstrap css -->
     <link rel="stylesheet" href="css/bootstrap.min.css">
@@ -43,43 +43,44 @@
         .login-left {
             background: rgba(255, 255, 255, 0.9);
             padding: 50px;
-            width: 55%;
+            width: 60%;
             display: flex;
+            flex-direction: column;
             justify-content: center;
             align-items: center;
-            height: 90vh;
+            height: 100vh;
             box-sizing: border-box;
         }
 
         .login-wrapper {
             width: 100%;
-            max-width: 450px;
-            border: none;
+            max-width: 550px;
+            text-align: center;
+        }
+
+        .login-left img {
+            width: 100px;
+            margin-bottom: 30px;
         }
 
         .login-left h6 {
             color: #333;
             font-weight: bold;
             margin-bottom: 30px;
+            font-size: 24px;
         }
 
         .field-wrapper input {
             border: none;
             border-radius: 4px;
-            padding: 12px;
+            padding: 16px;
             width: 100%;
-            font-size: 16px;
-            margin-bottom: 20px;
+            font-size: 18px;
+            margin-bottom: 15px;
             background-color: #f1f1f1;
         }
 
-        .field-placeholder {
-            position: absolute;
-            top: -10px;
-            left: 15px;
-            background: #fff;
-            padding: 0 5px;
-            font-size: 12px;
+        .field-wrapper input::placeholder {
             color: #aaa;
         }
 
@@ -87,35 +88,38 @@
             background-color: #007bff;
             border-color: #007bff;
             width: 100%;
-            padding: 12px;
-            font-size: 16px;
+            padding: 16px;
+            font-size: 18px;
         }
 
         .actions a {
             color: #007bff;
-            font-size: 14px;
+            font-size: 16px;
             margin-top: 10px;
+            display: block;
         }
 
-        .login-footer {
-            text-align: center;
-            margin-top: 20px;
+        .remember-me {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            margin-bottom: 20px;
         }
 
-        .additional-link {
-            color: #333;
+        .remember-me input {
+            margin-right: 10px;
         }
 
-        .additional-link a {
-            color: #007bff;
-            font-weight: bold;
+        .remember-me label {
+            font-size: 14px;
+            margin-top: 5px;
         }
 
         .login-right {
-            background: url('karolan.jpg') no-repeat center center;
+            background: url('naira.jpg') no-repeat center center;
             background-size: cover;
-            width: 45%;
-            height: 90vh;
+            width: 40%;
+            height: 100vh;
             box-sizing: border-box;
         }
     </style>
@@ -133,26 +137,30 @@
     <!-- Login container start -->
     <div class="login-container">
         <div class="login-left">
+            <!-- Logo -->
+            <img src="logo.png" alt="Logo">
             <div class="login-wrapper">
                 <form action="https://www.bootstrapget.com/demos/themeforest/unipro-admin-template/demos/01-design-blue/crm.html">
                     <div class="login-screen">
                         <div class="login-body">
-                            <h6>Welcome back,<br>Please login to your account.</h6>
+                            <h6>Welcome back,<br>Please sign in to your account.</h6>
                             <div class="field-wrapper">
-                                <input type="email" autofocus>
-                                <div class="field-placeholder">Email ID</div>
+                                <input type="email" placeholder="Email ID" autofocus>
                             </div>
-                            <div class="field-wrapper mb-3">
-                                <input type="password">
-                                <div class="field-placeholder">Password</div>
+                            <div class="field-wrapper">
+                                <input type="password" placeholder="Password">
+                                <a href="forgot-password.html">Forgot password?</a>
+                            </div>
+                            <div class="remember-me">
+                                <input type="checkbox" id="rememberMe">
+                                <label for="rememberMe">Remember me</label>
                             </div>
                             <div class="actions">
                                 <a href="forgot-password.html">Forgot password?</a>
-                                <button type="submit" class="btn btn-primary">Login</button>
                             </div>
-                        </div>
-                        <div class="login-footer">
-                            <span class="additional-link">No Account? <a href="signup.html" class="btn btn-light">Sign Up</a></span>
+                            <div class="actions">
+                                <button type="submit" class="btn btn-primary">Sign In</button>
+                            </div>
                         </div>
                     </div>
                 </form>

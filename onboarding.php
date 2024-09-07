@@ -1,738 +1,60 @@
 <!doctype html>
 <html lang="en">
 	
-<!-- Mirrored from www.bootstrapget.com/demos/themeforest/unipro-admin-template/demos/01-design-blue/account-settings.php by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 04 Sep 2024 13:06:59 GMT -->
-<head>
-		<!-- Required meta tags -->
-		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
-		<!-- Meta -->
-		<meta name="description" content="Responsive Bootstrap4 Dashboard Template">
-		<meta name="author" content="ParkerThemes">
-		<link rel="shortcut icon" href="img/fav.png">
-
-		<!-- Title -->
-		<title>Uni Pro Admin Template - Admin Dashboard</title>
-
-
-		<!-- *************
-			************ Common Css Files *************
-		************ -->
-		<!-- Bootstrap css -->
-		<link rel="stylesheet" href="css/bootstrap.min.css">
-		
-		<!-- Icomoon Font Icons css -->
-		<link rel="stylesheet" href="fonts/style.css">
-
-		<!-- Main css -->
-		<link rel="stylesheet" href="css/main.css">
-
-
-		<!-- *************
-			************ Vendor Css Files *************
-		************ -->
-
-		<!-- Mega Menu -->
-		<link rel="stylesheet" href="vendor/megamenu/css/megamenu.css">
-
-		<!-- Search Filter JS -->
-		<link rel="stylesheet" href="vendor/search-filter/search-filter.css">
-		<link rel="stylesheet" href="vendor/search-filter/custom-search-filter.css">
-
-		<!-- Uploader CSS -->
-		<link rel="stylesheet" href="vendor/dropzone/dropzone.min.css" />
-
-        <!-- Bootstrap Select CSS -->
-        <link rel="stylesheet" href="vendor/bs-select/bs-select.css" />
-		
-	</head>
+<!-- Mirrored from www.bootstrapget.com/demos/themeforest/unipro-admin-template/demos/01-design-blue/ by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 04 Sep 2024 13:03:09 GMT -->
+    <?php include 'includes/layouts/head.php'; ?>
 	<body>
+	<style>
+        .content-wrapper-scroll {
+            padding: 20px;
+        }
+        .card-header {
+            background-color: #007bff;
+            color: white;
+            padding: 10px;
+        }
+        .field-wrapper {
+            margin-bottom: 15px;
+        }
+        .field-placeholder {
+            font-weight: bold;
+        }
+        .form-text {
+            font-size: 0.9rem;
+            color: gray;
+        }
+        .btn-primary {
+            background-color: #007bff;
+            border: none;
+        }
+    
+		.profile-picture {
+            width: 150px;
+            height: 150px;
+            border-radius: none;
+            object-fit: cover;
+            margin-bottom: 10px;
+            border: 2px solid #007bff;
+        }
+        .onboarding-heading {
+            text-align: center;
+            font-size: 2rem;
+            margin-bottom: 20px;
+            font-weight: bold;
+        }
+    </style>
+
+		<!-- Loading wrapper start -->
+		<div id="loading-wrapper">
+			<div class="spinner-border"></div>
+			Loading...
+		</div>
+		<!-- Loading wrapper end -->
 
 		<!-- Page wrapper start -->
 		<div class="page-wrapper">
 			
-			<!-- Sidebar wrapper start -->
-			<nav class="sidebar-wrapper">
-
-				<!-- Sidebar content start -->
-				<div class="sidebar-tabs">
-
-					<!-- Tabs nav start -->
-					<div class="nav" role="tablist" aria-orientation="vertical">
-						<a href="#" class="logo">
-							<img src="img/logo.svg" alt="Uni Pro Admin">
-						</a>
-						<a class="nav-link" id="home-tab" data-bs-toggle="tab" href="#tab-home" role="tab" aria-controls="tab-home" aria-selected="false">
-							<i class="icon-home2"></i>
-							<span class="nav-link-text">Dashboards</span>
-						</a>
-						<a class="nav-link" id="product-tab" data-bs-toggle="tab" href="#tab-product" role="tab" aria-controls="tab-product" aria-selected="false">
-							<i class="icon-layers2"></i>
-							<span class="nav-link-text">Product</span>
-						</a>
-						<a class="nav-link active" id="pages-tab" data-bs-toggle="tab" href="#tab-pages" role="tab" aria-controls="tab-pages" aria-selected="true">
-							<i class="icon-book-open"></i>
-							<span class="nav-link-text">Pages</span>
-						</a>
-						<a class="nav-link" id="forms-tab" data-bs-toggle="tab" href="#tab-forms" role="tab" aria-controls="tab-forms" aria-selected="false">
-							<i class="icon-edit1"></i>
-							<span class="nav-link-text">Forms</span>
-						</a>
-						<a class="nav-link" id="components-tab" data-bs-toggle="tab" href="#tab-components" role="tab" aria-controls="tab-components" aria-selected="false">
-							<i class="icon-box"></i>
-							<span class="nav-link-text">Components</span>
-						</a>
-						<a class="nav-link" id="graphs-tab" data-bs-toggle="tab" href="#tab-graphs" role="tab" aria-controls="tab-graphs" aria-selected="false">
-							<i class="icon-pie-chart1"></i>
-							<span class="nav-link-text">Graphs</span>
-						</a>
-						<a class="nav-link" id="authentication-tab" data-bs-toggle="tab" href="#tab-authentication" role="tab" aria-controls="tab-authentication" aria-selected="false">
-							<i class="icon-unlock"></i>
-							<span class="nav-link-text">Authentication</span>
-						</a>
-						<a class="nav-link settings" id="settings-tab" data-bs-toggle="tab" href="#tab-settings" role="tab" aria-controls="tab-authentication" aria-selected="false">
-							<i class="icon-settings1"></i>
-							<span class="nav-link-text">Settings</span>
-						</a>
-					</div>
-					<!-- Tabs nav end -->
-
-					<!-- Tabs content start -->
-					<div class="tab-content">
-								
-						<!-- Chat tab -->
-						<div class="tab-pane fade " id="tab-home" role="tabpanel" aria-labelledby="home-tab">
-
-							<!-- Tab content header start -->
-							<div class="tab-pane-header">
-								Dashboards
-							</div>
-							<!-- Tab content header end -->
-
-							<!-- Sidebar menu starts -->
-							<div class="sidebarMenuScroll">
-								<div class="sidebar-menu">
-									<ul>
-										<li>
-											<a href="index-2.php">Dashboard</a>
-										</li>
-										<li>
-											<a href="analytics.php">Analytics</a>
-										</li>
-										<li>
-											<a href="sales.php">Sales</a>
-										</li>
-										<li>
-											<a href="crm.php">CRM</a>
-										</li>
-										<li>
-											<a href="reports.php">Reports</a>
-										</li>
-										<li>
-											<a href="saas.php">Saas</a>
-										</li>
-										<li>
-											<a href="consulting.php">Consulting</a>
-										</li>
-										<li>
-											<a href="profile.php">Profile</a>
-										</li>
-									</ul>
-									<ul>
-										<li class="list-heading">Layouts</li>
-										<li>
-											<a href="starter-page.php">Starter Page</a>
-										</li>
-										<li>
-											<a href="layout-tabs-tooltip.php">Tabs Hover Tooltip</a>
-										</li>
-										<li>
-											<a href="layout-tile-menu.php">Tile Menu</a>
-										</li>
-										<li>
-											<a href="layout-collapse-menu.php">Collapse Sidebar</a>
-										</li>
-										<li>
-											<a href="layout-compact-menu.php">Compact Sidebar</a>
-										</li>
-										<li>
-											<a href="layout-slim-menu.php">Slim Sidebar</a>
-										</li>
-										<li>
-											<a href="layout-hover-tabs.php">Hover Tabs</a>
-										</li>
-										<li>
-											<a href="layout-daterange.php">Date Range</a>
-										</li>
-										<li>
-											<a href="layout-full-screen.php">Full Screen</a>
-										</li>
-										<li>
-											<a href="layout-full-view.php">Full View</a>
-										</li>
-										<li>
-											<a href="layout-search.php">Global Search</a>
-										</li>
-										<li>
-											<a href="layout-megamenu.php">Megamenu</a>
-										</li>
-										<li>
-											<a href="layout-bradcrumb.php">Breadcrumbs</a>
-										</li>
-										<li>
-											<a href="layout-scroll-cards.php">Scroll Cards</a>
-										</li>
-									</ul>
-								</div>
-							</div>
-							<!-- Sidebar menu ends -->
-
-							<!-- Sidebar actions starts -->
-							<div class="sidebar-actions">
-								<a href="orders.php" class="red">
-									<div class="bg-avatar">12</div>
-									<h5>New Orders</h5>
-								</a>
-								<a href="invoices-list.php" class="blue">
-									<div class="bg-avatar">24</div>
-									<h5>Bills Pending</h5>
-								</a>
-							</div>
-							<!-- Sidebar actions ends -->
-
-						</div>
-
-						<!-- Pages tab -->
-						<div class="tab-pane fade" id="tab-product" role="tabpanel" aria-labelledby="product-tab">
-							
-							<!-- Tab content header start -->
-							<div class="tab-pane-header">
-								Product
-							</div>
-							<!-- Tab content header end -->
-
-							<!-- Sidebar menu starts -->
-							<div class="sidebarMenuScroll">
-								<div class="sidebar-menu">
-									<ul>
-										<li>
-											<a href="products.php">Products Grid</a>
-										</li>
-										<li>
-											<a href="products-list.php">Products List</a>
-										</li>
-										<li>
-											<a href="add-product.php">Add Product</a>
-										</li>
-										<li>
-											<a href="orders.php">Orders</a>
-										</li>
-										<li>
-											<a href="customers-list.php">Customers</a>
-										</li>
-										<li>
-											<a href="products-reviews.php">Reviews</a>
-										</li>
-									</ul>
-									<ul>
-										<li class="list-heading">Calendars</li>
-										<li>
-											<a href="calendar-daygrid-view.php">Daygrid View</a>
-										</li>
-										<li>
-											<a href="calendar-list-view.php">List View</a>
-										</li>
-										<li>
-											<a href="calendar-external-dragging.php">Draggable</a>
-										</li>
-										<li>
-											<a href="calendar-google-view.php">Google View</a>
-										</li>
-										<li>
-											<a href="calendar-selectable.php">Selectable</a>
-										</li>
-									</ul>
-								</div>
-							</div>
-							<!-- Sidebar menu ends -->
-
-							<!-- Sidebar actions starts -->
-							<div class="sidebar-actions">
-								<div class="support-tile">
-									<i class="icon-headphones"></i> 24/7 Support
-								</div>
-							</div>
-							<!-- Sidebar actions ends -->
-							
-						</div>
-
-						<!-- Pages tab -->
-						<div class="tab-pane fade show active" id="tab-pages" role="tabpanel" aria-labelledby="pages-tab">
-							
-							<!-- Tab content header start -->
-							<div class="tab-pane-header">
-								Pages
-							</div>
-							<!-- Tab content header end -->
-
-							<!-- Sidebar menu starts -->
-							<div class="sidebarMenuScroll">
-								<div class="sidebar-menu">
-									<ul>
-										<li>
-											<a href="chat.php">Chat</a>
-										</li>
-										<li>
-											<a href="tasks.php">Tasks</a>
-										</li>
-										<li>
-											<a href="create-invoice.php">Create Invoice</a>
-										</li>
-										<li>
-											<a href="view-invoice.php">View Invoice</a>
-										</li>
-										<li>
-											<a href="documents.php">Documents</a>
-										</li>
-										<li>
-											<a href="faq.php">Faq's</a>
-										</li>
-										<li>
-											<a href="contacts.php">Contacts</a>
-										</li>
-										<li>
-											<a href="pricing.php">Pricing</a>
-                                        </li>
-                                        <li>
-											<a href="gallery-tiles.php">Gallery Tiles</a>
-                                        </li>
-                                        <li>
-											<a href="gallery.php">Gallery</a>
-										</li>
-										<li>
-											<a href="icons.php">Icons</a>
-										</li>
-										<li>
-											<a href="timeline.php">Timeline</a>
-										</li>
-										<li>
-											<a href="search-results.php">Search Results</a>
-										</li>
-										<li>
-											<a href="account-settings.php" class="current-page">Account Settings</a>
-                                        </li>
-                                        <li>
-											<a href="user-profile.php">User Profile</a>
-										</li>
-									</ul>
-								</div>
-							</div>
-							<!-- Sidebar menu ends -->
-
-							<!-- Sidebar actions starts -->
-							<div class="sidebar-actions">
-								<div class="support-tile green">
-									<i class="icon-pie-chart1"></i> 5GB Free Space
-								</div>
-							</div>
-							<!-- Sidebar actions ends -->
-
-						</div>
-
-						<!-- Forms tab -->
-						<div class="tab-pane fade" id="tab-forms" role="tabpanel" aria-labelledby="forms-tab">
-
-							<!-- Tab content header start -->
-							<div class="tab-pane-header">
-								Forms
-							</div>
-							<!-- Tab content header end -->
-
-							<!-- Sidebar menu starts -->
-							<div class="sidebarMenuScroll">
-								<div class="sidebar-menu">
-									<ul>
-										<li class="list-heading">Form Layouts</li>
-										<li>
-											<a href="forms-layout-one.php">Default Layout</a>
-										</li>
-										<li>
-											<a href="forms-layout-two.php">Layout Sections</a>
-										</li>
-										<li>
-											<a href="forms-layout-three.php">Simple Form Layout</a>
-										</li>
-										<li>
-											<a href="forms-layout-four.php">Select 2 Tags and Mask</a>
-										</li>
-										<li>
-											<a href="forms-layout-five.php">Horizontal Form Layout</a>
-										</li>
-										<li>
-											<a href="forms-layout-six.php">Layout Six with Tabs</a>
-										</li>
-									</ul>									
-									<ul>
-										<li class="list-heading">Form Fields</li>
-										<li>
-											<a href="forms-inputs.php">Form Inputs</a>
-										</li>
-										<li>
-											<a href="forms-input-groups.php">Input Groups</a>
-										</li>
-										<li>
-											<a href="forms-checkbox-radio.php">Checkbox &amp; Radios</a>
-										</li>
-										<li>
-											<a href="forms-validation.php">Form Validation</a>
-										</li>
-									</ul>									
-									<ul>
-										<li class="list-heading">Plugins</li>
-										<li>
-											<a href="forms-dropzone.php">Dropzone</a>
-										</li>
-										<li>
-											<a href="forms-bs-select.php">Select 2 Dropdowns</a>
-										</li>
-										<li>
-											<a href="forms-date-time-picker.php">Date Time Picker</a>
-										</li>
-										<li>
-											<a href="forms-input-mask.php">Input Mask</a>
-										</li>
-										<li>
-											<a href="forms-input-range.php">Input Range</a>
-										</li>
-										<li>
-											<a href="forms-editor.php">WYSIWYG Editor</a>
-										</li>
-									</ul>
-								</div>
-							</div>
-							<!-- Sidebar menu ends -->
-
-							<!-- Sidebar actions starts -->
-							<div class="sidebar-actions">
-								<div class="support-tile red">
-									<i class="icon-mail"></i> Inbox Full
-								</div>
-							</div>
-							<!-- Sidebar actions ends -->
-
-						</div>
-						
-						<!-- Components tab -->
-						<div class="tab-pane fade" id="tab-components" role="tabpanel" aria-labelledby="components-tab">
-							
-							<!-- Tab content header start -->
-							<div class="tab-pane-header">
-								Components
-							</div>
-							<!-- Tab content header end -->
-
-							<!-- Sidebar menu starts -->
-							<div class="sidebarMenuScroll">
-								<div class="sidebar-menu">
-									<ul>
-                                        <li>
-                                            <a href="accordions.php">Accordions</a>
-                                        </li>
-                                        <li>
-                                            <a href="alerts.php">Alerts</a>
-                                        </li>
-                                        <li>
-                                            <a href="buttons.php">Buttons</a>
-                                        </li>
-                                        <li>
-                                            <a href="badges.php">Badges</a>
-                                        </li>
-                                        <li>
-                                            <a href="cards.php">Cards</a>
-                                        </li>
-                                        <li>
-                                            <a href="carousel.php">Carousel</a>
-                                        </li>
-                                        <li>
-                                            <a href="list-group.php">List group</a>
-                                        </li>
-                                        <li>
-                                            <a href="modals.php">Modal</a>
-                                        </li>
-                                        <li>
-                                            <a href="paginations.php">Paginations</a>
-                                        </li>
-                                        <li>
-                                            <a href="popovers.php">Popovers</a>
-                                        </li>
-                                        <li>
-                                            <a href="progress.php">Progress</a>
-                                        </li>
-                                        <li>
-                                            <a href="spinners.php">Spinners</a>
-                                        </li>
-                                        <li>
-                                            <a href="tabs.php">Tabs</a>
-                                        </li>
-                                        <li>
-                                            <a href="toasts.php">Toasts</a>
-                                        </li>
-                                        <li>
-                                            <a href="tooltips.php">Tooltips</a>
-                                        </li>
-									</ul>
-								</div>
-							</div>
-							<!-- Sidebar menu ends -->
-
-                            <!-- Sidebar actions starts -->
-							<div class="sidebar-actions">
-								<div class="support-tile yellow">
-									<i class="icon-arrow-down-circle"></i><a href="#">Download Reports</a>						</div>
-							</div>
-							<!-- Sidebar actions ends -->
-
-						</div>
-
-						<!-- Graphs tab -->
-						<div class="tab-pane fade" id="tab-graphs" role="tabpanel" aria-labelledby="graphs-tab">
-							
-							<!-- Tab content header start -->
-							<div class="tab-pane-header">
-								Graphs &amp; Tables
-							</div>
-							<!-- Tab content header end -->
-							
-							<!-- Sidebar menu starts -->
-							<div class="sidebarMenuScroll">
-								<div class="sidebar-menu">
-                                    <ul>
-										<li class="list-heading">Graphs</li>
-                                        <li>
-                                            <a href="apex-graphs.php">Apex Graphs</a>
-                                        </li>
-                                        <li>
-                                            <a href="morris-graphs.php">Morris Graphs</a>
-                                        </li>
-                                        <li>
-                                            <a href="vector-maps.php">Vector Maps</a>
-                                        </li>
-                                    </ul>
-                                    
-                                    <ul>
-										<li class="list-heading">Tables</li>
-                                        <li>
-                                            <a href="bootstrap-tables.php">Bootstrap Tables</a>
-                                        </li>
-                                        <li>
-                                            <a href="custom-tables.php">Custom Tables</a>
-                                        </li>
-                                        <li>
-                                            <a href="data-tables.php">Data Tables</a>
-                                        </li>
-									</ul>
-								</div>
-							</div>
-							<!-- Sidebar menu ends -->
-
-							<!-- Sidebar actions starts -->
-							<div class="sidebar-actions">
-								<div class="support-tile pink">
-									<i class="icon-align-right1"></i> RTL Support
-								</div>
-							</div>
-							<!-- Sidebar actions ends -->
-
-						</div>
-
-						<!-- Authentication tab -->
-						<div class="tab-pane fade" id="tab-authentication" role="tabpanel" aria-labelledby="authentication-tab">
-							
-							<!-- Tab content header start -->
-							<div class="tab-pane-header">
-								Authentication
-							</div>
-							<!-- Tab content header end -->
-
-							<!-- Sidebar menu starts -->
-							<div class="sidebarMenuScroll">
-								<div class="sidebar-menu">
-									<ul>
-										<li>
-											<a href="login.php">Login</a>
-										</li>
-										<li>
-											<a href="signup.php">Signup</a>
-										</li>
-										<li>
-											<a href="forgot-password.php">Forgot Password</a>
-										</li>
-										<li>
-											<a href="reset-password.php">Reset Password</a>
-										</li>
-										<li>
-											<a href="lock-screen.php">Lock Screen</a>
-										</li>
-										<li>
-											<a href="subscribe.php">Subscribe</a>
-										</li>										
-										<li>
-											<a href="maintenance.php">Maintenance</a>
-										</li>
-										<li>
-											<a href="error.php">404</a>
-										</li>
-										<li>
-											<a href="error-option2.php">Error</a>
-										</li>
-									</ul>
-								</div>
-							</div>
-							<!-- Sidebar menu ends -->
-
-							<!-- Sidebar actions starts -->
-							<div class="sidebar-actions">
-								<div class="support-tile blue">
-									<a href="pricing.php" class="btn btn-light m-auto">Upgrade Account</a>
-								</div>
-							</div>
-							<!-- Sidebar actions ends -->
-
-						</div>
-						
-						<!-- Settings tab -->
-						<div class="tab-pane fade" id="tab-settings" role="tabpanel" aria-labelledby="settings-tab">
-							
-							<!-- Tab content header start -->
-							<div class="tab-pane-header">
-								Settings
-							</div>
-							<!-- Tab content header end -->
-
-							<!-- Settings start -->
-							<div class="sidebarMenuScroll">
-								<div class="sidebar-settings">
-									<div class="accordion" id="settingsAccordion">
-										<div class="accordion-item">
-											<h2 class="accordion-header" id="genInfo">
-												<button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#genCollapse" aria-expanded="true" aria-controls="genCollapse">
-													General Info
-												</button>
-											</h2>
-											<div id="genCollapse" class="accordion-collapse collapse show" aria-labelledby="genInfo" data-bs-parent="#settingsAccordion">
-												<div class="accordion-body">
-													<div class="field-wrapper">
-														<input type="text" value="Jeivxezer Lopexz" />
-														<div class="field-placeholder">Full Name</div>
-													</div>
-
-													<div class="field-wrapper">
-														<input type="email" value="jeivxezer-lopexz@email.com" />
-														<div class="field-placeholder">Email</div>
-													</div>
-
-													<div class="field-wrapper">
-														<input type="text" value="0 0000 00000" />
-														<div class="field-placeholder">Contact</div>
-													</div>
-													<div class="field-wrapper m-0">
-														<button class="btn btn-primary stripes-btn">Save</button>
-													</div>
-												</div>
-											</div>
-										</div>
-										<div class="accordion-item">
-											<h2 class="accordion-header" id="chngPwd">
-												<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#chngPwdCollapse" aria-expanded="false" aria-controls="chngPwdCollapse">
-													Change Password
-												</button>
-											</h2>
-											<div id="chngPwdCollapse" class="accordion-collapse collapse" aria-labelledby="chngPwd" data-bs-parent="#settingsAccordion">
-												<div class="accordion-body">
-													<div class="field-wrapper">
-														<input type="text" value="">
-														<div class="field-placeholder">Current Password</div>
-													</div>
-													<div class="field-wrapper">
-														<input type="password" value="">
-														<div class="field-placeholder">New Password</div>
-													</div>
-													<div class="field-wrapper">
-														<input type="password" value="">
-														<div class="field-placeholder">Confirm Password</div>
-													</div>
-													<div class="field-wrapper m-0">
-														<button class="btn btn-primary stripes-btn">Save</button>
-													</div>
-
-												</div>
-											</div>
-										</div>
-										<div class="accordion-item">
-											<h2 class="accordion-header" id="sidebarNotifications">
-												<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#notiCollapse" aria-expanded="false" aria-controls="notiCollapse">
-													Notifications
-												</button>
-											</h2>
-											<div id="notiCollapse" class="accordion-collapse collapse" aria-labelledby="sidebarNotifications" data-bs-parent="#settingsAccordion">
-												<div class="accordion-body">
-													<div class="list-group m-0">
-														<div class="noti-container">
-															<div class="noti-block">
-																<div>Alerts</div>
-																<div class="form-switch">
-																	<input class="form-check-input" type="checkbox" id="showAlertss" checked>
-																	<label class="form-check-label" for="showAlertss"></label>
-																</div>
-															</div>
-															<div class="noti-block">
-																<div>Enable Sound</div>
-																<div class="form-switch">
-																	<input class="form-check-input" type="checkbox" id="soundEnable">
-																	<label class="form-check-label" for="soundEnable"></label>
-																</div>
-															</div>
-															<div class="noti-block">
-																<div>Allow Chat</div>
-																<div class="form-switch">
-																	<input class="form-check-input" type="checkbox" id="allowChat">
-																	<label class="form-check-label" for="allowChat"></label>
-																</div>
-															</div>
-															<div class="noti-block">
-																<div>Desktop Messages</div>
-																<div class="form-switch">
-																	<input class="form-check-input" type="checkbox" id="desktopMessages">
-																	<label class="form-check-label" for="desktopMessages"></label>
-																</div>
-															</div>
-														</div>
-													</div>
-												</div>
-											</div>
-										</div>
-									</div>
-								</div>
-							</div>
-							<!-- Settings end -->
-
-							<!-- Sidebar actions starts -->
-							<div class="sidebar-actions">
-								<div class="support-tile blue">
-									<a href="account-settings.php" class="btn btn-light m-auto">Advance Settings</a>
-								</div>
-							</div>
-							<!-- Sidebar actions ends -->
-						</div>
-
-					</div>
-					<!-- Tabs content end -->
-
-				</div>
-				<!-- Sidebar content end -->
-				
-			</nav>
+            <?php include 'includes/layouts/menu.php'; ?>
 			<!-- Sidebar wrapper end -->
 
 			<!-- *************
@@ -770,25 +92,25 @@
 														<a href="#">Dashboards</a>
 														<ul class="is-hidden">
 															<li>
-																<a href="reports.php">Reports</a>
+																<a href="reports.html">Reports</a>
 															</li>
 															<li>
-																<a href="saas.php">Saas</a>
+																<a href="saas.html">Saas</a>
 															</li>
 															<li>
-																<a href="sales.php">Sales</a>
+																<a href="sales.html">Sales</a>
 															</li>
 															<li>
-																<a href="index-2.php">Admin</a>
+																<a href="index-2.html">Admin</a>
 															</li>
 															<li>
-																<a href="analytics.php">Analytics</a>
+																<a href="analytics.html">Analytics</a>
+															</li>															
+															<li>
+																<a href="crm.html">CRM</a>
 															</li>
 															<li>
-																<a href="crm.php">CRM</a>
-															</li>
-															<li>
-																<a href="consulting.php">Consulting</a>
+																<a href="consulting.html">Consulting</a>
 															</li>
 														</ul>
 													</li>
@@ -815,6 +137,25 @@
 															</li>
 														</ul>
 													</li>
+																<a href="starter-page.html">Starter Page</a>
+															</li>
+															<li>
+																<a href="layout-full-screen.html">Full Screen</a>
+															</li>
+															<li>
+																<a href="layout-search.html">Global Search</a>
+															</li>
+															<li>
+																<a href="layout-megamenu.html">Megamenu</a>
+															</li>
+															<li>
+																<a href="layout-bradcrumb.html">Breadcrumbs</a>
+															</li>
+															<li>
+																<a href="layout-scroll-cards.html">Scroll Cards</a>
+															</li>
+														</ul>
+													</li>												
 												</ul>
 											</li>
 
@@ -826,23 +167,23 @@
 														<a href="#">Product</a>
 														<ul class="is-hidden">
 															<li>
-																<a href="products.php">Products Grid</a>
+																<a href="products.html">Products Grid</a>
 															</li>
 															<li>
-																<a href="products-list.php">Products List</a>
+																<a href="products-list.html">Products List</a>
 															</li>
 															<li>
-																<a href="add-product.php">Add Product</a>
+																<a href="add-product.html">Add Product</a>
 															</li>
 															<li>
-																<a href="orders.php">Orders</a>
+																<a href="orders.html">Orders</a>
 															</li>
 															<li>
-																<a href="customers-list.php">Customers</a>
+																<a href="customers-list.html">Customers</a>
 															</li>
 															<li>
-																<a href="products-reviews.php">Reviews</a>
-															</li>
+																<a href="products-reviews.html">Reviews</a>
+															</li>														
 														</ul>
 													</li>
 
@@ -850,22 +191,22 @@
 														<a href="#">Calendars</a>
 														<ul class="is-hidden">
 															<li>
-																<a href="calendar-daygrid-view.php">Daygrid View</a>
+																<a href="calendar-daygrid-view.html">Daygrid View</a>
 															</li>
 															<li>
-																<a href="calendar-list-view.php">List View</a>
+																<a href="calendar-list-view.html">List View</a>
 															</li>
 															<li>
-																<a href="calendar-external-dragging.php">Draggable</a>
+																<a href="calendar-external-dragging.html">Draggable</a>
 															</li>
 															<li>
-																<a href="calendar-google-view.php">Google View</a>
+																<a href="calendar-google-view.html">Google View</a>
 															</li>
 															<li>
-																<a href="calendar-selectable.php">Selectable</a>
-															</li>
+																<a href="calendar-selectable.html">Selectable</a>
+															</li>													
 														</ul>
-													</li>
+													</li>												
 												</ul>
 											</li>
 
@@ -878,23 +219,23 @@
 														<a href="#">Form Layouts</a>
 														<ul class="is-hidden">
 															<li>
-																<a href="forms-layout-one.php">Default Layout</a>
+																<a href="forms-layout-one.html">Default Layout</a>
 															</li>
 															<li>
-																<a href="forms-layout-two.php">Layout Sections</a>
+																<a href="forms-layout-two.html">Layout Sections</a>
 															</li>
 															<li>
-																<a href="forms-layout-three.php">Simple Form Layout</a>
+																<a href="forms-layout-three.html">Simple Form Layout</a>
 															</li>
 															<li>
-																<a href="forms-layout-four.php">Select 2 Tags and Mask</a>
+																<a href="forms-layout-four.html">Select 2 Tags and Mask</a>
 															</li>
 															<li>
-																<a href="forms-layout-five.php">Horizontal Form Layout</a>
+																<a href="forms-layout-five.html">Horizontal Form Layout</a>
 															</li>
 															<li>
-																<a href="forms-layout-six.php">Layout Six with Tabs</a>
-															</li>
+																<a href="forms-layout-six.html">Layout Six with Tabs</a>
+															</li>													
 														</ul>
 													</li>
 
@@ -902,37 +243,37 @@
 														<a href="#">Forms</a>
 														<ul class="is-hidden">
 															<li>
-																<a href="forms-inputs.php">Form Inputs</a>
+																<a href="forms-inputs.html">Form Inputs</a>
 															</li>
 															<li>
-																<a href="forms-input-groups.php">Input Groups</a>
+																<a href="forms-input-groups.html">Input Groups</a>
 															</li>
 															<li>
-																<a href="forms-checkbox-radio.php">Checkbox &amp; Radios</a>
+																<a href="forms-checkbox-radio.html">Checkbox &amp; Radios</a>
 															</li>
 															<li>
-																<a href="forms-validation.php">Form Validation</a>
+																<a href="forms-validation.html">Form Validation</a>
 															</li>
 															<li>
-																<a href="forms-dropzone.php">Dropzone</a>
+																<a href="forms-dropzone.html">Dropzone</a>
 															</li>
 															<li>
-																<a href="forms-bs-select.php">Select 2 Dropdowns</a>
+																<a href="forms-bs-select.html">Select 2 Dropdowns</a>
 															</li>
 															<li>
-																<a href="forms-date-time-picker.php">Date Time Picker</a>
+																<a href="forms-date-time-picker.html">Date Time Picker</a>
 															</li>
 															<li>
-																<a href="forms-input-mask.php">Input Mask</a>
+																<a href="forms-input-mask.html">Input Mask</a>
 															</li>
 															<li>
-																<a href="forms-input-range.php">Input Range</a>
+																<a href="forms-input-range.html">Input Range</a>
 															</li>
 															<li>
-																<a href="forms-editor.php">WYSIWYG Editor</a>
-															</li>
+																<a href="forms-editor.html">WYSIWYG Editor</a>
+															</li>													
 														</ul>
-													</li>
+													</li>												
 												</ul>
 											</li>
 
@@ -945,49 +286,49 @@
 														<a href="#">Pages</a>
 														<ul class="is-hidden">
 															<li>
-																<a href="chat.php">Chat</a>
+																<a href="chat.html">Chat</a>
 															</li>
 															<li>
-																<a href="tasks.php">Tasks</a>
+																<a href="tasks.html">Tasks</a>
 															</li>
 															<li>
-																<a href="create-invoice.php">Create Invoice</a>
+																<a href="create-invoice.html">Create Invoice</a>
 															</li>
 															<li>
-																<a href="view-invoice.php">View Invoice</a>
+																<a href="view-invoice.html">View Invoice</a>
 															</li>
 															<li>
-																<a href="documents.php">Documents</a>
+																<a href="documents.html">Documents</a>
 															</li>
 															<li>
-																<a href="faq.php">Faq's</a>
+																<a href="faq.html">Faq's</a>
 															</li>
 															<li>
-																<a href="contacts.php">Contacts</a>
+																<a href="contacts.html">Contacts</a>
 															</li>
 															<li>
-																<a href="pricing.php">Pricing</a>
+																<a href="pricing.html">Pricing</a>
 															</li>
 															<li>
-																<a href="gallery-tiles.php">Gallery Tiles</a>
+																<a href="gallery-tiles.html">Gallery Tiles</a>
 															</li>
 															<li>
-																<a href="gallery.php">Gallery</a>
+																<a href="gallery.html">Gallery</a>
 															</li>
 															<li>
-																<a href="icons.php">Icons</a>
+																<a href="icons.html">Icons</a>
 															</li>
 															<li>
-																<a href="timeline.php">Timeline</a>
+																<a href="timeline.html">Timeline</a>
 															</li>
 															<li>
-																<a href="search-results.php">Search Results</a>
+																<a href="search-results.html">Search Results</a>
 															</li>
 															<li>
-																<a href="account-settings.php">Account Settings</a>
+																<a href="account-settings.html">Account Settings</a>
 															</li>
 															<li>
-																<a href="user-profile.php">User Profile</a>
+																<a href="user-profile.html">User Profile</a>
 															</li>
 														</ul>
 													</li>
@@ -996,52 +337,52 @@
 														<a href="#">Components</a>
 														<ul class="is-hidden">
 															<li>
-																<a href="accordions.php">Accordions</a>
+																<a href="accordions.html">Accordions</a>
 															</li>
 															<li>
-																<a href="alerts.php">Alerts</a>
+																<a href="alerts.html">Alerts</a>
 															</li>
 															<li>
-																<a href="buttons.php">Buttons</a>
+																<a href="buttons.html">Buttons</a>
 															</li>
 															<li>
-																<a href="badges.php">Badges</a>
+																<a href="badges.html">Badges</a>
 															</li>
 															<li>
-																<a href="cards.php">Cards</a>
+																<a href="cards.html">Cards</a>
 															</li>
 															<li>
-																<a href="carousel.php">Carousel</a>
+																<a href="carousel.html">Carousel</a>
 															</li>
 															<li>
-																<a href="list-group.php">List group</a>
+																<a href="list-group.html">List group</a>
 															</li>
 															<li>
-																<a href="modals.php">Modal</a>
+																<a href="modals.html">Modal</a>
 															</li>
 															<li>
-																<a href="paginations.php">Paginations</a>
+																<a href="paginations.html">Paginations</a>
 															</li>
 															<li>
-																<a href="popovers.php">Popovers</a>
+																<a href="popovers.html">Popovers</a>
 															</li>
 															<li>
-																<a href="progress.php">Progress</a>
+																<a href="progress.html">Progress</a>
 															</li>
 															<li>
-																<a href="spinners.php">Spinners</a>
+																<a href="spinners.html">Spinners</a>
 															</li>
 															<li>
-																<a href="tabs.php">Tabs</a>
+																<a href="tabs.html">Tabs</a>
 															</li>
 															<li>
-																<a href="toasts.php">Toasts</a>
+																<a href="toasts.html">Toasts</a>
 															</li>
 															<li>
-																<a href="tooltips.php">Tooltips</a>
-															</li>
+																<a href="tooltips.html">Tooltips</a>
+															</li>												
 														</ul>
-													</li>
+													</li>												
 												</ul>
 											</li>
 
@@ -1054,14 +395,14 @@
 														<a href="#">Graphs</a>
 														<ul class="is-hidden">
 															<li>
-																<a href="apex-graphs.php">Apex Graphs</a>
+																<a href="apex-graphs.html">Apex Graphs</a>
 															</li>
 															<li>
-																<a href="morris-graphs.php">Morris Graphs</a>
+																<a href="morris-graphs.html">Morris Graphs</a>
 															</li>
 															<li>
-																<a href="vector-maps.php">Vector Maps</a>
-															</li>
+																<a href="vector-maps.html">Vector Maps</a>
+															</li>													
 														</ul>
 													</li>
 
@@ -1069,27 +410,27 @@
 														<a href="#">Tables</a>
 														<ul class="is-hidden">
 															<li>
-																<a href="bootstrap-tables.php">Bootstrap Tables</a>
+																<a href="bootstrap-tables.html">Bootstrap Tables</a>
 															</li>
 															<li>
-																<a href="custom-tables.php">Custom Tables</a>
+																<a href="custom-tables.html">Custom Tables</a>
 															</li>
 															<li>
-																<a href="data-tables.php">Data Tables</a>
-															</li>
+																<a href="data-tables.html">Data Tables</a>
+															</li>												
 														</ul>
-													</li>
+													</li>												
 												</ul>
 											</li>
 											
 											<li>
-												<a href="account-settings.php">Account Settings</a>
+												<a href="account-settings.html">Account Settings</a>
 											</li>
 											<li>
-												<a href="login.php">Logout</a>
+												<a href="login.html">Logout</a>
 											</li>
 											<li>
-												<a href="error-option2.php">Error</a>
+												<a href="error-option2.html">Error</a>
 											</li>
 										</ul>
 										
@@ -1260,9 +601,9 @@
 									</a>
 									<div class="dropdown-menu dropdown-menu-end md" aria-labelledby="userSettings">
 										<div class="header-profile-actions">
-											<a href="user-profile.php"><i class="icon-user1"></i>Profile</a>
-											<a href="account-settings.php"><i class="icon-settings1"></i>Settings</a>
-											<a href="forgot-password.php"><i class="icon-log-out1"></i>Logout</a>
+											<a href="user-profile.html"><i class="icon-user1"></i>Profile</a>
+											<a href="account-settings.html"><i class="icon-settings1"></i>Settings</a>
+											<a href="forgot-password.html"><i class="icon-log-out1"></i>Logout</a>
 										</div>
 									</div>
 								</li>
@@ -1282,215 +623,219 @@
 					<!-- Content wrapper start -->
 					<div class="content-wrapper">
 
-						<!-- Row start -->
-						<div class="row gutters">
-							<div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
+						<!-- Onboarding Page Heading -->
+<h1 class="onboarding-heading">Employee Onboarding Page</h1>
 
-								<!-- Card start -->
-								<div class="card">
-									<div class="card-header-lg">
-										<h4>Account Settings</h4>
-									</div>
-									<div class="card-body">
+<!-- Content wrapper scroll start -->
+<div class="content-wrapper-scroll">
 
-                                        <div class="row gutters">
-                                            <div class="col-xl-8 col-lg-8 col-md-12 col-sm-12 col-12">
-                                                <div class="row gutters">
-                                                    <div class="col-xl-4 col-lg-4 col-md-4 col-sm-4 col-12">
-                                                        <img src="img/user1.png" class="img-fluid change-img-avatar" alt="Image">
-                                                    </div>
-                                                    <div class="col-xl-8 col-lg-8 col-md-8 col-sm-8 col-12">
-                                                        <div id="dropzone-sm" class="mb-4">
-                                                            <form action="https://www.bootstrapget.com/upload" class="dropzone needsclick dz-clickable" id="demo-upload">
+    <!-- Content wrapper start -->
+    <div class="content-wrapper">
 
-                                                                <div class="dz-message needsclick">
-                                                                    <button type="button" class="dz-button">Change Image.</button>
-                                                                </div>
+        <!-- Row start -->
+        <div class="row gutters">
+            <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
 
-                                                            </form>
-                                                        </div>
-                                                    </div>
-                                                    <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
-                                                        <!-- Field wrapper start -->
-                                                        <div class="field-wrapper">
-                                                            <input type="text" class="form-control" placeholder="Abigail">
-                                                            <div class="field-placeholder">First  Name</div>
-                                                        </div>
-                                                        <!-- Field wrapper end -->
-                                                    </div>
-                                                    <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
-                                                        <!-- Field wrapper start -->
-                                                        <div class="field-wrapper">
-                                                            <input type="text" class="form-control" placeholder="Winter">
-                                                            <div class="field-placeholder">Last  Name</div>
-                                                        </div>
-                                                        <!-- Field wrapper end -->
-                                                    </div>
-                                                    <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
-                                                        <!-- Field wrapper start -->
-                                                        <div class="field-wrapper">
-                                                            <input type="text" class="form-control" placeholder="abigail.winter786@wmail.com">
-                                                            <div class="field-placeholder">Email</div>
-                                                        </div>
-                                                        <!-- Field wrapper end -->
-                                                    </div>
-                                                    <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
-                                                        <!-- Field wrapper start -->
-                                                        <div class="field-wrapper">
-                                                            <input type="text" class="form-control" placeholder="123-456-7890">
-                                                            <div class="field-placeholder">Phone</div>
-                                                        </div>
-                                                        <!-- Field wrapper end -->
-                                                    </div>
-                                                    <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
-                                                        <!-- Field wrapper start -->
-                                                        <div class="field-wrapper">
-                                                            <input type="text" class="form-control" placeholder="1980 Walnut Street">
-                                                            <div class="field-placeholder">Address</div>
-                                                        </div>
-                                                        <!-- Field wrapper end -->
-                                                    </div>
-                                                    <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
-                                                        <!-- Field wrapper start -->
-                                                        <div class="field-wrapper">
-                                                            <input type="text" class="form-control" placeholder="Mcallen">
-                                                            <div class="field-placeholder">City</div>
-                                                        </div>
-                                                        <!-- Field wrapper end -->
-                                                    </div>
-                                                    <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
-                                                        <!-- Field wrapper start -->
-                                                        <div class="field-wrapper">
-                                                            <input type="text" class="form-control" placeholder="New York">
-                                                            <div class="field-placeholder">State</div>
-                                                        </div>
-                                                        <!-- Field wrapper end -->
-                                                    </div>
-                                                    <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
-                                                        <!-- Field wrapper start -->
-                                                        <div class="field-wrapper">
-                                                            <input type="text" class="form-control" placeholder="11789">
-                                                            <div class="field-placeholder">Zip Code</div>
-                                                        </div>
-                                                        <!-- Field wrapper end -->
-                                                    </div>
-                                                    <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
-                                                        <!-- Field wrapper start -->
-                                                        <div class="field-wrapper">
-															<select class="select-single js-states" title="Select Product Category" data-live-search="true">
-																<option>United States</option>
-																<option>Australia</option>
-																<option>Canada</option>
-																<option>Gremany</option>
-																<option>India</option>
-																<option>Japan</option>
-																<option>England</option>
-																<option>Brazil</option>
-															</select>
-															<div class="field-placeholder">Country</div>
-														</div>
-                                                        <!-- Field wrapper end -->
-                                                    </div>
-                                                    <div class="col-xl-12 col-lg-12 col-md-6 col-sm-6 col-12">
-                                                        <!-- Field wrapper start -->
-                                                        <div class="field-wrapper">
-                                                            <input type="password" class="form-control" placeholder="Enter Password">
-                                                            <div class="field-placeholder">Password</div>
-                                                        </div>
-                                                        <!-- Field wrapper end -->
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="col-xl-4 col-lg-4 col-md-12 col-sm-12 col-12">
-                                                <div class="account-settings-block">
-                                                    <div class="settings-block">
-                                                        <div class="settings-block-title">Change Plan</div>
-                                                        <div class="settings-block-body">
-                                                            <div class="pricing-chnage-plan">
-                                                                <a href="#" class="active-plan">
-                                                                    <h5>$29</h5>
-                                                                    <h6>Basic</h6>
-                                                                </a>
-                                                                <a href="#">
-                                                                    <h5>$59</h5>
-                                                                    <h6>Business</h6>
-                                                                </a>
-                                                                <a href="#">
-                                                                    <h5>$99</h5>
-                                                                    <h6>Enterprise</h6>
-                                                                </a>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                    <div class="settings-block">
-                                                        <div class="settings-block-title">Other Settings</div>
-                                                        <div class="settings-block-body">
-                                                            <div class="list-group">
-                                                                <div class="list-group-item d-flex justify-content-between align-items-center">
-                                                                    <div>Show desktop notifications</div>
-                                                                    <div class="form-switch">
-                                                                        <input class="form-check-input" type="checkbox" id="showNotifications">
-                                                                        <label class="form-check-label" for="showNotifications"></label>
-                                                                    </div>
-                                                                </div>
-                                                                <div class="list-group-item d-flex justify-content-between align-items-center">
-                                                                    <div>Show email notifications</div>
-                                                                    <div class="form-switch">
-                                                                        <input class="form-check-input" type="checkbox" id="showEmailNotifications" checked>
-                                                                        <label class="form-check-label" for="showEmailNotifications"></label>
-                                                                    </div>
-                                                                </div>
-                                                                <div class="list-group-item d-flex justify-content-between align-items-center">
-                                                                    <div>Show chat notifications</div>
-                                                                    <div class="form-switch">
-                                                                        <input class="form-check-input" type="checkbox" id="showChatNotifications">
-                                                                        <label class="form-check-label" for="showChatNotifications"></label>
-                                                                    </div>
-                                                                </div>
-                                                                <div class="list-group-item d-flex justify-content-between align-items-center">
-                                                                    <div>Show purchase history</div>
-                                                                    <div class="form-switch">
-                                                                        <input class="form-check-input" type="checkbox" id="showPurchaseNotifications">
-                                                                        <label class="form-check-label" for="showPurchaseNotifications"></label>
-                                                                    </div>
-                                                                </div>                                                                
-                                                                <div class="list-group-item d-flex justify-content-between align-items-center">
-                                                                    <div>Show orders</div>
-                                                                    <div class="form-switch">
-                                                                        <input class="form-check-input" type="checkbox" id="showOrders">
-                                                                        <label class="form-check-label" for="showOrders"></label>
-                                                                    </div>
-                                                                </div>
-                                                                <div class="list-group-item d-flex justify-content-between align-items-center">
-                                                                    <div>Show alerts</div>
-                                                                    <div class="form-switch">
-                                                                        <input class="form-check-input" type="checkbox" id="showAlerts">
-                                                                        <label class="form-check-label" for="showAlerts"></label>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-											<div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
-												<button class="btn btn-primary mb-3">Save Settings</button>
-											</div>
-                                        </div>
-										
-									</div>
-								</div>
-								<!-- Card end -->
+                <!-- Card start -->
+                <div class="card">
+                    <div class="card-header">
+                        <div class="card-title">Employee Onboarding</div>
+                    </div>
+                    <div class="card-body">
+                        
+                        <!-- Row start -->
+                        <div class="row gutters">
 
-							</div>
-						</div>
-						<!-- Row end -->
+                            <!-- Profile Picture -->
+                            <div class="col-xl-4 col-lg-4 col-md-4 col-sm-4 col-12">
+                                
+                                <!-- Field wrapper start -->
+                                <div class="field-wrapper">
+                                    <label>Profile Picture</label><br>
+                                    <!-- <img src="#" alt="Profile Picture" class="profile-picture" id="profileImage"> -->
+                                    <input type="file" class="form-control" id="profilePictureInput" accept="image/*" onchange="previewImage(event)">
+                                    <div class="form-text">
+                                        Upload a profile picture (JPEG, PNG, etc.).
+                                    </div>
+                                </div>
+                                <!-- Field wrapper end -->
 
+                            </div>
+
+                            <!-- Employee ID -->
+                            <div class="col-xl-4 col-lg-4 col-md-4 col-sm-4 col-12">
+                                
+                                <!-- Field wrapper start -->
+                                <div class="field-wrapper">
+                                    <input class="form-control" type="text">
+                                    <div class="field-placeholder">Employee ID <span class="text-danger">*</span></div>
+                                    <div class="form-text">
+                                        Please enter the employee's ID number.
+                                    </div>
+                                </div>
+                                <!-- Field wrapper end -->
+
+                            </div>
+
+                            <!-- Name -->
+                            <div class="col-xl-4 col-lg-4 col-md-4 col-sm-4 col-12">
+                                
+                                <!-- Field wrapper start -->
+                                <div class="field-wrapper">
+                                    <input class="form-control" type="text">
+                                    <div class="field-placeholder">Name <span class="text-danger">*</span></div>
+                                    <div class="form-text">
+                                        Please enter the employee's full name.
+                                    </div>
+                                </div>
+                                <!-- Field wrapper end -->
+
+                            </div>
+
+                            <!-- Job Title -->
+                            <div class="col-xl-4 col-lg-4 col-md-4 col-sm-4 col-12">
+                                
+                                <!-- Field wrapper start -->
+                                <div class="field-wrapper">
+                                    <input class="form-control" type="text">
+                                    <div class="field-placeholder">Job Title <span class="text-danger">*</span></div>
+                                    <div class="form-text">
+                                        Please enter the job title.
+                                    </div>
+                                </div>
+                                <!-- Field wrapper end -->
+
+                            </div>
+
+                            <!-- Department -->
+                            <div class="col-xl-4 col-lg-4 col-md-4 col-sm-4 col-12">
+                                
+                                <!-- Field wrapper start -->
+                                <div class="field-wrapper">
+                                    <input class="form-control" type="text">
+                                    <div class="field-placeholder">Department <span class="text-danger">*</span></div>
+                                    <div class="form-text">
+                                        Please enter the department.
+                                    </div>
+                                </div>
+                                <!-- Field wrapper end -->
+
+                            </div>
+
+                            <!-- Email -->
+                            <div class="col-xl-4 col-lg-4 col-md-4 col-sm-4 col-12">
+                                
+                                <!-- Field wrapper start -->
+                                <div class="field-wrapper">
+                                    <input class="form-control" type="email">
+                                    <div class="field-placeholder">Email <span class="text-danger">*</span></div>
+                                    <div class="form-text">
+                                        We'll never share the employee's email with anyone else.
+                                    </div>
+                                </div>
+                                <!-- Field wrapper end -->
+
+                            </div>
+
+                            <!-- Phone -->
+                            <div class="col-xl-4 col-lg-4 col-md-4 col-sm-4 col-12">
+                                
+                                <!-- Field wrapper start -->
+                                <div class="field-wrapper">
+                                    <input class="form-control" type="text">
+                                    <div class="field-placeholder">Phone Number</div>
+                                    <div class="form-text">
+                                        Please enter the employee's phone number.
+                                    </div>
+                                </div>
+                                <!-- Field wrapper end -->
+
+                            </div>
+
+                            <!-- Emergency Contact Name -->
+                            <div class="col-xl-4 col-lg-4 col-md-4 col-sm-4 col-12">
+                                
+                                <!-- Field wrapper start -->
+                                <div class="field-wrapper">
+                                    <input class="form-control" type="text">
+                                    <div class="field-placeholder">Emergency Contact Name</div>
+                                    <div class="form-text">
+                                        Please enter the emergency contact's full name.
+                                    </div>
+                                </div>
+                                <!-- Field wrapper end -->
+
+                            </div>
+
+                            <!-- Relationship -->
+                            <div class="col-xl-4 col-lg-4 col-md-4 col-sm-4 col-12">
+                                
+                                <!-- Field wrapper start -->
+                                <div class="field-wrapper">
+                                    <input class="form-control" type="text">
+                                    <div class="field-placeholder">Relationship</div>
+                                    <div class="form-text">
+                                        Please enter the relationship to the employee.
+                                    </div>
+                                </div>
+                                <!-- Field wrapper end -->
+
+                            </div>
+
+                            <!-- Emergency Contact Phone -->
+                            <div class="col-xl-4 col-lg-4 col-md-4 col-sm-4 col-12">
+                                
+                                <!-- Field wrapper start -->
+                                <div class="field-wrapper">
+                                    <input class="form-control" type="text">
+                                    <div class="field-placeholder">Emergency Contact Phone</div>
+                                    <div class="form-text">
+                                        Please enter the emergency contact's phone number.
+                                    </div>
+                                </div>
+                                <!-- Field wrapper end -->
+
+                            </div>
+
+                            <!-- Notes and Comments -->
+                            <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
+                                
+                                <!-- Field wrapper start -->
+                                <div class="field-wrapper">
+                                    <textarea class="form-control" rows="3"></textarea>
+                                    <div class="field-placeholder">Notes and Comments</div>
+                                    <div class="form-text">
+                                        Add any additional notes or comments regarding the employee's onboarding.
+                                    </div>
+                                </div>
+                                <!-- Field wrapper end -->
+
+                            </div>
+
+                            <!-- Submit Button -->
+                            <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
+                                <button class="btn btn-primary">Submit</button>
+                            </div>
+					</div>
+					<!-- Row end -->
+
+				</div>
+			</div>
+			<!-- Card end -->
+
+		</div>
+	</div>
+	<!-- Row end -->
+
+</div>
+<!-- Content wrapper end -->
+
+</div>
 					</div>
 					<!-- Content wrapper end -->
 
-					<!-- App Footer start -->
-					<div class="app-footer">© Uni Pro Admin 2021</div>
+					<!-- App footer start -->
+					<div class="app-footer">© Jad Apps and Tech Solutions Limited</div>
 					<!-- App footer end -->
 
 				</div>
@@ -1504,42 +849,9 @@
 		</div>
 		<!-- Page wrapper end -->
 
-		<!-- *************
-			************ Required JavaScript Files *************
-		************* -->
-		<!-- Required jQuery first, then Bootstrap Bundle JS -->
-		<script src="js/jquery.min.js"></script>
-		<script src="js/bootstrap.bundle.min.js"></script>
-		<script src="js/modernizr.js"></script>
-		<script src="js/moment.js"></script>
-
-		<!-- *************
-			************ Vendor Js Files *************
-		************* -->
-
-		<!-- Megamenu JS -->
-		<script src="vendor/megamenu/js/megamenu.js"></script>
-		<script src="vendor/megamenu/js/custom.js"></script>
-				
-		<!-- Slimscroll JS -->
-		<script src="vendor/slimscroll/slimscroll.min.js"></script>
-		<script src="vendor/slimscroll/custom-scrollbar.js"></script>
-
-		<!-- Search Filter JS -->
-		<script src="vendor/search-filter/search-filter.js"></script>
-		<script src="vendor/search-filter/custom-search-filter.js"></script>
-
-		<!-- Dropzone JS -->
-		<script src="vendor/dropzone/dropzone.min.js"></script>
-
-        <!-- Bootstrap Select JS -->
-		<script src="vendor/bs-select/bs-select.min.js"></script>
-        <script src="vendor/bs-select/bs-select-custom.js"></script>
-        
-		<!-- Main Js Required -->
-		<script src="js/main.js"></script>
+		<?php include('includes/scripts.php'); ?>
 
 	</body>
 
-<!-- Mirrored from www.bootstrapget.com/demos/themeforest/unipro-admin-template/demos/01-design-blue/account-settings.php by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 04 Sep 2024 13:06:59 GMT -->
+<!-- Mirrored from www.bootstrapget.com/demos/themeforest/unipro-admin-template/demos/01-design-blue/ by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 04 Sep 2024 13:04:58 GMT -->
 </html>
