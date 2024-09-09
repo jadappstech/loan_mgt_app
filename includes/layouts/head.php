@@ -1,4 +1,5 @@
-<?php ?>
+<?php session_start(); 
+$username = $_SESSION['user'];?>
 
 <head>
     <!-- Required meta tags -->

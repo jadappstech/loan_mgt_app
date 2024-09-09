@@ -22,7 +22,7 @@ $(function() {
 $(function() {
 	var interval = setInterval(function() {
 		var momentNow = moment();
-		$('#todays-date').php(momentNow.format('DD MMMM YYYY'));
+		$('#todays-date').html(momentNow.format('DD MMMM YYYY'));
 	}, 100);
 });
 

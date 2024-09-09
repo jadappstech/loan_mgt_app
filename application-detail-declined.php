@@ -1,5 +1,5 @@
 <!doctype php>
-<php lang="en">
+<html lang="en">
 	
 <!-- Mirrored from www.bootstrapget.com/demos/themeforest/unipro-admin-template/demos/01-design-blue/view-invoice.php by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 04 Sep 2024 13:06:42 GMT -->
 <head>
@@ -48,6 +48,9 @@
 		<style>
 			.current{
 				color: var(--bs-success) !important;
+			}
+			.declined{
+				color: var(--bs-danger) !important;
 			}
 			.done{
 				text-decoration: none !important;
@@ -1605,45 +1608,40 @@
 
                                             <!-- Note - Below is empty div - Place your content below... if content height is more than 210px automatically scrollbar will enable. -->
                                             <div style="height: 41vh;">
-											<div class="todo-container">
-											<ul class="todo-body">
-												<li class="todo-list done">
-													<div class="todo-info">
-														<span class="dot blue"></span>
-														<p>Team Lead</p>
-														<p class="dt">2 hrs ago</p>
-													</div>
-												</li>												
-												<li class="todo-list done">
-													<div class="todo-info">
-														<span class="dot orange"></span>
-														<p>Group Head Manager</p>
-														<p class="dt">1 hr ago</p>
-													</div>
-												</li>
-												<li class="todo-list done">
-													<div class="todo-info">
-														<span class="dot yellow"></span>
-														<p>Legal</p>
-														<p class="dt">30 mins ago</p>
-													</div>
-												</li>
-												<li class="todo-list">
-													<div class="todo-info current">
-														<span class="dot blue current"></span>
-														<p>Risk Management</p>
-														<p class="dt"></p>
-													</div>
-												</li>
-												<li class="todo-list">
-													<div class="todo-info">
-														<span class="dot green"></span>
-														<p>Disbursed</p>
-														<p class="dt"></p>
-													</div>
-												</li>
-											</ul>
-										</div>
+                                                <div class="todo-container">
+                                                    <ul class="activity">
+                                                        <li class="activity-list">
+                                                            <div class="detail-info">
+                                                                <p class="date">Team Lead</p>
+                                                                <p class="info">2 hrs ago</p>
+                                                            </div>
+                                                        </li>
+                                                        <li class="activity-list">
+                                                            <div class="detail-info">
+                                                                <p class="date">Group Head Manager</p>
+                                                                <p class="info">1 hr ago</p>
+                                                            </div>
+                                                        </li>
+                                                        <li class="activity-list">
+                                                            <div class="detail-info">
+                                                                <p class="date">Legal</p>
+                                                                <p class="info">30 mins ago</p>
+                                                            </div>
+                                                        </li>
+                                                        <li class="activity-list danger">
+                                                            <div class="detail-info">
+                                                            <p class="date text-danger">Risk Management</p>
+                                                                <p class="info">20 mins ago</p>
+                                                            </div>
+                                                        </li>
+                                                        <li class="activity-list warning">
+                                                            <div class="detail-info">
+                                                                <p class="date text-warning">Disbursed</p>
+                                                                <p class="info"></p>
+                                                            </div>
+                                                        </li>
+                                                    </ul>
+                                                </div>
 											</div>
                                         </div>
                                     </div>
@@ -1711,4 +1709,4 @@
 	</body>
 
 <!-- Mirrored from www.bootstrapget.com/demos/themeforest/unipro-admin-template/demos/01-design-blue/view-invoice.php by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 04 Sep 2024 13:06:42 GMT -->
-</php>
+</html>

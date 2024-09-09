@@ -8,35 +8,31 @@
         <!-- Tabs nav start -->
         <div class="nav" role="tablist" aria-orientation="vertical">
             <a href="#" class="logo">
-                <img src="img/centrum-logo.png" alt="Uni Pro Admin">
+                <img src="img/centrum-logo.png" alt="Logo">
             </a>
-            <a class="nav-link " id="home-tab" data-bs-toggle="tab" href="#tab-home" role="tab" aria-controls="tab-home" aria-selected="true">
+            <a class="nav-link active" id="dashboard-tab" data-bs-toggle="tab" href="#tab-dashboard" role="tab" aria-controls="tab-dashboard" aria-selected="true">
                 <i class="icon-home2"></i>
-                <span class="nav-link-text">Dashboards</span>
+                <span class="nav-link-text">Dashboard</span>
             </a>
-            <a class="nav-link active" id="product-tab" data-bs-toggle="tab" href="#tab-product" role="tab" aria-controls="tab-product" aria-selected="false">
+            <a class="nav-link" id="applications-tab" data-bs-toggle="tab" href="#tab-applications" role="tab" aria-controls="tab-applications" aria-selected="false">
                 <i class="icon-layers2"></i>
-                <span class="nav-link-text">Loan Appliations</span>
+                <span class="nav-link-text">Application</span>
             </a>
-            <a class="nav-link" id="pages-tab" data-bs-toggle="tab" href="#tab-pages" role="tab" aria-controls="tab-pages" aria-selected="false">
+            <a class="nav-link" id="user-tab" data-bs-toggle="tab" href="#tab-user" role="tab" aria-controls="tab-user" aria-selected="false">
                 <i class="icon-book-open"></i>
-                <span class="nav-link-text">Pages</span>
+                <span class="nav-link-text">User Management</span>
             </a>
-            <a class="nav-link" id="forms-tab" data-bs-toggle="tab" href="#tab-forms" role="tab" aria-controls="tab-forms" aria-selected="false">
+            <a class="nav-link" id="payments-tab" data-bs-toggle="tab" href="#tab-payments" role="tab" aria-controls="tab-payments" aria-selected="false">
                 <i class="icon-edit1"></i>
-                <span class="nav-link-text">Forms</span>
+                <span class="nav-link-text">Payments</span>
             </a>
-            <a class="nav-link" id="components-tab" data-bs-toggle="tab" href="#tab-components" role="tab" aria-controls="tab-components" aria-selected="false">
+            <a class="nav-link" id="disbursement-tab" data-bs-toggle="tab" href="#tab-disbursement" role="tab" aria-controls="tab-disbursement" aria-selected="false">
                 <i class="icon-box"></i>
-                <span class="nav-link-text">Components</span>
+                <span class="nav-link-text">Disbursement</span>
             </a>
-            <a class="nav-link" id="graphs-tab" data-bs-toggle="tab" href="#tab-graphs" role="tab" aria-controls="tab-graphs" aria-selected="false">
+            <a class="nav-link" id="tracking-tab" data-bs-toggle="tab" href="#tab-tracking" role="tab" aria-controls="tab-tracking" aria-selected="false">
                 <i class="icon-pie-chart1"></i>
-                <span class="nav-link-text">Graphs</span>
-            </a>
-            <a class="nav-link" id="authentication-tab" data-bs-toggle="tab" href="#tab-authentication" role="tab" aria-controls="tab-authentication" aria-selected="false">
-                <i class="icon-unlock"></i>
-                <span class="nav-link-text">Authentication</span>
+                <span class="nav-link-text">Tracking</span>
             </a>
             <a class="nav-link settings" id="settings-tab" data-bs-toggle="tab" href="#tab-settings" role="tab" aria-controls="tab-authentication" aria-selected="false">
                 <i class="icon-settings1"></i>
@@ -49,113 +45,39 @@
         <div class="tab-content">
                     
             <!-- Chat tab -->
-            <div class="tab-pane fade show active" id="tab-home" role="tabpanel" aria-labelledby="home-tab">
+            <div class="tab-pane fade show active" id="tab-dashboard" role="tabpanel" aria-labelledby="dashboard-tab">
 
                 <!-- Tab content header start -->
                 <div class="tab-pane-header">
-                    Loan Application
+                   Dashboard
                 </div>
                 <!-- Tab content header end -->
+                <div class="list-heading">
+                    &nbsp; 
+                </div>
 
                 <!-- Sidebar menu starts -->
                 <div class="sidebarMenuScroll">
                     <div class="sidebar-menu">
                         <ul>
                             <li>
-                                <a href="index-2.php" class="current-page">New Loan Application</a>
+                                <a href="index-2.php" class="current-page">My Dashboard</a>
                             </li>
-                            <li>
-                                <a href="analytics.php">Loan History</a>
-                            </li>
-                            <li>
-                                <a href="sales.php">Sales</a>
-                            </li>
-                            <li>
-                                <a href="crm.php">CRM</a>
-                            </li>
-                            <li>
-                                <a href="reports.php">Reports</a>
-                            </li>
-                            <li>
-                                <a href="saas.php">Saas</a>
-                            </li>
-                            <li>
-                                <a href="consulting.php">Consulting</a>
-                            </li>
-                            <li>
-                                <a href="profile.php">Profile</a>
-                            </li>
+                            
                         </ul>
-                        <ul>
-                            <li class="list-heading">Layouts</li>
-                            <li>
-                                <a href="starter-page.php">Starter Page</a>
-                            </li>
-                            <li>
-                                <a href="layout-tabs-tooltip.php">Tabs Hover Tooltip</a>
-                            </li>
-                            <li>
-                                <a href="layout-tile-menu.php">Tile Menu</a>
-                            </li>
-                            <li>
-                                <a href="layout-collapse-menu.php">Collapse Sidebar</a>
-                            </li>
-                            <li>
-                                <a href="layout-compact-menu.php">Compact Sidebar</a>
-                            </li>
-                            <li>
-                                <a href="layout-slim-menu.php">Slim Sidebar</a>
-                            </li>
-                            <li>
-                                <a href="layout-hover-tabs.php">Hover Tabs</a>
-                            </li>
-                            <li>
-                                <a href="layout-daterange.php">Date Range</a>
-                            </li>
-                            <li>
-                                <a href="layout-full-screen.php">Full Screen</a>
-                            </li>
-                            <li>
-                                <a href="layout-full-view.php">Full View</a>
-                            </li>
-                            <li>
-                                <a href="layout-search.php">Global Search</a>
-                            </li>
-                            <li>
-                                <a href="layout-megamenu.php">Megamenu</a>
-                            </li>
-                            <li>
-                                <a href="layout-bradcrumb.php">Breadcrumbs</a>
-                            </li>
-                            <li>
-                                <a href="layout-scroll-cards.php">Scroll Cards</a>
-                            </li>
-                        </ul>
+                       
                     </div>
                 </div>
                 <!-- Sidebar menu ends -->
-
-                <!-- Sidebar actions starts -->
-                <div class="sidebar-actions">
-                    <a href="orders.php" class="red">
-                        <div class="bg-avatar">12</div>
-                        <h5>New Orders</h5>
-                    </a>
-                    <a href="invoices-list.php" class="blue">
-                        <div class="bg-avatar">24</div>
-                        <h5>Bills Pending</h5>
-                    </a>
-                </div>
-                <!-- Sidebar actions ends -->
-
+               
             </div>
-
+            
             <!-- Pages tab -->
-            <div class="tab-pane fade" id="tab-product" role="tabpanel" aria-labelledby="product-tab">
+            <div class="tab-pane fade" id="tab-applications" role="tabpanel" aria-labelledby="applications-tab">
                 
                 <!-- Tab content header start -->
                 <div class="tab-pane-header">
-                    Product
+                    Applications
                 </div>
                 <!-- Tab content header end -->
 
@@ -163,63 +85,35 @@
                 <div class="sidebarMenuScroll">
                     <div class="sidebar-menu">
                         <ul>
+                            <!-- Tab content header start -->
+                            <div class="list-heading">
+                                MY APPLICATIONS
+                            </div>
+                            
+                            <!-- Tab content header end -->
                             <li>
-                                <a href="products.php">Products Grid</a>
+                                <a href="starter-page.php">Applications</a>
                             </li>
                             <li>
-                                <a href="products-list.php">Products List</a>
+                                <a href="starter-page.php">Applicants</a>
                             </li>
                             <li>
-                                <a href="add-product.php">Add Product</a>
-                            </li>
-                            <li>
-                                <a href="orders.php">Orders</a>
-                            </li>
-                            <li>
-                                <a href="customers-list.php">Customers</a>
-                            </li>
-                            <li>
-                                <a href="products-reviews.php">Reviews</a>
-                            </li>
-                        </ul>
-                        <ul>
-                            <li class="list-heading">Calendars</li>
-                            <li>
-                                <a href="calendar-daygrid-view.php">Daygrid View</a>
-                            </li>
-                            <li>
-                                <a href="calendar-list-view.php">List View</a>
-                            </li>
-                            <li>
-                                <a href="calendar-external-dragging.php">Draggable</a>
-                            </li>
-                            <li>
-                                <a href="calendar-google-view.php">Google View</a>
-                            </li>
-                            <li>
-                                <a href="calendar-selectable.php">Selectable</a>
+                                <a href="starter-page.php">Make New Application</a>
                             </li>
                         </ul>
                     </div>
                 </div>
                 <!-- Sidebar menu ends -->
-
-                <!-- Sidebar actions starts -->
-                <div class="sidebar-actions">
-                    <div class="support-tile">
-                        <i class="icon-headphones"></i> 24/7 Support
-                    </div>
-                </div>
-                <!-- Sidebar actions ends -->
                 
             </div>
+            <!-- Pages tab -->
 
             <!-- Pages tab -->
-            <div class="tab-pane fade" id="tab-pages" role="tabpanel" aria-labelledby="pages-tab">
+            <div class="tab-pane fade" id="tab-user" role="tabpanel" aria-labelledby="user-tab">
                 
                 <!-- Tab content header start -->
                 <div class="tab-pane-header">
-                    Pages
+                    User Management
                 </div>
                 <!-- Tab content header end -->
 
@@ -227,72 +121,60 @@
                 <div class="sidebarMenuScroll">
                     <div class="sidebar-menu">
                         <ul>
+                            <li class="list-heading">&nbsp;</li>
                             <li>
-                                <a href="chat.php">Chat</a>
+                                <a href="starter-page.php">Onboarding</a>
                             </li>
                             <li>
-                                <a href="tasks.php">Tasks</a>
-                            </li>
-                            <li>
-                                <a href="create-invoice.php">Create Invoice</a>
-                            </li>
-                            <li>
-                                <a href="view-invoice.php">View Invoice</a>
-                            </li>
-                            <li>
-                                <a href="documents.php">Documents</a>
-                            </li>
-                            <li>
-                                <a href="faq.php">Faq's</a>
-                            </li>
-                            <li>
-                                <a href="contacts.php">Contacts</a>
-                            </li>
-                            <li>
-                                <a href="pricing.php">Pricing</a>
-                            </li>
-                            <li>
-                                <a href="gallery-tiles.php">Gallery Tiles</a>
-                            </li>
-                            <li>
-                                <a href="gallery.php">Gallery</a>
-                            </li>
-                            <li>
-                                <a href="icons.php">Icons</a>
-                            </li>
-                            <li>
-                                <a href="timeline.php">Timeline</a>
-                            </li>
-                            <li>
-                                <a href="search-results.php">Search Results</a>
-                            </li>
-                            <li>
-                                <a href="account-settings.php">Account Settings</a>
-                            </li>
-                            <li>
-                                <a href="user-profile.php">User Profile</a>
+                                <a href="starter-page.php">All Staff</a>
                             </li>
                         </ul>
                     </div>
                 </div>
                 <!-- Sidebar menu ends -->
+                
+            </div>
+            <!-- Pages tab -->            
 
-                <!-- Sidebar actions starts -->
-                <div class="sidebar-actions">
-                    <div class="support-tile green">
-                        <i class="icon-pie-chart1"></i> 5GB Free Space
+            <div class="tab-pane fade" id="tab-payments" role="tabpanel" aria-labelledby="payments-tab">
+                
+                <!-- Tab content header start -->
+                <div class="tab-pane-header">
+                    Payment
+                </div>
+                <!-- Tab content header end -->
+
+                <!-- Sidebar menu starts -->
+                <div class="sidebarMenuScroll">
+                    <div class="sidebar-menu">
+                        <ul>
+                            <li class="list-heading">MY Payments</li>
+                            <li>
+                                <a href="chat.php">Payment</a>
+                            </li>
+                            <li>
+                                <a href="tasks.php">History</a>
+                            </li>
+                            <li>
+                                <a href="create-invoice.php">Ongoing</a>
+                            </li>
+                            <li>
+                                <a href="view-invoice.php">Make Manual Payment</a>
+                            </li>
+                            
+                        </ul>
                     </div>
                 </div>
-                <!-- Sidebar actions ends -->
+                <!-- Sidebar menu ends -->
 
             </div>
 
             <!-- Forms tab -->
-            <div class="tab-pane fade" id="tab-forms" role="tabpanel" aria-labelledby="forms-tab">
+            <div class="tab-pane fade" id="tab-disbursement" role="tabpanel" aria-labelledby="disbursement-tab">
 
                 <!-- Tab content header start -->
                 <div class="tab-pane-header">
-                    Forms
+                    Disbursement
                 </div>
                 <!-- Tab content header end -->
 
@@ -300,82 +182,25 @@
                 <div class="sidebarMenuScroll">
                     <div class="sidebar-menu">
                         <ul>
-                            <li class="list-heading">Form Layouts</li>
                             <li>
-                                <a href="forms-layout-one.php">Default Layout</a>
+                                <a href="forms-layout-one.php">History</a>
                             </li>
                             <li>
-                                <a href="forms-layout-two.php">Layout Sections</a>
-                            </li>
-                            <li>
-                                <a href="forms-layout-three.php">Simple Form Layout</a>
-                            </li>
-                            <li>
-                                <a href="forms-layout-four.php">Select 2 Tags and Mask</a>
-                            </li>
-                            <li>
-                                <a href="forms-layout-five.php">Horizontal Form Layout</a>
-                            </li>
-                            <li>
-                                <a href="forms-layout-six.php">Layout Six with Tabs</a>
-                            </li>
-                        </ul>									
-                        <ul>
-                            <li class="list-heading">Form Fields</li>
-                            <li>
-                                <a href="forms-inputs.php">Form Inputs</a>
-                            </li>
-                            <li>
-                                <a href="forms-input-groups.php">Input Groups</a>
-                            </li>
-                            <li>
-                                <a href="forms-checkbox-radio.php">Checkbox &amp; Radios</a>
-                            </li>
-                            <li>
-                                <a href="forms-validation.php">Form Validation</a>
-                            </li>
-                        </ul>									
-                        <ul>
-                            <li class="list-heading">Plugins</li>
-                            <li>
-                                <a href="forms-dropzone.php">Dropzone</a>
-                            </li>
-                            <li>
-                                <a href="forms-bs-select.php">Select 2 Dropdowns</a>
-                            </li>
-                            <li>
-                                <a href="forms-date-time-picker.php">Date Time Picker</a>
-                            </li>
-                            <li>
-                                <a href="forms-input-mask.php">Input Mask</a>
-                            </li>
-                            <li>
-                                <a href="forms-input-range.php">Input Range</a>
-                            </li>
-                            <li>
-                                <a href="forms-editor.php">WYSIWYG Editor</a>
+                                <a href="forms-layout-two.php">Pending</a>
                             </li>
                         </ul>
                     </div>
                 </div>
                 <!-- Sidebar menu ends -->
-
-                <!-- Sidebar actions starts -->
-                <div class="sidebar-actions">
-                    <div class="support-tile red">
-                        <i class="icon-mail"></i> Inbox Full
-                    </div>
-                </div>
-                <!-- Sidebar actions ends -->
 
             </div>
             
             <!-- Components tab -->
-            <div class="tab-pane fade" id="tab-components" role="tabpanel" aria-labelledby="components-tab">
+            <div class="tab-pane fade" id="tab-tracking" role="tabpanel" aria-labelledby="tracking-tab">
                 
                 <!-- Tab content header start -->
                 <div class="tab-pane-header">
-                    Components
+                    Trackings
                 </div>
                 <!-- Tab content header end -->
 
@@ -383,171 +208,21 @@
                 <div class="sidebarMenuScroll">
                     <div class="sidebar-menu">
                         <ul>
-                            <li>
-                                <a href="accordions.php">Accordions</a>
+                            <li class="list-heading">
+                                <!-- Tracking -->&nbsp;
                             </li>
                             <li>
-                                <a href="alerts.php">Alerts</a>
-                            </li>
-                            <li>
-                                <a href="buttons.php">Buttons</a>
-                            </li>
-                            <li>
-                                <a href="badges.php">Badges</a>
-                            </li>
-                            <li>
-                                <a href="cards.php">Cards</a>
-                            </li>
-                            <li>
-                                <a href="carousel.php">Carousel</a>
-                            </li>
-                            <li>
-                                <a href="list-group.php">List group</a>
-                            </li>
-                            <li>
-                                <a href="modals.php">Modal</a>
-                            </li>
-                            <li>
-                                <a href="paginations.php">Paginations</a>
-                            </li>
-                            <li>
-                                <a href="popovers.php">Popovers</a>
-                            </li>
-                            <li>
-                                <a href="progress.php">Progress</a>
-                            </li>
-                            <li>
-                                <a href="spinners.php">Spinners</a>
-                            </li>
-                            <li>
-                                <a href="tabs.php">Tabs</a>
-                            </li>
-                            <li>
-                                <a href="toasts.php">Toasts</a>
-                            </li>
-                            <li>
-                                <a href="tooltips.php">Tooltips</a>
+                                <a href="forms-layout-two.php">Tracking</a>
                             </li>
                         </ul>
                     </div>
                 </div>
                 <!-- Sidebar menu ends -->
 
-                <!-- Sidebar actions starts -->
-                <div class="sidebar-actions">
-                    <div class="support-tile yellow">
-                        <i class="icon-arrow-down-circle"></i><a href="#">Download Reports</a>						</div>
-                </div>
-                <!-- Sidebar actions ends -->
-
+                
             </div>
 
-            <!-- Graphs tab -->
-            <div class="tab-pane fade" id="tab-graphs" role="tabpanel" aria-labelledby="graphs-tab">
-                
-                <!-- Tab content header start -->
-                <div class="tab-pane-header">
-                    Graphs &amp; Tables
-                </div>
-                <!-- Tab content header end -->
-                
-                <!-- Sidebar menu starts -->
-                <div class="sidebarMenuScroll">
-                    <div class="sidebar-menu">
-                        <ul>
-                            <li class="list-heading">Graphs</li>
-                            <li>
-                                <a href="apex-graphs.php">Apex Graphs</a>
-                            </li>
-                            <li>
-                                <a href="morris-graphs.php">Morris Graphs</a>
-                            </li>
-                            <li>
-                                <a href="vector-maps.php">Vector Maps</a>
-                            </li>
-                        </ul>
-                        
-                        <ul>
-                            <li class="list-heading">Tables</li>
-                            <li>
-                                <a href="bootstrap-tables.php">Bootstrap Tables</a>
-                            </li>
-                            <li>
-                                <a href="custom-tables.php">Custom Tables</a>
-                            </li>
-                            <li>
-                                <a href="data-tables.php">Data Tables</a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-                <!-- Sidebar menu ends -->
-
-                <!-- Sidebar actions starts -->
-                <div class="sidebar-actions">
-                    <div class="support-tile pink">
-                        <i class="icon-align-right1"></i> RTL Support
-                    </div>
-                </div>
-                <!-- Sidebar actions ends -->
-
-            </div>
-
-            <!-- Authentication tab -->
-            <div class="tab-pane fade" id="tab-authentication" role="tabpanel" aria-labelledby="authentication-tab">
-                
-                <!-- Tab content header start -->
-                <div class="tab-pane-header">
-                    Authentication
-                </div>
-                <!-- Tab content header end -->
-
-                <!-- Sidebar menu starts -->
-                <div class="sidebarMenuScroll">
-                    <div class="sidebar-menu">
-                        <ul>
-                            <li>
-                                <a href="login.php">Login</a>
-                            </li>
-                            <li>
-                                <a href="signup.php">Signup</a>
-                            </li>
-                            <li>
-                                <a href="forgot-password.php">Forgot Password</a>
-                            </li>
-                            <li>
-                                <a href="reset-password.php">Reset Password</a>
-                            </li>
-                            <li>
-                                <a href="lock-screen.php">Lock Screen</a>
-                            </li>
-                            <li>
-                                <a href="subscribe.php">Subscribe</a>
-                            </li>										
-                            <li>
-                                <a href="maintenance.php">Maintenance</a>
-                            </li>
-                            <li>
-                                <a href="error.php">404</a>
-                            </li>
-                            <li>
-                                <a href="error-option2.php">Error</a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-                <!-- Sidebar menu ends -->
-
-                <!-- Sidebar actions starts -->
-                <div class="sidebar-actions">
-                    <div class="support-tile blue">
-                        <a href="pricing.php" class="btn btn-light m-auto">Upgrade Account</a>
-                    </div>
-                </div>
-                <!-- Sidebar actions ends -->
-
-            </div>
-            
+           
             <!-- Settings tab -->
             <div class="tab-pane fade" id="tab-settings" role="tabpanel" aria-labelledby="settings-tab">
                 
@@ -556,121 +231,18 @@
                     Settings
                 </div>
                 <!-- Tab content header end -->
-
-                <!-- Settings start -->
                 <div class="sidebarMenuScroll">
-                    <div class="sidebar-settings">
-                        <div class="accordion" id="settingsAccordion">
-                            <div class="accordion-item">
-                                <h2 class="accordion-header" id="genInfo">
-                                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#genCollapse" aria-expanded="true" aria-controls="genCollapse">
-                                        General Info
-                                    </button>
-                                </h2>
-                                <div id="genCollapse" class="accordion-collapse collapse show" aria-labelledby="genInfo" data-bs-parent="#settingsAccordion">
-                                    <div class="accordion-body">
-                                        <div class="field-wrapper">
-                                            <input type="text" value="Jeivxezer Lopexz" />
-                                            <div class="field-placeholder">Full Name</div>
-                                        </div>
-
-                                        <div class="field-wrapper">
-                                            <input type="email" value="jeivxezer-lopexz@email.com" />
-                                            <div class="field-placeholder">Email</div>
-                                        </div>
-
-                                        <div class="field-wrapper">
-                                            <input type="text" value="0 0000 00000" />
-                                            <div class="field-placeholder">Contact</div>
-                                        </div>
-                                        <div class="field-wrapper m-0">
-                                            <button class="btn btn-primary stripes-btn">Save</button>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="accordion-item">
-                                <h2 class="accordion-header" id="chngPwd">
-                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#chngPwdCollapse" aria-expanded="false" aria-controls="chngPwdCollapse">
-                                        Change Password
-                                    </button>
-                                </h2>
-                                <div id="chngPwdCollapse" class="accordion-collapse collapse" aria-labelledby="chngPwd" data-bs-parent="#settingsAccordion">
-                                    <div class="accordion-body">
-                                        <div class="field-wrapper">
-                                            <input type="text" value="">
-                                            <div class="field-placeholder">Current Password</div>
-                                        </div>
-                                        <div class="field-wrapper">
-                                            <input type="password" value="">
-                                            <div class="field-placeholder">New Password</div>
-                                        </div>
-                                        <div class="field-wrapper">
-                                            <input type="password" value="">
-                                            <div class="field-placeholder">Confirm Password</div>
-                                        </div>
-                                        <div class="field-wrapper m-0">
-                                            <button class="btn btn-primary stripes-btn">Save</button>
-                                        </div>
-
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="accordion-item">
-                                <h2 class="accordion-header" id="sidebarNotifications">
-                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#notiCollapse" aria-expanded="false" aria-controls="notiCollapse">
-                                        Notifications
-                                    </button>
-                                </h2>
-                                <div id="notiCollapse" class="accordion-collapse collapse" aria-labelledby="sidebarNotifications" data-bs-parent="#settingsAccordion">
-                                    <div class="accordion-body">
-                                        <div class="list-group m-0">
-                                            <div class="noti-container">
-                                                <div class="noti-block">
-                                                    <div>Alerts</div>
-                                                    <div class="form-switch">
-                                                        <input class="form-check-input" type="checkbox" id="showAlertss" checked>
-                                                        <label class="form-check-label" for="showAlertss"></label>
-                                                    </div>
-                                                </div>
-                                                <div class="noti-block">
-                                                    <div>Enable Sound</div>
-                                                    <div class="form-switch">
-                                                        <input class="form-check-input" type="checkbox" id="soundEnable">
-                                                        <label class="form-check-label" for="soundEnable"></label>
-                                                    </div>
-                                                </div>
-                                                <div class="noti-block">
-                                                    <div>Allow Chat</div>
-                                                    <div class="form-switch">
-                                                        <input class="form-check-input" type="checkbox" id="allowChat">
-                                                        <label class="form-check-label" for="allowChat"></label>
-                                                    </div>
-                                                </div>
-                                                <div class="noti-block">
-                                                    <div>Desktop Messages</div>
-                                                    <div class="form-switch">
-                                                        <input class="form-check-input" type="checkbox" id="desktopMessages">
-                                                        <label class="form-check-label" for="desktopMessages"></label>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+                    <div class="sidebar-menu">
+                        <ul>
+                            <li class="list-heading">Set up Loan Mgt App</a>
+                            </li>
+                            <li>
+                                <a href="#">Role Management</a>
+                            </li>
+                            
+                        </ul>
                     </div>
                 </div>
-                <!-- Settings end -->
-
-                <!-- Sidebar actions starts -->
-                <div class="sidebar-actions">
-                    <div class="support-tile blue">
-                        <a href="account-settings.php" class="btn btn-light m-auto">Advance Settings</a>
-                    </div>
-                </div>
-                <!-- Sidebar actions ends -->
             </div>
 
         </div>

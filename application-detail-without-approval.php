@@ -1474,10 +1474,10 @@
 																	<td colspan="">&nbsp;</td>
 																	
 																	<td>
-																		<p class="m-0">₦1000.00</p>
+																		<!-- <p class="m-0">₦1000.00</p>
 																		<p class="m-0">₦10.00</p>
 																		<p class="m-0">₦5.00</p>
-																		<h5 class="mt-2 text-danger">₦1015.00</h5>
+																		<h5 class="mt-2 text-danger">₦1015.00</h5> -->
 																	</td>
 																</tr>
 															</tbody>
