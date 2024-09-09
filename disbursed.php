@@ -670,8 +670,8 @@
 
 															<div style="display:flex; width: 100vh !important; height:75vh; justify-content:center;" class="task-types">
 																	<button style="display:flex; align-items:center; justify-content:center; border: solid; border-radius: 6px;
-																	border-radius:25px; width:90vh; background-color: #b11818 !important; " class="badge bg-warning"><span style="font-size:45px; ">
-																	<span style="font-size:25px;" > We Are Sorry To Inform You <br><br> That Your Loan Application Has Been </span> <br><br> <br><br><br><br>Declined</span>
+																	border-radius:25px; width:90vh; background-color: #292c62 !important; " class="badge bg-warning"><span style="font-size:45px; ">
+																	<span style="font-size:25px;" >Your Loan Is Being</span> <br><br> <br><br><br><br>Disbursed</span>
 																	</button>
 																	
 																</div>

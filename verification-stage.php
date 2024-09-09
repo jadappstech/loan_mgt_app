@@ -1295,25 +1295,44 @@
 																								<div class="slimScrollDiv" style="position: relative; overflow: hidden; width: auto; height: 250px;"><div class="customScroll250" style="overflow: hidden; width: auto; height: 250px;">
 																										<div class="timeline-activity">
 																												<div style="display:flex; flex-direction: row; justify-content: space-between;" class="activity-log">
-																														<div> <p class="log-name">Business Loan<small class="log-time">- 5 Weeks ago</small></p>
-																																	<div class="log-details">Five hundred thousand naira (N500,000) <span class="text-success ml-1"> V</span></div>
+																														<div> <p class="log-name">Bio Data<small class="log-time">- 24 hours</small></p>
+																																	<div class="log-details">Identity Verification (National Identity Card, Driver License, International Passport)<span class="text-success ml-1"> </span></div>
 																														</div>
-
-																													<div style="display: grid; place-items: center;" class="log-details"><span class="text-success ml-1"> #Paid</span></div>
-																												</div>
-																												<div class="activity-log">
-																														<p class="log-name">Business Loan<small class="log-time">- 5 Weeks ago</small></p>
-																														<div class="log-details">Five hundre thousand naira (N500,000)<span class="text-success ml-1"> #Paid</span></div>
-																												</div>
-																												<div class="activity-log">
-																														<p class="log-name">Business Loan<small class="log-time">- 5 Weeks ago</small></p>
-																														<div class="log-details">Five hundre thousand naira (N500,000)<span class="text-success ml-1"> #Paid</span></div>
-																												</div>
-																												<div class="activity-log">
-																														<p class="log-name">Business Loan<small class="log-time">- 5 Weeks ago</small></p>
-																														<div class="log-details">Five hundre thousand naira (N500,000)<span class="text-success ml-1"> #Paid</span></div>
+																													<div style="display: grid; place-items: center; margin-right:50px;" class="log-details"><span class="text-success ml-1">
+																														Verified</span></div>
 																												</div>
 																												
+																												<div style="display:flex; flex-direction: row; justify-content: space-between;" class="activity-log">
+																														<div> <p class="log-name">Bank Statements<small class="log-time">- 48-72 hours</small></p>
+																																	<div class="log-details">Savings Account, Current Account, Domiciliary Account, Foriegn Account<span class="text-success ml-1"> </span></div>
+																														</div>
+																													<div style="display: grid; place-items: center; margin-right:50px;" class="log-details"><span class="text-success ml-1">
+																														Verified</span></div>
+																												</div>
+
+																												<div style="display:flex; flex-direction: row; justify-content: space-between;" class="activity-log">
+																														<div> <p class="log-name">Credit Status<small class="log-time">- 24 hours</small></p>
+																																	<div class="log-details">Excellent Credit, Good Credit, Fair Credit, Poor Credit<span class="text-success ml-1"> </span></div>
+																														</div>
+																													<div style="display: grid; place-items: center; margin-right:50px;" class="log-details"><span style="color:orange !important;"
+																													 class="text-success ml-1">Pending Verification</span></div>
+																												</div>
+
+																												<div style="display:flex; flex-direction: row; justify-content: space-between;" class="activity-log">
+																														<div> <p class="log-name">NIPPS Verification<small class="log-time">- 24 hours</small></p>
+																																	<div class="log-details"><span class="text-success ml-1"> </span></div>
+																														</div>
+																													<div style="display: grid; place-items: center; margin-right:50px;" class="log-details"><span style="color:gray !important;" class="text-success ml-1">
+																														Submitted</span></div>
+																												</div>
+
+																												<div style="display:flex; flex-direction: row; justify-content: space-between;" class="activity-log">
+																														<div> <p class="log-name">Collateral Verification<small class="log-time">- 24 hours</small></p>
+																																	<div class="log-details">Real Estate, Vehicles, Inventory<span class="text-success ml-1"> </span></div>
+																														</div>
+																													<div style="display: grid; place-items: center; margin-right:50px;" class="log-details"><span class="text-success ml-1">
+																														Verified</span></div>
+																												</div>
 																										</div>
 																								</div><div class="slimScrollBar" style="background: rgb(214, 219, 230); width: 5px; position: absolute; top: 0px; opacity: 0.8; display: none; border-radius: 0px; z-index: 99; right: 1px; height: 241.313px;"></div><div class="slimScrollRail" style="width: 5px; height: 100%; position: absolute; top: 0px; display: none; border-radius: 0px; background: rgb(214, 219, 230); opacity: 0.2; z-index: 90; right: 1px;"></div></div>
 																						</div>
