@@ -4,7 +4,8 @@
     <!-- Required meta tags -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>QuickLoan - Get a Loan in Minutes</title>
+    <link rel="shortcut icon" href="img/centrum-logo.png">
+    <title>Centrum Loan - Get a Loan in Minutes</title>
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
 
@@ -17,7 +18,7 @@
         }
         /* Header */
         .navbar {
-            background-color: #007bff;
+            background-color: skyblue;
         }
         .navbar-brand img {
             max-height: 50px;
@@ -109,7 +110,7 @@
         }
         /* CTA Section */
         .cta {
-            background-color: #28a745;
+            background-color:skyblue;
             color: #fff;
             text-align: center;
             padding: 50px 20px;
@@ -123,12 +124,12 @@
         }
         /* Footer */
         .footer {
-            background-color: #343a40;
+            background-color: /*#343a40*/ #0f172a;
             color: #ddd;
             padding: 30px 0;
         }
         .footer a {
-            color: #ddd;
+            color: #1173eb;
         }
         .social-icons a {
             color: #ddd;
@@ -143,7 +144,7 @@
     <nav class="navbar navbar-expand-lg navbar-dark sticky-top">
         <div class="container">
             <a class="navbar-brand" href="#">
-                <img src="logo.png" alt="QuickLoan">
+                <img src="img/centrum-logo.png" alt="QuickLoan" style="width: 100px; height: 150px;">
             </a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav">
                 <span class="navbar-toggler-icon"></span>
@@ -307,7 +308,7 @@
                 <!-- Testimonial 1 -->
                 <div class="col-md-4">
                     <div class="testimonial">
-                        <img src="Customer.png" class="img-fluid rounded-circle" alt="Customer 1">
+                        <img src="Customer.png" class="img-fluid rounded-circle" alt="Customer 1" style="border-radius: 50%; width: 100px; height: 100px; object-fit: cover;">
                         <p>"QuickLoan helped me fund my small business in no time. Excellent service!"</p>
                         <div class="customer">- Sarah O.</div>
                         <div class="rating">★★★★★</div>
@@ -316,7 +317,7 @@
                 <!-- Testimonial 2 -->
                 <div class="col-md-4">
                     <div class="testimonial">
-                        <img src="hapi.jpg" class="img-fluid rounded-circle" alt="Customer 2">
+                        <img src="hapi.jpg" class="img-fluid rounded-circle" alt="Customer 2" style="border-radius: 50%; width: 100px; height: 100px; object-fit: cover;">
                         <p>"The application process was so simple, and I received my loan within 24 hours."</p>
                         <div class="customer">- David K.</div>
                         <div class="rating">★★★★★</div>
@@ -325,7 +326,7 @@
                 <!-- Testimonial 3 -->
                 <div class="col-md-4">
                     <div class="testimonial">
-                        <img src="hapicust.jpg" class="img-fluid rounded-circle" alt="Customer 3">
+                        <img src="hapicust.jpg" class="img-fluid rounded-circle" alt="Customer 3" style="border-radius: 50%; width: 100px; height: 100px; object-fit: cover;">
                         <p>"Highly recommend QuickLoan for anyone looking for a quick and easy loan solution."</p>
                         <div class="customer">- Mary L.</div>
                         <div class="rating">★★★★★</div>
@@ -401,23 +402,28 @@
         </div>
     </section>
 
-    <!-- Footer Section -->
-    <footer class="footer">
-        <div class="container text-center">
-            <p>Company Address: No 5 Market Road, Gwagwalada, Abuja</p>
-            <p>License Number: XYZ12345</p>
-            <div class="social-icons">
-                <a href="#"><i class="icon icon-facebook"></i></a>
-                <a href="#"><i class="icon icon-twitter"></i></a>
-                <a href="#"><i class="icon icon-instagram"></i></a>
-            </div>
-            <p>
-                <a href="#">Terms and Conditions</a> | 
-                <a href="#">Privacy Policy</a>
-            </p>
-            <p>&copy; 2023 QuickLoan. All rights reserved.</p>
-        </div>
-    </footer>
+<!-- Footer Section -->
+<footer class="footer">
+  <div class="container text-center">
+    <p>No 9B Lumumbashi Street Abacha Estate Wuse Zone 4 Abuja<br> +234 908 8888 198<br> +2349166663773 </p>
+    <p>info@centrumfinanceltd.com</p>
+        <p>
+      <a href="#">Terms and Conditions</a> | <a href="(link unavailable)">Privacy Policy</a>
+    </p>
+    <div class="icon">
+                        <a href="#"><ion-icon name="logo-facebook"></ion-icon></a>
+                        <a href="#"><ion-icon name="logo-instagram"></ion-icon></a>
+                        <a href="#"><ion-icon name="logo-twitter"></ion-icon></a>
+                        <a href="#"><ion-icon name="logo-google"></ion-icon></a>
+                        <a href="#"><ion-icon name="logo-skype"></ion-icon></a>
+
+    </div>
+
+    <p>&copy; 2024 Centrum Finance Company Limited.</p>
+  </div>
+</footer>
+
+
 
     <!-- Required JavaScript Files -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
@@ -426,5 +432,7 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <!-- Optional JavaScript for Icons (e.g., Font Awesome) -->
     <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
+
 </body>
 </html>
