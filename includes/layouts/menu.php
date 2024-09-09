@@ -98,7 +98,7 @@
                                 <a href="starter-page.php">Applicants</a>
                             </li>
                             <li>
-                                <a href="starter-page.php">Make New Application</a>
+                                <a href="create-application-biodata.php">Make New Application</a>
                             </li>
                         </ul>
                     </div>
@@ -148,7 +148,7 @@
                 <div class="sidebarMenuScroll">
                     <div class="sidebar-menu">
                         <ul>
-                            <li class="list-heading">MY Payments</li>
+                            <li class="list-heading">My Payments</li>
                             <li>
                                 <a href="chat.php">Payment</a>
                             </li>
