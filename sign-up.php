@@ -122,7 +122,7 @@
     <div class="signup-container">
         <div class="signup-wrapper">
             <!-- Logo -->
-            <img src="logo.png" alt="Logo">
+            <img src="./img/centrum-logo.png" alt="Logo">
             <h6>Create Your Account</h6>
             <form action="#">
                 <div class="field-wrapper">
@@ -144,7 +144,10 @@
                     By signing up, you agree to our <a href="#">Terms and Conditions</a>.
                 </div>
                 <div class="actions">
-                    <button type="submit" class="btn btn-primary">Sign Up</button>
+                    <a href="./create-application-biodata.php" class="btn btn-primary">
+                        Sign Up
+                    </a>
+                    <!-- <button type="submit" class="btn btn-primary">Sign Up</button> -->
                 </div>
             </form>
             <div class="login-redirect">

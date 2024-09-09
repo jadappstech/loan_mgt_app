@@ -458,15 +458,17 @@
 										</div>
 									</div>
 								</div>
-
-								<div class="row gutters">
-									<div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
-										<a href="./create-application-loan-info.php">
-											<!-- <button class="btn btn-primary">Previous</button> -->
-											<button class="btn btn-primary">Next</button>
-										</a>
+								<div class="card">
+									<div class="row gutters card-body">
+										<div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
+											<a href="./create-application-loan-info.php">
+												<!-- <button class="btn btn-primary">Previous</button> -->
+												<button class="btn btn-primary">Next</button>
+											</a>
+										</div>
 									</div>
 								</div>
+
 							</div>
 						</div>
 						<!-- Row end -->
