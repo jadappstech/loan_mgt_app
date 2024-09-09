@@ -83,26 +83,26 @@
                 <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12">
                     <div class="login-about">
                         <div class="slogan">
-                            <span>Design</span>
+                            <span>Loan</span>
                             <span>Made</span>
-                            <span>Simple.</span>
+                            <span>Easy </span>
                         </div>
                         <div class="about-desc">
-                            UniPro is a data dashboard that visually tracks, analyzes, and displays key performance indicators (KPI), metrics, and key data points to monitor the health of a business, department, or specific process.
+                            <!-- UniPro is a data dashboard that visually tracks, analyzes, and displays key performance indicators (KPI), metrics, and key data points to monitor the health of a business, department, or specific process. -->
                         </div>
                         <a href="reports.php" class="know-more">Know More <img src="img/right-arrow.svg" alt="Uni Pro Admin"></a>
                     </div>
                 </div>
                 <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12">
                     <div class="login-wrapper">
-                        <form action="https://www.bootstrapget.com/demos/themeforest/unipro-admin-template/demos/01-design-blue/dashboard.php">
+                        <form action="./includes/layouts/db.php" method="POST">
                             <div class="login-screen">
                                 <div class="login-body">
                                     <!-- Center the logo and increase size -->
                                     <a href="dashboard.php" class="login-logo d-flex justify-content-center">
                                         <img src="img/centrum-logo.png" alt="Uni Pro Admin">
                                     </a>
-                                    <h6 class="text-center">Welcome back to UniPro dashboard,<br>Please sign in to your account.</h6>
+                                    <h6 class="text-center">Welcome back to The Loan Management System,<br>Please sign in to your account.</h6>
                                     <div class="field-wrapper">
                                         <input type="email" required autofocus>
                                         <div class="field-placeholder">Email ID</div>

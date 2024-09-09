@@ -1,5 +1,9 @@
 <?php session_start(); 
-$username = $_SESSION['user'];?>
+$username = $_SESSION['user'];
+if(!isset($username) || $username == null){
+    $username = 'all';
+}
+?>
 
 <head>
     <!-- Required meta tags -->
