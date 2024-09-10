@@ -80,71 +80,66 @@
 						<!-- Row start -->
 						<div class="row gutters">
                             <!-- Your code goes in here...-->
-							<!-- Row start -->
-							<div style="display: inline;" class="row gutters">
-							<div style=" " class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
-																<!-- Row start -->
-																<div class="row gutters">
-																		
-																		
-																		<div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
-																				<!-- Card start -->
-																				<div class="card">
-																						<div class="card-header">
-																								<div style="font-size:24px;" class="card-title">Verification stages</div>
-																						</div>
-																						<div class="card-body">
-																								<div class="slimScrollDiv" style="position: relative; overflow: hidden; width: auto; height: 250px;"><div class="customScroll250" style="overflow: hidden; width: auto; height: 250px;">
-																										<div class="timeline-activity">
-																												<div style="display:flex; flex-direction: row; justify-content: space-between;" class="activity-log">
-																														<div> <p class="log-name">Bio Data<small class="log-time">- 24 hours</small></p>
-																																	<div class="log-details">Identity Verification (National Identity Card, Driver License, International Passport)<span class="text-success ml-1"> </span></div>
-																														</div>
-																													<div style="display: grid; place-items: center; margin-right:50px;" class="log-details"><span class="text-success ml-1">
-																														Verified</span></div>
-																												</div>
-																												
-																												<div style="display:flex; flex-direction: row; justify-content: space-between;" class="activity-log">
-																														<div> <p class="log-name">Bank Statements<small class="log-time">- 48-72 hours</small></p>
-																																	<div class="log-details">Savings Account, Current Account, Domiciliary Account, Foriegn Account<span class="text-success ml-1"> </span></div>
-																														</div>
-																													<div style="display: grid; place-items: center; margin-right:50px;" class="log-details"><span class="text-success ml-1">
-																														Verified</span></div>
-																												</div>
+							<div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
+								<!-- Card start -->
+								<div class="card">
+									<div class="card-header">
+										<div style="font-size:24px;" class="card-title">Verification stages</div>
+									</div>
+									<div class="card-body">
+										<div class="slimScrollDiv" style="position: relative; overflow: hidden; width: auto; height: 250px;"><div class="customScroll250" style="overflow: hidden; width: auto; height: 250px;">
+											<div class="timeline-activity">
+												<div style="display:flex; flex-direction: row; justify-content: space-between;" class="activity-log">
+													<div> 
+														<p class="log-name">Bio Data<small class="log-time">- 24 hours</small></p>
+														<div class="log-details">Identity Verification (National Identity Card, Driver License, International Passport)<span class="text-success ml-1"> </span></div>
+													</div>
+													<div style="display: grid; place-items: center; margin-right:50px;" class="log-details"><span class="text-success ml-1">Verified</span></div>
+												</div>
+												
+												<div style="display:flex; flex-direction: row; justify-content: space-between;" class="activity-log">
+													<div> 
+														<p class="log-name">Bank Statements<small class="log-time">- 48-72 hours</small></p>
+														<div class="log-details">Savings Account, Current Account, Domiciliary Account, Foriegn Account<span class="text-success ml-1"> </span></div>
+													</div>
+													<div style="display: grid; place-items: center; margin-right:50px;" class="log-details">
+														<span class="text-success ml-1">Verified</span>
+													</div>
+												</div>
 
-																												<div style="display:flex; flex-direction: row; justify-content: space-between;" class="activity-log">
-																														<div> <p class="log-name">Credit Status<small class="log-time">- 24 hours</small></p>
-																																	<div class="log-details">Excellent Credit, Good Credit, Fair Credit, Poor Credit<span class="text-success ml-1"> </span></div>
-																														</div>
-																													<div style="display: grid; place-items: center; margin-right:50px;" class="log-details"><span style="color:orange !important;"
-																													 class="text-success ml-1">Pending Verification</span></div>
-																												</div>
+												<div style="display:flex; flex-direction: row; justify-content: space-between;" class="activity-log">
+													<div> 
+														<p class="log-name">Credit Status<small class="log-time">- 24 hours</small></p>
+														<div class="log-details">Excellent Credit, Good Credit, Fair Credit, Poor Credit<span class="text-success ml-1"> </span></div>
+													</div>
+													<div style="display: grid; place-items: center; margin-right:50px;" class="log-details">
+														<span style="color:orange !important;" class="text-success ml-1">Pending Verification</span>
+													</div>
+												</div>
 
-																												<div style="display:flex; flex-direction: row; justify-content: space-between;" class="activity-log">
-																														<div> <p class="log-name">NIPPS Verification<small class="log-time">- 24 hours</small></p>
-																																	<div class="log-details"><span class="text-success ml-1"> </span></div>
-																														</div>
-																													<div style="display: grid; place-items: center; margin-right:50px;" class="log-details"><span style="color:gray !important;" class="text-success ml-1">
-																														Submitted</span></div>
-																												</div>
+												<div style="display:flex; flex-direction: row; justify-content: space-between;" class="activity-log">
+													<div> 
+														<p class="log-name">NIPPS Verification<small class="log-time">- 24 hours</small></p>
+														<div class="log-details"><span class="text-success ml-1"> </span></div>
+													</div>
+													<div style="display: grid; place-items: center; margin-right:50px;" class="log-details"><span style="color:gray !important;" class="text-success ml-1">Submitted</span></div>
+												</div>
 
-																												<div style="display:flex; flex-direction: row; justify-content: space-between;" class="activity-log">
-																														<div> <p class="log-name">Collateral Verification<small class="log-time">- 24 hours</small></p>
-																																	<div class="log-details">Real Estate, Vehicles, Inventory<span class="text-success ml-1"> </span></div>
-																														</div>
-																													<div style="display: grid; place-items: center; margin-right:50px;" class="log-details"><span class="text-success ml-1">
-																														Verified</span></div>
-																												</div>
-																										</div>
-																								</div><div class="slimScrollBar" style="background: rgb(214, 219, 230); width: 5px; position: absolute; top: 0px; opacity: 0.8; display: none; border-radius: 0px; z-index: 99; right: 1px; height: 241.313px;"></div><div class="slimScrollRail" style="width: 5px; height: 100%; position: absolute; top: 0px; display: none; border-radius: 0px; background: rgb(214, 219, 230); opacity: 0.2; z-index: 90; right: 1px;"></div></div>
-																						</div>
-																				</div>
-																				<!-- Card end -->
-																		
-														</div>
-														<div class="col-xl-4 col-lg-4 col-md-12 col-sm-12 col-12">
-																<!-- Row start -->
-
+												<div style="display:flex; flex-direction: row; justify-content: space-between;" class="activity-log">
+													<div> 
+														<p class="log-name">Collateral Verification<small class="log-time">- 24 hours</small></p>
+														<div class="log-details">Real Estate, Vehicles, Inventory<span class="text-success ml-1"> </span></div>
+													</div>
+													<div style="display: grid; place-items: center; margin-right:50px;" class="log-details"><span class="text-success ml-1">Verified</span></div>
+												</div>
+											</div>
+										</div>
+										<div class="slimScrollBar" style="background: rgb(214, 219, 230); width: 5px; position: absolute; top: 0px; opacity: 0.8; display: none; border-radius: 0px; z-index: 99; right: 1px; height: 241.313px;"></div><div class="slimScrollRail" style="width: 5px; height: 100%; position: absolute; top: 0px; display: none; border-radius: 0px; background: rgb(214, 219, 230); opacity: 0.2; z-index: 90; right: 1px;"></div></div>
+									</div>
+								</div>
+								<!-- Card end -->
+																
+							</div>
 						</div>
 						<!-- Row end -->
 
@@ -169,6 +164,13 @@
 		<!-- *************
 			************ Required JavaScript Files *************
 		************* -->
+		<script>
+			// change to event listener
+		setTimeout(function() {
+			window.location.href = "approved.php"; 
+		}, 7000); // 7000 milliseconds = 7 seconds
+		</script>
+
 		<!-- Required jQuery first, then Bootstrap Bundle JS -->
 		<script src="js/jquery.min.js"></script>
 		<script src="js/bootstrap.bundle.min.js"></script>

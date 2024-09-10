@@ -1,67 +1,80 @@
-<?php ?>
+<?php session_start();
+// $username = $_SESSION['user'];?>
 
-<nav class="sidebar-wrapper">
+<nav class='sidebar-wrapper'>
 
     <!-- Sidebar content start -->
-    <div class="sidebar-tabs">
+    <div class='sidebar-tabs'>
 
         <!-- Tabs nav start -->
-        <div class="nav" role="tablist" aria-orientation="vertical">
-            <a href="#" class="logo">
-                <img src="img/centrum-logo.png" alt="Logo">
+        <div class='nav' role='tablist' aria-orientation='vertical'>
+            
+            <a href='#' class='logo'>
+                <img src='img/centrum-logo.png' alt='Logo'>
             </a>
-            <a class="nav-link active" id="dashboard-tab" data-bs-toggle="tab" href="#tab-dashboard" role="tab" aria-controls="tab-dashboard" aria-selected="true">
-                <i class="icon-home2"></i>
-                <span class="nav-link-text">Dashboard</span>
+            
+            <a class='nav-link active' id='dashboard-tab' data-bs-toggle='tab' href='#tab-dashboard' role='tab' aria-controls='tab-dashboard' aria-selected='true'>
+                <i class='icon-home2'></i>
+                <span class='nav-link-text'>Dashboard</span>
             </a>
-            <a class="nav-link" id="applications-tab" data-bs-toggle="tab" href="#tab-applications" role="tab" aria-controls="tab-applications" aria-selected="false">
-                <i class="icon-layers2"></i>
-                <span class="nav-link-text">Application</span>
+            <a class='nav-link' id='applications-tab' data-bs-toggle='tab' href='#tab-applications' role='tab' aria-controls='tab-applications' aria-selected='false'>
+                <i class='icon-layers2'></i>
+                <span class='nav-link-text'>Application</span>
             </a>
-            <a class="nav-link" id="user-tab" data-bs-toggle="tab" href="#tab-user" role="tab" aria-controls="tab-user" aria-selected="false">
-                <i class="icon-book-open"></i>
-                <span class="nav-link-text">User Management</span>
+            <?php //if($username == 'admin' || $username == 'all'){?>
+            <a class='nav-link' id='user-tab' data-bs-toggle='tab' href='#tab-user' role='tab' aria-controls='tab-user' aria-selected='false'>
+                <i class='icon-book-open'></i>
+                <span class='nav-link-text'>User Management</span>
             </a>
-            <a class="nav-link" id="payments-tab" data-bs-toggle="tab" href="#tab-payments" role="tab" aria-controls="tab-payments" aria-selected="false">
-                <i class="icon-edit1"></i>
-                <span class="nav-link-text">Payments</span>
+            <?php //}?>
+            <?php //if($username == 'admin' || $username == 'user' || $username == 'credit' || $username == 'all'){?>
+            <a class='nav-link' id='payments-tab' data-bs-toggle='tab' href='#tab-payments' role='tab' aria-controls='tab-payments' aria-selected='false'>
+                <i class='icon-edit1'></i>
+                <span class='nav-link-text'>Payments</span>
             </a>
-            <a class="nav-link" id="disbursement-tab" data-bs-toggle="tab" href="#tab-disbursement" role="tab" aria-controls="tab-disbursement" aria-selected="false">
-                <i class="icon-box"></i>
-                <span class="nav-link-text">Disbursement</span>
+            <?php //}?>
+            <?php //if($username == 'admin' || $username == 'credit' || $username == 'all'){?>
+            <a class='nav-link' id='disbursement-tab' data-bs-toggle='tab' href='#tab-disbursement' role='tab' aria-controls='tab-disbursement' aria-selected='false'>
+                <i class='icon-box'></i>
+                <span class='nav-link-text'>Disbursement</span>
             </a>
-            <a class="nav-link" id="tracking-tab" data-bs-toggle="tab" href="#tab-tracking" role="tab" aria-controls="tab-tracking" aria-selected="false">
-                <i class="icon-pie-chart1"></i>
-                <span class="nav-link-text">Tracking</span>
+            <?php //}?>
+            <?php //if($username == 'admin' || $username == 'credit' || $username == 'all'){?>
+            <a class='nav-link' id='tracking-tab' data-bs-toggle='tab' href='#tab-tracking' role='tab' aria-controls='tab-tracking' aria-selected='false'>
+                <i class='icon-pie-chart1'></i>
+                <span class='nav-link-text'>Tracking</span>
             </a>
-            <a class="nav-link settings" id="settings-tab" data-bs-toggle="tab" href="#tab-settings" role="tab" aria-controls="tab-authentication" aria-selected="false">
-                <i class="icon-settings1"></i>
-                <span class="nav-link-text">Settings</span>
+            <?php //}?>
+            <?php //if($username == 'admin' || $username == 'credit' || $username == 'all'){?>
+            <a class='nav-link settings' id='settings-tab' data-bs-toggle='tab' href='#tab-settings' role='tab' aria-controls='tab-authentication' aria-selected='false'>
+                <i class='icon-settings1'></i>
+                <span class='nav-link-text'>Settings</span>
             </a>
+            <?php// }?>
         </div>
         <!-- Tabs nav end -->
 
         <!-- Tabs content start -->
-        <div class="tab-content">
+        <div class='tab-content'>
                     
             <!-- Chat tab -->
-            <div class="tab-pane fade show active" id="tab-dashboard" role="tabpanel" aria-labelledby="dashboard-tab">
+            <div class='tab-pane fade show active' id='tab-dashboard' role='tabpanel' aria-labelledby='dashboard-tab'>
 
                 <!-- Tab content header start -->
-                <div class="tab-pane-header">
+                <div class='tab-pane-header'>
                    Dashboard
                 </div>
                 <!-- Tab content header end -->
-                <div class="list-heading">
+                <div class='list-heading'>
                     &nbsp; 
                 </div>
 
                 <!-- Sidebar menu starts -->
-                <div class="sidebarMenuScroll">
-                    <div class="sidebar-menu">
+                <div class='sidebarMenuScroll'>
+                    <div class='sidebar-menu'>
                         <ul>
                             <li>
-                                <a href="index-2.php" class="current-page">My Dashboard</a>
+                                <a href='index-2.php' class='current-page'>My Dashboard</a>
                             </li>
                             
                         </ul>
@@ -73,32 +86,32 @@
             </div>
             
             <!-- Pages tab -->
-            <div class="tab-pane fade" id="tab-applications" role="tabpanel" aria-labelledby="applications-tab">
+            <div class='tab-pane fade' id='tab-applications' role='tabpanel' aria-labelledby='applications-tab'>
                 
                 <!-- Tab content header start -->
-                <div class="tab-pane-header">
+                <div class='tab-pane-header'>
                     Applications
                 </div>
                 <!-- Tab content header end -->
 
                 <!-- Sidebar menu starts -->
-                <div class="sidebarMenuScroll">
-                    <div class="sidebar-menu">
+                <div class='sidebarMenuScroll'>
+                    <div class='sidebar-menu'>
                         <ul>
                             <!-- Tab content header start -->
-                            <div class="list-heading">
+                            <div class='list-heading'>
                                 MY APPLICATIONS
                             </div>
                             
                             <!-- Tab content header end -->
                             <li>
-                                <a href="starter-page.php">Applications</a>
+                                <a href='all-applications.php'>Applications</a>
                             </li>
                             <li>
-                                <a href="starter-page.php">Applicants</a>
+                                <a href='list-of-applications.php'>Applicants</a>
                             </li>
                             <li>
-                                <a href="starter-page.php">Make New Application</a>
+                                <a href='create-application-biodata.php'>Make New Application</a>
                             </li>
                         </ul>
                     </div>
@@ -109,24 +122,24 @@
             <!-- Pages tab -->
 
             <!-- Pages tab -->
-            <div class="tab-pane fade" id="tab-user" role="tabpanel" aria-labelledby="user-tab">
+            <div class='tab-pane fade' id='tab-user' role='tabpanel' aria-labelledby='user-tab'>
                 
                 <!-- Tab content header start -->
-                <div class="tab-pane-header">
+                <div class='tab-pane-header'>
                     User Management
                 </div>
                 <!-- Tab content header end -->
 
                 <!-- Sidebar menu starts -->
-                <div class="sidebarMenuScroll">
-                    <div class="sidebar-menu">
+                <div class='sidebarMenuScroll'>
+                    <div class='sidebar-menu'>
                         <ul>
-                            <li class="list-heading">&nbsp;</li>
+                            <li class='list-heading'>&nbsp;</li>
                             <li>
-                                <a href="starter-page.php">Onboarding</a>
+                                <a href='onboarding.php'>Onboarding</a>
                             </li>
                             <li>
-                                <a href="starter-page.php">All Staff</a>
+                                <a href='all-staffs.php'>All Staff</a>
                             </li>
                         </ul>
                     </div>
@@ -136,30 +149,30 @@
             </div>
             <!-- Pages tab -->            
 
-            <div class="tab-pane fade" id="tab-payments" role="tabpanel" aria-labelledby="payments-tab">
+            <div class='tab-pane fade' id='tab-payments' role='tabpanel' aria-labelledby='payments-tab'>
                 
                 <!-- Tab content header start -->
-                <div class="tab-pane-header">
+                <div class='tab-pane-header'>
                     Payment
                 </div>
                 <!-- Tab content header end -->
 
                 <!-- Sidebar menu starts -->
-                <div class="sidebarMenuScroll">
-                    <div class="sidebar-menu">
+                <div class='sidebarMenuScroll'>
+                    <div class='sidebar-menu'>
                         <ul>
-                            <li class="list-heading">MY Payments</li>
+                            <li class='list-heading'>MY Payments</li>
                             <li>
-                                <a href="chat.php">Payment</a>
+                                <a href='#'>Payment</a>
                             </li>
                             <li>
-                                <a href="tasks.php">History</a>
+                                <a href='#'>History</a>
                             </li>
                             <li>
-                                <a href="create-invoice.php">Ongoing</a>
+                                <a href='#'>Ongoing Payments</a>
                             </li>
                             <li>
-                                <a href="view-invoice.php">Make Manual Payment</a>
+                                <a href='#'>Make Manual Payment</a>
                             </li>
                             
                         </ul>
@@ -170,23 +183,23 @@
             </div>
 
             <!-- Forms tab -->
-            <div class="tab-pane fade" id="tab-disbursement" role="tabpanel" aria-labelledby="disbursement-tab">
+            <div class='tab-pane fade' id='tab-disbursement' role='tabpanel' aria-labelledby='disbursement-tab'>
 
                 <!-- Tab content header start -->
-                <div class="tab-pane-header">
+                <div class='tab-pane-header'>
                     Disbursement
                 </div>
                 <!-- Tab content header end -->
 
                 <!-- Sidebar menu starts -->
-                <div class="sidebarMenuScroll">
-                    <div class="sidebar-menu">
+                <div class='sidebarMenuScroll'>
+                    <div class='sidebar-menu'>
                         <ul>
                             <li>
-                                <a href="forms-layout-one.php">History</a>
+                                <a href='#'>History</a>
                             </li>
                             <li>
-                                <a href="forms-layout-two.php">Pending</a>
+                                <a href='#'>Pending</a>
                             </li>
                         </ul>
                     </div>
@@ -196,23 +209,23 @@
             </div>
             
             <!-- Components tab -->
-            <div class="tab-pane fade" id="tab-tracking" role="tabpanel" aria-labelledby="tracking-tab">
+            <div class='tab-pane fade' id='tab-tracking' role='tabpanel' aria-labelledby='tracking-tab'>
                 
                 <!-- Tab content header start -->
-                <div class="tab-pane-header">
+                <div class='tab-pane-header'>
                     Trackings
                 </div>
                 <!-- Tab content header end -->
 
                 <!-- Sidebar menu starts -->
-                <div class="sidebarMenuScroll">
-                    <div class="sidebar-menu">
+                <div class='sidebarMenuScroll'>
+                    <div class='sidebar-menu'>
                         <ul>
-                            <li class="list-heading">
+                            <li class='list-heading'>
                                 <!-- Tracking -->&nbsp;
                             </li>
                             <li>
-                                <a href="forms-layout-two.php">Tracking</a>
+                                <a href='#'>Tracking</a>
                             </li>
                         </ul>
                     </div>
@@ -221,23 +234,22 @@
 
                 
             </div>
-
            
             <!-- Settings tab -->
-            <div class="tab-pane fade" id="tab-settings" role="tabpanel" aria-labelledby="settings-tab">
+            <div class='tab-pane fade' id='tab-settings' role='tabpanel' aria-labelledby='settings-tab'>
                 
                 <!-- Tab content header start -->
-                <div class="tab-pane-header">
+                <div class='tab-pane-header'>
                     Settings
                 </div>
                 <!-- Tab content header end -->
-                <div class="sidebarMenuScroll">
-                    <div class="sidebar-menu">
+                <div class='sidebarMenuScroll'>
+                    <div class='sidebar-menu'>
                         <ul>
-                            <li class="list-heading">Set up Loan Mgt App</a>
+                            <li class='list-heading'>Set up Loan Mgt App</a>
                             </li>
                             <li>
-                                <a href="#">Role Management</a>
+                                <a href='#'>Role Management</a>
                             </li>
                             
                         </ul>
