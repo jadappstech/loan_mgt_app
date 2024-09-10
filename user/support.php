@@ -35,6 +35,77 @@
 
   <!-- Theme css -->
   <link rel="stylesheet" id="change-link" type="text/css" href="assets/css/style.css" />
+
+  <style>
+    body {
+      font-family: 'Lato', sans-serif;
+      background-color: #f4f5f7;
+      margin: 0;
+      padding: 0;
+    }
+
+    .support-page {
+      text-align: center;
+      margin-top: -10px;
+    }
+
+    .support-logo {
+      display: block;
+      margin: 0 auto;
+      width: 100px;
+    }
+
+    .support-heading {
+      font-size: 19px;
+      margin-top: 20px;
+      color: #333;
+    }
+
+    .support-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+      gap: 20px;
+      margin: 50px auto;
+      max-width: 800px;
+      padding: 20px;
+    }
+
+    .support-item {
+      background-color: #fff;
+      border-radius: 10px;
+      padding: 20px;
+      text-align: center;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s ease;
+    }
+
+    .support-item:hover {
+      transform: translateY(-5px);
+    }
+
+    .support-item img {
+      width: 40px;
+      margin-bottom: 10px;
+    }
+
+    .support-item h4 {
+      font-size: 16px;
+      color: #444;
+      margin-bottom: 10px;
+    }
+
+    .support-item a {
+      text-decoration: none;
+      color: #007bff;
+      font-weight: bold;
+      display: block;
+    }
+
+    .support-item a:hover {
+      color: #0056b3;
+    }
+
+  </style>
 </head>
 
 <body>
@@ -120,99 +191,81 @@
         <a class="sidebar-btn" data-bs-toggle="offcanvas" data-bs-target="#offcanvasLeft">
           <i class="menu-icon" data-feather="menu"></i>
         </a>
-        <h2>Profile</h2>
+        <h2>Support</h2>
       </div>
     </div>
   </header>
   <!-- header end -->
+ 
+  <!-- Support section start -->
+  <div class="support-page">
+    <img class="support-logo" src="assets/images/support2.png" alt="Support Logo">
+    <h2 class="support-heading">Call or Chat with us and we will<br> answer any question you have</h2>
 
-  <!-- profile section start -->
-  <section class="section-b-space">
-    <div class="custom-container">
-      <div class="profile-section">
-        <div class="profile-banner">
-          <div class="profile-image">
-            <img class="img-fluid profile-pic" src="assets/images/person/p3.png" alt="p3" />
-          </div>
-        </div>
-        <h2>Survana Williams</h2>
-        <h5>+62 78459 25623</h5>
+    <div class="support-grid">
+      <!-- Chat with a Customer Representative -->
+      <div class="support-item">
+        <img src="assets/images/chaticon.png" alt="Chat Icon" onclick="window.location.href='chat-support.php'">
+        <h4>Chat with Us</h4>
+        
       </div>
 
-      <ul class="profile-list">
-        <li>
-          <a href="my-account.php" class="profile-box">
-            <div class="profile-img">
-              <i class="icon" data-feather="user"></i>
-            </div>
-            <div class="profile-details">
-              <h4>My Account</h4>
-              <img class="img-fluid arrow" src="assets/images/svg/arrow.svg" alt="arrow" />
-            </div>
-          </a>
-        </li>
-        <li>
-          <a href="cards.php" class="profile-box">
-            <div class="profile-img">
-              <i class="icon" data-feather="credit-card"></i>
-            </div>
-            <div class="profile-details">
-              <h4>My Cards</h4>
-              <img class="img-fluid arrow" src="assets/images/svg/arrow.svg" alt="arrow" />
-            </div>
-          </a>
-        </li>
-        <li>
-          <a href="change-password.php" class="profile-box">
-            <div class="profile-img">
-              <i class="icon" data-feather="settings"></i>
-            </div>
-            <div class="profile-details">
-              <h4>Change Password</h4>
-              <img class="img-fluid arrow" src="assets/images/svg/arrow.svg" alt="arrow" />
-            </div>
-          </a>
-        </li>
-        <li>
-          <a href="setting.php" class="profile-box">
-            <div class="profile-img">
-              <i class="icon" data-feather="lock"></i>
-            </div>
-            <div class="profile-details">
-              <h4>Settings</h4>
-              <img class="img-fluid arrow" src="assets/images/svg/arrow.svg" alt="arrow" />
-            </div>
-          </a>
-        </li>
+      <!-- Call Us -->
+      <div class="support-item">
+        <img src="assets/images/phone_icon.png" alt="Phone Icon" onclick="window.location.href='tel:+1234567890'">
+        <h4>Call Us</h4>
+        
+      </div>
 
-        <li>
-          <a href="help.php" class="profile-box">
-            <div class="profile-img">
-              <i class="icon" data-feather="help-circle"></i>
-            </div>
-            <div class="profile-details">
-              <h4>Help Center</h4>
-              <img class="img-fluid arrow" src="assets/images/svg/arrow.svg" alt="arrow" />
-            </div>
-          </a>
-        </li>
-        <li>
-          <a href="signin.php" class="profile-box">
-            <div class="profile-img">
-              <i class="icon" data-feather="log-out"></i>
-            </div>
-            <div class="profile-details">
-              <h4>Log Out</h4>
-            </div>
-          </a>
-        </li>
-      </ul>
+      <!-- FAQ -->
+      <div class="support-item">
+      
+        <img src="assets/images/FAQ.jpg" alt="FAQ Icon" onclick="window.location.href='help.php'">
+        <h4>FAQ</h4>
+        
+      </div>
+
+      <!-- WhatsApp -->
+      <div class="support-item">
+        <img src="assets/images/whatapp.png" alt="WhatsApp Icon" onclick="window.location.href='https://wa.me/1234567890'">
+        <h4>Get on WhatsApp</h4>
+        
+      </div>
+
+      <!-- Facebook -->
+      <div class="support-item">
+        <img src="assets/images/facebook.png" alt="Facebook Icon" onclick="window.location.href='www.facebook.com/mPay'">
+        <h4>Contact us on Facebook</h4>
+        
+      </div>
+
+      <!-- Twitter -->
+      <div class="support-item">
+    
+        <img src="assets/images/twitter.jpg" alt="Twitter Icon" onclick="window.location.href='https://twitter.com/mPay'">
+        <h4>Follow us on Twitter</h4>
+        
+      </div>
+
+      <!-- Instagram -->
+      <div class="support-item">
+     
+        <img src="assets/images/instagram.png" alt="Instagram Icon" onclick="window.location.href='https://www.instagram.com/mPay'">
+        <h4>Follow us on Instagram</h4>
+        
+      </div>
+
+      <!-- YouTube -->
+      <div class="support-item">
+      
+        <img src="assets/images/youtube.png" alt="YouTube Icon" onclick="window.location.href='https://www.youtube.com/mPay'">
+        <h4>Follow us on YouTube</h4>
+        
+      </div>
     </div>
-  </section>
-  <!-- profile section end -->
+  </div>
+  <!-- Support section end -->
 
-  <!-- panel-space start -->
-  <section class="panel-space"></section>
   <!-- panel-space end -->
 
   <!-- bottom navbar start -->
