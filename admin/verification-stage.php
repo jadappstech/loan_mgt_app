@@ -165,11 +165,41 @@
 			************ Required JavaScript Files *************
 		************* -->
 		<script>
-			// change to event listener
-		setTimeout(function() {
-			window.location.href = "approved.php"; 
-		}, 7000); // 7000 milliseconds = 7 seconds
+		// 	// change to event listener
+			// setTimeout(function() {
+			// 	window.location.href = "approved.php"; 
+			// }, 7000); // 7000 milliseconds = 7 seconds
+			// Get references to the verification stages
+			const verificationStages = document.querySelectorAll('.activity-log');
+
+			// Function to update a verification stage's status
+			function updateVerificationStage(stageIndex, status) {
+				const statusElement = verificationStages[stageIndex].querySelector('.log-details span');
+				statusElement.textContent = status;
+			}
+
+			// Event listener for key presses
+			document.addEventListener('keydown', (event) => {
+			// Check if the pressed key is '+' or '-'
+			if (event.key === '+' || event.key === '-') {
+				// Get the index of the next unverified stage
+				let nextUnverifiedIndex = -1;
+				for (let i = 0; i < verificationStages.length; i++) {
+				const statusElement = verificationStages[i].querySelector('.log-details span');
+				if (statusElement.textContent === 'Pending Verification') {
+					nextUnverifiedIndex = i;
+					break;
+				}
+				}
+
+				// If an unverified stage is found, update its status
+				if (nextUnverifiedIndex !== -1) {
+				updateVerificationStage(nextUnverifiedIndex, event.key === '+' ? 'Verified' : 'Failed');
+				}
+			}
+			});
 		</script>
+		
 
 		<!-- Required jQuery first, then Bootstrap Bundle JS -->
 		<script src="js/jquery.min.js"></script>
