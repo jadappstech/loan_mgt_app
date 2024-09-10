@@ -95,6 +95,7 @@
             padding: 30px;
             border-radius: 5px;
             margin-bottom: 30px;
+            
         }
         .testimonial p {
             font-style: italic;
@@ -308,7 +309,7 @@
                 <!-- Testimonial 1 -->
                 <div class="col-md-4">
                     <div class="testimonial">
-                        <img src="Customer.png" class="img-fluid rounded-circle" alt="Customer 1" style="border-radius: 50%; width: 100px; height: 100px; object-fit: cover;">
+                        <img src="Customer.png" class="img-fluid rounded-circle" alt="Customer 1" style="border-radius: 50%; width: 100px; height: 100px; object-fit: cover;  display: block; margin: 0 auto;">
                         <p>"QuickLoan helped me fund my small business in no time. Excellent service!"</p>
                         <div class="customer">- Sarah O.</div>
                         <div class="rating">★★★★★</div>
@@ -317,7 +318,7 @@
                 <!-- Testimonial 2 -->
                 <div class="col-md-4">
                     <div class="testimonial">
-                        <img src="hapi.jpg" class="img-fluid rounded-circle" alt="Customer 2" style="border-radius: 50%; width: 100px; height: 100px; object-fit: cover;">
+                        <img src="img/pass.jpg" class="img-fluid rounded-circle" alt="Customer 2" style="border-radius: 50%; width: 100px; height: 100px; object-fit: cover;  display: block; margin: 0 auto;">
                         <p>"The application process was so simple, and I received my loan within 24 hours."</p>
                         <div class="customer">- David K.</div>
                         <div class="rating">★★★★★</div>
@@ -326,7 +327,7 @@
                 <!-- Testimonial 3 -->
                 <div class="col-md-4">
                     <div class="testimonial">
-                        <img src="hapicust.jpg" class="img-fluid rounded-circle" alt="Customer 3" style="border-radius: 50%; width: 100px; height: 100px; object-fit: cover;">
+                        <img src="hapicust.jpg" class="img-fluid rounded-circle" alt="Customer 3" style="border-radius: 50%; width: 100px; height: 100px; object-fit: cover;  display: block; margin: 0 auto;">
                         <p>"Highly recommend QuickLoan for anyone looking for a quick and easy loan solution."</p>
                         <div class="customer">- Mary L.</div>
                         <div class="rating">★★★★★</div>

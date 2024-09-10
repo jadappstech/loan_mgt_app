@@ -1111,170 +1111,154 @@
 							<!-- Search container end -->
 
 						</div>
-						<div class="col-xl-4 col-lg-4 col-md-4 col-sm-6 col-3">
+						<!-- Row start -->
+<div class="col-xl-4 col-lg-4 col-md-4 col-sm-6 col-3">
+    <!-- Header actions start -->
+    <ul class="header-actions">
+        <li class="dropdown">
+            <a href="#" id="taskss" data-toggle="dropdown" aria-haspopup="true">
+                <i class="icon-check-square"></i>
+            </a>
+            <div class="dropdown-menu dropdown-menu-end lrg" aria-labelledby="taskss">
+                <div class="dropdown-menu-header">
+                    List of Applicants (6)
+                </div>
+                <div class="customScroll">
+                    <ul class="activity">
+                        <li class="activity-list">
+                            <div class="detail-info">
+                                <p class="date">Today</p>
+                                <p class="info"><a href="#">Smith</a> accepted with attachments</p>
+                            </div>
+                        </li>
+                        <li class="activity-list danger">
+                            <div class="detail-info">
+                                <p class="date">Today</p>
+                                <p class="info"><a href="#">Johnson</a> sent email notifications of subscriptions and deletions</p>
+                            </div>
+                        </li>
+                        <li class="activity-list success">
+                            <div class="detail-info">
+                                <p class="date">Yesterday</p>
+                                <p class="info"><a href="#">Williams</a> required change logs activity reports</p>
+                            </div>
+                        </li>
+                        <li class="activity-list warning">
+                            <div class="detail-info">
+                                <p class="date">2 Days Ago</p>
+                                <p class="info"><a href="#">Brown</a> strategic partnership plan</p>
+                            </div>
+                        </li>
+                        <li class="activity-list">
+                            <div class="detail-info">
+                                <p class="date">3 days ago</p>
+                                <p class="info"><a href="#">Jones</a> sent email notifications of subscriptions and deletions</p>
+                            </div>
+                        </li>
+                        <li class="activity-list success">
+                            <div class="detail-info">
+                                <p class="date">7 days ago</p>
+                                <p class="info"><a href="#">Davis</a> strategic partnership plan</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </li>
+        <li class="dropdown">
+            <a href="#" id="notifications" data-toggle="dropdown" aria-haspopup="true">
+                <i class="icon-alert-triangle"></i>
+            </a>
+            <div class="dropdown-menu dropdown-menu-end lrg" aria-labelledby="notifications">
+                <div class="dropdown-menu-header">
+                    Notifications (7)
+                </div>
+                <div class="customScroll">
+                    <ul class="header-notifications">
+                        <li>
+                            <a href="#">
+                                <div class="user-img online">
+                                    <img src="img/user6.png" alt="User">
+                                </div>
+                                <div class="details">
+                                    <div class="user-title">Larkyn</div>
+                                    <div class="noti-details">Check out every table in detail.</div>
+                                    <div class="noti-date">April 25, 04:00 pm</div>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <div class="user-img busy">
+                                    <img src="img/user10.png" alt="User">
+                                </div>
+                                <div class="details">
+                                    <div class="user-title">Braxten</div>
+                                    <div class="noti-details">Approved new design.</div>
+                                    <div class="noti-date">April 10, 12:00 am</div>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <div class="user-img away">
+                                    <img src="img/user21.png" alt="User">
+                                </div>
+                                <div class="details">
+                                    <div class="user-title">Maria</div>
+                                    <div class="noti-details">Membership has been ended.</div>
+                                    <div class="noti-date">March 20, 07:30 pm</div>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <div class="user-img busy">
+                                    <img src="img/user15.png" alt="User">
+                                </div>
+                                <div class="details">
+                                    <div class="user-title">Alex</div>
+                                    <div class="noti-details">Design Review.</div>
+                                    <div class="noti-date">April 18, 09:30 am</div>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <div class="user-img online">
+                                    <img src="img/user5.png" alt="User">
+                                </div>
+                                <div class="details">
+                                    <div class="user-title">Sunny</div>
+                                    <div class="noti-details">UI Discussion</div>
+                                    <div class="noti-date">April 21, 05:00 pm</div>
+                                </div>
+                            </a>
+                        </li>                                                
+                    </ul>
+                </div>
+            </div>
+        </li>
+        <li class="dropdown">
+            <a href="#" id="userSettings" class="user-settings" data-toggle="dropdown" aria-haspopup="true">
+                <span class="avatar">
+                    <img src="img/user.svg" alt="User Avatar">
+                    <span class="status busy"></span>
+                </span>
+            </a>
+            <div class="dropdown-menu dropdown-menu-end md" aria-labelledby="userSettings">
+                <div class="header-profile-actions">
+                    <a href="user-profile.php"><i class="icon-user1"></i>Profile</a>
+                    <a href="account-settings.php"><i class="icon-settings1"></i>Settings</a>
+                    <a href="forgot-password.php"><i class="icon-log-out1"></i>Logout</a>
+                </div>
+            </div>
+        </li>
+    </ul>
+    <!-- Header actions end -->
+</div>
+<!-- Row end --> 
 
-							<!-- Header actions start -->
-							<ul class="header-actions">
-								<li class="dropdown">
-									<a href="#" id="taskss" data-toggle="dropdown" aria-haspopup="true">
-										<i class="icon-check-square"></i>
-									</a>
-									<div class="dropdown-menu dropdown-menu-end lrg" aria-labelledby="taskss">
-										<div class="dropdown-menu-header">
-											Tasks (7/10)
-										</div>
-										<div class="customScroll">
-											<ul class="activity">
-												<li class="activity-list">
-													<div class="detail-info">
-														<p class="date">Today</p>
-														<p class="info">Messages accepted with attachments</p>
-													</div>
-												</li>
-												<li class="activity-list danger">
-													<div class="detail-info">
-														<p class="date">Today</p>
-														<p class="info">Send email notifications of subscriptions and deletions to list owner</p>
-													</div>
-												</li>
-												<li class="activity-list success">
-													<div class="detail-info">
-														<p class="date">Yesterday</p>
-														<p class="info">Required change logs activity reports</p>
-													</div>
-												</li>
-												<li class="activity-list warning">
-													<div class="detail-info">
-													<p class="date">2 Days Ago</p>
-														<p class="info">Strategic partnership plan</p>
-													</div>
-												</li>
-												<li class="activity-list">
-													<div class="detail-info">
-														<p class="date">2 days ago</p>
-														<p class="info">Send email notifications of subscriptions and deletions to list owner</p>
-													</div>
-												</li>
-												<li class="activity-list danger">
-													<div class="detail-info">
-														<p class="date">3 days ago</p>
-														<p class="info">Required change logs activity reports</p>
-													</div>
-												</li>
-												<li class="activity-list success">
-													<div class="detail-info">
-													<p class="date">7 days ago</p>
-														<p class="info">Strategic partnership plan</p>
-													</div>
-												</li>
-												<li class="activity-list">
-													<div class="detail-info">
-														<p class="date">2 weeks ago</p>
-														<p class="info">Required change logs activity reports</p>
-													</div>
-												</li>
-											</ul>
-										</div>
-									</div>
-								</li>
-								<li class="dropdown">
-									<a href="#" id="notifications" data-toggle="dropdown" aria-haspopup="true">
-										<i class="icon-alert-triangle"></i>
-									</a>
-									<div class="dropdown-menu dropdown-menu-end lrg" aria-labelledby="notifications">
-										<div class="dropdown-menu-header">
-											Notifications (7)
-										</div>
-										<div class="customScroll">
-											<ul class="header-notifications">
-												<li>
-													<a href="#">
-														<div class="user-img online">
-															<img src="img/user6.png" alt="User">
-														</div>
-														<div class="details">
-															<div class="user-title">Larkyn</div>
-															<div class="noti-details">Check out every table in detail.</div>
-															<div class="noti-date">April 25, 04:00 pm</div>
-														</div>
-													</a>
-												</li>
-												<li>
-													<a href="#">
-														<div class="user-img busy">
-															<img src="img/user10.png" alt="User">
-														</div>
-														<div class="details">
-															<div class="user-title">Braxten</div>
-															<div class="noti-details">Approved new design.</div>
-															<div class="noti-date">April 10, 12:00 am</div>
-														</div>
-													</a>
-												</li>
-												<li>
-													<a href="#">
-														<div class="user-img away">
-															<img src="img/user21.png" alt="User">
-														</div>
-														<div class="details">
-															<div class="user-title">Maria</div>
-															<div class="noti-details">Membership has been ended.</div>
-															<div class="noti-date">March 20, 07:30 pm</div>
-														</div>
-													</a>
-												</li>
-												<li>
-													<a href="#">
-														<div class="user-img busy">
-															<img src="img/user15.png" alt="User">
-														</div>
-														<div class="details">
-															<div class="user-title">Alex</div>
-															<div class="noti-details">Design Review.</div>
-															<div class="noti-date">April 18, 09:30 am</div>
-														</div>
-													</a>
-												</li>
-												<li>
-													<a href="#">
-														<div class="user-img online">
-															<img src="img/user5.png" alt="User">
-														</div>
-														<div class="details">
-															<div class="user-title">Sunny</div>
-															<div class="noti-details">UI Discussion</div>
-															<div class="noti-date">April 21, 05:00 pm</div>
-														</div>
-													</a>
-												</li>												
-											</ul>
-										</div>
-									</div>
-								</li>
-								<li class="dropdown">
-									<a href="#" id="userSettings" class="user-settings" data-toggle="dropdown" aria-haspopup="true">
-										<span class="avatar">
-											<img src="img/user.svg" alt="User Avatar">
-											<span class="status busy"></span>
-										</span>
-									</a>
-									<div class="dropdown-menu dropdown-menu-end md" aria-labelledby="userSettings">
-										<div class="header-profile-actions">
-											<a href="user-profile.php"><i class="icon-user1"></i>Profile</a>
-											<a href="account-settings.php"><i class="icon-settings1"></i>Settings</a>
-											<a href="forgot-password.php"><i class="icon-log-out1"></i>Logout</a>
-										</div>
-									</div>
-								</li>
-							</ul>
-							<!-- Header actions end -->
-
-						</div>
-					</div>
-					<!-- Row end -->					
-
-				</div>
-				<!-- Page header ends -->
 
 				<!-- Content wrapper scroll start -->
 				<div class="content-wrapper-scroll">
@@ -1371,212 +1355,97 @@
 									<div class="card-body">
 
 										<!-- Row start -->
-										<div class="row gutters">
-											<div class="col-xl-4 col-lg-4 col-md-6 col-sm-6 col-12">
-												<figure class="user-card">
-													<figcaption>
-														<a href="#" class="edit-card" data-bs-toggle="modal" data-bs-target="#editContact">
-															<i class="icon-mode_edit"></i>
-														</a>
-														<img src="img/user21.png" alt="Le Meilleur Admin" class="profile">
-														<h5>Larkyin</h5>
-														<ul class="list-group">
-															<li class="list-group-item"><span>Email: </span>larkyin@meow.com</li>
-															<li class="list-group-item"><span>Phone: </span>+2 300-223-4567</li>
-															<li class="list-group-item"><span>Location: </span>London</li>
-														</ul>
-													</figcaption>
-												</figure>
-											</div>
-											<div class="col-xl-4 col-lg-4 col-md-6 col-sm-6 col-12">
-												<figure class="user-card">
-													<figcaption>
-														<a href="#" class="edit-card" data-bs-toggle="modal" data-bs-target="#editContact">
-															<i class="icon-mode_edit"></i>
-														</a>
-														<img src="img/user2.png" alt="Le Meilleur Admin" class="profile">
-														<h5>Braxten</h5>
-														<ul class="list-group">
-															<li class="list-group-item"><span>Email: </span>braxten@meow.com</li>
-															<li class="list-group-item"><span>Phone: </span>+2 300-678-6789</li>
-															<li class="list-group-item"><span>Location: </span>Melbourne</li>
-														</ul>
-													</figcaption>
-												</figure>
-											</div>						
-											<div class="col-xl-4 col-lg-4 col-md-6 col-sm-6 col-12">
-												<figure class="user-card">
-													<figcaption>
-														<a href="#" class="edit-card" data-bs-toggle="modal" data-bs-target="#editContact">
-															<i class="icon-mode_edit"></i>
-														</a>
-														<img src="img/user6.png" alt="Le Meilleur Admin" class="profile">
-														<h5>Klenkov</h5>
-														<ul class="list-group">
-															<li class="list-group-item"><span>Email: </span>klenkov@meow.com</li>
-															<li class="list-group-item"><span>Phone: </span>+2 300-332-7753</li>
-															<li class="list-group-item"><span>Location: </span>Barcelona</li>
-														</ul>
-													</figcaption>
-												</figure>
-											</div>
-											<div class="col-xl-4 col-lg-4 col-md-6 col-sm-6 col-12">
-												<figure class="user-card">
-													<figcaption>
-														<a href="#" class="edit-card" data-bs-toggle="modal" data-bs-target="#editContact">
-															<i class="icon-mode_edit"></i>
-														</a>
-														<img src="img/user22.png" alt="Le Meilleur Admin" class="profile">
-														<h5>Sunny</h5>
-														<ul class="list-group">
-															<li class="list-group-item"><span>Email: </span>sunny.jd@meow.com</li>
-															<li class="list-group-item"><span>Phone: </span>+2 300-768-9809</li>
-															<li class="list-group-item"><span>Location: </span>Mumbai</li>
-														</ul>
-													</figcaption>
-												</figure>
-											</div>
-											<div class="col-xl-4 col-lg-4 col-md-6 col-sm-6 col-12">
-												<figure class="user-card">
-													<figcaption>
-														<a href="#" class="edit-card" data-bs-toggle="modal" data-bs-target="#editContact">
-															<i class="icon-mode_edit"></i>
-														</a>
-														<img src="img/user9.png" alt="Le Meilleur Admin" class="profile">
-														<h5>Melon</h5>
-														<ul class="list-group">
-															<li class="list-group-item"><span>Email: </span>melon.bn@meow.com</li>
-															<li class="list-group-item"><span>Phone: </span>+2 300-678-8897</li>
-															<li class="list-group-item"><span>Location: </span>California</li>
-														</ul>
-													</figcaption>
-												</figure>
-											</div>
-											<div class="col-xl-4 col-lg-4 col-md-6 col-sm-6 col-12">
-												<figure class="user-card">
-													<figcaption>
-														<a href="#" class="edit-card" data-bs-toggle="modal" data-bs-target="#editContact">
-															<i class="icon-mode_edit"></i>
-														</a>
-														<img src="img/user20.png" alt="Le Meilleur Admin" class="profile">
-														<h5>Bridges</h5>
-														<ul class="list-group">
-															<li class="list-group-item"><span>Email: </span>bridges.bs@meow.com</li>
-															<li class="list-group-item"><span>Phone: </span>+2 300-234-3390</li>
-															<li class="list-group-item"><span>Location: </span>Singapore</li>
-														</ul>
-													</figcaption>
-												</figure>
-											</div>
-											<div class="col-xl-4 col-lg-4 col-md-6 col-sm-6 col-12">
-												<figure class="user-card">
-													<figcaption>
-														<a href="#" class="edit-card" data-bs-toggle="modal" data-bs-target="#editContact">
-															<i class="icon-mode_edit"></i>
-														</a>
-														<img src="img/user24.png" alt="Le Meilleur Admin" class="profile">
-														<h5>Lewis</h5>
-														<ul class="list-group">
-															<li class="list-group-item"><span>Email: </span>lewis@meow.com</li>
-															<li class="list-group-item"><span>Phone: </span>+2 300-888-9999</li>
-															<li class="list-group-item"><span>Location: </span>Melbourne</li>
-														</ul>
-													</figcaption>
-												</figure>
-											</div>
-											<div class="col-xl-4 col-lg-4 col-md-6 col-sm-6 col-12">
-												<figure class="user-card">
-													<figcaption>
-														<a href="#" class="edit-card" data-bs-toggle="modal" data-bs-target="#editContact">
-															<i class="icon-mode_edit"></i>
-														</a>
-														<img src="img/user18.png" alt="Le Meilleur Admin" class="profile">
-														<h5>Chahin</h5>
-														<ul class="list-group">
-															<li class="list-group-item"><span>Email: </span>chahin@meow.com</li>
-															<li class="list-group-item"><span>Phone: </span>+2 300-999-0000</li>
-															<li class="list-group-item"><span>Location: </span>Japan</li>
-														</ul>
-													</figcaption>
-												</figure>
-											</div>
-											<div class="col-xl-4 col-lg-4 col-md-6 col-sm-6 col-12">
-												<figure class="user-card">
-													<figcaption>
-														<a href="#" class="edit-card" data-bs-toggle="modal" data-bs-target="#editContact">
-															<i class="icon-mode_edit"></i>
-														</a>
-														<img src="img/user12.png" alt="Le Meilleur Admin" class="profile">
-														<h5>Roberts</h5>
-														<ul class="list-group">
-															<li class="list-group-item"><span>Email: </span>robert@meow.com</li>
-															<li class="list-group-item"><span>Phone: </span>+2 300-345-5908</li>
-															<li class="list-group-item"><span>Location: </span>Canada</li>
-														</ul>
-													</figcaption>
-												</figure>
-											</div>
-											<div class="col-xl-4 col-lg-4 col-md-6 col-sm-6 col-12">
-												<figure class="user-card">
-													<figcaption>
-														<a href="#" class="edit-card" data-bs-toggle="modal" data-bs-target="#editContact">
-															<i class="icon-mode_edit"></i>
-														</a>
-														<img src="img/user10.png" alt="Le Meilleur Admin" class="profile">
-														<h5>Rodriguez</h5>
-														<ul class="list-group">
-															<li class="list-group-item"><span>Email: </span>rodriguez@meow.com</li>
-															<li class="list-group-item"><span>Phone: </span>+2 300-567-3569</li>
-															<li class="list-group-item"><span>Location: </span>Germany</li>
-														</ul>
-													</figcaption>
-												</figure>
-											</div>
-											<div class="col-xl-4 col-lg-4 col-md-6 col-sm-6 col-12">
-												<figure class="user-card">
-													<figcaption>
-														<a href="#" class="edit-card" data-bs-toggle="modal" data-bs-target="#editContact">
-															<i class="icon-mode_edit"></i>
-														</a>
-														<img src="img/user17.png" alt="Le Meilleur Admin" class="profile">
-														<h5>Oliva</h5>
-														<ul class="list-group">
-															<li class="list-group-item"><span>Email: </span>oliva@meow.com</li>
-															<li class="list-group-item"><span>Phone: </span>+2 300-345-8790</li>
-															<li class="list-group-item"><span>Location: </span>Barcelona</li>
-														</ul>
-													</figcaption>
-												</figure>
-											</div>
-											<div class="col-xl-4 col-lg-4 col-md-6 col-sm-6 col-12">
-												<figure class="user-card">
-													<figcaption>
-														<a href="#" class="edit-card" data-bs-toggle="modal" data-bs-target="#editContact">
-															<i class="icon-mode_edit"></i>
-														</a>
-														<img src="img/user21.png" alt="Le Meilleur Admin" class="profile">
-														<h5>Mixer</h5>
-														<ul class="list-group">
-															<li class="list-group-item">
-																<span>Email: </span>mixer@meow.com</li>
-															<li class="list-group-item"><span>Phone: </span>+2 300-890-3456</li>
-															<li class="list-group-item"><span>Location: </span>Melbourne</li>
-														</ul>
-													</figcaption>
-												</figure>
-											</div>
-										</div>
-										<!-- Row end -->
-										<div class="modal fade" id="editContact" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="editContactLabel" aria-hidden="true">
-											<div class="modal-dialog modal-lg" role="document">
-												<div class="modal-content">
-													<div class="modal-header">
-														<h5 class="modal-title" id="editContactLabel">Edit Contact</h5>
-														<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
-															<span aria-hidden="true"></span>
-														</button>
-													</div>
-													<div class="modal-body">
+<div class="row gutters">
+	<div class="col-xl-4 col-lg-4 col-md-6 col-sm-6 col-12">
+		<figure class="user-card">
+			<figcaption>
+				<img src="img/user21.png" alt="Admin" class="profile">
+				<h5 contenteditable="true">Larkyin Stevens</h5>
+				<ul class="list-group">
+					<li class="list-group-item"><span>Email: </span>larkyin@meow.com</li>
+					<li class="list-group-item"><span>Phone: </span>+2 300-223-4567</li>
+					<li class="list-group-item"><span>Location: </span>London</li>
+				</ul>
+			</figcaption>
+		</figure>
+	</div>
+	<div class="col-xl-4 col-lg-4 col-md-6 col-sm-6 col-12">
+		<figure class="user-card">
+			<figcaption>
+				<img src="img/user2.png" alt="Admin" class="profile">
+				<h5 contenteditable="true">Braxten Cole</h5>
+				<ul class="list-group">
+					<li class="list-group-item"><span>Email: </span>braxten@meow.com</li>
+					<li class="list-group-item"><span>Phone: </span>+2 300-678-6789</li>
+					<li class="list-group-item"><span>Location: </span>Melbourne</li>
+				</ul>
+			</figcaption>
+		</figure>
+	</div>						
+	<div class="col-xl-4 col-lg-4 col-md-6 col-sm-6 col-12">
+		<figure class="user-card">
+			<figcaption>
+				<img src="img/user6.png" alt="Admin" class="profile">
+				<h5 contenteditable="true">Klenkov Brown</h5>
+				<ul class="list-group">
+					<li class="list-group-item"><span>Email: </span>klenkov@meow.com</li>
+					<li class="list-group-item"><span>Phone: </span>+2 300-332-7753</li>
+					<li class="list-group-item"><span>Location: </span>Barcelona</li>
+				</ul>
+			</figcaption>
+		</figure>
+	</div>
+	<div class="col-xl-4 col-lg-4 col-md-6 col-sm-6 col-12">
+		<figure class="user-card">
+			<figcaption>
+				<img src="img/user22.png" alt="Admin" class="profile">
+				<h5 contenteditable="true">Sunny Kumar</h5>
+				<ul class="list-group">
+					<li class="list-group-item"><span>Email: </span>sunny.jd@meow.com</li>
+					<li class="list-group-item"><span>Phone: </span>+2 300-768-9809</li>
+					<li class="list-group-item"><span>Location: </span>Mumbai</li>
+				</ul>
+			</figcaption>
+		</figure>
+	</div>
+	<div class="col-xl-4 col-lg-4 col-md-6 col-sm-6 col-12">
+		<figure class="user-card">
+			<figcaption>
+				<img src="img/user9.png" alt="Admin" class="profile">
+				<h5 contenteditable="true">Melon Barnes</h5>
+				<ul class="list-group">
+					<li class="list-group-item"><span>Email: </span>melon.bn@meow.com</li>
+					<li class="list-group-item"><span>Phone: </span>+2 300-678-8897</li>
+					<li class="list-group-item"><span>Location: </span>California</li>
+				</ul>
+			</figcaption>
+		</figure>
+	</div>
+	<div class="col-xl-4 col-lg-4 col-md-6 col-sm-6 col-12">
+		<figure class="user-card">
+			<figcaption>
+				<img src="img/user20.png" alt="Admin" class="profile">
+				<h5 contenteditable="true">Bridges Smith</h5>
+				<ul class="list-group">
+					<li class="list-group-item"><span>Email: </span>bridges.bs@meow.com</li>
+					<li class="list-group-item"><span>Phone: </span>+2 300-234-3390</li>
+					<li class="list-group-item"><span>Location: </span>Singapore</li>
+				</ul>
+			</figcaption>
+		</figure>
+	</div>
+</div>
+<!-- Row end -->
+
+<!-- Modal for Edit Applicant -->
+<div class="modal fade" id="editContact" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="editContactLabel" aria-hidden="true">
+	<div class="modal-dialog modal-lg" role="document">
+		<div class="modal-content">
+			<div class="modal-header">
+				<h5 class="modal-title" id="editContactLabel">Edit Applicant</h5>
+				<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+			</div>
+								<div class="modal-body">
 														<div class="row gutters">
 															<div class="col-xl-4 col-lg-4 col-md-4 col-sm-4 col-12">
 																<div id="dropzone-sm1" class="mb-3">
