@@ -78,26 +78,28 @@
 					<div class="content-wrapper">
 
 						<!-- Row start -->
-						 
 						<div class="row gutters">
                             <!-- Your code goes in here...-->
-														<div style="width: 95%; height: 75vh; background-color: #ffffff; position: relative; padding:0px; margin-left:20px;
+							<!-- Row start -->
+						<div class="row gutters">
+               <!-- Your code goes in here...-->
+	
+<div style="width: 95%; height: 75vh; background-color: #ffffff; position: relative; padding:0px; margin-left:20px;
 	margin-top:10px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);"
 	class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
   <!-- Bottom Part of Envelope -->
   	<div style="display:grid; place-items: center; justify-content:center; align-items:center; width: 100%; background-color: #fffff; 
-		position: absolute; bottom: 140; ">
-	  <span style="font-size:40px; color:black; font-weight:700;">Congratulations</span><br> 
-		<span style="font-size:25px; color: grey;" >Your Loan Has Been Approved</span>
+		position: absolute; bottom: 90; ">
+	  <span style="font-size:25px; color:gray;">Give Us A Moment Your Loan Is Being </span><br> 
+		<span style="font-size:40px; font-weight:700; color: black;" >Disbursed</span>
 	</div>
   
   <!-- Flipped Elliptical Flap -->
-  <div style="width: 100%; height: 45%; background: linear-gradient(105deg, #2ecc51, #27ae90); position: absolute; top: 0; 
+  <div style="width: 100%; height: 45%; background: linear-gradient(135deg, #454f58, #6d787f); green; position: absolute; top: 0; 
 		border-bottom-left-radius: 600px 180px; border-bottom-right-radius: 600px 180px;"></div>
 	</div>
 
 </div>
-							<h1>Blank page</h1>
 						</div>
 						<!-- Row end -->
 
