@@ -114,7 +114,7 @@
                 <img class="img-fluid" src="assets/images/svg/logo1.svg" alt="logo1" />
                 <img class="img-fluid" src="assets/images/svg/card-chip.svg" alt="card-chip" />
               </div>
-              <h6 class="card-number">**** **** **** 2563</h6>
+              <h6 class="card-number">Pay day Loan</h6>
               <h5 class="card-name">Survana Williams</h5>
               <h2 class="card-amount">$25,000.89</h2>
               <div class="d-block">
@@ -129,13 +129,14 @@
               </div>
             </div>
           </div>
-          <div class="swiper-slide">
+          <div class="swiper-slide"><a href="#">
             <div class="credit-card-box color2">
               <div class="card-logo">
                 <img class="img-fluid" src="assets/images/svg/logo1.svg" alt="logo1" />
                 <img class="img-fluid" src="assets/images/svg/card-chip.svg" alt="card-chip" />
               </div>
-              <h6 class="card-number">**** **** **** 2563</h6>
+              <!-- <h6 class="card-number">**** **** **** 2563</h6> -->
+              <h6 class="card-number">Pay Day Loan</h6>
               <h5 class="card-name">Survana Williams</h5>
               <h2 class="card-amount">$25,000.89</h2>
               <div class="d-block">
@@ -148,7 +149,7 @@
                   <h6 class="text-white fw-semibold mt-1">***</h6>
                 </div>
               </div>
-            </div>
+            </div></a>
           </div>
           <div class="swiper-slide">
             <div class="credit-card-box color3">
