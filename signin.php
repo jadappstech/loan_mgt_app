@@ -100,7 +100,7 @@
                                 <div class="login-body">
                                     <!-- Center the logo and increase size -->
                                     <a href="dashboard.php" class="login-logo d-flex justify-content-center">
-                                        <img src="img/centrum-logo.png" alt="Uni Pro Admin">
+                                        <img src="img/centrum-logo.png" alt="Logo">
                                     </a>
                                     <h6 class="text-center">Welcome back to The Loan Management System,<br>Please sign in to your account.</h6>
                                     <div class="field-wrapper">
@@ -108,7 +108,7 @@
                                         <div class="field-placeholder">Email ID</div>
                                     </div>
                                     <div class="field-wrapper">
-                                        <input type="password" required>
+                                        <input type="password" name="password" required>
                                         <div class="field-placeholder">Password</div>
                                         <!-- Forgot password link under password field -->
                                         <a href="forgot-password.php" class="forgot-password">Forgot Password?</a>
