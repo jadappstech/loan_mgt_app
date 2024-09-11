@@ -65,17 +65,25 @@
         <h5>+234 803 538 8713</h5>
       </div>
 
+      <div class="form-group">
+          <label for="inputusername" class="form-label">User id</label>
+          <div class="form-input">
+            <input type="text" placeholder="Okon022y" disabled class="form-control" id="inputusername"
+              placeholder="Enter Your id" />
+          </div>
+        </div>
+
       <form class="auth-form pt-0 mt-3" target="_blank">
         <div class="form-group">
           <label for="inputpin" class="form-label">Phone number</label>
-          <input type="tel" class="form-control" id="inputpin" value="+234 704 500 5000"
+          <input type="tel" placeholder="+234 803 538 8713" class="form-control" id="inputpin"
             placeholder="Enter your phone number" />
         </div>
 
         <div class="form-group">
-          <label for="inputusername" class="form-label">User id</label>
+          <label for="inputusername" class="form-label">Username</label>
           <div class="form-input">
-            <input type="text" class="form-control" value="Okon00y" id="inputusername"
+            <input type="text" placeholder="Okonyi" class="form-control" id="inputusername"
               placeholder="Enter Your id" />
           </div>
         </div>
@@ -83,7 +91,7 @@
         <div class="form-group">
           <label for="inputusername" class="form-label">Address</label>
           <div class="form-input">
-            <input type="text" class="form-control" value="Enter your home or office address" id="inputusername"
+            <input type="text" placeholder="Enter your home or office address" class="form-control"
               placeholder="Enter Your id" />
           </div>
         </div>
@@ -92,7 +100,7 @@
         <div class="form-group">
           <label for="inputusername" class="form-label">Email address</label>
           <div class="form-input">
-            <input type="text" class="form-control" value="Enter email address" id="inputusername"
+            <input type="text" placeholder="Enter your email address" class="form-control" id="inputusername"
               placeholder="Enter Your id" />
           </div>
         </div>
