@@ -24,15 +24,15 @@
       <ul class="transaction-list">
         <li class="w-100">
           <div class="transaction-box">
-            <div class="transaction-img" style="background-color: #f3000099">
-              <i class="icon" data-feather="arrow-up-right"></i>
+            <div class="transaction-img" style="background-color: #eaffea99">
+              <i class="icon success-color" data-feather="arrow-down-left"></i>
             </div>
             <div class="transaction-details">
               <div class="d-flex justify-content-between align-items-center w-100">
                 <a href="transfer-person.php">
-                  <h5 class="transaction-item fw-normal dark-text">Project Tip</h5>
+                  <h5 class="transaction-item fw-normal dark-text">Loan Disbursement</h5>
                 </a>
-                <h3 class="success-color">$30.<span>99</span></h3>
+                <h3 class="success-color">₦400,000.<span>99</span></h3>
               </div>
               <div class="d-flex justify-content-between align-items-center w-100 mt-1">
                 <h6 class="fw-normal light-text">20 January, 2023</h6>
@@ -44,14 +44,14 @@
         <li class="w-100">
           <div class="transaction-box">
             <div class="transaction-img">
-              <i class="icon" data-feather="gift"></i>
+              <i class="icon" data-feather="arrow-up-right" style="color: #00f"></i>
             </div>
             <div class="transaction-details">
               <div class="d-flex justify-content-between align-items-center w-100">
                 <a href="transfer-person.php">
-                  <h5 class="transaction-item fw-normal dark-text">Wedding Gift</h5>
+                  <h5 class="transaction-item fw-normal dark-text">Loan Payment</h5>
                 </a>
-                <h3 class="error-color">$12.<span>10</span></h3>
+                <h3  style="color: #00f">₦19,000.<span>10</span></h3>
               </div>
               <div class="d-flex justify-content-between align-items-center w-100 mt-1">
                 <h6 class="fw-normal light-text">13 February, 2023</h6>
@@ -63,38 +63,18 @@
         <li class="w-100">
           <div class="transaction-box">
             <div class="transaction-img">
-              <i class="icon" data-feather="repeat"></i>
+              <i class="icon" data-feather="arrow-up-right" style="color: #00f"></i>
             </div>
             <div class="transaction-details">
               <div class="d-flex justify-content-between align-items-center w-100">
                 <a href="transfer-person.php">
-                  <h5 class="transaction-item fw-normal dark-text">Transfer</h5>
+                  <h5 class="transaction-item fw-normal dark-text">Loan Payment</h5>
                 </a>
-                <h3 class="success-color">$100.<span>99</span></h3>
+                <h3  style="color: #00f">₦55,000.<span>10</span></h3>
               </div>
               <div class="d-flex justify-content-between align-items-center w-100 mt-1">
-                <h6 class="fw-normal light-text">10 March, 2023</h6>
-                <h5 class="fw-normal light-text">3:00 pm</h5>
-              </div>
-            </div>
-          </div>
-        </li>
-
-        <li class="w-100">
-          <div class="transaction-box">
-            <div class="transaction-img">
-              <i class="icon" data-feather="layers"></i>
-            </div>
-            <div class="transaction-details">
-              <div class="d-flex justify-content-between align-items-center w-100">
-                <a href="transfer-person.php">
-                  <h5 class="transaction-item fw-normal dark-text">Commission</h5>
-                </a>
-                <h3 class="error-color">$6.<span>20</span></h3>
-              </div>
-              <div class="d-flex justify-content-between align-items-center w-100 mt-1">
-                <h6 class="fw-normal light-text">3 April, 2023</h6>
-                <h5 class="fw-normal light-text">2:30 am</h5>
+                <h6 class="fw-normal light-text">13 February, 2023</h6>
+                <h5 class="fw-normal light-text">5:45 pm</h5>
               </div>
             </div>
           </div>
@@ -102,18 +82,18 @@
         <li class="w-100">
           <div class="transaction-box">
             <div class="transaction-img">
-              <i class="icon" data-feather="shopping-bag"></i>
+              <i class="icon" data-feather="arrow-up-right" style="color: #00f"></i>
             </div>
             <div class="transaction-details">
               <div class="d-flex justify-content-between align-items-center w-100">
                 <a href="transfer-person.php">
-                  <h5 class="transaction-item fw-normal dark-text">Buy Fruit</h5>
+                  <h5 class="transaction-item fw-normal dark-text">Loan Payment</h5>
                 </a>
-                <h3 class="success-color">$5.<span>40</span></h3>
+                <h3  style="color: #00f">₦12,000.<span>10</span></h3>
               </div>
               <div class="d-flex justify-content-between align-items-center w-100 mt-1">
-                <h6 class="fw-normal light-text">16 May, 2023</h6>
-                <h5 class="fw-normal light-text">10:35 am</h5>
+                <h6 class="fw-normal light-text">13 February, 2023</h6>
+                <h5 class="fw-normal light-text">5:45 pm</h5>
               </div>
             </div>
           </div>
@@ -121,38 +101,71 @@
         <li class="w-100">
           <div class="transaction-box">
             <div class="transaction-img">
-              <i class="icon" data-feather="coffee"></i>
+              <i class="icon" data-feather="arrow-up-right" style="color: #00f"></i>
             </div>
             <div class="transaction-details">
               <div class="d-flex justify-content-between align-items-center w-100">
                 <a href="transfer-person.php">
-                  <h5 class="transaction-item fw-normal dark-text">Coffee Treat</h5>
+                  <h5 class="transaction-item fw-normal dark-text">Loan Payment</h5>
                 </a>
-                <h3 class="error-color">$10.<span>49</span></h3>
+                <h3  style="color: #00f">₦102,000.<span>10</span></h3>
               </div>
               <div class="d-flex justify-content-between align-items-center w-100 mt-1">
-                <h6 class="fw-normal light-text">28 May, 2023</h6>
-                <h5 class="fw-normal light-text">5:15 pm</h5>
+                <h6 class="fw-normal light-text">13 February, 2023</h6>
+                <h5 class="fw-normal light-text">5:45 pm</h5>
               </div>
             </div>
           </div>
         </li>
-      </ul>
-      <div class="title">
-        <h2 class="light-text fw-normal">1st January - 30nd June</h2>
-      </div>
-      <ul class="transaction-list">
         <li class="w-100">
           <div class="transaction-box">
             <div class="transaction-img">
-              <i class="icon" data-feather="command"></i>
+              <i class="icon" data-feather="arrow-up-right" style="color: #00f"></i>
             </div>
             <div class="transaction-details">
               <div class="d-flex justify-content-between align-items-center w-100">
                 <a href="transfer-person.php">
-                  <h5 class="transaction-item fw-normal dark-text">Project Tip</h5>
+                  <h5 class="transaction-item fw-normal dark-text">Loan Payment</h5>
                 </a>
-                <h3 class="success-color">$30.<span>99</span></h3>
+                <h3  style="color: #00f">₦192,000.<span>10</span></h3>
+              </div>
+              <div class="d-flex justify-content-between align-items-center w-100 mt-1">
+                <h6 class="fw-normal light-text">13 February, 2023</h6>
+                <h5 class="fw-normal light-text">5:45 pm</h5>
+              </div>
+            </div>
+          </div>
+        </li>
+        <li class="w-100">
+          <div class="transaction-box">
+            <div class="transaction-img">
+              <i class="icon" data-feather="arrow-up-right" style="color: #00f"></i>
+            </div>
+            <div class="transaction-details">
+              <div class="d-flex justify-content-between align-items-center w-100">
+                <a href="transfer-person.php">
+                  <h5 class="transaction-item fw-normal dark-text">Loan Payment</h5>
+                </a>
+                <h3  style="color: #00f">₦12,000.<span>10</span></h3>
+              </div>
+              <div class="d-flex justify-content-between align-items-center w-100 mt-1">
+                <h6 class="fw-normal light-text">13 February, 2023</h6>
+                <h5 class="fw-normal light-text">5:45 pm</h5>
+              </div>
+            </div>
+          </div>
+        </li>
+        <li class="w-100">
+          <div class="transaction-box">
+            <div class="transaction-img" style="background-color: #eaffea99">
+              <i class="icon success-color" data-feather="arrow-down-left"></i>
+            </div>
+            <div class="transaction-details">
+              <div class="d-flex justify-content-between align-items-center w-100">
+                <a href="transfer-person.php">
+                  <h5 class="transaction-item fw-normal dark-text">Loan Disbursement</h5>
+                </a>
+                <h3 class="success-color">₦30,000.<span>99</span></h3>
               </div>
               <div class="d-flex justify-content-between align-items-center w-100 mt-1">
                 <h6 class="fw-normal light-text">20 January, 2023</h6>
@@ -161,102 +174,7 @@
             </div>
           </div>
         </li>
-        <li class="w-100">
-          <div class="transaction-box">
-            <div class="transaction-img">
-              <i class="icon" data-feather="gift"></i>
-            </div>
-            <div class="transaction-details">
-              <div class="d-flex justify-content-between align-items-center w-100">
-                <a href="transfer-person.php">
-                  <h5 class="transaction-item fw-normal dark-text">Wedding Gift</h5>
-                </a>
-                <h3 class="error-color">$12.<span>10</span></h3>
-              </div>
-              <div class="d-flex justify-content-between align-items-center w-100 mt-1">
-                <h6 class="fw-normal light-text">13 February, 2023</h6>
-                <h5 class="fw-normal light-text">5:45 pm</h5>
-              </div>
-            </div>
-          </div>
-        </li>
-        <li class="w-100">
-          <div class="transaction-box">
-            <div class="transaction-img">
-              <i class="icon" data-feather="repeat"></i>
-            </div>
-            <div class="transaction-details">
-              <div class="d-flex justify-content-between align-items-center w-100">
-                <a href="transfer-person.php">
-                  <h5 class="transaction-item fw-normal dark-text">Transfer</h5>
-                </a>
-                <h3 class="success-color">$100.<span>99</span></h3>
-              </div>
-              <div class="d-flex justify-content-between align-items-center w-100 mt-1">
-                <h6 class="fw-normal light-text">10 March, 2023</h6>
-                <h5 class="fw-normal light-text">3:00 pm</h5>
-              </div>
-            </div>
-          </div>
-        </li>
 
-        <li class="w-100">
-          <div class="transaction-box">
-            <div class="transaction-img">
-              <i class="icon" data-feather="layers"></i>
-            </div>
-            <div class="transaction-details">
-              <div class="d-flex justify-content-between align-items-center w-100">
-                <a href="transfer-person.php">
-                  <h5 class="transaction-item fw-normal dark-text">Commission</h5>
-                </a>
-                <h3 class="error-color">$6.<span>20</span></h3>
-              </div>
-              <div class="d-flex justify-content-between align-items-center w-100 mt-1">
-                <h6 class="fw-normal light-text">3 April, 2023</h6>
-                <h5 class="fw-normal light-text">2:30 am</h5>
-              </div>
-            </div>
-          </div>
-        </li>
-        <li class="w-100">
-          <div class="transaction-box">
-            <div class="transaction-img">
-              <i class="icon" data-feather="shopping-bag"></i>
-            </div>
-            <div class="transaction-details">
-              <div class="d-flex justify-content-between align-items-center w-100">
-                <a href="transfer-person.php">
-                  <h5 class="transaction-item fw-normal dark-text">Buy Fruit</h5>
-                </a>
-                <h3 class="success-color">$5.<span>40</span></h3>
-              </div>
-              <div class="d-flex justify-content-between align-items-center w-100 mt-1">
-                <h6 class="fw-normal light-text">16 May, 2023</h6>
-                <h5 class="fw-normal light-text">10:35 am</h5>
-              </div>
-            </div>
-          </div>
-        </li>
-        <li class="w-100">
-          <div class="transaction-box">
-            <div class="transaction-img">
-              <i class="icon" data-feather="coffee"></i>
-            </div>
-            <div class="transaction-details">
-              <div class="d-flex justify-content-between align-items-center w-100">
-                <a href="transfer-person.php">
-                  <h5 class="transaction-item fw-normal dark-text">Coffee Treat</h5>
-                </a>
-                <h3 class="error-color">$10.<span>49</span></h3>
-              </div>
-              <div class="d-flex justify-content-between align-items-center w-100 mt-1">
-                <h6 class="fw-normal light-text">28 May, 2023</h6>
-                <h5 class="fw-normal light-text">5:15 pm</h5>
-              </div>
-            </div>
-          </div>
-        </li>
       </ul>
     </div>
   </section>
