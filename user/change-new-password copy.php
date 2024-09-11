@@ -2,7 +2,7 @@
 <html lang="en">
 
 
-<!-- Mirrored from themes.pixelstrap.net/pwa/mpay/setting.php by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 10 Sep 2024 05:08:45 GMT -->
+<!-- Mirrored from themes.pixelstrap.net/pwa/mpay/change-new-password.php by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 10 Sep 2024 05:08:45 GMT -->
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -45,52 +45,37 @@
         <a href="profile.php" class="back-btn">
           <i class="icon" data-feather="arrow-left"></i>
         </a>
-        <h2>Setting</h2>
+        <h2>Change Password</h2>
       </div>
     </div>
   </header>
   <!-- header end -->
 
-  <!-- notification section start -->
+  <!-- change password section start -->
   <section>
     <div class="custom-container">
-      <ul class="notification-setting">
-        <li class="setting-title">
-          <div class="notification pt-0">
-            <h3 class="fw-semibold dark-text">Notification</h3>
-          </div>
-        </li>
+      <form class="auth-form pt-0" target="_blank">
+        <div class="form-group">
+          <label for="inputoldpassword" class="form-label">Old Password</label>
+          <input type="password" class="form-control" id="inputoldpassword" placeholder="Enter your old password" />
+        </div>
 
-        <li>
-          <div class="notification">
-            <h5 class="fw-normal dark-text">Payment notification</h5>
-            <div class="switch-btn">
-              <input type="checkbox" checked />
-            </div>
-          </div>
-        </li>
+        <div class="form-group">
+          <label for="inputnewpassword" class="form-label">New Password</label>
+          <input type="password" class="form-control" id="inputnewpassword" placeholder="Enter your new password" />
+        </div>
 
-        <li>
-          <div class="notification">
-            <h5 class="fw-normal dark-text">Notification sound</h5>
-            <div class="switch-btn">
-              <input type="checkbox" />
-            </div>
-          </div>
-        </li>
+        <div class="form-group">
+          <label for="inputconfirmpassword" class="form-label">Confirm Password</label>
+          <input type="password" class="form-control" id="inputconfirmpassword"
+            placeholder="Enter your confirm password" />
+        </div>
 
-        <li>
-          <div class="notification pb-0">
-            <h5 class="fw-normal dark-text">Bill due date</h5>
-            <div class="switch-btn">
-              <input type="checkbox" checked />
-            </div>
-          </div>
-        </li>
-      </ul>
+        <a href="profile.php" class="btn theme-btn w-100">Update password</a>
+      </form>
     </div>
   </section>
-  <!-- notification section end -->
+  <!-- change password section start -->
 
   <!-- feather js -->
   <script src="assets/js/feather.min.js"></script>
@@ -104,5 +89,5 @@
 </body>
 
 
-<!-- Mirrored from themes.pixelstrap.net/pwa/mpay/setting.php by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 10 Sep 2024 05:08:45 GMT -->
+<!-- Mirrored from themes.pixelstrap.net/pwa/mpay/change-new-password.php by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 10 Sep 2024 05:08:45 GMT -->
 </html>

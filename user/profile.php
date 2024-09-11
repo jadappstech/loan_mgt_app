@@ -1,42 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-
-
-<!-- Mirrored from themes.pixelstrap.net/pwa/mpay/profile.php by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 10 Sep 2024 05:08:22 GMT -->
-<head>
-  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="mpay" />
-  <meta name="keywords" content="mpay" />
-  <meta name="author" content="mpay" />
-  <link rel="manifest" href="manifest.json" />
-  <link rel="icon" href="assets/images/logo/favicon.png" type="image/x-icon" />
-  <title>mPay App</title>
-  <link rel="apple-touch-icon" href="assets/images/logo/favicon.png" />
-  <meta name="theme-color" content="#122636" />
-  <meta name="apple-mobile-web-app-capable" content="yes" />
-  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
-  <meta name="apple-mobile-web-app-title" content="mpay" />
-  <meta name="msapplication-TileImage" content="assets/images/logo/favicon.png" />
-  <meta name="msapplication-TileColor" content="#FFFFFF" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-
-  <!--Google font-->
-  <link rel="preconnect" href="https://fonts.googleapis.com/" />
-  <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&amp;display=swap" rel="stylesheet" />
-
-  <!-- bootstrap css -->
-  <link rel="stylesheet" id="rtl-link" type="text/css" href="assets/css/vendors/bootstrap.min.css" />
-
-  <!-- swiper css -->
-  <link rel="stylesheet" type="text/css" href="assets/css/vendors/swiper-bundle.min.css" />
-
-  <!-- Theme css -->
-  <link rel="stylesheet" id="change-link" type="text/css" href="assets/css/style.css" />
-</head>
-
+<?php include_once "./includes/header.php"?>
 <body>
   <!-- side bar start -->
   <div class="offcanvas sidebar-offcanvas offcanvas-start" tabindex="-1" id="offcanvasLeft">
@@ -113,8 +75,8 @@
   </div>
   <!-- side bar end -->
 
-  <!-- header start -->
-  <header class="section-t-space">
+   <!-- header start -->
+   <header class="section-t-space">
     <div class="custom-container">
       <div class="header-panel">
         <a class="sidebar-btn" data-bs-toggle="offcanvas" data-bs-target="#offcanvasLeft">
@@ -126,17 +88,25 @@
   </header>
   <!-- header end -->
 
-  <!-- profile section start -->
-  <section class="section-b-space">
+  <!-- panel-space start -->
+  <!-- <section style="padding-top:10px;" class="panel-space"></section> -->
+  <!-- panel-space end -->
+
+  <!-- bottom navbar start -->
+  <?php include_once "./includes/navbar.php"; ?>
+  <!-- bottom navbar end -->
+
+ <!-- profile section start -->
+ <section class="section-b-space">
     <div class="custom-container">
       <div class="profile-section">
         <div class="profile-banner">
           <div class="profile-image">
-            <img class="img-fluid profile-pic" src="assets/images/person/p3.png" alt="p3" />
+            <img class="img-fluid profile-pic" src="assets/images/african0man.jpg" />
           </div>
         </div>
-        <h2>Survana Williams</h2>
-        <h5>+62 78459 25623</h5>
+        <h2>Okon Yinusa</h2>
+        <h5>+234 803 538 8713</h5>
       </div>
 
       <ul class="profile-list">
@@ -147,6 +117,17 @@
             </div>
             <div class="profile-details">
               <h4>My Account</h4>
+              <img class="img-fluid arrow" src="assets/images/svg/arrow.svg" alt="arrow" />
+            </div>
+          </a>
+        </li>
+        <li>
+          <a href="NO LINK" class="profile-box">
+            <div class="profile-img">
+              <i class="icon" data-feather="list"></i>
+            </div>
+            <div class="profile-details">
+              <h4>Loan history</h4>
               <img class="img-fluid arrow" src="assets/images/svg/arrow.svg" alt="arrow" />
             </div>
           </a>
@@ -165,7 +146,7 @@
         <li>
           <a href="change-password.php" class="profile-box">
             <div class="profile-img">
-              <i class="icon" data-feather="settings"></i>
+              <i class="icon" data-feather="lock"></i>
             </div>
             <div class="profile-details">
               <h4>Change Password</h4>
@@ -174,24 +155,34 @@
           </a>
         </li>
         <li>
-          <a href="setting.php" class="profile-box">
+          <a href="notification-setting.php" class="profile-box">
             <div class="profile-img">
-              <i class="icon" data-feather="lock"></i>
+              <i class="icon" data-feather="bell"></i>
             </div>
             <div class="profile-details">
-              <h4>Settings</h4>
+              <h4>Notifications</h4>
               <img class="img-fluid arrow" src="assets/images/svg/arrow.svg" alt="arrow" />
             </div>
           </a>
         </li>
-
         <li>
-          <a href="help.php" class="profile-box">
+          <a href="privacy-setting.php" class="profile-box">
+            <div class="profile-img">
+              <i class="icon" data-feather="eye"></i>
+            </div>
+            <div class="profile-details">
+              <h4>Privacy settings</h4>
+              <img class="img-fluid arrow" src="assets/images/svg/arrow.svg" alt="arrow" />
+            </div>
+          </a>
+        </li>
+        <li>
+          <a href="support.php" class="profile-box">
             <div class="profile-img">
               <i class="icon" data-feather="help-circle"></i>
             </div>
             <div class="profile-details">
-              <h4>Help Center</h4>
+              <h4>Support</h4>
               <img class="img-fluid arrow" src="assets/images/svg/arrow.svg" alt="arrow" />
             </div>
           </a>
@@ -211,63 +202,7 @@
   </section>
   <!-- profile section end -->
 
-  <!-- panel-space start -->
-  <section class="panel-space"></section>
-  <!-- panel-space end -->
-
-  <!-- bottom navbar start -->
-  <div class="navbar-menu">
-    <div class="scanner-bg">
-      <a href="scan-pay.php" class="scanner-btn">
-        <img class="img-fluid" src="assets/images/svg/scan.svg" alt="scan" />
-      </a>
-    </div>
-
-    <ul>
-      <li>
-        <a href="landing.php">
-          <div class="icon">
-            <img class="unactive" src="assets/images/svg/mpay.svg" alt="mPay" />
-            <img class="active" src="assets/images/svg/mpay-fill.svg" alt="mPay" />
-          </div>
-          <h5>mPay</h5>
-        </a>
-      </li>
-
-      <li>
-        <a href="crypto.php">
-          <div class="icon">
-            <img class="unactive" src="assets/images/svg/bitcoin.svg" alt="categories" />
-            <img class="active" src="assets/images/svg/bitcoin-fill.svg" alt="categories" />
-          </div>
-          <h5>Crypto</h5>
-        </a>
-      </li>
-
-      <li></li>
-
-      <li>
-        <a href="insight.php">
-          <div class="icon">
-            <img class="unactive" src="assets/images/svg/bar-chart.svg" alt="bag" />
-            <img class="active" src="assets/images/svg/bar-chart-fill.svg" alt="bag" />
-          </div>
-          <h5>Insight</h5>
-        </a>
-      </li>
-
-      <li class="active">
-        <a href="profile.php">
-          <div class="icon">
-            <img class="unactive" src="assets/images/svg/user.svg" alt="profile" />
-            <img class="active" src="assets/images/svg/user-fill.svg" alt="profile" />
-          </div>
-          <h5>Profile</h5>
-        </a>
-      </li>
-    </ul>
-  </div>
-  <!-- bottom navbar end -->
+  
 
   <!-- swiper js -->
   <script src="assets/js/swiper-bundle.min.js"></script>
@@ -277,13 +212,22 @@
   <script src="assets/js/feather.min.js"></script>
   <script src="assets/js/custom-feather.js"></script>
 
+  <!-- iconsax js -->
+  <script src="assets/js/iconsax.js"></script>
+
   <!-- bootstrap js -->
   <script src="assets/js/bootstrap.bundle.min.js"></script>
+
+  <!-- homescreen popup js -->
+  <script src="assets/js/homescreen-popup.js"></script>
+
+  <!-- PWA offcanvas popup js -->
+  <script src="assets/js/offcanvas-popup.js"></script>
 
   <!-- script js -->
   <script src="assets/js/script.js"></script>
 </body>
 
 
-<!-- Mirrored from themes.pixelstrap.net/pwa/mpay/profile.php by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 10 Sep 2024 05:08:22 GMT -->
+<!-- Mirrored from themes.pixelstrap.net/pwa/mpay/landing.php by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 10 Sep 2024 05:07:49 GMT -->
 </html>

@@ -107,10 +107,10 @@
 													<a class="active">
 														<i class="icon-receipt"></i> All
 													</a>
-													<a href="all-approved.php">
+													<a href="app-approved.php">
 													<i class="fa fa-check" style="font-size:16px; color: #1fd655;"></i>Approved
 													</a>
-													<a href="all-declined.php">
+													<a href="app-declined.php">
 													<i class="fa fa-close" style="font-size:16px; color:red;"> </i>Declined
 													</a>
 												</div>
