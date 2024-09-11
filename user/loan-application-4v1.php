@@ -9,7 +9,7 @@
   <header class="section-t-space">
     <div class="custom-container">
       <div class="header-panel">
-        <a href="landing.php" class="back-btn">
+        <a href="all-applications.php" class="back-btn">
           <i class="icon" data-feather="arrow-left"></i>
         </a>
         <h2>Success</h2>

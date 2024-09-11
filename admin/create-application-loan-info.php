@@ -85,7 +85,8 @@
 									</div>
 									<div class="card-body">
 										<div class="row gutters">
-											<h4>Loan Information</h4> <hr/> <div class="col-xl-4 col-lg-4 col-md-4 col-sm-4 col-12">
+											<h4>Loan Information</h4> <hr/> 
+											<div class="col-xl-4 col-lg-4 col-md-4 col-sm-4 col-12">
 												<div class="field-wrapper">
 													<select class="form-control" name="loan_type">
 														<option value="" disabled selected>Loan Type</option>

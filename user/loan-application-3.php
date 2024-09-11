@@ -6,6 +6,7 @@
 
 
   <!-- header start -->
+  <!-- Tailwind CSS CDN -->
   <header class="section-t-space">
     <div class="custom-container">
       <div class="header-panel">
@@ -71,23 +72,29 @@
     </div>
     <script>
 
-        function changeClassSequentially(newClass) {
-          const listItems = document.querySelectorAll('.timeline-3 li');
-          
-          listItems.forEach(function(item, index) {
-              setTimeout(function() {
-                  // Remove existing classes and add the new one
-                  item.classList.remove('success', 'fail', 'pending');
-                  item.classList.add(newClass);
-              }, index * 1000); // Delay each by 1 second (1000ms)
-          });
+      function changeClassSequentially(newClass) {
+        const listItems = document.querySelectorAll('.timeline-3 li');
+        const delay = 1000; // 1 second delay for each item
 
-          if (newClass==="success") {
-            window.location.href = "./loan-application-4v1.php";
+        listItems.forEach(function(item, index) {
+          setTimeout(function() {
+            // Remove existing classes and add the new one
+            item.classList.remove('success', 'fail', 'pending');
+            item.classList.add(newClass);
+          }, index * delay); // Delay each by 1 second (1000ms)
+        });
+
+        // Wait for all items to change class before redirecting
+        const totalTime = listItems.length * delay; // Total time for all changes
+
+        setTimeout(function() {
+          if (newClass === "success") {
+              window.location.href = "./loan-application-4v1.php";
           } else {
-            window.location.href = "./loan-application-4v2.php";
+              window.location.href = "./loan-application-4v2.php";
           }
-        }
+        }, totalTime); // Redirect after all items have been updated
+      }
 
         document.addEventListener('keydown', function(event) {
           // Check if the pressed key is Enter (key code 13)
