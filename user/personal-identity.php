@@ -35,6 +35,7 @@
 
   <!-- Theme css -->
   <link rel="stylesheet" id="change-link" type="text/css" href="assets/css/style.css" />
+  <link rel="stylesheet" href="assets/css/auth-styles.css">
 </head>
 
 <body class="auth-body ">

@@ -35,21 +35,7 @@
 
   <!-- Theme css -->
   <link rel="stylesheet" id="change-link" type="text/css" href="assets/css/style.css" />
-  <style>
-    /* auth form desktop responsiveness */
-    @media (min-width: 768px) {
-      .auth-form{
-        width: 500px;
-        margin: auto;
-        margin-top: -40px;
-      }
-      .auth-content>div{
-        margin: auto;
-        text-align:center
-      }
-      
-    }
-  </style>
+  <link rel="stylesheet" href="assets/css/auth-styles.css">
 </head>
 
 <body class="auth-body">
@@ -61,7 +47,7 @@
 
     <div class="auth-content">
       <div>
-        <h2>Welcome back !!</h2>
+        <h2>Sign Up To Get A Loan Today!</h2>
         <h4 class="p-0">Fill up the form</h4>
       </div>
     </div>
@@ -105,7 +91,7 @@
         </div>
       </div>
 
-      <a href="personal-identity.php" class="btn theme-btn w-100">Sign up</a>
+      <a href="personal-identity.php" class="btn theme-btn w-100">Continue</a>
       <h4 class="signup">Already have an account ?<a href="signin.php"> Sign in</a></h4>
     </div>
   </form>
