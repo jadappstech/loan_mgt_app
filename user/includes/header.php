@@ -39,4 +39,7 @@
 
   <!-- Theme css -->
   <link rel="stylesheet" id="change-link" type="text/css" href="assets/css/style.css" />
+
+  <link rel="stylesheet" href="assets/fontawesome-free-6.6.0-web/css/all.min.css">
+  <link rel="stylesheet" href="assets/css/multi-step-wizard-style.css">
 </head>
