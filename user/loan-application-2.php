@@ -130,7 +130,7 @@
         <!-- Buttons -->
         <div class="flex justify-between mt-6">
           <a href="./loan-application-1.php" class="bg-gray-500 text-white py-2 px-4 rounded-lg hover:bg-gray-600">Previous</a>
-          <a href="./loan-application-3.php" class="bg-blue-500 text-white py-2 px-4 rounded-lg hover:bg-blue-600">Next</a>
+          <a href="./loan-application-3.php" class="bg-primary text-white py-2 px-4 rounded-lg hover:bg-blue-600">Next</a>
         </div>
 
       </div>
