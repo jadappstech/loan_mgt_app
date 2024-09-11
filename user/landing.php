@@ -46,7 +46,7 @@
                 <img class="img-fluid icon" src="assets/images/svg/arrow-up-right.svg" alt="up" />
                 <h5>Ongoing Loans</h5>
               </div>
-              <h3 class="text-white">1</h3>
+              <h3 class="text-white">2</h3>
             </div>
           </div>
         </div>
@@ -192,7 +192,7 @@
             <div class="service-box">
               <i class="service-icon" data-feather="activity"></i>
             </div>
-            <h5 class="mt-2 text-center dark-text">Electricity</h5>
+            <h5 class="mt-2 text-center dark-text">School Fees</h5>
           </a>
         </div>
 
@@ -201,7 +201,7 @@
             <div class="service-box">
               <i class="service-icon" data-feather="tablet"></i>
             </div>
-            <h5 class="mt-2 text-center dark-text">Mobile</h5>
+            <h5 class="mt-2 text-center dark-text">Foodstuff</h5>
           </a>
         </div>
         <div class="col-3">
@@ -209,7 +209,7 @@
             <div class="service-box">
               <i class="service-icon" data-feather="wifi"></i>
             </div>
-            <h5 class="mt-2 text-center dark-text">Internet</h5>
+            <h5 class="mt-2 text-center dark-text">Gadget Purchase</h5>
           </a>
         </div>
         
@@ -218,7 +218,7 @@
             <div class="service-box">
               <i class="service-icon" data-feather="more-horizontal"></i>
             </div>
-            <h5 class="mt-2 text-center dark-text">Other</h5>
+            <h5 class="mt-2 text-center dark-text">Others</h5>
           </a>
         </div>
       </div>
