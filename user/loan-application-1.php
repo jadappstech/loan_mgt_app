@@ -40,7 +40,7 @@
         <div class="card">
           <div class="card-body">
             <div class="row gutters gy-4 mb-4">
-              <div class="col-xl-4 col-lg-4 col-md-4 col-sm-4 col-12">
+              <!-- <div class="col-xl-4 col-lg-4 col-md-4 col-sm-4 col-12">
                 <div class="field-wrapper">
                   <div class="field-placeholder">Full Name <span class="text-danger">*</span></div>
                   <input class="form-control" type="text" name="full_name">
@@ -57,18 +57,16 @@
                   <div class="field-placeholder">Phone Number <span class="text-danger">*</span></div>
                   <input class="form-control" type="text" name="phone_number">
                 </div>
-              </div>
-              <div class="col-xl-8 col-lg-8 col-md-8 col-sm-8 col-12">
+              </div> -->
+              <!-- <div class="col-xl-8 col-lg-8 col-md-8 col-sm-8 col-12">
                 <div class="field-wrapper">
                   <div class="field-placeholder">Residential Address <span class="text-danger">*</span></div>
                   <input class="form-control" type="text" name="residential_address">
                 </div>
-              </div>
-              <div class="col-xl-4 col-lg-4 col-md-4 col-sm-4 col-12">
+              </div> -->
+              <!-- <div class="col-xl-4 col-lg-4 col-md-4 col-sm-4 col-12">
                 <div class="field-wrapper">
                   <div class="field-placeholder">Date of Birth <span class="text-danger">*</span></div>
-                  <!-- <input class="form-control" type="date" name="date_of_birth"> -->
-                  
                   <div class="relative max-w-sm">
                     <div class="absolute left-2 inset-y-0 xstart-0 flex items-center ps-3.5 pointer-events-none">
                       <svg class="w-4 h-4 text-gray-500 dark:text-gray-400" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
@@ -79,7 +77,7 @@
                   </div>
 
                 </div>
-              </div>
+              </div> -->
             </div>
 
             <div class="row gutters gy-4 mb-4">
