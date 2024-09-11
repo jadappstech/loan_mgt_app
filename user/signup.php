@@ -35,6 +35,21 @@
 
   <!-- Theme css -->
   <link rel="stylesheet" id="change-link" type="text/css" href="assets/css/style.css" />
+  <style>
+    /* auth form desktop responsiveness */
+    @media (min-width: 768px) {
+      .auth-form{
+        width: 500px;
+        margin: auto;
+        margin-top: -40px;
+      }
+      .auth-content>div{
+        margin: auto;
+        text-align:center
+      }
+      
+    }
+  </style>
 </head>
 
 <body class="auth-body">
