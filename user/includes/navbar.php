@@ -1,7 +1,7 @@
 
 <div class="navbar-menu">
     <div class="scanner-bg">
-      <a href="scan-pay.php" class="scanner-btn">
+      <a href="loan-application-1.php" class="scanner-btn">
         <img class="img-fluid" src="assets/images/svg/scan.svg" alt="scan" />
       </a>
     </div>
