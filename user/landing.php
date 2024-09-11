@@ -341,6 +341,16 @@
               <div class="tab-pane fade p-2 show active" id="home" role="tabpanel" aria-labelledby="home-tab"
                   tabindex="0">
                   <div class="form-group">
+                    <label for="inputcard" class="form-label mb-2">Choose Loan to repay</label>
+                    <div class="d-flex gap-2">
+                      <select id="inputcard" class="form-select">
+                        <option selected>Select one</option>
+                        <option>APP412X-01</option>
+                        <option>APP5483P-66</option>
+                      </select>
+                    </div>
+                  </div>
+                  <div class="form-group">
                     <label for="inputcard" class="form-label mb-2">From</label>
                     <div class="d-flex gap-2">
                       <select id="inputcard" class="form-select">

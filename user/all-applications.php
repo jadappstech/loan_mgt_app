@@ -11,7 +11,7 @@
         <a href="landing.php" class="back-btn">
           <i class="icon" data-feather="arrow-left"></i>
         </a>
-        <h2>My savings plan</h2>
+        <h2>My Applications</h2>
 
         <a href="#add-goals" class="back-btn" data-bs-toggle="modal">
           <i class="icon" data-feather="plus"></i>
@@ -178,7 +178,7 @@
     <div class="modal-dialog modal-dialog-centered">
       <div class="modal-content">
         <div class="modal-header">
-          <h2 class="modal-title">Saving For New Car</h2>
+          <h2 class="modal-title">APP5483P-66</h2>
         </div>
         <div class="modal-body">
           <div class="saving-img">
@@ -187,12 +187,12 @@
 
           <ul class="details-list border-0">
             <li>
-              <h3 class="fw-normal dark-text">Saving amount</h3>
-              <h3 class="fw-normal theme-color">&#x20A6;2000.00</h3>
+              <h3 class="fw-normal dark-text">Amount left</h3>
+              <h3 class="fw-normal theme-color">&#x20A6;182,000.11</h3>
             </li>
             <li>
-              <h3 class="fw-normal dark-text">Due amount</h3>
-              <h3 class="fw-normal light-text">&#x20A6;3500.00</h3>
+              <h3 class="fw-normal dark-text">Total amount</h3>
+              <h3 class="fw-normal light-text">&#x20A6;350,000.00</h3>
             </li>
           </ul>
           <a href="saving-plans.php" class="btn theme-btn successfully w-100">Okay !</a>
