@@ -47,12 +47,12 @@
         </ul>
         <div class="mode-switch">
           <ul class="switch-section">
-            <li>
+            <!-- <li>
               <h3>RTL</h3>
               <div class="switch-btn">
                 <input id="dir-switch" type="checkbox" />
               </div>
-            </li>
+            </li> -->
             <li>
               <h3>Dark</h3>
               <div class="switch-btn">
