@@ -37,7 +37,8 @@
     <div class="card text-center" style="width: 18rem; margin: auto">
       <div class="card-body">
         <img src="assets/images/party-popper.png" alt="" style="width: 100%">
-        <h5 class="card-title" style="font-weight: 800; font-size: 30px">Congratulations You Qualify For Loan</h5>
+        <h5 class="card-title" style="font-weight: 800; font-size: 30px">Congratulations!</h5>
+        <h5 class="card-title" style="font-weight: 600; font-size: 18px">You Qualify For Loan</h5>
         <p class="card-text">The money will be disbursed to your account in 24hrs</p>
       </div>
     </div>
