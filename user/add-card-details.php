@@ -12,7 +12,7 @@
   <meta name="author" content="mpay" />
   <link rel="manifest" href="manifest.json" />
   <link rel="icon" href="assets/images/logo/favicon.png" type="image/x-icon" />
-  <title>mPay App</title>
+  <title>Loan Management App</title>
   <link rel="apple-touch-icon" href="assets/images/logo/favicon.png" />
   <meta name="theme-color" content="#122636" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -41,7 +41,7 @@
 <body class="auth-body">
   <!-- header starts -->
   <div class="auth-header">
-    <a href="index-2.php"> <i class="back-btn" data-feather="arrow-left"></i> </a>
+    <a href="confirm-identity.php"> <i class="back-btn" data-feather="arrow-left"></i> </a>
     <img class="img-fluid img1" src="assets/images/authentication/9.svg" alt="v1" />
 
     <div class="auth-content">
@@ -56,6 +56,12 @@
   <!-- login section start -->
   <form class="auth-form" target="_blank">
     <div class="custom-container">
+      <ul id="progressbar" style="text-align: center;">
+        <li class="active" id="biodata"><strong></strong></li>
+        <li class="active" id="loan"><strong></strong></li>
+        <li class="active" id="verification"><strong></strong></li>
+        <li id="disbursment"><strong></strong></li>
+      </ul> 
       <div class="form-group">
         <label class="form-label">Card Number</label>
         <div class="form-input mb-3">
@@ -86,8 +92,8 @@
         </div>
       </div>
 
-      <a href="add-card-pin.php" class="btn theme-btn w-100">Continue</a>
-      <a href="add-card-pin.php" class="btn btn-link mt-3">Skip</a>
+      <a href="successfully-signup.php" class="btn theme-btn w-100">Continue</a>
+      <a href="successfully-signup.php" class="btn btn-link mt-3">Skip</a>
     </div>
   </form>
   <!-- login section start -->

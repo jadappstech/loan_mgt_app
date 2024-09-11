@@ -12,7 +12,7 @@
   <meta name="author" content="mpay" />
   <link rel="manifest" href="manifest.json" />
   <link rel="icon" href="assets/images/logo/favicon.png" type="image/x-icon" />
-  <title>mPay App</title>
+  <title>Loan Management App</title>
   <link rel="apple-touch-icon" href="assets/images/logo/favicon.png" />
   <meta name="theme-color" content="#122636" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -57,6 +57,12 @@
   <!-- login section start -->
   <form class="auth-form" target="_blank">
     <div class="custom-container">
+      <ul id="progressbar" style="text-align: center;">
+        <li class="active" id="biodata"><strong></strong></li>
+        <li id="loan"><strong></strong></li>
+        <li id="verification"><strong></strong></li>
+        <li id="disbursment"><strong></strong></li>
+      </ul>  
       <div class="form-group">
         <label for="inputusername" class="form-label">Email id</label>
         <div class="form-input">

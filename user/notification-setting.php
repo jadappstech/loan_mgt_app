@@ -12,7 +12,7 @@
   <meta name="author" content="mpay" />
   <link rel="manifest" href="manifest.json" />
   <link rel="icon" href="assets/images/logo/favicon.png" type="image/x-icon" />
-  <title>mPay App</title>
+  <title>Loan Management App</title>
   <link rel="apple-touch-icon" href="assets/images/logo/favicon.png" />
   <meta name="theme-color" content="#122636" />
   <meta name="apple-mobile-web-app-capable" content="yes" />

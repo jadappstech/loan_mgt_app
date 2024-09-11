@@ -12,7 +12,7 @@
   <meta name="author" content="mpay" />
   <link rel="manifest" href="manifest.json" />
   <link rel="icon" href="assets/images/logo/favicon.png" type="image/x-icon" />
-  <title>mPay App</title>
+  <title>Loan Management App</title>
   <link rel="apple-touch-icon" href="assets/images/logo/favicon.png" />
   <meta name="theme-color" content="#122636" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -48,7 +48,7 @@
     <div class="auth-content">
       <div>
         <h2>Welcome back !!</h2>
-        <h4 class="p-0">Fill up the form</h4>
+        <h4 class="p-0">Sign in and get that loan now</h4>
       </div>
     </div>
   </div>
@@ -81,14 +81,14 @@
       <a href="landing.php" class="btn theme-btn w-100">Sign In</a>
       <h4 class="signup">Don’t have an account ?<a href="signup.php"> Sign up</a></h4>
 
-      <div class="division">
+      <!-- <div class="division">
         <span>OR</span>
       </div>
 
       <a href="https://www.google.co.in/" target="_blank" class="btn gray-btn mt-3"> <img class="img-fluid google"
           src="assets/images/svg/google.svg" alt="google" /> Continue with Google</a>
       <a href="https://www.facebook.com/login/" target="_blank" class="btn gray-btn mt-3"> <img class="img-fluid google"
-          src="assets/images/svg/facebook.svg" alt="google" /> Continue with facebook</a>
+          src="assets/images/svg/facebook.svg" alt="google" /> Continue with facebook</a> -->
     </div>
   </form>
   <!-- login section start -->

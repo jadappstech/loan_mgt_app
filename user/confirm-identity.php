@@ -12,7 +12,7 @@
   <meta name="author" content="mpay" />
   <link rel="manifest" href="manifest.json" />
   <link rel="icon" href="assets/images/logo/favicon.png" type="image/x-icon" />
-  <title>mPay App</title>
+  <title>Loan Management App</title>
   <link rel="apple-touch-icon" href="assets/images/logo/favicon.png" />
   <meta name="theme-color" content="#122636" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -41,7 +41,7 @@
 <body class="auth-body">
   <!-- header starts -->
   <div class="auth-header">
-    <a href="index-2.php"> <i class="back-btn" data-feather="arrow-left"></i> </a>
+    <a href="personal-identity.php"> <i class="back-btn" data-feather="arrow-left"></i> </a>
     <img class="img-fluid img" src="assets/images/authentication/8.svg" alt="v1" />
     <div class="auth-content">
       <div>
@@ -55,6 +55,12 @@
   <!-- login section start -->
   <form class="auth-form" target="_blank">
     <div class="custom-container">
+      <ul id="progressbar" style="text-align: center;">
+        <li class="active" id="biodata"><strong></strong></li>
+        <li class="active" id="loan"><strong></strong></li>
+        <li id="verification"><strong></strong></li>
+        <li id="disbursment"><strong></strong></li>
+      </ul> 
       <div class="form-group">
         <div class="upload-image rounded-image">
           <label for="formFileLg" class="form-label d-none">file </label>
@@ -74,7 +80,7 @@
 
       <h3 class="info-id border-0 pb-0">To verify your details, activate your front camera and take a selfie.</h3>
 
-      <a href="add-card.php" class="btn theme-btn w-100">Submit all</a>
+      <a href="add-card-details.php" class="btn theme-btn w-100">Submit all</a>
     </div>
   </form>
   <!-- login section start -->
