@@ -12,7 +12,7 @@
           <i class="menu-icon" data-feather="menu"></i>
         </a>
         <!-- <img class="img-fluid logo" src="./../admin/img/centrum-logo.png" alt="logo" /> -->
-        <h2>Logo</h2>
+        <h2>Dashboard</h2>
         <a href="notification.php" class="notification">
           <i class="notification-icon" data-feather="bell"></i>
         </a>
@@ -31,7 +31,7 @@
             <img src="assets/images/svg/ellipse.svg" alt="ellipse" />
           </div>
 
-          <h1 class="mt-2 text-white"> &#x20A6; 1,000,000.00</h1>
+          <h1 class="mt-2 text-white"> &#x20A6;1,000,000.00</h1>
 
           <div class="amount-details">
             <div class="amount w-50 text-start">
@@ -39,7 +39,7 @@
                 <img class="img-fluid icon" src="assets/images/svg/arrow-down-right.svg" alt="down" />
                 <h5>You owe</h5>
               </div>
-              <h3 class="text-white">&#x20A6; 15,256.33</h3>
+              <h3 class="text-white">&#x20A6;150,256.33</h3>
             </div>
             <div class="amount w-50 text-end border-0">
               <div class="d-flex align-items-center justify-content-end">
@@ -108,70 +108,71 @@
 
       <div class="swiper card-slider">
         <div class="swiper-wrapper">
-          <div class="swiper-slide">
+          <div class="swiper-slide"><a href="#">
             <div class="credit-card-box color1">
               <div class="card-logo">
-                <img class="img-fluid" src="assets/images/svg/logo1.svg" alt="logo1" />
+                <!-- <img class="img-fluid" src="assets/images/svg/logo1.svg" alt="logo1" /> -->
+                 <h2 style="font-size: 20px; color: white;">Payday Loan</h2>
                 <img class="img-fluid" src="assets/images/svg/card-chip.svg" alt="card-chip" />
               </div>
-              <h6 class="card-number">Pay day Loan</h6>
-              <h5 class="card-name">Survana Williams</h5>
-              <h2 class="card-amount">$25,000.89</h2>
+              <h6 class="card-number">You can get up to</h6>
+              <h5 class="card-name">&nbsp;</h5>
+              <h2 class="card-amount">&#x20A6;5,000,000</h2>
               <div class="d-block">
                 <div class="card-date w-100">
                   <h6>Exp. date</h6>
                   <h6>cvv</h6>
                 </div>
                 <div class="card-numbers w-100">
-                  <h6 class="text-white fw-semibold mt-1">12 /24</h6>
+                  <h6 class="text-white fw-semibold mt-1">-- /--</h6>
                   <h6 class="text-white fw-semibold mt-1">***</h6>
                 </div>
               </div>
             </div>
-          </div>
+          </a></div>
           <div class="swiper-slide"><a href="#">
             <div class="credit-card-box color2">
               <div class="card-logo">
-                <img class="img-fluid" src="assets/images/svg/logo1.svg" alt="logo1" />
+                <h2 style="font-size: 20px; color: white;">Salary Loan</h2>
                 <img class="img-fluid" src="assets/images/svg/card-chip.svg" alt="card-chip" />
               </div>
               <!-- <h6 class="card-number">**** **** **** 2563</h6> -->
-              <h6 class="card-number">Pay Day Loan</h6>
-              <h5 class="card-name">Survana Williams</h5>
-              <h2 class="card-amount">$25,000.89</h2>
+              <h6 class="card-number">You can get up to</h6>
+              <h5 class="card-name">&nbsp;</h5>
+              <h2 class="card-amount">&#x20A6;25,000,000</h2>
               <div class="d-block">
                 <div class="card-date w-100">
                   <h6>Exp. date</h6>
-                  <h6>Cvv</h6>
+                  <h6>cvv</h6>
                 </div>
                 <div class="card-numbers w-100">
-                  <h6 class="text-white fw-semibold mt-1">12 /24</h6>
+                  <h6 class="text-white fw-semibold mt-1">--/--</h6>
                   <h6 class="text-white fw-semibold mt-1">***</h6>
                 </div>
               </div>
             </div></a>
           </div>
-          <div class="swiper-slide">
+          <div class="swiper-slide"><a href="#">
             <div class="credit-card-box color3">
               <div class="card-logo">
-                <img class="img-fluid" src="assets/images/svg/logo1.svg" alt="logo1" />
+                <h2 style="font-size: 20px; color: white;">Business Loan</h2>
                 <img class="img-fluid" src="assets/images/svg/card-chip.svg" alt="card-chip" />
               </div>
-              <h6 class="card-number">**** **** **** 2563</h6>
-              <h5 class="card-name">Survana Williams</h5>
-              <h2 class="card-amount">$25,000.89</h2>
+              <h6 class="card-number">You can get up to</h6>
+              <h5 class="card-name">&nbsp;</h5>
+              <h2 class="card-amount">&#x20A6;50,000,000</h2>
               <div class="d-block">
                 <div class="card-date w-100">
                   <h6>Exp. date</h6>
-                  <h6>Cvv</h6>
+                  <h6>cvv</h6>
                 </div>
                 <div class="card-numbers w-100">
-                  <h6 class="text-white fw-semibold mt-1">12 /24</h6>
+                  <h6 class="text-white fw-semibold mt-1">--/--</h6>
                   <h6 class="text-white fw-semibold mt-1">***</h6>
                 </div>
               </div>
             </div>
-          </div>
+          </div></a>
         </div>
       </div>
     </div>
@@ -398,7 +399,7 @@
           <ul class="details-list">
             <li>
               <h3 class="fw-normal dark-text">Amount</h3>
-              <h3 class="fw-semibold theme-color">$49.85</h3>
+              <h3 class="fw-semibold theme-color">&#x20A6;49.85</h3>
             </li>
             <li>
               <h3 class="fw-normal dark-text">Bill date</h3>
@@ -442,7 +443,7 @@
           <ul class="details-list">
             <li>
               <h3 class="fw-normal dark-text">Amount</h3>
-              <h3 class="fw-semibold theme-color">$69.49</h3>
+              <h3 class="fw-semibold theme-color">&#x20A6;69.49</h3>
             </li>
             <li>
               <h3 class="fw-normal dark-text">Bill date</h3>

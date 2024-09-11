@@ -1,7 +1,7 @@
 
 <div class="navbar-menu">
     <div class="scanner-bg">
-      <a href="scan-pay.php" class="scanner-btn">
+      <a href="loan-application-1.php" class="scanner-btn">
         <img class="img-fluid" src="assets/images/svg/scan.svg" alt="scan" />
       </a>
     </div>
@@ -18,7 +18,7 @@
       </li>
 
       <li>
-        <a href="crypto.php">
+        <a href="#">
           <div class="icon">
             <img class="unactive" src="assets/images/svg/bitcoin.svg" alt="categories" />
             <img class="active" src="assets/images/svg/bitcoin-fill.svg" alt="categories" />
@@ -42,7 +42,7 @@
             </a>
         </li>
         <li>
-          <a href="insight.php">
+          <a href="support.php">
             <div class="icon">
               <img class="unactive" src="assets/images/svg/bar-chart.svg" alt="bag" />
               <img class="active" src="assets/images/svg/bar-chart-fill.svg" alt="bag" />
