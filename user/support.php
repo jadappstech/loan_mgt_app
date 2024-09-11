@@ -191,7 +191,7 @@
         <a class="sidebar-btn" data-bs-toggle="offcanvas" data-bs-target="#offcanvasLeft">
           <i class="menu-icon" data-feather="menu"></i>
         </a>
-        <h1 style="text-align: center; font size: 20px;">Support</h1>
+        <h2>Support</h2>
       </div>
     </div>
   </header>
