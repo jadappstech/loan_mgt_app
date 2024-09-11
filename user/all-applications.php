@@ -47,7 +47,7 @@
                 <div class="progress-bar bar1"></div>
               </div>
               <div class="d-flex justify-content-between align-items-center mt-2">
-                <h5 class="theme-color">$2,000.00</h5>
+                <h5 class="theme-color">&#x20A6;182,000.11</h5>
               </div>
             </a>
           </div>
@@ -65,7 +65,7 @@
                 <div class="progress-bar bar2"></div>
               </div>
               <div class="d-flex justify-content-between align-items-center mt-2">
-                <h5 class="theme-color">$2,000.00</h5>
+                <h5 class="theme-color">&#x20A6;78,000.08</h5>
               </div>
             </a>
           </div>
@@ -81,7 +81,7 @@
               <div class="progress-bar bar"></div>
             </div>
             <div class="d-flex justify-content-between align-items-center mt-2">
-              <h5 class="theme-color">$499.33</h5>
+              <h5 class="theme-color">&#x20A6;499,000.</h5>
             </div>
           </div>
         </div>
@@ -98,7 +98,7 @@
                 <div class="progress-bar w-100"></div>
               </div>
               <div class="d-flex justify-content-between align-items-center mt-2">
-                <h5 class="theme-color">$452.00</h5>
+                <h5 class="theme-color">&#x20A6;449,00.00</h5>
               </div>
             </a>
           </div>
@@ -188,11 +188,11 @@
           <ul class="details-list border-0">
             <li>
               <h3 class="fw-normal dark-text">Saving amount</h3>
-              <h3 class="fw-normal theme-color">$2000.00</h3>
+              <h3 class="fw-normal theme-color">&#x20A6;2000.00</h3>
             </li>
             <li>
               <h3 class="fw-normal dark-text">Due amount</h3>
-              <h3 class="fw-normal light-text">$3500.00</h3>
+              <h3 class="fw-normal light-text">&#x20A6;3500.00</h3>
             </li>
           </ul>
           <a href="saving-plans.php" class="btn theme-btn successfully w-100">Okay !</a>
