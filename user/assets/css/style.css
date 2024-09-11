@@ -111,7 +111,7 @@
 /* font family */
 /* color variables */
 :root {
-  --theme-color: 98, 44, 253;
+  --theme-color: 17, 35, 73;
   --white: 255, 255, 255;
   --black: 0, 0, 0;
   --dark-text: 23, 22, 27;
@@ -123,7 +123,7 @@
 }
 
 .dark {
-  --theme-color: 98, 44, 253;
+  --theme-color: 17, 35, 73;
   --white: 23, 22, 27;
   --black: 255, 255, 255;
   --dark-text: 255, 255, 255;

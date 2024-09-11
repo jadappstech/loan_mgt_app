@@ -279,3 +279,17 @@ ul.timeline-3 {
     }
   }
   
+
+  /* auth form desktop responsiveness */
+  @media (min-width: 768px) {
+    .auth-form{
+      width: 500px;
+      margin: auto;
+      margin-top: -40px;
+    }
+    .auth-content>div{
+      margin: auto;
+      text-align:center
+    }
+    
+  }

@@ -4,7 +4,7 @@
     <!-- Required meta tags -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="img/centrum-logo.png">
+    <link rel="shortcut icon" href="./admin/centrum-logo.png">
     <title>Centrum Loan - Get a Loan in Minutes</title>
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
@@ -39,7 +39,7 @@
         }
         /* Hero Section */
         .hero {
-            background: url('smiling.avif') no-repeat center center/cover;
+            background: url('./admin/smiling.avif') no-repeat center center/cover;
             color: #fff;
             height: 80vh;
             position: relative;
@@ -145,7 +145,7 @@
     <nav class="navbar navbar-expand-lg navbar-dark sticky-top">
         <div class="container">
             <a class="navbar-brand" href="#">
-                <img src="img/centrum-logo.png" alt="QuickLoan" style="width: 100px; height: 150px;">
+                <img src="./admin/img/centrum-logo.png" alt="QuickLoan" style="width: 100px; height: 150px;">
             </a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav">
                 <span class="navbar-toggler-icon"></span>
@@ -177,7 +177,7 @@
                         <a class="nav-link" href="#faq">FAQs</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link apply-btn" href="./sign-up.php">Apply Now</a>
+                        <a class="nav-link apply-btn" href="./user/signup.php">Apply Now</a>
                     </li>
                 </ul>
             </div>
@@ -189,7 +189,7 @@
         <div class="hero-content">
             <h1>Get a Loan in Minutes</h1>
             <p>Fast, Easy, and Secure</p>
-            <a href="./sign-up.php" class="btn btn-success btn-lg">Apply Now</a>
+            <a href="./user/signup.php" class="btn btn-success btn-lg">Apply Now</a>
         </div>
     </section>
 
@@ -203,7 +203,7 @@
                     <a href="#" class="btn btn-primary learn-more-btn">Learn More</a>
                 </div>
                 <div class="col-md-6">
-                    <img src="team.png" class="img-fluid" alt="About Us">
+                    <img src="./admin/img/team.png" class="img-fluid" alt="About Us">
                 </div>
             </div>
         </div>
@@ -216,21 +216,21 @@
             <div class="row section-content">
                 <!-- Loan Option 1 -->
                 <div class="col-md-4">
-                    <img src="phone.jpg" class="img-fluid" alt="Personal Loan">
+                    <img src="./admin/phone.jpg" class="img-fluid" alt="Personal Loan">
                     <h4>Personal Loan</h4>
                     <p>Flexible repayment plans with low-interest rates to meet your personal needs.</p>
                     <a href="#" class="btn btn-primary learn-more-btn">Learn More</a>
                 </div>
                 <!-- Loan Option 2 -->
                 <div class="col-md-4">
-                    <img src="phone2.jpg" class="img-fluid" alt="Business Loan">
+                    <img src="./admin/phone2.jpg" class="img-fluid" alt="Business Loan">
                     <h4>Business Loan</h4>
                     <p>Boost your business growth with our tailored business loans.</p>
                     <a href="#" class="btn btn-primary learn-more-btn">Learn More</a>
                 </div>
                 <!-- Loan Option 3 -->
                 <div class="col-md-4">
-                    <img src="phone3.jpeg" class="img-fluid" alt="Student Loan">
+                    <img src="./admin/phone3.jpeg" class="img-fluid" alt="Student Loan">
                     <h4>Student Loan</h4>
                     <p>Affordable options to finance your education and achieve your dreams.</p>
                     <a href="#" class="btn btn-primary learn-more-btn">Learn More</a>
@@ -254,7 +254,7 @@
                     <a href="#" class="btn btn-primary learn-more-btn">Learn More</a>
                 </div>
                 <div class="col-md-6">
-                    <img src="checklist.avif" class="img-fluid" alt="Eligibility">
+                    <img src="./admin/checklist.avif" class="img-fluid" alt="Eligibility">
                 </div>
             </div>
         </div>
@@ -266,7 +266,7 @@
             <h2>How to Apply</h2>
             <div class="row align-items-center section-content">
                 <div class="col-md-6">
-                    <img src="t.jpg" class="img-fluid" alt="Application Process">
+                    <img src="./admin/t.jpg" class="img-fluid" alt="Application Process">
                 </div>
                 <div class="col-md-6">
                     <ol>
@@ -295,7 +295,7 @@
                     <a href="#" class="btn btn-primary learn-more-btn">Learn More</a>
                 </div>
                 <div class="col-md-6">
-                    <img src="happy2.jpeg" class="img-fluid" alt="Benefits">
+                    <img src="./admin/happy2.jpeg" class="img-fluid" alt="Benefits">
                 </div>
             </div>
         </div>
@@ -309,7 +309,7 @@
                 <!-- Testimonial 1 -->
                 <div class="col-md-4">
                     <div class="testimonial">
-                        <img src="Customer.png" class="img-fluid rounded-circle" alt="Customer 1" style="border-radius: 50%; width: 100px; height: 100px; object-fit: cover;  display: block; margin: 0 auto;">
+                        <img src="./admin/Customer.png" class="img-fluid rounded-circle" alt="Customer 1" style="border-radius: 50%; width: 100px; height: 100px; object-fit: cover;  display: block; margin: 0 auto;">
                         <p>"QuickLoan helped me fund my small business in no time. Excellent service!"</p>
                         <div class="customer">- Sarah O.</div>
                         <div class="rating">★★★★★</div>
@@ -318,7 +318,7 @@
                 <!-- Testimonial 2 -->
                 <div class="col-md-4">
                     <div class="testimonial">
-                        <img src="img/pass.jpg" class="img-fluid rounded-circle" alt="Customer 2" style="border-radius: 50%; width: 100px; height: 100px; object-fit: cover;  display: block; margin: 0 auto;">
+                        <img src="./admin/pass.jpg" class="img-fluid rounded-circle" alt="Customer 2" style="border-radius: 50%; width: 100px; height: 100px; object-fit: cover;  display: block; margin: 0 auto;">
                         <p>"The application process was so simple, and I received my loan within 24 hours."</p>
                         <div class="customer">- David K.</div>
                         <div class="rating">★★★★★</div>
@@ -327,7 +327,7 @@
                 <!-- Testimonial 3 -->
                 <div class="col-md-4">
                     <div class="testimonial">
-                        <img src="hapicust.jpg" class="img-fluid rounded-circle" alt="Customer 3" style="border-radius: 50%; width: 100px; height: 100px; object-fit: cover;  display: block; margin: 0 auto;">
+                        <img src="./admin/hapicust.jpg" class="img-fluid rounded-circle" alt="Customer 3" style="border-radius: 50%; width: 100px; height: 100px; object-fit: cover;  display: block; margin: 0 auto;">
                         <p>"Highly recommend QuickLoan for anyone looking for a quick and easy loan solution."</p>
                         <div class="customer">- Mary L.</div>
                         <div class="rating">★★★★★</div>
@@ -346,7 +346,7 @@
                 <div class="card">
                     <div class="card-header" id="faqHeading1">
                         <h5 class="mb-0">
-                            <button class="btn btn-link text-left" type="button" data-toggle="collapse" data-target="#faq1" aria-expanded="true" aria-controls="faq1">
+                            <button class="btn btn-link text-left" type="link" data-toggle="collapse" data-target="#faq1" aria-expanded="true" aria-controls="faq1">
                                 What documents are required to apply?
                             </button>
                         </h5>
@@ -354,7 +354,7 @@
                     <div id="faq1" class="collapse show" aria-labelledby="faqHeading1" data-parent="#faqAccordion">
                         <div class="card-body">
                             You'll need a valid ID, proof of income, and recent bank statements.
-                            <a href="#" class="btn btn-primary learn-more-btn">Learn More</a>
+                            <a href="#">Learn More</a>
                         </div>
                     </div>
                 </div>
@@ -370,7 +370,7 @@
                     <div id="faq2" class="collapse" aria-labelledby="faqHeading2" data-parent="#faqAccordion">
                         <div class="card-body">
                             Loan approvals are typically completed within 24 hours.
-                            <a href="#" class="btn btn-primary learn-more-btn">Learn More</a>
+                            <a href="#">Learn More</a>
                         </div>
                     </div>
                 </div>
@@ -386,7 +386,7 @@
                     <div id="faq3" class="collapse" aria-labelledby="faqHeading3" data-parent="#faqAccordion">
                         <div class="card-body">
                             Yes, you can repay your loan early without any additional fees.
-                            <a href="#" class="btn btn-primary learn-more-btn">Learn More</a>
+                            <a href="#">Learn More</a>
                         </div>
                     </div>
                 </div>
@@ -398,7 +398,7 @@
     <section id="cta" class="cta">
         <div class="container">
             <h2>Ready to Apply?</h2>
-            <a href="./sign-up.php" class="btn btn-light btn-lg">Apply Now</a>
+            <a href="./user/signup.php" class="btn btn-light btn-lg text-dark">Apply Now</a>
             <p class="mt-4">Call us: <a href="tel:08001234567" style="color: #fff;">0800-123-4567</a> | Email: <a href="mailto:support@quickloan.com" style="color: #fff;">support@quickloan.com</a></p>
         </div>
     </section>
