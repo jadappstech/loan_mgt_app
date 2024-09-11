@@ -6,7 +6,9 @@
 
 
   <!-- header start -->
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
   <header class="section-t-space">
+    <div class="w-10 h-10 bg-blue-700"></div>
     <div class="custom-container">
       <div class="header-panel">
         <a href="landing.php" class="back-btn">
@@ -34,109 +36,106 @@
   <!-- bottom navbar end -->
 
   <section class="section-b-space" style="padding-bottom: 5.625rem">
-    <div class="custom-container">
-      <!-- progressbar -->
+    <div class="container mx-auto p-4">
+      <!-- Progressbar -->
       <ul id="progressbar" style="text-align: center;">
         <li class="active" id="biodata"><strong>Biodata</strong></li>
         <li class="active" id="loan"><strong>Loan Details</strong></li>
         <li id="verification"><strong>Verification</strong></li>
         <li id="disbursment"><strong>Disbursment</strong></li>
-      </ul>     
-      <div class="card">
-        <div class="card-body">
-          <div class="row gutters gy-4">
-            <div class="col-xl-4 col-lg-4 col-md-4 col-sm-4 col-12">
-              <div class="field-wrapper">
-                <div class="field-placeholder">Loan Type <span class="text-danger">*</span></div>
-                <select class="form-control" name="loan_type">
-                  <option value="" disabled selected>Loan Type</option>
-                  <option value="personal">Payday Loan</option>
-                  <option value="salary loan">Salary Loan</option>
-                  <option value="business">Business Loan</option>
-                </select>
-              </div>
-            </div>
-            <div class="col-xl-4 col-lg-4 col-md-4 col-sm-4 col-12">
-              <div class="field-wrapper">
-                <div class="field-placeholder">Loan Amount Requested <span class="text-danger">*</span></div>
-                <input class="form-control" type="number" name="loan_amount">
-              </div>
-            </div>
-            <div class="col-xl-4 col-lg-4 col-md-4 col-sm-4 col-12">
-              <div class="field-wrapper">
-                <div class="field-placeholder">Repayment Term <span class="text-danger">*</span></div>
-                <select class="form-control" name="repayment_term">
-                  <option value="" disabled selected>Repayment Term</option>
-                  <option value="12">12 Months</option>
-                  <option value="24">24 Months</option>
-                  <option value="36">36 Months</option>
-                </select>
-              </div>
-            </div>
-            <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
-              <div class="field-wrapper">
-                <div class="field-placeholder">Purpose of Loan <span class="text-danger">*</span></div>
-                <textarea class="form-control" rows="2" name="loan_purpose"></textarea>
-              </div>
-            </div>
+      </ul> 
 
-          </div> 
-          <div class="card mt-4">
-            <div class="card-header">
-              <div class="card-title">Account Information</div>
-            </div>
-            <div class="row gy-4">
-              <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
-                <div class="field-wrapper">
-                  <div class="field-placeholder">Bank Name</div>
-                  <input class="form-control" type="text" name="bank_name">
-                </div>
-              </div>
-              <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
-                <div class="field-wrapper">
-                  <div class="field-placeholder">Account Number</div>
-                  <input class="form-control" type="text" name="account_number">
-                </div>
-              </div>
-              <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
-                <div class="field-wrapper">
-                  <div class="field-placeholder">Account Type</div>
-                  <select class="form-control" name="account_type">
-                    <option value="" disabled selected>Account Type</option>
-                    <option value="savings">Savings</option>
-                    <option value="salary">Salary</option>
-                    <option value="current">Current</option>
-                    <option value="corporate">Corporate</option>
-                  </select>
-                </div>
-              </div>
-              <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
-                <div class="field-wrapper">
-                  <div class="field-placeholder">Payment Type</div>
-                  <select class="form-control" name="account_type">
-                    <option value="" disabled selected>Payment Type</option>
-                    <option value="savings">Manual payment</option>
-                    <option value="savings">Automated Deductions</option>
-                  </select>
-                </div>
-              </div>
-  
-            </div>
+      <!-- Form -->
+      <div class="bg-white shadow-md rounded-lg p-6">
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+          
+          <!-- Loan Type -->
+          <div class="mb-4">
+            <label class="block text-gray-700 text-sm font-bold mb-2">Loan Type <span class="text-red-500">*</span></label>
+            <select class="block w-full bg-white border border-gray-300 text-gray-700 py-2 px-3 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500" name="loan_type">
+              <option value="" disabled selected>Select Loan Type</option>
+              <option value="personal">Payday Loan</option>
+              <option value="salary loan">Salary Loan</option>
+              <option value="business">Business Loan</option>
+            </select>
           </div>
 
-          <div class="row gutters">
-            <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
-              <a href="./loan-application-1.php">
-                <button class="btn btn-secondary">Previous</button>
-              </a>
-              <a href="./loan-application-3.php">
-                <button class="btn btn-primary">Next</button> 
-              </a>
+          <!-- Loan Amount -->
+          <div class="mb-4">
+            <label class="block text-gray-700 text-sm font-bold mb-2">Loan Amount Requested <span class="text-red-500">*</span></label>
+            <input class="block w-full bg-white border border-gray-300 text-gray-700 py-2 px-3 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500" type="number" name="loan_amount" placeholder="Enter amount">
+          </div>
+
+          <!-- Repayment Term -->
+          <div class="mb-4">
+            <label class="block text-gray-700 text-sm font-bold mb-2">Repayment Term <span class="text-red-500">*</span></label>
+            <select class="block w-full bg-white border border-gray-300 text-gray-700 py-2 px-3 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500" name="repayment_term">
+              <option value="" disabled selected>Select Repayment Term</option>
+              <option value="12">12 Months</option>
+              <option value="24">24 Months</option>
+              <option value="36">36 Months</option>
+            </select>
+          </div>
+
+          <!-- Purpose of Loan -->
+          <div class="md:col-span-3">
+            <label class="block text-gray-700 text-sm font-bold mb-2">Purpose of Loan <span class="text-red-500">*</span></label>
+            <textarea class="block w-full bg-white border border-gray-300 text-gray-700 py-2 px-3 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500" rows="2" name="loan_purpose" placeholder="Describe the purpose"></textarea>
+          </div>
+
+        </div>
+
+        <!-- Account Information Section -->
+        <div class="bg-gray-100 p-4 mt-6 rounded-lg">
+          <h3 class="text-lg font-bold mb-4">Account Information</h3>
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+            
+            <!-- Bank Name -->
+            <div class="mb-4">
+              <label class="block text-gray-700 text-sm font-bold mb-2">Bank Name</label>
+              <input class="block w-full bg-white border border-gray-300 text-gray-700 py-2 px-3 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500" type="text" name="bank_name" placeholder="Enter bank name">
             </div>
+
+            <!-- Account Number -->
+            <div class="mb-4">
+              <label class="block text-gray-700 text-sm font-bold mb-2">Account Number</label>
+              <input class="block w-full bg-white border border-gray-300 text-gray-700 py-2 px-3 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500" type="text" name="account_number" placeholder="Enter account number">
+            </div>
+
+            <!-- Account Type -->
+            <div class="mb-4">
+              <label class="block text-gray-700 text-sm font-bold mb-2">Account Type</label>
+              <select class="block w-full bg-white border border-gray-300 text-gray-700 py-2 px-3 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500" name="account_type">
+                <option value="" disabled selected>Select Account Type</option>
+                <option value="savings">Savings</option>
+                <option value="salary">Salary</option>
+                <option value="current">Current</option>
+                <option value="corporate">Corporate</option>
+              </select>
+            </div>
+
+            <!-- Payment Type -->
+            <div class="mb-4">
+              <label class="block text-gray-700 text-sm font-bold mb-2">Payment Type</label>
+              <select class="block w-full bg-white border border-gray-300 text-gray-700 py-2 px-3 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500" name="payment_type">
+                <option value="" disabled selected>Select Payment Type</option>
+                <option value="manual">Manual Payment</option>
+                <option value="automated">Automated Deductions</option>
+              </select>
+            </div>
+
           </div>
         </div>
+
+        <!-- Buttons -->
+        <div class="flex justify-between mt-6">
+          <a href="./loan-application-1.php" class="bg-gray-500 text-white py-2 px-4 rounded-lg hover:bg-gray-600">Previous</a>
+          <a href="./loan-application-3.php" class="bg-blue-500 text-white py-2 px-4 rounded-lg hover:bg-blue-600">Next</a>
+        </div>
+
       </div>
     </div>
+
   </section>
   
 

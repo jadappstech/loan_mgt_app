@@ -9,7 +9,7 @@
   <header class="section-t-space">
     <div class="custom-container">
       <div class="header-panel">
-        <a href="landing.php" class="back-btn">
+        <a href="all-applications.php" class="back-btn">
           <i class="icon" data-feather="arrow-left"></i>
         </a>
         <h2>Success</h2>
@@ -37,7 +37,8 @@
     <div class="card text-center" style="width: 18rem; margin: auto">
       <div class="card-body">
         <img src="assets/images/oops.png" alt="" style="width: 100%">
-        <h5 class="card-title" style="font-weight: 800; font-size: 30px">Sorry You Do Not Qualify For Loan</h5>
+        <h5 class="card-title" style="font-weight: 800; font-size: 30px">Sorry</h5>
+        <h5 class="card-title" style="font-weight: 600; font-size: 18px">You Do Not Qualify For Loan</h5>
         <p class="card-text">Sorry you don qualifiy for the loan at this moment. Please try agin some other time</p>
       </div>
     </div>
