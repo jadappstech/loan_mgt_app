@@ -27,28 +27,7 @@
 
   
   <!-- total saving section starts -->
-  <section>
-    <div class="custom-container">
-      <div class="statistics-banner">
-        <div class="d-flex justify-content-between align-items-center">
-          <div class="total-amount">
-            <h3>Total Saving</h3>
-            <h2>$9,21,908.89</h2>
-          </div>
-        </div>
-        <div class="saving-slider">
-          <input id="range-slider__range" type="range" value="40" />
-
-          <!-- <span id="range-slider__value">40</span> -->
-        </div>
-
-        <div class="left-amount">
-          <h5>Amount left</h5>
-          <h5 class="text-white fw-semibold">$4,380.50</h5>
-        </div>
-      </div>
-    </div>
-  </section>
+  
   <!-- total saving section end -->
 
   <!-- saving plans section starts -->
