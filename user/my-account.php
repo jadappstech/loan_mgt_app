@@ -57,25 +57,42 @@
       <div class="profile-section">
         <div class="profile-banner">
           <div class="profile-image">
-            <img class="img-fluid profile-pic" src="assets/images/person/p3.png" alt="p3" />
+            <img class="img-fluid profile-pic" src="assets/images/african0man.jpg"/>
             <i class="camera" data-feather="camera"></i>
           </div>
         </div>
-        <h2>Survana Williams</h2>
-        <h5>+62 78459 25623</h5>
+        <h2>Okon Yinusa</h2>
+        <h5>+234 803 538 8713</h5>
       </div>
 
       <form class="auth-form pt-0 mt-3" target="_blank">
         <div class="form-group">
           <label for="inputpin" class="form-label">Phone number</label>
-          <input type="tel" class="form-control" id="inputpin" value="+62 78459 25623"
+          <input type="tel" class="form-control" id="inputpin" value="+234 704 500 5000"
             placeholder="Enter your phone number" />
         </div>
 
         <div class="form-group">
           <label for="inputusername" class="form-label">User id</label>
           <div class="form-input">
-            <input type="text" class="form-control" value="Survana_1202" id="inputusername"
+            <input type="text" class="form-control" value="Okon00y" id="inputusername"
+              placeholder="Enter Your id" />
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label for="inputusername" class="form-label">Address</label>
+          <div class="form-input">
+            <input type="text" class="form-control" value="Enter your home or office address" id="inputusername"
+              placeholder="Enter Your id" />
+          </div>
+        </div>
+
+        
+        <div class="form-group">
+          <label for="inputusername" class="form-label">Email address</label>
+          <div class="form-input">
+            <input type="text" class="form-control" value="Enter email address" id="inputusername"
               placeholder="Enter Your id" />
           </div>
         </div>

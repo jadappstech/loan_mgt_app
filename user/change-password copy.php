@@ -2,7 +2,7 @@
 <html lang="en">
 
 
-<!-- Mirrored from themes.pixelstrap.net/pwa/mpay/change-new-password.php by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 10 Sep 2024 05:08:45 GMT -->
+<!-- Mirrored from themes.pixelstrap.net/pwa/mpay/change-password.php by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 10 Sep 2024 05:08:45 GMT -->
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -45,7 +45,7 @@
         <a href="profile.php" class="back-btn">
           <i class="icon" data-feather="arrow-left"></i>
         </a>
-        <h2>Change Password</h2>
+        <h2>Enter</h2>
       </div>
     </div>
   </header>
@@ -54,19 +54,14 @@
   <!-- change password section start -->
   <section>
     <div class="custom-container">
-      <form class="auth-form pt-0" target="_blank">
+      <h4 class="fw-normal light-text lh-base">Enter your registered email or phone number to change your passwords.
+      </h4>
+      <form class="auth-form pt-0 mt-3" target="_blank">
         <div class="form-group">
-          <label for="inputnewpassword" class="form-label">New Password</label>
-          <input type="password" class="form-control" id="inputnewpassword" placeholder="Enter your new password" />
+          <label for="inputpin" class="form-label">Email or phone</label>
+          <input type="text" class="form-control" id="inputpin" placeholder="Enter your email or phone number" />
         </div>
-
-        <div class="form-group">
-          <label for="inputconfirmpassword" class="form-label">Confirm Password</label>
-          <input type="password" class="form-control" id="inputconfirmpassword"
-            placeholder="Enter your confirm password" />
-        </div>
-
-        <a href="profile.php" class="btn theme-btn w-100">Update password</a>
+        <a href="change-new-password.php" class="btn theme-btn w-100">Change password</a>
       </form>
     </div>
   </section>
@@ -84,5 +79,5 @@
 </body>
 
 
-<!-- Mirrored from themes.pixelstrap.net/pwa/mpay/change-new-password.php by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 10 Sep 2024 05:08:45 GMT -->
+<!-- Mirrored from themes.pixelstrap.net/pwa/mpay/change-password.php by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 10 Sep 2024 05:08:45 GMT -->
 </html>

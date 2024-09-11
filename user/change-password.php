@@ -54,14 +54,14 @@
   <!-- change password section start -->
   <section>
     <div class="custom-container">
-      <h4 class="fw-normal light-text lh-base">Enter your registered email or phone number to change your passwords.
+      <h4 class="fw-normal light-text lh-base">Enter your current password before you can proceed to the next stage
       </h4>
       <form class="auth-form pt-0 mt-3" target="_blank">
         <div class="form-group">
-          <label for="inputpin" class="form-label">Email or phone</label>
+          <label for="inputpin" class="form-label">Old password</label>
           <input type="text" class="form-control" id="inputpin" placeholder="Enter your email or phone number" />
         </div>
-        <a href="change-new-password.php" class="btn theme-btn w-100">Change password</a>
+        <a href="change-new-password.php" class="btn theme-btn w-100">Enter</a>
       </form>
     </div>
   </section>

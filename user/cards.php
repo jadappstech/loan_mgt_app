@@ -76,15 +76,15 @@
           <div class="d-flex align-items-center justify-content-between">
             <div>
               <h6 class="card-number">**** **** **** 2563</h6>
-              <h5 class="card-name">Anirudhaa Mehra</h5>
+              <h5 class="card-name">You can borrow</h5>
             </div>
             <img class="img-fluid chip" src="assets/images/svg/card-chip.svg" alt="card-chip" />
           </div>
           <div class="d-flex justify-content-between">
-            <h2 class="card-amount">$25,000.89</h2>
+            <h2 class="card-amount">N25,000.89</h2>
             <div class="card-date w-100">
               <h6>Exp. date</h6>
-              <h6 class="text-white fw-semibold mt-1">12 /24</h6>
+              <h6 class="text-white fw-semibold mt-1">12 /26</h6>
             </div>
             <div class="card-numbers w-100">
               <h6 class="cvv-code">Cvv</h6>
@@ -110,15 +110,15 @@
           <div class="d-flex align-items-center justify-content-between">
             <div>
               <h6 class="card-number">**** **** **** 3478</h6>
-              <h5 class="card-name">Shrushti Godgeren</h5>
+              <h5 class="card-name">You can borrow</h5>
             </div>
             <img class="img-fluid chip" src="assets/images/svg/card-chip.svg" alt="card-chip" />
           </div>
           <div class="d-flex justify-content-between">
-            <h2 class="card-amount">$15,256.25</h2>
+            <h2 class="card-amount">N15,256.25</h2>
             <div class="card-date w-100">
               <h6>Exp. date</h6>
-              <h6 class="text-white fw-semibold mt-1">12 /24</h6>
+              <h6 class="text-white fw-semibold mt-1">02 /25</h6>
             </div>
             <div class="card-numbers w-100">
               <h6 class="cvv-code">Cvv</h6>
@@ -143,12 +143,12 @@
           <div class="d-flex align-items-center justify-content-between">
             <div>
               <h6 class="card-number">**** **** **** 1256</h6>
-              <h5 class="card-name">Survana Williams</h5>
+              <h5 class="card-name">You can borrow</h5>
             </div>
             <img class="img-fluid chip" src="assets/images/svg/card-chip.svg" alt="card-chip" />
           </div>
           <div class="d-flex justify-content-between">
-            <h2 class="card-amount">$5,256.89</h2>
+            <h2 class="card-amount">N5,256.89</h2>
             <div class="card-date w-100">
               <h6>Exp. date</h6>
               <h6 class="text-white fw-semibold mt-1">12 /24</h6>
@@ -159,13 +159,7 @@
             </div>
           </div>
         </li>
-        <li class="credit-card-box color4">
-          <div class="card-logo">
-            <img class="img-fluid" src="assets/images/svg/logo1.svg" alt="logo1" />
-            <div class="dropdown">
-              <a href="#" class="back-btn" role="button" data-bs-toggle="dropdown">
-                <i class="icon" data-feather="more-horizontal"></i>
-              </a>
+       
 
               <ul class="dropdown-menu">
                 <li><a class="dropdown-item" href="#edit-card" data-bs-toggle="modal">Edit</a></li>
@@ -173,24 +167,7 @@
               </ul>
             </div>
           </div>
-          <div class="d-flex align-items-center justify-content-between">
-            <div>
-              <h6 class="card-number">**** **** **** 3426</h6>
-              <h5 class="card-name">Marrien Woolsmith</h5>
-            </div>
-            <img class="img-fluid chip" src="assets/images/svg/card-chip.svg" alt="card-chip" />
-          </div>
-          <div class="d-flex justify-content-between">
-            <h2 class="card-amount">$10,380.48</h2>
-            <div class="card-date w-100">
-              <h6>Exp. date</h6>
-              <h6 class="text-white fw-semibold mt-1">12 /24</h6>
-            </div>
-            <div class="card-numbers w-100">
-              <h6 class="cvv-code">Cvv</h6>
-              <h6 class="text-white fw-semibold mt-1">***</h6>
-            </div>
-          </div>
+          
         </li>
       </ul>
     </div>
