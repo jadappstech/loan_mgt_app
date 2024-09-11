@@ -43,36 +43,71 @@
         <li id="disbursment"><strong>Disbursment</strong></li>
       </ul>     
       <div class="card">
-        <div class="card-body">
-          </div>
+        <div class="card-body"></div>
+      </div>
+    </div>
+    <div class="container my-5">
+      <div class="row">
+        <div class="col-md-6 offset-md-3">
+          <ul class="timeline-3">
+            <li class="pending">
+              <div class="fw-bold">Mono Verification</div>
+              <p class="mt-2">Verifying your application details through the Mono platform</p>
+            </li>        
+            <li class="pending">
+              <div class="fw-bold">NIPPS Verification</div>
+              <p class="mt-2">Contacting the National Identity Management System (NIPPS) to check if you have any other active loans not mentioned in the application</p>
+            </li>
+            <li class="pending">
+              <div class="fw-bold">Nigerian Credit Bureau Check</div>
+              <p class="mt-2">Cross-checking your credit status with Nigerian credit bureaus to identify any unpaid loans, defaults, or bad credit history<span class="loading-dots"></span></p>
+            </li>
+            <li class="pending">
+              <a class="text-secondary pending">Done</a>
+            </li>
+          </ul>
         </div>
       </div>
-      <div class="container my-5">
-  <div class="row">
-    <div class="col-md-6 offset-md-3">
-      <ul class="timeline-3">
-        <li class="success">
-          <div class="fw-bold">Mono Verification</div>
-          <p class="mt-2">Verifying your application details through the Mono platform</p>
-        </li>        
-        <li class="fail">
-          <div class="fw-bold">NIPPS Verification</div>
-          <p class="mt-2">Contacting the National Identity Management System (NIPPS) to check if you have any other active loans not mentioned in the application</p>
-        </li>
-        <li class="pending">
-          <div class="fw-bold">Nigerian Credit Bureau Check</div>
-          <p class="mt-2">Cross-checking your credit status with Nigerian credit bureaus to identify any unpaid loans, defaults, or bad credit history<span class="loading-dots"></span></p>
-        </li>
-        <li class="pending">
-          <a class="text-secondary pending">Done</a>
-        </li>
-      </ul>
     </div>
-  </div>
-</div>
-  </section>
-  
+    <script>
 
+        function changeClassSequentially(newClass) {
+          const listItems = document.querySelectorAll('.timeline-3 li');
+          
+          listItems.forEach(function(item, index) {
+              setTimeout(function() {
+                  // Remove existing classes and add the new one
+                  item.classList.remove('success', 'fail', 'pending');
+                  item.classList.add(newClass);
+              }, index * 1000); // Delay each by 1 second (1000ms)
+          });
+
+          if (newClass==="success") {
+            window.location.href = "./loan-application-4v1.php";
+          } else {
+            window.location.href = "./loan-application-4v2.php";
+          }
+        }
+
+        document.addEventListener('keydown', function(event) {
+          // Check if the pressed key is Enter (key code 13)
+          if (event.key === "Enter") {
+              // Redirect to the desired URL
+              window.location.href = "./loan-application-4.php";
+          }
+          if (event.key === "-") {
+            console.log('simulate fail');
+            changeClassSequentially('fail');
+          }
+          if (event.key === "=") {
+              console.log('simulate success');
+              changeClassSequentially('success');
+          }
+
+        });
+    </script>
+    
+  </script>
   <!-- swiper js -->
   <script src="assets/js/swiper-bundle.min.js"></script>
   <script src="assets/js/custom-swiper.js"></script>
