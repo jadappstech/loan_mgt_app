@@ -81,7 +81,7 @@
             <img class="img-fluid chip" src="assets/images/svg/card-chip.svg" alt="card-chip" />
           </div>
           <div class="d-flex justify-content-between">
-            <h2 class="card-amount">N25,000.89</h2>
+            <h2 class="card-amount">&#8358;25,000.89</h2>
             <div class="card-date w-100">
               <h6>Exp. date</h6>
               <h6 class="text-white fw-semibold mt-1">12 /26</h6>
@@ -115,7 +115,7 @@
             <img class="img-fluid chip" src="assets/images/svg/card-chip.svg" alt="card-chip" />
           </div>
           <div class="d-flex justify-content-between">
-            <h2 class="card-amount">N15,256.25</h2>
+            <h2 class="card-amount">&#8358;15,256.25</h2>
             <div class="card-date w-100">
               <h6>Exp. date</h6>
               <h6 class="text-white fw-semibold mt-1">02 /25</h6>
@@ -148,7 +148,7 @@
             <img class="img-fluid chip" src="assets/images/svg/card-chip.svg" alt="card-chip" />
           </div>
           <div class="d-flex justify-content-between">
-            <h2 class="card-amount">N5,256.89</h2>
+            <h2 class="card-amount">&#8358;5,256.89</h2>
             <div class="card-date w-100">
               <h6>Exp. date</h6>
               <h6 class="text-white fw-semibold mt-1">12 /24</h6>

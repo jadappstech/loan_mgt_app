@@ -41,7 +41,7 @@
 <body class="auth-body">
   <!-- header starts -->
   <div class="auth-header">
-    <a href="index-2.php"> <i class="back-btn" data-feather="arrow-left"></i> </a>
+    <a href="signin.php"> <i class="back-btn" data-feather="arrow-left"></i> </a>
 
     <div class="auth-content">
       <div>

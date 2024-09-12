@@ -92,22 +92,6 @@
         <!-- Row start -->
         <div class="row gutters">
 
-            <!-- Profile Picture -->
-            <div class="col-xl-4 col-lg-4 col-md-4 col-sm-4 col-12">
-                
-                <!-- Field wrapper start -->
-                <div class="field-wrapper">
-                    <label>Profile Picture</label><br>
-                    <!-- <img src="#" alt="Profile Picture" class="profile-picture" id="profileImage"> -->
-                    <input type="file" class="form-control" id="profilePictureInput" accept="image/*" onchange="previewImage(event)">
-                    <div class="form-text">
-                        Upload a profile picture (JPEG, PNG, etc.).
-                    </div>
-                </div>
-                <!-- Field wrapper end -->
-
-            </div>
-
             <!-- Employee ID -->
             <div class="col-xl-4 col-lg-4 col-md-4 col-sm-4 col-12">
                 
@@ -138,6 +122,21 @@
 
             </div>
 
+<!-- Email -->
+<div class="col-xl-4 col-lg-4 col-md-4 col-sm-4 col-12">
+                
+                <!-- Field wrapper start -->
+                <div class="field-wrapper">
+                    <input class="form-control" type="email">
+                    <div class="field-placeholder">Email <span class="text-danger">*</span></div>
+                    <div class="form-text">
+                        We'll never share the employee's email with anyone else.
+                    </div>
+                </div>
+                <!-- Field wrapper end -->
+
+            </div>
+
             <!-- Job Title -->
             <div class="col-xl-4 col-lg-4 col-md-4 col-sm-4 col-12">
                 
@@ -162,21 +161,6 @@
                     <div class="field-placeholder">Department <span class="text-danger">*</span></div>
                     <div class="form-text">
                         Please enter the department.
-                    </div>
-                </div>
-                <!-- Field wrapper end -->
-
-            </div>
-
-            <!-- Email -->
-            <div class="col-xl-4 col-lg-4 col-md-4 col-sm-4 col-12">
-                
-                <!-- Field wrapper start -->
-                <div class="field-wrapper">
-                    <input class="form-control" type="email">
-                    <div class="field-placeholder">Email <span class="text-danger">*</span></div>
-                    <div class="form-text">
-                        We'll never share the employee's email with anyone else.
                     </div>
                 </div>
                 <!-- Field wrapper end -->
@@ -241,6 +225,21 @@
                 </div>
                 <!-- Field wrapper end -->
 
+            </div>
+
+            <!-- Profile Picture -->
+            <div class="col-xl-8 col-lg-8 col-md-8 col-sm-4 col-4">
+                
+                <!-- Field wrapper start -->
+                <div style="margin-top:-12px; margin-bottom:32px;" class="field-wrapper">
+                    <label style="color:#1273eb; padding-left:8px;">Profile Picture</label><br>
+                    <!-- <img src="#" alt="Profile Picture" class="profile-picture" id="profileImage"> -->
+                    <input style="height:45px;" type="file" class="form-control" id="profilePictureInput" accept="image/*" onchange="previewImage(event)">
+                    <div class="form-text">
+                        Upload a profile picture (JPEG, PNG, etc.).
+                    </div>
+                </div>
+                <!-- Field wrapper end -->
             </div>
 
             <!-- Notes and Comments -->

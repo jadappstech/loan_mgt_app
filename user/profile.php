@@ -1,78 +1,7 @@
 <?php include_once "./includes/header.php"?>
 <body>
   <!-- side bar start -->
-  <div class="offcanvas sidebar-offcanvas offcanvas-start" tabindex="-1" id="offcanvasLeft">
-    <div class="offcanvas-header sidebar-header">
-      <div class="sidebar-logo">
-        <img class="img-fluid logo" src="assets/images/logo/logo.png" alt="logo" />
-      </div>
-      <div class="balance">
-        <img class="img-fluid balance-bg" src="assets/images/background/auth-bg.jpg" alt="auth-bg" />
-        <h5>Balance</h5>
-        <h2>$1,06,786.65</h2>
-      </div>
-    </div>
-    <div class="offcanvas-body">
-      <div class="sidebar-content">
-        <ul class="link-section">
-          <li>
-            <a href="landing.php" class="pages">
-              <i class="sidebar-icon" data-feather="credit-card"></i>
-              <h3>mPay</h3>
-            </a>
-          </li>
-          <li>
-            <a href="crypto.php" class="pages">
-              <i class="sidebar-icon" data-feather="dollar-sign"></i>
-              <h3>Crypto</h3>
-            </a>
-          </li>
-          <li>
-            <a href="page-list.php" class="pages">
-              <i class="sidebar-icon" data-feather="file-text"></i>
-              <h3>Theme Pages</h3>
-            </a>
-          </li>
-          <li>
-            <a href="component.php" class="pages">
-              <i class="sidebar-icon" data-feather="command"></i>
-              <h3>Theme Components</h3>
-            </a>
-          </li>
-
-          <li>
-            <a href="profile.php" class="pages">
-              <i class="sidebar-icon" data-feather="user"></i>
-              <h3>Support Page</h3>
-            </a>
-          </li>
-
-          <li>
-            <a href="signin.php" class="pages">
-              <i class="sidebar-icon" data-feather="log-out"></i>
-              <h3>Log out</h3>
-            </a>
-          </li>
-        </ul>
-        <div class="mode-switch">
-          <ul class="switch-section">
-            <li>
-              <h3>RTL</h3>
-              <div class="switch-btn">
-                <input id="dir-switch" type="checkbox" />
-              </div>
-            </li>
-            <li>
-              <h3>Dark</h3>
-              <div class="switch-btn">
-                <input id="dark-switch" type="checkbox" />
-              </div>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </div>
-  </div>
+  <?php include_once "./includes/sidebar.php"?>
   <!-- side bar end -->
 
    <!-- header start -->
@@ -93,7 +22,10 @@
   <!-- panel-space end -->
 
   <!-- bottom navbar start -->
-  <?php include_once "./includes/navbar.php"; ?>
+  <?php 
+    $active_link = "profile";
+    include_once "./includes/navbar.php"; 
+  ?>
   <!-- bottom navbar end -->
 
  <!-- profile section start -->
@@ -122,7 +54,7 @@
           </a>
         </li>
         <li>
-          <a href="NO LINK" class="profile-box">
+          <a href="loan-history.php" class="profile-box">
             <div class="profile-img">
               <i class="icon" data-feather="list"></i>
             </div>
@@ -133,7 +65,7 @@
           </a>
         </li>
         <li>
-          <a href="cards.php" class="profile-box">
+          <a href="my-cards.php" class="profile-box">
             <div class="profile-img">
               <i class="icon" data-feather="credit-card"></i>
             </div>
@@ -202,6 +134,31 @@
   </section>
   <!-- profile section end -->
 
+  
+
+  <!-- swiper js -->
+  <script src="assets/js/swiper-bundle.min.js"></script>
+  <script src="assets/js/custom-swiper.js"></script>
+
+  <!-- feather js -->
+  <script src="assets/js/feather.min.js"></script>
+  <script src="assets/js/custom-feather.js"></script>
+
+  <!-- iconsax js -->
+  <script src="assets/js/iconsax.js"></script>
+
+  <!-- bootstrap js -->
+  <script src="assets/js/bootstrap.bundle.min.js"></script>
+
+  <!-- homescreen popup js -->
+  <script src="assets/js/homescreen-popup.js"></script>
+
+  <!-- PWA offcanvas popup js -->
+  <script src="assets/js/offcanvas-popup.js"></script>
+
+  <!-- script js -->
+  <script src="assets/js/script.js"></script>
+</body>
   
 
   <!-- swiper js -->

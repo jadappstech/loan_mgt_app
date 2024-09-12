@@ -26,7 +26,10 @@
   <!-- panel-space end -->
 
   <!-- bottom navbar start -->
-  <?php include_once "./includes/navbar.php"; ?>
+  <?php 
+    $active_link = "payments";
+    include_once "./includes/navbar.php"; 
+  ?>
   <!-- bottom navbar end -->
 
     <section class="section-b-space">

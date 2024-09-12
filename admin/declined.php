@@ -96,7 +96,7 @@
 	</div>
 
 </div>
-							<h1>Blank page</h1>
+						
 						</div>
 						<!-- Row end -->
 

@@ -140,15 +140,15 @@
 																</div>
 															</div>
 															<div class="task-details">
-																<div class="task-name">Musa Okonkwo</div>
-																<div class="task-desc">Application for a loan of 5 million naira (N5,000,000)</div>
-																<div class="task-desc"><strong>Duration:</strong> 8 Weeks</div>
+																<div class="task-name">Okon Yinusa</div>
+																<div class="task-desc">Application for a loan of One million and three hunderd thousand naira (N1,300,000)</div>
+																<div class="task-desc"><strong>Duration:</strong> 3 Weeks</div>
 																<div class="task-types">
-																	<button style=" border: solid; border-radius: 6px; padding: 10px; margin-right:4px; margin-left:-2px; " class="badge bg-warning">Veiw Profile</button>
+																	<button style=" background-color: #1273eb !important; border: solid; border-radius: 6px; padding: 10px; margin-right:4px; margin-left:-2px; " class="badge bg-warning">Veiw Profile</button>
 																	<button style=" border: none; border-radius: 4px; padding: 10px; margin-right:4px;" class="badge bg-success">Check Documents</button>
 																</div>
 															</div>
-															<div style="margin-bottom:20px;"> <span style="background: #FDDA0D; font-weight: 700; font-size:10px; 
+															<div style="margin-bottom:20px;"> <span style="background: #e4b424; font-weight: 700; font-size:10px; 
 															border: solid 0.8px; border-radius:4px; padding-top:10px; padding-bottom:10px; padding-left:30px; color:#ffffff;
 															 padding-right:30px;" >Under Review</span> </div>
 														</div>
@@ -170,7 +170,7 @@
 																<div class="task-desc">Application for a loan of 5 million naira (N5,000,000)</div>
 																<div class="task-desc"><strong>Duration:</strong> 8 Weeks</div>
 																<div class="task-types">
-																	<button style=" border: solid; border-radius: 6px; padding: 10px; margin-right:4px; margin-left:-2px; " class="badge bg-warning">Veiw Profile</button>
+																	<button style=" background-color: #1273eb !important; border: solid; border-radius: 6px; padding: 10px; margin-right:4px; margin-left:-2px; " class="badge bg-warning">Veiw Profile</button>
 																	<button style=" border: none; border-radius: 4px; padding: 10px; margin-right:4px;" class="badge bg-success">Check Documents</button>
 																</div>
 															</div>
@@ -192,15 +192,15 @@
 																</div>
 															</div>
 															<div class="task-details">
-																<div class="task-name">Musa Okonkwo</div>
-																<div class="task-desc">Application for a loan of 5 million naira (N5,000,000)</div>
-																<div class="task-desc"><strong>Duration:</strong> 8 Weeks</div>
+																<div class="task-name">Adebayo Memuna</div>
+																<div class="task-desc">Application for a loan of Two hundred and fifty thousand naria (200,000)</div>
+																<div class="task-desc"><strong>Duration:</strong> 4 Weeks</div>
 																<div class="task-types">
-																	<button style=" border: solid; border-radius: 6px; padding: 10px; margin-right:4px; margin-left:-2px; " class="badge bg-warning">Veiw Profile</button>
+																	<button style=" background-color: #1273eb !important; border: solid; border-radius: 6px; padding: 10px; margin-right:4px; margin-left:-2px; " class="badge bg-warning">Veiw Profile</button>
 																	<button style=" border: none; border-radius: 4px; padding: 10px; margin-right:4px;" class="badge bg-success">Check Documents</button>
 																</div>
 															</div>
-															<div style="margin-bottom:20px;"> <span style="background: #FDDA0D; font-weight: 700; font-size:10px; 
+															<div style="margin-bottom:20px;"> <span style="background: #e4b424; font-weight: 700; font-size:10px; 
 															border: solid 0.8px; border-radius:4px; padding-top:10px; padding-bottom:10px; padding-left:30px; color:#ffffff;
 															 padding-right:30px;" >Under Review</span> </div>
 														</div>
@@ -218,11 +218,11 @@
 																</div>
 															</div>
 															<div class="task-details">
-																<div class="task-name">Musa Okonkwo</div>
-																<div class="task-desc">Application for a loan of 5 million naira (N5,000,000)</div>
-																<div class="task-desc"><strong>Duration:</strong> 8 Weeks</div>
+																<div class="task-name">Joseph Abraham</div>
+																<div class="task-desc">Application for a loan of Eight million naira (N8,000,000)</div>
+																<div class="task-desc"><strong>Duration:</strong> 2 Weeks</div>
 																<div class="task-types">
-																	<button style=" border: solid; border-radius: 6px; padding: 10px; margin-right:4px; margin-left:-2px; " class="badge bg-warning">Veiw Profile</button>
+																	<button style=" background-color: #1273eb !important; border: solid; border-radius: 6px; padding: 10px; margin-right:4px; margin-left:-2px; " class="badge bg-warning">Veiw Profile</button>
 																	<button style=" border: none; border-radius: 4px; padding: 10px; margin-right:4px;" class="badge bg-success">Check Documents</button>
 																</div>
 															</div>
@@ -244,11 +244,11 @@
 																</div>
 															</div>
 															<div class="task-details">
-																<div class="task-name">Musa Okonkwo</div>
-																<div class="task-desc">Application for a loan of 5 million naira (N5,000,000)</div>
+																<div class="task-name">Obi Olukare</div>
+																<div class="task-desc">Application for a loan of Twelve million naira (N12,000,000)</div>
 																<div class="task-desc"><strong>Duration:</strong> 8 Weeks</div>
 																<div class="task-types">
-																	<button style=" border: solid; border-radius: 6px; padding: 10px; margin-right:4px; margin-left:-2px; " class="badge bg-warning">Veiw Profile</button>
+																	<button style=" background-color: #1273eb !important; border: solid; border-radius: 6px; padding: 10px; margin-right:4px; margin-left:-2px; " class="badge bg-warning">Veiw Profile</button>
 																	<button style=" border: none; border-radius: 4px; padding: 10px; margin-right:4px;" class="badge bg-success">Check Documents</button>
 																</div>
 															</div>
@@ -270,11 +270,11 @@
 																</div>
 															</div>
 															<div class="task-details">
-																<div class="task-name">Musa Okonkwo</div>
-																<div class="task-desc">Application for a loan of 5 million naira (N5,000,000)</div>
-																<div class="task-desc"><strong>Duration:</strong> 8 Weeks</div>
+																<div class="task-name">Bisi Khadri</div>
+																<div class="task-desc">Application for a loan of Eight hundred and fifty thousand naira (N850,000)</div>
+																<div class="task-desc"><strong>Duration:</strong> 6 Weeks</div>
 																<div class="task-types">
-																	<button style=" border: solid; border-radius: 6px; padding: 10px; margin-right:4px; margin-left:-2px; " class="badge bg-warning">Veiw Profile</button>
+																	<button style=" background-color: #1273eb !important; border: solid; border-radius: 6px; padding: 10px; margin-right:4px; margin-left:-2px; " class="badge bg-warning">Veiw Profile</button>
 																	<button style=" border: none; border-radius: 4px; padding: 10px; margin-right:4px;" class="badge bg-success">Check Documents</button>
 																</div>
 															</div>
@@ -296,11 +296,11 @@
 																</div>
 															</div>
 															<div class="task-details">
-																<div class="task-name">Musa Okonkwo</div>
-																<div class="task-desc">Application for a loan of 5 million naira (N5,000,000)</div>
-																<div class="task-desc"><strong>Duration:</strong> 8 Weeks</div>
+																<div class="task-name">Esther Jiboro</div>
+																<div class="task-desc">Application for a loan of One million naira (N1,000,000)</div>
+																<div class="task-desc"><strong>Duration:</strong> 6 Weeks</div>
 																<div class="task-types">
-																	<button style=" border: solid; border-radius: 6px; padding: 10px; margin-right:4px; margin-left:-2px; " class="badge bg-warning">Veiw Profile</button>
+																	<button style=" background-color: #1273eb !important; border: solid; border-radius: 6px; padding: 10px; margin-right:4px; margin-left:-2px; " class="badge bg-warning">Veiw Profile</button>
 																	<button style=" border: none; border-radius: 4px; padding: 10px; margin-right:4px;" class="badge bg-success">Check Documents</button>
 																</div>
 															</div>
@@ -322,11 +322,11 @@
 																</div>
 															</div>
 															<div class="task-details">
-																<div class="task-name">Musa Okonkwo</div>
-																<div class="task-desc">Application for a loan of 5 million naira (N5,000,000)</div>
+																<div class="task-name">Abdul Babanginda</div>
+																<div class="task-desc">Application for a loan of One million seven hundred thousand naira (N1,700,000)</div>
 																<div class="task-desc"><strong>Duration:</strong> 8 Weeks</div>
 																<div class="task-types">
-																	<button style=" border: solid; border-radius: 6px; padding: 10px; margin-right:4px; margin-left:-2px; " class="badge bg-warning">Veiw Profile</button>
+																	<button style=" background-color: #1273eb !important; border: solid; border-radius: 6px; padding: 10px; margin-right:4px; margin-left:-2px; " class="badge bg-warning">Veiw Profile</button>
 																	<button style=" border: none; border-radius: 4px; padding: 10px; margin-right:4px;" class="badge bg-success">Check Documents</button>
 																</div>
 															</div>
@@ -336,7 +336,8 @@
 														</div>
 														<!-- end of Task #8 -->
 
-														<!-- Task #9 -->
+														
+														<!-- Task #4 -->
 														<div class="task-block">
 															<div class="task-checkbox">
 																<input type="checkbox" name="task_00">
@@ -348,46 +349,21 @@
 																</div>
 															</div>
 															<div class="task-details">
-																<div class="task-name">Musa Okonkwo</div>
-																<div class="task-desc">Application for a loan of 5 million naira (N5,000,000)</div>
-																<div class="task-desc"><strong>Duration:</strong> 8 Weeks</div>
+																<div class="task-name">James Bulus</div>
+																<div class="task-desc">Application for a loan of Seventy thousand naira (N70,000)</div>
+																<div class="task-desc"><strong>Duration:</strong> 1 Weeks</div>
 																<div class="task-types">
-																	<button style=" border: solid; border-radius: 6px; padding: 10px; margin-right:4px; margin-left:-2px; " class="badge bg-warning">Veiw Profile</button>
+																	<button style=" background-color: #1273eb !important; border: solid; border-radius: 6px; padding: 10px; margin-right:4px; margin-left:-2px; " class="badge bg-warning">Veiw Profile</button>
 																	<button style=" border: none; border-radius: 4px; padding: 10px; margin-right:4px;" class="badge bg-success">Check Documents</button>
 																</div>
 															</div>
-															<div style="margin-bottom:20px;"> <span style="background: #b3b3b3; padding:10px; padding-left:20px;
-															 padding-right:20px; font-weight: 700; font-size:10px; border: solid 0.8px;
-															 border-radius:4px;" >Pending Reviewal</span> </div>
+															<div style="margin-bottom:20px;"> <span style="background: #33ff57; padding:10px; padding-left:40.9px;
+															 padding-right:40.9px; font-weight: 700; font-size:10px; border: solid 0.8px; color: #ffffff;
+															 border-radius:4px;" >Approved</span> </div>
 														</div>
-														<!-- end of Task #9 -->
+														<!-- end of Task #4 -->
 
-														<!-- Task #10 -->
-														<div class="task-block">
-															<div class="task-checkbox">
-																<input type="checkbox" name="task_00">
-																<div class="ripple-container">
-																	<div class="check-off"></div>
-																	<div class="check-on">
-																		<i class="icon-check1"></i>
-																	</div>
-																</div>
-															</div>
-															<div class="task-details">
-																<div class="task-name">Musa Okonkwo</div>
-																<div class="task-desc">Application for a loan of 5 million naira (N5,000,000)</div>
-																<div class="task-desc"><strong>Duration:</strong> 8 Weeks</div>
-																<div class="task-types">
-																	<button style=" border: solid; border-radius: 6px; padding: 10px; margin-right:4px; margin-left:-2px; " class="badge bg-warning">Veiw Profile</button>
-																	<button style=" border: none; border-radius: 4px; padding: 10px; margin-right:4px;" class="badge bg-success">Check Documents</button>
-																</div>
-															</div>
-															<div style="margin-bottom:20px;"> <span style="background: #b3b3b3; padding:10px; padding-left:20px;
-															 padding-right:20px; font-weight: 700; font-size:10px; border: solid 0.8px;
-															 border-radius:4px;" >Pending Reviewal</span> </div>
-														</div>
-														<!-- end of Task #10 -->
-
+														
 													</section>
 												</div>
 											</div>

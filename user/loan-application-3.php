@@ -51,11 +51,11 @@
       <div class="row">
         <div class="col-md-6 offset-md-3">
           <ul class="timeline-3">
-            <li class="pending">
+            <li class="pending" onclick="changeClassSequentially('fail')">
               <div class="fw-bold">Mono Verification</div>
               <p class="mt-2">Verifying your application details through the Mono platform</p>
             </li>        
-            <li class="pending">
+            <li class="pending" onclick="changeClassSequentially('success')">
               <div class="fw-bold">NIPPS Verification</div>
               <p class="mt-2">Contacting the National Identity Management System (NIPPS) to check if you have any other active loans not mentioned in the application</p>
             </li>

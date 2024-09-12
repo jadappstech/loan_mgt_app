@@ -91,7 +91,10 @@
   <!-- panel-space end -->
 
   <!-- bottom navbar start -->
-  <?php include_once "./includes/navbar.php"; ?>
+  <?php 
+    $active_link = "support";
+    include_once "./includes/navbar.php"; 
+  ?>
   <!-- bottom navbar end -->
 
   <!-- Support section start -->

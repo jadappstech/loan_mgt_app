@@ -49,9 +49,9 @@
 		<style>
 .user-card img.profile {
     width: 100px;
-    height: 100px;
-    object-fit: cover;
-    border-radius: 100%;
+    height: 70px;
+    object-fit: auto;
+    border-radius: 50px;
     border: 2px solid #ccc;
 }
 </style>
