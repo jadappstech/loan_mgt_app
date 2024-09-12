@@ -96,10 +96,10 @@
 											<div class="filters-block">
 												<h5>Filters</h5>
 												<div class="filters">
-													<a style=" background:white;" href="all-applications.php" class="active">
+													<a style=" background:white;" href="all-applications" class="active">
 														<i class="icon-receipt"></i> All
 													</a>
-													<a  href="app-approved.php">
+													<a  href="all-approved.php">
 													<i class="fa fa-check" style="font-size:16px; color: #1fd655;"></i>Approved
 													</a>
 													<a style="background-color: #f5f8fd;">
@@ -190,7 +190,14 @@
 												</div>
 											</div>
 										</div>
-										
+										<div class="tasks-header">
+											<h3>Today <span class="date" id="todays-date"></span></h3>
+																					<select id="filterDropdown">
+											<option value="All">All</option>
+											<option value="Loan amount">Fruits</option>
+											<option value="Date">Vegetables</option>
+										</select>
+										</div>
 										<div class="tasksContainerScroll">
 											<!-- Row start -->
 											<div class="row no-gutters justify-content-center">
@@ -210,11 +217,11 @@
 																</div>
 															</div>
 															<div class="task-details">
-																<div class="task-name">Obi Olukare</div>
-																<div class="task-desc">Application for a loan of Twelve million naira (N12,000,000)</div>
+																<div class="task-name">Musa Okonkwo</div>
+																<div class="task-desc">Application for a loan of 5 million naira (N5,000,000)</div>
 																<div class="task-desc"><strong>Duration:</strong> 8 Weeks</div>
 																<div class="task-types">
-																	<button style=" background-color: #1273eb !important; border: solid; border-radius: 6px; padding: 10px; margin-right:4px; margin-left:-2px; " class="badge bg-warning">Veiw Profile</button>
+																	<button style=" border: solid; border-radius: 6px; padding: 10px; margin-right:4px; margin-left:-2px; " class="badge bg-warning">Veiw Profile</button>
 																	<button style=" border: none; border-radius: 4px; padding: 10px; margin-right:4px;" class="badge bg-success">Check Documents</button>
 																</div>
 															</div>
@@ -236,11 +243,11 @@
 																</div>
 															</div>
 															<div class="task-details">
-																<div class="task-name">Racheal Sholawale</div>
-																<div class="task-desc">Application for a loan of Five million naira (N5,000,000)</div>
-																<div class="task-desc"><strong>Duration:</strong> 6 Weeks</div>
+																<div class="task-name">Musa Okonkwo</div>
+																<div class="task-desc">Application for a loan of 5 million naira (N5,000,000)</div>
+																<div class="task-desc"><strong>Duration:</strong> 8 Weeks</div>
 																<div class="task-types">
-																	<button style=" background-color: #1273eb !important; border: solid; border-radius: 6px; padding: 10px; margin-right:4px; margin-left:-2px; " class="badge bg-warning">Veiw Profile</button>
+																	<button style=" border: solid; border-radius: 6px; padding: 10px; margin-right:4px; margin-left:-2px; " class="badge bg-warning">Veiw Profile</button>
 																	<button style=" border: none; border-radius: 4px; padding: 10px; margin-right:4px;" class="badge bg-success">Check Documents</button>
 																</div>
 															</div>
@@ -262,11 +269,11 @@
 																</div>
 															</div>
 															<div class="task-details">
-																<div class="task-name">Sani Peters</div>
-																<div class="task-desc">Application for a loan of Five hundred thousand naira (N500,000)</div>
-																<div class="task-desc"><strong>Duration:</strong> 5 Weeks</div>
+																<div class="task-name">Musa Okonkwo</div>
+																<div class="task-desc">Application for a loan of 5 million naira (N5,000,000)</div>
+																<div class="task-desc"><strong>Duration:</strong> 8 Weeks</div>
 																<div class="task-types">
-																	<button style=" background-color: #1273eb !important; border: solid; border-radius: 6px; padding: 10px; margin-right:4px; margin-left:-2px; " class="badge bg-warning">Veiw Profile</button>
+																	<button style=" border: solid; border-radius: 6px; padding: 10px; margin-right:4px; margin-left:-2px; " class="badge bg-warning">Veiw Profile</button>
 																	<button style=" border: none; border-radius: 4px; padding: 10px; margin-right:4px;" class="badge bg-success">Check Documents</button>
 																</div>
 															</div>
