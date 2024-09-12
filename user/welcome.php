@@ -69,17 +69,17 @@
               <span class="right-chain"></span>
             </div>
             <div class="poster-box color1 box1" data-aos="fade-down" data-aos-duration="1000" data-aos-delay="1700">
-              <h2>MANAGE</h2>
+              <h2>GET</h2>
               <img class="img-fluid top-line" src="assets/images/svg/lines.svg" alt="lines">
             </div>
             <div class="poster-box color2 box2" data-aos="fade-right" data-aos-duration="2000" data-aos-delay="2000">
               <h2>YOUR</h2>
             </div>
             <div class="poster-box color1 box3" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="2500">
-              <h2>FINANCE</h2>
+              <h2>QUICK LOAN</h2>
             </div>
             <div class="poster-box color2 box4" data-aos="fade-up" data-aos-duration="3000" data-aos-delay="3000">
-              <h2>WISELY</h2>
+              <h2>NOW</h2>
               <img class="img-fluid bottom-line" src="assets/images/svg/lines-fill.svg" alt="lines">
             </div>
           </div>
