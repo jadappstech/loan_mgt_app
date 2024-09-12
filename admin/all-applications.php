@@ -220,7 +220,7 @@
 															<div class="task-details">
 																<div class="task-name">Joseph Abraham</div>
 																<div class="task-desc">Application for a loan of Eight million naira (N8,000,000)</div>
-																<div class="task-desc"><strong>Duration:</strong> 1 Weeks</div>
+																<div class="task-desc"><strong>Duration:</strong> 2 Weeks</div>
 																<div class="task-types">
 																	<button style=" background-color: #1273eb !important; border: solid; border-radius: 6px; padding: 10px; margin-right:4px; margin-left:-2px; " class="badge bg-warning">Veiw Profile</button>
 																	<button style=" border: none; border-radius: 4px; padding: 10px; margin-right:4px;" class="badge bg-success">Check Documents</button>
