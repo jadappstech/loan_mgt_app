@@ -8,7 +8,7 @@
   <!-- header start -->
   <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
   <header class="section-t-space">
-    <div class="w-10 h-10 bg-blue-700"></div>
+    <!-- <div class="w-10 h-10 bg-blue-700"></div> -->
     <div class="custom-container">
       <div class="header-panel">
         <a href="landing.php" class="back-btn">

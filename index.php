@@ -177,7 +177,7 @@
                         <a class="nav-link" href="#faq">FAQs</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link apply-btn" href="./user/signup.php">Apply Now</a>
+                        <a class="nav-link apply-btn" href="./user/welcome.php">Apply Now</a>
                     </li>
                 </ul>
             </div>
