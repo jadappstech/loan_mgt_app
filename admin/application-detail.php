@@ -13,7 +13,7 @@
 		<link rel="shortcut icon" href="img/fav.png">
 
 		<!-- Title -->
-		<title>Uni Pro Admin Template - Admin Dashboard</title>
+		<title>Loan Management App</title>
 
 
 		<!-- *************
@@ -79,7 +79,7 @@
 
 						<!-- Row start -->
 						<div class="row gutters">
-							<div class="col-xl-8 col-lg-8 col-md-8 col-sm-12 col-12">
+							<div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
 
 								<!-- Card start -->
 								<div class="card">
@@ -94,22 +94,42 @@
                                         <div class="invoice-container">
 
                                             <div class="invoice-header">
-                                                <!-- Row start -->
-                                                <div class="row justify-content-between">
-                                                    <div class="col-xl-5 col-lg-5 col-md-5 col-sm-5 col-12">
-                                                        <a href="index-2.php" class="invoice-logo">
-                                                            <img src="img/logo.svg" alt="Meow Admin Dashboard">
-                                                        </a>
-                                                    </div>
-                                                    <div class="col-xl-5 col-lg-5 col-md-5 col-sm-5 col-12">
-                                                        <address class="text-right">
-                                                            Meow LLC, 2880 St. <br>
-                                                            Rose Pkwy, Suite 700<br>
-                                                            San Francisco, California(CA), 94102
-                                                        </address>
-                                                    </div>
-                                                </div>
-                                                <!-- Row end -->
+												<div class="profile-header">
+													<h1>APP412X-01</h1>
+													<div class="profile-header-content bg-primary">
+														<div class="profile-header-tiles">
+															<div class="row gutters">
+																<div class="col-xl-4 col-lg-4 col-md-4 col-sm-4 col-12">
+																	<div class="profile-tile">
+																		<span class="icon">
+																			<i class="icon-server"></i>
+																		</span>
+																		<h6>Name - <span>Okon Yinusa</sapn></h6>
+																	</div>
+																</div>
+																<div class="col-xl-4 col-lg-4 col-md-4 col-sm-4 col-12">
+																	<div class="profile-tile">
+																		<span class="icon">
+																			<i class="icon-map-pin"></i>
+																		</span>
+																		<h6>Location - <span>Kaduna</span></h6>
+																	</div>
+																</div>
+																<div class="col-xl-4 col-lg-4 col-md-4 col-sm-4 col-12">
+																	<div class="profile-tile">
+																		<span class="icon">
+																			<i class="icon-phone1"></i>
+																		</span>
+																		<h6>Phone - <span>08035388713</span></h6>
+																	</div>
+																</div>
+															</div>
+														</div>
+														<div class="profile-avatar-tile">
+															<img src="./img/ngMan.jpg" class="img-fluid" alt="User Profile" />
+														</div>
+													</div>
+												</div>
                                             </div>
 
                                             <!-- Row start -->
@@ -117,7 +137,7 @@
                                                 <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
                                                     <div class="invoice-details">
                                                         <address class="m-0">
-                                                            <h3>Loan 4T2342-01 - APPLICANT NAME</h3>
+                                                            <h3></h3>
                                                         </address>
 
                                                         <div class="invoice-num">
@@ -156,7 +176,7 @@
 																	</td>
 																	
 																	<td>
-																		<h6>Charles Olawale</h6>
+																		<h6>Okon Yinusa</h6>
 																	</td>
 																</tr>
 																<tr>
@@ -256,9 +276,10 @@
 																	</td>
 																</tr>
 																<tr>
-																	<td colspan="">&nbsp;</td>
+																	<td colspan=""><h6 class='text-primary'>Remark</h6></td>
 																	
 																	<td>
+																		<textarea name="" id="" class="form-control" placeholder='Enter your comment here'></textarea>
 																		<!-- <p class="m-0">₦1000.00</p>
 																		<p class="m-0">₦10.00</p>
 																		<p class="m-0">₦5.00</p>
@@ -277,8 +298,9 @@
                                             <div class="row gutters">
 
                                                 <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
-                                                    <div class="text-start">
-                                                        <button class="btn btn-success">Proceed</button>
+                                                    <div class="text-center">
+                                                        <button class="btn btn-success ms-1">Proceed</button>
+                                                        <button class="btn btn-primary ms-1">Call</button>
                                                         <button class="btn btn-danger ms-1">Decline</button>
                                                     </div>
                                                 </div>
@@ -296,7 +318,7 @@
 							<div class="col-xl-4 col-lg-4 col-md-4 col-sm-12 col-12 doc-box">
 
 								<!-- Card start -->
-									<div class='card' style='height: 35vh;'>
+									<!-- <div class='card' style='height: 35vh;'>
 										<div class="card-header bg-success">
 											<div class="card-title mb-3 text-white">Documents</div>
 										</div>
@@ -380,7 +402,7 @@
 												</table>
 											</div>
 										</div>
-									</div>
+									</div> -->
 								<!-- Card end -->
 								<!-- Card start -->
 								<!-- //approval -->

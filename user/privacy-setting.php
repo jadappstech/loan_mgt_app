@@ -79,7 +79,7 @@
         </li>
         <li>
           <div class="notification">
-            <h5 class="fw-normal dark-text">Block cookues and trackers</h5>
+            <h5 class="fw-normal dark-text">Block cookies and trackers</h5>
             <div class="switch-btn">
               <input type="checkbox" />
             </div>
