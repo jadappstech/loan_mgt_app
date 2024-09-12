@@ -1,8 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
 
-
-<!-- Mirrored from themes.pixelstrap.net/pwa/mpay/index.php by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 10 Sep 2024 05:06:44 GMT -->
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -76,7 +74,7 @@
               <h2>YOUR</h2>
             </div>
             <div class="poster-box color1 box3" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="2500">
-              <h2>QUICK LOAN</h2>
+              <h2>LOANS</h2>
             </div>
             <div class="poster-box color2 box4" data-aos="fade-up" data-aos-duration="3000" data-aos-delay="3000">
               <h2>NOW</h2>
@@ -85,7 +83,7 @@
           </div>
 
           <div class="custom-container">
-            <p>The best payment method connects your money to friends, family, brands, and experiences.</p>
+            <p>Easy Loans at your finger tip</p>
             <div class="d-flex justify-content-between align-items-center pb-3">
               <a href="#" class="btn btn-link mt-0 p-0">Skip</a>
 
@@ -104,29 +102,29 @@
             </div>
             <div class="poster-box poster-box1 color1 box1" data-aos="fade-down" data-aos-duration="1000"
               data-aos-delay="500">
-              <h3>Add your all account and manage</h2>
+              <h3>Get a Loan today!</h2>
             </div>
             <div class="custom-container">
-              <ul class="card-list">
-                <li>
-                  <img class="img-fluid card-img card5" src="assets/images/card/card5.png" alt="card">
-                </li>
-                <li>
-                  <img class="img-fluid card-img card4" src="assets/images/card/card4.png" alt="card">
-                </li>
-                <li>
-                  <img class="img-fluid card-img card3" src="assets/images/card/card3.png" alt="card">
-                </li>
-                <li>
-                  <img class="img-fluid card-img card2" src="assets/images/card/card2.png" alt="card">
-                </li>
-                <li>
-                  <img class="img-fluid card-img card1" src="assets/images/card/card1.png" alt="card">
-                </li>
-              </ul>
+              <!--<ul class="card-list">-->
+              <!--  <li>-->
+              <!--    <img class="img-fluid card-img card5" src="assets/images/card/card5.png" alt="card">-->
+              <!--  </li>-->
+              <!--  <li>-->
+              <!--    <img class="img-fluid card-img card4" src="assets/images/card/card4.png" alt="card">-->
+              <!--  </li>-->
+              <!--  <li>-->
+              <!--    <img class="img-fluid card-img card3" src="assets/images/card/card3.png" alt="card">-->
+              <!--  </li>-->
+              <!--  <li>-->
+              <!--    <img class="img-fluid card-img card2" src="assets/images/card/card2.png" alt="card">-->
+              <!--  </li>-->
+              <!--  <li>-->
+              <!--    <img class="img-fluid card-img card1" src="assets/images/card/card1.png" alt="card">-->
+              <!--  </li>-->
+              <!--</ul>-->
             </div>
           </div>
-          <p>Manage your finance in the app your money will safe here</p>
+          <p>Get a quick loan for that business idea or expense in just a few steps.</p>
           <div class="custom-container button-group">
             <a href="signin.php" class="btn theme-btn w-100">Sign in</a>
             <a href="signup.php" class="btn btn-link mt-3 pb-3">Sign up</a>
@@ -159,6 +157,4 @@
   </script>
 </body>
 
-
-<!-- Mirrored from themes.pixelstrap.net/pwa/mpay/index.php by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 10 Sep 2024 05:06:44 GMT -->
 </html>
