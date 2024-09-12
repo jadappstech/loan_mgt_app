@@ -10,11 +10,11 @@ var options = {
 		},
 	},
 	series: [{
-		name: 'Net Profit',
+		name: 'Payments',
 		type: 'column',
 		data: [230, 420, 350, 270, 500, 300, 400, 350, 690, 320, 260, 160]
 	}, {
-		name: 'Revenue',
+		name: 'Expected Payments',
 		type: 'line',
 		data: [100, 320, 270, 200, 400, 280, 320, 270, 600, 220, 160, 60]
 	}],

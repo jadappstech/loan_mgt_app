@@ -3,8 +3,8 @@ var options = {
     height: 232,
     type: 'donut',
   },
-  labels: ['New', 'Resolved', 'Pending'],
-  series: [60000, 45000, 15000],
+  labels: ['Approved', 'Rejected'],
+  series: [600, 405,],
   legend: {
     position: 'bottom',
   },
@@ -15,7 +15,7 @@ var options = {
     width: 2,
     colors: ['#ffffff'],
   },
-  colors: ['#1273eb', '#59a2fb', '#8ec0fd'],
+  colors: ['#1273eb', '#59a2fb'],
   tooltip: {
     y: {
       formatter: function(val) {
