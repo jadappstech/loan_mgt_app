@@ -145,6 +145,19 @@
 											</div>
 										</div>
 									</div>
+                                    <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
+                                        <div class="goal-container">
+                                            <div class="goal-info">
+                                                <h5>Today's Goal</h5>
+                                                <h6>70/100</h6>
+                                            </div>
+                                            <div class="goal-graph">
+                                                <div id="todaysTarget"></div>
+                                                <div class="circle-one"></div>
+                                                <div class="circle-two"></div>
+                                            </div>
+                                        </div>
+                                    </div>	
 								</div>
 								<!-- Row end -->
 

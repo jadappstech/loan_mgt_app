@@ -74,7 +74,7 @@
                     <div class='sidebar-menu'>
                         <ul>
                             <li>
-                                <a href='index-2.php' class='current-page'>My Dashboard</a>
+                                <a href='index.php' class='current-page'>My Dashboard</a>
                             </li>
                             
                         </ul>
