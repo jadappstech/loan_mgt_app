@@ -13,7 +13,7 @@
 		<link rel="shortcut icon" href="img/fav.png">
 
 		<!-- Title -->
-		<title>Uni Pro Admin Template - Admin Dashboard</title>
+		<title>Loan Management App - Admin Dashboard</title>
 
 
 		<!-- *************
@@ -56,7 +56,10 @@
 			<nav class="sidebar-wrapper">
 
 				<!-- Sidebar content start -->
-				<?php include_once "./includes/layouts/menu.php"; ?>
+				<?php 
+                    $active_link = "settings";
+                    include_once "./includes/layouts/menu.php"; 
+                ?>
 				<!-- Sidebar content end -->
 				
 			</nav>

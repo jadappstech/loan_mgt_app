@@ -5,6 +5,8 @@
     if (!isset($active_link)) {
         $active_link = "home";
     }
+
+    $current_page = basename($_SERVER['PHP_SELF']);
 ?>
 
 <nav class='sidebar-wrapper'>
@@ -29,7 +31,7 @@
             </a>
             <?php //if($username == 'admin' || $username == 'all'){?>
             <a class='nav-link <?php if ($active_link == "user-mgt") { ?> active show <?php } else {} ?>' id='user-tab' data-bs-toggle='tab' href='#tab-user' role='tab' aria-controls='tab-user' aria-selected='false'>
-                <i class='icon-book-open'></i>
+                <i class='icon-user'></i>
                 <span class='nav-link-text'>User Management</span>
             </a>
             <?php //}?>
@@ -48,7 +50,7 @@
             <?php //if($username == 'admin' || $username == 'credit' || $username == 'all'){?>
             <a class='nav-link <?php if ($active_link == "loan-tracking") { ?> active show <?php } else {} ?>' id='tracking-tab' data-bs-toggle='tab' href='#tab-tracking' role='tab' aria-controls='tab-tracking' aria-selected='false'>
                 <i class='icon-pie-chart1'></i>
-                <span class='nav-link-text'>Tracking</span>
+                <span class='nav-link-text'>Loan Tracking</span>
             </a>
             <?php //}?>
             <?php //if($username == 'admin' || $username == 'credit' || $username == 'all'){?>
@@ -80,7 +82,7 @@
                     <div class='sidebar-menu'>
                         <ul>
                             <li>
-                                <a href='index.php' class='current-page'>My Dashboard</a>
+                                <a href='index.php' <?php if ($active_link == "home") { ?> active class='current-page' <?php } else {} ?> >My Dashboard</a>
                             </li>
                             
                         </ul>
@@ -88,7 +90,6 @@
                     </div>
                 </div>
                 <!-- Sidebar menu ends -->
-               
             </div>
             
             <!-- Pages tab -->
@@ -108,13 +109,12 @@
                             <div class='list-heading'>
                                 MY APPLICATIONS
                             </div>
-                            
                             <!-- Tab content header end -->
                             <li>
                                 <a href='all-applications.php'>Applications</a>
                             </li>
                             <li>
-                                <a href='list-of-applications.php'>Applicants</a>
+                                <a href='list-of-applicants.php'>Applicants</a>
                             </li>
                             <li>
                                 <a href='create-application-biodata.php'>Make New Application</a>
@@ -219,7 +219,7 @@
                 
                 <!-- Tab content header start -->
                 <div class='tab-pane-header'>
-                    Trackings
+                    Loan Tracking
                 </div>
                 <!-- Tab content header end -->
 
@@ -255,7 +255,7 @@
                             <li class='list-heading'>Set up Loan Mgt App</a>
                             </li>
                             <li>
-                                <a href='#'>Role Management</a>
+                                <a href='role-mgt.php'>Role Management</a>
                             </li>
                             
                         </ul>

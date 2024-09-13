@@ -67,7 +67,10 @@
 			<nav class="sidebar-wrapper">
 
 				<!-- Sidebar content start -->
-				<?php include_once "./includes/layouts/menu.php"; ?>
+				<?php 
+					$active_link = "application";
+					include_once "./includes/layouts/menu.php"; 
+				?>
 				<!-- Sidebar content end -->
 				
 			</nav>

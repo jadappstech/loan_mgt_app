@@ -56,7 +56,10 @@
 			<nav class="sidebar-wrapper">
 
 				<!-- Sidebar content start -->
-				<?php include_once "./includes/layouts/menu.php"; ?>
+				<?php 
+                    $active_link = "user-mgt";
+                    include_once "./includes/layouts/menu.php"; 
+                ?>
 				<!-- Sidebar content end -->
 				
 			</nav>
