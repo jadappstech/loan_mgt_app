@@ -56,7 +56,9 @@
 			<nav class="sidebar-wrapper">
 
 				<!-- Sidebar content start -->
-				<?php include_once "./includes/layouts/menu.php"; ?>
+				<?php 
+					$active_link = "loan-tracking";
+				include_once "./includes/layouts/menu.php"; ?>
 				<!-- Sidebar content end -->
 				
 			</nav>
@@ -80,7 +82,187 @@
 						<!-- Row start -->
 						<div class="row gutters">
                             <!-- Your code goes in here...-->
-							<h1>Blank page</h1>
+							<div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
+								<div class="card">
+									<div class="card-body">
+										
+										<div class="table-responsive">
+											<table id="orders" class="table v-middle">
+												<thead>
+													<tr>
+													<th>Application ID</th>
+													<th>Applicant Name</th>
+													<th>Date</th>
+													<th>Amount</th>
+													<th>Progress</th>
+													</tr>
+												</thead>
+												<tbody>
+													<tr>
+														<td>FLM009879986</td>
+														<td>John Amuno</td>
+														<td>2020/09/18</td>
+														<td>₦205,000.00</td>
+														<td>
+															<div class="progress">
+																<div class="progress-bar bg-success" role="progressbar" style="width: 100%;" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">
+																	100%
+																</div>
+															</div>
+														</td>
+													</tr>
+													<tr> 
+														<td>FLM009879986</td>
+														<td>Ola Ifeanyi</td>
+														<td>2020/09/18</td>
+														<td>₦700,000.00</td>
+														<td>
+															<div class="progress">
+																<div class="progress-bar bg-danger" role="progressbar" style="width: 0%;" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"> 
+																	0%
+																</div>
+															</div> 
+														</td>
+													</tr>
+													<tr>
+														<td>FLM009879986</td>
+														<td>Ahmed Musa</td>
+														<td>2020/09/18</td>
+														<td>₦300,000.00</td>
+														<td>
+															<div class="progress">
+																<div class="progress-bar bg-info" role="progressbar" style="width: 50%;" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">  
+																	50%
+																</div>
+															</div> 
+														</td>
+													</tr>
+													<tr>
+														<td>FLM009879986</td>
+														<td>Ahmed Musa</td>
+														<td>2020/09/18</td>
+														<td>₦300,000.00</td>
+														<td>
+															<div class="progress">
+															<div class="progress-bar bg-info" role="progressbar" style="width: 50%;" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"> 
+
+																50%
+															</div>
+															</div> 
+
+														</td>
+													</tr>
+													<tr>
+														<td>FLM009879986</td>
+														<td>Jane Doe</td>
+														<td>2020/09/18</td>
+														<td>₦400,000.00</td>
+														<td>
+															<div class="progress">
+															<div class="progress-bar bg-warning" role="progressbar" style="width: 75%;" aria-valuenow="75" aria-valuemin="0" 
+													aria-valuemax="100">
+																75%
+															</div>
+															</div>
+														</td>
+													</tr>
+													<tr>
+														<td>FLM009879986</td> 
+
+														<td>Michael Johnson</td>
+														<td>2020/09/18</td>
+														<td>₦550,000.00</td>
+														<td>
+															<div class="progress">
+															<div class="progress-bar bg-danger" role="progressbar" style="width: 25%;" aria-valuenow="25" aria-valuemin="0" 
+													aria-valuemax="100">
+																25%
+															</div> 
+
+															</div>
+														</td>
+													</tr>
+													<tr>
+														<td>FLM009879986</td>
+														<td>Emily Smith</td>
+														<td>2020/09/18</td>
+														<td>₦600,000.00</td>
+														<td>
+															<div class="progress">
+															<div class="progress-bar bg-secondary" role="progressbar" style="width: 30%;" aria-valuenow="30" aria-valuemin="0" aria-valuemax="100"> 
+
+																30%
+															</div>
+															</div> 
+
+														</td>
+													</tr>
+													<tr>
+														<td>FLM009879986</td>
+														<td>David Lee</td>
+														<td>2020/09/18</td>
+														<td>₦800,000.00</td>
+														<td>
+															<div class="progress">
+															<div class="progress-bar bg-success" role="progressbar" style="width: 90%;" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100">
+																90%
+															</div>
+															</div>
+														</td>
+													</tr>
+													<tr>
+														<td>FLM009879986</td> 
+
+														<td>Sarah Williams</td>
+														<td>2020/09/18</td>
+														<td>₦150,000.00</td>
+														<td>
+															<div class="progress">
+															<div class="progress-bar bg-danger" role="progressbar" style="width: 10%;" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100"> 
+
+																10%
+															</div>
+															</div> 
+
+														</td>
+													</tr>
+													<tr>
+														<td>FLM009879986</td>
+														<td>Christopher Jones</td>
+														<td>2020/09/18</td>
+														<td>₦350,000.00</td>
+														<td>
+															<div class="progress">
+															<div class="progress-bar bg-info" role="progressbar" style="width: 60%;" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"> 
+
+																60%
+															</div>
+															</div> 
+
+														</td>
+													</tr>
+													<tr>
+														<td>FLM009879986</td>
+														<td>Ashley Brown</td>
+														<td>2020/09/18</td>
+														<td>₦750,000.00</td>
+														<td>
+															<div class="progress">
+															<div class="progress-bar bg-warning" role="progressbar" style="width: 80%;" aria-valuenow="80" aria-valuemin="0" 
+													aria-valuemax="100">
+																80%
+															</div> 
+
+															</div>
+														</td>
+													</tr>
+												</tbody>
+								    		</table>
+										</div>
+
+									</div>
+								</div>
+							</div>
 						</div>
 						<!-- Row end -->
 
