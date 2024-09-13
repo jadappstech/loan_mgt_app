@@ -74,7 +74,82 @@
 						<!-- Row start -->
 						<div class="row gutters">
                             <!-- Your code goes in here...-->
-							<h1>Blank page</h1>
+                            <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
+                                <div class="card">
+                                    <div class="card-header-lg">
+
+										<h4>Make Payment for an Applicant</h4>
+										<div class="text-end">
+											<a href="create-invoice.php" class="btn btn-primary">Export</a>
+										</div>
+									</div>
+									<div class="card-body">
+
+                                        <!-- Row start -->
+										<div class="row gutters">
+											<div class="col-xl-4 col-lg-4 col-md-4 col-sm-4 col-12">
+												
+												<!-- Field wrapper start -->
+												<div class="field-wrapper">
+													<select name="" id="" class="form-control">
+                                                        <option value="" selected disabled>Select one</option>
+                                                        <option value="">APP16442-O</option>
+                                                        <option value="">APP44682-X</option>
+                                                    </select>
+													<div class="field-placeholder">Select Loan <span class="text-danger">*</span></div>
+												</div>
+												<!-- Field wrapper end -->
+
+											</div>
+											<div class="col-xl-4 col-lg-4 col-md-4 col-sm-4 col-12">
+												
+												<!-- Field wrapper start -->
+												<div class="field-wrapper">
+													<input class="form-control" type="number">
+													<div class="field-placeholder">Amount <span class="text-danger">*</span></div>
+													
+												</div>
+												<!-- Field wrapper end -->
+
+											</div>
+											<div class="col-xl-4 col-lg-4 col-md-4 col-sm-4 col-12">
+												
+												<!-- Field wrapper start -->
+												<div class="field-wrapper">
+                                                    <select name="" id="" class="form-control">
+                                                        <option value="" selected disabled>Select one</option>
+                                                        <option value="">May</option>
+                                                        <option value="">June</option>
+                                                    </select>
+													<div class="field-placeholder">Period</div>
+													
+												</div>
+												<!-- Field wrapper end -->
+
+											</div>
+											
+											<div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
+												
+												<!-- Field wrapper start -->
+												<div class="field-wrapper">
+													<textarea class="form-control" rows="2"></textarea>
+													<div class="field-placeholder">Remark/Comment</div>
+													<div class="form-text">
+														Please enter a small description.
+													</div>
+												</div>
+												<!-- Field wrapper end -->
+
+											</div>
+											<div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12 text-center">
+												<button class="btn btn-primary">Submit</button>
+											</div>
+										</div>
+										<!-- Row end -->
+
+									</div>
+                                </div>
+                            </div>
 						</div>
 						<!-- Row end -->
 
