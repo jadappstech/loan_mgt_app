@@ -48,10 +48,10 @@
 		
 		<style>
 .user-card img.profile {
-    width: 100px;
-    height: 100px;
+    width: 70px;
+    height: 70px;
     object-fit: cover;
-    border-radius: 50%;
+    border-radius: 90%;
     border: 2px solid #ccc;
 }
 </style>
@@ -107,12 +107,12 @@
 	<div class="col-xl-4 col-lg-4 col-md-6 col-sm-6 col-12">
 		<figure class="user-card">
 			<figcaption>
-				<img src="img/amina.jpg" alt="Admin" class="profile">
-				<h5 contenteditable="true">Amina Ahmed</h5>
+				<img src="./img/ngMan.jpg" alt="Admin" class="profile">
+				<h5 contenteditable="true">Okon Yinusa</h5>
 				<ul class="list-group">
-					<li class="list-group-item"><span>Email: </span>amina@gmail.com</li>
-					<li class="list-group-item"><span>Phone: </span>+234 7000303003</li>
-					<li class="list-group-item"><span>Location: </span>Nigeria</li>
+					<li class="list-group-item"><span>Email: </span>okyunusa@gmail.com</li>
+					<li class="list-group-item"><span>Phone: </span>+234 8035388713</li>
+					<li class="list-group-item"><span>Location: </span>Kaduna</li>
 				</ul>
 			</figcaption>
 		</figure>
