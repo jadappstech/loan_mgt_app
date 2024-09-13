@@ -1,7 +1,12 @@
-<?php include_once "./includes/header.php"?>
+<?php
+  include_once "./includes/header.php";
+  $active_link = "all-applications";
+?>
 <body>
   <!-- side bar start -->
-  <?php include_once "./includes/sidebar.php"?>
+  <?php 
+    include_once "./includes/sidebar.php";
+  ?>
   <!-- side bar end -->
 
    <!-- header start -->

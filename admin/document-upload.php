@@ -56,7 +56,9 @@
 			<nav class="sidebar-wrapper">
 
 				<!-- Sidebar content start -->
-				<?php include_once "./includes/layouts/menu.php"; ?>
+				<?php 
+					$active_link = "document-upload";
+				include_once "./includes/layouts/menu.php"; ?>
 				<!-- Sidebar content end -->
 				
 			</nav>
@@ -84,7 +86,7 @@
                             <!-- Your code goes in here...-->
 							<div class="card">
                                 <div class="card-header">
-                                    <div class="card-title">Guarantor Details</div>
+                                    <div class="card-title">Upload Documents</div>
                                 </div>
                                 <div class="card-body">
                                     <div class="row gutters">
