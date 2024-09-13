@@ -169,7 +169,7 @@
                         <ul>
                             <li class='list-heading'>MY Payments</li>
                             <li>
-                                <a href='#'>Payment</a>
+                                <a href='payment.php'>Payment</a>
                             </li>
                             <li>
                                 <a href='#'>History</a>
