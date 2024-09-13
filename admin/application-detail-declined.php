@@ -45,7 +45,13 @@
 
 		<!-- Date Range CSS -->
 		<link rel="stylesheet" href="vendor/daterange/daterange.css">
-		
+
+		<style>
+			.doc{
+				cursor: pointer;
+			}
+
+		</style>
 	</head>
 	<body>
 
@@ -90,49 +96,67 @@
 										</div>
 									</div>
 									<div class="card-body">
+										<div class="invoice-container">
+											<div class="invoice-header">
+												<div class="profile-header">
+													<h1>APP412X-01</h1>
+													<div class="profile-header-content bg-primary">
+														<div class="profile-header-tiles">
+															<div class="row gutters">
+																<div class="col-xl-4 col-lg-4 col-md-4 col-sm-4 col-12">
+																	<div class="profile-tile">
+																		<span class="icon">
+																			<i class="icon-server"></i>
+																		</span>
+																		<h6>Name<br><span>Okon Yinusa</sapn></h6>
+																	</div>
+																</div>
+																<div class="col-xl-4 col-lg-4 col-md-4 col-sm-4 col-12">
+																	<div class="profile-tile">
+																		<span class="icon">
+																			<i class="icon-map-pin"></i>
+																		</span>
+																		<h6>Location<br><span>Kaduna</span></h6>
+																	</div>
+																</div>
+																<div class="col-xl-4 col-lg-4 col-md-4 col-sm-4 col-12">
+																	<div class="profile-tile">
+																		<span class="icon">
+																			<i class="icon-phone1"></i>
+																		</span>
+																		<h6>Phone<br><span>08035388713</span></h6>
+																	</div>
+																</div>
+															</div>
+														</div>
+														<div class="profile-avatar-tile">
+															<img src="./img/ngMan.jpg" class="img-fluid" alt="User Profile" />
+														</div>
+													</div>
+												</div>
+											</div>
 
-                                        <div class="invoice-container">
+											<!-- Row start -->
+											<div class="row gutters">
+												<div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
+													<div class="invoice-details">
+														<address class="m-0">
+															<h3></h3>
+														</address>
 
-                                            <div class="invoice-header">
-                                                <!-- Row start -->
-                                                <div class="row justify-content-between">
-                                                    <div class="col-xl-5 col-lg-5 col-md-5 col-sm-5 col-12">
-                                                        <a href="index-2.php" class="invoice-logo">
-                                                            <img src="img/logo.svg" alt="Meow Admin Dashboard">
-                                                        </a>
-                                                    </div>
-                                                    <div class="col-xl-5 col-lg-5 col-md-5 col-sm-5 col-12">
-                                                        <address class="text-right">
-                                                            Meow LLC, 2880 St. <br>
-                                                            Rose Pkwy, Suite 700<br>
-                                                            San Francisco, California(CA), 94102
-                                                        </address>
-                                                    </div>
-                                                </div>
-                                                <!-- Row end -->
-                                            </div>
+														<div class="invoice-num">
+															<!-- <div>Invoice - #009</div>
+															<div>January 10th 2020</div> -->
+														</div>
+													</div>
+												</div>
+											</div>
+											<!-- Row end -->
 
-                                            <!-- Row start -->
-                                            <div class="row gutters">
-                                                <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
-                                                    <div class="invoice-details">
-                                                        <address class="m-0">
-                                                            <h3>Loan 4T2342-01 - APPLICANT NAME</h3>
-                                                        </address>
-
-                                                        <div class="invoice-num">
-                                                            <!-- <div>Invoice - #009</div>
-                                                            <div>January 10th 2020</div> -->
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <!-- Row end -->
-
-                                            <!-- Row start -->
-                                            <div class="row gutters">
-                                                <div class="col-12">
-                                                    
+											<!-- Row start -->
+											<div class="row gutters">
+												<div class="col-12">
+													
 													<div class="table-responsive">
 														<table class="table table-bordered">
 															<thead>
@@ -156,7 +180,7 @@
 																	</td>
 																	
 																	<td>
-																		<h6>Charles Olawale</h6>
+																		<h6>Okon Yinusa</h6>
 																	</td>
 																</tr>
 																<tr>
@@ -256,9 +280,10 @@
 																	</td>
 																</tr>
 																<tr>
-																	<td colspan="">&nbsp;</td>
+																	<td colspan=""><h6 class='text-primary'>Remark</h6></td>
 																	
 																	<td>
+																		<textarea name="" id="" class="form-control" placeholder='Enter your comment here'></textarea>
 																		<!-- <p class="m-0">₦1000.00</p>
 																		<p class="m-0">₦10.00</p>
 																		<p class="m-0">₦5.00</p>
@@ -269,24 +294,26 @@
 														</table>
 													</div>
 													
-                                                </div>
-                                            </div>
-                                            <!-- Row end -->
+												</div>
+											</div>
+											<!-- Row end -->
 
-                                            <!-- Row start -->
-                                            <div class="row gutters">
+											<!-- Row start -->
+											<div class="row gutters">
 
-                                                <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
-                                                    <div class="text-start">
-                                                        <button class="btn btn-success">Proceed</button>
-                                                        <button class="btn btn-danger ms-1">Decline</button>
-                                                    </div>
-                                                </div>
+												<div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
+													<div class="text-center">
+														<button class="btn btn-success ms-1">Proceed</button>
+														<!-- <button class="btn btn-primary ms-1">Call</button> -->
+														<button class="btn btn-danger ms-1">Decline</button>
+													</div>
+												</div>
 
-                                            </div>
-                                            <!-- Row end -->
-                                        
-                                        </div>
+											</div>
+											<!-- Row end -->
+
+										</div>
+
 
 									</div>
 								</div>
@@ -315,8 +342,36 @@
 														<tr>
 														<td>
 															<div class="rating-block">
-																	<div class="rate2">House at Garki</div>
+																<div class="rate2 doc" data-bs-toggle="modal" data-bs-target="#exampleModal">House at Garki</div>
+															</div>
+															<!-- Modal start -->
+															<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalCenteredScrollableTitle" aria-hidden="true">
+																<div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+																	<div class="modal-content">
+																		<div class="modal-header">
+																			<h5 class="modal-title" id="exampleModalCenteredScrollableTitle">View Document</h5>
+																			<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+																		</div>
+																		<div class="modal-body">
+																			<embed src="https://media.geeksforgeeks.org/wp-content/cdn-uploads/20210101201653/PDF.pdf" width="100%" height="500px" type="application/pdf">
+																		</embed>
+																		<div>
+																			<p>Can't view PDF file.
+																				<a href="https://media.geeksforgeeks.org/wp-content/cdn-uploads/20210101201653/PDF.pdf">Download</a> instead.
+																			</p>
+																		</div>
+																		</div>
+																		<div class="modal-footer">
+																		<p><a href="https://media.geeksforgeeks.org/wp-content/cdn-uploads/20210101201653/PDF.pdf">Download</a> instead.</p>
+																		<!-- <label for="" class='text-center'></label> -->
+																			<input type="text" placeholder='Enter Remark/comment Here' class='form-control'>
+																			<button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+																			<button type="button" class="btn btn-primary">Save changes</button>
+																		</div>
+																	</div>
 																</div>
+															</div>
+															<!-- Modal end -->
 														</td>
 														<td>2020/09/18</td>
 														<td>
@@ -440,7 +495,7 @@
 					<!-- Content wrapper end -->
 
 					<!-- App Footer start -->
-					<div class="app-footer">© Uni Pro Admin 2021</div>
+					<div class="app-footer">© Jad Apps and Tech Solutions Ltd</div>
 					<!-- App footer end -->
 
 				</div>
