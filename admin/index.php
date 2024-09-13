@@ -13,7 +13,7 @@
 		<link rel="shortcut icon" href="img/fav.png">
 
 		<!-- Title -->
-		<title>Uni Pro Admin Template - Admin Dashboard</title>
+		<title>Loan Management App - Admin Dashboard</title>
 
 
 		<!-- *************
@@ -138,7 +138,7 @@
 									<div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
 										<div class="card">
 											<div class="card-header">
-												<div class="card-title">Aproval Rate</div>
+												<div class="card-title">Approval Rate</div>
 											</div>
 											<div class="card-body">
 												<div id="tickets"></div>

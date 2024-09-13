@@ -19,7 +19,7 @@
 		<link rel="shortcut icon" href="img/fav.png" />
 
 		<!-- Title -->
-		<title>Uni Pro Admin Template - Admin Dashboard</title>
+		<title>Loan Management App - Admin Dashboard</title>
 
 		<!-- *************
 			************ Common Css Files *************
