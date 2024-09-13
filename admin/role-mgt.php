@@ -92,7 +92,6 @@
                     <table id="copy-print-csv" class="table v-middle">
                         <thead style="background-color:#1173eb; color:#3333;">
                             <tr>
-                                <th>Employee ID</th>
                                 <th>Role name</th>
                                 <th>Deparment</th>
                                 <th>Status</th>
@@ -101,7 +100,7 @@
                         </thead>
                         <tbody>
 						<tr>
-							<td>FLM00435</td>
+							
 							<td>Relationship Officer</td>
 							<td>Sales</td>
 							<td><span class="badge bg-success">Active</span></td>
@@ -113,7 +112,7 @@
 							</tr>
 
                             <tr>
-                                <td>FLM00878</td>
+                               
                                 <td>Team Lead for Approval</td>
                                 <td>Operations</td>
                                 <td>
@@ -126,7 +125,7 @@
 								</td>
                             </tr>
                             <tr>
-                                <td>FLM00370</td>
+
                                 <td>Group Head</td>
                                 <td>Management</td>
                                 <td>
@@ -138,7 +137,7 @@
 								</td>
                             </tr>
                             <tr>
-                                <td>FLM00983</td>
+
                                 <td>Risk Department</td>
                                 <td>Risk Management</td>
                                 <td>
@@ -150,7 +149,7 @@
 								</td>
                             </tr>
                             <tr>
-                                <td>FLM00760</td>
+
                                 <td>Legal</td>
                                 <td>Legal Compliance</td>
                                 <td>
@@ -162,7 +161,7 @@
 								</td>
                             </tr>
                             <tr>
-                                <td>FLM00435</td>
+
                                 <td>Credit Officer</td>
                                 <td>Finance</td>
                                 <td>
@@ -174,7 +173,7 @@
 								</td>
                             </tr>
                             <tr>
-                                <td>FLM00878</td>
+                                
                                 <td>Loan Repayment</td>
                                 <td>Accounting</td>
                                 <td>
