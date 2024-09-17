@@ -178,7 +178,7 @@ if (session_status() == PHP_SESSION_NONE) {
                                 <a href='#'>History</a>
                             </li>
                             <li>
-                                <a href='#'>Ongoing Payments</a>
+                                <a href='ongoing-payments.php'>Ongoing Payments</a>
                             </li>
                             <li>
                                 <a href='payment.php'>Make Manual Payment</a>
