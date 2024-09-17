@@ -1,5 +1,10 @@
-<?php session_start(); 
-$username = $_SESSION['user'];
+<?php 
+if (session_status() == PHP_SESSION_NONE) {
+    session_start();
+}
+if(isset($_SESSION['user'])){
+    $username = $_SESSION['user'];
+}
 if(!isset($username) || $username == null){
     $username = 'all';
 }

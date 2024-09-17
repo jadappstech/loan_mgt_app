@@ -1,4 +1,7 @@
-<?php session_start();
+<?php
+if (session_status() == PHP_SESSION_NONE) {
+    session_start();
+}
 // $username = $_SESSION['user'];?>
 
 <?php
@@ -167,10 +170,10 @@
                 <div class='sidebarMenuScroll'>
                     <div class='sidebar-menu'>
                         <ul>
-                            <li class='list-heading'>MY Payments</li>
-                            <li>
-                                <a href='payment.php'>Payment</a>
-                            </li>
+                            <li class='list-heading'>My Payments</li>
+                            <!-- <li>
+                                <a href=''>Payment</a>
+                            </li> -->
                             <li>
                                 <a href='#'>History</a>
                             </li>
@@ -178,7 +181,7 @@
                                 <a href='#'>Ongoing Payments</a>
                             </li>
                             <li>
-                                <a href='#'>Make Manual Payment</a>
+                                <a href='payment.php'>Make Manual Payment</a>
                             </li>
                             
                         </ul>
@@ -201,6 +204,9 @@
                 <div class='sidebarMenuScroll'>
                     <div class='sidebar-menu'>
                         <ul>
+                            <li>
+                                <a href='disburse-loan.php'>Make Disbursement</a>
+                            </li>
                             <li>
                                 <a href='#'>History</a>
                             </li>
