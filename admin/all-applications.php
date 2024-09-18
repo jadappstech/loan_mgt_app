@@ -116,6 +116,12 @@
 													<a href="app-declined.php">
 													<i class="fa fa-close" style="font-size:16px; color:red;"> </i>Declined
 													</a>
+													<a href="app-under-rev.php">
+													<i class="fa fa-book" style="font-size:16px; color:orange;"> </i>Under Review
+													</a>
+													<a href="app-pending-rev.php">
+													<i class="fa fa-clock-o" style="font-size:16px; color:grey;"> </i>Pending
+													</a>
 												</div>
 											</div>
 																						
@@ -143,7 +149,7 @@
 																</div>
 															</div>
 															<div class="task-details">
-																<div class="task-name">Okon Yinusa</div>
+																<div class="task-name"><span style="font-weight:600;" >ID No : LN0152</span> &nbsp; &nbsp; &nbsp; - &nbsp; &nbsp; &nbsp;  Okon Yinusa</div>
 																<div class="task-desc">Application for a loan of One million and three hunderd thousand naira (N1,300,000)</div>
 																<div class="task-desc"><strong>Duration:</strong> 3 Weeks</div>
 																<div class="task-types">
@@ -169,7 +175,7 @@
 																</div>
 															</div>
 															<div class="task-details">
-																<div class="task-name">Musa Okonkwo</div>
+																<div class="task-name"><span style="font-weight:600;" >ID No : LN0153</span> &nbsp; &nbsp; &nbsp; - &nbsp; &nbsp; &nbsp;  Musa Okonkwo</div>
 																<div class="task-desc">Application for a loan of 5 million naira (N5,000,000)</div>
 																<div class="task-desc"><strong>Duration:</strong> 8 Weeks</div>
 																<div class="task-types">
@@ -195,7 +201,7 @@
 																</div>
 															</div>
 															<div class="task-details">
-																<div class="task-name">Adebayo Memuna</div>
+																<div class="task-name"><span style="font-weight:600;" >ID No : LN0154</span> &nbsp; &nbsp; &nbsp; - &nbsp; &nbsp; &nbsp;  Adebayo Memuna</div>
 																<div class="task-desc">Application for a loan of Two hundred and fifty thousand naria (200,000)</div>
 																<div class="task-desc"><strong>Duration:</strong> 4 Weeks</div>
 																<div class="task-types">
@@ -221,7 +227,7 @@
 																</div>
 															</div>
 															<div class="task-details">
-																<div class="task-name">Joseph Abraham</div>
+																<div class="task-name"><span style="font-weight:600;" >ID No : LN0155</span> &nbsp; &nbsp; &nbsp; - &nbsp; &nbsp; &nbsp;  Joseph Abraham</div>
 																<div class="task-desc">Application for a loan of Eight million naira (N8,000,000)</div>
 																<div class="task-desc"><strong>Duration:</strong> 2 Weeks</div>
 																<div class="task-types">
@@ -229,8 +235,8 @@
 																	<button style=" border: none; border-radius: 4px; padding: 10px; margin-right:4px;" class="badge bg-success">Check Documents</button>
 																</div>
 															</div>
-															<div style="margin-bottom:20px;"> <span style="background: #33ff57; padding:10px; padding-left:40.9px;
-															 padding-right:40.9px; font-weight: 700; font-size:10px; border: solid 0.8px; color: #ffffff;
+															<div style="margin-bottom:20px;"> <span style="background: #69ee87; padding:10px; padding-left:40.9px;
+															 padding-right:40.9px; font-weight: 700; font-size:10px; border: solid 0.8px; color: #4f4f4f;
 															 border-radius:4px;" >Approved</span> </div>
 														</div>
 														<!-- end of Task #4 -->
@@ -247,7 +253,7 @@
 																</div>
 															</div>
 															<div class="task-details">
-																<div class="task-name">Obi Olukare</div>
+																<div class="task-name"><span style="font-weight:600;" >ID No : LN0156</span> &nbsp; &nbsp; &nbsp; - &nbsp; &nbsp; &nbsp;  Obi Olukare</div>
 																<div class="task-desc">Application for a loan of Twelve million naira (N12,000,000)</div>
 																<div class="task-desc"><strong>Duration:</strong> 8 Weeks</div>
 																<div class="task-types">
@@ -273,7 +279,7 @@
 																</div>
 															</div>
 															<div class="task-details">
-																<div class="task-name">Bisi Khadri</div>
+																<div class="task-name"><span style="font-weight:600;" >ID No : LN0157</span> &nbsp; &nbsp; &nbsp; - &nbsp; &nbsp; &nbsp;  Bisi Khadri</div>
 																<div class="task-desc">Application for a loan of Eight hundred and fifty thousand naira (N850,000)</div>
 																<div class="task-desc"><strong>Duration:</strong> 6 Weeks</div>
 																<div class="task-types">
@@ -299,7 +305,7 @@
 																</div>
 															</div>
 															<div class="task-details">
-																<div class="task-name">Esther Jiboro</div>
+																<div class="task-name"><span style="font-weight:600;" >ID No : LN0158</span> &nbsp; &nbsp; &nbsp; - &nbsp; &nbsp; &nbsp;  Esther Jiboro</div>
 																<div class="task-desc">Application for a loan of One million naira (N1,000,000)</div>
 																<div class="task-desc"><strong>Duration:</strong> 6 Weeks</div>
 																<div class="task-types">
@@ -325,7 +331,7 @@
 																</div>
 															</div>
 															<div class="task-details">
-																<div class="task-name">Abdul Babanginda</div>
+																<div class="task-name"><span style="font-weight:600;" >ID No : LN0159</span> &nbsp; &nbsp; &nbsp; - &nbsp; &nbsp; &nbsp;  Abdul Babanginda</div>
 																<div class="task-desc">Application for a loan of One million seven hundred thousand naira (N1,700,000)</div>
 																<div class="task-desc"><strong>Duration:</strong> 8 Weeks</div>
 																<div class="task-types">
@@ -352,7 +358,7 @@
 																</div>
 															</div>
 															<div class="task-details">
-																<div class="task-name">James Bulus</div>
+																<div class="task-name"><span style="font-weight:600;" >ID No : LN0160</span> &nbsp; &nbsp; &nbsp; - &nbsp; &nbsp; &nbsp;  James Bulus</div>
 																<div class="task-desc">Application for a loan of Seventy thousand naira (N70,000)</div>
 																<div class="task-desc"><strong>Duration:</strong> 1 Weeks</div>
 																<div class="task-types">
@@ -360,8 +366,8 @@
 																	<button style=" border: none; border-radius: 4px; padding: 10px; margin-right:4px;" class="badge bg-success">Check Documents</button>
 																</div>
 															</div>
-															<div style="margin-bottom:20px;"> <span style="background: #33ff57; padding:10px; padding-left:40.9px;
-															 padding-right:40.9px; font-weight: 700; font-size:10px; border: solid 0.8px; color: #ffffff;
+															<div style="margin-bottom:20px;"> <span style="background: #69ee87; padding:10px; padding-left:40.9px;
+															 padding-right:40.9px; font-weight: 700; font-size:10px; border: solid 0.8px; color: #4f4f4f;
 															 border-radius:4px;" >Approved</span> </div>
 														</div>
 														<!-- end of Task #4 -->

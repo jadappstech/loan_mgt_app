@@ -102,7 +102,7 @@
 													<a  href="app-approved.php">
 													<i class="fa fa-check" style="font-size:16px; color: #1fd655;"></i>Approved
 													</a>
-													<a style="background-color: #f5f8fd;">
+													<a style="background-color: #f5f8fd;" href="app-declined.php">
 													<i class="fa fa-close" style="font-size:16px; color:red;"> </i>Declined
 													</a>
 													<a href="app-under-rev.php">
@@ -204,8 +204,8 @@
 													<section class="task-list">
 														<h6 class="m-0 h-0">&nbsp;</h6>
 														
-															<!-- Task #5 -->
-															<div class="task-block">
+													<!-- Task #1 -->
+													<div class="task-block">
 															<div class="task-checkbox">
 																<input type="checkbox" name="task_00">
 																<div class="ripple-container">
@@ -216,22 +216,22 @@
 																</div>
 															</div>
 															<div class="task-details">
-																<div class="task-name">Obi Olukare</div>
-																<div class="task-desc">Application for a loan of Twelve million naira (N12,000,000)</div>
-																<div class="task-desc"><strong>Duration:</strong> 8 Weeks</div>
+																<div class="task-name"><span style="font-weight:600;" >ID No : LN0152</span> &nbsp; &nbsp; &nbsp; - &nbsp; &nbsp; &nbsp;  Okon Yinusa</div>
+																<div class="task-desc">Application for a loan of One million and three hunderd thousand naira (N1,300,000)</div>
+																<div class="task-desc"><strong>Duration:</strong> 3 Weeks</div>
 																<div class="task-types">
 																	<button style=" background-color: #1273eb !important; border: solid; border-radius: 6px; padding: 10px; margin-right:4px; margin-left:-2px; " class="badge bg-warning">Veiw Profile</button>
 																	<button style=" border: none; border-radius: 4px; padding: 10px; margin-right:4px;" class="badge bg-success">Check Documents</button>
 																</div>
 															</div>
-															<div style="margin-bottom:20px;"> <span style="background: #ff0000; padding:10px; padding-left:43.5px;
-															 padding-right:43.5px; font-weight: 700; font-size:10px; border: solid 0.8px; color:#ffffff;
-															 border-radius:4px;" >Declined</span> </div>
+															<div style="margin-bottom:20px;"> <span style="background: #e4b424; font-weight: 700; font-size:10px; 
+															border: solid 0.8px; border-radius:4px; padding-top:10px; padding-bottom:10px; padding-left:30px; color:#ffffff;
+															 padding-right:30px;" >Under Review</span> </div>
 														</div>
-														<!-- end of Task #5 -->
+														<!-- end of Task #1 -->
 
-															<!-- Task #5 -->
-															<div class="task-block">
+																												<!-- Task #3 -->
+																												<div class="task-block">
 															<div class="task-checkbox">
 																<input type="checkbox" name="task_00">
 																<div class="ripple-container">
@@ -242,45 +242,19 @@
 																</div>
 															</div>
 															<div class="task-details">
-																<div class="task-name">Racheal Sholawale</div>
-																<div class="task-desc">Application for a loan of Five million naira (N5,000,000)</div>
-																<div class="task-desc"><strong>Duration:</strong> 6 Weeks</div>
+																<div class="task-name"><span style="font-weight:600;" >ID No : LN0154</span> &nbsp; &nbsp; &nbsp; - &nbsp; &nbsp; &nbsp;  Adebayo Memuna</div>
+																<div class="task-desc">Application for a loan of Two hundred and fifty thousand naria (200,000)</div>
+																<div class="task-desc"><strong>Duration:</strong> 4 Weeks</div>
 																<div class="task-types">
 																	<button style=" background-color: #1273eb !important; border: solid; border-radius: 6px; padding: 10px; margin-right:4px; margin-left:-2px; " class="badge bg-warning">Veiw Profile</button>
 																	<button style=" border: none; border-radius: 4px; padding: 10px; margin-right:4px;" class="badge bg-success">Check Documents</button>
 																</div>
 															</div>
-															<div style="margin-bottom:20px;"> <span style="background: #ff0000; padding:10px; padding-left:43.5px;
-															 padding-right:43.5px; font-weight: 700; font-size:10px; border: solid 0.8px; color:#ffffff;
-															 border-radius:4px;" >Declined</span> </div>
+															<div style="margin-bottom:20px;"> <span style="background: #e4b424; font-weight: 700; font-size:10px; 
+															border: solid 0.8px; border-radius:4px; padding-top:10px; padding-bottom:10px; padding-left:30px; color:#ffffff;
+															 padding-right:30px;" >Under Review</span> </div>
 														</div>
-														<!-- end of Task #5 -->
-
-															<!-- Task #5 -->
-															<div class="task-block">
-															<div class="task-checkbox">
-																<input type="checkbox" name="task_00">
-																<div class="ripple-container">
-																	<div class="check-off"></div>
-																	<div class="check-on">
-																		<i class="icon-check1"></i>
-																	</div>
-																</div>
-															</div>
-															<div class="task-details">
-																<div class="task-name">Sani Peters</div>
-																<div class="task-desc">Application for a loan of Five hundred thousand naira (N500,000)</div>
-																<div class="task-desc"><strong>Duration:</strong> 5 Weeks</div>
-																<div class="task-types">
-																	<button style=" background-color: #1273eb !important; border: solid; border-radius: 6px; padding: 10px; margin-right:4px; margin-left:-2px; " class="badge bg-warning">Veiw Profile</button>
-																	<button style=" border: none; border-radius: 4px; padding: 10px; margin-right:4px;" class="badge bg-success">Check Documents</button>
-																</div>
-															</div>
-															<div style="margin-bottom:20px;"> <span style="background: #ff0000; padding:10px; padding-left:43.5px;
-															 padding-right:43.5px; font-weight: 700; font-size:10px; border: solid 0.8px; color:#ffffff;
-															 border-radius:4px;" >Declined</span> </div>
-														</div>
-														<!-- end of Task #5 -->
+														<!-- end of Task #3 -->
 
 													</section>
 												</div>

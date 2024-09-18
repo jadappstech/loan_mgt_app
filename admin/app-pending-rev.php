@@ -102,7 +102,7 @@
 													<a  href="app-approved.php">
 													<i class="fa fa-check" style="font-size:16px; color: #1fd655;"></i>Approved
 													</a>
-													<a style="background-color: #f5f8fd;">
+													<a style="background-color: #f5f8fd;" href="app-declined.php">
 													<i class="fa fa-close" style="font-size:16px; color:red;"> </i>Declined
 													</a>
 													<a href="app-under-rev.php">
@@ -204,33 +204,8 @@
 													<section class="task-list">
 														<h6 class="m-0 h-0">&nbsp;</h6>
 														
-															<!-- Task #5 -->
-															<div class="task-block">
-															<div class="task-checkbox">
-																<input type="checkbox" name="task_00">
-																<div class="ripple-container">
-																	<div class="check-off"></div>
-																	<div class="check-on">
-																		<i class="icon-check1"></i>
-																	</div>
-																</div>
-															</div>
-															<div class="task-details">
-																<div class="task-name">Obi Olukare</div>
-																<div class="task-desc">Application for a loan of Twelve million naira (N12,000,000)</div>
-																<div class="task-desc"><strong>Duration:</strong> 8 Weeks</div>
-																<div class="task-types">
-																	<button style=" background-color: #1273eb !important; border: solid; border-radius: 6px; padding: 10px; margin-right:4px; margin-left:-2px; " class="badge bg-warning">Veiw Profile</button>
-																	<button style=" border: none; border-radius: 4px; padding: 10px; margin-right:4px;" class="badge bg-success">Check Documents</button>
-																</div>
-															</div>
-															<div style="margin-bottom:20px;"> <span style="background: #ff0000; padding:10px; padding-left:43.5px;
-															 padding-right:43.5px; font-weight: 700; font-size:10px; border: solid 0.8px; color:#ffffff;
-															 border-radius:4px;" >Declined</span> </div>
-														</div>
-														<!-- end of Task #5 -->
 
-															<!-- Task #5 -->
+															<!-- Task #6 -->
 															<div class="task-block">
 															<div class="task-checkbox">
 																<input type="checkbox" name="task_00">
@@ -242,22 +217,22 @@
 																</div>
 															</div>
 															<div class="task-details">
-																<div class="task-name">Racheal Sholawale</div>
-																<div class="task-desc">Application for a loan of Five million naira (N5,000,000)</div>
+																<div class="task-name">Bisi Khadri</div>
+																<div class="task-desc">Application for a loan of Eight hundred and fifty thousand naira (₦850,000)</div>
 																<div class="task-desc"><strong>Duration:</strong> 6 Weeks</div>
 																<div class="task-types">
 																	<button style=" background-color: #1273eb !important; border: solid; border-radius: 6px; padding: 10px; margin-right:4px; margin-left:-2px; " class="badge bg-warning">Veiw Profile</button>
 																	<button style=" border: none; border-radius: 4px; padding: 10px; margin-right:4px;" class="badge bg-success">Check Documents</button>
 																</div>
 															</div>
-															<div style="margin-bottom:20px;"> <span style="background: #ff0000; padding:10px; padding-left:43.5px;
-															 padding-right:43.5px; font-weight: 700; font-size:10px; border: solid 0.8px; color:#ffffff;
-															 border-radius:4px;" >Declined</span> </div>
+															<div style="margin-bottom:20px;"> <span style="background: #b3b3b3; padding:10px; padding-left:20px;
+															 padding-right:20px; font-weight: 700; font-size:10px; border: solid 0.8px;
+															 border-radius:4px;" >Pending Reviewal</span> </div>
 														</div>
-														<!-- end of Task #5 -->
+														<!-- end of Task #6 -->
 
-															<!-- Task #5 -->
-															<div class="task-block">
+														<!-- Task #7 -->
+														<div class="task-block">
 															<div class="task-checkbox">
 																<input type="checkbox" name="task_00">
 																<div class="ripple-container">
@@ -268,19 +243,71 @@
 																</div>
 															</div>
 															<div class="task-details">
-																<div class="task-name">Sani Peters</div>
-																<div class="task-desc">Application for a loan of Five hundred thousand naira (N500,000)</div>
-																<div class="task-desc"><strong>Duration:</strong> 5 Weeks</div>
+																<div class="task-name">Esther Jiboro</div>
+																<div class="task-desc">Application for a loan of One million naira (₦1,000,000)</div>
+																<div class="task-desc"><strong>Duration:</strong> 6 Weeks</div>
 																<div class="task-types">
 																	<button style=" background-color: #1273eb !important; border: solid; border-radius: 6px; padding: 10px; margin-right:4px; margin-left:-2px; " class="badge bg-warning">Veiw Profile</button>
 																	<button style=" border: none; border-radius: 4px; padding: 10px; margin-right:4px;" class="badge bg-success">Check Documents</button>
 																</div>
 															</div>
-															<div style="margin-bottom:20px;"> <span style="background: #ff0000; padding:10px; padding-left:43.5px;
-															 padding-right:43.5px; font-weight: 700; font-size:10px; border: solid 0.8px; color:#ffffff;
-															 border-radius:4px;" >Declined</span> </div>
+															<div style="margin-bottom:20px;"> <span style="background: #b3b3b3; padding:10px; padding-left:20px;
+															 padding-right:20px; font-weight: 700; font-size:10px; border: solid 0.8px;
+															 border-radius:4px;" >Pending Reviewal</span> </div>
 														</div>
-														<!-- end of Task #5 -->
+														<!-- end of Task #7 -->
+
+														<!-- Task #8 -->
+														<div class="task-block">
+															<div class="task-checkbox">
+																<input type="checkbox" name="task_00">
+																<div class="ripple-container">
+																	<div class="check-off"></div>
+																	<div class="check-on">
+																		<i class="icon-check1"></i>
+																	</div>
+																</div>
+															</div>
+															<div class="task-details">
+																<div class="task-name">Abdul Babanginda</div>
+																<div class="task-desc">Application for a loan of One million seven hundred thousand naira (₦1,700,000)</div>
+																<div class="task-desc"><strong>Duration:</strong> 8 Weeks</div>
+																<div class="task-types">
+																	<button style=" background-color: #1273eb !important; border: solid; border-radius: 6px; padding: 10px; margin-right:4px; margin-left:-2px; " class="badge bg-warning">Veiw Profile</button>
+																	<button style=" border: none; border-radius: 4px; padding: 10px; margin-right:4px;" class="badge bg-success">Check Documents</button>
+																</div>
+															</div>
+															<div style="margin-bottom:20px;"> <span style="background: #b3b3b3; padding:10px; padding-left:20px;
+															 padding-right:20px; font-weight: 700; font-size:10px; border: solid 0.8px;
+															 border-radius:4px;" >Pending Reviewal</span> </div>
+														</div>
+														<!-- end of Task #8 -->
+
+														<!-- Task #8 -->
+														<div class="task-block">
+															<div class="task-checkbox">
+																<input type="checkbox" name="task_00">
+																<div class="ripple-container">
+																	<div class="check-off"></div>
+																	<div class="check-on">
+																		<i class="icon-check1"></i>
+																	</div>
+																</div>
+															</div>
+															<div class="task-details">
+																<div class="task-name"><span style="font-weight:600;" >ID No : LN0159</span> &nbsp; &nbsp; &nbsp; - &nbsp; &nbsp; &nbsp;  Abdul Babanginda</div>
+																<div class="task-desc">Application for a loan of One million seven hundred thousand naira (₦1,700,000)</div>
+																<div class="task-desc"><strong>Duration:</strong> 8 Weeks</div>
+																<div class="task-types">
+																	<button style=" background-color: #1273eb !important; border: solid; border-radius: 6px; padding: 10px; margin-right:4px; margin-left:-2px; " class="badge bg-warning">Veiw Profile</button>
+																	<button style=" border: none; border-radius: 4px; padding: 10px; margin-right:4px;" class="badge bg-success">Check Documents</button>
+																</div>
+															</div>
+															<div style="margin-bottom:20px;"> <span style="background: #b3b3b3; padding:10px; padding-left:20px;
+															 padding-right:20px; font-weight: 700; font-size:10px; border: solid 0.8px;
+															 border-radius:4px;" >Pending Reviewal</span> </div>
+														</div>
+														<!-- end of Task #8 -->
 
 													</section>
 												</div>
