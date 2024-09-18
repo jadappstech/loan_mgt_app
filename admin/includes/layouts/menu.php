@@ -13,7 +13,7 @@ if (!isset($active_link)) {
 
     // var_dump($username);die;
 ?>
-
+<link href="./fontawesome-free-6.6.0-web/css/all.css" rel="stylesheet">
 <nav class='sidebar-wrapper'>
 
     <!-- Sidebar content start -->
@@ -42,13 +42,13 @@ if (!isset($active_link)) {
             <?php }?>
             <?php if($username == 'admin' || $username == 'user' || $username == 'credit' || $username == 'all'){?>
             <a class='nav-link <?php if ($active_link == "payments") { ?> active show <?php } else {} ?>' id='payments-tab' data-bs-toggle='tab' href='#tab-payments' role='tab' aria-controls='tab-payments' aria-selected='false'>
-                <i class='icon-edit1'></i>
+                <i class="fa-regular fa-credit-card"></i>
                 <span class='nav-link-text'>Payments</span>
             </a>
             <?php }?>
             <?php if($username == 'admin' || $username == 'credit' || $username == 'all'){?>
             <a class='nav-link <?php if ($active_link == "disbursement") { ?> active show <?php } else {} ?>' id='disbursement-tab' data-bs-toggle='tab' href='#tab-disbursement' role='tab' aria-controls='tab-disbursement' aria-selected='false'>
-                <i class='icon-box'></i>
+                <i class="fa-solid fa-money-bill-wave"></i>
                 <span class='nav-link-text'>Disbursement</span>
             </a>
             <?php }?>

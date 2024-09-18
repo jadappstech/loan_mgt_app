@@ -41,7 +41,7 @@
 <body class="auth-body">
   <!-- header starts -->
   <div class="auth-header">
-    <a href="confirm-identity.php"> <i class="back-btn" data-feather="arrow-left"></i> </a>
+    <a href="employment-info.php"> <i class="back-btn" data-feather="arrow-left"></i> </a>
     <img class="img-fluid img1" src="assets/images/authentication/9.svg" alt="v1" />
 
     <div class="auth-content">
@@ -60,7 +60,7 @@
         <li class="active" id="biodata"><strong></strong></li>
         <li class="active" id="loan"><strong></strong></li>
         <li class="active" id="verification"><strong></strong></li>
-        <li id="disbursment"><strong></strong></li>
+        <li class="active" id="disbursment"><strong></strong></li>
       </ul> 
       <div class="form-group">
         <label class="form-label">Card Number</label>
