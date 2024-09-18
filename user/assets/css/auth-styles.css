@@ -121,7 +121,7 @@ text-align: left;
 }
 
 #progressbar .active {
-  color: #673AB7;
+  color: #494cad;
 }
 
 #progressbar li {
@@ -183,7 +183,7 @@ text-align: left;
 
 /*Color number of the step and the connector before it*/
 #progressbar li.active:before, #progressbar li.active:after {
-  background: #673AB7;
+  background: #494cad;
 }
 
 /*Animated Progress Bar*/
@@ -192,7 +192,7 @@ height: 1.25rem;
 }
 
 .progress-bar {
-background-color: #673AB7;
+background-color: #494cad;
 }
 
 /*Fit image in bootstrap div*/

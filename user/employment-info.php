@@ -43,12 +43,12 @@
   <div class="auth-header">
     <a href="signup.php"> <i class="back-btn" data-feather="arrow-left"></i> </a>
 
-    <img class="img-fluid img" src="assets/images/authentication/1.svg" alt="v1" />
+    <img class="img-fluid img" src="assets/images/authentication/11.png" alt="v1" />
 
     <div class="auth-content">
       <div>
         <h2 style="font-size: 30px">KYC</h2>
-        <h2>Personal identity</h2>
+        <h2>Employment Information</h2>
         <h4 class="p-0">Fill up the form</h4>
       </div>
     </div>
@@ -61,101 +61,52 @@
       <ul id="progressbar" style="text-align: center;">
         <li class="active" id="biodata"><strong></strong></li>
         <li class="active" id="loan"><strong></strong></li>
-        <li id="verification"><strong></strong></li>
+        <li class="active" id="verification"><strong></strong></li>
         <li id="disbursment"><strong></strong></li>
       </ul>  
       <div class="form-group">
-        <label for="inputusername" class="form-label">Email Address</label>
-        <div class="form-input">
-          <input type="text" class="form-control" id="inputusername" placeholder="Enter Your Email" />
-        </div>
-      </div>
-
-      <div class="form-group">
-        <label for="inputpin" class="form-label">Phone number</label>
-        <div class="form-input">
-          <input type="tel" class="form-control" id="inputpin" placeholder="Enter your phone number" />
-        </div>
-      </div>
-      <div class="form-group">
-        <label for="inputday" class="form-label">Date of birth</label>
-        <div class="d-flex gap-2">
-          <select id="inputday" class="form-select">
-            <option selected>Day</option>
-            <option>1</option>
-            <option>2</option>
-            <option>3</option>
-            <option>4</option>
-            <option>5</option>
-            <option>6</option>
-            <option>7</option>
-            <option>8</option>
-            <option>9</option>
-            <option>10</option>
-            <option>11</option>
-            <option>12</option>
-            <option>13</option>
-            <option>14</option>
-            <option>15</option>
-            <option>16</option>
-            <option>17</option>
-            <option>18</option>
-            <option>19</option>
-            <option>20</option>
-            <option>21</option>
-            <option>22</option>
-            <option>23</option>
-            <option>24</option>
-            <option>25</option>
-            <option>26</option>
-            <option>27</option>
-            <option>28</option>
-            <option>29</option>
-            <option>30</option>
-            <option>31</option>
-          </select>
-          <select id="inputmonth" class="form-select">
-            <option selected>Month</option>
-            <option>1</option>
-            <option>2</option>
-            <option>3</option>
-            <option>4</option>
-            <option>5</option>
-            <option>6</option>
-            <option>7</option>
-            <option>8</option>
-            <option>9</option>
-            <option>10</option>
-            <option>11</option>
-            <option>12</option>
-          </select>
-
-          <select id="inputyear" class="form-select">
-            <option selected>Year</option>
-            <option>1995</option>
-            <option>1996</option>
-            <option>1997</option>
-            <option>1998</option>
-            <option>1999</option>
-            <option>2000</option>
-            <option>2001</option>
-            <option>2002</option>
-            <option>2003</option>
-            <option>2004</option>
-            <option>2005</option>
-          </select>
-        </div>
-      </div>
-      <div class="form-group">
-        <label for="inputgender" class="form-label">Gender</label>
+        <label for="inputgender" class="form-label">Employment Status</label>
         <select id="inputgender" class="form-select">
-          <option selected>Select Gender</option>
-          <option>Male</option>
-          <option>Female</option>
+          <option selected>Select Employment Status</option>
+          <option>Umemployed</option>
+          <option>Self Employed</option>
+          <option>Employed</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label for="inputgender" class="form-label">Employement Type</label>
+        <select id="inputgender" class="form-select">
+          <option selected>Select Empolyment Type</option>
+          <option>Full Time</option>
+          <option>Part Time</option>
+          <option>Contract</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label for="inputusername" class="form-label">Employer Name</label>
+        <div class="form-input">
+          <input type="text" class="form-control" id="inputusername" placeholder="Enter Your Employer's Name (eg. Company Name)" />
+        </div>
+      </div>
+      <div class="form-group">
+        <label for="inputgender" class="form-label">Income Type</label>
+        <select id="inputgender" class="form-select">
+          <option selected>Select Income Type</option>
+          <option>Monthly</option>
+          <option>Quarterly</option>
+          <option>Bi-Annually</option>
+          <option>Annually</option>
         </select>
       </div>
 
-      <a href="confirm-identity.php" class="btn theme-btn w-100">Continue</a>
+      <div class="form-group">
+        <label for="inputpin" class="form-label">Monthly Income</label>
+        <div class="form-input">
+          <input type="tel" class="form-control" id="inputpin" placeholder="Enter your monthly income" />
+        </div>
+      </div>
+
+      <a href="add-card-details.php" class="btn theme-btn w-100">Continue</a>
       <!-- <a href="confirm-identity.php" class="btn btn-link mt-3">Skip</a> -->
     </div>
   </form>

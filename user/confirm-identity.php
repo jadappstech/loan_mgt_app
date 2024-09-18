@@ -45,6 +45,7 @@
     <img class="img-fluid img" src="assets/images/authentication/8.svg" alt="v1" />
     <div class="auth-content">
       <div>
+        <h2 style="font-size: 30px">KYC</h2>
         <h2>Confirm identity</h2>
         <h4 class="p-0">Submit your docs to verify</h4>
       </div>
@@ -64,23 +65,23 @@
       <div class="form-group">
         <div class="upload-image rounded-image">
           <label for="formFileLg" class="form-label d-none">file </label>
-          <input class="form-control upload-file" type="file" id="formFileLg">
+          <input class="form-control upload-file" type="file" id="formFileLg" multiple>
           <i class="upload-icon dark-text" data-feather="plus"></i>
         </div>
       </div>
 
-      <h3 class="info-id">To confirm your information, upload one of your IDs.</h3>
+      <h3 class="info-id">To confirm your information, upload your IDs.</h3>
 
       <div class="form-group">
         <div class="upload-image rounded-image">
-          <input class="form-control upload-file" type="file" id="formFileLg">
+          <input class="form-control upload-file" type="file" id="formFileLg" >
           <i class="upload-icon" data-feather="camera"></i>
         </div>
       </div>
 
       <h3 class="info-id border-0 pb-0">To verify your details, activate your front camera and take a selfie.</h3>
 
-      <a href="add-card-details.php" class="btn theme-btn w-100">Submit all</a>
+      <a href="employment-info.php" class="btn theme-btn w-100">Continue</a>
     </div>
   </form>
   <!-- login section start -->
