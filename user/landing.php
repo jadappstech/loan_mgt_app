@@ -17,7 +17,7 @@
         <a href="notification.php" class="notification">
           <i class="notification-icon" data-feather="bell"></i>
         </a>
-        <a href="notification.php" class="notification"
+        <a href="profile.php" class="notification"
               style="margin-left:16px;">
           <i class="notification-icon" data-feather="user"></i>
         </a>
