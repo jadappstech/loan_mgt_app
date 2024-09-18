@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <!-- Meta -->
-    <meta name="description" content="UniPro App">
+    <meta name="description" content="Loan Management System">
     <meta name="author" content="ParkerThemes">
     <link rel="shortcut icon" href="img/fav.png" />
 
@@ -76,13 +76,14 @@
            /* max-width: 900px; /* Increase the width of the form */
             margin: 0 auto; /* Center the container */
         }
-
+        
         .login-screen {
+            min-width: 30vw !important;
             background-color: #ffffff; 
             padding: 30px;
             border-radius: 5px;
-            max-width: 50vw;
             height: 70vh;
+
         }
 
         .login-body {
@@ -194,7 +195,7 @@
                                         <input type="password" name="password" required>
                                         <div class="field-placeholder">Password</div>
                                         <!-- Forgot password link under password field -->
-                                        <small><a href="forgot-password.php" class="forgot-password">Forgot Password?</a></small>
+                                        <p class="text-end text-primary"><small><a href="forgot-password.php">Forgot Password?</a></small></p>
                                     </div>
                                     <div class="field-wrapper mb-3">
                                         <!-- Remember Me checkbox with label -->
