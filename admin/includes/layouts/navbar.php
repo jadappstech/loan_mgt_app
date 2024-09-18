@@ -121,7 +121,7 @@
                         <div class="header-profile-actions">
                             <a href="user-profile.php"><i class="icon-user1"></i>Profile</a>
                             <a href="account-settings.php"><i class="icon-settings1"></i>Settings</a>
-                            <a href="forgot-password.php"><i class="icon-log-out1"></i>Logout</a>
+                            <a href="signin.php"><i class="icon-log-out1"></i>Logout</a>
                         </div>
                     </div>
                 </li>
