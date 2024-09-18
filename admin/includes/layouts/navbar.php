@@ -42,7 +42,7 @@
                     </a>
                     <div class="dropdown-menu dropdown-menu-end lrg" aria-labelledby="notifications">
                         <div class="dropdown-menu-header">
-                            Notifications (7)
+                            Notifications (3)
                         </div>
                         <div class="customScroll">
                             <ul class="header-notifications">
@@ -52,8 +52,8 @@
                                             <img src="img/user6.png" alt="User">
                                         </div>
                                         <div class="details">
-                                            <div class="user-title">Larkyn</div>
-                                            <div class="noti-details">Check out every table in detail.</div>
+                                            <div class="user-title">Lanre</div>
+                                            <div class="noti-details">I want a loan of N500,000</div>
                                             <div class="noti-date">April 25, 04:00 pm</div>
                                         </div>
                                     </a>
@@ -65,7 +65,7 @@
                                         </div>
                                         <div class="details">
                                             <div class="user-title">Braxten</div>
-                                            <div class="noti-details">Approved new design.</div>
+                                            <div class="noti-details">Olakunle's loan has been disbursed.</div>
                                             <div class="noti-date">April 10, 12:00 am</div>
                                         </div>
                                     </a>
@@ -77,12 +77,12 @@
                                         </div>
                                         <div class="details">
                                             <div class="user-title">Maria</div>
-                                            <div class="noti-details">Membership has been ended.</div>
+                                            <div class="noti-details">Risk Management has approved loan.</div>
                                             <div class="noti-date">March 20, 07:30 pm</div>
                                         </div>
                                     </a>
                                 </li>
-                                <li>
+                                <!-- <li>
                                     <a href="#">
                                         <div class="user-img busy">
                                             <img src="img/user15.png" alt="User">
@@ -105,7 +105,7 @@
                                             <div class="noti-date">April 21, 05:00 pm</div>
                                         </div>
                                     </a>
-                                </li>												
+                                </li>												 -->
                             </ul>
                         </div>
                     </div>
@@ -120,7 +120,7 @@
                     <div class="dropdown-menu dropdown-menu-end md" aria-labelledby="userSettings">
                         <div class="header-profile-actions">
                             <a href="user-profile.php"><i class="icon-user1"></i>Profile</a>
-                            <a href="account-settings.php"><i class="icon-settings1"></i>Settings</a>
+                            <!-- <a href="account-settings.php"><i class="icon-settings1"></i>Settings</a> -->
                             <a href="signin.php"><i class="icon-log-out1"></i>Logout</a>
                         </div>
                     </div>

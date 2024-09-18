@@ -1,13 +1,5 @@
 <?php 
-if (session_status() == PHP_SESSION_NONE) {
-    session_start();
-}
-if(isset($_SESSION['user'])){
-    $username = $_SESSION['user'];
-}
-if(!isset($username) || $username == null){
-    $username = 'all';
-}
+
 ?>
 
 <head>
@@ -16,7 +8,7 @@ if(!isset($username) || $username == null){
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <!-- Meta -->
-    <meta name="description" content="Responsive Bootstrap4 Dashboard Template">
+    <meta name="description" content="Loan management system">
     <meta name="author" content="ParkerThemes">
     <link rel="shortcut icon" href="img/fav.png">
 
