@@ -173,7 +173,7 @@
                         <div class="about-desc">
                             <!-- UniPro is a data dashboard that visually tracks, analyzes, and displays key performance indicators (KPI), metrics, and key data points to monitor the health of a business, department, or specific process. -->
                         </div>
-                        <a href="reports.php" class="know-more">Know More <img src="img/right-arrow.svg" alt="Uni Pro Admin"></a>
+                        <a href="reports.php" class="know-more">Know More <img src="img/right-arrow.svg" alt="logo"></a>
                     </div>
                 </div>
                 <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12">
@@ -185,22 +185,22 @@
                                     <a href="dashboard.php" class="login-logo d-flex justify-content-center">
                                         <img src="img/centrum-logo.png" alt="Logo">
                                     </a>
-                                    <h6 class="text-center">Welcome back to The Loan Management System,<br>Please sign in to your account.</h6>
+                                    <p class="text-center text-dark"><small>Welcome back! Please sign in to your account.</small></p>
                                     <div class="field-wrapper">
                                         <input type="email" required autofocus>
-                                        <div class="field-placeholder">Employees ID</div>
+                                        <div class="field-placeholder">User Id</div>
                                     </div>
                                     <div class="field-wrapper">
                                         <input type="password" name="password" required>
                                         <div class="field-placeholder">Password</div>
                                         <!-- Forgot password link under password field -->
-                                        <a href="forgot-password.php" class="forgot-password">Forgot Password?</a>
+                                        <small><a href="forgot-password.php" class="forgot-password">Forgot Password?</a></small>
                                     </div>
                                     <div class="field-wrapper mb-3">
                                         <!-- Remember Me checkbox with label -->
                                         <div class="form-check d-flex align-items-center">
                                             <input type="checkbox" class="form-check-input" id="rememberMe">
-                                            <label for="rememberMe" class="remember-me-label">Remember Me</label>
+                                            <small class='text-dark'>Remember Me</small>
                                         </div>
                                     </div>
                                     <div class="actions">
@@ -209,7 +209,7 @@
                                     </div>
                                 </div>
                                 <div class="login-footer">
-                                    <span class="additional-link">Don't have an account? <a href="signup.php" class="btn btn-light">Sign Up</a></span>
+                                    <span class="additional-link">Don't have an account? <a href="signup.php" class="">Sign Up</a></span>
                                 </div>
                             </div>
                         </form>
