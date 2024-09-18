@@ -79,8 +79,9 @@
         
         .login-screen {
             min-width: 30vw !important;
+            width: 30vw;
             background-color: #ffffff; 
-            padding: 30px;
+            padding: 20px;
             border-radius: 5px;
             height: 70vh;
 
@@ -147,7 +148,11 @@
         .additional-link a {
             color: #007bff;
         }
-
+        @media only screen and (max-width: 600px) {
+            .login-screen {
+                min-width: 80vw !important;
+            }
+        }
     </style>
 </head>
 
@@ -201,7 +206,7 @@
                                         <!-- Remember Me checkbox with label -->
                                         <div class="form-check d-flex align-items-center">
                                             <input type="checkbox" class="form-check-input" id="rememberMe">
-                                            <small class='text-dark'>Remember Me</small>
+                                            <small class='text-dark'> &nbsp; Remember Me</small>
                                         </div>
                                     </div>
                                     <div class="actions">
