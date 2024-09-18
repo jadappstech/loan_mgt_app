@@ -2,14 +2,16 @@
 if (session_status() == PHP_SESSION_NONE) {
     session_start();
 }
-// $username = $_SESSION['user'];?>
+$username = $_SESSION['user'];
+// var_dump($username);die;
 
-<?php
-    if (!isset($active_link)) {
-        $active_link = "home";
-    }
+if (!isset($active_link)) {
+    $active_link = "home";
+}
 
     $current_page = basename($_SERVER['PHP_SELF']);
+
+    // var_dump($username);die;
 ?>
 
 <nav class='sidebar-wrapper'>
@@ -32,36 +34,36 @@ if (session_status() == PHP_SESSION_NONE) {
                 <i class='icon-layers2'></i>
                 <span class='nav-link-text'>Application</span>
             </a>
-            <?php //if($username == 'admin' || $username == 'all'){?>
+            <?php if($username == 'admin' || $username == 'all'){?>
             <a class='nav-link <?php if ($active_link == "user-mgt") { ?> active show <?php } else {} ?>' id='user-tab' data-bs-toggle='tab' href='#tab-user' role='tab' aria-controls='tab-user' aria-selected='false'>
                 <i class='icon-user'></i>
                 <span class='nav-link-text'>User Management</span>
             </a>
-            <?php //}?>
-            <?php //if($username == 'admin' || $username == 'user' || $username == 'credit' || $username == 'all'){?>
+            <?php }?>
+            <?php if($username == 'admin' || $username == 'user' || $username == 'credit' || $username == 'all'){?>
             <a class='nav-link <?php if ($active_link == "payments") { ?> active show <?php } else {} ?>' id='payments-tab' data-bs-toggle='tab' href='#tab-payments' role='tab' aria-controls='tab-payments' aria-selected='false'>
                 <i class='icon-edit1'></i>
                 <span class='nav-link-text'>Payments</span>
             </a>
-            <?php //}?>
-            <?php //if($username == 'admin' || $username == 'credit' || $username == 'all'){?>
+            <?php }?>
+            <?php if($username == 'admin' || $username == 'credit' || $username == 'all'){?>
             <a class='nav-link <?php if ($active_link == "disbursement") { ?> active show <?php } else {} ?>' id='disbursement-tab' data-bs-toggle='tab' href='#tab-disbursement' role='tab' aria-controls='tab-disbursement' aria-selected='false'>
                 <i class='icon-box'></i>
                 <span class='nav-link-text'>Disbursement</span>
             </a>
-            <?php //}?>
-            <?php //if($username == 'admin' || $username == 'credit' || $username == 'all'){?>
+            <?php }?>
+            <?php if($username == 'admin' || $username == 'credit' || $username == 'all'){?>
             <a class='nav-link <?php if ($active_link == "loan-tracking") { ?> active show <?php } else {} ?>' id='tracking-tab' data-bs-toggle='tab' href='#tab-tracking' role='tab' aria-controls='tab-tracking' aria-selected='false'>
                 <i class='icon-pie-chart1'></i>
                 <span class='nav-link-text'>Loan Tracking</span>
             </a>
-            <?php //}?>
-            <?php //if($username == 'admin' || $username == 'credit' || $username == 'all'){?>
+            <?php }?>
+            <?php if($username == 'admin' || $username == 'credit' || $username == 'all'){?>
             <a class='nav-link settings <?php if ($active_link == "settings") { ?> active show <?php } else {} ?>' id='settings-tab' data-bs-toggle='tab' href='#tab-settings' role='tab' aria-controls='tab-authentication' aria-selected='false'>
                 <i class='icon-settings1'></i>
                 <span class='nav-link-text'>Settings</span>
             </a>
-            <?php// }?>
+            <?php }?>
         </div>
         <!-- Tabs nav end -->
 
