@@ -520,7 +520,7 @@ li {
 }
 
 .theme-btn {
-  background: linear-gradient(142.56deg, #913aff -1.68%, #622cfd 62.12%);
+  background: linear-gradient(142.56deg, #494cad -1.68%, #292b61 62.12%);
   color: rgb(255, 255, 255);
   font-weight: 600;
   font-size: calc(16px + 2 * (100vw - 320px) / 1600);
@@ -1987,7 +1987,7 @@ li {
   color: rgba(var(--dark-text), 1);
 }
 .title a {
-  color: rgb(98, 44, 253);
+  color: rgb(73, 76, 173);
   font-size: 14px;
   font-weight: 400;
 }
@@ -2300,7 +2300,7 @@ li {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  background: linear-gradient(142.56deg, #913aff -1.68%, #622cfd 62.12%);
+  background: linear-gradient(142.56deg, #494cad -1.68%, #292b61 62.12%);
   border-radius: 100%;
   z-index: 1;
 }
@@ -2398,7 +2398,7 @@ li {
     onboarding CSS start
 ==========================*/
 .onboarding-loader {
-  background: linear-gradient(142.56deg, #913aff -1.68%, #622cfd 62.12%);
+  background: linear-gradient(142.56deg, #494cad -1.68%, #292b61 62.12%);
   position: fixed;
   height: 100vh;
   width: 100vw;
@@ -2538,7 +2538,7 @@ li {
   height: 72px;
 }
 .onboarding-section .poster-wapper .poster-box.color1 {
-  background: linear-gradient(142.56deg, #913aff -1.68%, #622cfd 62.12%);
+  background: linear-gradient(142.56deg, #494cad -1.68%, #292b61 62.12%);
   -webkit-box-shadow: 5px 5px 0px black;
           box-shadow: 5px 5px 0px black;
 }
@@ -2669,7 +2669,7 @@ li {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background: radial-gradient(59.57% 59.57% at 41.49% 40.43%, #8257ff 0%, #622cfd 100%);
+  background: radial-gradient(59.57% 59.57% at 41.49% 40.43%, #8257ff 0%, #292b61 100%);
   border-radius: 100%;
   padding: 8px;
 }
@@ -3846,11 +3846,11 @@ li {
   color: rgba(var(--theme-color), 1);
 }
 .tap-to-top-box .tap-to-top-button.btn-2 {
-  background: linear-gradient(142.56deg, #913aff -1.68%, #622cfd 62.12%), linear-gradient(0deg, rgba(159, 168, 190, 0.15), rgba(159, 168, 190, 0.15));
+  background: linear-gradient(142.56deg, #494cad -1.68%, #292b61 62.12%), linear-gradient(0deg, rgba(159, 168, 190, 0.15), rgba(159, 168, 190, 0.15));
 }
 .tap-to-top-box .tap-to-top-button.btn-3 {
   border-radius: 10px;
-  background: linear-gradient(142.56deg, #913aff -1.68%, #622cfd 62.12%), linear-gradient(0deg, rgba(159, 168, 190, 0.15), rgba(159, 168, 190, 0.15));
+  background: linear-gradient(142.56deg, #494cad -1.68%, #292b61 62.12%), linear-gradient(0deg, rgba(159, 168, 190, 0.15), rgba(159, 168, 190, 0.15));
 }
 .tap-to-top-box .tap-to-top-button.btn-3 .arrow {
   color: rgb(255, 255, 255);
@@ -3879,7 +3879,7 @@ li {
   height: unset;
   border-radius: 10px;
   color: rgb(255, 255, 255);
-  background: linear-gradient(142.56deg, #913aff -1.68%, #622cfd 62.12%), linear-gradient(0deg, rgba(159, 168, 190, 0.15), rgba(159, 168, 190, 0.15));
+  background: linear-gradient(142.56deg, #494cad -1.68%, #292b61 62.12%), linear-gradient(0deg, rgba(159, 168, 190, 0.15), rgba(159, 168, 190, 0.15));
   line-height: 1;
 }
 .tap-to-top-box .tap-to-top-button.btn-5 .arrow {
@@ -4122,8 +4122,8 @@ li {
           justify-content: center;
 }
 .categories-section .categories-list li .categories-box .categories-icon {
-  --Iconsax-Color: rgba(98, 44, 253, 1);
-  color: rgb(98, 44, 253);
+  --Iconsax-Color: rgb(73, 76, 173);
+  color: rgb(73, 76, 173);
 }
 .categories-section .categories-list li .categories-box .categories-icon.icon1 {
   -webkit-transform: rotate(90deg);
