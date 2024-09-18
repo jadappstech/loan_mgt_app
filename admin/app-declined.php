@@ -217,7 +217,7 @@
 															</div>
 															<div class="task-details">
 																<div class="task-name">Obi Olukare</div>
-																<div class="task-desc">Application for a loan of Twelve million naira (N12,000,000)</div>
+																<div class="task-desc">Application for a loan of Twelve million naira (₦12,000,000)</div>
 																<div class="task-desc"><strong>Duration:</strong> 8 Weeks</div>
 																<div class="task-types">
 																	<button style=" background-color: #1273eb !important; border: solid; border-radius: 6px; padding: 10px; margin-right:4px; margin-left:-2px; " class="badge bg-warning">Veiw Profile</button>
@@ -243,7 +243,7 @@
 															</div>
 															<div class="task-details">
 																<div class="task-name">Racheal Sholawale</div>
-																<div class="task-desc">Application for a loan of Five million naira (N5,000,000)</div>
+																<div class="task-desc">Application for a loan of Five million naira (₦5,000,000)</div>
 																<div class="task-desc"><strong>Duration:</strong> 6 Weeks</div>
 																<div class="task-types">
 																	<button style=" background-color: #1273eb !important; border: solid; border-radius: 6px; padding: 10px; margin-right:4px; margin-left:-2px; " class="badge bg-warning">Veiw Profile</button>
@@ -269,7 +269,7 @@
 															</div>
 															<div class="task-details">
 																<div class="task-name">Sani Peters</div>
-																<div class="task-desc">Application for a loan of Five hundred thousand naira (N500,000)</div>
+																<div class="task-desc">Application for a loan of Five hundred thousand naira (₦500,000)</div>
 																<div class="task-desc"><strong>Duration:</strong> 5 Weeks</div>
 																<div class="task-types">
 																	<button style=" background-color: #1273eb !important; border: solid; border-radius: 6px; padding: 10px; margin-right:4px; margin-left:-2px; " class="badge bg-warning">Veiw Profile</button>
