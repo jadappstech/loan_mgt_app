@@ -13,9 +13,16 @@
         </a>
         <!-- <img class="img-fluid logo" src="./../admin/img/centrum-logo.png" alt="logo" /> -->
         <h2>Dashboard</h2>
+        <div style="display: flex; flex-direction: row;">
         <a href="notification.php" class="notification">
           <i class="notification-icon" data-feather="bell"></i>
         </a>
+        <a href="notification.php" class="notification"
+              style="margin-left:16px;">
+          <i class="notification-icon" data-feather="user"></i>
+        </a>
+        </div>
+        
       </div>
     </div>
   </header>
@@ -50,7 +57,8 @@
             </div>
           </div>
         </div>
-        <a href="#add-money" class="add-money theme-color" data-bs-toggle="modal">+ Add Money</a>
+        <a href="#add-money" class="add-money theme-color" data-bs-toggle="modal"
+            style="font-size:12px; font-weight:500;">+ Make Payments</a>
       </div>
     </div>
   </section>

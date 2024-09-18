@@ -150,7 +150,7 @@
 															</div>
 															<div class="task-details">
 																<div class="task-name"><span style="font-weight:600;" >ID No : LN0152</span> &nbsp; &nbsp; &nbsp; - &nbsp; &nbsp; &nbsp;  Okon Yinusa</div>
-																<div class="task-desc">Application for a loan of One million and three hunderd thousand naira (N1,300,000)</div>
+																<div class="task-desc">Application for a loan of One million and three hunderd thousand naira (₦1,300,000)</div>
 																<div class="task-desc"><strong>Duration:</strong> 3 Weeks</div>
 																<div class="task-types">
 																	<button style=" background-color: #1273eb !important; border: solid; border-radius: 6px; padding: 10px; margin-right:4px; margin-left:-2px; " class="badge bg-warning">Veiw Profile</button>
@@ -176,7 +176,7 @@
 															</div>
 															<div class="task-details">
 																<div class="task-name"><span style="font-weight:600;" >ID No : LN0153</span> &nbsp; &nbsp; &nbsp; - &nbsp; &nbsp; &nbsp;  Musa Okonkwo</div>
-																<div class="task-desc">Application for a loan of 5 million naira (N5,000,000)</div>
+																<div class="task-desc">Application for a loan of 5 million naira (₦5,000,000)</div>
 																<div class="task-desc"><strong>Duration:</strong> 8 Weeks</div>
 																<div class="task-types">
 																	<button style=" background-color: #1273eb !important; border: solid; border-radius: 6px; padding: 10px; margin-right:4px; margin-left:-2px; " class="badge bg-warning">Veiw Profile</button>
@@ -202,7 +202,7 @@
 															</div>
 															<div class="task-details">
 																<div class="task-name"><span style="font-weight:600;" >ID No : LN0154</span> &nbsp; &nbsp; &nbsp; - &nbsp; &nbsp; &nbsp;  Adebayo Memuna</div>
-																<div class="task-desc">Application for a loan of Two hundred and fifty thousand naria (200,000)</div>
+																<div class="task-desc">Application for a loan of Two hundred and fifty thousand naria (₦200,000)</div>
 																<div class="task-desc"><strong>Duration:</strong> 4 Weeks</div>
 																<div class="task-types">
 																	<button style=" background-color: #1273eb !important; border: solid; border-radius: 6px; padding: 10px; margin-right:4px; margin-left:-2px; " class="badge bg-warning">Veiw Profile</button>
@@ -228,7 +228,7 @@
 															</div>
 															<div class="task-details">
 																<div class="task-name"><span style="font-weight:600;" >ID No : LN0155</span> &nbsp; &nbsp; &nbsp; - &nbsp; &nbsp; &nbsp;  Joseph Abraham</div>
-																<div class="task-desc">Application for a loan of Eight million naira (N8,000,000)</div>
+																<div class="task-desc">Application for a loan of Eight million naira (₦8,000,000)</div>
 																<div class="task-desc"><strong>Duration:</strong> 2 Weeks</div>
 																<div class="task-types">
 																	<button style=" background-color: #1273eb !important; border: solid; border-radius: 6px; padding: 10px; margin-right:4px; margin-left:-2px; " class="badge bg-warning">Veiw Profile</button>
@@ -254,7 +254,7 @@
 															</div>
 															<div class="task-details">
 																<div class="task-name"><span style="font-weight:600;" >ID No : LN0156</span> &nbsp; &nbsp; &nbsp; - &nbsp; &nbsp; &nbsp;  Obi Olukare</div>
-																<div class="task-desc">Application for a loan of Twelve million naira (N12,000,000)</div>
+																<div class="task-desc">Application for a loan of Twelve million naira (₦12,000,000)</div>
 																<div class="task-desc"><strong>Duration:</strong> 8 Weeks</div>
 																<div class="task-types">
 																	<button style=" background-color: #1273eb !important; border: solid; border-radius: 6px; padding: 10px; margin-right:4px; margin-left:-2px; " class="badge bg-warning">Veiw Profile</button>
@@ -306,7 +306,7 @@
 															</div>
 															<div class="task-details">
 																<div class="task-name"><span style="font-weight:600;" >ID No : LN0158</span> &nbsp; &nbsp; &nbsp; - &nbsp; &nbsp; &nbsp;  Esther Jiboro</div>
-																<div class="task-desc">Application for a loan of One million naira (N1,000,000)</div>
+																<div class="task-desc">Application for a loan of One million naira (₦1,000,000)</div>
 																<div class="task-desc"><strong>Duration:</strong> 6 Weeks</div>
 																<div class="task-types">
 																	<button style=" background-color: #1273eb !important; border: solid; border-radius: 6px; padding: 10px; margin-right:4px; margin-left:-2px; " class="badge bg-warning">Veiw Profile</button>
@@ -332,7 +332,7 @@
 															</div>
 															<div class="task-details">
 																<div class="task-name"><span style="font-weight:600;" >ID No : LN0159</span> &nbsp; &nbsp; &nbsp; - &nbsp; &nbsp; &nbsp;  Abdul Babanginda</div>
-																<div class="task-desc">Application for a loan of One million seven hundred thousand naira (N1,700,000)</div>
+																<div class="task-desc">Application for a loan of One million seven hundred thousand naira (₦1,700,000)</div>
 																<div class="task-desc"><strong>Duration:</strong> 8 Weeks</div>
 																<div class="task-types">
 																	<button style=" background-color: #1273eb !important; border: solid; border-radius: 6px; padding: 10px; margin-right:4px; margin-left:-2px; " class="badge bg-warning">Veiw Profile</button>
@@ -359,7 +359,7 @@
 															</div>
 															<div class="task-details">
 																<div class="task-name"><span style="font-weight:600;" >ID No : LN0160</span> &nbsp; &nbsp; &nbsp; - &nbsp; &nbsp; &nbsp;  James Bulus</div>
-																<div class="task-desc">Application for a loan of Seventy thousand naira (N70,000)</div>
+																<div class="task-desc">Application for a loan of Seventy thousand naira (₦70,000)</div>
 																<div class="task-desc"><strong>Duration:</strong> 1 Weeks</div>
 																<div class="task-types">
 																	<button style=" background-color: #1273eb !important; border: solid; border-radius: 6px; padding: 10px; margin-right:4px; margin-left:-2px; " class="badge bg-warning">Veiw Profile</button>
