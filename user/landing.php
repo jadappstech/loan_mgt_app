@@ -116,7 +116,7 @@
 
       <div class="swiper card-slider">
         <div class="swiper-wrapper">
-          <div class="swiper-slide"><a href="#">
+          <div class="swiper-slide"><a href="loan-application-1.php">
             <div class="credit-card-box color1">
               <div class="card-logo">
                 <!-- <img class="img-fluid" src="assets/images/svg/logo1.svg" alt="logo1" /> -->
@@ -138,7 +138,7 @@
               </div>
             </div>
           </a></div>
-          <div class="swiper-slide"><a href="#">
+          <div class="swiper-slide"><a href="loan-application-1.php">
             <div class="credit-card-box color2">
               <div class="card-logo">
                 <h2 style="font-size: 20px; color: white;">Salary Loan</h2>
@@ -160,7 +160,7 @@
               </div>
             </div></a>
           </div>
-          <div class="swiper-slide"><a href="#">
+          <div class="swiper-slide"><a href="loan-application-1.php">
             <div class="credit-card-box color3">
               <div class="card-logo">
                 <h2 style="font-size: 20px; color: white;">Business Loan</h2>
