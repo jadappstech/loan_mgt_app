@@ -37,7 +37,7 @@
 
         .login-about {
             background-color: #ffffff; 
-            border-radius: 10px;
+            border-radius: 1px;
             padding: 20px;
             box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
             align-items: center;
@@ -60,7 +60,7 @@
             background-color: #007bf; /* Button color */
             color: #ffffff;
             text-decoration: none;
-            border-radius: 5px;
+            border-radius: 1px;
         }
 
         .know-more:hover {
@@ -71,8 +71,8 @@
         .login-wrapper {
             background-color: #f2f2f2; 
             padding: 40px;
-            border-radius: 10px;
-           /* box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); 
+            border-radius: 5px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); 
            /* max-width: 900px; /* Increase the width of the form */
             margin: 0 auto; /* Center the container */
         }
@@ -80,7 +80,7 @@
         .login-screen {
             background-color: #ffffff; 
             padding: 30px;
-            border-radius: 10px;
+            border-radius: 5px;
             max-width: 50vw;
             height: 70vh;
         }
@@ -92,7 +92,7 @@
 
         .login-logo img {
             width: 200px !important;
-            height: 150px !important;
+            height: 100px !important;
 
         }
 
@@ -183,7 +183,7 @@
                                 <div class="login-body">
                                     <!-- Center the logo and increase size -->
                                     <a href="dashboard.php" class="login-logo d-flex justify-content-center">
-                                        <img src="img/centrum-logo.png" style=weight:200px; height:100px !important; alt="Logo">
+                                        <img src="img/centrum-logo.png" alt="Logo">
                                     </a>
                                     <h6 class="text-center">Welcome back to The Loan Management System,<br>Please sign in to your account.</h6>
                                     <div class="field-wrapper">
