@@ -213,7 +213,7 @@
     <section id="loans" style="background-color: #f8f9fa;">
         <div class="container">
             <h2>Our Loan Options</h2>
-            <div class="row section-content">
+            <div class="row section-content" style="row-gap: 30px">
                 <!-- Loan Option 1 -->
                 <div class="col-md-4">
                     <img src="./admin/phone.jpg" class="img-fluid" alt="Personal Loan">
@@ -243,7 +243,7 @@
     <section id="eligibility">
         <div class="container">
             <h2>Eligibility Criteria</h2>
-            <div class="row align-items-center section-content">
+            <div class="row align-items-center section-content" style="row-gap: 20px">
                 <div class="col-md-6">
                     <ul>
                         <li>Must be at least 18 years old.</li>
@@ -264,7 +264,7 @@
     <section id="process" style="background-color: #f8f9fa;">
         <div class="container">
             <h2>How to Apply</h2>
-            <div class="row align-items-center section-content">
+            <div class="row align-items-center section-content" style="row-gap: 20px">
                 <div class="col-md-6">
                     <img src="./admin/t.jpg" class="img-fluid" alt="Application Process">
                 </div>
@@ -285,7 +285,7 @@
     <section id="benefits">
         <div class="container">
             <h2>Why Choose Us</h2>
-            <div class="row align-items-center section-content">
+            <div class="row align-items-center section-content" style="row-gap: 10px">
                 <div class="col-md-6">
                     <ul>
                         <li>Fast approval process.</li>
