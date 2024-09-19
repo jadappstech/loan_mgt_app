@@ -11,7 +11,7 @@
     <link rel="shortcut icon" href="img/fav.png" />
 
     <!-- Title -->
-    <title>UniPro Login</title>
+    <title>Loan Management Application</title>
 
     <!-- Common CSS Files -->
     <link rel="stylesheet" href="css/bootstrap.min.css">
@@ -19,7 +19,7 @@
 
     <style>
         body.authentication {
-            background: url('phonmoni.webp') no-repeat center center fixed;
+            /*background: url('phonmoni.webp') no-repeat center center fixed;*/
             background-size: cover;
             font-family: 'Arial', sans-serif;
             color: #fff;
@@ -27,41 +27,124 @@
             padding: 0;
         }
 
+        .login-container {
+            background-color: #f9f9f9;
+            height: 100vh; 
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .login-about {
+            background-color: #ffffff; 
+            border-radius: 10px;
+            padding: 20px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+            align-items: center;
+        }
+
+        .slogan span {
+            display: flex;
+            font-size: 2rem;
+            color: #292c61; 
+            font-weight: 600;
+            margin-bottom: 10px;
+            flex-direction: column;
+            text-align: center;
+        }
+
+        .know-more {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 10px 20px;
+            background-color: #007bf; /* Button color */
+            color: #ffffff;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+
+        .know-more:hover {
+            background-color: #0056b3; /* Darker button color on hover */
+        }
+
+
+        .login-wrapper {
+            background-color: #f2f2f2; 
+            padding: 40px;
+            border-radius: 10px;
+           /* box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); 
+           /* max-width: 900px; /* Increase the width of the form */
+            margin: 0 auto; /* Center the container */
+        }
+
+        .login-screen {
+            background-color: #ffffff; 
+            padding: 30px;
+            border-radius: 10px;
+            max-width: 50vw;
+            height: 70vh;
+        }
+
+        .login-body {
+            padding: 20px;
+            
+        }
+
         .login-logo img {
-            width: 150px; /* Adjusted logo size */
-            height:200;
+            width: 200px !important;
+            height: 150px !important;
+
+        }
+
+        h6 {
+            font-size: 1.2rem; 
+            margin-bottom: 20px;
+            color: #333333;
+        }
+
+        .field-wrapper {
+            margin-bottom: 20px;
+        }
+
+        .field-wrapper input {
+            width: 100%;
+            padding: 10px;
+            font-size: 1rem;
+            border-radius: 5px;
+            border: 1px solid #cccccc;
+        }
+
+        .field-placeholder {
+            font-size: 0.9rem;
+            color: #666666;
+            margin-top: 5px;
         }
 
         .forgot-password {
             display: block;
-            margin-top: 10px;
-            text-align: left;
+            text-align: right;
+            font-size: 0.9rem;
+            color: #007bff;
         }
 
-        .form-check-input {
-            width: 1.1em;
-            height: 1.1em;
+        .form-check {
+            margin-bottom: 20px;
         }
 
-        .remember-me-label {
-            display: inline-block;
-            margin-left: 5px;
-        }
-
-        .btn-primary {
-            width: 100%; /* Make Sign In button span across the form */
+        .actions button {
+            width: 100%; /* Make the button span across the form */
             padding: 10px;
+            font-size: 1rem;
         }
 
-        .btn-light {
-            border: none; /* Remove border from Sign Up button */
-            background: transparent; /* Make it transparent */
-            color: #fff; /* Ensure the text is visible */
+        .additional-link {
+            display: block;
+            text-align: center;
+            margin-top: 20px;
         }
 
-        .btn-light:hover {
-            color: #ccc; /* Slight hover effect */
-            text-decoration: underline;
+        .additional-link a {
+            color: #007bff;
         }
 
     </style>
@@ -100,12 +183,12 @@
                                 <div class="login-body">
                                     <!-- Center the logo and increase size -->
                                     <a href="dashboard.php" class="login-logo d-flex justify-content-center">
-                                        <img src="img/centrum-logo.png" alt="Logo">
+                                        <img src="img/centrum-logo.png" style=weight:200px; height:100px !important; alt="Logo">
                                     </a>
                                     <h6 class="text-center">Welcome back to The Loan Management System,<br>Please sign in to your account.</h6>
                                     <div class="field-wrapper">
                                         <input type="email" required autofocus>
-                                        <div class="field-placeholder">Email ID</div>
+                                        <div class="field-placeholder">Employees ID</div>
                                     </div>
                                     <div class="field-wrapper">
                                         <input type="password" name="password" required>
