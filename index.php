@@ -197,7 +197,7 @@
     <section id="about">
         <div class="container">
             <h2>About Us</h2>
-            <div class="row align-items-center section-content">
+            <div class="row align-items-center section-content" style="row-gap: 20px">
                 <div class="col-md-6">
                     <p>QuickLoan is committed to providing fast and reliable loan services to help you achieve your financial goals. Our mission is to make borrowing simple, transparent, and accessible to everyone.</p>
                     <a href="#" class="btn btn-primary learn-more-btn">Learn More</a>
@@ -216,21 +216,21 @@
             <div class="row section-content" style="row-gap: 30px">
                 <!-- Loan Option 1 -->
                 <div class="col-md-4">
-                    <img src="./admin/phone.jpg" class="img-fluid" alt="Personal Loan">
+                    <img src="./admin/img/loan-options-1.jpg" class="img-fluid" alt="Personal Loan">
                     <h4>Personal Loan</h4>
                     <p>Flexible repayment plans with low-interest rates to meet your personal needs.</p>
                     <a href="#" class="btn btn-primary learn-more-btn">Learn More</a>
                 </div>
                 <!-- Loan Option 2 -->
                 <div class="col-md-4">
-                    <img src="./admin/phone2.jpg" class="img-fluid" alt="Business Loan">
+                    <img src="./admin/img/loan-options-2.jpg" class="img-fluid" alt="Business Loan">
                     <h4>Business Loan</h4>
                     <p>Boost your business growth with our tailored business loans.</p>
                     <a href="#" class="btn btn-primary learn-more-btn">Learn More</a>
                 </div>
                 <!-- Loan Option 3 -->
                 <div class="col-md-4">
-                    <img src="./admin/phone3.jpeg" class="img-fluid" alt="Student Loan">
+                    <img src="./admin/img/loan-options-3.jpg" class="img-fluid" alt="Student Loan">
                     <h4>Student Loan</h4>
                     <p>Affordable options to finance your education and achieve your dreams.</p>
                     <a href="#" class="btn btn-primary learn-more-btn">Learn More</a>
