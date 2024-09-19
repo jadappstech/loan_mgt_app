@@ -52,7 +52,7 @@
           <!-- Loan Type -->
           <div class="mb-4">
             <label class="block text-gray-700 text-sm font-bold mb-2">Loan Type <span class="text-red-500">*</span></label>
-            <select class="block w-full bg-white border border-gray-300 text-gray-700 py-2 px-3 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500" name="loan_type">
+            <select class="block w-full bg-white border border-gray-300 text-gray-700 py-2 px-3 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500" name="loan_type" onchange="switch_link(this.value)">
               <option value="" disabled selected>Select Loan Type</option>
               <option value="personal">Payday Loan</option>
               <option value="salary loan">Salary Loan</option>
@@ -130,13 +130,25 @@
         <!-- Buttons -->
         <div class="flex justify-between mt-6">
           <a href="./loan-application-1.php" class="bg-gray-500 text-white py-2 px-4 rounded-lg hover:bg-gray-600">Previous</a>
-          <a href="./loan-application-3.php" class="bg-primary text-white py-2 px-4 rounded-lg hover:bg-blue-600">Next</a>
+          <a href="./loan-application-3.php" id="Next_btn" class="bg-primary text-white py-2 px-4 rounded-lg hover:bg-blue-600">Next</a>
         </div>
 
       </div>
     </div>
 
   </section>
+
+  <script>
+    function switch_link(type){
+      console.log('type:', type);
+      const next_btn = document.getElementById('Next_btn');
+      if(type == 'business'){
+        next_btn.href = './loan-application-business-loan.php';
+      }else{
+        next_btn.href = './loan-application-3.php';
+      }
+    }
+  </script>
   
 
   <!-- swiper js -->
