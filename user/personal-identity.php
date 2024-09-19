@@ -47,6 +47,7 @@
 
     <div class="auth-content">
       <div>
+        <h2 style="font-size: 30px">KYC</h2>
         <h2>Personal identity</h2>
         <h4 class="p-0">Fill up the form</h4>
       </div>
@@ -59,12 +60,12 @@
     <div class="custom-container">
       <ul id="progressbar" style="text-align: center;">
         <li class="active" id="biodata"><strong></strong></li>
-        <li id="loan"><strong></strong></li>
+        <li class="active" id="loan"><strong></strong></li>
         <li id="verification"><strong></strong></li>
         <li id="disbursment"><strong></strong></li>
       </ul>  
       <div class="form-group">
-        <label for="inputusername" class="form-label">Email id</label>
+        <label for="inputusername" class="form-label">Email Address</label>
         <div class="form-input">
           <input type="text" class="form-control" id="inputusername" placeholder="Enter Your Email" />
         </div>
@@ -155,7 +156,7 @@
       </div>
 
       <a href="confirm-identity.php" class="btn theme-btn w-100">Continue</a>
-      <a href="confirm-identity.php" class="btn btn-link mt-3">Skip</a>
+      <!-- <a href="confirm-identity.php" class="btn btn-link mt-3">Skip</a> -->
     </div>
   </form>
   <!-- login section start -->

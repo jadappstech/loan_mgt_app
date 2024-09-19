@@ -144,7 +144,7 @@
                     By signing up, you agree to our <a href="#">Terms and Conditions</a>.
                 </div>
                 <div class="actions">
-                    <a href="./create-application-biodata.php" class="btn btn-primary">
+                    <a href="./create-application-biodata.php" class="btn text-white form-control" style="background:#1273eb;">
                         Sign Up
                     </a>
                     <!-- <button type="submit" class="btn btn-primary">Sign Up</button> -->
