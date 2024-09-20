@@ -21,7 +21,7 @@
         body.authentication {
             /*background: url('phonmoni.webp') no-repeat center center fixed;*/
             background-size: cover;
-            font-family: 'Arial', sans-serif;
+            font-family: 'titillium';
             color: #fff;
             margin: 0;
             padding: 0;
@@ -174,7 +174,7 @@
                         <div class="slogan">
                             <span>Loan</span>
                             <span>Made</span>
-                            <span>Easy </span>
+                            <span style="font-size: 5em;">Easy</span>
                         </div>
                         <div class="about-desc">
                             <!-- UniPro is a data dashboard that visually tracks, analyzes, and displays key performance indicators (KPI), metrics, and key data points to monitor the health of a business, department, or specific process. -->
