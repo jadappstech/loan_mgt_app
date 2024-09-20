@@ -5,10 +5,10 @@
 
 // $username = $_POST['password'];
 $dbhost = "localhost";
-$dbusername = "jadappst_lms";
+$dbusername = "root";//"jadappst_lms";
 // $dbpassword = "Totalchild6471!";
-$dbpassword = "q^7HRVA*-Q@]";
-$dbname = "jadappst_lms";
+$dbpassword = "Totalchild6471!";//"q^7HRVA*-Q@]";
+$dbname = "lms";//"jadappst_lms";
 
 $conn = mysqli_connect($dbhost, $dbusername, $dbpassword, $dbname);
 

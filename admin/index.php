@@ -2,9 +2,9 @@
 <?php
 
 $host = 'localhost';
-$username = 'jadappst_lms';
-$password = 'q^7HRVA*-Q@]';
-$db_name = 'jadappst_lms';
+$username = 'root';//'jadappst_lms';
+$password = 'Totalchild6471!';//'q^7HRVA*-Q@]';
+$db_name = 'lms';//'jadappst_lms';
 
 
 // Connect to database
