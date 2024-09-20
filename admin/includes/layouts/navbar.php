@@ -1,3 +1,36 @@
+<?php
+// $username = $_POST['password'];
+$dbhost = "localhost";
+$dbusername = "jadappst_lms";
+// $dbpassword = "Totalchild6471!";
+$dbpassword = "q^7HRVA*-Q@]";
+$dbname = "jadappst_lms";
+
+$conn = mysqli_connect($dbhost, $dbusername, $dbpassword, $dbname);
+
+if(!$conn){
+    die("Connection Failed:  ".mysqli_connect_error());
+}
+
+// SQL query
+$query = "SELECT username FROM user WHERE id = 1";
+
+// Execute query
+$result = $conn->query($query);
+
+// Check query result
+if ($result->num_rows > 0) {
+    // Fetch and display username
+    $row = $result->fetch_assoc();
+    $username = $row['username'];
+} else {
+    $username = 'admin';
+}
+
+// Close database connection
+$conn->close();
+
+?>
 <div class="page-header">
 					
     <!-- Row start -->

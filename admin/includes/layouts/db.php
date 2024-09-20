@@ -5,5 +5,6 @@ if (session_status() == PHP_SESSION_NONE) {
 $_SESSION['user'] = $_POST['password'];
 $username = $_SESSION['user'];
 // var_dump($username);die;
+// header("Location: http://loan-app.jadappstech.com/admin/index.php");
 header("Location: http://localhost/loan_mgt_app/admin/index.php");
 ?>

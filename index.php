@@ -318,7 +318,7 @@
                 <!-- Testimonial 2 -->
                 <div class="col-md-4">
                     <div class="testimonial">
-                        <img src="./admin/pass.jpg" class="img-fluid rounded-circle" alt="Customer 2" style="border-radius: 50%; width: 100px; height: 100px; object-fit: cover;  display: block; margin: 0 auto;">
+                        <img src="./admin/img/pass.jpg" class="img-fluid rounded-circle" alt="Customer 2" style="border-radius: 50%; width: 100px; height: 100px; object-fit: cover;  display: block; margin: 0 auto;">
                         <p>"The application process was so simple, and I received my loan within 24 hours."</p>
                         <div class="customer">- David K.</div>
                         <div class="rating">★★★★★</div>

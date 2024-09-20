@@ -1,4 +1,43 @@
-<!doctype php>
+
+<?php
+
+$host = 'localhost';
+$username = 'jadappst_lms';
+$password = 'q^7HRVA*-Q@]';
+$db_name = 'jadappst_lms';
+
+
+// Connect to database
+$conn = new mysqli($host, $username, $password, $db_name);
+
+// Check connection
+if ($conn->connect_error) {
+    die("Connection failed: " . $conn->connect_error);
+}
+
+// Update password
+if (isset($_POST['password'])) {
+       $password = $_POST['password'];
+
+    $query = "UPDATE user SET username = ? WHERE id = 1";
+    $stmt = $conn->prepare($query);
+    $stmt->bind_param("s", $password);
+
+    if ($stmt->execute()) {
+        // echo "Password updated successfully.";
+    } else {
+        // echo "Error updating password: " . $conn->error;
+    }
+    // var_dump($stmt->execute());die;
+
+    // $stmt->close();
+}
+
+// $conn->close();
+
+
+?>
+<!doctype html>
 <html lang="en">
 	
 <!-- Mirrored from www.bootstrapget.com/demos/themeforest/unipro-admin-template/demos/01-design-blue/view-invoice.php by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 04 Sep 2024 13:06:42 GMT -->

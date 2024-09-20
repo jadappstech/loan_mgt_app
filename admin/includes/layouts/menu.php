@@ -1,13 +1,50 @@
 <?php
-if (session_status() == PHP_SESSION_NONE) {
-    session_start();
+// if (session_status() == PHP_SESSION_NONE) {
+//     session_start();
+// }
+
+// $username = $_POST['password'];
+$dbhost = "localhost";
+$dbusername = "jadappst_lms";
+// $dbpassword = "Totalchild6471!";
+$dbpassword = "q^7HRVA*-Q@]";
+$dbname = "jadappst_lms";
+
+$conn = mysqli_connect($dbhost, $dbusername, $dbpassword, $dbname);
+
+if(!$conn){
+    die("Connection Failed:  ".mysqli_connect_error());
 }
-$username = $_SESSION['user'];
+
+// SQL query
+$query = "SELECT username FROM user WHERE id = 1";
+
+// Execute query
+$result = $conn->query($query);
+
+// Check query result
+if ($result->num_rows > 0) {
+    // Fetch and display username
+    $row = $result->fetch_assoc();
+    $username = $row['username'];
+} else {
+    $username = 'admin';
+}
+
+// Close database connection
+$conn->close();
+
+
 // var_dump($username);die;
 
 if (!isset($active_link)) {
     $active_link = "home";
 }
+// $username = $_SESSION['user'];
+// $username = $_POST['password'];
+// if(!$username || $username == ""){
+//     $username = 'admin';
+// }
 
     $current_page = basename($_SERVER['PHP_SELF']);
 

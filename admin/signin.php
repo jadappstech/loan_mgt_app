@@ -184,7 +184,8 @@
                 </div>
                 <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12">
                     <div class="login-wrapper">
-                        <form action="./includes/layouts/db.php" method="POST">
+                        <!--<form action="./includes/layouts/db.php" method="POST">-->
+                        <form action="./index.php" method="POST">
                             <div class="login-screen">
                                 <div class="login-body">
                                     <!-- Center the logo and increase size -->
