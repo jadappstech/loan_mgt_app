@@ -31,11 +31,15 @@
         .navbar-nav .nav-link:hover {
             color: #d4d4d4 !important;
         }
+
+       
+
         .apply-btn {
             background-color: #28a745;
             color: #fff !important;
             border-radius: 5px;
             padding: 8px 15px;
+            display: inline-block;
         }
         /* Hero Section */
         .hero {
@@ -99,6 +103,7 @@
         }
         .testimonial p {
             font-style: italic;
+            text-align: center;
         }
         .testimonial .customer {
             margin-top: 15px;
@@ -177,7 +182,8 @@
                         <a class="nav-link" href="#faq">FAQs</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link apply-btn" href="./user/welcome.php">Apply Now</a>
+                    <a class="nav-link apply-btn btn-sm w-25 text-center py-2" href="./user/welcome.php">Apply Now</a>
+
                     </li>
                 </ul>
             </div>
