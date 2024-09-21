@@ -48,10 +48,11 @@
         }
         /* Hero Section */
         .hero {
-            background: url('./admin/smiling.avif') no-repeat center center/cover;
+            background: url('./admin/img/office.jpg') no-repeat center center/cover;
             color: #fff;
-            height: 80vh;
+            height: 100vh;
             position: relative;
+            background-attachment: fixed;
             
         }
         .hero::before {
