@@ -1,3 +1,58 @@
+<?php
+  require_once '../db/Database.php'; 
+  $message = "";
+  
+  if (isset($_GET['user'])) {
+    $userId = $_GET['user'];
+    $conn = Database::getInstance();
+    $stmt = $conn->prepare("SELECT firstname FROM users WHERE id = :id");
+    $stmt->bindParam(':id', $userId);
+
+    if ($stmt->execute()) {
+        $result = $stmt->fetch(PDO::FETCH_ASSOC);
+        $firstname = $result['firstname'];
+    } else {
+        $message = "Failed to submit form!";
+    }
+  } else {
+      // Handle the case where the 'user' parameter is not set
+      $message = "User ID is missing.";
+  }
+
+  // Check if form was submitted
+  if ($_SERVER['REQUEST_METHOD'] == 'POST') {
+    // Get form data
+    $nokFname = $_POST['nok-fname'];
+    $nokMname = $_POST['nok-mname'];
+    $nokLname = $_POST['nok-lname'];
+    $nokAddress = $_POST['nok-address'];
+    $nokPhone = $_POST['nok-phone'];
+    $nokEmail = $_POST['nok-email'];
+    $nokGender = $_POST['nok-gender'];
+    $nokRelationship = $_POST['nok-relationship'];
+
+    // $stmt = $conn->prepare("INSERT INTO next_of_kin (nok_firstname, nok_middlename, nok_surname, nok_address, nok_phone, nok_email, nok_relationship) VALUES (?, ?, ?, ?, ?, ?, ?, ?)");
+    // $stmt->bind_param("ssssssss", $nokFname, $nokMname, $nokLname, $nokAddress, $nokPhone, $nokEmail, $nokRelationship);
+    $stmt = $conn->prepare("UPDATE users SET nok_firstname = ?, nok_surname = ?, nok_address = ?, nok_phone = ?, nok_email = ?, nok_relationship = ? WHERE id = ?");
+    $stmt->bindParam(1, $nokFname);
+    $stmt->bindParam(2, $nokLname);
+    $stmt->bindParam(3, $nokAddress);
+    $stmt->bindParam(4, $nokPhone);
+    $stmt->bindParam(5, $nokEmail);
+    $stmt->bindParam(6, $nokRelationship);
+    $stmt->bindParam(7, $userId);
+    
+    if ($stmt->execute()) {
+      $message = "Form submitted successfully!";
+      echo $result;
+      header("Location: successfully-signup.php?user=$userId");
+      exit();
+    } else {
+      $message = "Failed to submit form!";
+    }
+  }
+?>
+
 <?php include_once "./includes/header.php"?>
 <body>
   <!-- side bar start -->
@@ -39,47 +94,6 @@
         <!-- Card start -->
         <div class="card">
           <div class="card-body">
-            <div class="row gutters gy-4 mb-4">
-              <!-- <div class="col-xl-4 col-lg-4 col-md-4 col-sm-4 col-12">
-                <div class="field-wrapper">
-                  <div class="field-placeholder">Full Name <span class="text-danger">*</span></div>
-                  <input class="form-control" type="text" name="full_name">
-                </div>
-              </div>
-              <div class="col-xl-4 col-lg-4 col-md-4 col-sm-4 col-12">
-                <div class="field-wrapper">
-                  <div class="field-placeholder">Email Address <span class="text-danger">*</span></div>
-                  <input class="form-control" type="email" name="email_address">
-                </div>
-              </div>
-              <div class="col-xl-4 col-lg-4 col-md-4 col-sm-4 col-12">
-                <div class="field-wrapper">
-                  <div class="field-placeholder">Phone Number <span class="text-danger">*</span></div>
-                  <input class="form-control" type="text" name="phone_number">
-                </div>
-              </div> -->
-              <!-- <div class="col-xl-8 col-lg-8 col-md-8 col-sm-8 col-12">
-                <div class="field-wrapper">
-                  <div class="field-placeholder">Residential Address <span class="text-danger">*</span></div>
-                  <input class="form-control" type="text" name="residential_address">
-                </div>
-              </div> -->
-              <!-- <div class="col-xl-4 col-lg-4 col-md-4 col-sm-4 col-12">
-                <div class="field-wrapper">
-                  <div class="field-placeholder">Date of Birth <span class="text-danger">*</span></div>
-                  <div class="relative max-w-sm">
-                    <div class="absolute left-2 inset-y-0 xstart-0 flex items-center ps-3.5 pointer-events-none">
-                      <svg class="w-4 h-4 text-gray-500 dark:text-gray-400" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
-                        <path d="M20 4a2 2 0 0 0-2-2h-2V1a1 1 0 0 0-2 0v1h-3V1a1 1 0 0 0-2 0v1H6V1a1 1 0 0 0-2 0v1H2a2 2 0 0 0-2 2v2h20V4ZM0 18a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V8H0v10Zm5-8h10a1 1 0 0 1 0 2H5a1 1 0 0 1 0-2Z"/>
-                      </svg>
-                    </div>
-                    <input datepicker id="default-datepicker" type="text" style="padding-left: 30px;" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full ps-20 p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="Select date">
-                  </div>
-
-                </div>
-              </div> -->
-            </div>
-
             <div class="row gutters gy-4 mb-4">
               <div class="col-xl-4 col-lg-4 col-md-4 col-sm-4 col-12">
                 <div class="field-wrapper">
@@ -165,8 +179,6 @@
             </div>
           </div> 
         </div>
-
-
         <div class="card mt-4">
           <div class="card-header">
             <div class="card-title">Guarantor Details</div>

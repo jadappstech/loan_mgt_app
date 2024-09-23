@@ -41,7 +41,7 @@
 <body class="auth-body">
   <!-- header starts -->
   <div class="auth-header">
-    <a href="index-2.php"> <i class="back-btn" data-feather="arrow-left"></i> </a>
+    <a href="../index.php"> <i class="back-btn" data-feather="arrow-left"></i> </a>
 
     <img class="img-fluid img" src="assets/images/authentication/1.svg" alt="v1" />
 
@@ -58,7 +58,7 @@
   <form class="auth-form" target="_blank">
     <div class="custom-container">
       <div class="form-group">
-        <label for="inputusername" class="form-label">Email id</label>
+        <label for="inputusername" class="form-label">Email</label>
         <div class="form-input">
           <input type="email" class="form-control" id="inputusername" placeholder="Enter Your Email" />
         </div>

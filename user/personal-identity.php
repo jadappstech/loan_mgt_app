@@ -1,8 +1,55 @@
+<?php
+  require_once '../db/Database.php'; 
+  $message = "";
+  
+  if (isset($_GET['user'])) {
+    $userId = $_GET['user'];
+    $conn = Database::getInstance();
+    $stmt = $conn->prepare("SELECT firstname FROM users WHERE id = :id");
+    $stmt->bindParam(':id', $userId);
+
+    if ($stmt->execute()) {
+        $result = $stmt->fetch(PDO::FETCH_ASSOC);
+        $firstname = $result['firstname'];
+    } else {
+        $message = "Failed to submit form!";
+    }
+  } else {
+      // Handle the case where the 'user' parameter is not set
+      $message = "User ID is missing.";
+  }
+
+  // Check if form was submitted
+  if ($_SERVER['REQUEST_METHOD'] == 'POST') {
+    // Get form data
+    $address = $_POST['address'];
+    $phone = $_POST['phone'];
+    $dob = $_POST['dob'];
+    $gender = $_POST['gender'];
+
+    $conn = Database::getInstance();
+    $stmt = $conn->prepare("UPDATE users SET address = :address, phone = :phone, dob = :dob, gender = :gender WHERE id = :id");
+    
+    $stmt->bindParam(':address', $address);
+    $stmt->bindParam(':phone', $phone);
+    $stmt->bindParam(':dob', $dob);
+    $stmt->bindParam(':gender', $gender);
+    $stmt->bindParam(':id', $userId);
+    
+
+    if ($stmt->execute()) {
+      $message = "Form submitted successfully!";
+      echo $result;
+      header("Location: confirm-identity.php?user=$userId");
+      exit();
+    } else {
+      $message = "Failed to submit form!";
+    }
+  }
+?>
+
 <!DOCTYPE html>
 <html lang="en">
-
-
-<!-- Mirrored from themes.pixelstrap.net/pwa/mpay/personal-identity.php by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 10 Sep 2024 05:07:50 GMT -->
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -49,14 +96,14 @@
       <div>
         <h2 style="font-size: 30px">KYC</h2>
         <h2>Personal identity</h2>
-        <h4 class="p-0">Fill up the form</h4>
+        <h4 class="p-0">Hello<?php echo isset($firstname) ? " ".$firstname : ''; ?>, tell us more about yourself</h4>
       </div>
     </div>
   </div>
   <!-- header end -->
 
   <!-- login section start -->
-  <form class="auth-form" target="_blank">
+  <form class="auth-form" action="" method="POST">
     <div class="custom-container">
       <ul id="progressbar" style="text-align: center;">
         <li class="active" id="biodata"><strong></strong></li>
@@ -65,97 +112,35 @@
         <li id="disbursment"><strong></strong></li>
       </ul>  
       <div class="form-group">
-        <label for="inputusername" class="form-label">Email Address</label>
+        <label for="inputusername" class="form-label">Address</label>
         <div class="form-input">
-          <input type="text" class="form-control" id="inputusername" placeholder="Enter Your Email" />
+          <textarea class="form-control" id="inputusername" placeholder="Enter Your Email" name="address"></textarea>
         </div>
       </div>
 
       <div class="form-group">
         <label for="inputpin" class="form-label">Phone number</label>
         <div class="form-input">
-          <input type="tel" class="form-control" id="inputpin" placeholder="Enter your phone number" />
+          <input type="number" class="form-control" id="inputpin" placeholder="Enter your phone number" name="phone"/>
         </div>
       </div>
       <div class="form-group">
         <label for="inputday" class="form-label">Date of birth</label>
         <div class="d-flex gap-2">
-          <select id="inputday" class="form-select">
-            <option selected>Day</option>
-            <option>1</option>
-            <option>2</option>
-            <option>3</option>
-            <option>4</option>
-            <option>5</option>
-            <option>6</option>
-            <option>7</option>
-            <option>8</option>
-            <option>9</option>
-            <option>10</option>
-            <option>11</option>
-            <option>12</option>
-            <option>13</option>
-            <option>14</option>
-            <option>15</option>
-            <option>16</option>
-            <option>17</option>
-            <option>18</option>
-            <option>19</option>
-            <option>20</option>
-            <option>21</option>
-            <option>22</option>
-            <option>23</option>
-            <option>24</option>
-            <option>25</option>
-            <option>26</option>
-            <option>27</option>
-            <option>28</option>
-            <option>29</option>
-            <option>30</option>
-            <option>31</option>
-          </select>
-          <select id="inputmonth" class="form-select">
-            <option selected>Month</option>
-            <option>1</option>
-            <option>2</option>
-            <option>3</option>
-            <option>4</option>
-            <option>5</option>
-            <option>6</option>
-            <option>7</option>
-            <option>8</option>
-            <option>9</option>
-            <option>10</option>
-            <option>11</option>
-            <option>12</option>
-          </select>
-
-          <select id="inputyear" class="form-select">
-            <option selected>Year</option>
-            <option>1995</option>
-            <option>1996</option>
-            <option>1997</option>
-            <option>1998</option>
-            <option>1999</option>
-            <option>2000</option>
-            <option>2001</option>
-            <option>2002</option>
-            <option>2003</option>
-            <option>2004</option>
-            <option>2005</option>
-          </select>
+          <input type="date" class="form-control" name="dob">
         </div>
       </div>
       <div class="form-group">
         <label for="inputgender" class="form-label">Gender</label>
-        <select id="inputgender" class="form-select">
-          <option selected>Select Gender</option>
-          <option>Male</option>
-          <option>Female</option>
+        <select id="inputgender" class="form-select" name="gender">
+          <option disabled selected>Select Gender</option>
+          <option value="1">Male</option>
+          <option value="2">Female</option>
         </select>
       </div>
 
-      <a href="confirm-identity.php" class="btn theme-btn w-100">Continue</a>
+      <!-- <a href="confirm-identity.php" class="btn theme-btn w-100">Continue</a> -->
+      <button type="submit" class="btn theme-btn w-100">Continue</button>
       <!-- <a href="confirm-identity.php" class="btn btn-link mt-3">Skip</a> -->
     </div>
   </form>

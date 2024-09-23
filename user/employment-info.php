@@ -1,8 +1,67 @@
+<?php
+  require_once '../db/Database.php'; 
+  $message = "";
+  
+  if (isset($_GET['user'])) {
+    $userId = $_GET['user'];
+    $conn = Database::getInstance();
+    $stmt = $conn->prepare("SELECT firstname FROM users WHERE id = :id");
+    $stmt->bindParam(':id', $userId);
+
+    if ($stmt->execute()) {
+        $result = $stmt->fetch(PDO::FETCH_ASSOC);
+        $firstname = $result['firstname'];
+    } else {
+        $message = "Failed to submit form!";
+    }
+  } else {
+      // Handle the case where the 'user' parameter is not set
+      $message = "User ID is missing.";
+  }
+
+  // Check if form was submitted
+  if ($_SERVER['REQUEST_METHOD'] == 'POST') {
+    $conn = Database::getInstance();
+    $empStatus = $_POST['emp_status'];
+    $empType = $_POST['emp_type'];
+    $empName = $_POST['emp_name'];
+    $incomeType = $_POST['income_type'];
+    $monthlyIncome = $_POST['monthly_income'];
+
+    // Prepare SQL statement
+    $stmt = $conn->prepare("UPDATE users
+      SET emp_status = :emp_status,
+        emp_type = :emp_type,
+        emp_name = :emp_name,
+        income_type = :income_type,
+        monthly_income = :monthly_income
+      WHERE id = :id
+    ");
+    // $stmt = $conn->prepare("UPDATE users SET address = :address, phone = :phone, dob = :dob, gender = :gender WHERE id = :id");
+
+    // Bind parameters
+    $stmt->bindParam(':emp_status', $empStatus);
+    $stmt->bindParam(':emp_type', $empType);
+    $stmt->bindParam(':emp_name', $empName);
+    $stmt->bindParam(':income_type', $incomeType);
+    $stmt->bindParam(':monthly_income', $monthlyIncome);
+    $stmt->bindParam(':id', $userId); // assuming $userId is set
+    // $stmt->debugDumpParams();
+    // die();
+
+    if ($stmt->execute()) {
+      $message = "Form submitted successfully!";
+      echo $result;
+      header("Location: successfully-signup.php?user=$userId");
+      exit();
+    } else {
+      $message = "Failed to submit form!";
+    }
+  }
+?>
+
 <!DOCTYPE html>
 <html lang="en">
-
-
-<!-- Mirrored from themes.pixelstrap.net/pwa/mpay/personal-identity.php by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 10 Sep 2024 05:07:50 GMT -->
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -56,7 +115,7 @@
   <!-- header end -->
 
   <!-- login section start -->
-  <form class="auth-form" target="_blank">
+  <form class="auth-form" action="" method="POST" enctype="multipart/form-data">
     <div class="custom-container">
       <ul id="progressbar" style="text-align: center;">
         <li class="active" id="biodata"><strong></strong></li>
@@ -66,8 +125,8 @@
       </ul>  
       <div class="form-group">
         <label for="inputgender" class="form-label">Employment Status</label>
-        <select id="inputgender" class="form-select">
-          <option selected>Select Employment Status</option>
+        <select id="inputgender" class="form-select" name="emp_status">
+          <option selected disabled>Select Employment Status</option>
           <option>Umemployed</option>
           <option>Self Employed</option>
           <option>Employed</option>
@@ -75,8 +134,8 @@
       </div>
       <div class="form-group">
         <label for="inputgender" class="form-label">Employement Type</label>
-        <select id="inputgender" class="form-select">
-          <option selected>Select Empolyment Type</option>
+        <select id="inputgender" class="form-select" name="emp_type">
+          <option selected disabled>Select Empolyment Type</option>
           <option>Full Time</option>
           <option>Part Time</option>
           <option>Contract</option>
@@ -85,13 +144,13 @@
       <div class="form-group">
         <label for="inputusername" class="form-label">Employer Name</label>
         <div class="form-input">
-          <input type="text" class="form-control" id="inputusername" placeholder="Enter Your Employer's Name (eg. Company Name)" />
+          <input type="text" class="form-control" id="inputusername" placeholder="Enter Your Employer's Name (eg. Company Name)" name="emp_name"/>
         </div>
       </div>
       <div class="form-group">
         <label for="inputgender" class="form-label">Income Type</label>
-        <select id="inputgender" class="form-select">
-          <option selected>Select Income Type</option>
+        <select id="inputgender" class="form-select" name="income_type">
+          <option selected disabled>Select Income Type</option>
           <option>Monthly</option>
           <option>Quarterly</option>
           <option>Bi-Annually</option>
@@ -102,11 +161,12 @@
       <div class="form-group">
         <label for="inputpin" class="form-label">Monthly Income</label>
         <div class="form-input">
-          <input type="tel" class="form-control" id="inputpin" placeholder="Enter your monthly income" />
+          <input type="number" class="form-control" id="inputpin" placeholder="Enter your monthly income" name="monthly_income"/>
         </div>
       </div>
 
-      <a href="add-card-details.php" class="btn theme-btn w-100">Continue</a>
+      <button class="btn theme-btn w-100">Continue</button>
+      <!-- <a href="add-card-details.php" class="btn theme-btn w-100">Continue</a> -->
       <!-- <a href="confirm-identity.php" class="btn btn-link mt-3">Skip</a> -->
     </div>
   </form>

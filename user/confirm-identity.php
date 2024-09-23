@@ -1,8 +1,124 @@
+<?php
+  require_once '../db/Database.php'; 
+  include './includes/functions/handleFileUploads.php';
+  
+  // define('MAX_FILE_SIZE', 3 * 1024 * 1024); // 3MB in bytes
+  // define('UPLOAD_DIR', '../uploads/');
+  $message = "";
+  
+  if (isset($_GET['user'])) {
+    $userId = $_GET['user'];
+    $conn = Database::getInstance();
+    $stmt = $conn->prepare("SELECT firstname FROM users WHERE id = :id");
+    $stmt->bindParam(':id', $userId);
+
+    if ($stmt->execute()) {
+        $result = $stmt->fetch(PDO::FETCH_ASSOC);
+        $firstname = $result['firstname'];
+    } else {
+        $message = "Failed to submit form!";
+    }
+  } else {
+      // Handle the case where the 'user' parameter is not set
+      $message = "User ID is missing.";
+  }
+
+
+  // function handleFileUpload($fileInputName) {
+  //   if (!isset($_FILES[$fileInputName]) || $_FILES[$fileInputName]['error'] !== UPLOAD_ERR_OK) {
+  //       return ["status" => "error", "message" => "No file uploaded or upload error occurred."];
+  //   }
+
+  //   $file = $_FILES[$fileInputName];
+  //   // Check file size
+  //   if ($file['size'] > MAX_FILE_SIZE) {
+  //       return ["status" => "error", "message" => "File '{$file['name']}' exceeds the maximum allowed size of 3MB."];
+  //   }
+
+  //   // Sanitize filename
+  //   $filename = preg_replace("/[^a-zA-Z0-9.-]/", "_", $file['name']);
+  //   $targetPath = UPLOAD_DIR . $filename;
+
+  //   // Ensure upload directory exists
+  //   if (!file_exists(UPLOAD_DIR) && !mkdir(UPLOAD_DIR, 0755, true)) {
+  //     echo 'Failed to create upload directory.';
+  //     return ["status" => "error", "message" => "Failed to create upload directory."];
+  //   }
+  //   // echo move_uploaded_file($file['tmp_name'], $targetPath);die;
+  //   // Move uploaded file
+  //   if (!move_uploaded_file($file['tmp_name'], $targetPath)) {
+  //     echo 'Error uploading file';die;
+  //     error_log("Failed to move uploaded file: " . error_get_last()['message']);
+  //     return ["status" => "error", "message" => "Error uploading file. Please try again."];
+  //   }
+
+  //   // File upload successful
+  //   // return  $targetPath;
+  //   return [
+  //     "status" => "success",
+  //     "message" => "File '{$filename}' uploaded successfully.",
+  //     "path" => $targetPath
+  //   ];
+  // }
+
+
+  // Check if form was submitted
+  if ($_SERVER['REQUEST_METHOD'] == 'POST') {
+
+    // ! temporary exit to avoid sending documents
+    // header("Location: employment-info.php?user=$userId");
+    // exit();
+    // Get form data
+    // $proofOfIdentityFile = $_FILES['proof_of_identity']['tmp_name'];
+    // $selfieFile = $_FILES['selfie']['tmp_name'];
+    // echo 'error-----------';
+    $maxFileSize = 300000000;//!temp increased to 300MB will take it back to 3MB
+
+    if ($_FILES["proof_of_identity"]["size"] > 0) {
+      $result = handleFileUpload('proof_of_identity');
+      if ($result['status'] === 'success') {
+        // echo "File path: " . $result['path'] . "\n";
+        $proofOfIdentityFilename =  $result['path'];
+        // echo $result['message'] . "\n";
+      } else {
+        echo $result['message'];
+      }
+    }
+    if ($_FILES["selfie"]["size"] > 0) {
+      $result = handleFileUpload('selfie');
+      if ($result['status'] === 'success') {
+        // echo "File path: " . $result['path'] . "\n";
+        $selfieFilename =  $result['path'];
+        // echo $result['message'] . "\n";
+      } else {
+        echo $result['message'];
+      }
+    }
+
+    $conn = Database::getInstance();
+    $stmt = $conn->prepare("UPDATE users SET proof_of_identity = :proof_of_identity, photo = :selfie WHERE id = :id");
+
+    $stmt->bindParam(':id', $userId);
+    $stmt->bindParam(':proof_of_identity', $proofOfIdentityFilename);
+    $stmt->bindParam(':selfie', $selfieFilename);
+
+      // !log
+    echo ':selfie--->', $selfieFilename;
+    echo ':proofOfIdentityFilename--->', $proofOfIdentityFilename;
+
+    if ($stmt->execute()) {
+      $message = "Form submitted successfully!";
+      // echo $stmt->debugDumpParams();die;
+      header("Location: next-of-kin-info.php?user=$userId");
+      exit();
+    } else {
+      $message = "Failed to submit form!";
+    }
+  }
+?>
+
 <!DOCTYPE html>
 <html lang="en">
-
-
-<!-- Mirrored from themes.pixelstrap.net/pwa/mpay/confirm-identity.php by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 10 Sep 2024 05:08:35 GMT -->
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -54,7 +170,7 @@
   <!-- header end -->
 
   <!-- login section start -->
-  <form class="auth-form" target="_blank">
+  <form class="auth-form" action="" method="POST" enctype="multipart/form-data">
     <div class="custom-container">
       <ul id="progressbar" style="text-align: center;">
         <li class="active" id="biodata"><strong></strong></li>
@@ -65,7 +181,7 @@
       <div class="form-group">
         <div class="upload-image rounded-image">
           <label for="formFileLg" class="form-label d-none">file </label>
-          <input class="form-control upload-file" type="file" id="formFileLg" multiple>
+          <input class="form-control upload-file" type="file" id="formFileLg" name="proof_of_identity" required xmultiple>
           <i class="upload-icon dark-text" data-feather="plus"></i>
         </div>
       </div>
@@ -74,14 +190,15 @@
 
       <div class="form-group">
         <div class="upload-image rounded-image">
-          <input class="form-control upload-file" type="file" id="formFileLg" >
+          <input class="form-control upload-file" type="file" id="formFileLg" name="selfie" required>
           <i class="upload-icon" data-feather="camera"></i>
         </div>
       </div>
 
       <h3 class="info-id border-0 pb-0">To verify your details, activate your front camera and take a selfie.</h3>
 
-      <a href="employment-info.php" class="btn theme-btn w-100">Continue</a>
+      <!-- <a href="employment-info.php?<?php echo isset($userId) ? $userId : ''; ?>" class="btn theme-btn w-100">Continue</a> -->
+      <button class="btn theme-btn w-100">Continue</button>
     </div>
   </form>
   <!-- login section start -->
@@ -96,7 +213,4 @@
   <!-- script js -->
   <script src="assets/js/script.js"></script>
 </body>
-
-
-<!-- Mirrored from themes.pixelstrap.net/pwa/mpay/confirm-identity.php by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 10 Sep 2024 05:08:37 GMT -->
 </html>
