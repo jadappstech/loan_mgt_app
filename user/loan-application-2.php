@@ -1,3 +1,69 @@
+<?php
+  require_once '../db/Database.php'; 
+  include './includes/functions/handleFileUploads.php';
+
+  $message = "";
+  
+  if (isset($_GET['application'])) {
+    $applicationId = $_GET['application'];
+  } else {
+    // Handle the case where the 'user' parameter is not set
+    $message = "Application ID is missing.";
+  }
+
+  // Check if form was submitted
+  if ($_SERVER['REQUEST_METHOD'] == 'POST') {
+    
+
+    $loan_type = $_POST["loan_type"];
+    $loan_amount = $_POST["loan_amount"];
+    $repayment_term = $_POST["repayment_term"];
+    $loan_purpose = $_POST["loan_purpose"];
+    $bank_name = $_POST["bank_name"];
+    $account_number = $_POST["account_number"];
+    $account_type = $_POST["account_type"];
+    $payment_type = $_POST["payment_type"];
+
+    $sql = "UPDATE applications SET
+      loantype_id = :loan_type,
+      loan_amount = :loan_amount,
+      loan_repayment_term = :repayment_term,
+      purpose_of_loan = :loan_purpose,
+      bank_name = :bank_name,
+      account_no = :account_number,
+      -- account_type = :account_type,
+      -- payment_type = :payment_type
+    WHERE id = :application_id";
+
+    $conn = Database::getInstance();
+    $stmt = $conn->prepare($sql);
+
+    $stmt->bindParam(':loan_type', $loan_type);
+    $stmt->bindParam(':loan_amount', $loan_amount);
+    $stmt->bindParam(':repayment_term', $repayment_term);
+    $stmt->bindParam(':loan_purpose', $loan_purpose);
+    $stmt->bindParam(':bank_name', $bank_name);
+    $stmt->bindParam(':account_number', $account_number);
+    // $stmt->bindParam(':account_type', $account_type);
+    // $stmt->bindParam(':payment_type', $payment_type);
+    $stmt->bindParam(':application_id', $applicationId);
+
+
+    // $stmt->debugDumpParams();die;
+
+    // ... (rest of your code)
+    
+    if ($stmt->execute()) {
+      $message = "Form submitted successfully!";
+      $applicationId = $conn->lastInsertId();
+      header("Location: loan-application-2.php?applicant=$applicationId");
+      exit();
+    } else {
+      $message = "Failed to submit form!";
+    }
+  }
+?>
+
 <?php include_once "./includes/header.php"?>
 <body>
   <!-- side bar start -->
@@ -35,7 +101,7 @@
   <!-- <?php include_once "./includes/navbar.php"; ?> -->
   <!-- bottom navbar end -->
 
-  <section class="section-b-space" style="padding-bottom: 5.625rem">
+  <form class="section-b-space" style="padding-bottom: 5.625rem" method="POST">
     <div class="container mx-auto p-4">
       <!-- Progressbar -->
       <ul id="progressbar" style="text-align: center;">
@@ -53,10 +119,10 @@
           <div class="mb-4">
             <label class="block text-gray-700 text-sm font-bold mb-2">Loan Type <span class="text-red-500">*</span></label>
             <select class="block w-full bg-white border border-gray-300 text-gray-700 py-2 px-3 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500" name="loan_type" onchange="switch_link(this.value)">
-              <option value="" disabled selected>Select Loan Type</option>
-              <option value="personal">Payday Loan</option>
-              <option value="salary loan">Salary Loan</option>
-              <option value="business">Business Loan</option>
+              <option disabled selected>Select Loan Type</option>
+              <option value="1">Payday Loan</option>
+              <option value="2">Salary Loan</option>
+              <option value="3">Business Loan</option>
             </select>
           </div>
 
@@ -92,8 +158,13 @@
             
             <!-- Bank Name -->
             <div class="mb-4">
-              <label class="block text-gray-700 text-sm font-bold mb-2">Bank Name</label>
-              <input class="block w-full bg-white border border-gray-300 text-gray-700 py-2 px-3 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500" type="text" name="bank_name" placeholder="Enter bank name">
+              <label class="block text-gray-700 text-sm font-bold mb-2">Bank Name <span class="text-red-500">*</span></label>
+              <select class="block w-full bg-white border border-gray-300 text-gray-700 py-2 px-3 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500" name="bank_name">
+                <option value="" disabled selected>Select Bank</option>
+                <option value="1">Zenith Bank</option>
+                <option value="2">UBA</option>
+                <option value="3">GT Bank</option>
+              </select>
             </div>
 
             <!-- Account Number -->
@@ -130,13 +201,13 @@
         <!-- Buttons -->
         <div class="flex justify-between mt-6">
           <a href="./loan-application-1.php" class="bg-gray-500 text-white py-2 px-4 rounded-lg hover:bg-gray-600">Previous</a>
-          <a href="./loan-application-3.php" id="Next_btn" class="bg-primary text-white py-2 px-4 rounded-lg hover:bg-blue-600">Next</a>
+          <button type="submit" id="Next_btn" class="bg-primary text-white py-2 px-4 rounded-lg hover:bg-blue-600">Next</button>
         </div>
 
       </div>
     </div>
 
-  </section>
+  </form>
 
   <script>
     function switch_link(type){

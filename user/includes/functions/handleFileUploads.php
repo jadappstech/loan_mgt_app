@@ -23,7 +23,7 @@
 
   function handleFileUpload($fileInputName) {
     if (!isset($_FILES[$fileInputName]) || $_FILES[$fileInputName]['error'] !== UPLOAD_ERR_OK) {
-        return ["status" => "error", "message" => "No file uploaded or upload error occurred."];
+      return ["status" => "error", "message" => "No file uploaded or upload error occurred on".$fileInputName];
     }
 
     $file = $_FILES[$fileInputName];
@@ -50,10 +50,11 @@
     }
 
     // File upload successful
-    // return  $targetPath;
-    return [
-      "status" => "success",
-      "message" => "File '{$filename}' uploaded successfully.",
-      "path" => $targetPath
-    ];
+    // echo 'File upload successful';die;
+    return  $targetPath;
+    // return [
+    //   "status" => "success",
+    //   "message" => "File '{$filename}' uploaded successfully.",
+    //   "path" => $targetPath
+    // ];
   }

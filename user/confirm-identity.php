@@ -76,22 +76,24 @@
 
     if ($_FILES["proof_of_identity"]["size"] > 0) {
       $result = handleFileUpload('proof_of_identity');
-      if ($result['status'] === 'success') {
-        // echo "File path: " . $result['path'] . "\n";
-        $proofOfIdentityFilename =  $result['path'];
-        // echo $result['message'] . "\n";
-      } else {
-        echo $result['message'];
+      // if ($result['status'] === 'success') {
+      //   // echo "File path: " . $result['path'] . "\n";
+      //   $proofOfIdentityFilename =  $result['path'];
+      //   // echo $result['message'] . "\n";
+      // } else {
+      //   echo $result['message'];
+      // }
+      $proofOfIdentityFilename = handleFileUpload('proof_of_identity');
+      if ($selfieFilename === false) {
+        echo "Error uploading selfie";
+        exit;
       }
     }
     if ($_FILES["selfie"]["size"] > 0) {
-      $result = handleFileUpload('selfie');
-      if ($result['status'] === 'success') {
-        // echo "File path: " . $result['path'] . "\n";
-        $selfieFilename =  $result['path'];
-        // echo $result['message'] . "\n";
-      } else {
-        echo $result['message'];
+      $selfieFilename = handleFileUpload('selfie');
+      if ($selfieFilename === false) {
+        echo "Error uploading selfie";
+        exit;
       }
     }
 
