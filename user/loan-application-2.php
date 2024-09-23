@@ -30,7 +30,7 @@
       loan_repayment_term = :repayment_term,
       purpose_of_loan = :loan_purpose,
       bank_name = :bank_name,
-      account_no = :account_number,
+      account_no = :account_number
       -- account_type = :account_type,
       -- payment_type = :payment_type
     WHERE id = :application_id";
@@ -56,7 +56,12 @@
     if ($stmt->execute()) {
       $message = "Form submitted successfully!";
       $applicationId = $conn->lastInsertId();
-      header("Location: loan-application-2.php?applicant=$applicationId");
+      if ($_POST["loan_type"] === "3") {
+        header("Location: loan-application-business-loan.php?application=$applicationId");
+      }
+      else{
+        header("Location: loan-application-3.php?application=$applicationId");
+      }
       exit();
     } else {
       $message = "Failed to submit form!";
