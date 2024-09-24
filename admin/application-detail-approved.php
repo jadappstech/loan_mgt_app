@@ -153,7 +153,7 @@
 																		<span class="icon">
 																			<i class="icon-map-pin"></i>
 																		</span>
-																		<h6>Location<br><span>Kaduna</span></h6>
+																		<h6>Location<br><span><?=$user['state']; ?></span></h6>
 																	</div>
 																</div>
 																<div class="col-xl-4 col-lg-4 col-md-4 col-sm-4 col-12">
@@ -161,7 +161,7 @@
 																		<span class="icon">
 																			<i class="icon-phone1"></i>
 																		</span>
-																		<h6>Phone<br><span>08035388713</span></h6>
+																		<h6>Phone<br><span><?=$user['phone']; ?></span></h6>
 																	</div>
 																</div>
 															</div>
@@ -227,7 +227,7 @@
 																	</td>
 																	
 																	<td>
-																		<h6><span>06-04-1985</span></h6>
+																		<h6><span><?=$user['dob'];?></span></h6>
 																	</td>
 																</tr>
 																
@@ -238,7 +238,7 @@
 																	</td>
 																	
 																	<td>
-																		<h6><span>Accountant</span></h6>
+																		<h6><span><?=$user['profession'];?></span></h6>
 																	</td>
 																</tr>
 																<tr>
@@ -248,17 +248,17 @@
 																	</td>
 																	
 																	<td>
-																		<h6><span>21 Area 1, Garki II, Abuja</span></h6>
+																		<h6><span><?=$user['emp_name'];?></span></h6>
 																	</td>
 																</tr>
 																<tr>
 																	<td>
-																		<h6 class='text-primary'>Annual Income</h6>
+																		<h6 class='text-primary'>Monthly Income</h6>
 																		<!-- <p>Create quality mockups and prototypes and Design mobile-based features.</p> -->
 																	</td>
 																	
 																	<td>
-																		<h6>₦<span>50,000,000</span></h6>
+																		<h6>₦<span><?=$user['monthly_income'];?></span></h6>
 																	</td>
 																</tr>
 																<tr>
@@ -276,35 +276,35 @@
 																		<h6>₦<span>80,000,000</span></h6>
 																	</td>
 																</tr>
-																<tr>
+																<!-- <tr>
 																	<td>
 																		<h6 class='text-primary'>Loan starts on</h6>
-																		<!-- <p>Create quality mockups and prototypes and Design mobile-based features.</p> -->
+																		<p>Create quality mockups and prototypes and Design mobile-based features.</p>
 																	</td>
 																	
 																	<td>
 																		<h6><span>03-09-2024</span></h6>
 																	</td>
-																</tr>
+																</tr> -->
 																<tr>
 																	<td>
 																		<h6 class='text-primary'>Terms of Payment</h6>
 																		<!-- <p>Create quality mockups and prototypes and Design mobile-based features.</p> -->
 																	</td>
 																	<td>
-																		<h6>Twenty consecutive bi-weekly payroll deductions of ₦800,000<br /> in November 2024</h6>
+																		<h6><?=$application['repayment_term']; ?></h6>
 																	</td>
 																</tr>
-																<tr>
+																<!-- <tr>
 																	<td>
 																		<h6 class='text-primary'>Loan ends on</h6>
-																		<!-- <p>Create quality mockups and prototypes and Design mobile-based features.</p> -->
+																		<p>Create quality mockups and prototypes and Design mobile-based features.</p>
 																	</td>
 																	
 																	<td>
 																		<h6>03-09-2024</h6>
 																	</td>
-																</tr>
+																</tr> -->
 																
 																<tr>
 																	<td>
@@ -313,20 +313,20 @@
 																	</td>
 																	
 																	<td>
-																		<h6><span>Business Launching</span></h6>
+																		<h6><span><?=$application['purpose_of_loan']; ?></span></h6>
 																	</td>
 																</tr>
 																<tr>
-																	<td colspan=""><h6 class='text-primary'>Remark</h6></td>
+																	<!-- <td colspan=""><h6 class='text-primary'>Remark</h6></td>
 																	
 																	<td>
-																		<textarea name="" id="" class="form-control" placeholder='Enter your comment here'></textarea>
+																		<textarea name="" id="" class="form-control" placeholder='Enter your comment here'></textarea> -->
 																		<!-- <p class="m-0">₦1000.00</p>
 																		<p class="m-0">₦10.00</p>
 																		<p class="m-0">₦5.00</p>
 																		<h5 class="mt-2 text-danger">₦1015.00</h5> -->
-																	</td>
-																</tr>
+																	<!-- </td>
+																</tr> -->
 															</tbody>
 														</table>
 													</div>
@@ -380,53 +380,66 @@
 														<?php
 														
 														// for($i = 0; $i < )
-														echo
-														"<tr><td>
-															<div class='rating-block'>
-																<div class='rate2 doc' data-bs-toggle='modal' data-bs-target='#exampleModal'>Malik Sampson</div>
-															</div>
-															<div class='modal fade' id='exampleModal' tabindex='-1' aria-labelledby='exampleModalCenteredScrollableTitle' aria-hidden='true'>
-																<div class='modal-dialog modal-dialog-centered modal-dialog-scrollable'>
-																	<div class='modal-content'>
-																		<div class='modal-header'>
-																			<h5 class='modal-title' id='exampleModalCenteredScrollableTitle'>View Document</h5>
-																			<button type='button' class='btn-close' data-bs-dismiss='modal' aria-label='Close'></button>
-																		</div>
-																		<div class='modal-body'>
-																			<embed src='https://loan-app.jadappstech.com/admin/includes/logic/docs/Malik%20SampsonTest%20document.pdf' width='100%' height='500px' type='application/pdf'>
-																		</embed>
-																		<div>
-																			<p>Can't view PDF file.
-																				<a href='https://loan-app.jadappstech.com/admin/includes/logic/docs/Malik%20SampsonTest%20document.pdf'>Download</a> instead.
-																			</p>
-																		</div>
-																		</div>
-																		<div class='modal-footer'>
-																		<p><a href='https://loan-app.jadappstech.com/admin/includes/logic/docs/Malik%20SampsonTest%20document.pdf'>Download</a> instead.</p>
-																		<!-- <label for='' class='text-center'></label> -->
-																			<input type='text' placeholder='Enter Remark/comment Here' class='form-control'>
-																			<button type='button' class='btn btn-secondary' data-bs-dismiss='modal'>Close</button>
-																			<button type='button' class='btn btn-primary'>Save changes</button>
+														$jsonString = $application['docs'];
+														$jsonObject = json_decode($jsonString, true);
+
+														$keys = array_keys($jsonObject);
+														$values = array_values($jsonObject);
+														// var_dump($keys[0]);die;
+														// https://loan-app.jadappstech.com/admin/includes/logic/docs/Malik%20SampsonTest%20document.pdf
+
+														for($i  = 0; $i < count($jsonObject); $i++){
+															// var_dump($values[$i]);die;
+															echo
+															"<tr><td>
+																<div class='rating-block'>
+																	<div class='rate2 doc' data-bs-toggle='modal' data-bs-target='#exampleModal'>$keys[$i]</div>
+																</div>
+																<div class='modal fade' id='exampleModal' tabindex='-1' aria-labelledby='exampleModalCenteredScrollableTitle' aria-hidden='true'>
+																	<div class='modal-dialog modal-dialog-centered modal-dialog-scrollable'>
+																		<div class='modal-content'>
+																			<div class='modal-header'>
+																				<h5 class='modal-title' id='exampleModalCenteredScrollableTitle'>View Document</h5>
+																				<button type='button' class='btn-close' data-bs-dismiss='modal' aria-label='Close'></button>
+																			</div>
+																			<div class='modal-body'>
+																				<embed src='https://loan-app.jadappstech.com/admin/includes/logic/docs/$values[$i]' width='100%' height='500px' type='application/pdf'>
+																			</embed>
+																			
+																			<div>
+																				<p>Can't view PDF file.
+																					<a href='https://loan-app.jadappstech.com/admin/includes/logic/docs/$values[$i]'>Download</a> instead.
+																				</p>
+																			</div>
+																			</div>
+																			<div class='modal-footer'>
+																			<p><a href='https://loan-app.jadappstech.com/admin/includes/logic/docs/$values[$i]'>Download</a> instead.</p>
+																			<!-- <label for='' class='text-center'></label> -->
+																				<input type='text' placeholder='Enter Remark/comment Here' class='form-control'>
+																				<button type='button' class='btn btn-secondary' data-bs-dismiss='modal'>Close</button>
+																				<button type='button' class='btn btn-primary'>Save changes</button>
+																			</div>
 																		</div>
 																	</div>
 																</div>
-															</div>
-														</td>
-														<td>2020/09/18</td>
-														<td>
-															<span class='badge bg-success'>Available</span>
-														</td>
-														<td>
-															<div class='actions'>
-																<a href='#' data-toggle='tooltip' data-placement='top' title='' data-original-title='Edit'>
-																	<i class='icon-edit1 text-info'></i>
-																</a>
-																<a href='#' data-toggle='tooltip' data-placement='top' title='' data-original-title='Delete'>
-																	<i class='icon-x-circle text-danger'></i>
-																</a>
-															</div>
-														</td>
-														</tr>";
+															</td>
+															<td>2020/09/18</td>
+															<td>
+																<span class='badge bg-success'>Available</span>
+															</td>
+															<td>
+																<div class='actions'>
+																	<a href='#' data-toggle='tooltip' data-placement='top' title='' data-original-title='Edit'>
+																		<i class='icon-edit1 text-info'></i>
+																	</a>
+																	<a href='#' data-toggle='tooltip' data-placement='top' title='' data-original-title='Delete'>
+																		<i class='icon-x-circle text-danger'></i>
+																	</a>
+																</div>
+															</td>
+															</tr>";
+														}
+
 														?>
 														<tr>
 														<td>
