@@ -1,4 +1,8 @@
 <!doctype php>
+<?php
+if (session_status() == PHP_SESSION_NONE) {
+	session_start();
+}?>
 <html lang="en">
 	
 <!-- Mirrored from www.bootstrapget.com/demos/themeforest/unipro-admin-template/demos/01-design-blue/view-invoice.php by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 04 Sep 2024 13:06:42 GMT -->
@@ -104,19 +108,44 @@
 <!-- Your code goes in here...-->
 <!-- Row start -->
 <div class="row gutters">
-	<div class="col-xl-4 col-lg-4 col-md-6 col-sm-6 col-12">
-		<figure class="user-card">
-			<figcaption>
-				<img src="./img/ngMan.jpg" alt="Admin" class="profile">
-				<h5 contenteditable="true">Okon Yinusa</h5>
-				<ul class="list-group">
-					<li class="list-group-item"><span>Email: </span>okyunusa@gmail.com</li>
-					<li class="list-group-item"><span>Phone: </span>+234 8035388713</li>
-					<li class="list-group-item"><span>Location: </span>Kaduna</li>
-				</ul>
-			</figcaption>
-		</figure>
-	</div>
+	<?php
+include_once('./includes/layouts/config.php');
+	 $query = "SELECT * FROM users";
+	 $stmt = $conn->prepare($query);
+	 try{
+		 $stmt->execute();
+		 $stmt = $stmt->get_result();
+		 $result = $stmt->fetch_all(MYSQLI_ASSOC);
+		//  var_dump($result[0]['firstname']);die;
+		 $count_result = count($result);
+	 }catch (mysqli_sql_exception $e) {
+		 echo "Error Code: " . $e->getCode() . "<br>";
+		 echo "Error Message: " . $e->getMessage();
+	 }
+	 for($i = 0; $i < $count_result; $i++){
+		$firstname = $result[$i]['firstname'];
+		$middlename = $result[$i]['middlename'];
+		$lastname = $result[$i]['lastname'];
+		$fullname = $firstname." ".$middlename." ".$lastname;
+		$email = $result[$i]['email'];
+		$phone = $result[$i]['phone'];
+		$address = $result[$i]['address'];
+		 echo
+		 "	<div class='col-xl-4 col-lg-4 col-md-6 col-sm-6 col-12'>
+				 <figure class='user-card'>
+					 <figcaption>
+						 <img src='./img/ngMan.jpg' alt='Admin' class='profile'>
+						 <h5 contenteditable='true'>$fullname</h5>
+						 <ul class='list-group'>
+							 <li class='list-group-item'><span>Email: </span>$email</li>
+							 <li class='list-group-item'><span>Phone: </span>$phone</li>
+							 <li class='list-group-item'><span>Address: </span>$address</li>
+						 </ul>
+					 </figcaption>
+				 </figure>
+			 </div>";
+	 }
+	?>
 	<div class="col-xl-4 col-lg-4 col-md-6 col-sm-6 col-12">
 		<figure class="user-card">
 			<figcaption>
@@ -125,7 +154,7 @@
 				<ul class="list-group">
 					<li class="list-group-item"><span>Email: </span>olakunle@gmail.com</li>
 					<li class="list-group-item"><span>Phone: </span>+234 7000303003</li>
-					<li class="list-group-item"><span>Location: </span>Nigeria</li>
+					<li class="list-group-item"><span>Address: </span>Nigeria</li>
 				</ul>
 			</figcaption>
 		</figure>
@@ -138,12 +167,12 @@
 				<ul class="list-group">
 					<li class="list-group-item"><span>Email: </span>joybrown@gmail.com</li>
 					<li class="list-group-item"><span>Phone: </span>+234 7000303003</li>
-					<li class="list-group-item"><span>Location: </span>Lagos</li>
+					<li class="list-group-item"><span>Address: </span>Lagos</li>
 				</ul>
 			</figcaption>
 		</figure>
 	</div>
-	<div class="col-xl-4 col-lg-4 col-md-6 col-sm-6 col-12">
+	<!-- <div class="col-xl-4 col-lg-4 col-md-6 col-sm-6 col-12">
 		<figure class="user-card">
 			<figcaption>
 				<img src="img/african.jpg" alt="Admin" class="profile">
@@ -155,8 +184,8 @@
 				</ul>
 			</figcaption>
 		</figure>
-	</div>
-	<div class="col-xl-4 col-lg-4 col-md-6 col-sm-6 col-12">
+	</div> -->
+	<!-- <div class="col-xl-4 col-lg-4 col-md-6 col-sm-6 col-12">
 		<figure class="user-card">
 			<figcaption>
 				<img src="img/user24.png" alt="Admin" class="profile">
@@ -181,7 +210,7 @@
 				</ul>
 			</figcaption>
 		</figure>
-	</div>
+	</div> -->
 </div>
 <!-- Row end -->
 
