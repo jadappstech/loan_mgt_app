@@ -1,3 +1,55 @@
+<?php
+// Include the database connection (assuming you have a Database class)
+require_once '../db/Database.php'; 
+
+// Initialize message variable
+$message = "";
+
+// Check if form was submitted
+if ($_SERVER['REQUEST_METHOD'] == 'POST') {
+    // Get form data
+    $firstname = $_POST['firstname'];
+    $middlename = $_POST['middlename'];
+    $lastname = $_POST['lastname'];
+    $email = $_POST['email'];
+    $pwd = $_POST['pwd'];
+    $confirmpin = $_POST['confirmpin'];
+    $terms = isset($_POST['terms']) ? 1 : 0;
+
+    // echo $fullname, $email, $pwd, $confirmpin, $terms;
+    // die();
+
+    // Basic validation
+    if ($pwd !== $confirmpin) {
+        $message = "Pins do not match!";
+    } elseif ($terms != 1) {
+        $message = "You must agree to the terms!";
+    } else {
+        // Proceed with storing data in the database
+        $conn = Database::getInstance();
+        $stmt = $conn->prepare("INSERT INTO users (firstname, middlename, lastname, email, pin) VALUES (:fullname, :email, :password)");
+        $stmt = $conn->prepare("INSERT INTO users (firstname, middlename, lastname, email, password) 
+                        VALUES (:firstname, :middlename, :lastname, :email, :password)");
+        $stmt->bindParam(':firstname', $firstname);
+        $stmt->bindParam(':middlename', $middlename);
+        $stmt->bindParam(':lastname', $lastname);
+        $stmt->bindParam(':email', $email);
+        $stmt->bindParam(':password', $pwd);
+
+        if ($stmt->execute()) {
+          $newUserId = $conn->lastInsertId();
+          $message = "Form submitted successfully!";
+          // echo $newUserId;
+          header("Location: personal-identity.php?user=$newUserId");
+          exit();
+        } else {
+            $message = "Failed to submit form!";
+        }
+    }
+}
+?>
+
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -54,8 +106,75 @@
   </div>
   <!-- header end -->
 
+  <?php if (!empty($message)): ?>
+        <div class="alert">
+            <?= $message ?>
+        </div>
+    <?php endif; ?>
+
+    <!-- login section start -->
+    <form class="auth-form" action="" method="POST">
+      <div class="custom-container">
+        <ul id="progressbar" style="text-align: center;">
+          <li class="active" id="biodata"><strong></strong></li>
+          <li id="loan"><strong></strong></li>
+          <li id="verification"><strong></strong></li>
+          <li id="disbursment"><strong></strong></li>
+        </ul>  
+        <div class="form-group">
+          <label for="inputname" class="form-label">First Name</label>
+          <div class="form-input">
+            <input type="text" class="form-control" name="firstname" id="inputname" placeholder="Enter your first name" required />
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="inputname" class="form-label">Middle Name</label>
+          <div class="form-input">
+            <input type="text" class="form-control" name="middlename" id="inputname" placeholder="Enter your middle name" />
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="inputname" class="form-label">Last Name</label>
+          <div class="form-input">
+            <input type="text" class="form-control" name="lastname" id="inputname" placeholder="Enter your last name" required />
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label for="inputusername" class="form-label">Email</label>
+          <div class="form-input">
+            <input type="email" class="form-control" name="email" id="inputusername" placeholder="Enter Your Email" required />
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label for="pwd" class="form-label">Enter Password</label>
+          <div class="form-input">
+            <input type="text" class="form-control" name="pwd" id="pwd" placeholder="Enter Password" required />
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label for="confirmpin" class="form-label">Re-enter Password</label>
+          <div class="form-input">
+            <input type="text" class="form-control" name="confirmpin" id="confirmpin" placeholder="Re-enter Password" required />
+          </div>
+        </div>
+
+        <div class="remember-option mt-3">
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" name="terms" id="flexCheckDefault" required />
+            <label class="form-check-label" for="flexCheckDefault">I agree to all terms & condition</label>
+          </div>
+        </div>
+
+        <button type="submit" class="btn theme-btn w-100">Continue</button>
+        <h4 class="signup">Already have an account ?<a href="signin.php"> Sign in</a></h4>
+      </div>
+    </form>
+
   <!-- login section start -->
-  <form class="auth-form" target="_blank">
+  <!-- <form class="auth-form" target="_blank">
     <div class="custom-container">
       <ul id="progressbar" style="text-align: center;">
         <li class="active" id="biodata"><strong></strong></li>
@@ -78,9 +197,9 @@
       </div>
 
       <div class="form-group">
-        <label for="newpin" class="form-label">Enter new pin</label>
+        <label for="pwd" class="form-label">Enter new pin</label>
         <div class="form-input">
-          <input type="number" class="form-control" id="newpin" placeholder="Enter pin" />
+          <input type="number" class="form-control" id="pwd" placeholder="Enter pin" />
         </div>
       </div>
 
@@ -100,7 +219,7 @@
       <a href="personal-identity.php" class="btn theme-btn w-100">Continue</a>
       <h4 class="signup">Already have an account ?<a href="signin.php"> Sign in</a></h4>
     </div>
-  </form>
+  </form> -->
   <!-- login section start -->
 
   <!-- feather js -->

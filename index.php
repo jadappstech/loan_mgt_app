@@ -13,7 +13,7 @@
     <style>
         /* General Styles */
         body {
-            font-family: 'Arial', sans-serif;
+            font-family:'titillium web';
             scroll-behavior: smooth;
         }
         /* Header */
@@ -33,6 +33,11 @@
         }
 
        
+        @media only screen and (max-width: 768px) {
+        .btn-text {
+             margin: 0 20px; /* add horizontal margin */
+         }
+        }
 
         .apply-btn {
             background-color: #28a745;
@@ -43,10 +48,11 @@
         }
         /* Hero Section */
         .hero {
-            background: url('./admin/smiling.avif') no-repeat center center/cover;
+            background: url('./admin/img/office.jpg') no-repeat center center/cover;
             color: #fff;
-            height: 80vh;
+            height: 100vh;
             position: relative;
+            background-attachment: fixed;
             
         }
         .hero::before {
@@ -108,7 +114,15 @@
         .testimonial .customer {
             margin-top: 15px;
             font-weight: bold;
+            text-align: center;
         }
+
+        .testimonial .rating {
+
+            text-align: center;
+
+        }
+
         /* FAQ */
         .faq .card-header {
             background-color: #007bff;
@@ -182,7 +196,12 @@
                         <a class="nav-link" href="#faq">FAQs</a>
                     </li>
                     <li class="nav-item">
-                    <a class="nav-link apply-btn btn-sm w-25 text-center py-2" href="./user/welcome.php">Apply Now</a>
+                    
+                    <a class="nav-link apply-btn" href="./user/welcome.php">
+                                    <span class="btn-text">Apply Now</span>
+                        </a>
+
+
 
                     </li>
                 </ul>

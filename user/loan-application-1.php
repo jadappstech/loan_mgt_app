@@ -1,3 +1,94 @@
+<?php
+  require_once '../db/Database.php'; 
+  include './includes/functions/handleFileUploads.php';
+
+  $message = "";
+
+  // Check if form was submitted
+  if ($_SERVER['REQUEST_METHOD'] == 'POST') {
+    
+    $guarantor_proof_of_identity = handleFileUpload('guarantor_proof_of_identity');
+    if ($guarantor_proof_of_identity === false) {
+        echo "Error uploading guarantor_proof_of_identity";die;
+        exit;
+    }
+    // var_dump($_POST["guarantor_proof_of_identity"]);die;
+
+    $guarantor_proof_of_address = handleFileUpload('guarantor_proof_of_address');
+    if ($guarantor_proof_of_address === false) {
+        echo "Error uploading guarantor_proof_of_address";
+        exit;
+    }
+
+    $guarantor_proof_of_income = handleFileUpload('guarantor_proof_of_income');
+    if ($guarantor_proof_of_income === false) {
+        echo "Error uploading guarantor_proof_of_income";
+        exit;
+    }
+
+    $applicant_proof_of_identity = handleFileUpload('applicant_proof_of_identity');
+    if ($applicant_proof_of_identity === false) {
+        echo "Error uploading applicant_proof_of_identity";
+        exit;
+    }
+
+    $applicant_proof_of_address = handleFileUpload('applicant_proof_of_address');
+    if ($applicant_proof_of_address === false) {
+        echo "Error uploading applicant_proof_of_address";
+        exit;
+    }
+
+    $applicant_proof_of_income = handleFileUpload('applicant_proof_of_income');
+    if ($applicant_proof_of_income === false) {
+        echo "Error uploading applicant_proof_of_income";
+        exit;
+    }
+    
+    $employer_business_name = $_POST["employer_business_name"];
+    $monthly_income = $_POST["monthly_income"];
+    $monthly_expenses = $_POST["monthly_expenses"];
+    // Guarantor information
+    $guarantor_name = $_POST["guarantor_name"];
+    $guarantor_email = $_POST["guarantor_email"];
+    $guarantor_phone = $_POST["guarantor_phone"];
+    $guarantor_address = $_POST["guarantor_address"];
+    $guarantor_relationship = $_POST["guarantor_relationship"];
+
+    $sql = "INSERT INTO applications (guarantor_name, guarantor_email, guarantor_phone, guarantor_address, guarantor_relationship, guarantor_proof_of_identity, guarantor_proof_of_address, guarantor_proof_of_income) 
+    VALUES (:guarantor_name, :guarantor_email, :guarantor_phone, :guarantor_address, :guarantor_relationship, :guarantor_proof_of_identity, :guarantor_proof_of_address, :guarantor_proof_of_income)";
+
+    $conn = Database::getInstance();
+    $stmt = $conn->prepare($sql);
+
+    // Bind the correct parameters to the placeholders
+    $stmt->bindParam(':guarantor_name', $guarantor_name);
+    $stmt->bindParam(':guarantor_email', $guarantor_email);
+    if (strlen($guarantor_phone) > 20) { // Adjust the maximum length as needed
+      $guarantor_phone = substr($guarantor_phone, 0, 20); // Truncate to 20 characters
+    }
+    
+    $stmt->bindParam(':guarantor_phone', $guarantor_phone);
+    $stmt->bindParam(':guarantor_address', $guarantor_address);
+    $stmt->bindParam(':guarantor_relationship', $guarantor_relationship);
+    $stmt->bindParam(':guarantor_proof_of_identity', $guarantor_proof_of_identity);
+    $stmt->bindParam(':guarantor_proof_of_address', $guarantor_proof_of_address);
+    $stmt->bindParam(':guarantor_proof_of_income', $guarantor_proof_of_income);
+
+    // $stmt->debugDumpParams();die;
+
+    // ... (rest of your code)
+    
+    if ($stmt->execute()) {
+      $message = "Form submitted successfully!";
+      $applicationId = $conn->lastInsertId();
+      header("Location: loan-application-2.php?application=$applicationId");
+      exit();
+    } else {
+      $message = "Failed to submit form!";
+    }
+  }
+?>
+
 <?php include_once "./includes/header.php"?>
 <body>
   <!-- side bar start -->
@@ -26,7 +117,7 @@
   <?php include_once "./includes/navbar.php"; ?>
   <!-- bottom navbar end -->
 
-  <section class="section-b-space" style="padding-bottom: 90px">
+  <form class="section-b-space" style="padding-bottom: 90px" action="" method="POST" enctype="multipart/form-data">
     <div class="custom-container">
       <!-- progressbar -->
       <ul id="progressbar" style="text-align: center;">
@@ -40,63 +131,22 @@
         <div class="card">
           <div class="card-body">
             <div class="row gutters gy-4 mb-4">
-              <!-- <div class="col-xl-4 col-lg-4 col-md-4 col-sm-4 col-12">
-                <div class="field-wrapper">
-                  <div class="field-placeholder">Full Name <span class="text-danger">*</span></div>
-                  <input class="form-control" type="text" name="full_name">
-                </div>
-              </div>
-              <div class="col-xl-4 col-lg-4 col-md-4 col-sm-4 col-12">
-                <div class="field-wrapper">
-                  <div class="field-placeholder">Email Address <span class="text-danger">*</span></div>
-                  <input class="form-control" type="email" name="email_address">
-                </div>
-              </div>
-              <div class="col-xl-4 col-lg-4 col-md-4 col-sm-4 col-12">
-                <div class="field-wrapper">
-                  <div class="field-placeholder">Phone Number <span class="text-danger">*</span></div>
-                  <input class="form-control" type="text" name="phone_number">
-                </div>
-              </div> -->
-              <!-- <div class="col-xl-8 col-lg-8 col-md-8 col-sm-8 col-12">
-                <div class="field-wrapper">
-                  <div class="field-placeholder">Residential Address <span class="text-danger">*</span></div>
-                  <input class="form-control" type="text" name="residential_address">
-                </div>
-              </div> -->
-              <!-- <div class="col-xl-4 col-lg-4 col-md-4 col-sm-4 col-12">
-                <div class="field-wrapper">
-                  <div class="field-placeholder">Date of Birth <span class="text-danger">*</span></div>
-                  <div class="relative max-w-sm">
-                    <div class="absolute left-2 inset-y-0 xstart-0 flex items-center ps-3.5 pointer-events-none">
-                      <svg class="w-4 h-4 text-gray-500 dark:text-gray-400" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
-                        <path d="M20 4a2 2 0 0 0-2-2h-2V1a1 1 0 0 0-2 0v1h-3V1a1 1 0 0 0-2 0v1H6V1a1 1 0 0 0-2 0v1H2a2 2 0 0 0-2 2v2h20V4ZM0 18a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V8H0v10Zm5-8h10a1 1 0 0 1 0 2H5a1 1 0 0 1 0-2Z"/>
-                      </svg>
-                    </div>
-                    <input datepicker id="default-datepicker" type="text" style="padding-left: 30px;" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full ps-20 p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="Select date">
-                  </div>
-
-                </div>
-              </div> -->
-            </div>
-
-            <div class="row gutters gy-4 mb-4">
               <div class="col-xl-4 col-lg-4 col-md-4 col-sm-4 col-12">
                 <div class="field-wrapper">
                   <div class="field-placeholder">Employer/Business Name</div>
-                  <input class="form-control" type="text" name="employer_business_name">
+                  <input class="form-control" type="text" name="employer_business_name" required>
                 </div>
               </div>
               <div class="col-xl-4 col-lg-4 col-md-4 col-sm-4 col-12">
                 <div class="field-wrapper">
                   <div class="field-placeholder">Monthly Income</div>
-                  <input class="form-control" type="number" name="monthly_income">
+                  <input class="form-control" type="number" name="monthly_income" required>
                 </div>
               </div>
               <div class="col-xl-4 col-lg-4 col-md-4 col-sm-4 col-12">
                 <div class="field-wrapper">
                   <div class="field-placeholder">Monthly Expenses</div>
-                  <input class="form-control" type="number" name="monthly_expenses">
+                  <input class="form-control" type="number" name="monthly_expenses" required>
                 </div>
               </div>
             </div>
@@ -107,7 +157,7 @@
                   <label for="proof_of_identity">Proof of Identity:</label>
                   
                   <div class="flex items-center justify-center w-full">
-                    <label for="dropzone-file" class="flex flex-col items-center justify-center w-full h-64 border-2 border-gray-300 border-dashed rounded-lg cursor-pointer bg-gray-50 dark:hover:bg-gray-800 dark:bg-gray-700 hover:bg-gray-100 dark:border-gray-600 dark:hover:border-gray-500 dark:hover:bg-gray-600">
+                    <label for="dropzone-file1" class="flex flex-col items-center justify-center w-full h-64 border-2 border-gray-300 border-dashed rounded-lg cursor-pointer bg-gray-50 dark:hover:bg-gray-800 dark:bg-gray-700 hover:bg-gray-100 dark:border-gray-600 dark:hover:border-gray-500 dark:hover:bg-gray-600">
                       <div class="flex flex-col items-center justify-center pt-5 pb-6">
                         <svg class="w-8 h-8 mb-4 text-gray-500 dark:text-gray-400" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 20 16">
                             <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 13h3a3 3 0 0 0 0-6h-.025A5.56 5.56 0 0 0 16 6.5 5.5 5.5 0 0 0 5.207 5.021C5.137 5.017 5.071 5 5 5a4 4 0 0 0 0 8h2.167M10 15V6m0 0L8 8m2-2 2 2"/>
@@ -116,7 +166,7 @@
                           <p class="hidden md:block mb-2 text-sm text-gray-500 dark:text-gray-400"><span class="font-semibold">Click to upload</span> or drag and drop</p>
                           <p class="text-xs text-gray-500 dark:text-gray-400">SVG, PNG, JPG or GIF (MAX. 800x400px)</p>
                       </div>
-                      <input id="dropzone-file" type="file" class="hidden" multiple/>
+                      <input id="dropzone-file1" type="file" class="hidden" xmultiple/>
                     </label>
                   </div> 
                   <small class="form-text text-muted">e.g., National ID, Passport</small>
@@ -127,7 +177,7 @@
                   <label for="proof_of_identity">Proof of Address:</label>
                   
                   <div class="flex items-center justify-center w-full">
-                    <label for="dropzone-file" class="flex flex-col items-center justify-center w-full h-64 border-2 border-gray-300 border-dashed rounded-lg cursor-pointer bg-gray-50 dark:hover:bg-gray-800 dark:bg-gray-700 hover:bg-gray-100 dark:border-gray-600 dark:hover:border-gray-500 dark:hover:bg-gray-600">
+                    <label for="dropzone-file2" class="flex flex-col items-center justify-center w-full h-64 border-2 border-gray-300 border-dashed rounded-lg cursor-pointer bg-gray-50 dark:hover:bg-gray-800 dark:bg-gray-700 hover:bg-gray-100 dark:border-gray-600 dark:hover:border-gray-500 dark:hover:bg-gray-600">
                       <div class="flex flex-col items-center justify-center pt-5 pb-6">
                         <svg class="w-8 h-8 mb-4 text-gray-500 dark:text-gray-400" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 20 16">
                             <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 13h3a3 3 0 0 0 0-6h-.025A5.56 5.56 0 0 0 16 6.5 5.5 5.5 0 0 0 5.207 5.021C5.137 5.017 5.071 5 5 5a4 4 0 0 0 0 8h2.167M10 15V6m0 0L8 8m2-2 2 2"/>
@@ -136,7 +186,7 @@
                           <p class="hidden md:block mb-2 text-sm text-gray-500 dark:text-gray-400"><span class="font-semibold">Click to upload</span> or drag and drop</p>
                           <p class="text-xs text-gray-500 dark:text-gray-400">SVG, PNG, JPG or GIF (MAX. 800x400px)</p>
                       </div>
-                      <input id="dropzone-file" type="file" class="hidden" />
+                      <input id="dropzone-file2" type="file" class="hidden"/>
                     </label>
                   </div> 
                 <small class="form-text text-muted">e.g., Utility Bill</small>
@@ -146,7 +196,7 @@
                 <div class="field-wrapper">
                   <label class="block mb-2 text-sm font-medium text-gray-900 dark:text-white" for="file_input">Proof of Income:</label>
                   <div class="flex items-center justify-center w-full">
-                    <label for="dropzone-file" class="flex flex-col items-center justify-center w-full h-64 border-2 border-gray-300 border-dashed rounded-lg cursor-pointer bg-gray-50 dark:hover:bg-gray-800 dark:bg-gray-700 hover:bg-gray-100 dark:border-gray-600 dark:hover:border-gray-500 dark:hover:bg-gray-600">
+                    <label for="dropzone-file3" class="flex flex-col items-center justify-center w-full h-64 border-2 border-gray-300 border-dashed rounded-lg cursor-pointer bg-gray-50 dark:hover:bg-gray-800 dark:bg-gray-700 hover:bg-gray-100 dark:border-gray-600 dark:hover:border-gray-500 dark:hover:bg-gray-600">
                       <div class="flex flex-col items-center justify-center pt-5 pb-6">
                         <svg class="w-8 h-8 mb-4 text-gray-500 dark:text-gray-400" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 20 16">
                             <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 13h3a3 3 0 0 0 0-6h-.025A5.56 5.56 0 0 0 16 6.5 5.5 5.5 0 0 0 5.207 5.021C5.137 5.017 5.071 5 5 5a4 4 0 0 0 0 8h2.167M10 15V6m0 0L8 8m2-2 2 2"/>
@@ -155,7 +205,7 @@
                           <p class="hidden md:block mb-2 text-sm text-gray-500 dark:text-gray-400"><span class="font-semibold">Click to upload</span> or drag and drop</p>
                           <p class="text-xs text-gray-500 dark:text-gray-400">SVG, PNG, JPG or GIF (MAX. 800x400px)</p>
                       </div>
-                      <input id="dropzone-file" type="file" class="hidden" />
+                      <input id="dropzone-file3" type="file" class="hidden"/>
                     </label>
                   </div> 
                   <p class="mt-1 text-sm text-gray-500 dark:text-gray-300" id="file_input_help">e.g., Payslips, Bank Statements</p>
@@ -165,8 +215,6 @@
             </div>
           </div> 
         </div>
-
-
         <div class="card mt-4">
           <div class="card-header">
             <div class="card-title">Guarantor Details</div>
@@ -176,31 +224,31 @@
               <div class="col-xl-4 col-lg-4 col-md-4 col-sm-4 col-12">
                 <div class="field-wrapper">
                   <div class="field-placeholder">Guarantor's Full Name</div>
-                  <input class="form-control" type="text">
+                  <input class="form-control" type="text" name="guarantor_name">
                 </div>
               </div>
               <div class="col-xl-4 col-lg-4 col-md-4 col-sm-4 col-12">
                 <div class="field-wrapper">
                   <div class="field-placeholder">Guarantor's Email Address</div>
-                  <input class="form-control" type="email">
+                  <input class="form-control" type="email" name="guarantor_email">
                 </div>
               </div>
               <div class="col-xl-4 col-lg-4 col-md-4 col-sm-4 col-12">
                 <div class="field-wrapper">
                   <div class="field-placeholder">Guarantor's Phone Number</div>
-                  <input class="form-control" type="text">
+                  <input class="form-control" type="tel" maxlength="10" name="guarantor_phone">
                 </div>
               </div>
               <div class="col-xl-8 col-lg-8 col-md-8 col-sm-8 col-12">
                 <div class="field-wrapper">
                   <div class="field-placeholder">Guarantor's Residential Address</div>
-                  <input class="form-control" type="text">
+                  <input class="form-control" type="text" name="guarantor_address">
                 </div>
               </div>
               <div class="col-xl-4 col-lg-4 col-md-4 col-sm-4 col-12">
                 <div class="field-wrapper">
                   <div class="field-placeholder">Relationship to Guarantor</div>
-                  <input class="form-control" type="text">
+                  <input class="form-control" type="text" name="guarantor_relationship" required>
                 </div>
               </div>
               <div class="row gutters gy-4">
@@ -209,7 +257,7 @@
                     <label for="proof_of_identity">Proof of Identity:</label>
                     
                     <div class="flex items-center justify-center w-full">
-                      <label for="dropzone-file" class="flex flex-col items-center justify-center w-full h-64 border-2 border-gray-300 border-dashed rounded-lg cursor-pointer bg-gray-50 dark:hover:bg-gray-800 dark:bg-gray-700 hover:bg-gray-100 dark:border-gray-600 dark:hover:border-gray-500 dark:hover:bg-gray-600">
+                      <label for="dropzone-file4" class="flex flex-col items-center justify-center w-full h-64 border-2 border-gray-300 border-dashed rounded-lg cursor-pointer bg-gray-50 dark:hover:bg-gray-800 dark:bg-gray-700 hover:bg-gray-100 dark:border-gray-600 dark:hover:border-gray-500 dark:hover:bg-gray-600">
                         <div class="flex flex-col items-center justify-center pt-5 pb-6">
                           <svg class="w-8 h-8 mb-4 text-gray-500 dark:text-gray-400" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 20 16">
                               <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 13h3a3 3 0 0 0 0-6h-.025A5.56 5.56 0 0 0 16 6.5 5.5 5.5 0 0 0 5.207 5.021C5.137 5.017 5.071 5 5 5a4 4 0 0 0 0 8h2.167M10 15V6m0 0L8 8m2-2 2 2"/>
@@ -218,7 +266,7 @@
                           <p class="hidden md:block mb-2 text-sm text-gray-500 dark:text-gray-400"><span class="font-semibold">Click to upload</span> or drag and drop</p>
                           <p class="text-xs text-gray-500 dark:text-gray-400">SVG, PNG, JPG or GIF (MAX. 800x400px)</p>
                         </div>
-                        <input id="dropzone-file" type="file" class="hidden" multiple/>
+                        <input id="dropzone-file4" type="file" class="hidden" name="guarantor_proof_of_identity" required/>
                       </label>
                     </div> 
                     <small class="form-text text-muted">e.g., National ID, Passport</small>
@@ -229,7 +277,7 @@
                     <label for="proof_of_identity">Proof of Address:</label>
                     
                     <div class="flex items-center justify-center w-full">
-                      <label for="dropzone-file" class="flex flex-col items-center justify-center w-full h-64 border-2 border-gray-300 border-dashed rounded-lg cursor-pointer bg-gray-50 dark:hover:bg-gray-800 dark:bg-gray-700 hover:bg-gray-100 dark:border-gray-600 dark:hover:border-gray-500 dark:hover:bg-gray-600">
+                      <label for="dropzone-file5" class="flex flex-col items-center justify-center w-full h-64 border-2 border-gray-300 border-dashed rounded-lg cursor-pointer bg-gray-50 dark:hover:bg-gray-800 dark:bg-gray-700 hover:bg-gray-100 dark:border-gray-600 dark:hover:border-gray-500 dark:hover:bg-gray-600">
                         <div class="flex flex-col items-center justify-center pt-5 pb-6">
                           <svg class="w-8 h-8 mb-4 text-gray-500 dark:text-gray-400" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 20 16">
                               <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 13h3a3 3 0 0 0 0-6h-.025A5.56 5.56 0 0 0 16 6.5 5.5 5.5 0 0 0 5.207 5.021C5.137 5.017 5.071 5 5 5a4 4 0 0 0 0 8h2.167M10 15V6m0 0L8 8m2-2 2 2"/>
@@ -238,7 +286,7 @@
                           <p class="hidden md:block mb-2 text-sm text-gray-500 dark:text-gray-400"><span class="font-semibold">Click to upload</span> or drag and drop</p>
                           <p class="text-xs text-gray-500 dark:text-gray-400">SVG, PNG, JPG or GIF (MAX. 800x400px)</p>
                         </div>
-                        <input id="dropzone-file" type="file" class="hidden" />
+                        <input id="dropzone-file5" type="file" class="hidden"  name="guarantor_proof_of_address" required/>
                       </label>
                     </div> 
                   <small class="form-text text-muted">e.g., Utility Bill</small>
@@ -248,7 +296,7 @@
                   <div class="field-wrapper">
                     <label class="block mb-2 text-sm font-medium text-gray-900 dark:text-white" for="file_input">Proof of Income:</label>
                     <div class="flex items-center justify-center w-full">
-                      <label for="dropzone-file" class="flex flex-col items-center justify-center w-full h-64 border-2 border-gray-300 border-dashed rounded-lg cursor-pointer bg-gray-50 dark:hover:bg-gray-800 dark:bg-gray-700 hover:bg-gray-100 dark:border-gray-600 dark:hover:border-gray-500 dark:hover:bg-gray-600">
+                      <label for="dropzone-file6" class="flex flex-col items-center justify-center w-full h-64 border-2 border-gray-300 border-dashed rounded-lg cursor-pointer bg-gray-50 dark:hover:bg-gray-800 dark:bg-gray-700 hover:bg-gray-100 dark:border-gray-600 dark:hover:border-gray-500 dark:hover:bg-gray-600">
                         <div class="flex flex-col items-center justify-center pt-5 pb-6">
                           <svg class="w-8 h-8 mb-4 text-gray-500 dark:text-gray-400" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 20 16">
                               <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 13h3a3 3 0 0 0 0-6h-.025A5.56 5.56 0 0 0 16 6.5 5.5 5.5 0 0 0 5.207 5.021C5.137 5.017 5.071 5 5 5a4 4 0 0 0 0 8h2.167M10 15V6m0 0L8 8m2-2 2 2"/>
@@ -257,7 +305,7 @@
                           <p class="hidden md:block mb-2 text-sm text-gray-500 dark:text-gray-400"><span class="font-semibold">Click to upload</span> or drag and drop</p>
                           <p class="text-xs text-gray-500 dark:text-gray-400">SVG, PNG, JPG or GIF (MAX. 800x400px)</p>
                         </div>
-                        <input id="dropzone-file" type="file" class="hidden" />
+                        <input id="dropzone-file6" type="file" class="hidden" name="guarantor_proof_of_income" required/>
                       </label>
                     </div> 
                     <p class="mt-1 text-sm text-gray-500 dark:text-gray-300" id="file_input_help">e.g., Payslips, Bank Statements</p>
@@ -271,13 +319,12 @@
         <!-- Buttons -->
         <div class="flex justify-center mt-6">
           <!-- <a href="./loan-application-1.php" class="bg-gray-500 text-white py-2 px-4 rounded-lg hover:bg-gray-600">Previous</a> -->
-          <a href="./loan-application-2.php" class="bg-primary text-white py-2 px-4 rounded-lg hover:bg-blue-600">Next</a>
+          <button type="submit" class="bg-primary text-white py-2 px-4 rounded-lg hover:bg-blue-600">Next</button>
         </div>
         
-
       </div>
     </div>
-  </section>
+  </form>
   
   <script src="https://cdn.jsdelivr.net/npm/flowbite@2.5.1/dist/flowbite.min.js"></script>
   <!-- swiper js -->
