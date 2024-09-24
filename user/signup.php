@@ -150,14 +150,14 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
         <div class="form-group">
           <label for="pwd" class="form-label">Enter Password</label>
           <div class="form-input">
-            <input type="number" class="form-control" name="pwd" id="pwd" placeholder="Enter Password" required />
+            <input type="text" class="form-control" name="pwd" id="pwd" placeholder="Enter Password" required />
           </div>
         </div>
 
         <div class="form-group">
           <label for="confirmpin" class="form-label">Re-enter Password</label>
           <div class="form-input">
-            <input type="number" class="form-control" name="confirmpin" id="confirmpin" placeholder="Re-enter Password" required />
+            <input type="text" class="form-control" name="confirmpin" id="confirmpin" placeholder="Re-enter Password" required />
           </div>
         </div>
 
