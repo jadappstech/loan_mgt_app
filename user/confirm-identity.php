@@ -75,7 +75,7 @@
     $maxFileSize = 300000000;//!temp increased to 300MB will take it back to 3MB
 
     if ($_FILES["proof_of_identity"]["size"] > 0) {
-      $result = handleFileUpload('proof_of_identity');
+      // $result = handleFileUpload('proof_of_identity', true);
       // if ($result['status'] === 'success') {
       //   // echo "File path: " . $result['path'] . "\n";
       //   $proofOfIdentityFilename =  $result['path'];
@@ -83,14 +83,14 @@
       // } else {
       //   echo $result['message'];
       // }
-      $proofOfIdentityFilename = handleFileUpload('proof_of_identity');
+      $proofOfIdentityFilename = handleFileUpload('proof_of_identity', true);
       if ($selfieFilename === false) {
         echo "Error uploading selfie";
         exit;
       }
     }
     if ($_FILES["selfie"]["size"] > 0) {
-      $selfieFilename = handleFileUpload('selfie');
+      $selfieFilename = handleFileUpload('selfie', true);
       if ($selfieFilename === false) {
         echo "Error uploading selfie";
         exit;
@@ -182,8 +182,8 @@
       </ul> 
       <div class="form-group">
         <div class="upload-image rounded-image">
-          <label for="formFileLg" class="form-label d-none">file </label>
-          <input class="form-control upload-file" type="file" id="formFileLg" name="proof_of_identity" required xmultiple>
+          <label for="proof_of_identity" class="form-label d-none">file </label>
+          <input class="form-control upload-file" type="file" id="proof_of_identity" name="proof_of_identity" required><!--removed multiple temporarily-->
           <i class="upload-icon dark-text" data-feather="plus"></i>
         </div>
       </div>
@@ -192,7 +192,7 @@
 
       <div class="form-group">
         <div class="upload-image rounded-image">
-          <input class="form-control upload-file" type="file" id="formFileLg" name="selfie" required>
+          <input class="form-control upload-file" type="file" id="selfie" name="selfie" required>
           <i class="upload-icon" data-feather="camera"></i>
         </div>
       </div>

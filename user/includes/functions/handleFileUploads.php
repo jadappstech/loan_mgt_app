@@ -21,7 +21,7 @@
   }
 
 
-  function handleFileUpload($fileInputName) {
+  function handleFileUpload($fileInputName, $skipError = false) {
     if (!isset($_FILES[$fileInputName]) || $_FILES[$fileInputName]['error'] !== UPLOAD_ERR_OK) {
       return ["status" => "error", "message" => "No file uploaded or upload error occurred on".$fileInputName];
     }
@@ -43,8 +43,9 @@
     }
     // echo move_uploaded_file($file['tmp_name'], $targetPath);die;
     // Move uploaded file
-    if (!move_uploaded_file($file['tmp_name'], $targetPath)) {
-      echo 'Error uploading file';die;
+    if (!$skipError ||!move_uploaded_file($file['tmp_name'], $targetPath)) {
+      // echo $_FILES[$fileInputName]."\n"."\n"."\n";
+      echo "Error uploading file $targetPath ---- from $fileInputName";die;
       error_log("Failed to move uploaded file: " . error_get_last()['message']);
       return ["status" => "error", "message" => "Error uploading file. Please try again."];
     }
