@@ -4,9 +4,8 @@ if (session_status() == PHP_SESSION_NONE) {
 }
 $dbhost = "localhost";
 $dbusername = "root";//"jadappst_lms";
-// $dbpassword = "Totalchild6471!";
 $dbpassword = "Totalchild6471!";//"q^7HRVA*-Q@]";
-$dbname = "lms";//"jadappst_lms";
+$dbname = "loan_mgt_app";//"jadappst_lms";
 
 $conn = mysqli_connect($dbhost, $dbusername, $dbpassword, $dbname);
 

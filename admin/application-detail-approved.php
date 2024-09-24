@@ -1,7 +1,13 @@
-<!doctype php>
+<!doctype html>
+<?php
+	// include_once('./includes/layouts/config.php');
+	// global $conn;
+	// var_dump($conn);die;
+	if (session_status() == PHP_SESSION_NONE) {
+		session_start();
+	}
+?>	
 <html lang="en">
-	
-<!-- Mirrored from www.bootstrapget.com/demos/themeforest/unipro-admin-template/demos/01-design-blue/view-invoice.php by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 04 Sep 2024 13:06:42 GMT -->
 <head>
 		<!-- Required meta tags -->
 		<meta charset="utf-8">
@@ -62,7 +68,10 @@
 			<nav class="sidebar-wrapper">
 
 				<!-- Sidebar content start -->
-				<?php include_once "./includes/layouts/menu.php"; ?>
+				<?php 
+					$active_link = "application";
+					include_once "./includes/layouts/menu.php"; 
+				?>
 				<!-- Sidebar content end -->
 				
 			</nav>
@@ -89,6 +98,34 @@
 
 								<!-- Card start -->
 								<div class="card">
+									<?php
+										include_once('./includes/layouts/config.php');
+
+										$query = "SELECT * FROM applications WHERE id = ?";//.;
+										if($conn){
+											$stmt = $conn->prepare($query);
+											$stmt->bind_param('s', $_GET['id']);
+										}else{
+											die("Connection failed: " . $conn->connect_error);
+										}
+										$stmt->execute();
+										$stmt = $stmt->get_result();
+										$application = $stmt->fetch_assoc();
+										$applicant_id = $application['user_id'];
+										// var_dump($applicant_id);die;
+										//call out the user from db using the id
+										$query = "SELECT * FROM users WHERE id = ?";//.;
+										if($conn){
+											$stmt = $conn->prepare($query);
+											$stmt->bind_param('s', $applicant_id);
+										}else{
+											die("Connection failed: " . $conn->connect_error);
+										}
+										$stmt->execute();
+										$stmt = $stmt->get_result();
+										$user = $stmt->fetch_assoc();
+										// var_dump($result);die;
+									?>
 									<div class="card-header-lg">
 										<h4>Application Details</h4>
 										<div class="text-end">
@@ -99,7 +136,7 @@
 										<div class="invoice-container">
 											<div class="invoice-header">
 												<div class="profile-header">
-													<h1>APP412X-01</h1>
+													<h1><?= $application['application_id'];?></h1>
 													<div class="profile-header-content bg-primary">
 														<div class="profile-header-tiles">
 															<div class="row gutters">
@@ -108,7 +145,7 @@
 																		<span class="icon">
 																			<i class="icon-server"></i>
 																		</span>
-																		<h6>Name<br><span>Okon Yinusa</sapn></h6>
+																		<h6>Name<br><span><?=$user['firstname'] . " " . $user['middlename']. " " . $user['lastname'];?></sapn></h6>
 																	</div>
 																</div>
 																<div class="col-xl-4 col-lg-4 col-md-4 col-sm-4 col-12">
@@ -180,7 +217,7 @@
 																	</td>
 																	
 																	<td>
-																		<h6>Okon Yinusa</h6>
+																		<h6><?=$user['firstname'] . " " . $user['middlename']. " " . $user['lastname'];?></h6>
 																	</td>
 																</tr>
 																<tr>
@@ -339,6 +376,58 @@
 														</tr>
 													</thead>
 													<tbody>
+														
+														<?php
+														
+														// for($i = 0; $i < )
+														echo
+														"<tr><td>
+															<div class='rating-block'>
+																<div class='rate2 doc' data-bs-toggle='modal' data-bs-target='#exampleModal'>Malik Sampson</div>
+															</div>
+															<div class='modal fade' id='exampleModal' tabindex='-1' aria-labelledby='exampleModalCenteredScrollableTitle' aria-hidden='true'>
+																<div class='modal-dialog modal-dialog-centered modal-dialog-scrollable'>
+																	<div class='modal-content'>
+																		<div class='modal-header'>
+																			<h5 class='modal-title' id='exampleModalCenteredScrollableTitle'>View Document</h5>
+																			<button type='button' class='btn-close' data-bs-dismiss='modal' aria-label='Close'></button>
+																		</div>
+																		<div class='modal-body'>
+																			<embed src='https://loan-app.jadappstech.com/admin/includes/logic/docs/Malik%20SampsonTest%20document.pdf' width='100%' height='500px' type='application/pdf'>
+																		</embed>
+																		<div>
+																			<p>Can't view PDF file.
+																				<a href='https://loan-app.jadappstech.com/admin/includes/logic/docs/Malik%20SampsonTest%20document.pdf'>Download</a> instead.
+																			</p>
+																		</div>
+																		</div>
+																		<div class='modal-footer'>
+																		<p><a href='https://loan-app.jadappstech.com/admin/includes/logic/docs/Malik%20SampsonTest%20document.pdf'>Download</a> instead.</p>
+																		<!-- <label for='' class='text-center'></label> -->
+																			<input type='text' placeholder='Enter Remark/comment Here' class='form-control'>
+																			<button type='button' class='btn btn-secondary' data-bs-dismiss='modal'>Close</button>
+																			<button type='button' class='btn btn-primary'>Save changes</button>
+																		</div>
+																	</div>
+																</div>
+															</div>
+														</td>
+														<td>2020/09/18</td>
+														<td>
+															<span class='badge bg-success'>Available</span>
+														</td>
+														<td>
+															<div class='actions'>
+																<a href='#' data-toggle='tooltip' data-placement='top' title='' data-original-title='Edit'>
+																	<i class='icon-edit1 text-info'></i>
+																</a>
+																<a href='#' data-toggle='tooltip' data-placement='top' title='' data-original-title='Delete'>
+																	<i class='icon-x-circle text-danger'></i>
+																</a>
+															</div>
+														</td>
+														</tr>";
+														?>
 														<tr>
 														<td>
 															<div class="rating-block">
