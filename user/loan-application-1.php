@@ -54,25 +54,27 @@
     $guarantor_address = $_POST["guarantor_address"];
     $guarantor_relationship = $_POST["guarantor_relationship"];
 
-    $sql = "INSERT INTO applications (guarantor_name, guarantor_email, guarantor_phone, guarantor_address, guarantor_relationship, guarantor_proof_of_identity, guarantor_proof_of_address, guarantor_proof_of_income) 
-    VALUES (:guarantor_name, :guarantor_email, :guarantor_phone, :guarantor_address, :guarantor_relationship, :guarantor_proof_of_identity, :guarantor_proof_of_address, :guarantor_proof_of_income)";
-
+    $sql = "INSERT INTO applications (guarantor_name, guarantor_email, guarantor_phone, guarantor_address, guarantor_relationship, guarantor_proof_of_identity, guarantor_proof_of_address, guarantor_proof_of_income, employer, monthly_income, monthly_expenses) 
+    VALUES (:guarantor_name, :guarantor_email, :guarantor_phone, :guarantor_address, :guarantor_relationship, :guarantor_proof_of_identity, :guarantor_proof_of_address, :guarantor_proof_of_income, :employer_business_name, :monthly_income, :monthly_expenses)";
+    
     $conn = Database::getInstance();
     $stmt = $conn->prepare($sql);
-
+    
     // Bind the correct parameters to the placeholders
     $stmt->bindParam(':guarantor_name', $guarantor_name);
     $stmt->bindParam(':guarantor_email', $guarantor_email);
     if (strlen($guarantor_phone) > 20) { // Adjust the maximum length as needed
-      $guarantor_phone = substr($guarantor_phone, 0, 20); // Truncate to 20 characters
+        $guarantor_phone = substr($guarantor_phone, 0, 20); // Truncate to 20 characters
     }
-    
     $stmt->bindParam(':guarantor_phone', $guarantor_phone);
     $stmt->bindParam(':guarantor_address', $guarantor_address);
     $stmt->bindParam(':guarantor_relationship', $guarantor_relationship);
     $stmt->bindParam(':guarantor_proof_of_identity', $guarantor_proof_of_identity);
     $stmt->bindParam(':guarantor_proof_of_address', $guarantor_proof_of_address);
     $stmt->bindParam(':guarantor_proof_of_income', $guarantor_proof_of_income);
+    $stmt->bindParam(':employer_business_name', $employer_business_name);
+    $stmt->bindParam(':monthly_income', $monthly_income);
+    $stmt->bindParam(':monthly_expenses', $monthly_expenses);
 
     // $stmt->debugDumpParams();die;
 

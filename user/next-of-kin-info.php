@@ -144,7 +144,7 @@
       <div class="form-group">
         <label for="inputpin" class="form-label">Phone number</label>
         <div class="form-input">
-          <input type="number" class="form-control" id="inputpin" placeholder="Enter your phone number" name="nok-phone"/>
+          <input type="tel" class="form-control" id="inputpin" placeholder="Enter your phone number" name="nok-phone"/>
         </div>
       </div>
       <div class="form-group">

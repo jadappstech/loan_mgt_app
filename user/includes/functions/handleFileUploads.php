@@ -43,12 +43,13 @@
     }
     // echo move_uploaded_file($file['tmp_name'], $targetPath);die;
     // Move uploaded file
-    if (!$skipError ||!move_uploaded_file($file['tmp_name'], $targetPath)) {
-      // echo $_FILES[$fileInputName]."\n"."\n"."\n";
-      echo "Error uploading file $targetPath ---- from $fileInputName";die;
-      error_log("Failed to move uploaded file: " . error_get_last()['message']);
-      return ["status" => "error", "message" => "Error uploading file. Please try again."];
-    }
+    move_uploaded_file($file['tmp_name'], $targetPath);
+    // if (!$skipError ||!move_uploaded_file($file['tmp_name'], $targetPath)) {
+    //   // echo $_FILES[$fileInputName]."\n"."\n"."\n";
+    //   echo "Error uploading file $targetPath ---- from $fileInputName";die;
+    //   error_log("Failed to move uploaded file: " . error_get_last()['message']);
+    //   return ["status" => "error", "message" => "Error uploading file. Please try again."];
+    // }
 
     // File upload successful
     // echo 'File upload successful';die;

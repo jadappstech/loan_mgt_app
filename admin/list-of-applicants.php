@@ -130,11 +130,12 @@ include_once('./includes/layouts/config.php');
 		$email = $result[$i]['email'];
 		$phone = $result[$i]['phone'];
 		$address = $result[$i]['address'];
+		$photo = $result[$i]['photo'];
 		 echo
 		 "	<div class='col-xl-4 col-lg-4 col-md-6 col-sm-6 col-12'>
 				 <figure class='user-card'>
 					 <figcaption>
-						 <img src='./img/ngMan.jpg' alt='Admin' class='profile'>
+						 <img src='$photo' alt='Admin' class='profile'>
 						 <h5 contenteditable='true'>$fullname</h5>
 						 <ul class='list-group'>
 							 <li class='list-group-item'><span>Email: </span>$email</li>

@@ -27,7 +27,7 @@
     $sql = "UPDATE applications SET
       loantype_id = :loan_type,
       loan_amount = :loan_amount,
-      loan_repayment_term = :repayment_term,
+      repayment_term = :repayment_term,
       purpose_of_loan = :loan_purpose,
       bank_name = :bank_name,
       account_no = :account_number

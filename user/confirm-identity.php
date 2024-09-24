@@ -183,7 +183,7 @@
       <div class="form-group">
         <div class="upload-image rounded-image">
           <label for="proof_of_identity" class="form-label d-none">file </label>
-          <input class="form-control upload-file" type="file" id="proof_of_identity" name="proof_of_identity" required><!--removed multiple temporarily-->
+          <input class="form-control upload-file" type="file" id="proof_of_identity" name="proof_of_identity" required accept="image/png, image/jpeg, application/pdf"><!--removed multiple temporarily-->
           <i class="upload-icon dark-text" data-feather="plus"></i>
         </div>
       </div>
@@ -192,7 +192,7 @@
 
       <div class="form-group">
         <div class="upload-image rounded-image">
-          <input class="form-control upload-file" type="file" id="selfie" name="selfie" required>
+          <input class="form-control upload-file" type="file" id="selfie" name="selfie" required accept="image/png, image/jpeg">
           <i class="upload-icon" data-feather="camera"></i>
         </div>
       </div>
