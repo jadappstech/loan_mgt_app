@@ -1,14 +1,21 @@
 
 <?php
 
-$host = 'localhost';
-$username = 'root';//'jadappst_lms';
-$password = 'Totalchild6471!';//'q^7HRVA*-Q@]';
-$db_name = 'lms';//'jadappst_lms';
+// $host = 'localhost';
+// $username = 'root';//'jadappst_lms';
+// $password = '';//'q^7HRVA*-Q@]';
+// $db_name = 'loan_mgt_app';//'jadappst_lms';
+
+$env = parse_ini_file('../.env');
+
+$dbhost = $env["DATABASE_HOST"];
+$dbusername = $env["DATABASE_USERNAME"];//"jadappst_lms";
+$dbpassword =$env["DATABASE_PASSWORD"];//"q^7HRVA*-Q@]";
+$dbname =$env["DATABASE_NAME"];//"jadappst_lms";
 
 
 // Connect to database
-$conn = new mysqli($host, $username, $password, $db_name);
+$conn = new mysqli($dbhost, $dbusername, $dbpassword, $dbname);
 
 // Check connection
 if ($conn->connect_error) {
@@ -17,7 +24,7 @@ if ($conn->connect_error) {
 
 // Update password
 if (isset($_POST['password'])) {
-       $password = $_POST['password'];
+    $password = $_POST['password'];
 
     $query = "UPDATE user SET username = ? WHERE id = 1";
     $stmt = $conn->prepare($query);

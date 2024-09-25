@@ -4,3 +4,4 @@ app.html
 .zip
 admin/includes/layouts/config.php
 admin/includes/layouts/config.php
+.env
