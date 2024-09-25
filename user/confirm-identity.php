@@ -104,9 +104,9 @@
     $stmt->bindParam(':proof_of_identity', $proofOfIdentityFilename);
     $stmt->bindParam(':selfie', $selfieFilename);
 
-      // !log
-    echo ':selfie--->', $selfieFilename;
-    echo ':proofOfIdentityFilename--->', $proofOfIdentityFilename;
+      // ?online echoes stop all other code from running
+    // echo ':selfie--->', $selfieFilename;
+    // echo ':proofOfIdentityFilename--->', $proofOfIdentityFilename;
 
     if ($stmt->execute()) {
       $message = "Form submitted successfully!";

@@ -44,7 +44,7 @@
     
     if ($stmt->execute()) {
       $message = "Form submitted successfully!";
-      echo $result;
+    //   echo $result;
       header("Location: successfully-signup.php?user=$userId");
       exit();
     } else {
